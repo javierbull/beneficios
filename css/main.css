@@ -1196,6 +1196,29 @@ footer {
   padding-left: .5rem;
 }
 
+.delivery-address {
+  /* background-color: lavender; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.delivery-address .icon-location {
+  font-size: 2.5rem;
+}
+
+.delivery-address--label {
+  margin-bottom: 0;
+  font-size: .75rem;
+}
+
+.btn-user-address {
+  padding: 0;
+  height: 1.5rem;
+  font-weight: 600;
+}
+
 /* FIN NAVBAR TOP */
 /* NAVBAR MAIN MOBILE */
 .navbar-main-mobile {

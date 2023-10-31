@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Datos de envío - Bee Beneficios</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+	<link href="css/fonts.min.css" rel="stylesheet" type="text/css">
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mq.css">
+
+</head>
+
+<body>
+	<!-- Overlay, must be placed direct after the opening body tag. -->
+	<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+
+	<header class="bg-white">
+
+		<nav class="navbar navbar-top navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logos/logoBeeBeneficios.svg" alt="Logo bee Beneficios">
+				</a>
+
+				<div class="content-user-profile-navbar ml-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<button class="btn btn-style-none dropdown-toggle btn-dropdown-perfil" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="img/profiles/perfil.png" class="img-user img-fluid" alt="Foto usuario">
+								<div class="greetings-user">
+									Hola <span class="name-user">Javier</span>
+								</div>
+								<div class="material-icons">
+									expand_more
+								</div>
+							</button>
+							<div class="dropdown-menu dropdown-menu-right dropdown-menu-user shadow" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="perfil.html">
+									Perfil
+								</a>
+								<a class="dropdown-item" href="compras.html">
+									Mis vales
+								</a>
+								<a class="dropdown-item" href="activaciones.html">
+									Activaciones
+								</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="login.html">
+									Cerrar sesión
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+	<!-- Off-canvas sidebar markup, left/right or both. -->
+	<div id="bs-canvas-left" class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed bg-light h-100">
+		<header class="bs-canvas-header p-3 bg-danger">
+			<h4 class="d-inline-block text-light mb-0">Canvas Header</h4>
+			<button type="button" class="bs-canvas-close close" aria-label="Close"><span aria-hidden="true" class="text-light">&times;</span></button>
+		</header>
+		<div class="bs-canvas-content px-3 py-5">
+
+		</div>
+	</div>
+
+	<div id="cart-desktop-home" class="cart-desktop bs-canvas bs-canvas-anim bs-canvas-right position-fixed">
+		<header class="header-shopping-cart overflow-auto">
+			<button type="button" class="btn bs-canvas-close float-left close-shopping-cart" aria-label="Close">
+				<span aria-hidden="true" class="material-icons">arrow_back</span>
+				<span class="hover-underline">
+					Seguir comprando
+				</span>
+			</button>
+
+		</header>
+		<div class="empty-cart-desktop">
+			<div class="empty-cart-content">
+				<span class="material-icons-outlined">
+					shopping_cart
+				</span>
+				<div class="info-empty-cart">
+					<h3>
+						¡Tu carrito de compras esta vacío!
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="cart-content">
+			<div class="header-cart-content">
+				<h3>
+					Mis compras
+				</h3>
+				<div class="total-items">
+					<span>08</span> productos
+				</div>
+			</div>
+
+			<div class="items-cart-content custom-scrollbar">
+				<div class="item-cart">
+					<div class="detail-product">
+						<div class="brand-item-cart">
+							WONG
+						</div>
+						<div class="name-item-cart">
+							Coca-cola pack
+							<div class="description">
+								six pack + cooler
+							</div>
+						</div>
+					</div>
+					<div class="control-quantity">
+						<button type="button" name="button" class="dec qtybutton btn">-</button>
+						<input type="number" value="1" name="qtybutton" class="plus-minus-box">
+						<button type="button" name="button" class="inc qtybutton btn">+</button>
+					</div>
+					<div class="price-product">
+						s/ <span>40.00</span>
+					</div>
+				</div>
+				<div class="item-cart">
+					<div class="detail-product">
+						<div class="brand-item-cart">
+							Decameron hotels & resorts
+						</div>
+						<div class="name-item-cart">
+							Decameron El Pueblo
+							<div class="description">
+								Matrimonial - $ 190.00 Lorem ipsum dolor.
+							</div>
+						</div>
+					</div>
+					<div class="control-quantity">
+						<button type="button" name="button" class="dec qtybutton btn">-</button>
+						<input type="number" value="1" name="qtybutton" class="plus-minus-box">
+						<button type="button" name="button" class="inc qtybutton btn">+</button>
+					</div>
+					<div class="price-product">
+						s/ <span>856.00</span>
+					</div>
+				</div>
+				<div class="item-cart">
+					<div class="detail-product">
+						<div class="brand-item-cart">
+							D’onofrio
+						</div>
+						<div class="name-item-cart">
+							Alaska family pack
+							<div class="description">
+								pack x12
+							</div>
+						</div>
+					</div>
+					<div class="control-quantity">
+						<button type="button" name="button" class="dec qtybutton btn">-</button>
+						<input type="number" value="1" name="qtybutton" class="plus-minus-box">
+						<button type="button" name="button" class="inc qtybutton btn">+</button>
+					</div>
+					<div class="price-product">
+						s/ <span>48.00</span>
+					</div>
+				</div>
+				<div class="item-cart">
+					<div class="detail-product">
+						<div class="brand-item-cart">
+							Decameron hotels & resorts
+						</div>
+						<div class="name-item-cart">
+							Decameron El Pueblo
+							<div class="description">
+								Matrimonial - $ 190.00 Lorem ipsum dolor.
+							</div>
+						</div>
+					</div>
+					<div class="control-quantity">
+						<button type="button" name="button" class="dec qtybutton btn">-</button>
+						<input type="number" value="1" name="qtybutton" class="plus-minus-box">
+						<button type="button" name="button" class="inc qtybutton btn">+</button>
+					</div>
+					<div class="price-product">
+						s/ <span>856.00</span>
+					</div>
+				</div>
+				<div class="item-cart">
+					<div class="detail-product">
+						<div class="brand-item-cart">
+							D’onofrio
+						</div>
+						<div class="name-item-cart">
+							Alaska family pack
+							<div class="description">
+								pack x12
+							</div>
+						</div>
+					</div>
+					<div class="control-quantity">
+						<button type="button" name="button" class="dec qtybutton btn">-</button>
+						<input type="number" value="1" name="qtybutton" class="plus-minus-box">
+						<button type="button" name="button" class="inc qtybutton btn">+</button>
+					</div>
+					<div class="price-product">
+						s/ <span>48.00</span>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="footer-cart-content">
+				<div class="content-total-price">
+					<div class="label">
+						TOTAL
+					</div>
+					<div class="total-price">
+						s/ <span>949.00</span>
+						<div class="regular-price">
+							s/ 1850.00
+						</div>
+					</div>
+				</div>
+
+				<div class="content-saved-money">
+					<div class="label">
+						Ahorraste
+					</div>
+					<div class="saved-money">
+						s/ <span>901.00</span>
+					</div>
+				</div>
+			</div>
+			<div class="info-cart">
+				💳 Paga con tu tarjeta <span>American Express</span> <br>
+				y obtén 10% de descuento adicional
+			</div>
+			<div class="content-btn">
+				<a href="carrito.html" class="btn btn-primario btn-large">
+					Finalizar compra
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN SIDEBAR OFF CANVAS -->
+
+	<main>
+		<a href="https://api.whatsapp.com/send?phone=+51966337362" target="_blank" class="whatsapp">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+		<!-- NAVBAR MOBILE -->
+		<nav class="navbar navbar-top-mobile navbar-main-mobile bg-white nav-shadow fixed-top">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/logos/logoBeeBeneficios.svg" alt="Logo bee Beneficios">
+			</a>
+
+			<button class="btn nav-link closeSearcherMobile btn-style-none pr-0 d-none" href="#" id="btnMenuMobile">
+				<span class="material-icons">menu</span>
+			</button>
+		</nav>
+
+		<nav class="navbar navbar-bottom-mobile navbar-main-mobile bg-white fixed-bottom">
+			<a href="index.html" class="btn nav-link closeMenuMobile closeMenuPerfilMobile closeSearcherMobile btn-style-none" href="index.html">
+				<span class="material-icons">home</span>
+			</a>
+
+			<button class="btn nav-link closeMenuMobile closeMenuPerfilMobile btn-style-none" href="#" id="btnSearcherMobile">
+				<span class="material-icons-outlined">search</span>
+			</button>
+
+			<a class="btn nav-link closeMenuMobile closeSearcherMobile" href="carrito.html">
+				<span class="material-icons-outlined">shopping_cart</span>
+				<span class="badge-bee number-text-extraBold">10</span>
+			</a>
+
+			<button class="btn nav-link btn-style-none closeMenuMobile closeSearcherMobile" id="btnMenuPerfilMobile">
+				<img src="img/profiles/perfil.png" class="img-user img-fluid" alt="Foto usuario">
+				<!-- <span class="material-icons-outlined">person</span> -->
+			</button>
+		</nav>
+
+		<div class="main-menu-mobile d-none">
+			<div class="header-main-menu-mobile sticky-top shadow">
+				<h3 class="menu-mobile_title">
+					Categorias
+				</h3>
+
+				<button type="button" name="button" class="btn btnClose closeMenuMobile">
+					<span class="material-icons">
+						close
+					</span>
+				</button>
+			</div>
+			<div class="content-menu-mobile">
+				<ul class="list-group menu-mobile">
+					<li class="list-group-item border-none-">
+						<a href="restaurantes.html">
+							<h3 class="list-group-item_categoria">
+								Restaurantes
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item border-none-">
+						<a href="restaurantes.html">
+							<h3 class="list-group-item_categoria">
+								Fast food
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item border-none-">
+						<a href="celebraciones.html">
+							<h3 class="list-group-item_categoria">
+								Celebraciones
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item border-none-">
+						<a href="entretenimiento.html">
+							<h3 class="list-group-item_categoria">
+								Entretenimiento
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item border-none-">
+						<a href="panaderia.html">
+							<h3 class="list-group-item_categoria">
+								Panadería
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item border-none-">
+						<a href="educacion.html">
+							<h3 class="list-group-item_categoria">
+								Educación
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item border-none-">
+						<a href="saludybelleza.html">
+							<h3 class="list-group-item_categoria">
+								Salud y Belleza
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+				</ul>
+
+				<!-- <div class="content-menu-mobile-footer">
+					<p>
+						Beneficio Exclusivo
+					</p>
+					<img src="img/logos/logos_empresas/header_top/colmena.png" alt="Logo empresa usuario">
+				</div> -->
+
+			</div>
+		</div>
+
+		<div class="searcher-mobile">
+			<div class="header-searcher-mobile nav-shadow sticky-top">
+				<div class="input-group input-search input-search-mobile">
+					<input type="text" class="form-control bg-white border-none form-control-style-none form-control-search" placeholder="Buscar" aria-label="Example text with button addon" aria-describedby="button-addon1">
+					<div class="input-group-prepend">
+						<button class="btn bg-white btn-style-none" type="button" id="button-addon1">
+							<span class="material-icons">
+								search
+							</span>
+						</button>
+					</div>
+				</div>
+				<button type="button" name="button" class="btn btnClose closeSearcherMobile pr-0">
+					<span class="material-icons">
+						close
+					</span>
+				</button>
+			</div>
+			<div class="searcher-content-categories">
+
+				<div class="container">
+					<div class="grid-container-categorias-mobile">
+						<div class="item item1 card-shadow">
+							<a href="bienestar.html">
+								<div class="overlay">
+									<div class="text">
+										<h3 class="category-name">
+											Fast food
+										</h3>
+										<p class="brands-salient-category">
+											Pizza Hut · KFC · Pinkberry · Starbucks
+										</p>
+										<div>
+											<span class="tag-producto-exclusivo position-inherit bg-TagProductoExclusivo">
+												Producto exclusivo
+											</span>
+										</div>
+									</div>
+								</div>
+								<img src="img/bg/categorias/restaurantes.jpg" alt="categoría Fast food">
+							</a>
+						</div>
+						<div class="item item2 card-shadow">
+							<a href="entretenimiento.html">
+								<div class="overlay">
+									<div class="text">
+										<h3 class="category-name">
+											Entretenimiento
+										</h3>
+									</div>
+								</div>
+								<img src="img/bg/categorias/entretenimiento.jpg" alt="categoría Entretenimiento">
+							</a>
+						</div>
+						<div class="item item3 card-shadow">
+							<a href="restaurantes.html">
+								<div class="overlay">
+									<div class="text">
+										<h3 class="category-name">
+											Restaurantes
+										</h3>
+									</div>
+								</div>
+								<img src="img/bg/categorias/restaurantes.jpg" alt="categoría Restaurantes">
+							</a>
+						</div>
+						<div class="item item4 card-shadow">
+							<a href="educacion.html">
+								<div class="overlay">
+									<div class="text">
+										<h3 class="category-name">
+											Educación
+										</h3>
+									</div>
+								</div>
+								<img src="img/bg/categorias/educacion.jpg" alt="categoría Educación">
+							</a>
+						</div>
+						<div class="item item5 card-shadow">
+							<a href="bienestar.html">
+								<div class="overlay">
+									<div class="text">
+										<h3 class="category-name">
+											Bienestar
+										</h3>
+									</div>
+								</div>
+								<img src="img/bg/categorias/bienestar.jpg" alt="categoría Bienestar">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-perfil-mobile">
+			<div class="header-main-menu-mobile sticky-top shadow">
+				<h3 class="menu-mobile_title">
+					Mi perfil
+				</h3>
+
+				<button type="button" name="button" class="btn btnClose closeMenuPerfilMobile">
+					<span class="material-icons">
+						close
+					</span>
+				</button>
+			</div>
+			<div class="content-menu-mobile">
+				<ul class="list-group menu-mobile">
+					<!-- <li class="list-group-item list-group-item-title">
+						<h3 class="list-title-item">
+							Mi perfil
+						</h3>
+					</li> -->
+
+					<li class="list-group-item">
+						<a href="perfil.html">
+							<h3 class="list-group-item_categoria">
+								Datos personales
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="perfil.html">
+							<h3 class="list-group-item_categoria">
+								Mi empresa
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="perfil.html">
+							<h3 class="list-group-item_categoria">
+								Mis direcciones
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+
+					<!-- <li class="list-group-item list-group-item-title">
+						<h3 class="list-title-item">
+							Acciones
+						</h3>
+					</li> -->
+					<li class="list-group-item">
+						<a href="favoritos.html">
+							<h3 class="list-group-item_categoria">
+								Favoritos
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="activaciones.html">
+							<h3 class="list-group-item_categoria">
+								Activaciones
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="compras.html">
+							<h3 class="list-group-item_categoria">
+								Compras
+							</h3>
+							<span class="material-icons">
+								navigate_next
+							</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="content-btns-menu-profile-mobile">
+					<button type="button" class="btn btn-link text-link btn-style-none">
+						Cerrar sesión
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- FIN NAVBAR MOBILE -->
+
+
+		<!-- SECTION SHOPPING -->
+		<section class="section pt-0 section-shopping">
+
+			<div class="container">
+				<div class="row">
+					<div class="col container-link-back">
+						<a href="carrito.html" class="btn-link inline-flex btn-icon-left">
+							<span class="material-icons">
+								arrow_back
+							</span>
+							<span class="text-link">
+								Volver
+							</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="header-section-vertical">
+					<h2 class="title-section">
+						Datos de envío
+					</h2>
+					<p class="description-header-section">
+						Completa los datos de envío de tu compra:
+					</p>
+				</div>
+
+				<div class="row">
+					<div class="col-xl-8">
+						<div class="content-items-shopping">
+
+							<fieldset class="fieldset-direccion-envio" id="fieldset-datos-envio">
+								<div class="card-datos-envio card-shadow">
+									<div class="row">
+										<div class="col-12 mb-4">
+											<div class="content-radiosModoEntrega">
+												<div class="header-card">
+													<h3 class="title-card">
+														Tipo de entrega
+													</h3>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="radioEntregaDelivery" name="optionRadioTipoEntrega" value="delivery" class="custom-control-input radioModoEntrega" checked>
+													<label class="custom-control-label radiolabelModoEntrega" for="radioEntregaDelivery">
+														<div class="deliveryDisabled">Delivery</div>
+													</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="radioEntregaOficina" name="optionRadioTipoEntrega" value="tienda" class="custom-control-input radioModoEntrega">
+													<label class="custom-control-label radiolabelModoEntrega" for="radioEntregaOficina">
+														<div>Recojo en oficina</div>
+													</label>
+												</div>
+											</div>
+											<hr class="hr-bee">
+										</div>
+									</div>
+									<div class="row" id="datosEntregaDelivery">
+										<div class="bloque-direccion-envio col-12">
+											<div class="header-card">
+												<h3 class="title-card">
+													Dirección de envío
+												</h3>
+												<button type="button" name="button" class="btn btn-secundario btn-large btn-icon-left" data-toggle="modal" data-target=".modal-nueva-direccion">
+													<span class="material-icons-outlined">
+														add
+													</span>
+													Nueva dirección
+												</button>
+											</div>
+
+											<div class="content-cards-direcciones-guardadas">
+												<div class="grid-direcciones-guardadas">
+													<label class="card-direccion">
+														<input name="optionRadioAddress" class="radio-cards" type="radio" checked>
+														<div class="content-direccion">
+															<div class="direccion-guardada">
+																<p class="nombre-direccion line-clamp line-clamp-1">
+																	Casa Papá
+																</p>
+																<p class="direccion line-clamp line-clamp-1">
+																	Calle Lino Alarco 242
+																</p>
+																<p class="distrito line-clamp line-clamp-1">
+																	Miraflores
+																</p>
+															</div>
+															<div class="dropleft hide-dropdown-icon">
+																<button class="btn btn-style-none dropdown-toggle btn-edit-direccion" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																	<span class="material-icons-outlined">
+																		more_vert
+																	</span>
+																</button>
+																<div class="dropdown-menu dropdown-menu-user shadow" aria-labelledby="navbarDropdown">
+																	<button type="button" class="dropdown-item" data-toggle="modal" data-target=".modal-nueva-direccion" >
+																		Modificar
+																	</button>
+																	<button type="button" class="dropdown-item" data-toggle="modal" data-target=".modal-eliminarDireccion">
+																		Eliminar
+																	</button>
+																</div>
+															</div>
+														</div>
+													</label>
+
+													<label class="card-direccion">
+														<input name="optionRadioAddress" class="radio-cards" type="radio">
+														<div class="content-direccion" aria-hidden="true">
+															<div class="direccion-guardada">
+																<p class="nombre-direccion line-clamp line-clamp-1">
+																	Casa Mamá
+																</p>
+																<p class="direccion line-clamp line-clamp-1">
+																	Jirón Bartolome de las casas 123 calle 15
+																</p>
+																<p class="distrito line-clamp line-clamp-1">
+																	La Molina
+																</p>
+															</div>
+															<div class="dropleft hide-dropdown-icon">
+																<button class="btn btn-style-none dropdown-toggle btn-edit-direccion" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																	<span class="material-icons-outlined">
+																		more_vert
+																	</span>
+																</button>
+																<div class="dropdown-menu dropdown-menu-user shadow" aria-labelledby="navbarDropdown">
+																	<button type="button" class="dropdown-item" data-toggle="modal" data-target=".modal-nueva-direccion" >
+																		Modificar
+																	</button>
+																	<button type="button" class="dropdown-item" data-toggle="modal" data-target=".modal-eliminarDireccion">
+																		Eliminar
+																	</button>
+																</div>
+															</div>
+														</div>
+													</label>
+
+													<label class="card-direccion">
+														<input name="optionRadioAddress" class="radio-cards" type="radio">
+														<div class="content-direccion" aria-hidden="true">
+															<div class="direccion-guardada">
+																<p class="nombre-direccion line-clamp line-clamp-1">
+																	Mi Oficina
+																</p>
+																<p class="direccion line-clamp line-clamp-1">
+																	Jirón Bartolome de las casas 123 calle 15
+																</p>
+																<p class="distrito line-clamp line-clamp-1">
+																	La Molina
+																</p>
+															</div>
+														</div>
+													</label>
+
+												</div>
+											</div>
+										</div>
+										<div class="bloque-datos-cargo col-12">
+											<div class="header-card">
+												<h3 class="title-card">
+													¿Quién recibirá el pedido?
+												</h3>
+											</div>
+											<div class="content-radiosModoEntrega">
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="customPersonaCargoYo" name="customRadioPersonaCargoDelivery" value="delivery" class="custom-control-input radioModoEntrega" checked>
+													<label class="custom-control-label radiolabelModoEntrega" for="customPersonaCargoYo">
+														<div class="deliveryDisabled">Yo</div>
+													</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="customPersonaCargoOtro" name="customRadioPersonaCargoDelivery" value="tienda" class="custom-control-input radioModoEntrega">
+													<label class="custom-control-label radiolabelModoEntrega" for="customPersonaCargoOtro">
+														<div>Otra persona</div>
+													</label>
+												</div>
+											</div>
+
+											<fieldset class="box-cargo-pedido-yo" id="boxCargoPedidoDeliveryYo">
+												<form class="form-cargo-persona">
+													<div class="form-row">
+														<div class="form-group col-md-6">
+															<label for="inputNombres">Nombres</label>
+															<input type="text" class="form-control" id="inputNombres" placeholder="Natalie" disabled>
+															<div class="invalid-feedback">
+																Ingresa tus nombres
+															</div>
+														</div>
+														<div class="form-group col-md-6">
+															<label for="inputApellidos">Apellidos</label>
+															<input type="text" class="form-control" id="inputApellidos" placeholder="Gago Endo" disabled>
+															<div class="invalid-feedback">
+																Ingresa tus apellidos
+															</div>
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-group col-md-4">
+															<label for="inputState">Tipo de documento</label>
+															<select id="inputState" class="form-control" disabled>
+																<option>Selecciona</option>
+																<option selected>DNI</option>
+																<option>CE</option>
+															</select>
+															<div class="invalid-feedback">
+																Selecciona tu ciudad
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroDocumento">Número de documento</label>
+															<input type="number" class="form-control" id="inputNumeroDocumento" placeholder="48400036" disabled>
+															<div class="invalid-feedback">
+																Ingresa tu número de documento
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroCelular">Celular</label>
+															<input type="number" class="form-control" id="inputNumeroCelular" placeholder="948173394" disabled>
+															<div class="invalid-feedback">
+																Ingresa tu celular
+															</div>
+														</div>
+													</div>
+												</form>
+											</fieldset>
+											<fieldset class="box-cargo-pedido-otro" id="boxCargoPedidoDeliveryOtro">
+												<form class="form-cargo-persona">
+													<div class="form-row">
+														<div class="form-group col-md-6">
+															<label for="inputNombres">Nombres</label>
+															<input type="text" class="form-control" id="inputNombres">
+															<div class="invalid-feedback">
+																Ingresa tus nombres
+															</div>
+														</div>
+														<div class="form-group col-md-6">
+															<label for="inputApellidos">Apellidos</label>
+															<input type="text" class="form-control" id="inputApellidos">
+															<div class="invalid-feedback">
+																Ingresa tus apellidos
+															</div>
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-group col-md-4">
+															<label for="inputState">Tipo de documento</label>
+															<select id="inputState" class="form-control">
+																<option selected>Selecciona</option>
+																<option>DNI</option>
+																<option>CE</option>
+															</select>
+															<div class="invalid-feedback">
+																Selecciona tu ciudad
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroDocumento">Número de documento</label>
+															<input type="number" class="form-control" id="inputNumeroDocumento">
+															<div class="invalid-feedback">
+																Ingresa tu número de documento
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroCelular">Celular</label>
+															<input type="number" class="form-control" id="inputNumeroCelular">
+															<div class="invalid-feedback">
+																Ingresa tu celular
+															</div>
+														</div>
+													</div>
+												</form>
+											</fieldset>
+											<div class="content-btn-datos-envio">
+												<a href="checkout.html" name="button" class="btn btn-primario btn-large">
+													Confirmar datos
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row" id="datosEntregaOficina">
+										<div class="bloque-direccion-envio col-12">
+											<div class="header-card">
+												<h3 class="title-card">
+													Dirección de entrega
+												</h3>
+											</div>
+
+											<div class="content-cards-direcciones-guardadas">
+												<div class="grid-direcciones-guardadas">
+													<label class="card-direccion">
+														<input name="plan" class="radio-cards" type="radio" checked>
+														<div class="content-direccion">
+															<div class="direccion-guardada">
+																<p class="nombre-direccion line-clamp line-clamp-1">
+																	Dirección de oficina
+																</p>
+																<p class="direccion line-clamp line-clamp-1">
+																	Av. Arenales 1912, Lince
+																</p>
+																<p class="distrito line-clamp line-clamp-1">
+																	Oficina 903
+																</p>
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="bloque-datos-cargo col-12">
+											<div class="header-card">
+												<h3 class="title-card">
+													¿Quién recibirá el pedido?
+												</h3>
+											</div>
+											<div class="content-radiosModoEntrega">
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="customPersonaCargoRecojoYo" name="customRadioCargoRecojo" value="delivery" class="custom-control-input radioModoEntrega" checked>
+													<label class="custom-control-label radiolabelModoEntrega" for="customPersonaCargoRecojoYo">
+														<div class="deliveryDisabled">Yo</div>
+													</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="customPersonaCargoRecojoOtro" name="customRadioCargoRecojo" value="oficina" class="custom-control-input radioModoEntrega">
+													<label class="custom-control-label radiolabelModoEntrega" for="customPersonaCargoRecojoOtro">
+														<div>Otra persona</div>
+													</label>
+												</div>
+											</div>
+
+											<fieldset class="box-cargo-pedido-yo" id="boxCargoPedidoOficinaYo">
+												<form class="form-cargo-persona">
+													<div class="form-row">
+														<div class="form-group col-md-6">
+															<label for="inputNombres">Nombres</label>
+															<input type="text" class="form-control" id="inputNombres" placeholder="Natalie" disabled>
+															<div class="invalid-feedback">
+																Ingresa tus nombres
+															</div>
+														</div>
+														<div class="form-group col-md-6">
+															<label for="inputApellidos">Apellidos</label>
+															<input type="text" class="form-control" id="inputApellidos" placeholder="Gago Endo" disabled>
+															<div class="invalid-feedback">
+																Ingresa tus apellidos
+															</div>
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-group col-md-4">
+															<label for="inputState">Tipo de documento</label>
+															<select id="inputState" class="form-control" disabled>
+																<option>Selecciona</option>
+																<option selected>DNI</option>
+																<option>CE</option>
+															</select>
+															<div class="invalid-feedback">
+																Selecciona tu ciudad
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroDocumento">Número de documento</label>
+															<input type="number" class="form-control" id="inputNumeroDocumento" placeholder="48400036" disabled>
+															<div class="invalid-feedback">
+																Ingresa tu número de documento
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroCelular">Celular</label>
+															<input type="number" class="form-control" id="inputNumeroCelular" placeholder="948173394" disabled>
+															<div class="invalid-feedback">
+																Ingresa tu celular
+															</div>
+														</div>
+													</div>
+												</form>
+											</fieldset>
+											<fieldset class="box-cargo-pedido-otro" id="boxCargoPedidoOficinaOtro">
+												<form class="form-cargo-persona">
+													<div class="form-row">
+														<div class="form-group col-md-6">
+															<label for="inputNombres">Nombres</label>
+															<input type="text" class="form-control" id="inputNombres">
+															<div class="invalid-feedback">
+																Ingresa tus nombres
+															</div>
+														</div>
+														<div class="form-group col-md-6">
+															<label for="inputApellidos">Apellidos</label>
+															<input type="text" class="form-control" id="inputApellidos">
+															<div class="invalid-feedback">
+																Ingresa tus apellidos
+															</div>
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-group col-md-4">
+															<label for="inputState">Tipo de documento</label>
+															<select id="inputState" class="form-control">
+																<option selected>Selecciona</option>
+																<option>DNI</option>
+																<option>CE</option>
+															</select>
+															<div class="invalid-feedback">
+																Selecciona tu ciudad
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroDocumento">Número de documento</label>
+															<input type="number" class="form-control" id="inputNumeroDocumento">
+															<div class="invalid-feedback">
+																Ingresa tu número de documento
+															</div>
+														</div>
+														<div class="form-group col-md-4">
+															<label for="inputNumeroCelular">Celular</label>
+															<input type="number" class="form-control" id="inputNumeroCelular">
+															<div class="invalid-feedback">
+																Ingresa tu celular
+															</div>
+														</div>
+													</div>
+												</form>
+											</fieldset>
+											<div class="content-btn-datos-envio">
+												<a href="checkout.html" name="button" class="btn btn-primario btn-large">
+													Confirmar datos
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+
+					<div class="content-card-resumen-compra resumen-compra-datos-envio col-xl-4 col-lg-12">
+						<div class="card-resumen-compra card-shadow">
+							<h3 class="title-resumen-compra">
+								Resumen de compra
+							</h3>
+							<div class="content-precio-subtotal">
+								<div class="subtotal-label">
+									Subtotal
+								</div>
+								<div class="subtotal-price number-text-extraBold">
+									s/ <span>944.00</span>
+								</div>
+							</div>
+							<div class="content-precio-delivery">
+								<div class="delivery-label">
+									Delivery
+								</div>
+								<div class="delivery-price number-text-extraBold">
+									s/ <span>5.00</span>
+								</div>
+							</div>
+							<hr class="hr-bee">
+							<div class="content-total-compras">
+								<div class="content-precio-total">
+									<div class="total-label">
+										Total
+									</div>
+									<div class="number-text-extraBold">
+										s/ <span>944.00</span>
+									</div>
+								</div>
+
+								<div class="content-precio-regular">
+									<!-- <div class="regular-label">
+										Precio Regular
+									</div> -->
+									<div class="number-text-extraBold text-through">
+										s/ <span>1850.00</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-total-ahorro">
+								<div class="ahorro-label">
+									Ahorraste
+								</div>
+								<div class="ahorro-price number-text-extraBold">
+									s/ <span>901.00</span>
+								</div>
+							</div>
+
+							<div class="info-card-resumen-compra">
+								😊 Recuerda que tus compras son totalmente seguras en nuestra plataforma
+							</div>
+
+							<div class="content-btn d-none">
+								<a href="confirmacion.html" class="btn btn-primario btn-large">
+									Continuar
+								</a>
+
+								<a href="index.html" class="btn-link text-underline">
+									Seguir comprando
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- FIN SECTION SHOPPING -->
+
+
+	</main>
+
+	<footer>
+		<div class="footer-main">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3">
+						<ul class="list-group-footer">
+							<li class="list-group-item">
+								<h2>Nosotros</h2>
+							</li>
+							<li class="list-group-item">
+								<a href="" data-toggle="modal" data-target=".modal-acercaDeBee">
+									Acerca de Bee
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="" data-toggle="modal" data-target=".modal-sobreBeeBeneficios">
+									Sobre BeeBeneficios
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="preguntasFrecuentes.html" target="_blank">
+									Preguntas frecuentes
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<ul class="list-group-footer">
+							<li class="list-group-item">
+								<h2>BeeBeneficios</h2>
+							</li>
+							<li class="list-group-item">
+								<a href="terminosYcondiciones.html" target="_blank">
+									Términos & condiciones
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="politicasDePrivacidad.html" target="_blank">
+									Políticas de privacidad
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="" data-toggle="modal" data-target=".modalLibroReclamaciones">
+									Libro de reclamaciones
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<ul class="list-group-footer">
+							<li class="list-group-item">
+								<h2>¿Tienes alguna duda?</h2>
+							</li>
+							<li class="list-group-item">
+								Escríbenos al<br>
+								whatsapp: 992 192 643<br>
+								Correo: hola@bee.com.pe<br>
+							</li>
+							<li class="list-group-item">
+								o llámanos al<br>
+								(+51)01 4949335
+							</li>
+							<li class="list-group-item">
+								Lunes a Viernes: 9:00 am - 6:00 pm
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container-fluid">
+				<img src="img/logos/logoPoweredBee.png" alt="">
+			</div>
+		</div>
+	</footer>
+
+	<!-- MODALS -->
+	<!-- Modal eliminar direccion-->
+	<div class="modal fade modal-bee modal-eliminarDireccion" id="modal-eliminarDireccion" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="form-step1">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								¿Estás seguro que deseas eliminar esta dirección?
+							</h5>
+							<div class="content-modal-bee">
+								<!-- <p>
+									Siempre puedes volver a agregarlos de manera rápida
+								</p> -->
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer modal-footer-vertical">
+						<a href="#" class="btn btn-danger" data-dismiss="modal">
+							Eliminar dirección
+						</a>
+						<a href="#" class="btn btn-link text-link" data-dismiss="modal">
+							Cancelar
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal eliminar direccion-->
+
+	<!-- Modal nueva dirección-->
+	<div class="modal fade modal-bee modal-nueva-direccion" id="modal-nueva-direccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalScrollableTitle">
+						Nueva dirección
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-direccion">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputState">Ciudad</label>
+								<select id="inputState" class="form-control">
+									<option selected>Selecciona</option>
+									<option>Lima</option>
+									<option>Trujillo</option>
+								</select>
+								<div class="invalid-feedback">
+									Selecciona tu ciudad
+								</div>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="selectDistrito">Distrito</label>
+								<select id="selectDistrito" class="form-control">
+									<option selected>Selecciona</option>
+									<option>Barranco</option>
+									<option>Lince</option>
+								</select>
+								<div class="invalid-feedback">
+									Selecciona tu distrito
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputDireccion">Dirección</label>
+							<input type="text" class="form-control" id="inputDireccion">
+							<div class="invalid-feedback">
+								Ingresa tu dirección
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputReferencia">Referencia (Opcional)</label>
+								<input type="text" class="form-control" id="inputReferencia">
+								<div class="invalid-feedback">
+									Ingresa una referencia
+								</div>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputNombreDireccion">Nombre de la dirección</label>
+								<input type="text" class="form-control" id="inputNombreDireccion">
+								<div class="invalid-feedback">
+									Ingresa el nombre de tu dirección
+								</div>
+							</div>
+						</div>
+
+						<div class="content-map">
+							<iframe class="mapa"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.987194275332!2d-77.03935388573167!3d-12.113028546433389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c83e99cb6ead%3A0x305466d4b5040f75!2sCalle%20Julio%20Becerra%20345%2C%20Miraflores%2015074!5e0!3m2!1ses-419!2spe!4v1601480587903!5m2!1ses-419!2spe"
+							frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer justify-content-end">
+					<a href="#" class="btn btn-primario" data-dismiss="modal">
+						Guardar dirección
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal nueva dirección-->
+
+	<!-- Modal Acerca de Bee-->
+	<div class="modal fade modal-bee modal-acercaDeBee" id="modal-acercaDeBee" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="form-step1">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								Acerca de Bee
+							</h5>
+							<div class="content-modal-bee">
+								<p>
+									bee acompaña tus propósitos creando e impulsando soluciones
+									creativas para atender las necesidades de sus clientes,
+									corporativos o finales, brindándoles plataformas digitales
+									que les permitan obtener beneficios, a través de alianzas con
+									otras empresas, integrándolas y acompañándolas en el logro de su visión.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal Acerca de Bee-->
+
+	<!-- Modal Sobre BeeBeneficios-->
+	<div class="modal fade modal-bee modal-sobreBeeBeneficios" id="modal-acercaDeBee" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="form-step1">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								Sobre BeeBeneficios
+							</h5>
+							<div class="content-modal-bee">
+								<p>
+									Es una programa que atiende a empresas y sus trabajadores a
+									través de activaciones presenciales con visitas "in house" y
+									digitales a través de una plataforma digital. Acercamos las
+									marcas a clientes potenciales a través de nuestra plataforma y
+									generamos interacción con ellos con el apoyo de las áreas de gestión humana.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal Sobre BeeBeneficios-->
+
+
+
+	<!--   Bootstrap JS Files   -->
+	<script src="js/bootstrap/jquery.3.2.1.min.js"></script>
+	<script src="js/bootstrap/popper.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/offcanvas.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

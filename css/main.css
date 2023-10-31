@@ -1154,6 +1154,26 @@ footer {
   padding-right: 0;
 }
 
+.saldo-user {
+  /* background-color: lavender; */
+  margin-right: .5rem;
+}
+
+.saldo-user p {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.saldo-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.saldo-number {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .btn-dropdown-perfil .material-icons {
   /* background-color: lightgreen; */
   margin-right: -7px;

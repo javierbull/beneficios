@@ -133,7 +133,7 @@ $(document).ready(function () {
     margin: 16,
     nav: true,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 7000,
     autoplayHoverPause: true,
     navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
     dots: false,

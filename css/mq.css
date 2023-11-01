@@ -9,7 +9,6 @@
   }
 
   .footer-bottom {
-    background-color: var(--black);
     padding-top: .5rem;
     padding-bottom: 5.5rem;
     padding-left: 2rem;
@@ -746,6 +745,13 @@
   }
 
   /* FIN SECTION MIS ACTIVACIONES */
+
+  /* FOOTER */
+  .wrap-logo-bee {
+    padding-bottom: 1rem;
+  }
+  /* END FOOTER */
+
   /* RESTAURANTES */
   .grid-container-restaurantes {
     /* background-color: pink; */
@@ -1327,6 +1333,8 @@
   }
 
   /* END FIELDSET CONFIRMAR CORREO */
+
+
   /* MAIN CAROUSEL */
   .main-carousel .carousel-item {
     width: 100vw;
@@ -1895,6 +1903,12 @@
   }
 
   /* END PACKS */
+
+  /* FOOTER */
+  .wrap-logo-bee img {
+    height: 1.5rem;
+  }
+  /* END FOOTER */
 }
 
 /* Fin cell portrait */

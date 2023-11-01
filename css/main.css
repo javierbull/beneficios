@@ -15,7 +15,7 @@
   --links: #0039CC;
   --danger: #BA0321;
   --lightYellow: #FFFDF8;
-  --midYellow: #FFE784;
+  --midYellow: #FFE578;
   --lightOrange: #FFB11A;
   --midOrange: #FF8A00;
   --orange: #FF6A16;
@@ -917,7 +917,7 @@ footer {
 }
 
 .footer-main {
-  background-color: var(--black);
+  background-color: var(--midYellow);
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -930,35 +930,48 @@ footer {
 .list-group-footer h2 {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--yellow);
+  color: var(--black);
   margin-bottom: 0;
 }
 
 .list-group-footer .list-group-item {
+  background-color: var(--midYellow);
   border: none;
-  background-color: var(--black);
-  /* background-color: pink; */
-  color: var(--white);
+  color: var(--black);
   padding-left: 0;
 }
 
 .list-group-footer .list-group-item a {
-  color: var(--white);
+  color: var(--black);
 }
 
 .list-group-footer .list-group-item a:hover {
-  color: var(--yellow);
-  text-decoration: none;
+  color: var(--black);
+  text-decoration: underline;
 }
 
 .footer-bottom {
-  background-color: var(--black);
+  background-color: var(--midYellow);
   padding-top: .5rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: right;
   border: none;
+}
+
+.footer-bottom img {
+  height: 1.5rem;
+}
+
+.wrap-logo-bee {
+  /* background-color: lavender; */
+  display: flex;
+  justify-content: center;
+}
+
+.wrap-logo-bee img {
+  height: 3rem;
 }
 
 /* FIN FOOTER */

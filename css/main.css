@@ -2642,7 +2642,9 @@ nav.main .midmenu {
 }
 
 /* padding sombra del card */
-.owl-carousel-beneficios .item {
+.owl-carousel-beneficios .item, 
+.owl-carousel-canje .item, 
+.owl-carousel-canje2 .item {
   /* background-color: lavender; */
   padding: 5px 5px 15px 5px;
   display: flex;
@@ -2650,13 +2652,17 @@ nav.main .midmenu {
   /* width: 100%; */
 }
 
-.owl-carousel-beneficios .prev-slide {
+.owl-carousel-beneficios .prev-slide, 
+.owl-carousel-canje .prev-slide, 
+.owl-carousel-canje2 .prev-slide {
   /* background-color: pink; */
   background: url(../img/icons/arrow_back.svg) no-repeat scroll 50% 50% !important;
   left: -58px;
 }
 
-.owl-carousel-beneficios .next-slide {
+.owl-carousel-beneficios .next-slide, 
+.owl-carousel-canje .next-slide,
+.owl-carousel-canje2 .next-slide {
   background: url(../img/icons/arrow_forward.svg) no-repeat scroll 50% 50% !important;
   right: -58px;
 }

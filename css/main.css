@@ -1229,6 +1229,18 @@ footer {
   font-weight: 600;
 }
 
+.delivery-address--mobile {
+  /* background-color: lavender; */
+  width: 100%;
+  padding: .5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-address-client {
+  margin-bottom: 0;
+}
+
 /* FIN NAVBAR TOP */
 /* NAVBAR MAIN MOBILE */
 .navbar-main-mobile {

@@ -129,8 +129,8 @@ hr {
 }
 
 .section {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .section-color {
@@ -2442,6 +2442,7 @@ nav.main .midmenu {
 .activation-price-card {
   line-height: 1.2rem;
   color: var(--bgActivacion-dis);
+  margin-bottom: .25rem;
 }
 
 .promocion-price-card {
@@ -2597,13 +2598,17 @@ nav.main .midmenu {
 /* FIN BTN FAVORITE */
 .promo-label {
   position: absolute;
-  left: 0;
-  top: 1rem;
+  left: 1px;
+  top: 1px;
   font-size: 12px;
-  padding: 5px;
-  border-radius: 0 4px 4px 0;
+  padding: .25rem .5rem;
+  border-radius: .5rem 0 .5rem 0;
   color: var(--white);
   font-weight: 600;
+  -webkit-border-radius: .5rem 0 .5rem 0;
+  -moz-border-radius: .5rem 0 .5rem 0;
+  -ms-border-radius: .5rem 0 .5rem 0;
+  -o-border-radius: .5rem 0 .5rem 0;
 }
 
 .stock-label {

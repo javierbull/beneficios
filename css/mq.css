@@ -939,19 +939,12 @@
   /* END GRID CATEGORIES HOME */
 
   .section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   /* SECTION MIS ACTIVACIONES */
-  .header-section {
-    /* background-color: lightgreen; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; */
-    margin-bottom: 1rem;
-  }
+
 
   .footer-section {
     padding-top: 1rem;

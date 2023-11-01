@@ -219,6 +219,12 @@
     margin-bottom: 1rem;
   }
   /* END PACKS */
+
+  /* BANNER CLIENTE MOBILE */
+  .banner-client--mobile {
+    display: block;
+  }
+  /* END BANNER CLIENTE MOBILE */
 }
 
 /* Fin tablet landscape */

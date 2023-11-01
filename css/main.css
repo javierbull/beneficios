@@ -1686,6 +1686,7 @@ background-color: var(--jhon);
   margin: 1rem 0;
   border: 1px solid var(--lightOrange);
   border-radius: .5rem;
+  display: none;
 }
 /* END BANNER CLIENT */
 

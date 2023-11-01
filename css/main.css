@@ -372,6 +372,7 @@ hr {
 
 .text-link {
   text-decoration: underline;
+  
 }
 
 .text-link:hover {
@@ -390,6 +391,10 @@ hr {
 .alert-link {
   font-weight: 600;
   color: var(--links);
+}
+
+.white-space-nw {
+  white-space: nowrap;
 }
 
 /* CUSTOM RADIO */
@@ -2760,7 +2765,7 @@ nav.main .midmenu {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .header-section_info {

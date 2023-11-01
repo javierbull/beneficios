@@ -2684,7 +2684,7 @@ nav.main .midmenu {
 
 /* SECTION CAROUSEL BRANDS */
 .owl-carousel-brands .item {
-  background-color: pink;
+  /* background-color: pink; */
   border-radius: .5rem;
   overflow: hidden;
   margin-top: .5rem;
@@ -2696,6 +2696,21 @@ nav.main .midmenu {
 }
 
 /* END SECTION CAROUSEL BRANDS */
+
+/* SECTION CAROUSEL GIFT CARDS */
+.owl-carousel-gift-cards .item {
+  background-color: pink;
+  border-radius: .5rem;
+  overflow: hidden;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.owl-carousel-gift-cards .item:hover {
+  box-shadow: 0 4px 1rem var(--cardShadow);
+}
+
+/* END SECTION CAROUSEL GIFT CARDS */
 
 /* FIN SECTION OFFERS */
 /* SECTION SALIENT PRODUCT */

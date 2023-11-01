@@ -3436,6 +3436,47 @@ nav.main .midmenu {
   padding: 1.5rem;
 }
 
+.header-menu-mobile {
+  /* background-color: lavender; */
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.img-profile-menu-mobile {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.info-user-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.info-user-menu-mobile p {
+  margin-bottom: 0;
+}
+
+.saldo-cliente-label {
+  font-size: .75rem;
+}
+
+.saldo-cliente-mobile {
+  font-weight: 500;
+}
+
+.info-user--name {
+  font-weight: 700;
+}
+
 .menu-mobile {
   background-color: var(--white);
   /* text-align: center; */

@@ -1088,6 +1088,9 @@ footer {
   /* background-color: yellowgreen; */
   padding-top: .5rem;
   padding-bottom: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-brand {
@@ -1212,6 +1215,7 @@ footer {
   margin-right: auto;
   display: flex;
   align-items: center;
+  max-width: 20rem;
 }
 
 .delivery-address .icon-location {
@@ -1221,6 +1225,11 @@ footer {
 .delivery-address--label {
   margin-bottom: 0;
   font-size: .75rem;
+}
+
+.delivery-address .delivery-address-client {
+  /* background-color: lavender; */
+  text-align: left;
 }
 
 .btn-user-address {

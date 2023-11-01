@@ -2699,7 +2699,7 @@ nav.main .midmenu {
 
 /* SECTION CAROUSEL GIFT CARDS */
 .owl-carousel-gift-cards .item {
-  background-color: pink;
+  /* background-color: pink; */
   border-radius: .5rem;
   overflow: hidden;
   margin-top: .5rem;
@@ -2759,7 +2759,8 @@ nav.main .midmenu {
 .header-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .header-section_info {

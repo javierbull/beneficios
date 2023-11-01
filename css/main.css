@@ -1700,6 +1700,11 @@ nav.main .midmenu {
   align-items: center;
 }
 
+.banner-client-desktop {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 .banner-client .content-brand-logo {
   /* background-color: lavender; */
   margin-right: 1rem;

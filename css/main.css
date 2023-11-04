@@ -6312,7 +6312,6 @@ iframe {
   font-size: 1.25rem;
   line-height: 1.25rem;
   padding: .5rem;
-  width: 100%;
   display: flex;
   justify-content: center;
   border-radius: .25rem;
@@ -6335,7 +6334,7 @@ iframe {
 
 .giftCard-nominal--value {
   /* background-color: pink; */
-  padding: 1rem;
+  padding: 1.5rem;
   width: 50%;
   height: 100%;
   position: relative;
@@ -6350,7 +6349,7 @@ iframe {
   font-size: 2rem;
 }
 
-.banlance-value {
+.balance-value {
   /* background-color: lightblue; */
   font-size: 5rem;
   line-height: 5rem;

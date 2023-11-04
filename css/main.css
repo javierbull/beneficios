@@ -6270,7 +6270,32 @@ iframe {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   box-shadow: var(--cardShadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.giftCard-nominal--detail {
+  background-color: lightgreen;
+  padding: 1.5rem;
+  width: 50%;
+  height: 100%;
+  
+}
+
+.giftCard-nominal--value {
+  background-color: tomato;
+  padding: 1rem;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.logo-giftCard-balance {
+  height: 1.25rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
 
 /* END CARD NOMINAL PAGE */

@@ -48,6 +48,7 @@
   --cp-darkblue: #0D1F40;
   --cp-yellow: #FFEC00;
   --cp-redish: #E50246;
+  --lineColor: #D9DBE9;
 }
 
 html {
@@ -6365,6 +6366,17 @@ iframe {
 /* Tabs saldo */
 
 /* End tabs saldo */
+
+.wrap-tabs-bee {
+  padding: 1rem;
+  border: solid 1px var(--lineColor);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
 .nav-pills-bee .nav-link {
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
@@ -6389,6 +6401,19 @@ iframe {
   border: 0;
 }
 
+.consideraciones {
+  background-color: var(--jhon);
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
 
+.title-list-consideraciones {
+  font-size: 1rem;
+  font-weight: 700;
+}
 /* END CARD NOMINAL PAGE */
 

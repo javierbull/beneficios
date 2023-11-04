@@ -6244,3 +6244,33 @@ iframe {
 }
 
 /* End list modal */
+
+/* CARD NOMINAL PAGE */
+.section-giftCard-detail {
+  /* background-color: lavender; */
+}
+
+.wrap-cardNominal { 
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.giftCard-nominal {
+  width: 32rem;
+  height: 18rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(../img/bg/giftCards/bg-gf-100.jpg);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: var(--cardShadow);
+}
+
+
+/* END CARD NOMINAL PAGE */

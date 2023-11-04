@@ -6276,11 +6276,61 @@ iframe {
 }
 
 .giftCard-nominal--detail {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   padding: 1.5rem;
   width: 50%;
   height: 100%;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+}
+
+.giftCard-nominal--title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.giftCard-nominal--img {
+  width: 50%;
+}
+
+.wrap-code {
+  /* background-color: pink; */
+  width: 100%;
+}
+
+.box-giftcard-label {
+  font-size: .75rem;
+  margin-bottom: .25rem;
+}
+
+.box-giftcard-code {
+  background-color: var(--white);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding: .5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.giftCard-nominal--footer-label {
+  font-size: .75rem;
+  margin-bottom: 0;
+}
+
+.giftCard-nominal--footer-web {
+  font-weight: 700;
+  line-height: 1rem;
+  margin-bottom: 0;
 }
 
 .giftCard-nominal--value {
@@ -6301,7 +6351,7 @@ iframe {
 }
 
 .banlance-value {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   font-size: 5rem;
   line-height: 5rem;
 }

@@ -1980,11 +1980,16 @@
     justify-content: center;
     gap: .5rem;
   }
-  
+
   .nav-pills-bee .nav-link {
     font-weight: 600;
     font-size: .875rem;
     padding: .5rem .75rem;
+  }
+
+  .large-text-cell {
+    /* background-color: lavender; */
+    min-width: 15rem;
   }
   /* END GIFT CARDS BALANCE */
 }

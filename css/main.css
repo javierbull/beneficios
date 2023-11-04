@@ -6365,6 +6365,30 @@ iframe {
 /* Tabs saldo */
 
 /* End tabs saldo */
+.nav-pills-bee .nav-link {
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: .75rem 1.5rem;
+}
+
+.nav-pills-bee {
+  display: flex;
+  gap: .5rem;
+}
+
+.nav-pills-bee .nav-link.active,
+.nav-pills-bee .show > .nav-link {
+  color: var(--black);
+  background-color: var(--yellow);
+  border: 0;
+}
+
 
 /* END CARD NOMINAL PAGE */
 

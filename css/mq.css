@@ -1981,10 +1981,16 @@
     gap: .5rem;
   }
 
+  .nav-pills-bee .nav-item {
+    /* background-color: tomato; */
+    flex-grow: 1;
+  }
+
   .nav-pills-bee .nav-link {
     font-weight: 600;
     font-size: .875rem;
     padding: .5rem .75rem;
+    width: 100%;
   }
 
   .large-text-cell {

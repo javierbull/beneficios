@@ -6277,11 +6277,19 @@ iframe {
   align-items: center;
 }
 
-.giftcard-bg-25 {
+.giftcard-20 {
+  background-image: url(../img/bg/giftCards/bg-gf-20.jpg);
+}
+
+.giftcard-25 {
   background-image: url(../img/bg/giftCards/bg-gf-25.jpg);
 }
 
-.giftcard-bg-100 {
+.giftcard-80 {
+  background-image: url(../img/bg/giftCards/bg-gf-80.jpg);
+}
+
+.giftcard-100 {
   background-image: url(../img/bg/giftCards/bg-gf-100.jpg);
 }
 
@@ -6318,6 +6326,7 @@ iframe {
 
 .box-giftcard-code {
   background-color: var(--white);
+  color: var(--black);
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.25rem;

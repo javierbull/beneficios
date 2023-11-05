@@ -6423,6 +6423,22 @@ iframe {
   color: #004A8D;
 }
 
+.giftcard-30 .giftCard-balance {
+  color: #DE11DE;
+}
+
+.giftcard-40 .giftCard-balance {
+  color: #6E17D9;
+}
+
+.giftcard-50 .giftCard-balance {
+  color: #EC268F;
+}
+
+.giftcard-150 .giftCard-balance {
+  color: #F58634;
+}
+
 /* Tabs saldo */
 
 .wrap-tabs-bee {

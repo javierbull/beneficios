@@ -6262,7 +6262,7 @@ iframe {
 
 .giftCard-nominal {
   width: 32rem;
-  height: 18rem;
+  height: 19.5rem;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -6285,12 +6285,28 @@ iframe {
   background-image: url(../img/bg/giftCards/bg-gf-25.jpg);
 }
 
+.giftcard-30 {
+  background-image: url(../img/bg/giftCards/bg-gf-30.jpg);
+}
+
+.giftcard-40 {
+  background-image: url(../img/bg/giftCards/bg-gf-40.jpg);
+}
+
+.giftcard-50 {
+  background-image: url(../img/bg/giftCards/bg-gf-50.jpg);
+}
+
 .giftcard-80 {
   background-image: url(../img/bg/giftCards/bg-gf-80.jpg);
 }
 
 .giftcard-100 {
   background-image: url(../img/bg/giftCards/bg-gf-100.jpg);
+}
+
+.giftcard-150 {
+  background-image: url(../img/bg/giftCards/bg-gf-150.jpg);
 }
 
 .giftCard-nominal--detail {
@@ -6306,7 +6322,7 @@ iframe {
 }
 
 .giftCard-nominal--title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -6340,12 +6356,34 @@ iframe {
   -o-border-radius: .25rem;
 }
 
-.giftCard-nominal--footer-label {
-  font-size: .75rem;
+.giftcard-validity {
+  font-size: .675rem;
+  text-align: center;
+  padding-top: .25rem;
+  font-weight: 500;
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+}
+
+.giftcard-validity--label {
   margin-bottom: 0;
 }
 
+.giftcard-validity--date {
+  margin-bottom: 0;
+}
+
+.giftCard-nominal--footer-label {
+  /* background-color: pink; */
+  font-size: .75rem;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .giftCard-nominal--footer-web {
+  font-size: .875rem;
   font-weight: 700;
   line-height: 1rem;
   margin-bottom: 0;

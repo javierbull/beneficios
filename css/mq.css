@@ -1264,8 +1264,8 @@
 
   /* GIFT CARD BALANCE */
   .giftCard-nominal {
-    width: 18.75rem;
-    height: 10.5rem;
+    width: 20rem;
+    height: 14rem;
   }
 
   .giftCard-nominal--detail {
@@ -1295,6 +1295,7 @@
     line-height: .7rem;
     padding: .25rem;
   }
+
 
   .giftCard-nominal--footer-label {
     font-size: .6rem;

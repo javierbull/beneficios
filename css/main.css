@@ -6256,6 +6256,8 @@ iframe {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .giftCard-nominal {
@@ -6264,7 +6266,6 @@ iframe {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-image: url(../img/bg/giftCards/bg-gf-100.jpg);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -6276,9 +6277,17 @@ iframe {
   align-items: center;
 }
 
+.giftcard-bg-25 {
+  background-image: url(../img/bg/giftCards/bg-gf-25.jpg);
+}
+
+.giftcard-bg-100 {
+  background-image: url(../img/bg/giftCards/bg-gf-100.jpg);
+}
+
 .giftCard-nominal--detail {
   /* background-color: lightgreen; */
-  padding: 1.5rem;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
   width: 50%;
   height: 100%;
   display: flex;
@@ -6365,8 +6374,6 @@ iframe {
 
 /* Tabs saldo */
 
-/* End tabs saldo */
-
 .wrap-tabs-bee {
   padding: 1rem;
   border: solid 1px var(--lineColor);
@@ -6400,6 +6407,7 @@ iframe {
   background-color: var(--yellow);
   border: 0;
 }
+/* End tabs saldo */
 
 .consideraciones {
   background-color: var(--jhon);

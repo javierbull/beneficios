@@ -1281,7 +1281,7 @@
   }
 
   .giftCard-nominal--img {
-    width: 40%;
+    width: 45%;
   }
 
   .box-giftcard-label {
@@ -1294,6 +1294,17 @@
     font-size: .7rem;
     line-height: .7rem;
     padding: .25rem;
+  }
+
+  .giftcard-validity {
+    font-size: .6rem;
+    text-align: center;
+    padding-top: .25rem;
+    font-weight: 500;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    flex-direction: column;
   }
 
 

@@ -1105,8 +1105,8 @@ footer {
 /* NAVBAR TOP */
 .navbar-top {
   /* background-color: yellowgreen; */
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: .25rem;
+  padding-bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1725,9 +1725,9 @@ nav.main .midmenu {
 }
 
 .banner-client .content-brand-logo {
-  /* background-color: lavender; */
+  /* background-color: lightgreen; */
   margin-right: 1rem;
-  height: 3.75rem;
+  height: 5rem;
   max-width: 10rem;
   min-width: 3.75rem;
   display: flex;
@@ -6436,6 +6436,10 @@ iframe {
 }
 
 .giftcard-150 .giftCard-balance {
+  color: #F58634;
+}
+
+.giftcard-200 .giftCard-balance {
   color: #F58634;
 }
 

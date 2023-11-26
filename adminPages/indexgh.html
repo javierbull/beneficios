@@ -1144,15 +1144,15 @@
 						</div>
 
 						<!-- Switch admin -->
-						<button class="btn btn-switch-admin btn-style-none" id="switch-admin-mobile-off">
-							<img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+						<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-mobile-off" data-toggle="modal" data-target="#modalAdminGh">
+							<img src="../img/icons/switch-off.svg" class="switch-admin" alt="">
 							<p class="label-switch-admin-mobile">
 								Perfil administrador
 							</p>
 						</button>
 
-						<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-mobile-on">
-							<img src="img/icons/switch-on.svg" class="switch-admin" alt="">
+						<button class="btn btn-switch-admin btn-style-none" id="switch-admin-mobile-on" data-toggle="modal" data-target="#modalColaboradorGh">
+							<img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
 							<p class="label-switch-admin-mobile">
 								Perfil administrador
 							</p>
@@ -3077,6 +3077,59 @@
 		</div>
 	</div>
 	<!-- end modal flyer -->
+
+		<!-- Modal Cambio a perfil admin -->
+		<div class="modal fade modal-bee modalAdminGh" id="modalAdminGh" role="dialog"
+		aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="header-modal-bee">
+						<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+						<h5 class="modal-title" id="exampleModalScrollableTitle">
+							Cambio de perfil
+						</h5>
+						<div class="content-modal-bee">
+							<p class="mb-0">
+								¿Confirma que desea cambiar a perfil <span class="text-bold">administrador</span>?
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer modal-footer-center modal-footer-vertical">
+					<a href="adminGh.html" type="button" class="btn btn-primario">Confirmar</a>
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Modal Cambio a perfil admin -->
+
+	<!-- Modal Cambio a perfil colaborador -->
+	<div class="modal fade modal-bee modalColaboradorGh" id="modalColaboradorGh" role="dialog"
+		aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="header-modal-bee">
+						<h5 class="modal-title" id="exampleModalScrollableTitle">
+							Cambio de perfil
+						</h5>
+						<div class="content-modal-bee">
+							<p class="mb-0">
+								¿Confirma que desea cambiar a perfil <span class="text-bold">colaborador</span>?
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer modal-footer-center modal-footer-vertical">
+					<a href="../index.html" type="button" class="btn btn-primario">Confirmar</a>
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Modal Cambio a perfil colaborador -->
 
 
 	<!-- FIN MODALS -->

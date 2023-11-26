@@ -3954,6 +3954,9 @@ nav.main .midmenu {
   min-height: 7.5rem;
   max-width: 7.5rem;
   max-height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-carrito__img,
@@ -4002,6 +4005,10 @@ nav.main .midmenu {
 
 .card-carrito__tag-delivery {
   font-size: 12px;
+}
+
+.card-carrito__vigencia {
+  font-size: .75rem;
 }
 
 .card-carrito__controls {

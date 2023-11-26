@@ -6562,4 +6562,60 @@ iframe {
   gap: .5rem;
 }
 /* END HEADER ADMIN */
+
+.content-btn-continuar-medioDePago {
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+.list-radio-medioDePago {
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.list-radio-medioDePago .form-check input {
+  position: absolute;
+}
+
+.list-group-item-radio {
+  border-bottom: 1px solid var(--border);
+}
+
+.list-group-item-radio:last-child {
+  border-bottom: none;
+}
+
+.form-check-label {
+  background-color: var(--lonely);
+  width: 100%;
+  cursor: pointer;
+  height: 4.5rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-label img {
+  height: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.form-check-label .form-check {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+.form-check-label input {
+  margin-top: 0;
+  height: 1rem;
+  width: 1rem;
+}
+/* MEDIOS DE PAGO */
+
+/* ENDS MEDIOS DE PAGO */
 /* END CLASES DEL PERFIL ADMINSITRADOR */

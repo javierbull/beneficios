@@ -923,7 +923,7 @@ footer {
 }
 
 .footer-main {
-  background-color: var(--midYellow);
+  background-color: var(--yellow);
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -941,7 +941,7 @@ footer {
 }
 
 .list-group-footer .list-group-item {
-  background-color: var(--midYellow);
+  background-color: var(--yellow);
   border: none;
   color: var(--black);
   padding-left: 0;
@@ -957,7 +957,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: var(--midYellow);
+  background-color: var(--yellow);
   padding-top: .5rem;
   padding-bottom: 1rem;
   padding-left: 2rem;

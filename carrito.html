@@ -25,46 +25,103 @@
 	<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
 
 	<header class="bg-white">
-
 		<nav class="navbar navbar-top navbar-expand-lg">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/logos/logoBeeBeneficios.svg" alt="Logo bee Beneficios">
-				</a>
+				<div class="banner-client banner-client-desktop">
+					<div class="content-brand-logo">
+						<!-- <img src="img/logos/logos_empresas/logoClienteCuadrado.png" alt=""> -->
+						<!-- <img src="img/logos/logos_empresas/logoClienteRectangular.png" alt=""> -->
+						<!-- <img src="img/logos/logos_empresas/ministerioPublico.png" alt=""> -->
+						<img src="img/logos/logos_empresas/win.png" alt="">
+						<!-- <img src="img/logos/logos_empresas/pinkberry.png" alt=""> -->
+					</div>
+					<div class="content-text-client">
+						Hola Charlie, te damos la bienvenida, ahora podrás disfrutar de grandes beneficios
+					</div>
+				</div>
 
-				<div class="content-user-profile-navbar ml-auto">
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<button class="btn btn-style-none dropdown-toggle btn-dropdown-perfil" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<img src="img/profiles/perfil.png" class="img-user img-fluid" alt="Foto usuario">
-								<div class="greetings-user">
-									Hola <span class="name-user">Javier</span>
+				<div class="delivery-address">
+					<span class="material-icons icon-location">
+						location_on
+					</span>
+					<div class="delivery-address--text">
+						<p class="delivery-address--label">
+							Entregar en:
+						</p>
+						<button class="btn btn-style-none btn-user-address">
+							<p class="delivery-address-client line-clamp line-clamp-1">
+								Av. Arenales 1912, Lince
+							</p>
+							<span class="material-icons">
+								expand_more
+							</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="wrap-switch-btn-perfil">
+					<!-- Switch admin -->
+					<button class="btn btn-switch-admin btn-style-none" id="switch-admin-off" data-toggle="modal" data-target="#modalAdminGh">
+						<p class="label-switch-admin">
+							Perfil <br>
+							administrador
+						</p>
+						<img src="img/icons/switch-off.svg" class="switch-admin" alt="">
+					</button>
+
+					<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-on" data-toggle="modal" data-target="#modalColaboradorGh">
+						<p class="label-switch-admin">
+							Perfil <br>
+							administrador
+						</p>
+						<img src="img/icons/switch-on.svg" class="switch-admin" alt="">
+					</button>
+					<!-- End switch admin -->
+
+					<div class="content-user-profile-navbar">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<button class="btn btn-style-none dropdown-toggle btn-dropdown-perfil" href="#"
+									id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									<div class="saldo-user">
+										<p class="saldo-label">
+											Saldo acumulado
+										</p>
+										<p class="saldo-number">
+											S/. 120.00
+										</p>
+									</div>
+									<img src="img/profiles/perfil.png" class="img-user img-fluid" alt="Foto usuario">
+									<div class="material-icons">
+										expand_more
+									</div>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-user shadow"
+									aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="perfil.html">
+										Perfil
+									</a>
+									<a class="dropdown-item" href="compras.html">
+										Mis vales
+									</a>
+									<a class="dropdown-item" href="compras.html">
+										Mis Packs Anuales
+									</a>
+									<a class="dropdown-item" href="giftcard.html">
+										Mis Gift Cards
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="../login.html">
+										Cerrar sesión
+									</a>
 								</div>
-								<div class="material-icons">
-									expand_more
-								</div>
-							</button>
-							<div class="dropdown-menu dropdown-menu-right dropdown-menu-user shadow" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="perfil.html">
-									Perfil
-								</a>
-								<a class="dropdown-item" href="compras.html">
-									Mis vales
-								</a>
-								<a class="dropdown-item" href="activaciones.html">
-									Activaciones
-								</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="login.html">
-									Cerrar sesión
-								</a>
-							</div>
-						</li>
-					</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
-
 	</header>
 
 	<!-- NAVBAR CATEGORIAS -->
@@ -535,7 +592,7 @@
 					<input type="text" list=text_editors class="form-control bg-white border-none form-control-style-none form-control-search" placeholder="Buscar">
 				</div>
 
-				<a href="carrito.html" class="btn material-icons-outlined shopping_cart-btn btn-style-none" type="button">
+				<a href="carrito.html" class="btn material-icons-outlined shopping_cart-btn btn-style-none d-none" type="button">
 					shopping_cart
 					<span class="badge-bee number-text-semiBold">04</span>
 				</a>

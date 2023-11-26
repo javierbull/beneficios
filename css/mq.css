@@ -232,6 +232,16 @@
   }
 
   /* END SECTION GIFT CARD BALANCE */
+
+   /* SELECCION MEDIO DE PAGO  GH*/
+   .content-btn-continuar-medioDePago {
+    display: flex;
+  }
+
+  .resumen-compra-mp-gh{
+    display: none;
+  }
+  /* END SELECCION MEDIO DE PAGO GH */
 }
 
 /* Fin tablet landscape */
@@ -2010,6 +2020,18 @@
     min-width: 15rem;
   }
   /* END GIFT CARDS BALANCE */
+
+   /* SELECCION MEDIO DE PAGO */
+   .content-btn-continuar-medioDePago .btn {
+    width: 100%;
+  }
+
+  .form-check-label img {
+    height: 1.2rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+  /* END SELECCION MEDIO DE PAGO */
 }
 
 /* Fin cell portrait */

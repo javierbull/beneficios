@@ -67,43 +67,58 @@
 					</div>
 				</div>
 
-				<div class="content-user-profile-navbar">
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<button class="btn btn-style-none dropdown-toggle btn-dropdown-perfil" href="#"
-								id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-								aria-expanded="false">
-								<div class="saldo-user">
-									<p class="saldo-label">
-										Saldo acumulado
-									</p>
-									<p class="saldo-number">
-										S/. 120.00
-									</p>
+				<div class="wrap-switch-btn-perfil">
+					<!-- Switch admin -->
+					<button class="btn btn-switch-admin btn-style-none" id="switch-admin-off">
+						<p class="label-switch-admin">
+							Perfil <br>
+							administrador
+						</p>
+						<img src="img/icons/switch-off.svg" class="switch-admin" alt="">
+					</button>
+					<!-- End switch admin -->
+
+					<div class="content-user-profile-navbar">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<button class="btn btn-style-none dropdown-toggle btn-dropdown-perfil" href="#"
+									id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									<div class="saldo-user">
+										<p class="saldo-label">
+											Saldo acumulado
+										</p>
+										<p class="saldo-number">
+											S/. 120.00
+										</p>
+									</div>
+									<img src="img/profiles/perfil.png" class="img-user img-fluid" alt="Foto usuario">
+									<div class="material-icons">
+										expand_more
+									</div>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-user shadow"
+									aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="perfil.html">
+										Perfil
+									</a>
+									<a class="dropdown-item" href="compras.html">
+										Mis vales
+									</a>
+									<a class="dropdown-item" href="compras.html">
+										Mis Packs Anuales
+									</a>
+									<a class="dropdown-item" href="giftcard.html">
+										Mis Gift Cards
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="../login.html">
+										Cerrar sesión
+									</a>
 								</div>
-								<img src="img/profiles/perfil.png" class="img-user img-fluid" alt="Foto usuario">
-								<div class="material-icons">
-									expand_more
-								</div>
-							</button>
-							<div class="dropdown-menu dropdown-menu-right dropdown-menu-user shadow"
-								aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="perfil.html">
-									Perfil
-								</a>
-								<a class="dropdown-item" href="compras.html">
-									Mis vales
-								</a>
-								<a class="dropdown-item" href="activaciones.html">
-									Activaciones
-								</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="login.html">
-									Cerrar sesión
-								</a>
-							</div>
-						</li>
-					</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>

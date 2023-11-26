@@ -3529,7 +3529,6 @@ nav.main .midmenu {
   /* background-color: lavender; */
   display: flex;
   gap: .5rem;
-  align-items: center;
   margin-bottom: 1.5rem;
 }
 
@@ -3559,7 +3558,7 @@ nav.main .midmenu {
 }
 
 .saldo-cliente-mobile {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .info-user--name {

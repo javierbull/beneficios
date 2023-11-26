@@ -69,7 +69,7 @@
 
 				<div class="wrap-switch-btn-perfil">
 					<!-- Switch admin -->
-					<button class="btn btn-switch-admin btn-style-none" id="switch-admin-off">
+					<button class="btn btn-switch-admin btn-style-none" id="switch-admin-off" data-toggle="modal" data-target="#modalAdminGh">
 						<p class="label-switch-admin">
 							Perfil <br>
 							administrador
@@ -1977,128 +1977,6 @@
 		</div>
 		<!-- END SECTION PRODUCTOS DESTACADOS -->
 
-		<!-- SECTION GRID IMG CATEGORIES -->
-		<!-- <section class="section section-grid-categories">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="header-section">
-							<h2 class="title-section">
-								Categorías
-							</h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="grid-container-categorias">
-					<div class="category-item">
-						<a href="#">
-							<div class="img-categories-container">
-								<img src="img/bg/categorias/cd-entretenimiento-1.png" alt="Entretenimiento">
-								<img src="img/bg/categorias/cd-entretenimiento-2.png" alt="Entretenimiento">
-								<img src="img/bg/categorias/cd-entretenimiento-3.png" alt="Entretenimiento">
-							</div>
-							<div class="category_name">
-								<p>
-									Entretenimiento
-								</p>
-							</div>
-						</a>
-					</div>
-
-					<div class="category-item">
-						<a href="#">
-							<div class="img-categories-container">
-								<img src="img/bg/categorias/cine-1.png" alt="Cine">
-								<img src="img/bg/categorias/cine-2.png" alt="Cine">
-								<img src="img/bg/categorias/cine-3.png" alt="Cine">
-							</div>
-							<div class="category_name">
-								<p>
-									Cine
-								</p>
-							</div>
-						</a>
-					</div>
-
-					<div class="category-item">
-						<a href="#">
-							<div class="img-categories-container">
-								<img src="img/bg/categorias/restaurantes-1.png" alt="Restaurantes">
-								<img src="img/bg/categorias/restaurantes-2.png" alt="Restaurantes">
-								<img src="img/bg/categorias/restaurantes-3.png" alt="Restaurantes">
-							</div>
-							<div class="category_name">
-								<p>
-									Restaurantes
-								</p>
-							</div>
-						</a>
-					</div>
-
-					<div class="category-item">
-						<a href="#">
-							<div class="img-categories-container">
-								<img src="img/bg/categorias/montalvoDama-1.png" alt="Belleza Mujer">
-								<img src="img/bg/categorias/montalvoforMen-2.png" alt="Belleza Hombre">
-								<img src="img/bg/categorias/montalvoDama-3.png" alt="Belleza Mujer">
-							</div>
-							<div class="category_name">
-								<p>
-									Belleza
-								</p>
-							</div>
-						</a>
-					</div>
-
-					<div class="category-item">
-						<a href="#">
-							<div class="img-categories-container">
-								<img src="img/bg/categorias/boxesYregalos-1.png" alt="Boxes y Regalos">
-								<img src="img/bg/categorias/boxesYregalos-2.png" alt="Boxes y Regalos">
-								<img src="img/bg/categorias/boxesYregalos-3.png" alt="Boxes y Regalos">
-							</div>
-							<div class="category_name">
-								<p>
-									Boxes y Regalos
-								</p>
-							</div>
-						</a>
-					</div>
-
-					<div class="category-item">
-						<a href="#">
-							<div class="img-categories-container">
-								<img src="img/bg/categorias/deportes-1.png" alt="Deportes">
-								<img src="img/bg/categorias/deportes-2.png" alt="Deportes">
-								<img src="img/bg/categorias/deportes-3.png" alt="Deportes">
-							</div>
-							<div class="category_name">
-								<p>
-									Deportes
-								</p>
-							</div>
-						</a>
-					</div>
-
-					<div class="category-item">
-						<a href="#">
-							<div class="img-categories-container">
-								<img src="img/bg/categorias/educacion-1.png" alt="Educación">
-								<img src="img/bg/categorias/educacion-2.png" alt="Educación">
-								<img src="img/bg/categorias/educacion-3.png" alt="Educación">
-							</div>
-							<div class="category_name">
-								<p>
-									Educación
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-		</section> -->
-		<!-- FIN SECTION GRID IMG CATEGORIES -->
-
 		<!-- SECTION GIFT CARDS CAROUSEL -->
 		<div class="section">
 			<div class="container">
@@ -3331,6 +3209,38 @@
 		</div>
 	</div>
 	<!-- end modal flyer -->
+
+	<!-- Modal Acerca de Bee-->
+	<div class="modal fade modal-bee modalAdminGh" id="modalAdminGh" role="dialog"
+		aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
+			<div class="modal-content">
+				<!-- <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div> -->
+				<div class="modal-body">
+					<div class="header-modal-bee">
+						<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+						<h5 class="modal-title" id="exampleModalScrollableTitle">
+							Cambio de perfil
+						</h5>
+						<div class="content-modal-bee">
+							<p class="mb-0">
+								¿Confirma que desea cambiar a perfil <span class="text-bold">administrador</span>?
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer modal-footer-center modal-footer-vertical">
+					<button type="button" class="btn btn-primario">Confirmar</button>
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal Acerca de Bee-->
 
 
 	<!-- FIN MODALS -->

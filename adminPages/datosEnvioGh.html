@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Medio de pago GH</title>
+	<title>Datos de envío</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="../img/icons/favicon.png" type="image/x-icon" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -1208,7 +1208,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col container-link-back">
-							<a href="carrito.html" class="btn-link inline-flex btn-icon-left">
+							<a href="medioDePagoGh.html" class="btn-link inline-flex btn-icon-left">
 								<span class="material-icons">
 									arrow_back
 								</span>
@@ -1221,7 +1221,7 @@
 	
 					<div class="header-section-vertical">
 						<h2 class="title-section">
-							Selecciona un medio de pago
+							Transfiere <span>s/120.00</span> desde <span>Yape</span>
 						</h2>
 						<p class="description-header-section">
 							No demores en pagar, solo podemos reservarte stock por tiempo limitado.
@@ -1230,61 +1230,201 @@
 	
 					<div class="row d-flex justify-content-between">
 						<div class="col-xl-7">
-							<ul class="list-radio-medioDePago">
-								<li class="list-group-item-radio">
-									<label class="form-check-label" for="radioTipodePagoPedidos1">
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="radioTipodePagoPedidos" id="radioTipodePagoPedidos1" value="option1">
-											<img src="../img/logos/logoYape.png" alt="Yape">
-											Yape
+							<div class="card-medioDePago-seleccionado card-shadow" id="InfoPagoYape">
+								<div class="cardMedioDepago-seleccionado-header">
+									<img src="img/logos/logoYape.png" alt="Yape">
+									<a href="medioDePago.html">Modificar</a>
+								</div>
+								<div class="cardMedioDepago-seleccionado-body">
+									<img src="img/bg/bannerYape.jpg" class="showDesktop" alt="Paga con Yape al 949 303 986">
+									<img src="img/bg/bannerYapeMobile.jpg" class="showMobile" alt="Paga con Yape al 949 303 986">
+								</div>
+								<div class="cardMedioDepago-seleccionado-footer">
+									<div class="Copiar-texto">
+										<p id="numeroYape">
+											Teléfono: <span>949 303 986</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar número
+										</button>
+									</div>
+								</div>
+							</div>
+	
+							<div class="card-medioDePago-seleccionado card-shadow" id="InfoPagoBCP">
+								<div class="cardMedioDepago-seleccionado-header">
+									<img src="img/logos/logoBCP.png" alt="Yape">
+									<a href="medioDePago.html">Modificar</a>
+								</div>
+								<div class="cardMedioDepago-seleccionado-footer">
+									<div class="Copiar-texto">
+										<p id="ccBCP">
+											CC: <span>1911955456079</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CC
+										</button>
+									</div>
+									<div class="Copiar-texto">
+										<p id="cciBCP">
+											CCI: <span>0021911955456079</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CCI
+										</button>
+									</div>
+								</div>
+							</div>
+	
+							<div class="card-medioDePago-seleccionado card-shadow" id="InfoPagoInterbank">
+								<div class="cardMedioDepago-seleccionado-header">
+									<img src="img/logos/logoInterbank.png" alt="Yape">
+									<a href="medioDePago.html">Modificar</a>
+								</div>
+								<div class="cardMedioDepago-seleccionado-footer">
+									<div class="Copiar-texto">
+										<p id="ccInterbank">
+											CC: <span>8983003928726</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CC
+										</button>
+									</div>
+									<div class="Copiar-texto">
+										<p id="cciInterbank">
+											CCI: <span>0038983003928726</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CCI
+										</button>
+									</div>
+								</div>
+							</div>
+	
+							<div class="card-medioDePago-seleccionado card-shadow" id="InfoPagoScotiabank">
+								<div class="cardMedioDepago-seleccionado-header">
+									<img src="img/logos/logoScotiabank.png" alt="Yape">
+									<a href="medioDePago.html">Modificar</a>
+								</div>
+								<div class="cardMedioDepago-seleccionado-footer">
+									<div class="Copiar-texto">
+										<p id="ccInterbank">
+											CC: <span>0007460767</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CC
+										</button>
+									</div>
+									<div class="Copiar-texto">
+										<p id="cciInterbank">
+											CCI: <span>00921500000746076702</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CCI
+										</button>
+									</div>
+								</div>
+							</div>
+	
+							<div class="card-medioDePago-seleccionado card-shadow" id="InfoPagoBBVA">
+								<div class="cardMedioDepago-seleccionado-header">
+									<img src="img/logos/logoBBVA.png" alt="Yape">
+									<a href="medioDePago.html">Modificar</a>
+								</div>
+								<div class="cardMedioDepago-seleccionado-footer">
+									<div class="Copiar-texto">
+										<p id="ccInterbank">
+											CC: <span>01103380100015542</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CC
+										</button>
+									</div>
+									<div class="Copiar-texto">
+										<p id="cciInterbank">
+											CCI: <span>011033800010001554212</span>
+										</p>
+										<button class="btn btn-secundario" >
+											Copiar CCI
+										</button>
+									</div>
+								</div>
+							</div>
+	
+							<div class="header-section-vertical">
+								<h2 class="title-section">
+									Datos de envío
+								</h2>
+								<p class="description-header-section">
+									Completa el formulario para enviar tu pedido
+								</p>
+							</div>
+	
+							<div class="card-datos-envio card-shadow col-lg-10">
+								<form>
+									<div class="form-group">
+										<label for="inputPedidosNombreCliente">Nombre y apellido</label>
+										<input type="text" class="form-control" id="inputPedidosNombreCliente">
+										<div class="invalid-feedback">
+											Ingresa tu nombre y apellido
 										</div>
-									</label>
-								</li>
-								<li class="list-group-item-radio">
-									<label class="form-check-label" for="radioTipodePagoPedidos2">
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="radioTipodePagoPedidos" id="radioTipodePagoPedidos2" value="option2">
-											<img src="../img/logos/logoBCP.png" alt="BCP">
-											BCP
+									</div>
+	
+									<div class="form-group">
+										<label for="inputPedidosCorreoCliente">Correo</label>
+										<input type="text" class="form-control" id="inputPedidosCorreoCliente">
+										<div class="invalid-feedback">
+											Ingresa tu correo
 										</div>
-									</label>
-								</li>
-								<li class="list-group-item-radio">
-									<label class="form-check-label" for="radioTipodePagoPedidos3">
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="radioTipodePagoPedidos" id="radioTipodePagoPedidos3" value="option3">
-											<img src="../img/logos/logoInterbank.png" alt="Interbank">
-											Interbank
+									</div>
+	
+									<div class="form-group">
+										<label for="inputPedidosCelularCliente">Celular</label>
+										<input type="text" class="form-control" id="inputPedidosCelularCliente">
+										<div class="invalid-feedback">
+											Ingresa tu celular
 										</div>
-									</label>
-								</li>
-								<li class="list-group-item-radio">
-									<label class="form-check-label" for="radioTipodePagoPedidos4">
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="radioTipodePagoPedidos" id="radioTipodePagoPedidos4" value="option4">
-											<img src="../img/logos/logoScotiabank.png" alt="Scotiabank">
-											Scotiabank
+									</div>
+	
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label for="inputPedidosIdCliente">Documento</label>
+											<select id="inputPedidosIdCliente" class="form-control">
+												<option selected>Selecciona</option>
+												<option>DNI</option>
+												<option>CE</option>
+											</select>
+											<div class="invalid-feedback">
+												Selecciona tipo de documento
+											</div>
 										</div>
-									</label>
-								</li>
-								<li class="list-group-item-radio">
-									<label class="form-check-label" for="radioTipodePagoPedidos5">
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="radioTipodePagoPedidos" id="radioTipodePagoPedidos5" value="option5">
-											<img src="../img/logos/logoBBVA.png" alt="BBVA">
-											BBVA
+	
+										<div class="form-group col-md-6">
+											<label for="inputPedidosIdNumberCliente">Número</label>
+											<input type="number" class="form-control" id="inputPedidosIdNumberCliente">
+											<div class="invalid-feedback">
+												Ingresa número de documento
+											</div>
 										</div>
-									</label>
-								</li>
-							</ul>
-							<div class="content-btn-continuar-medioDePago">
-								<a href="datosEnvioGh.html" class="btn btn-primario btn-large">
-									Continuar
-								</a>
+									</div>
+	
+									<div class="form-group">
+										<label>Cargar voucher de pago</label>
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+											<label class="custom-file-label" for="inputGroupFile04"></label>
+										</div>
+									</div>
+	
+									<a href="confirmacionPedido.html" class="btn btn-primario btn-block">
+										Enviar
+									</a>
+	
+								</form>
 							</div>
 						</div>
 	
-						<div class="content-card-resumen-compra resumen-compra-mp-gh col-xl-4">
+						<div class="content-card-resumen-compra col-xl-4">
 							<div class="card-resumen-compra card-shadow">
 								<h3 class="title-resumen-compra">
 									Resumen de compra
@@ -1337,12 +1477,6 @@
 	
 								<div class="info-card-resumen-compra">
 									😊 Recuerda que tus compras son totalmente seguras en nuestra plataforma
-								</div>
-	
-								<div class="content-btn">
-									<a href="datosEnvioGh.html" class="btn btn-primario btn-large">
-										Continuar
-									</a>
 								</div>
 	
 							</div>

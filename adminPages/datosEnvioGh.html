@@ -1363,58 +1363,50 @@
 							<div class="card-datos-envio card-shadow col-lg-10">
 								<form>
 									<div class="form-group">
-										<label for="inputPedidosNombreCliente">Nombre y apellido</label>
-										<input type="text" class="form-control" id="inputPedidosNombreCliente">
+										<label for="inputPedidoGhTipoComp">Tipo de comprobante</label>
+										<select id="inputPedidoGhTipoComp" class="form-control">
+											<option selected>Seleccione</option>
+											<option>Factura</option>
+											<option>Boleta</option>
+										</select>
 										<div class="invalid-feedback">
-											Ingresa tu nombre y apellido
+											Seleccione el tipo de comprobante
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="inputPedidoGhRuc">RUC</label>
+										<input type="number" class="form-control" id="inputPedidoGhRuc" value="15425698541">
+										<div class="invalid-feedback">
+											Ingresa tu RUC
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="inputPedidoGhRazonSocial">Razón Social</label>
+										<input type="text" class="form-control" id="inputPedidoGhRazonSocial" value="Win SA">
+										<div class="invalid-feedback">
+											Ingresa tu Razón Social
 										</div>
 									</div>
 	
 									<div class="form-group">
-										<label for="inputPedidosCorreoCliente">Correo</label>
-										<input type="text" class="form-control" id="inputPedidosCorreoCliente">
+										<label for="inputPedidoGhCorreo">Correo</label>
+										<input type="text" class="form-control" id="inputPedidoGhCorreo" value="gestionhumana@win.pe">
 										<div class="invalid-feedback">
 											Ingresa tu correo
 										</div>
 									</div>
 	
 									<div class="form-group">
-										<label for="inputPedidosCelularCliente">Celular</label>
-										<input type="text" class="form-control" id="inputPedidosCelularCliente">
+										<label for="inputPedidoGhCelular">Celular</label>
+										<input type="text" class="form-control" id="inputPedidoGhCelular" value="966354258">
 										<div class="invalid-feedback">
 											Ingresa tu celular
 										</div>
 									</div>
 	
-									<div class="form-row">
-										<div class="form-group col-md-6">
-											<label for="inputPedidosIdCliente">Documento</label>
-											<select id="inputPedidosIdCliente" class="form-control">
-												<option selected>Selecciona</option>
-												<option>DNI</option>
-												<option>CE</option>
-											</select>
-											<div class="invalid-feedback">
-												Selecciona tipo de documento
-											</div>
-										</div>
-	
-										<div class="form-group col-md-6">
-											<label for="inputPedidosIdNumberCliente">Número</label>
-											<input type="number" class="form-control" id="inputPedidosIdNumberCliente">
-											<div class="invalid-feedback">
-												Ingresa número de documento
-											</div>
-										</div>
-									</div>
-	
-									<div class="form-group">
-										<label>Cargar voucher de pago</label>
-										<div class="custom-file">
-											<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
-											<label class="custom-file-label" for="inputGroupFile04"></label>
-										</div>
-									</div>
+									
 	
 									<a href="confirmacionPedido.html" class="btn btn-primario btn-block">
 										Enviar

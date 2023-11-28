@@ -6563,6 +6563,7 @@ iframe {
 }
 /* END HEADER ADMIN */
 
+/* MEDIOS DE PAGO */
 .content-btn-continuar-medioDePago {
   display: flex;
   justify-content: flex-end;
@@ -6615,7 +6616,58 @@ iframe {
   height: 1rem;
   width: 1rem;
 }
-/* MEDIOS DE PAGO */
-
 /* ENDS MEDIOS DE PAGO */
+
+/* FORMULARIO DATOS DE ENVIO PEDIDOS */
+.card-medioDePago-seleccionado {
+  background-color: var(--lonely);
+  overflow: hidden;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardMedioDepago-seleccionado-header img {
+  display: inline-block;
+  height: 2rem;
+}
+
+.cardMedioDepago-seleccionado-header {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardMedioDepago-seleccionado-body {
+  /* background-color: orange; */
+  margin: 1.5rem 0 0 0;
+}
+
+.cardMedioDepago-seleccionado-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: .25rem;
+}
+
+.showMobile {
+  display: none !important;
+}
+
+.cardMedioDepago-seleccionado-footer .Copiar-texto {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.cardMedioDepago-seleccionado-footer p {
+  margin-bottom: 0;
+  margin-right: 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+/* END FORMULARIO DATOS DE ENVIO PEDIDOS */
+
 /* END CLASES DEL PERFIL ADMINSITRADOR */

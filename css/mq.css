@@ -2059,7 +2059,11 @@
     margin-bottom: .5rem;
   }
 
-
+  .wrap-img-preview {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+  }
     /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
 
 }

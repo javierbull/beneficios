@@ -2032,6 +2032,34 @@
     margin-left: .5rem;
   }
   /* END SELECCION MEDIO DE PAGO */
+
+  /* FORMULARIO DATOS DE ENVIO PEDIDOS */
+  .showMobile {
+    display: block !important;
+  }
+
+  .showDesktop {
+    display: none !important;
+  }
+
+  .cardMedioDepago-seleccionado-footer .Copiar-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copiar-texto {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .copiar-texto p {
+    margin-bottom: .5rem;
+  }
+
+
+    /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
+
 }
 
 /* Fin cell portrait */

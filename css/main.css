@@ -6668,6 +6668,60 @@ iframe {
   font-size: 1.25rem;
   font-weight: 600;
 }
+
+.wrap-img-preview {
+  /* background-color: lavender; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imageWrapper {
+  background-color: var(--white);
+  border: solid 1px var(--lineColor);
+  border-radius: .5rem;
+  overflow: hidden;
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper img {
+  width: 90%;
+}
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+.file-input-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  height: 100%;
+}
+
+.wrap-label-file-upload {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+}
+
+.wrap-label-file-upload  p {
+  margin-bottom: 0;
+  color: var(--george);
+}
 /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
 
 /* END CLASES DEL PERFIL ADMINSITRADOR */

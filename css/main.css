@@ -6656,7 +6656,7 @@ iframe {
   display: none !important;
 }
 
-.cardMedioDepago-seleccionado-footer .Copiar-texto {
+.cardMedioDepago-seleccionado-footer .copiar-texto {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;

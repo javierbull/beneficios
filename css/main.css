@@ -6759,21 +6759,19 @@ iframe {
 
 /* Uploads files  */
 .box {
-  background-color: pink;
+  /* background-color: pink; */
   margin-bottom: 1.5rem;
 }
 
-.upload-area-title {
-  background-color: lavender;
-  font-size: 1.25rem;
-  font-weight: 600;
+.accepted {
+  color: var(--bgAtWorkLight);
+  font-size: .75rem;
 }
 
 .uploadlabel {
   background-color: var(--white);
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
@@ -6782,7 +6780,7 @@ iframe {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
-  border: 3px dashed #ced4da;
+  border: 2px dashed var(--george);
   cursor: pointer;
 }
 
@@ -6791,11 +6789,11 @@ iframe {
 }
 
 .uploadlabel span {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .uploaded {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   font-size: 1rem;
   font-weight: 600;
 }
@@ -6812,9 +6810,11 @@ iframe {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  margin-bottom: .5rem;
 }
 
 .showfilebox h3 {
+  font-size: 1rem;
   margin-bottom: 0;
 }
 
@@ -6825,23 +6825,15 @@ iframe {
   align-items: center;
 }
 
-.right span {
-  background-color: pink;
-  width: 2rem;
-  height: 2rem;
+.showfilebox .right span {
   font-size: 2rem;
   line-height: 2rem;
   color: var(--danger);
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  font-weight: 600;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
+
 /* End uploads files */
 
 /* END FORMULARIO DATOS DE ENVIO PEDIDOS */

@@ -6837,6 +6837,12 @@ iframe {
 
 /* End uploads files */
 
+/* datos orden de compra */
+.ordenDeCompraBox {
+  display: none;
+}
+/* end datos orden de compra */
+
 /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
 
 /* PÁGINA CONFIRMACIÓN PEDIDO GH */

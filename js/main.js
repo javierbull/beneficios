@@ -318,4 +318,12 @@ $('#input-preview-img-gh').change(function(){
 });
 // END LOGO EMPRESA FORMULARIO PEDIDO GH
 
+$("#customCheckDatosOrdenCompra").click(function () {
+  if ($(this).is(":checked")) {
+      $(".ordenDeCompraBox").show();
+  } else {
+      $(".ordenDeCompraBox").hide();
+  }
+});
+
 });

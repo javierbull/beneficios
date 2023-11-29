@@ -2091,6 +2091,19 @@
   .uploadlabel {
     flex-direction: column;
   }
+
+  .showfilebox p {
+    font-size: .75rem;
+  }
+
+  .showfilebox .right span {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--danger);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
     /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
 
 }

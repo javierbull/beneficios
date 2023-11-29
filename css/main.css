@@ -6747,6 +6747,10 @@ iframe {
 .btn-tooltip span {
   font-size: 2rem;
 }
+
+.img-preview-pdf {
+  width: 100%;
+}
 /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
 
 /* PÁGINA CONFIRMACIÓN PEDIDO GH */

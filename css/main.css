@@ -13,7 +13,7 @@
   --success: #067940;
   --lightGreen: #EEF6F0;
   --links: #0039CC;
-  --danger: #BA0321;
+  --danger: #EF2E55;
   --lightYellow: #FFFDF8;
   --midYellow: #FFE578;
   --lightOrange: #FFB11A;
@@ -6761,6 +6761,86 @@ iframe {
 .box {
   background-color: pink;
   margin-bottom: 1.5rem;
+}
+
+.upload-area-title {
+  background-color: lavender;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.uploadlabel {
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border: 3px dashed #ced4da;
+  cursor: pointer;
+}
+
+.uploadlabel p {
+  margin-bottom: 0;
+}
+
+.uploadlabel span {
+  font-size: 3rem;
+}
+
+.uploaded {
+  background-color: lightgreen;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.showfilebox {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid  #ced4da;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.showfilebox h3 {
+  margin-bottom: 0;
+}
+
+.showfilebox .right {
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right span {
+  background-color: pink;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--danger);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 /* End uploads files */
 

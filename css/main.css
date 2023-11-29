@@ -6677,6 +6677,7 @@ iframe {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  margin-bottom: 1rem;
 }
 
 .wrap-img-preview {
@@ -6737,6 +6738,10 @@ iframe {
   position: relative;
 }
 
+.card-logo-mensaje-pdf-pedido__bottom .form-group {
+  margin-bottom: 0;
+}
+
 .btn-tooltip {
   padding: 0;
   position: absolute;
@@ -6751,6 +6756,14 @@ iframe {
 .img-preview-pdf {
   width: 100%;
 }
+
+/* Uploads files  */
+.box {
+  background-color: pink;
+  margin-bottom: 1.5rem;
+}
+/* End uploads files */
+
 /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
 
 /* PÁGINA CONFIRMACIÓN PEDIDO GH */

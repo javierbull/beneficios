@@ -1567,7 +1567,7 @@
   /* FIN CARD HOME */
   /* SALIENT PRODUCT */
   .content-img-salient-product {
-    background-color: orange;
+    /* background-color: orange; */
     position: relative;
     overflow: hidden;
     border-radius: 0;
@@ -1645,7 +1645,7 @@
   }
 
   .content-btn-product-detalle .btn-primario {
-    background-color: pink;
+    /* background-color: pink; */
     width: 100%;
   }
 
@@ -2085,6 +2085,10 @@
   .wrap-img-preview {
     /* background-color: aquamarine; */
     display: flex;
+    flex-direction: column;
+  }
+
+  .uploadlabel {
     flex-direction: column;
   }
     /* END FORMULARIO DATOS DE ENVIO PEDIDOS */

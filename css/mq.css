@@ -1355,6 +1355,23 @@
     right: 1rem;
   }
   /* END GIFT CARD BALANCE */
+
+  /* CONFIRM PEDIDO GH */
+  .content-card-confirm {
+    /* background-color: pink; */
+    width: 100%;
+    min-height: 100vh;
+    padding: 3.5rem 1.5rem
+  }
+
+  .card-confirm-pedido-gh img {
+    width: 3.5rem;
+  }
+
+  .card-confirm-pedido-gh h1 {
+    font-size: 1.5rem;
+  }
+  /* END CONFIRM PEDIDO GH */
 }
 
 /* Fin cell landscape */

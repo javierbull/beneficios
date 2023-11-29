@@ -242,6 +242,12 @@
     display: none;
   }
   /* END SELECCION MEDIO DE PAGO GH */
+
+  /* CONFIEM PEDIDO GH */
+  .main-confirm {
+    padding-top: 4rem;
+  }
+  /* END CONFIRM PEDIDO GH */
 }
 
 /* Fin tablet landscape */

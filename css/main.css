@@ -6774,6 +6774,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: .5rem;
   padding: 1.5rem;
   border-radius: .5rem;
   -webkit-border-radius: .5rem;

@@ -6920,11 +6920,12 @@ iframe {
   padding-left: 0;
   height: calc(100vh - 6rem);
   overflow-y: auto;
+  padding: 1.5rem;
 }
 
 .admin-panel {
   background-color: lavender;
-  padding: 1rem;
+  padding: 1.5rem;
   min-height: 100vh;
   width: calc(100% - 20rem);
   margin-top: 6rem;

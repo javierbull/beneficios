@@ -6901,5 +6901,35 @@ iframe {
 /* END CLASES DEL PERFIL ADMINSITRADOR */
 
 /* MÓDULO ADMINISTRAR VALES */
+.main-admin {
+  background-color: pink;
+}
+
+/* sidebar admin */
+.sidebar-admin {
+  background-color: var(--white);
+  width: 20rem;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+}
+
+.sidebar-admin-list {
+  background-color: lightyellow;
+  list-style: none;
+  padding-left: 0;
+  height: calc(100vh - 6rem);
+  overflow-y: auto;
+}
+
+.admin-panel {
+  background-color: lavender;
+  padding: 1rem;
+  min-height: 100vh;
+  width: calc(100% - 20rem);
+  margin-top: 6rem;
+  margin-left: 20rem;
+}
+/* End sidebar admin */
 
 /* END MÓDULO ADMNISTRAR VALES */

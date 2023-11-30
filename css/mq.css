@@ -248,6 +248,13 @@
     padding-top: 4rem;
   }
   /* END CONFIRM PEDIDO GH */
+
+  
+  /* ADMIN PEDIDOS GH */
+  .main-admin {
+    padding-top: 4rem;
+  }
+  /* END ADMIN PEDIDOS GH */
 }
 
 /* Fin tablet landscape */

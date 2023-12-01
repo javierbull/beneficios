@@ -6936,7 +6936,6 @@ iframe {
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
-  margin-bottom: 1px;
 }
 
 .sidebar-item-btn:hover {
@@ -6983,8 +6982,15 @@ iframe {
   text-decoration: none;
 }
 
+.btn-sidebar-toggle {
+  justify-content: space-between;
+}
 
-
+.btn-sidebar-toggle-left {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
 /* End sidebar admin */
 
 /* Admin panel */
@@ -6997,7 +7003,15 @@ iframe {
   margin-left: 20rem;
 }
 
+.panel {
+  background-color: lightpink;
+  display: none;
+  width: 100%;
+}
 
+.active-panel {
+  display: block;
+}
 /* End admin panel */
 
 /* END MÓDULO ADMNISTRAR VALES */

@@ -6915,7 +6915,7 @@ iframe {
 }
 
 .sidebar-admin-list {
-  background-color: lightyellow;
+  background-color: var(--white);
   list-style: none;
   padding-left: 0;
   height: calc(100vh - 6rem);
@@ -6926,21 +6926,64 @@ iframe {
 .sidebar-item-btn {
   background-color: var(--white);
   width: 100%;
+  display: flex;
   justify-content: flex-start;
+  align-items: center;
+  border-radius: 2.5rem;
+  gap: .5rem;
+  padding: .75rem 1.25rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  margin-bottom: 1px;
+}
+
+.sidebar-item-btn:hover {
+  background-color: var(--midYellow);
+}
+
+.sidebar-item-btn:focus {
+  box-shadow: none;
+}
+
+.active-item {
+  background-color: var(--midYellow);
+}
+
+.sidebar-list-collapse {
+  list-style: none;
+  /* background-color: tomato; */
+}
+
+.sidebar-item-collapse {
+  display: inline-block;
+  background-color: var(--white);
+  padding: .5rem 1.25rem .5rem 3.25rem;
+  height: 100%;
+  width: 100%;
   border-radius: 2.5rem;
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
+  text-decoration: none;
+  color: var(--black);
 }
 
-.active-item {
-  background-color: lavender;
+.sidebar-item-collapse:hover {
+  background-color: var(--jhon);
+  color: var(--black);
+  text-decoration: none;
 }
 
 .sidebar-item-collapse:focus {
-  background-color: pink;
+  background-color: var(--jhon);
+  color: var(--black);
+  text-decoration: none;
 }
+
+
 
 /* End sidebar admin */
 

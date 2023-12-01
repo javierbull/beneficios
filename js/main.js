@@ -334,6 +334,10 @@ $(".sidebar-item-btn").on('click', function(){
   $(this).addClass('active-item');
 });
 
+$(".btn-sidebar-toggle").click(function(){
+  $(".sidebar-list-collapse").toggle();
+});
+
 // End sidebar item active
 
 });

@@ -318,6 +318,7 @@ $('#input-preview-img-gh').change(function(){
 });
 // END LOGO EMPRESA FORMULARIO PEDIDO GH
 
+// Mostrar orden de compra
 $("#customCheckDatosOrdenCompra").click(function () {
   if ($(this).is(":checked")) {
       $(".ordenDeCompraBox").show();
@@ -325,5 +326,14 @@ $("#customCheckDatosOrdenCompra").click(function () {
       $(".ordenDeCompraBox").hide();
   }
 });
+// End mostrar orden de compra
+
+// Sidebar active item
+$(".sidebar-item-btn").on('click', function(){
+  $(".sidebar-item-btn").removeClass('active-item');
+  $(this).addClass('active-item');
+});
+
+// End sidebar item active
 
 });

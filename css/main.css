@@ -6923,6 +6923,28 @@ iframe {
   padding: 1.5rem;
 }
 
+.sidebar-item-btn {
+  background-color: var(--white);
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+}
+
+.active-item {
+  background-color: lavender;
+}
+
+.sidebar-item-collapse:focus {
+  background-color: pink;
+}
+
+/* End sidebar admin */
+
+/* Admin panel */
 .admin-panel {
   background-color: lavender;
   padding: 1.5rem;
@@ -6931,6 +6953,8 @@ iframe {
   margin-top: 6rem;
   margin-left: 20rem;
 }
-/* End sidebar admin */
+
+
+/* End admin panel */
 
 /* END MÓDULO ADMNISTRAR VALES */

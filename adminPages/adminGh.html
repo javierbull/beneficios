@@ -516,39 +516,32 @@
 		<!-- admin-panel -->
 		<div class="wrapper-main-panel">
 			<div class="sidebar-admin">
-				<div class="sidebar-admin-list">
-					<p>
-						primer item
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Quos debitis nostrum modi dicta ipsa incidunt odit blanditiis 
-						consequuntur beatae, nisi earum. Nostrum illum incidunt quo
-						 recusandae enim a quisquam quas vitae repellendus dignissimos 
-						 odit soluta libero quod adipisci beatae possimus optio deserunt 
-						 laboriosam dolor consequatur vero amet, quidem magni sequi.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Quos debitis nostrum modi dicta ipsa incidunt odit blanditiis 
-						consequuntur beatae, nisi earum. Nostrum illum incidunt quo
-						 recusandae enim a quisquam quas vitae repellendus dignissimos 
-						 odit soluta libero quod adipisci beatae possimus optio deserunt 
-						 laboriosam dolor consequatur vero amet, quidem magni sequi.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Quos debitis nostrum modi dicta ipsa incidunt odit blanditiis 
-						consequuntur beatae, nisi earum. Nostrum illum incidunt quo
-						 recusandae enim a quisquam quas vitae repellendus dignissimos 
-						 odit soluta libero quod adipisci beatae possimus optio deserunt 
-						 laboriosam dolor consequatur vero amet, quidem magni sequi.
-					</p>
-					
-					<p>
-						ultimo item
-					</p>			
-				</div>
+				<ul class="sidebar-admin-list">
+					<li class="sidebar-item">
+						<button class="btn sidebar-item-btn active-item">
+							Dashboard
+						</button>
+					</li>
+					<li class="sidebar-item">
+						<button class="btn sidebar-item-btn">
+							Perfil
+						</button>
+					</li>
+					<li class="sidebar-item">
+						<button class="btn sidebar-item-btn btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#admin-collapse" aria-expanded="true">
+							Vales corporativos
+							<span class="material-icons-outlined">
+								expand_more
+							</span>
+						</button>
+						<div class="collapse-" id="admin-collapse">
+							<ul class="btn-toggle-nav sidebar-list-collapse">
+								<li><a href="#" class="sidebar-item-collapse showAdmninistracionUsuarios">Usuarios</a></li>
+								<li><a href="#" class="sidebar-item-collapse showAdmninistracionEmpresas">Empresas</a></li>
+							</ul>
+						</div>
+					</li>			
+				</ul>
 			</div>
 			<div class="admin-panel">
 				<p>

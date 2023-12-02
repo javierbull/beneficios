@@ -321,6 +321,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: .5rem;
 }
 
 .inline-flex {
@@ -7012,6 +7013,26 @@ iframe {
 .active-panel {
   display: block;
 }
+
+.panel-header-top {
+  margin-bottom: 1.5rem;
+}
+
+.panel-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.panel-header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* End admin panel */
+
+/* Panel vales corporativos */
+
+/* End panel vales corporativos */
 
 /* END MÓDULO ADMNISTRAR VALES */

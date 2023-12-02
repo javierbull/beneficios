@@ -50,7 +50,8 @@
 
 				<div class="wrap-switch-btn-perfil">
 					<!-- Switch admin -->
-					<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-on" data-toggle="modal" data-target="#modalAdminGh">
+					<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-on" data-toggle="modal"
+						data-target="#modalAdminGh">
 						<p class="label-switch-admin">
 							Perfil <br>
 							administrador
@@ -58,13 +59,14 @@
 						<img src="../img/icons/switch-off.svg" class="switch-admin" alt="">
 					</button>
 
-					<button class="btn btn-switch-admin btn-style-none" id="switch-admin-off" data-toggle="modal" data-target="#modalColaboradorGh">
+					<button class="btn btn-switch-admin btn-style-none" id="switch-admin-off" data-toggle="modal"
+						data-target="#modalColaboradorGh">
 						<p class="label-switch-admin">
 							Perfil <br>
 							administrador
 						</p>
 						<img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
-					</button>		
+					</button>
 					<!-- End switch admin -->
 
 					<div class="content-user-profile-navbar">
@@ -107,7 +109,7 @@
 		</nav>
 	</header>
 
-	
+
 
 	<!-- Off-canvas sidebar markup, left/right or both. -->
 	<div id="bs-canvas-left" class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed bg-light h-100">
@@ -463,14 +465,16 @@
 						</div>
 
 						<!-- Switch admin -->
-						<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-mobile-off" data-toggle="modal" data-target="#modalAdminGh">
+						<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-mobile-off"
+							data-toggle="modal" data-target="#modalAdminGh">
 							<img src="../img/icons/switch-off.svg" class="switch-admin" alt="">
 							<p class="label-switch-admin-mobile">
 								Perfil administrador
 							</p>
 						</button>
 
-						<button class="btn btn-switch-admin btn-style-none" id="switch-admin-mobile-on" data-toggle="modal" data-target="#modalColaboradorGh">
+						<button class="btn btn-switch-admin btn-style-none" id="switch-admin-mobile-on"
+							data-toggle="modal" data-target="#modalColaboradorGh">
 							<img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
 							<p class="label-switch-admin-mobile">
 								Perfil administrador
@@ -558,20 +562,20 @@
 								</a>
 							</li>
 						</ul>
-					</li>	
-						
+					</li>
+
 				</ul>
-				
+
 			</div>
 			<div class="admin-panel">
-				
+
 				<!-- Dashboard panel -->
 				<div class="panel" id="dashboard-panel">
 					<h1>Dashboard</h1>
 					<p>
-						Lorem ipsum dolor sit amet consectetur 
-						adipisicing elit. Mollitia quod deserunt 
-						placeat sunt minus totam ullam odit dicta 
+						Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Mollitia quod deserunt
+						placeat sunt minus totam ullam odit dicta
 						obcaecati quia.
 					</p>
 				</div>
@@ -579,21 +583,37 @@
 
 				<!-- Vales corporativos panel -->
 				<div class="panel active-panel" id="dashboard-valesCorporativos">
-					<h1>Vales corporativos</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur 
-						adipisicing elit. Mollitia quod deserunt 
-						placeat sunt minus totam ullam odit dicta 
-						obcaecati quia.
-					</p>
+					<div class="panel-header">
+						<div class="panel-header-top">
+							<h1 class="panel-title">Vales corporativos</h1>
+							<p>
+								En esta sección se muestran todas tus solicitudes de vales corporativos
+							</p>
+						</div>
+						<div class="panel-header-bottom">
+							<button class="btn btn-secundario" data-toggle="modal"
+								data-target="#modalInfoEstadosValesGh">
+								<span class="material-icons-outlined">
+									info
+								</span>
+								Info estados
+							</button>
+							<button class="btn btn-secundario" data-toggle="modal" data-target="#modalFilterValesGh">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
 				</div>
 				<!-- End Vales corporativos panel -->
 
-				
+
 			</div>
 		</div>
 		<!-- end admin panel -->
-		
+
 
 	</main>
 
@@ -687,7 +707,7 @@
 	</div>
 	<!-- end modal flyer -->
 
-		<!-- Modal Cambio a perfil admin -->
+	<!-- Modal Cambio a perfil admin -->
 	<div class="modal fade modal-bee modalAdminGh" id="modalAdminGh" role="dialog"
 		aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
@@ -739,6 +759,50 @@
 		</div>
 	</div>
 	<!-- Fin Modal Cambio a perfil colaborador -->
+
+	<!-- Modalfiltro vales GH -->
+	<div class="modal fade" id="modalFilterValesGh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Estado</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+							  <option>Seleccione</option>
+							  <option>Solicitado</option>
+							  <option>Emitido</option>
+							  <option>Observado</option>
+							  <option>Cancelado</option>
+							</select>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+							  <label for="inputFechaInicioValesGh">Fecha inicio</label>
+							  <input type="date" class="form-control" id="inputFechaInicioValesGh">
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="inputFechaFinValesGh">Fecha fin</label>
+								<input type="date" class="form-control" id="inputFechaFinValesGh">
+							</div>
+						  </div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primario">Aplicar filtros</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End filtro vales GH -->
 
 
 	<!-- FIN MODALS -->

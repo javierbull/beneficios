@@ -7073,6 +7073,7 @@ iframe {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  text-transform: uppercase;
 }
 
 .tag-success {
@@ -7120,6 +7121,24 @@ iframe {
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   border: 1px solid var(--lineColor);
+}
+
+.action-cell-btns {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.btn-action {
+  /* background-color: pink; */
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-action:focus, .btn-action:hover {
+  box-shadow: none;
+  background-color: var(--jhon);
 }
 /* End panel vales corporativos */
 

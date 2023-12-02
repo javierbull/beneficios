@@ -7123,6 +7123,71 @@ iframe {
   border: 1px solid var(--lineColor);
 }
 
+/* Pagination color */
+.page-item.active .page-link {
+  z-index: 3;
+  color: var(--black);
+  background-color: var(--midYellow);
+  border-color: var(--midYellow);
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  border-color: var(--lineColor);
+}
+
+.page-link:focus {
+  z-index: 2;
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  border-color: var(--lineColor);
+  box-shadow: none;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+  /* font-size: 14px; */
+  color: var(--lineColor);
+}
+
+/* Fin pagination color */
+
+/*     Pagination     */
+.pagination>li>a, .pagination>li:first-child>a, .pagination>li:last-child>a, .pagination>li>span, .pagination>li:first-child>span, .pagination>li:last-child>span {
+  border-radius: 100px !important;
+  margin: 0 4px;
+  color: var(--black);
+  border-color: var(--black);
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination.pg-default>li.active>a, .pagination.pg-default>li.active:first-child>a, .pagination.pg-default>li.active:last-child>a, .pagination.pg-default>li.active>span, .pagination.pg-default>li.active:first-child>span, .pagination.pg-default>li.active:last-child>span {
+  background: var(--white);
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.pagination.pg-primary>li.active>a, .pagination.pg-primary>li.active:first-child>a, .pagination.pg-primary>li.active:last-child>a, .pagination.pg-primary>li.active>span, .pagination.pg-primary>li.active:first-child>span, .pagination.pg-primary>li.active:last-child>span {
+  background: var(--midYellow);
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.pagination.pg-info>li.active>a, .pagination.pg-info>li.active:first-child>a, .pagination.pg-info>li.active:last-child>a, .pagination.pg-info>li.active>span, .pagination.pg-info>li.active:first-child>span, .pagination.pg-info>li.active:last-child>span {
+  background: var(--midYellow);
+  border-color: var(--black);
+  color: var(--black);
+}
+
+/*   fin  Pagination     */
+
 .form-control-sm {
   background-color: var(--white);
   height: 2.5rem;

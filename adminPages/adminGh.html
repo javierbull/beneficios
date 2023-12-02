@@ -1155,7 +1155,9 @@
 						<div class="alert alert-warning">
 							<h2>Pedido observado:</h2>
 							<p>
-								El voucher de pago no coincide con el monto del pedido
+								El voucher de pago no coincide con el monto del pedido, 
+								por favor completar el monto que falta como máximo en un plazo de 48 horas o 
+								su pedido será anulado.
 							</p>
 						</div>
 						<div class="wrapper-logo">
@@ -1271,19 +1273,51 @@
 						</table>
 					</div>
 
-					<div id="filewrapper">
-						<h3 class="uploaded">Archivos cargados</h3>
-						<div class="showfilebox showfilebox-download">
-							<div class="left">
-								<p>transferencia.pdf</p>
+					<!-- Upload Files -->
+					<div class="box">
+						<div class="input-bx">
+
+							<div id="filewrapper">
+								<h3 class="uploaded">Archivos cargados</h3>
+								<div class="showfilebox">
+									<div class="left">
+										<p>voucher.pdf</p>
+									</div>
+									<div class="right item-download">
+										<span class="material-icons-outlined">
+											file_download
+										</span>
+									</div>
+								</div>
+								<div class="showfilebox">
+									<div class="left">
+										<p>transferencia.jpg</p>
+									</div>
+									<div class="right">
+										<span class="material-icons-outlined">
+											delete_forever
+										</span>
+									</div>
+								</div>
 							</div>
-							<div class="right">
-								<span class="material-icons-outlined">
-									file_download
-								</span>
-							</div>
+							
+							<form class="formuploadfiles">
+								<input type="file" id="upload"  hidden>
+								<label for="upload" class="uploadlabel">
+									<span class="material-icons-outlined">
+										file_upload
+									</span>
+									<p>Cargar voucher de pago</p>
+								</label>
+								<p class="accepted">
+									Formatos admitidos PDF, JPG, PNG
+								</p>
+							</form>
 						</div>
+
+						
 					</div>
+					<!-- End upload files -->
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
@@ -1426,11 +1460,11 @@
 
 					<div id="filewrapper">
 						<h3 class="uploaded">Archivos cargados</h3>
-						<div class="showfilebox showfilebox-download">
+						<div class="showfilebox">
 							<div class="left">
 								<p>transferencia.pdf</p>
 							</div>
-							<div class="right">
+							<div class="right item-download">
 								<span class="material-icons-outlined">
 									file_download
 								</span>

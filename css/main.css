@@ -7123,6 +7123,11 @@ iframe {
   border: 1px solid var(--lineColor);
 }
 
+.form-control-sm {
+  background-color: var(--white);
+  height: 2.5rem;
+}
+
 .action-cell-btns {
   display: flex;
   align-items: center;

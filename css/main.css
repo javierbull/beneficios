@@ -7227,6 +7227,37 @@ div.dataTables_wrapper div.dataTables_info {
 .showfilebox-download .right span {
   color: var(--black);
 }
+
+.datos-pedido-modal {
+  /* background-color: lavender; */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.datos-pedido-modal img {
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.table-datos-pedido-modal td {
+  /* background-color: lightgoldenrodyellow; */
+  border-top: none;
+}
+
+.table-datos-pedido-modal td:first-child {
+  /* background-color: lavender; */
+  text-align: end;
+  width: 50%;
+  padding: .25rem;
+  font-weight: 600;
+}
+
+.table-datos-pedido-modal td:last-child {
+  /* background-color: pink; */
+  text-align: start;
+  width: 50%;
+  padding: .25rem;
+}
 /* End estados pedidos GH */
 
 /* END MÓDULO ADMNISTRAR VALES */

@@ -49,6 +49,26 @@
   --cp-yellow: #FFEC00;
   --cp-redish: #E50246;
   --lineColor: #D9DBE9;
+  --success: #0EA674;
+  --success-light: #00BA88;
+  --success-dark: #00966D;
+  --success-soft: #88D4BB;
+  --success-bg: #F2FFFB;
+  --danger: #EF2E55;
+  --danger-light: #FF3860;
+  --danger-dark: #CC0F35;
+  --danger-soft: #F797AA;
+  --danger-bg: #FEECF0;
+  --info: #3488CE;
+  --info-light: #209CEE;
+  --info-dark: #1D72AA;
+  --info-soft: #AECFEB;
+  --info-bg: #EEF6FC;
+  --warning: #F4B740;
+  --warning-light: #FFC554;
+  --warning-dark: #E39601;
+  --warning-soft: #FFE2AA;
+  --warning-bg: #FFFBEB;
 }
 
 html {
@@ -7032,7 +7052,36 @@ iframe {
 /* End admin panel */
 
 /* Panel vales corporativos */
+.tag {
+  /* background-color: lavender; */
+  display: inline-block;
+  padding: .25rem .75rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
 
+.tag-success {
+  background-color: var(--success-bg);
+  color: var(--success-dark);
+}
+
+.tag-info {
+  background-color: var(--info-bg);
+  color: var(--info-dark);
+}
+
+.tag-warning {
+  background-color: var(--warning-bg);
+  color: var(--warning-dark);
+}
+
+.tag-danger {
+  background-color: var(--danger-bg);
+  color: var(--danger-dark);
+}
 /* End panel vales corporativos */
 
 /* END MÓDULO ADMNISTRAR VALES */

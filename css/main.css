@@ -344,6 +344,13 @@ hr {
   gap: .5rem;
 }
 
+.btn-small {
+  font-size: 1rem;
+  padding: .4375rem .875rem;
+  height: 2.5rem;
+}
+
+
 .inline-flex {
   display: inline-flex;
 }

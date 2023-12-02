@@ -7082,6 +7082,11 @@ iframe {
   background-color: var(--danger-bg);
   color: var(--danger-dark);
 }
+
+.tag-secondary {
+  background-color: var(--jhon);
+  color: var(--black);
+}
 /* End panel vales corporativos */
 
 /* END MÓDULO ADMNISTRAR VALES */

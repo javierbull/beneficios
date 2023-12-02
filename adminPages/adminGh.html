@@ -598,7 +598,8 @@
 								</span>
 								Info estados
 							</button>
-							<button class="btn btn-small btn-secundario" data-toggle="modal" data-target="#modalFilterValesGh">
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalFilterValesGh">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -761,7 +762,8 @@
 	<!-- Fin Modal Cambio a perfil colaborador -->
 
 	<!-- Modalfiltro vales GH -->
-	<div class="modal fade" id="modalFilterValesGh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade modal-admin" id="modalFilterValesGh" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -775,24 +777,24 @@
 						<div class="form-group">
 							<label for="exampleFormControlSelect1">Estado</label>
 							<select class="form-control" id="exampleFormControlSelect1">
-							  <option>Seleccione</option>
-							  <option>Solicitado</option>
-							  <option>Emitido</option>
-							  <option>Observado</option>
-							  <option>Cancelado</option>
+								<option>Seleccione</option>
+								<option>Solicitado</option>
+								<option>Emitido</option>
+								<option>Observado</option>
+								<option>Cancelado</option>
 							</select>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-6">
-							  <label for="inputFechaInicioValesGh">Fecha inicio</label>
-							  <input type="date" class="form-control" id="inputFechaInicioValesGh">
+								<label for="inputFechaInicioValesGh">Fecha inicio</label>
+								<input type="date" class="form-control" id="inputFechaInicioValesGh">
 							</div>
 
 							<div class="form-group col-md-6">
 								<label for="inputFechaFinValesGh">Fecha fin</label>
 								<input type="date" class="form-control" id="inputFechaFinValesGh">
 							</div>
-						  </div>
+						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -804,42 +806,83 @@
 	</div>
 	<!-- End filtro vales GH -->
 
-		<!-- Modalfiltro vales GH -->
-		<div class="modal fade" id="modalInfoEstadosValesGh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<span class="tag tag-success">
-							Success
-						</span>
-						<span class="tag tag-info">
-							Info
-						</span>
-						<span class="tag tag-warning">
-							Warning
-						</span>
-						<span class="tag tag-danger">
-							Danger
-						</span>
-						<span class="tag tag-secondary">
-							Secondary
-						</span>
-						
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn btn-primario">Aplicar filtros</button>
-					</div>
+	<!-- Modalestados vales GH -->
+	<div class="modal fade modal-admin" id="modalInfoEstadosValesGh" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Leyenda de estados</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+
+
+					<table class="table table-admin">
+						<thead>
+							<tr>
+								<th scope="col">Estado</th>
+								<th scope="col">Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row">
+									<span class="tag tag-info">
+										Solicitado
+									</span>
+								</td>
+								<td>
+									Cuando realiza una solicitud de compra adjuntando su comprobante de pago y está a la
+									espera de la revisión, aprobación y envío de Factura/Boleta a carga de su ejecutivo.
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">
+									<span class="tag tag-success">
+										Emitido
+									</span>
+								</td>
+								<td>
+									Cuando ya se aprobó la compra y puede descargar sus vales y Factura/Boleta.
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">
+									<span class="tag tag-warning">
+										Observado
+									</span>
+								</td>
+								<td>
+									Contabilidad/Comercial revisa la solicitud y encuentra inconsistencias que el
+									cliente de subsanar para que pueda ser aprobado.
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">
+									<span class="tag tag-danger">
+										Cancelado
+									</span>
+								</td>
+								<td>
+									Cuando no cumple con los requerimientos y fue cancelado por el ejecutivo de bee.
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
-		<!-- End filtro vales GH -->
+	</div>
+	<!-- End estados vales GH -->
 
 
 	<!-- FIN MODALS -->

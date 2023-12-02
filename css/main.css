@@ -7094,6 +7094,16 @@ iframe {
   background-color: var(--jhon);
   color: var(--black);
 }
+
+.modal-admin .modal-header {
+  border: none;
+}
+
+.table thead th {
+  /* background-color: pink; */
+  border-bottom: 2px solid var(--black);
+  border-top: none;
+}
 /* End panel vales corporativos */
 
 /* END MÓDULO ADMNISTRAR VALES */

@@ -7258,6 +7258,38 @@ div.dataTables_wrapper div.dataTables_info {
   width: 50%;
   padding: .25rem;
 }
+
+.alert {
+  /* background-color: lightgoldenrodyellow; */
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  padding: .5rem .75rem; 
+}
+
+.alert h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.alert p {
+  margin-bottom: 0;
+}
+
+.alert-warning {
+  background-color: var(--midYellow);
+  color: var(--black);
+  border: solid 1px var(--yellow);
+}
+
+.alert-danger {
+  background-color: var(--danger-bg);
+  color: var(--black);
+  border: solid 1px var(--danger-dark);
+}
 /* End estados pedidos GH */
 
 /* END MÓDULO ADMNISTRAR VALES */

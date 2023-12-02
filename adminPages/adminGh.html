@@ -635,7 +635,8 @@
 									</td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn btn-action">
+											<button type="button" name="button" class="btn btn-action" data-toggle="modal"
+											data-target="#modalPedidoSolicitadoGh">
 												<span class="material-icons-outlined">
 													visibility
 												</span>
@@ -655,7 +656,8 @@
 									</td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn btn-action">
+											<button type="button" name="button" class="btn btn-action" data-toggle="modal"
+											data-target="#modalPedidoEmitidoGh">
 												<span class="material-icons-outlined">
 													visibility
 												</span>
@@ -680,7 +682,8 @@
 									</td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn btn-action">
+											<button type="button" name="button" class="btn btn-action" data-toggle="modal"
+											data-target="#modalPedidoObservadoGh">
 												<span class="material-icons-outlined">
 													visibility
 												</span>
@@ -700,16 +703,15 @@
 									</td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn btn-action">
+											<button type="button" name="button" class="btn btn-action" data-toggle="modal"
+											data-target="#modalPedidoCanceladoGh">
 												<span class="material-icons-outlined">
 													visibility
 												</span>
 											</button>
 										</div>
 									</td>
-								  </tr>
-
-								  
+								  </tr>								  
 								  
 								</tbody>
 							</table>
@@ -988,6 +990,102 @@
 		</div>
 	</div>
 	<!-- End estados vales GH -->
+
+	<!-- Modal Pedido GH -->
+	<div class="modal fade modal-admin" id="modalPedidoSolicitadoGh" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Detalle del pedido</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Marca</th>
+								<th scope="col">Vigencia</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">P. Unitario</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row">
+									1
+								</td>
+								<td>
+									Gift Card 100
+								</td>
+								<td>
+									Bee
+								</td>
+								<td>
+									60 días
+								</td>
+								<td>
+									10
+								</td>
+								<td>
+									100.00
+								</td>
+								<td>
+									1000.00
+								</td>
+							</tr>
+							<tr>
+								<td scope="row">
+									2
+								</td>
+								<td>
+									Combo personal
+								</td>
+								<td>
+									Roky's
+								</td>
+								<td>
+									60 días
+								</td>
+								<td>
+									10
+								</td>
+								<td>
+									20.00
+								</td>
+								<td>
+									200.00
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="5">
+
+								</td>
+								<td>
+									Total
+								</td>
+								<td>
+									1200.00
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Pedido GH -->
 
 
 	<!-- FIN MODALS -->

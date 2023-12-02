@@ -7116,6 +7116,11 @@ iframe {
   vertical-align: middle;
 }
 
+.table tfoot td {
+  border-top: solid 2px var(--black);
+  font-weight: 700;
+}
+
 .card-dtable {
   background-color: var(--white);
   padding: 1.5rem;

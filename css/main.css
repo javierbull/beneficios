@@ -6630,7 +6630,7 @@ iframe {
 .form-check-label img {
   height: 2rem;
   margin-right: 1rem;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .form-check-label .form-check {
@@ -6641,9 +6641,11 @@ iframe {
 
 .form-check-label input {
   margin-top: 0;
-  height: 1rem;
-  width: 1rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }
+
+
 /* ENDS MEDIOS DE PAGO */
 
 /* FORMULARIO DATOS DE ENVIO PEDIDOS */

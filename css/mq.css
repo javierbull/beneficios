@@ -254,6 +254,17 @@
   .main-admin {
     padding-top: 4rem;
   }
+
+  .admin-panel {
+    /* background-color: lightyellow; */
+    margin-top: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sidebar-admin {
+    display: none;
+  }
   /* END ADMIN PEDIDOS GH */
 }
 

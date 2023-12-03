@@ -799,8 +799,8 @@
 					</div>
 
 					<div class="panel-body">
-						<div class="table-responsive card-dtable">
-							<table class="table dtable">
+						<div class="table-responsive- card-dtable">
+							<table class="table dtable"  style="width:100%">
 								<thead>
 								  <tr>
 									<th scope="col">#</th>
@@ -1117,60 +1117,61 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<table class="table table-admin">
-						<thead>
-							<tr>
-								<th scope="col">Estado</th>
-								<th scope="col">Descripción</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td scope="row">
-									<span class="tag tag-info">
-										Solicitado
-									</span>
-								</td>
-								<td>
-									Cuando realiza una solicitud de compra adjuntando su comprobante de pago y está a la
-									espera de la revisión, aprobación y envío de Factura/Boleta a carga de su ejecutivo.
-								</td>
-							</tr>
-							<tr>
-								<td scope="row">
-									<span class="tag tag-success">
-										Emitido
-									</span>
-								</td>
-								<td>
-									Cuando ya se aprobó la compra y puede descargar sus vales y Factura/Boleta.
-								</td>
-							</tr>
-							<tr>
-								<td scope="row">
-									<span class="tag tag-warning">
-										Observado
-									</span>
-								</td>
-								<td>
-									Contabilidad/Comercial revisa la solicitud y encuentra inconsistencias que el
-									cliente de subsanar para que pueda ser aprobado.
-								</td>
-							</tr>
-							<tr>
-								<td scope="row">
-									<span class="tag tag-danger">
-										Cancelado
-									</span>
-								</td>
-								<td>
-									Cuando no cumple con los requerimientos y fue cancelado por el ejecutivo de bee.
-								</td>
-							</tr>
-
-						</tbody>
-					</table>
-
+					<div class="table-responsive">
+						<table class="table table-admin">
+							<thead>
+								<tr>
+									<th scope="col">Estado</th>
+									<th scope="col">Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-info">
+											Solicitado
+										</span>
+									</td>
+									<td>
+										Cuando realiza una solicitud de compra adjuntando su comprobante de pago y está a la
+										espera de la revisión, aprobación y envío de Factura/Boleta a carga de su ejecutivo.
+									</td>
+								</tr>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-success">
+											Emitido
+										</span>
+									</td>
+									<td>
+										Cuando ya se aprobó la compra y puede descargar sus vales y Factura/Boleta.
+									</td>
+								</tr>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-warning">
+											Observado
+										</span>
+									</td>
+									<td>
+										Contabilidad/Comercial revisa la solicitud y encuentra inconsistencias que el
+										cliente de subsanar para que pueda ser aprobado.
+									</td>
+								</tr>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-danger">
+											Cancelado
+										</span>
+									</td>
+									<td>
+										Cuando no cumple con los requerimientos y fue cancelado por el ejecutivo de bee.
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>

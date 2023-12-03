@@ -265,6 +265,11 @@
   .sidebar-admin {
     display: none;
   }
+
+  .sidebar-admin-mobile {
+    /* background-color: tomato; */
+    padding-bottom: 2rem;
+  }
   /* END ADMIN PEDIDOS GH */
 }
 

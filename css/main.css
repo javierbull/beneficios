@@ -7162,6 +7162,7 @@ iframe {
 div.dataTables_wrapper div.dataTables_info {
   /* font-size: 14px; */
   color: var(--black);
+  font-size: .875rem;
 }
 
 /* Fin pagination color */

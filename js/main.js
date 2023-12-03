@@ -362,4 +362,16 @@ $('.dtable').DataTable({
 
 });
 // End datatables
+
+  // Show hide panels admin
+  $(".showAdminPanel-dashboard").click(function() {
+    $("#dashboard-panel").show();
+    $("#valesCorporativos-panel").hide();
+  });
+
+  $(".showAdminPanel-valesSolicitados").click(function() {
+    $("#dashboard-panel").hide();
+    $("#valesCorporativos-panel").show();
+  });
+  // End show hide panels admin
 });

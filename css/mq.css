@@ -270,6 +270,7 @@
     /* background-color: tomato; */
     padding-bottom: 2rem;
   }
+
   /* END ADMIN PEDIDOS GH */
 }
 
@@ -909,6 +910,13 @@
     margin-bottom: 0;
   }
   /* END PACKS */
+
+  /* Menu admin mobile  */
+  .sidebar-admin-mobile {
+    /* background-color: aqua; */
+    padding: 0;
+  }
+  /* End menu admin mobile */
 }
 
 /* fin tablet portrait */
@@ -1395,6 +1403,14 @@
     font-size: 1.5rem;
   }
   /* END CONFIRM PEDIDO GH */
+
+  /* Admin gstion humana */
+  .admin-panel {
+    /* background-color: lavender; */
+    padding: 1.5rem 1.5rem 6rem 1.5rem;
+    
+  }
+  /* End admin gestion humana */
 }
 
 /* Fin cell landscape */

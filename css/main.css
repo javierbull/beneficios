@@ -6933,7 +6933,7 @@ iframe {
 
 /* MÓDULO ADMINISTRAR VALES */
 .main-admin {
-  /* background-color: pink; */
+  background-color: var(--ehite);
 }
 
 /* sidebar admin */
@@ -7027,7 +7027,7 @@ iframe {
 
 /* Admin panel */
 .admin-panel {
-  /* background-color: lavender; */
+  /* background-color: F6F6F6; */
   padding: 1.5rem;
   min-height: 100vh;
   width: calc(100% - 20rem);

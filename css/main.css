@@ -7299,11 +7299,16 @@ div.dataTables_wrapper div.dataTables_info {
 /* END MÓDULO ADMNISTRAR VALES */
 
 /* PRODUCTO CATALOGO */
+.bg-producto-gala {
+  background-image: url(../img/gala/productos-gala/portacubierto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .lista-desc-producto {
   padding-left: 1.5rem;
 }
-
-
 
 .accordion-gala .card {
   margin-bottom: .5rem;
@@ -7318,9 +7323,11 @@ div.dataTables_wrapper div.dataTables_info {
   padding: 0;
 }
 
-.text-btn {
+.text-btn-accordion {
   /* background-color: yellow; */
   margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .btn-accordion {
@@ -7329,5 +7336,119 @@ div.dataTables_wrapper div.dataTables_info {
   justify-content: space-between;
 }
 
+.section-custom-gala {
+  margin-bottom: 2rem;
+}
+
+.section-custom-gala h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.custom-img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrap-img-custom {
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  width: 6rem;
+  height: 6rem;
+}
+
+.img-gala {
+  width: 100%;
+}
+
+
+.radio-buttons-gala {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom-radio input 
+{
+  display: none;
+}
+
+.radio-btn 
+{
+  margin: 10px;
+  width: 220px;
+  height: 240px;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px #c3c3c367;
+  cursor: pointer;
+}
+
+.radio-btn > i {
+  color: var(--white);
+  background-color: var(--lightOrange);
+  font-size: 20px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(2);
+  border-radius: 50px;
+  padding: 3px;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.radio-btn .hobbies-icon 
+{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radio-btn .hobbies-icon img
+{
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+  
+}
+.radio-btn .hobbies-icon i 
+{
+  color: var(--lightOrange);
+  line-height: 80px;
+  font-size: 60px;
+}
+
+.radio-btn .hobbies-icon h3 
+{
+  color: #555;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}
+
+.custom-radio input:checked + .radio-btn 
+{
+  border: 4px solid var(--lightOrange);
+}
+
+.custom-radio input:checked + .radio-btn > i 
+{
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
 
 /* END PRODUCTO CATALOGO */

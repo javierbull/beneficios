@@ -15,6 +15,10 @@
 		href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
 		rel="stylesheet">
 	<link href="css/fonts.min.css" rel="stylesheet" type="text/css">
+	<link
+	rel="stylesheet"
+	href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+	
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -1255,10 +1259,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 padding-none">
-						<div class="content-img-product bg-salient-product-moda">
-							<div class="product-label d-none">
-								🌟 Producto destacado
-							</div>
+						<div class="content-img-product bg-producto-gala">
+							
 						</div>
 					</div>
 
@@ -1292,7 +1294,7 @@
 												<button class="btn btn-style-none btn-block btn-accordion" type="button"
 													data-toggle="collapse" data-target="#collapseOneGala"
 													aria-expanded="true" aria-controls="collapseOneGala">
-													<p class="text-btn">
+													<p class="text-btn-accordion">
 														Personaliza tu producto
 													</p>
 													
@@ -1312,13 +1314,34 @@
 													</h3>
 													<div class="custom-img">
 														<div class="wrap-img-custom">
-															<img src="" class="img-gala" alt="">
+															<img src="img/gala/img-gala/1.jpg" class="img-gala" alt="">
 														</div>
 														<button type="button" class="btn btn-secundario" data-toggle="modal" data-target="#modalSelectImgCatalogo">
 															Elegir imagen
 														</button>
 													</div>
 												</section>
+
+												<div class="radio-buttons-gala">
+													<label class="custom-radio">
+													  <input type="radio" name="radio" checked>
+													  <span class="radio-btn"><i class="las la-check"></i>
+														<div class="hobbies-icon">
+															<img src="https://img.freepik.com/free-vector/sport-equipment-concept_1284-13034.jpg?size=626&ext=jpg">
+														</div>
+													  </span>
+													</label>
+													<label class="custom-radio">
+													  <input type="radio" name="radio" >
+													  <span class="radio-btn"><i class="las la-check"></i>
+														<div class="hobbies-icon">
+															<img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-poetry-illustration_23-2149279810.jpg?size=626&ext=jpg">
+														</div>
+													  </span>
+													</label>
+																			
+												  </div>
+												  
 											</div>
 										</div>
 									</div>
@@ -1331,7 +1354,7 @@
 												<button class="btn btn-style-none btn-block btn-accordion" type="button"
 													data-toggle="collapse" data-target="#collapseTwoGala"
 													aria-expanded="false" aria-controls="collapseTwoGala">
-													<p class="text-btn">
+													<p class="text-btn-accordion">
 														Personaliza tu producto
 													</p>
 													<span class="material-icons-outlined">
@@ -1557,42 +1580,20 @@
 	<!-- Modal select img catalogo -->
 	<div class="modal fade modal-admin" id="modalSelectImgCatalogo" tabindex="-1" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Elige tu imagen</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="exampleFormControlSelect1">Estado</label>
-							<select class="form-control" id="exampleFormControlSelect1">
-								<option>Seleccione</option>
-								<option>Solicitado</option>
-								<option>Emitido</option>
-								<option>Observado</option>
-								<option>Cancelado</option>
-							</select>
-						</div>
-						<div class="form-row">
-							<div class="form-group col-md-6">
-								<label for="inputFechaInicioValesGh">Fecha inicio</label>
-								<input type="date" class="form-control" id="inputFechaInicioValesGh">
-							</div>
-
-							<div class="form-group col-md-6">
-								<label for="inputFechaFinValesGh">Fecha fin</label>
-								<input type="date" class="form-control" id="inputFechaFinValesGh">
-							</div>
-						</div>
-					</form>
+					
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn btn-primario">Aplicar filtros</button>
+					<button type="button" class="btn btn-primario">Guardar</button>
 				</div>
 			</div>
 		</div>

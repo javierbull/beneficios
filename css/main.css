@@ -7369,36 +7369,40 @@ div.dataTables_wrapper div.dataTables_info {
 
 
 .radio-buttons-gala {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  /* background-color: lavender; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.custom-radio input 
-{
+.custom-radio-gala input {
   display: none;
 }
 
-.radio-btn 
-{
-  margin: 10px;
-  width: 220px;
-  height: 240px;
+.radio-btn {
+  width: 5rem;
+  height: 5rem;
   border: 3px solid transparent;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: .5rem;
   position: relative;
   text-align: center;
   box-shadow: 0 0 20px #c3c3c367;
   cursor: pointer;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
 }
 
 .radio-btn > i {
   color: var(--white);
   background-color: var(--lightOrange);
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
-  top: -15px;
+  top: -12px;
   left: 50%;
   transform: translateX(-50%) scale(2);
   border-radius: 50px;
@@ -7406,38 +7410,30 @@ div.dataTables_wrapper div.dataTables_info {
   transition: 0.5s;
   pointer-events: none;
   opacity: 0;
+  z-index: 10;
 }
 
-.radio-btn .hobbies-icon 
-{
-  width: 150px;
-  height: 150px;
+.radio-btn .hobbies-icon {
+  width: 4.5rem;
+  height: 4.5rem;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
+
 .radio-btn .hobbies-icon img
 {
   display:block;
   width:100%;
-  margin-bottom:20px;
-  
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
 }
-.radio-btn .hobbies-icon i 
-{
+
+.radio-btn .hobbies-icon i {
   color: var(--lightOrange);
   line-height: 80px;
   font-size: 60px;
-}
-
-.radio-btn .hobbies-icon h3 
-{
-  color: #555;
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing:1px;
 }
 
 .custom-radio input:checked + .radio-btn 

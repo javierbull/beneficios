@@ -7341,7 +7341,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .section-custom-gala h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
@@ -7446,5 +7446,89 @@ div.dataTables_wrapper div.dataTables_info {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
+
+.form-select-typo-gala {
+  display: flex;
+  align-items: end;
+  gap: .5rem;
+}
+
+.form-select-typo-gala .form-group {
+  width: 50%;
+}
+
+.form-select-typo-gala .form-group .btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* radio typo catalogo */
+.radio-btn-typo {
+  width: 5rem;
+  height: 5rem;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: .5rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px #c3c3c367;
+  cursor: pointer;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.radio-btn-typo > i {
+  color: var(--white);
+  background-color: var(--lightOrange);
+  font-size: 16px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) scale(2);
+  border-radius: 50px;
+  padding: 3px;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+}
+
+.radio-btn-typo .hobbies-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+}
+
+.radio-btn-typo .hobbies-icon img
+{
+  display:block;
+  width:100%;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.radio-btn-typo .hobbies-icon i {
+  color: var(--lightOrange);
+  line-height: 80px;
+  font-size: 60px;
+}
+
+.custom-radio input:checked + .radio-btn-typo
+{
+  border: 4px solid var(--lightOrange);
+}
+
+.custom-radio input:checked + .radio-btn-typo > i 
+{
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+/* end radio typo catalogo */
 
 /* END PRODUCTO CATALOGO */

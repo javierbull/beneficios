@@ -1322,7 +1322,27 @@
 													</div>
 												</section>
 
-												
+												<section class="section-custom-gala">
+													<h3>
+														Elige el tipo de letra
+													</h3>
+													
+													<form class="form-select-typo-gala">
+														<div class="form-group">
+															<label for="inputTypoGala">Nombre</label>
+															<input type="text" class="form-control" id="inputTypoGala">
+														</div>
+														<div class="form-group">
+															<label>Tipo de letra</label>
+															<button type="button" class="btn btn-secundario" data-toggle="modal" data-target="#modalSelectTypoCatalogo">
+																3. Billabong
+																<span class="material-icons-outlined">
+																	expand_more
+																</span>
+															</button>
+														</div>
+													</form>
+												</section>
 												  
 											</div>
 										</div>
@@ -2381,6 +2401,47 @@
 							  </div>
 							</span>
 						</label>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primario">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin" id="modalSelectTypoCatalogo" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Elige tu imagen</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="radio-buttons-gala">
+						<label class="custom-radio custom-radio-gala">
+						  <input type="radio" name="radio" checked>
+						  <span class="radio-btn-typo"><i class="las la-check"></i>
+							<div class="hobbies-icon">
+								<img src="img/gala/typo/1.jpg">
+							</div>
+						  </span>
+						</label>
+
+						<label class="custom-radio custom-radio-gala">
+						  <input type="radio" name="radio" >
+						  <span class="radio-btn-typo"><i class="las la-check"></i>
+							<div class="hobbies-icon">
+								<img src="img/gala/typo/2.jpg">
+							</div>
+						  </span>
+						</label>
+						
+						
 					</div>
 				</div>
 				<div class="modal-footer">

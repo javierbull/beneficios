@@ -7297,3 +7297,13 @@ div.dataTables_wrapper div.dataTables_info {
 /* End estados pedidos GH */
 
 /* END MÓDULO ADMNISTRAR VALES */
+
+/* PRODUCTO CATALOGO */
+.lista-desc-producto {
+  padding-left: 1.5rem;
+}
+
+.accordion .card-header {
+  padding: 0;
+}
+/* END PRODUCTO CATALOGO */

@@ -7303,7 +7303,13 @@ div.dataTables_wrapper div.dataTables_info {
   padding-left: 1.5rem;
 }
 
-.accordion .card-header {
+.accordion-gala .card {
+  margin-bottom: .5rem;
+}
+
+.accordion-gala .card-header {
   padding: 0;
 }
+
+
 /* END PRODUCTO CATALOGO */

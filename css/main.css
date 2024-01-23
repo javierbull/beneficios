@@ -3021,8 +3021,8 @@ nav.main .midmenu {
 .navbar-breadcrumb-filter,
 .navbar-breadcrumb-back {
   /* background-color: yellow; */
-  /* margin-top: 3rem;
-  margin-bottom: 2rem; */
+  margin-top: 1rem;
+  /* margin-bottom: 2rem; */
   display: flex;
 }
 

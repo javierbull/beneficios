@@ -7536,8 +7536,8 @@ div.dataTables_wrapper div.dataTables_info {
 /* end radio typo catalogo */
 
 /* Seleccionar color portacubierto */
-.color,
-.color input {
+.color-portacubierto,
+.color-portacubierto input {
   position: relative;
   overflow: hidden;
   
@@ -7547,12 +7547,12 @@ div.dataTables_wrapper div.dataTables_info {
   border-radius: 50%;
 }
 
-.color {
+.color-portacubierto {
   display: inline-block;
   margin: 3px;
 }
 
-.color input {
+.color-portacubierto input {
   position: absolute;
   top: 0;
   left: 0;
@@ -7562,7 +7562,7 @@ div.dataTables_wrapper div.dataTables_info {
   cursor: pointer;
 }
 
-.color i {
+.color-portacubierto i {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -7578,7 +7578,7 @@ div.dataTables_wrapper div.dataTables_info {
   transition: .15s opacity ease-in-out;
 }
 
-.color input:checked + i {
+.color-portacubierto input:checked + i {
   opacity: 1;
 }
 /* End seleccionar color portacubierto */

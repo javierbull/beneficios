@@ -1306,8 +1306,19 @@
 										<div id="collapseOneGala" class="collapse show" aria-labelledby="headingOneGala"
 											data-parent="#accordionCatalogoGala-1">
 											<div class="card-body">
-												Some placeholder content for the first accordion panel. This panel is
-												shown by default, thanks to the <code>.show</code> class.
+												<section class="section-custom-gala">
+													<h3>
+														Elige la imagen
+													</h3>
+													<div class="custom-img">
+														<div class="wrap-img-custom">
+															<img src="" class="img-gala" alt="">
+														</div>
+														<button type="button" class="btn btn-secundario" data-toggle="modal" data-target="#modalSelectImgCatalogo">
+															Elegir imagen
+														</button>
+													</div>
+												</section>
 											</div>
 										</div>
 									</div>
@@ -1542,6 +1553,52 @@
 		</div>
 	</div>
 	<!-- Fin modal Sobre BeeBeneficios-->
+
+	<!-- Modal select img catalogo -->
+	<div class="modal fade modal-admin" id="modalSelectImgCatalogo" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Estado</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Seleccione</option>
+								<option>Solicitado</option>
+								<option>Emitido</option>
+								<option>Observado</option>
+								<option>Cancelado</option>
+							</select>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputFechaInicioValesGh">Fecha inicio</label>
+								<input type="date" class="form-control" id="inputFechaInicioValesGh">
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="inputFechaFinValesGh">Fecha fin</label>
+								<input type="date" class="form-control" id="inputFechaFinValesGh">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-style-none" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primario">Aplicar filtros</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- End modal select img catalogo -->
 	<!-- FIN MODALS -->
 
 

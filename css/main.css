@@ -7340,6 +7340,10 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: 2rem;
 }
 
+.section-custom-gala:last-child {
+  margin-bottom: 0;
+}
+
 .section-custom-gala h3 {
   font-size: 1.125rem;
   font-weight: 700;
@@ -7601,6 +7605,8 @@ div.dataTables_wrapper div.dataTables_info {
 .bg-color5 {
   background-color: #D3D4C4;
 }
-/* End seleccionar color portacubierto */
+/* End seleccionar color portacubierto */+
+
+
 
 /* END PRODUCTO CATALOGO */

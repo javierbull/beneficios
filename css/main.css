@@ -7465,7 +7465,7 @@ div.dataTables_wrapper div.dataTables_info {
 
 /* radio typo catalogo */
 .radio-btn-typo {
-  width: 5rem;
+  width: 20rem;
   height: 5rem;
   border: 3px solid transparent;
   display: inline-block;
@@ -7497,9 +7497,13 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .radio-btn-typo .hobbies-icon {
-  width: 4.5rem;
+  background-color: #FEF9F2;
+  width: 19.5rem;
   height: 4.5rem;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .radio-btn-typo .hobbies-icon img

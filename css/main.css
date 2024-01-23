@@ -7535,4 +7535,52 @@ div.dataTables_wrapper div.dataTables_info {
 }
 /* end radio typo catalogo */
 
+/* Seleccionar color portacubierto */
+.color,
+.color input {
+  position: relative;
+  overflow: hidden;
+  
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+}
+
+.color {
+  display: inline-block;
+  margin: 3px;
+}
+
+.color input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.color i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  background-image: url(http://cdn.nicolapps.ch/images/uploads/1478199301.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  opacity: 0;
+  transition: .15s opacity ease-in-out;
+}
+
+.color input:checked + i {
+  opacity: 1;
+}
+/* End seleccionar color portacubierto */
+
 /* END PRODUCTO CATALOGO */

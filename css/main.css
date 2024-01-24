@@ -7451,16 +7451,6 @@ div.dataTables_wrapper div.dataTables_info {
   transform: translateX(-50%) scale(1);
 }
 
-.form-select-typo-gala {
-  display: flex;
-  align-items: end;
-  gap: .5rem;
-}
-
-.form-select-typo-gala .form-group {
-  width: 50%;
-}
-
 .form-select-typo-gala .form-group .btn {
   width: 100%;
   display: flex;

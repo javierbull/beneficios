@@ -7616,6 +7616,19 @@ div.dataTables_wrapper div.dataTables_info {
   height: 100%;
 }
 
+.carousel-item-video {
+  background-color: var(--yellow);
+  height: 30rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+.carousel-item-video video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .carouselthumbnails .carousel-indicators {
   position: absolute;
   bottom: 1rem;

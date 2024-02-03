@@ -933,7 +933,7 @@
     display:flex;
     gap: .5rem;
     flex-wrap: nowrap;
-    margin-top: .5rem;
+    margin-bottom: 2rem;
   }
    /* end product thumbnail */
 }
@@ -2167,6 +2167,25 @@
     text-align: center;
   }
     /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
+
+    /* product thumbnail */
+  .carouselthumbnails {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrap-thumbnails {
+    /* background-color: pink; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    gap: .5rem;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+  }
+   /* end product thumbnail */
 }
 
 /* Fin cell portrait */
@@ -2288,6 +2307,8 @@
   }
 
   /* FIN CARRITO DE COMPRAS */
+
+
 }
 
 /* Fin small cell portrait */

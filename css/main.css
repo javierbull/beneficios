@@ -7617,7 +7617,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .carousel-item-video {
-  background-color: var(--yellow);
+  background-color: var(--bgEntrada);
   height: 30rem !important;
   display: flex !important;
   align-items: center !important;

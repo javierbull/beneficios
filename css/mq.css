@@ -2185,6 +2185,14 @@
     flex-wrap: nowrap;
     margin-bottom: 1rem;
   }
+
+  .carousel-item-video {
+    background-color: var(--bgEntrada);
+    height: calc(100vw - 3rem) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+  }
    /* end product thumbnail */
 }
 

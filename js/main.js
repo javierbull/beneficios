@@ -340,10 +340,12 @@ $(".btn-sidebar-toggle").click(function(){
 
 // End sidebar item active
 
+// Active thumbnails
 $('.thumbnail-item').on('click', function() {
   $('.thumbnail-item').removeClass('thumbnail-item-focus');
   $(this).toggleClass('thumbnail-item-focus');
 })
+// end Active thumbnails
 
 // Datatables
 $('.dtable').DataTable({

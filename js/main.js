@@ -340,6 +340,11 @@ $(".btn-sidebar-toggle").click(function(){
 
 // End sidebar item active
 
+$('.thumbnail-item').on('click', function() {
+  $('.thumbnail-item').removeClass('thumbnail-item-focus');
+  $(this).toggleClass('thumbnail-item-focus');
+})
+
 // Datatables
 $('.dtable').DataTable({
   scrollX: true,
@@ -374,4 +379,8 @@ $('.dtable').DataTable({
     $("#valesCorporativos-panel").show();
   });
   // End show hide panels admin
+
+// SHOW ACTIVE FOCUS STEPPER
+
+ 
 });

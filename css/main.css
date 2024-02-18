@@ -7610,11 +7610,27 @@ div.dataTables_wrapper div.dataTables_info {
   overflow: hidden;
 }
 
-.carouselthumbnails .carousel-item {
+/* ============================== */
+
+.zoomable-item {
   /* background-color: pink; */
   width: 100%;
   height: 100%;
+  /* zoom */
+  position: relative;
+  overflow: hidden;
 }
+
+.zoomable-item__img {
+  transform-origin: var(--zoom-pos-x, 0%) var(--zoom-pos-y, 0%);
+  transition: transform 0.15s linear;
+}
+.zoomable-item--zoomed .zoomable-item__img {
+  cursor: zoom-in;
+  transform: scale(var(--zoom, 2));
+}
+
+/* ============================ */
 
 .carousel-item-video {
   background-color: var(--bgEntrada);
@@ -7665,3 +7681,4 @@ div.dataTables_wrapper div.dataTables_info {
 
 
 /* End Carousel width thumbnails */
+

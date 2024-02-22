@@ -7646,19 +7646,22 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .wrap-thumbnails {
-  /* background-color: pink; */
+  background-color: pink;
   width: 30rem;
   margin-left: auto;
   display:flex;
   gap: .5rem;
   flex-wrap: nowrap;
   margin-top: .5rem;
+  justify-content: center;
 }
 
 .thumbnail-item {
   /* background-color: pink; */
   box-sizing: border-box;
-  flex: 1 1 0;
+  /* flex: 1 1 0; */
+  width: 89.5px;
+  height: 89.5px;
   padding: 0;
   cursor: pointer;
   border-radius: .5rem;

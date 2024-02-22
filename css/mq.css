@@ -926,13 +926,7 @@
   }
 
   .wrap-thumbnails {
-    /* background-color: pink; */
-    width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    gap: .5rem;
-    flex-wrap: nowrap;
+    /* background-color: blue; */
     margin-bottom: 2rem;
   }
    /* end product thumbnail */

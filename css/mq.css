@@ -2170,7 +2170,7 @@
   }
 
   .wrap-thumbnails {
-    /* background-color: pink; */
+    background-color: greenyellow;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -2180,6 +2180,11 @@
     margin-bottom: 1rem;
   }
 
+  .thumbnail-item {
+    width: 58px;
+    height: 58px;
+  }
+
   .carousel-item-video {
     background-color: var(--bgEntrada);
     height: calc(100vw - 3rem) !important;
@@ -2187,6 +2192,8 @@
     align-items: center !important;
     justify-content: center;
   }
+
+  
    /* end product thumbnail */
 }
 

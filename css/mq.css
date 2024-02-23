@@ -928,6 +928,8 @@
   .wrap-thumbnails {
     /* background-color: blue; */
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
    /* end product thumbnail */
 }

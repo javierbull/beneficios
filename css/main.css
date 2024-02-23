@@ -7610,6 +7610,11 @@ div.dataTables_wrapper div.dataTables_info {
   overflow: hidden;
 }
 
+.carouselthumbnails .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
 /* ============================== */
 
 .zoomable-item {

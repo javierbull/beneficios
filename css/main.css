@@ -7047,7 +7047,7 @@ iframe {
 
 /* Admin panel */
 .admin-panel {
-  /* background-color: F6F6F6; */
+  background-color: var(--Gray1);
   padding: 1.5rem;
   min-height: 100vh;
   width: calc(100% - 20rem);
@@ -7710,7 +7710,19 @@ div.dataTables_wrapper div.dataTables_info {
 
 /* End Carousel width thumbnails */
 
-/* CHARTS */
+/* DASHBOARD */
+.card-dashboard {
+  background-color: var(--white);
+  padding: 1.5rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border: 1px solid var(--lineColor);
+}
 
-/* END CHARTS */
+
+/* END DASHBOARD */
 

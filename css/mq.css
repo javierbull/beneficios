@@ -956,7 +956,11 @@
   }
 
   .card-dashboard {
-    display: none;
+    padding: .75rem;
+  }
+
+  .card-dashboard-colaboradores canvas {
+    min-height: 200px;
   }
    /* END DAHSBOARD */
 }

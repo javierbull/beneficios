@@ -4,7 +4,6 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Plataforma', 'Inhouse', 'Pre registrados', 'Sin confirmar'],
         datasets: [{
-            label: false,
             data: [250, 100, 50, 50],
             backgroundColor: [
                 'rgba(223, 251, 242, 1)',
@@ -24,6 +23,9 @@ var myChart = new Chart(ctx, {
         
     },
     options: {
+        legend: {
+            display: false
+         },
         scales: {
           yAxes: [{
             ticks:{

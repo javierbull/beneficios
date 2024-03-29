@@ -7726,6 +7726,7 @@ div.dataTables_wrapper div.dataTables_info {
 .card-dashboard-title {
   font-weight: 600;
   font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .card-dashboard-colaboradores {

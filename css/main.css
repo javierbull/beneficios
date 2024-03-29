@@ -3566,7 +3566,7 @@ nav.main .midmenu {
 }
 
 .content-menu-mobile {
-  background-color: var(--white);
+  background-color: var(--Gray8);
   min-height: 100vh;
   padding: 1.5rem;
 }

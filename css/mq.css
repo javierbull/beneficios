@@ -945,6 +945,14 @@
     margin-right: auto;
   }
    /* end product thumbnail */
+
+   /* DASHBOARD */
+
+
+  .card-dashboard {
+    display: none;
+  }
+   /* END DAHSBOARD */
 }
 
 /* fin tablet portrait */

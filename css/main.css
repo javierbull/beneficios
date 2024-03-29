@@ -59,6 +59,14 @@
   --Gray6: #4E4B66;
   --Gray7: #333350;
   --Gray8: #1F1F37;
+  --primary-default: #FFCE00;
+  --primary-light: #FFE578;
+  --primary-dark: #FFB01A;
+  --accent-default: #605CFF;
+  --accent-light: #757CFF;
+  --accent-dark: #4A36F5;
+  --accent-soft: #DDE3FF;
+  --accent-bg: #ECF0FF;
   --success: #0EA674;
   --success-light: #00BA88;
   --success-dark: #00966D;

@@ -948,6 +948,12 @@
 
    /* DASHBOARD */
 
+   .metricas {
+    
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  }
 
   .card-dashboard {
     display: none;

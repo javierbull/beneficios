@@ -7739,9 +7739,6 @@ div.dataTables_wrapper div.dataTables_info {
   display: flex;
   gap: 1rem;
   margin-bottom: 1.5rem;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
 }
 
 .card-metrica {
@@ -7753,7 +7750,7 @@ div.dataTables_wrapper div.dataTables_info {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   color: var(--black-admin);
-  min-width: 11.5rem;
+  min-width: 11.25rem;
   display: flex;
   gap: .25rem;
   flex-direction: column;

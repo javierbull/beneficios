@@ -329,8 +329,8 @@ $("#customCheckDatosOrdenCompra").click(function () {
 // End mostrar orden de compra
 
 // Sidebar active item
-$(".sidebar-item-btn").on('click', function(){
-  $(".sidebar-item-btn").removeClass('active-item');
+$(".sidebar-item-db").on('click', function(){
+  $(".sidebar-item-db").removeClass('active-item');
   $(this).addClass('active-item');
 });
 

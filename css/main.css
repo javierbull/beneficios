@@ -6974,8 +6974,6 @@ iframe {
 }
 
 .sidebar-item-btn {
-  background-color: var(--Gray8);
-  color: var(--white);
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -6989,12 +6987,19 @@ iframe {
   -o-border-radius: 2.5rem;
 }
 
-.sidebar-item-btn:hover {
-  background-color: var(--midYellow);
-}
-
 .sidebar-item-btn:focus {
   box-shadow: none;
+}
+
+.sidebar-item-db {
+  background-color: var(--Gray8);
+  color: var(--white);
+}
+
+.sidebar-item-db:hover {
+  background-color: var(--Gray7);
+  color: var(--white);
+  text-decoration: none;
 }
 
 .active-item {
@@ -7009,8 +7014,6 @@ iframe {
 
 .sidebar-item-collapse {
   display: inline-block;
-  background-color: var(--Gray8);
-  color: var(--white);
   padding: .5rem 1.25rem .5rem 3.25rem;
   height: 100%;
   width: 100%;
@@ -7019,18 +7022,6 @@ iframe {
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
-  text-decoration: none;
-}
-
-.sidebar-item-collapse:hover {
-  background-color: var(--Gray7);
-  color: var(--white);
-  text-decoration: none;
-}
-
-.sidebar-item-collapse:focus {
-  background-color: var(--Gray7);
-  color: var(--white);
   text-decoration: none;
 }
 
@@ -7750,11 +7741,10 @@ div.dataTables_wrapper div.dataTables_info {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   color: var(--black-admin);
-  min-width: 11.25rem;
+  min-width: 11.5rem;
   display: flex;
   gap: .25rem;
   flex-direction: column;
-  scroll-snap-align: center;
 }
 
 .card-metrica--title {

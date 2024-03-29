@@ -721,7 +721,7 @@
 						</a>
 					</li>
 					<li class="sidebar-item">
-						<button class="btn sidebar-item-btn showAdminPanel-dashboard">
+						<button class="btn sidebar-item-btn showAdminPanel-dashboard active-item">
 							<span class="material-icons-outlined">
 								dashboard
 							</span>
@@ -729,7 +729,7 @@
 						</button>
 					</li>
 					<li class="sidebar-item">
-						<button class="btn sidebar-item-btn btn-sidebar-toggle active-item">
+						<button class="btn sidebar-item-btn btn-sidebar-toggle ">
 							<div class="btn-sidebar-toggle-left">
 								<span class="material-icons-outlined">
 									confirmation_number
@@ -762,15 +762,18 @@
 			<div class="admin-panel">
 
 				<!-- Dashboard panel -->
-				<div class="panel" id="dashboard-panel">
+				<div class="panel active-panel" id="dashboard-panel">
 					<h1>Dashboard</h1>
 
-					<canvas id="myChart" ></canvas>
+					<div class="card">
+
+						<canvas id="myChart"></canvas>
+					</div>
 				</div>
 				<!-- End dashboard panel -->
 
 				<!-- Vales corporativos panel -->
-				<div class="panel active-panel" id="valesCorporativos-panel">
+				<div class="panel" id="valesCorporativos-panel">
 					<div class="panel-header">
 						<div class="panel-header-top">
 							<h1 class="panel-title">Vales corporativos</h1>

@@ -49,6 +49,16 @@
   --cp-yellow: #FFEC00;
   --cp-redish: #E50246;
   --lineColor: #D9DBE9;
+  /* admin colors */
+  --black-admin: #14142B;
+  --Gray1: #F7F7FC;
+  --Gray2: #EFF0F6;
+  --Gray3: #D9DBE9;
+  --Gray4: #A0A3BD;
+  --Gray5: #6E7191;
+  --Gray6: #4E4B66;
+  --Gray7: #333350;
+  --Gray8: #1F1F37;
   --success: #0EA674;
   --success-light: #00BA88;
   --success-dark: #00966D;

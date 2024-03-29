@@ -7728,9 +7728,14 @@ div.dataTables_wrapper div.dataTables_info {
   font-size: 1.25rem;
 }
 
+.card-dashboard-colaboradores {
+  /* background-color: pink; */
+  width: 61.25rem;
+}
+
 .card-dashboard canvas {
   /* background-color: pink; */
-  height: 50vh !important;
+  /* width: 50vw !important; */
 }
 
 .metricas {

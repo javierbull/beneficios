@@ -253,6 +253,7 @@
   /* ADMIN PEDIDOS GH */
   .main-admin {
     padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .admin-panel {
@@ -272,6 +273,18 @@
   }
 
   /* END ADMIN PEDIDOS GH */
+
+  /* DASHBOARD */
+  .metricas {
+    /* background-color: pink; */
+    gap: .75rem;
+  }
+
+  .card-dashboard-colaboradores {
+    /* background-color: pink; */
+    width: calc(100vw - 3rem);
+  }
+  /* END DASHBOARD */
 }
 
 /* Fin tablet landscape */

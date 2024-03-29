@@ -7733,11 +7733,6 @@ div.dataTables_wrapper div.dataTables_info {
   width: 61.25rem;
 }
 
-.card-dashboard canvas {
-  /* background-color: pink; */
-  /* width: 50vw !important; */
-}
-
 .metricas {
   /* background-color: tomato; */
   display: flex;
@@ -7755,6 +7750,9 @@ div.dataTables_wrapper div.dataTables_info {
   -o-border-radius: 1rem;
   color: var(--black-admin);
   min-width: 11.5rem;
+  display: flex;
+  gap: .25rem;
+  flex-direction: column;
 }
 
 .card-metrica--title {
@@ -7767,6 +7765,7 @@ div.dataTables_wrapper div.dataTables_info {
 .card-metrica--numero {
   font-weight: 700;
   font-size: 1.5rem;
+  line-height: 1.5rem;
   margin-bottom: 0;
 }
 

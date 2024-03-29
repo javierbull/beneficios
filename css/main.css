@@ -6998,7 +6998,8 @@ iframe {
 }
 
 .active-item {
-  background-color: var(--midYellow);
+  background-color: var(--primary-light);
+  color: var(--black-admin);
 }
 
 .sidebar-list-collapse {
@@ -7008,7 +7009,8 @@ iframe {
 
 .sidebar-item-collapse {
   display: inline-block;
-  background-color: var(--white);
+  background-color: var(--Gray8);
+  color: var(--white);
   padding: .5rem 1.25rem .5rem 3.25rem;
   height: 100%;
   width: 100%;
@@ -7018,18 +7020,17 @@ iframe {
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
   text-decoration: none;
-  color: var(--black);
 }
 
 .sidebar-item-collapse:hover {
-  background-color: var(--jhon);
-  color: var(--black);
+  background-color: var(--Gray7);
+  color: var(--white);
   text-decoration: none;
 }
 
 .sidebar-item-collapse:focus {
-  background-color: var(--jhon);
-  color: var(--black);
+  background-color: var(--Gray7);
+  color: var(--white);
   text-decoration: none;
 }
 

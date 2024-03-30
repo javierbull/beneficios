@@ -1415,7 +1415,7 @@
 												data-toggle="collapse" data-target="#collapseTwoSede"
 												aria-expanded="true" aria-controls="collapseTwoSede">
 												<p class="text-btn-accordion">
-													Nuevo contacto
+													Nueva sede
 												</p>
 												
 												<span class="material-icons-outlined">
@@ -1429,78 +1429,49 @@
 										data-parent="#accordionSede-2">
 										<div class="card-body">
 											<form >
+												<div class="form-group">
+													<label for="nuevaSedeNombre">Nombre de la sede<span>*</span></label>
+													<input type="text" class="form-control" id="nuevaSedeNombre">
+												</div>
+
 												<div class="form-row">
 													<div class="form-group col-md-6">
-														<label for="nuevoContactoDoc">Documento <span>*</span></label>
-														<select class="form-control" id="nuevoContactoDoc">
-															<option>DNI</option>
-															<option>CE</option>
+														<label for="nuevaSedeDepartamento">Departamento <span>*</span></label>
+														<select class="form-control" id="nuevaSedeDepartamento">
+															<option>Seleccione</option>
+															<option>Lima</option>
+															<option>Arequipa</option>
 														</select>
 													</div>
 													<div class="form-group col-md-6">
-														<label for="nuevoContactoNumero">Número <span>*</span></label>
-														<input type="text" class="form-control" id="nuevoContactoNumero">
+														<label for="nuevaSedeProvincia">Provincia <span>*</span></label>
+														<select class="form-control" id="nuevaSedeProvincia">
+															<option>seleccione</option>
+															<option>Lima</option>
+															<option>Callao</option>
+														</select>
 													</div>
 												</div>
 
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="nuevoContactoNombre">Nombre <span>*</span></label>
-														<input type="text" class="form-control" id="editarContactoNombre">
-													</div>
-													<div class="form-group col-md-6">
-														<label for="nuevoContactoApellidoPaterno">Apellido Paterno <span>*</span></label>
-														<input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
-													</div>
+												<div class="form-group">
+													<label for="nuevoSedeProvincia">Distrito <span>*</span></label>
+													<select class="form-control" id="nuevoSedeProvincia">
+														<option>Seleccione</option>
+														<option>Magdalena</option>
+														<option>Lince</option>
+													</select>
 												</div>
 
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="nuevoContactoApellidoMaterno">Apellido Materno <span>*</span></label>
-														<input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
-													</div>
-													<div class="form-group col-md-6">
-														<label for="nuevoContactoCargo">Cargo <span>*</span></label>
-														<input type="text" class="form-control" id="nuevoContactoCargo">
-													</div>
+												<div class="form-group">
+													<label for="nuevoSedeNombre">Dirección de la sede<span>*</span></label>
+													<input type="text" class="form-control" id="nuevoSedeNombre">
 												</div>
 
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="nuevoContactoCorreoCorporativo">Correo corporativoo <span>*</span></label>
-														<input type="text" class="form-control" id="nuevoContactoCorreoCorporativo">
-													</div>
-													<div class="form-group col-md-6">
-														<label for="nuevoContactoCorreoPersonal">Correo personal</label>
-														<input type="text" class="form-control" id="nuevoContactoCorreoPersonal">
-													</div>
-												</div>
-
-												
-												<div class="form-row">
-													<div class="form-group col-md-4">
-														<label for="nuevoContactoCelularCorporativo">Celular corporativoo <span>*</span></label>
-														<input type="number" class="form-control" id="nuevoContactoCelularCorporativo">
-													</div>
-													<div class="form-group col-md-4">
-														<label for="nuevoContactoCelularPersonal">Celular personal</label>
-														<input type="text" class="form-control" id="nuevoContactoCelularPersonal">
-													</div>
-													<div class="form-group col-md-4">
-														<label for="nuevoContactotelefonoAnexo">Teléfono anexo</label>
-														<input type="text" class="form-control" id="nuevoContactotelefonoAnexo">
-													</div>
-												</div>
 
 												<div class="custom-control custom-switch">
-													<input type="checkbox" class="custom-control-input" id="contactoPrincipal-2">
-													<label class="custom-control-label" for="contactoPrincipal-2">Contacto principal</label>
+													<input type="checkbox" class="custom-control-input" id="sedePrincipal2">
+													<label class="custom-control-label" for="sedePrincipal2">Sede principal</label>
 												</div>
-
-												<button type="button" class="btn btn-danger mt-3" data-toggle="modal"
-												data-target="#modalEliminarContacto">
-													Eliminar contacto
-												</button>
 											</form>
 										</div>
 									</div>

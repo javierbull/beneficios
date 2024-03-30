@@ -7897,7 +7897,59 @@ div.dataTables_wrapper div.dataTables_info {
 }
 /* END EMPRESA */
 
-/* CONTACTOS */
+/* SEDES */
+.customSwitchNoLabel {
+  margin-bottom: 1rem;
+}
 
-/* END CONTACTOS */
+.customSwitchNoLabel input {
+  height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.customSwitchNoLabel label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 3rem;
+	height: 1.5rem;
+	background: var(--Gray4);
+	display: block;
+	border-radius: 1.5rem;
+	position: relative;
+	-webkit-border-radius: 1.5rem;
+	-moz-border-radius: 1.5rem;
+	-ms-border-radius: 1.5rem;
+	-o-border-radius: 1.5rem;
+}
+
+.customSwitchNoLabel label:after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 1.3rem;
+	height: 1.3rem;
+	background: var(--white);
+	border-radius: 1.5rem;
+	transition: 0.3s;
+	-webkit-border-radius: 1.5rem;
+	-moz-border-radius: 1.5rem;
+	-ms-border-radius: 1.5rem;
+	-o-border-radius: 1.5rem;
+}
+
+.customSwitchNoLabel input:checked + label {
+	background: var(--primary-default);
+}
+
+.customSwitchNoLabel input:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.customSwitchNoLabel label:active:after {
+	width: 3rem;
+}
+/* END SEDES */
 

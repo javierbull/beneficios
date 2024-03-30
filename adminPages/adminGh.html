@@ -1212,6 +1212,312 @@
 				</div>
 				<!-- Empresa panel -->
 
+				<!-- Sedes panel -->
+				<div class="panel" id="sedes-panel">
+					<div class="panel-header">
+						<div class="panel-header-top panel-header-top-actions">
+							<div class="panel-header-top--left">
+								<h2 class="panel-title">Sedes</h2>
+								<p>
+									Gestiona la Información de las sedes de tu empresa.
+								</p>
+							</div>
+							<div class="panel-header-top--rigth">
+								<button type="button" name="button" class="btn btn-primario showAdminPanel-nuevaSede">
+									<span class="material-icons-outlined">
+										add
+									</span>
+									Nuevo
+								</button>
+							</div>
+						</div>
+						<!-- <div class="panel-header-bottom">
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalInfoEstadosColaborador">
+								<span class="material-icons-outlined">
+									info
+								</span>
+								Info estados
+							</button>
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalFilterColaboradores">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div> -->
+					</div>
+
+					<div class="panel-body">
+						<div class="card-dtable">
+							<table class="table dtable">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Dirección</th>
+										<th scope="col">Colaboradores</th>
+										<th scope="col">Registrados</th>
+										<th scope="col">Pre registrados</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>La victoria</td>
+										<td>Av. Horacio Cachay 1080</td>
+										<td>90</td>
+										<td>40</td>
+										<td>20</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEditarColaborador">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												
+												<div class="customSwitchNoLabel">
+													<input type="checkbox" id="switchSede1" />
+													<label for="switchSede1">Toggle</label>
+												</div>			
+											</div>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- End Sedes panel -->
+
+				<!-- Nueva sede panel -->
+				<div class="panel" id="nuevaSede-panel">
+					<div class="panel-body">
+						<div class="card-dashboard card-editar-empresa">
+							<div class="panel-header-top">
+								<h2 class="panel-title">Sedes</h2>
+							</div>
+							
+							<div class="accordion accordion-gala accordion-admin" id="accordionContacto-1">
+								<div class="card">
+									<div class="card-header" id="headingOneSede">
+										<h2 class="mb-0">
+											<button class="btn btn-style-none btn-block btn-accordion" type="button"
+												data-toggle="collapse" data-target="#collapseOneContactos"
+												aria-expanded="true" aria-controls="collapseOneContactos">
+												<p class="text-btn-accordion">
+													María Costa
+													<span class="tag tag-info">
+														Principal
+													</span>
+												</p>
+												
+												<span class="material-icons-outlined">
+													expand_more
+												</span>
+											</button>
+										</h2>
+									</div>
+
+									<div id="collapseOneContactos" class="collapse show" aria-labelledby="headingOneSede"
+										data-parent="#accordionContacto-1">
+										<div class="card-body">
+											<form >
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="editarContactoDoc">Documento <span>*</span></label>
+														<select class="form-control" id="editarContactoDoc">
+															<option selected>DNI</option>
+															<option>CE</option>
+														</select>
+													</div>
+													<div class="form-group col-md-6">
+														<label for="editarContactoNumero">Número <span>*</span></label>
+														<input type="text" class="form-control" id="editarContactoNumero" value="75485652">
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="editarContactoNombre">Nombre <span>*</span></label>
+														<input type="text" class="form-control" id="editarContactoNombre" value="María">
+													</div>
+													<div class="form-group col-md-6">
+														<label for="editarContactoApellidoPaterno">Apellido Paterno <span>*</span></label>
+														<input type="text" class="form-control" id="editarContactoApellidoPaterno" value="Costa">
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="editarContactoApellidoMaterno">Apellido Materno <span>*</span></label>
+														<input type="text" class="form-control" id="editarContactoApellidoMaterno" value="Soto">
+													</div>
+													<div class="form-group col-md-6">
+														<label for="editarContactoCargo">Cargo <span>*</span></label>
+														<input type="text" class="form-control" id="editarContactoCargo" value="RRHH">
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="editarContactoCorreoCorporativo">Correo corporativoo <span>*</span></label>
+														<input type="text" class="form-control" id="editarContactoCorreoCorporativo" value="mcosta@win.com.pe">
+													</div>
+													<div class="form-group col-md-6">
+														<label for="editarContactoCorreoPersonal">Correo personal</label>
+														<input type="text" class="form-control" id="editarContactoCorreoPersonal" value="mcosta@gmail.com">
+													</div>
+												</div>
+
+												
+												<div class="form-row">
+													<div class="form-group col-md-4">
+														<label for="editarContactoCelularCorporativo">Celular corporativoo <span>*</span></label>
+														<input type="number" class="form-control" id="editarContactoCelularCorporativo" value="966254856">
+													</div>
+													<div class="form-group col-md-4">
+														<label for="editarContactoCelularPersonal">Celular personal</label>
+														<input type="text" class="form-control" id="editarContactoCelularPersonal" value="955222555">
+													</div>
+													<div class="form-group col-md-4">
+														<label for="editarContactotelefonoAnexo">Teléfono anexo</label>
+														<input type="text" class="form-control" id="editarContactotelefonoAnexo" value="2541256">
+													</div>
+												</div>
+
+												<div class="custom-control custom-switch">
+													<input type="checkbox" class="custom-control-input" id="contactoPrincipal">
+													<label class="custom-control-label" for="contactoPrincipal">Contacto principal</label>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion accordion-gala accordion-admin" id="accordionContacto-2">
+								<div class="card">
+									<div class="card-header" id="headingTwoSede">
+										<h2 class="mb-0">
+											<button class="btn btn-style-none btn-block btn-accordion" type="button"
+												data-toggle="collapse" data-target="#collapseTwoContactos"
+												aria-expanded="true" aria-controls="collapseTwoContactos">
+												<p class="text-btn-accordion">
+													Nuevo contacto
+												</p>
+												
+												<span class="material-icons-outlined">
+													expand_more
+												</span>
+											</button>
+										</h2>
+									</div>
+
+									<div id="collapseTwoContactos" class="collapse" aria-labelledby="headingTwoSede"
+										data-parent="#accordionContacto-2">
+										<div class="card-body">
+											<form >
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoDoc">Documento <span>*</span></label>
+														<select class="form-control" id="nuevoContactoDoc">
+															<option>DNI</option>
+															<option>CE</option>
+														</select>
+													</div>
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoNumero">Número <span>*</span></label>
+														<input type="text" class="form-control" id="nuevoContactoNumero">
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoNombre">Nombre <span>*</span></label>
+														<input type="text" class="form-control" id="editarContactoNombre">
+													</div>
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoApellidoPaterno">Apellido Paterno <span>*</span></label>
+														<input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoApellidoMaterno">Apellido Materno <span>*</span></label>
+														<input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
+													</div>
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoCargo">Cargo <span>*</span></label>
+														<input type="text" class="form-control" id="nuevoContactoCargo">
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoCorreoCorporativo">Correo corporativoo <span>*</span></label>
+														<input type="text" class="form-control" id="nuevoContactoCorreoCorporativo">
+													</div>
+													<div class="form-group col-md-6">
+														<label for="nuevoContactoCorreoPersonal">Correo personal</label>
+														<input type="text" class="form-control" id="nuevoContactoCorreoPersonal">
+													</div>
+												</div>
+
+												
+												<div class="form-row">
+													<div class="form-group col-md-4">
+														<label for="nuevoContactoCelularCorporativo">Celular corporativoo <span>*</span></label>
+														<input type="number" class="form-control" id="nuevoContactoCelularCorporativo">
+													</div>
+													<div class="form-group col-md-4">
+														<label for="nuevoContactoCelularPersonal">Celular personal</label>
+														<input type="text" class="form-control" id="nuevoContactoCelularPersonal">
+													</div>
+													<div class="form-group col-md-4">
+														<label for="nuevoContactotelefonoAnexo">Teléfono anexo</label>
+														<input type="text" class="form-control" id="nuevoContactotelefonoAnexo">
+													</div>
+												</div>
+
+												<div class="custom-control custom-switch">
+													<input type="checkbox" class="custom-control-input" id="contactoPrincipal-2">
+													<label class="custom-control-label" for="contactoPrincipal-2">Contacto principal</label>
+												</div>
+
+												<button type="button" class="btn btn-danger mt-3" data-toggle="modal"
+												data-target="#modalEliminarContacto">
+													Eliminar contacto
+												</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-dashboard-actions-2">
+								<button type="button" class="btn btn-informativo">
+								<span class="material-icons-outlined">
+									add
+								</span>
+									Agregar contacto
+								</button>
+
+								<button type="button" class="btn btn-primario" data-toggle="modal"
+								data-target="#modalDatosGuardados">
+									Guardar cambios
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Nueva sede panel -->
 				
 				<!-- Contactos panel -->
 				<div class="panel" id="contactos-panel">
@@ -1436,6 +1742,8 @@
 					</div>
 				</div>
 				<!-- Contactos panel -->
+
+				
 
 				
 			</div>

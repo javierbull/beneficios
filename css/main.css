@@ -7125,7 +7125,7 @@ iframe {
   border-top: none;
 }
 
-.table td {
+.table td, .table tbody th {
   /* background-color: lavender; */
   vertical-align: middle;
 }

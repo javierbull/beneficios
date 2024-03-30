@@ -313,6 +313,20 @@ hr {
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.25);
 }
 
+.btn-ghost {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.btn-ghost:hover {
+  background-color: var(--Gray2);
+}
+
+.btn-ghost:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(160, 163, 189, 0.5);
+}
+
 .btn-exito {
   font-weight: 600;
   background-color: var(--green);

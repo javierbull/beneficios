@@ -402,7 +402,14 @@
 							</li>
 						</ul>
 					</li>
-
+					<li class="sidebar-item">
+						<button class="btn sidebar-item-btn showAdminPanel-colaboradores closeMenuMobile sidebar-item-db">
+							<span class="material-icons-outlined">
+								assignment_ind
+							</span>
+							Colaboradores
+						</button>
+					</li>
 
 			</div>
 		</div>
@@ -634,7 +641,14 @@
 							</li>
 						</ul>
 					</li>
-
+					<li class="sidebar-item">
+						<button class="btn sidebar-item-btn showAdminPanel-colaboradores sidebar-item-db">
+							<span class="material-icons-outlined">
+								assignment_ind
+							</span>
+							Colaboradores
+						</button>
+					</li>
 				</ul>
 
 			</div>
@@ -715,7 +729,7 @@
 						<div class="panel-header-top">
 							<h2 class="panel-title">Vales corporativos</h2>
 							<p>
-								En esta sección se muestran todas tus solicitudes de vales corporativos
+								En esta sección se muestran todas tus solicitudes de vales corporativos.
 							</p>
 						</div>
 						<div class="panel-header-bottom">
@@ -846,6 +860,89 @@
 					</div>
 				</div>
 				<!-- End Vales corporativos panel -->
+
+				<!-- Colaboradores panel -->
+				<div class="panel" id="colaboradores-panel">
+					<div class="panel-header">
+						<div class="panel-header-top">
+							<h2 class="panel-title">Colaboradores</h2>
+							<p>
+								Administración de colaboradores.
+							</p>
+						</div>
+						<div class="panel-header-bottom">
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalInfoEstadosValesGh">
+								<span class="material-icons-outlined">
+									info
+								</span>
+								Info estados
+							</button>
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalFilterValesGh">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
+
+					<div class="panel-body">
+						<div class="card-dtable">
+							<table class="table dtable">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">DNI/CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Nacimiento</th>
+										<th scope="col">Correo</th>
+										<th scope="col">Sede</th>
+										<th scope="col">Perfil</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>75241564</td>
+										<td>Sara Torres Saldaña</td>
+										<td>25/12/1990</td>
+										<td>storres@gmail.com</td>
+										<td>La Molina</td>
+										<td>Administrador</td>
+										<td>
+											<span class="tag tag-success">
+												Plataforma
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- End Colaboradores panel -->
 
 
 			</div>

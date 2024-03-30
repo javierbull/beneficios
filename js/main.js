@@ -380,11 +380,19 @@ $('.dtable').DataTable({
   $(".showAdminPanel-dashboard").click(function() {
     $("#dashboard-panel").show();
     $("#valesCorporativos-panel").hide();
+    $("#colaboradores-panel").hide();
   });
 
   $(".showAdminPanel-valesSolicitados").click(function() {
     $("#dashboard-panel").hide();
     $("#valesCorporativos-panel").show();
+    $("#colaboradores-panel").hide();
+  });
+
+  $(".showAdminPanel-colaboradores").click(function() {
+    $("#dashboard-panel").hide();
+    $("#valesCorporativos-panel").hide();
+    $("#colaboradores-panel").show();
   });
   // End show hide panels admin
 

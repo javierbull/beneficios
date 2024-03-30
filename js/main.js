@@ -388,6 +388,7 @@ $('.dtable').DataTable({
     $("#valesCorporativos-panel").hide();
     $("#colaboradores-panel").hide();
     $("#empresa-panel").hide();
+    $("#contactos-panel").hide();
   });
 
   $(".showAdminPanel-valesSolicitados").click(function() {
@@ -395,6 +396,7 @@ $('.dtable').DataTable({
     $("#valesCorporativos-panel").show();
     $("#colaboradores-panel").hide();
     $("#empresa-panel").hide();
+    $("#contactos-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function() {
@@ -402,6 +404,7 @@ $('.dtable').DataTable({
     $("#valesCorporativos-panel").hide();
     $("#colaboradores-panel").show();
     $("#empresa-panel").hide();
+    $("#contactos-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function() {
@@ -409,6 +412,15 @@ $('.dtable').DataTable({
     $("#valesCorporativos-panel").hide();
     $("#colaboradores-panel").hide();
     $("#empresa-panel").show();
+    $("#contactos-panel").hide();
+  });
+
+  $(".showAdminPanel-contactos").click(function() {
+    $("#dashboard-panel").hide();
+    $("#valesCorporativos-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#contactos-panel").show();
   });
   // End show hide panels admin
 

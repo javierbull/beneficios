@@ -7862,5 +7862,11 @@ div.dataTables_wrapper div.dataTables_info {
   margin-left: auto;
   margin-right: auto;
 }
+
+.card-dashboard-actions {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: end;
+}
 /* END EMPRESA */
 

@@ -7856,3 +7856,11 @@ div.dataTables_wrapper div.dataTables_info {
 }
 /* END DASHBOARD */
 
+/* EMPRESA */
+.card-editar-empresa {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* END EMPRESA */
+

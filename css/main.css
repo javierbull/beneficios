@@ -7070,6 +7070,7 @@ iframe {
   /* background-color: lightgoldenrodyellow; */
   display: none;
   width: 100%;
+  color: var(--black-admin);
 }
 
 .active-panel {

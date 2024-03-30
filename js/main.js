@@ -334,9 +334,15 @@ $(".sidebar-item-db").on('click', function(){
   $(this).addClass('active-item');
 });
 
-$(".btn-sidebar-toggle").click(function(){
-  $(".sidebar-list-collapse").toggle();
+$(".btn-sidebar-toggle--vales").click(function(){
+  $(".sidebar-list-collapse--vales").toggle();
 });
+
+$(".btn-sidebar-toggle--sedes").click(function(){
+  $(".sidebar-list-collapse--sedes").toggle();
+});
+
+
 
 // End sidebar item active
 
@@ -381,18 +387,28 @@ $('.dtable').DataTable({
     $("#dashboard-panel").show();
     $("#valesCorporativos-panel").hide();
     $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
   });
 
   $(".showAdminPanel-valesSolicitados").click(function() {
     $("#dashboard-panel").hide();
     $("#valesCorporativos-panel").show();
     $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function() {
     $("#dashboard-panel").hide();
     $("#valesCorporativos-panel").hide();
     $("#colaboradores-panel").show();
+    $("#empresa-panel").hide();
+  });
+
+  $(".showAdminPanel-empresa").click(function() {
+    $("#dashboard-panel").hide();
+    $("#valesCorporativos-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").show();
   });
   // End show hide panels admin
 

@@ -373,6 +373,7 @@ $('.dtable').DataTable({
   }
 
 });
+
 // End datatables
 
   // Show hide panels admin

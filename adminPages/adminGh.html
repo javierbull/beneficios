@@ -879,7 +879,7 @@
 								Info estados
 							</button>
 							<button class="btn btn-small btn-secundario" data-toggle="modal"
-								data-target="#modalFilterValesGh">
+								data-target="#modalFilterColaboradores">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -1911,6 +1911,49 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin" id="modalFilterColaboradores" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="filtrarColaboradorEstado">Estado</label>
+							<select class="form-control" id="filtrarColaboradorEstado">
+								<option>Seleccione</option>
+								<option>Plataforma</option>
+								<option>Inhouse</option>
+								<option>Pre registrados</option>
+								<option>Sin confirmar</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="filtrarColaboradorSede">Sede</label>
+							<select class="form-control" id="filtrarColaboradorSede">
+								<option>Seleccione</option>
+								<option>Surco</option>
+								<option>La Molina</option>
+							</select>
+						</div>
+						
+						
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primario">Aplicar filtros</button>
 				</div>
 			</div>
 		</div>

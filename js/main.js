@@ -354,7 +354,7 @@ $('.thumbnail-item').on('click', function() {
 
 // Datatables
 $('.dtable').DataTable({
-  scrollX: true,
+  // scrollX: true,
   //para cambiar el lenguaje a español
   "language": {
     "lengthMenu": "Mostrar _MENU_ filas",

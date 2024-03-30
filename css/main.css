@@ -7148,11 +7148,10 @@ iframe {
   border: 1px solid var(--lineColor);
 }
 
-.dataTables_wrapper {
-  /* background-color: pink; */
-  width: 100%;
+.dataTables_wrapper .row:nth-child(2) {
+  /* background-color: blue; */
+  overflow-x: auto;
 }
-
 
 
 /* Pagination color */

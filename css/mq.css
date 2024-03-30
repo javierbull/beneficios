@@ -2247,6 +2247,14 @@
   }
 
   /* end panel colaboradores */
+
+  /* Empresas */
+  .card-editar-empresa {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* end empresas */
 }
 
 /* Fin cell portrait */

@@ -2255,6 +2255,25 @@
     margin-right: auto;
   }
   /* end empresas */
+
+  /* Contactos */
+  .card-dashboard-actions-2 {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .accordion-admin .text-btn-accordion {
+    font-size: .875rem;
+  }
+
+  .accordion-admin .text-btn-accordion span {
+    font-size: .625rem;
+    margin-left: .75rem;
+  }
+  /* End contactos */
 }
 
 /* Fin cell portrait */

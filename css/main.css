@@ -7911,32 +7911,32 @@ div.dataTables_wrapper div.dataTables_info {
 .customSwitchNoLabel label {
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 3rem;
-	height: 1.5rem;
+	width: 2.25rem;
+	height: 1.2rem;
 	background: var(--Gray4);
 	display: block;
-	border-radius: 1.5rem;
+	border-radius: 1.2rem;
 	position: relative;
-	-webkit-border-radius: 1.5rem;
-	-moz-border-radius: 1.5rem;
-	-ms-border-radius: 1.5rem;
-	-o-border-radius: 1.5rem;
+	-webkit-border-radius: 1.2rem;
+	-moz-border-radius: 1.2rem;
+	-ms-border-radius: 1.2rem;
+	-o-border-radius: 1.2rem;
 }
 
 .customSwitchNoLabel label:after {
 	content: "";
 	position: absolute;
-	top: 2px;
-	left: 2px;
-	width: 1.3rem;
-	height: 1.3rem;
+	top: 1.5px;
+	left: 1.5px;
+	width: 1rem;
+	height: 1rem;
 	background: var(--white);
-	border-radius: 1.5rem;
 	transition: 0.3s;
-	-webkit-border-radius: 1.5rem;
-	-moz-border-radius: 1.5rem;
-	-ms-border-radius: 1.5rem;
-	-o-border-radius: 1.5rem;
+	border-radius: 1.2rem;
+	-webkit-border-radius: 1.2rem;
+	-moz-border-radius: 1.2rem;
+	-ms-border-radius: 1.2rem;
+	-o-border-radius: 1.2rem;
 }
 
 .customSwitchNoLabel input:checked + label {
@@ -7949,7 +7949,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .customSwitchNoLabel label:active:after {
-	width: 3rem;
+	width: 2.25rem;
 }
 /* END SEDES */
 

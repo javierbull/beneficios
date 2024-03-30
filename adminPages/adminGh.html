@@ -1838,7 +1838,7 @@
 
 	<div class="modal fade modal-admin" id="modalEditarColaborador" tabindex="-1" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Actualizar datos</h5>
@@ -1852,59 +1852,61 @@
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorDoc">Documento <span>*</span></label>
 								<select class="form-control" id="editarColaboradorDoc">
-									<option>DNI</option>
+									<option selected>DNI</option>
 									<option>CE</option>
 								</select>
 							</div>
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorNumero">Número <span>*</span></label>
-								<input type="text" class="form-control" id="editarColaboradorNumero" value="75241564">
+								<input type="text" class="form-control" id="editarColaboradorNumero" value="75485652">
 							</div>
 						</div>
 
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorNombre">Nombre <span>*</span></label>
-								<input type="text" class="form-control" id="editarColaboradorNombre" value="Sara">
+								<input type="text" class="form-control" id="editarColaboradorNombre" value="Armando">
 							</div>
 							
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorApPaterno">Apellido paterno <span>*</span></label>
-								<input type="text" class="form-control" id="editarColaboradorApPaterno" value="Torres">
+								<input type="text" class="form-control" id="editarColaboradorApPaterno" value="Puertas"> 
 							</div>
 						</div>
 
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorApMaterno">Apellido materno <span>*</span></label>
-								<input type="text" class="form-control" id="editarColaboradorApMaterno" value="Saldaña">
+								<input type="text" class="form-control" id="editarColaboradorApMaterno" value="Solano">
 							</div>
 
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorNacimiento">Fecha de nacimiento <span>*</span></label>
-								<input type="date" class="form-control" id="editarColaboradorNacimiento" value="25/121990">
+								<input type="date" class="form-control" id="editarColaboradorNacimiento" value="29/02/1990">
 							</div>
 						</div>
 
-						<div class="form-group">
-							<label for="editarColaboradorCorreoCorporativo">Correo corporativo <span>*</span></label>
-							<input type="email" class="form-control" id="editarColaboradorCorreoCorporativo" value="storres@bcp.com">
-						</div>
-
-						<div class="form-group">
-							<label for="editarColaboradorCorreoPersonal">Correo personal</label>
-							<input type="email" class="form-control" id="editarColaboradorCorreoPersonal" value="storres@gmail.com.pe">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="editarColaboradorCorreoCorporativo">Correo corporativo <span>*</span></label>
+								<input type="email" class="form-control" id="editarColaboradorCorreoCorporativo" value="apuertas@bcp.com.pe">
+							</div>
+	
+							<div class="form-group col-md-6">
+								<label for="editarColaboradorCorreoPersonal">Correo personal</label>
+								<input type="email" class="form-control" id="editarColaboradorCorreoPersonal" value="apuertas@gmail.com">
+							</div>
 						</div>
 
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorcelularCorporativo">Celular corporativo</label>
-								<input type="number" class="form-control" id="editarColaboradorcelularCorporativo" value="966256452">
+								<input type="number" class="form-control" id="editarColaboradorcelularCorporativo" value="966254658">
 							</div>
 
 							<div class="form-group col-md-6">
 								<label for="editarColaboradorcelularPersonal">Celular personal <span>*</span></label>
-								<input type="number" class="form-control" id="editarColaboradorcelularPersonal" value="966256854">
+								<input type="number" class="form-control" id="editarColaboradorcelularPersonal" value="956256458">
 							</div>
 						</div>
 
@@ -1912,12 +1914,26 @@
 							<label for="editarColaboradorSede">Sede <span>*</span></label>
 							<select class="form-control" id="editarColaboradorSede">
 								<option>Seleccione</option>
-								<option Selected>La Molina</option>
-								<option>Surco</option>
+								<option>La Molina</option>
+								<option selected>Surco</option>
 							</select>
 						</div>
 
-						
+						<label>Tipo de perfil</label>
+						<div class="wrap-perfil">
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="editarPerfilRegular" name="editarPerfilColaborador" class="custom-control-input" checked>
+								<label class="custom-control-label" for="editarPerfilRegular">Regular</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="editarPerfilAdministrador" name="editarPerfilColaborador" class="custom-control-input">
+								<label class="custom-control-label" for="editarPerfilAdministrador">Administrador</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="editarPerfilSubAdministrador" name="editarPerfilColaborador" class="custom-control-input">
+								<label class="custom-control-label" for="editarPerfilSubAdministrador">Sub Administrador</label>
+							</div>
+						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -1930,7 +1946,7 @@
 
 	<div class="modal fade modal-admin" id="modalNuevoColaborador" tabindex="-1" aria-labelledby="NuecoColaboradorTitle"
 		aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="NuecoColaboradorTitle">Nuevvo colaborador</h5>
@@ -1978,14 +1994,16 @@
 							</div>
 						</div>
 
-						<div class="form-group">
-							<label for="nuevoColaboradorCorreoCorporativo">Correo corporativo <span>*</span></label>
-							<input type="email" class="form-control" id="nuevoColaboradorCorreoCorporativo">
-						</div>
-
-						<div class="form-group">
-							<label for="nuevoColaboradorCorreoPersonal">Correo personal</label>
-							<input type="email" class="form-control" id="nuevoColaboradorCorreoPersonal">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorCorreoCorporativo">Correo corporativo <span>*</span></label>
+								<input type="email" class="form-control" id="nuevoColaboradorCorreoCorporativo">
+							</div>
+	
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorCorreoPersonal">Correo personal</label>
+								<input type="email" class="form-control" id="nuevoColaboradorCorreoPersonal">
+							</div>
 						</div>
 
 						<div class="form-row">
@@ -2009,7 +2027,21 @@
 							</select>
 						</div>
 
-						
+						<label>Tipo de perfil</label>
+						<div class="wrap-perfil">
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="nuevoPerfilRegular" name="nuevPerfilColaborador" class="custom-control-input">
+								<label class="custom-control-label" for="nuevoPerfilRegular">Regular</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="nuevoPerfilAdministrador" name="nuevPerfilColaborador" class="custom-control-input">
+								<label class="custom-control-label" for="nuevoPerfilAdministrador">Administrador</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="nuevoPerfilSubAdministrador" name="nuevPerfilColaborador" class="custom-control-input">
+								<label class="custom-control-label" for="nuevoPerfilSubAdministrador">Sub Administrador</label>
+							</div>
+						</div>
 					</form>
 				</div>
 				<div class="modal-footer">

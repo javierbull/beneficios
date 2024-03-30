@@ -1930,6 +1930,98 @@
 		</div>
 	</div>
 
+	<div class="modal fade modal-admin" id="modalNuevoColaborador" tabindex="-1" aria-labelledby="NuecoColaboradorTitle"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="NuecoColaboradorTitle">Nuevvo colaborador</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorDoc">Documento <span>*</span></label>
+								<select class="form-control" id="nuevoColaboradorDoc">
+									<option>DNI</option>
+									<option>CE</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorNumero">Número <span>*</span></label>
+								<input type="text" class="form-control" id="nuevoColaboradorNumero">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorNombre">Nombre <span>*</span></label>
+								<input type="text" class="form-control" id="nuevoColaboradorNombre">
+							</div>
+							
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorApPaterno">Apellido paterno <span>*</span></label>
+								<input type="text" class="form-control" id="nuevoColaboradorApPaterno">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorApMaterno">Apellido materno <span>*</span></label>
+								<input type="text" class="form-control" id="nuevoColaboradorApMaterno">
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorNacimiento">Fecha de nacimiento <span>*</span></label>
+								<input type="date" class="form-control" id="nuevoColaboradorNacimiento">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="nuevoColaboradorCorreoCorporativo">Correo corporativo <span>*</span></label>
+							<input type="email" class="form-control" id="nuevoColaboradorCorreoCorporativo">
+						</div>
+
+						<div class="form-group">
+							<label for="nuevoColaboradorCorreoPersonal">Correo personal</label>
+							<input type="email" class="form-control" id="nuevoColaboradorCorreoPersonal">
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorcelularCorporativo">Celular corporativo</label>
+								<input type="number" class="form-control" id="nuevoColaboradorcelularCorporativo">
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="nuevoColaboradorcelularPersonal">Celular personal <span>*</span></label>
+								<input type="number" class="form-control" id="nuevoColaboradorcelularPersonal">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="nuevoColaboradorSede">Sede <span>*</span></label>
+							<select class="form-control" id="nuevoColaboradorSede">
+								<option>Seleccione</option>
+								<option>La Molina</option>
+								<option>Surco</option>
+							</select>
+						</div>
+
+						
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primario">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="modal fade modal-admin" id="modalDatosGuardados" tabindex="-1" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog">

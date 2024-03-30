@@ -133,6 +133,10 @@ hr {
   padding-right: 3rem;
 }
 
+.form-group label span {
+  color: var(--danger);
+}
+
 @font-face {
   font-family: "Organika Sans";
   src: url("../fonts/Organika-Sans.otf");

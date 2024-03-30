@@ -304,12 +304,14 @@ hr {
 }
 
 .btn-terciario {
-  color: var(--black);
+  background-color: var(--black-admin);
+  color: var(--white);
   font-weight: 600;
 }
 
 .btn-terciario:hover {
-  background-color: var(--jhon);
+  background-color: var(--Gray6);
+  color: var(--white);
 }
 
 .btn-terciario:focus {
@@ -7080,6 +7082,16 @@ iframe {
 
 .panel-header-top {
   margin-bottom: 1.5rem;
+}
+
+.panel-header-top-actions {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-header-top-actions p {
+  margin-bottom: 0;
 }
 
 .panel-title {

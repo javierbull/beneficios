@@ -1231,22 +1231,6 @@
 								</button>
 							</div>
 						</div>
-						<!-- <div class="panel-header-bottom">
-							<button class="btn btn-small btn-secundario" data-toggle="modal"
-								data-target="#modalInfoEstadosColaborador">
-								<span class="material-icons-outlined">
-									info
-								</span>
-								Info estados
-							</button>
-							<button class="btn btn-small btn-secundario" data-toggle="modal"
-								data-target="#modalFilterColaboradores">
-								<span class="material-icons-outlined">
-									filter_list
-								</span>
-								Filtrar
-							</button>
-						</div> -->
 					</div>
 
 					<div class="panel-body">
@@ -1340,21 +1324,27 @@
 
 				<!-- Nueva sede panel -->
 				<div class="panel" id="nuevaSede-panel">
+					<button type="button" class="btn btn-ghost showAdminPanel-sedes">
+						<span class="material-icons-outlined">
+							arrow_back
+						</span>
+						Volver
+					</button>
 					<div class="panel-body">
 						<div class="card-dashboard card-editar-empresa">
 							<div class="panel-header-top">
 								<h2 class="panel-title">Sedes</h2>
 							</div>
 							
-							<div class="accordion accordion-gala accordion-admin" id="accordionContacto-1">
+							<div class="accordion accordion-gala accordion-admin" id="accordionSede-1">
 								<div class="card">
 									<div class="card-header" id="headingOneSede">
 										<h2 class="mb-0">
 											<button class="btn btn-style-none btn-block btn-accordion" type="button"
-												data-toggle="collapse" data-target="#collapseOneContactos"
-												aria-expanded="true" aria-controls="collapseOneContactos">
+												data-toggle="collapse" data-target="#collapseOneSede"
+												aria-expanded="true" aria-controls="collapseOneSede">
 												<p class="text-btn-accordion">
-													María Costa
+													Magdalena
 													<span class="tag tag-info">
 														Principal
 													</span>
@@ -1367,76 +1357,49 @@
 										</h2>
 									</div>
 
-									<div id="collapseOneContactos" class="collapse show" aria-labelledby="headingOneSede"
-										data-parent="#accordionContacto-1">
+									<div id="collapseOneSede" class="collapse show" aria-labelledby="headingOneSede"
+										data-parent="#accordionSede-1">
 										<div class="card-body">
 											<form >
+												<div class="form-group">
+													<label for="editarSedeNombre">Nombre de la sede<span>*</span></label>
+													<input type="text" class="form-control" id="editarSedeNombre" value="Magdalena">
+												</div>
+
 												<div class="form-row">
 													<div class="form-group col-md-6">
-														<label for="editarContactoDoc">Documento <span>*</span></label>
-														<select class="form-control" id="editarContactoDoc">
-															<option selected>DNI</option>
-															<option>CE</option>
+														<label for="editarSedeDepartamento">Departamento <span>*</span></label>
+														<select class="form-control" id="editarSedeDepartamento">
+															<option selected>Lima</option>
+															<option>Arequipa</option>
 														</select>
 													</div>
 													<div class="form-group col-md-6">
-														<label for="editarContactoNumero">Número <span>*</span></label>
-														<input type="text" class="form-control" id="editarContactoNumero" value="75485652">
+														<label for="editarSedeProvincia">Provincia <span>*</span></label>
+														<select class="form-control" id="editarSedeProvincia">
+															<option selected>Lima</option>
+															<option>Callao</option>
+														</select>
 													</div>
 												</div>
 
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="editarContactoNombre">Nombre <span>*</span></label>
-														<input type="text" class="form-control" id="editarContactoNombre" value="María">
-													</div>
-													<div class="form-group col-md-6">
-														<label for="editarContactoApellidoPaterno">Apellido Paterno <span>*</span></label>
-														<input type="text" class="form-control" id="editarContactoApellidoPaterno" value="Costa">
-													</div>
+												<div class="form-group">
+													<label for="editarSedeProvincia">Distrito <span>*</span></label>
+													<select class="form-control" id="editarSedeProvincia">
+														<option selected>Magdalena</option>
+														<option>Lince</option>
+													</select>
 												</div>
 
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="editarContactoApellidoMaterno">Apellido Materno <span>*</span></label>
-														<input type="text" class="form-control" id="editarContactoApellidoMaterno" value="Soto">
-													</div>
-													<div class="form-group col-md-6">
-														<label for="editarContactoCargo">Cargo <span>*</span></label>
-														<input type="text" class="form-control" id="editarContactoCargo" value="RRHH">
-													</div>
+												<div class="form-group">
+													<label for="editarSedeNombre">Dirección de la sede<span>*</span></label>
+													<input type="text" class="form-control" id="editarSedeNombre" value="Av. Antonio sucre 421">
 												</div>
 
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="editarContactoCorreoCorporativo">Correo corporativoo <span>*</span></label>
-														<input type="text" class="form-control" id="editarContactoCorreoCorporativo" value="mcosta@win.com.pe">
-													</div>
-													<div class="form-group col-md-6">
-														<label for="editarContactoCorreoPersonal">Correo personal</label>
-														<input type="text" class="form-control" id="editarContactoCorreoPersonal" value="mcosta@gmail.com">
-													</div>
-												</div>
-
-												
-												<div class="form-row">
-													<div class="form-group col-md-4">
-														<label for="editarContactoCelularCorporativo">Celular corporativoo <span>*</span></label>
-														<input type="number" class="form-control" id="editarContactoCelularCorporativo" value="966254856">
-													</div>
-													<div class="form-group col-md-4">
-														<label for="editarContactoCelularPersonal">Celular personal</label>
-														<input type="text" class="form-control" id="editarContactoCelularPersonal" value="955222555">
-													</div>
-													<div class="form-group col-md-4">
-														<label for="editarContactotelefonoAnexo">Teléfono anexo</label>
-														<input type="text" class="form-control" id="editarContactotelefonoAnexo" value="2541256">
-													</div>
-												</div>
 
 												<div class="custom-control custom-switch">
-													<input type="checkbox" class="custom-control-input" id="contactoPrincipal">
-													<label class="custom-control-label" for="contactoPrincipal">Contacto principal</label>
+													<input type="checkbox" class="custom-control-input" id="sedePrincipal" checked>
+													<label class="custom-control-label" for="sedePrincipal">Sede principal</label>
 												</div>
 											</form>
 										</div>
@@ -1444,13 +1407,13 @@
 								</div>
 							</div>
 
-							<div class="accordion accordion-gala accordion-admin" id="accordionContacto-2">
+							<div class="accordion accordion-gala accordion-admin" id="accordionSede-2">
 								<div class="card">
 									<div class="card-header" id="headingTwoSede">
 										<h2 class="mb-0">
 											<button class="btn btn-style-none btn-block btn-accordion" type="button"
-												data-toggle="collapse" data-target="#collapseTwoContactos"
-												aria-expanded="true" aria-controls="collapseTwoContactos">
+												data-toggle="collapse" data-target="#collapseTwoSede"
+												aria-expanded="true" aria-controls="collapseTwoSede">
 												<p class="text-btn-accordion">
 													Nuevo contacto
 												</p>
@@ -1462,8 +1425,8 @@
 										</h2>
 									</div>
 
-									<div id="collapseTwoContactos" class="collapse" aria-labelledby="headingTwoSede"
-										data-parent="#accordionContacto-2">
+									<div id="collapseTwoSede" class="collapse" aria-labelledby="headingTwoSede"
+										data-parent="#accordionSede-2">
 										<div class="card-body">
 											<form >
 												<div class="form-row">
@@ -1549,7 +1512,7 @@
 								<span class="material-icons-outlined">
 									add
 								</span>
-									Agregar contacto
+									Agregar sede
 								</button>
 
 								<button type="button" class="btn btn-primario" data-toggle="modal"

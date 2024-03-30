@@ -7094,6 +7094,11 @@ iframe {
   margin-bottom: 0;
 }
 
+.panel-header-top--rigth {
+  display: flex;
+  gap: .75rem;
+}
+
 .panel-title {
   font-size: 1.5rem;
   font-weight: 600;

@@ -2225,9 +2225,28 @@
     align-items: center !important;
     justify-content: center;
   }
-
-  
    /* end product thumbnail */
+
+   /* panel colaboradores */
+   .panel-header-top-actions {
+    /* background-color: pink; */
+    flex-direction: column;
+    
+  }
+
+  .panel-header-top--left {
+    margin-bottom: 1rem;
+  }
+
+  .panel-header-top--rigth {
+    /* background-color: lavender; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* end panel colaboradores */
 }
 
 /* Fin cell portrait */

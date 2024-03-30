@@ -319,6 +319,23 @@ hr {
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.25);
 }
 
+.btn-informativo {
+  background-color: var(--info);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.btn-informativo:hover {
+  background-color: var(--info-light);
+  color: var(--white);
+}
+
+.btn-informativo:focus {
+  background-color: var(--info);
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(32, 156, 238, 0.4);
+}
+
 .btn-ghost {
   color: var(--black);
   font-weight: 600;
@@ -7871,6 +7888,12 @@ div.dataTables_wrapper div.dataTables_info {
   padding-top: 2rem;
   display: flex;
   justify-content: end;
+}
+
+.card-dashboard-actions-2 {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 /* END EMPRESA */
 

@@ -7956,12 +7956,7 @@ div.dataTables_wrapper div.dataTables_info {
 /* INHOUSE */
 /* FullCalendar */
 .fc-view-harness {
-  min-height: 430px;
-}
-
-.fc-scroller {
-  /* background-color: yellow; */
-  /* height: 100%; */
+  min-height: 500px;
 }
 
 .fc-col-header {
@@ -7971,11 +7966,12 @@ div.dataTables_wrapper div.dataTables_info {
 
 .fc-scrollgrid-sync-table {
   width: 100% !important;
-  /* height: 100% !important; */
+  height: 100% !important;
 }
 
 .fc-daygrid-body {
   width: 100% !important;
+  height: 100% !important;
 }
 
 /* End FullCalendar */

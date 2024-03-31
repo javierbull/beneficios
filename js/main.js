@@ -494,8 +494,6 @@ $('#editar-empresa-input-preview-img').change(function(){
   reader.readAsDataURL(this.files[0]);
 });
 
-
- 
 });
 
 
@@ -657,6 +655,7 @@ for (const el of zoomables) {
 
 // End zoomable item
 
+
   // CALENDAR
   document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendarInhouse');
@@ -674,6 +673,7 @@ for (const el of zoomables) {
         week: 'Semana',
         day: 'Día'
       },
+      selectable: true,
       events: [
         {
           title: 'La molina',
@@ -685,12 +685,14 @@ for (const el of zoomables) {
           start: '2024-03-13T11:00:00',
           end: '2024-03-13T13:00:00'
         }
-        
       ]
     });
     calendar.render();
   });
+  
+
   // END CALENDAR
 
-
+ 
+ 
 

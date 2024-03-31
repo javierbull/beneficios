@@ -7974,6 +7974,11 @@ div.dataTables_wrapper div.dataTables_info {
   height: 100% !important;
 }
 
+.fc-toolbar-title {
+  color: var(--black-admin);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 /* End FullCalendar */
 
 

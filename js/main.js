@@ -674,6 +674,19 @@ for (const el of zoomables) {
         week: 'Semana',
         day: 'Día'
       },
+      events: [
+        {
+          title: 'La molina',
+          start: '2024-03-13T10:00:00',
+          end: '2024-03-13T13:00:00'
+        },
+        {
+          title: 'Lince',
+          start: '2024-03-13T11:00:00',
+          end: '2024-03-13T13:00:00'
+        }
+        
+      ]
     });
     calendar.render();
   });

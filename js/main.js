@@ -358,6 +358,8 @@ $('.thumbnail-item').on('click', function() {
         
 // End hover zoom image
 
+
+
 // Datatables
 $('.dtable').DataTable({
   // scrollX: true,
@@ -472,6 +474,8 @@ $('.dtable').DataTable({
   });
   // End show hide panels admin
 
+
+
 // SHOW ACTIVE FOCUS STEPPER
 
 $('#editar-empresa-input-preview-img').change(function(){
@@ -487,6 +491,7 @@ $('#editar-empresa-input-preview-img').change(function(){
   // read the image file as a data URL.
   reader.readAsDataURL(this.files[0]);
 });
+
 
  
 });
@@ -649,6 +654,16 @@ for (const el of zoomables) {
 }
 
 // End zoomable item
+
+  // CALENDAR
+  document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendarInhouse');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth'
+    });
+    calendar.render();
+  });-inhouse
+  // END CALENDAR
 
 
 

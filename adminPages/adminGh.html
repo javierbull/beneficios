@@ -447,7 +447,7 @@
 						</ul>
 					</li>
 					<li class="sidebar-item">
-						<button class="btn sidebar-item-btn showAdminPanel-inhouse sidebar-item-db">
+						<button class="btn sidebar-item-btn showAdminPanel-inhouse closeMenuMobile sidebar-item-db">
 							<span class="material-icons-outlined">
 								calendar_month
 								</span>
@@ -1741,7 +1741,98 @@
 				</div>
 				<!-- Contactos panel -->
 
-				
+				<!-- Inhouse panel -->
+				<div class="panel" id="inhouse-panel">
+					<div class="panel-body">
+						<div class="card-dashboard card-editar-empresa">
+							<div class="panel-header-top">
+								<h2 class="panel-title">Inhouse</h2>
+							</div>
+
+							<form>
+									
+								<div class="wrap-img-preview">
+									<div class="imageWrapper">
+										<img class="image-preview" id="editar-empresa-preview-logo-empresa" src="../img/logos/logos_empresas/win.png">
+									</div>
+
+									<div class="wrap-label-file-upload">
+										<button class="file-upload btn btn-secundario">
+											<span class="material-icons-outlined">
+												add
+											</span>
+											<input type="file" class="file-input-image" id="editar-empresa-input-preview-img">Cambiar logo
+										</button>
+										<p>JPG, PNG</p>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="editarEmpresaRuc">RUC</label>
+										<input type="text" class="form-control" id="editarEmpresaRuc"
+											value="12548569587" disabled>
+									</div>
+
+									<div class="form-group col-md-6">
+										<label for="editarEmpresaRs">Razón social</label>
+										<input type="text" class="form-control" id="editarEmpresaRs" value="BCP"
+											disabled>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="editarEmpresaNombreComercial">Nombre comercial</label>
+										<input type="text" class="form-control" id="editarEmpresaNombreComercial"
+											value="BCP">
+									</div>
+
+									<div class="form-group col-md-6">
+										<label for="editarEmpresaNombreWeb">Nombre web</label>
+										<input type="text" class="form-control" id="editarEmpresaNombreWeb" value="BCP">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="editarEmpresaRs">Código de empresa</label>
+									<input type="text" class="form-control" id="editarEmpresaRs" value="BCP2024"
+										disabled>
+								</div>
+								<div class="form-group">
+									<label for="mensajePlataforma">Mensaje plataforma</label>
+									<textarea class="form-control" id="mensajePlataforma" rows="4"
+										placeholder="Si desea incluir el nombre del colaborador en su mensaje usar el siguiente formato %colaborador%"></textarea>
+									<div class="caption">Máximo 200 caracteres</div>
+								</div>
+								<label>Tipo de pago</label>
+								<div class="wrap-perfil">
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="editarEmpresaPasarela" name="editarEmpresaTipoPago"
+											class="custom-control-input" checked>
+										<label class="custom-control-label" for="editarEmpresaPasarela">Pasarela</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="editarEmpresaPlanilla"
+											name="editarEmpresaTipoPago" class="custom-control-input">
+										<label class="custom-control-label"
+											for="editarEmpresaPlanilla">Planilla</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="editarEmpresaMixto"
+											name="editarEmpresaTipoPago" class="custom-control-input">
+										<label class="custom-control-label" for="editarEmpresaMixto">Mixto</label>
+									</div>
+								</div>
+								<div class="card-dashboard-actions">
+									<button type="button" class="btn btn-primario" data-toggle="modal"
+									data-target="#modalDatosGuardados">
+										Guardar cambios
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- End Inhouse panel -->
 
 				
 			</div>

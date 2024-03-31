@@ -391,6 +391,7 @@ $('.dtable').DataTable({
     $("#contactos-panel").hide();
     $("#sedes-panel").hide();
     $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
   });
 
   $(".showAdminPanel-valesSolicitados").click(function() {
@@ -401,6 +402,7 @@ $('.dtable').DataTable({
     $("#contactos-panel").hide();
     $("#sedes-panel").hide();
     $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function() {
@@ -411,6 +413,7 @@ $('.dtable').DataTable({
     $("#contactos-panel").hide();
     $("#sedes-panel").hide();
     $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function() {
@@ -421,6 +424,7 @@ $('.dtable').DataTable({
     $("#contactos-panel").hide();
     $("#sedes-panel").hide();
     $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
   });
 
   $(".showAdminPanel-contactos").click(function() {
@@ -431,6 +435,7 @@ $('.dtable').DataTable({
     $("#contactos-panel").show();
     $("#sedes-panel").hide();
     $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function() {
@@ -441,6 +446,7 @@ $('.dtable').DataTable({
     $("#contactos-panel").hide();
     $("#sedes-panel").show();
     $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
   });
 
   $(".showAdminPanel-nuevaSede").click(function() {
@@ -451,6 +457,18 @@ $('.dtable').DataTable({
     $("#contactos-panel").hide();
     $("#sedes-panel").hide();
     $("#nuevaSede-panel").show();
+    $("#inhouse-panel").hide();
+  });
+
+  $(".showAdminPanel-inhouse").click(function() {
+    $("#dashboard-panel").hide();
+    $("#valesCorporativos-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#contactos-panel").hide();
+    $("#sedes-panel").hide();
+    $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").show();
   });
   // End show hide panels admin
 

@@ -662,7 +662,12 @@ for (const el of zoomables) {
     var calendarEl = document.getElementById('calendarInhouse');
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
-      locale: 'es'
+      locale: 'es',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
     });
     calendar.render();
   });

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
   // INCREMENTO - DECREMENTO =================
 
   $('.qtybutton').on('click', function() {
@@ -662,7 +664,7 @@ for (const el of zoomables) {
       initialView: 'dayGridMonth'
     });
     calendar.render();
-  });-inhouse
+  });
   // END CALENDAR
 
 

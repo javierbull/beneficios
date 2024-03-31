@@ -661,7 +661,8 @@ for (const el of zoomables) {
   document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendarInhouse');
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth'
+      initialView: 'dayGridMonth',
+      locale: 'es'
     });
     calendar.render();
   });

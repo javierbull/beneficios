@@ -3143,8 +3143,8 @@
 										data-toggle="collapse" data-target="#collapseOneInhouseNueva"
 										aria-expanded="true" aria-controls="collapseOneInhouseNueva">
 										<p class="text-btn-accordion">
-											Magdalena
-											<span class="tag tag-info">
+											Nueva visita
+											<span class="tag tag-info d-none">
 												Principal
 											</span>
 										</p>
@@ -3161,52 +3161,52 @@
 								<div class="card-body">
 									<form>
 										<div class="form-group">
-											<label for="editarSedeNombre">Nombre de la
-												sede<span>*</span></label>
-											<input type="text" class="form-control" id="editarSedeNombre"
-												value="Magdalena">
-										</div>
-
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="editarSedeDepartamento">Departamento
-													<span>*</span></label>
-												<select class="form-control" id="editarSedeDepartamento">
-													<option selected>Lima</option>
-													<option>Arequipa</option>
-												</select>
-											</div>
-											<div class="form-group col-md-6">
-												<label for="editarSedeProvincia">Provincia
-													<span>*</span></label>
-												<select class="form-control" id="editarSedeProvincia">
-													<option selected>Lima</option>
-													<option>Callao</option>
-												</select>
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label for="editarSedeProvincia">Distrito <span>*</span></label>
-											<select class="form-control" id="editarSedeProvincia">
-												<option selected>Magdalena</option>
+											<label for="nuevaInhouseSede">Sede<span>*</span></label>
+											<select class="form-control" id="nuevaInhouseSede">
+												<option selected>Seleccione</option>
 												<option>Lince</option>
+												<option>La victoria</option>
 											</select>
 										</div>
 
 										<div class="form-group">
-											<label for="editarSedeNombre">Dirección de la
-												sede<span>*</span></label>
-											<input type="text" class="form-control" id="editarSedeNombre"
-												value="Av. Antonio sucre 421">
+											<label for="nuevaInhouseNombreSede">Dirección</label>
+											<input type="text" class="form-control" id="nuevaInhouseNombreSede" disabled>
 										</div>
 
+										<div class="form-row">
+											<div class="form-group col-md-4">
+												<label for="nuevaInhouseFecha">Fecha<span>*</span></label>
+												<input type="date" class="form-control" id="nuevaInhouseFecha">
+											</div>
+											<div class="form-group col-md-4">
+												<label for="nuevaInhouseHoraInicio">Hora inicio<span>*</span></label>
+												<input type="time" class="form-control" id="nuevaInhouseHoraInicio">
+											</div>
+											<div class="form-group col-md-4">
+												<label for="nuevaInhouseHoraFin">Hora fin<span>*</span></label>
+												<input type="time" class="form-control" id="nuevaInhouseHoraFin">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="nuevaInhouseLugar">Escriba el lugar de instalación</label>
+											<input type="text" class="form-control" id="nuevaInhouseLugar">
+										</div>
+
+										<div class="form-group">
+											<label for="nuevaInhouseComentario">Observación</label>
+											<textarea class="form-control" id="nuevaInhouseComentario" rows="4"
+												placeholder="Ingrese un comentario"></textarea>
+											<div class="caption">Máximo 200 caracteres</div>
+										</div>
 
 										<div class="custom-control custom-switch">
 											<input type="checkbox" class="custom-control-input"
-												id="sedePrincipal" checked>
-											<label class="custom-control-label" for="sedePrincipal">Sede
-												principal</label>
+												id="nuevaInhouseSctr">
+											<label class="custom-control-label" for="nuevaInhouseSctr">
+												SCTR
+											</label>
 										</div>
 									</form>
 								</div>

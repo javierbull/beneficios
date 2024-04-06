@@ -1825,24 +1825,11 @@
 						<div id='calendarInhouse' class="calendar"></div>
 					</div>
 
-					<div class="d-flex">
-						<button class="btn btn-small btn-secundario" data-toggle="modal"
-									data-target="#modalInhouseNueva">
-									Nueva visita
-						</button>
-						<button class="btn btn-small btn-secundario" data-toggle="modal"
-									data-target="#modalInhouseSolicitada">
-									Visita solicitada
-						</button>
-						<button class="btn btn-small btn-secundario" data-toggle="modal"
-									data-target="#modalInhouseAprobada">
-									Visita aprobada
-						</button>
-						<button class="btn btn-small btn-secundario" data-toggle="modal"
-									data-target="#modalInhouseCancelada">
-									Visita cancelada
-						</button>
-					</div>
+					<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalInhouseNueva">
+								Nueva visita
+					</button>
+					
 
 				</div>
 				<!-- End Inhouse panel -->
@@ -3219,38 +3206,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="modal-footer-actions">
-						<div class="left">
-							<button type="button" class="btn btn-informativo">
-								<span class="material-icons-outlined">
-									add
-								</span>
-								Agregar visita
-							</button>
-						</div>
-						<div class="right">
-							<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
-							<button type="button" class="btn btn-primario">Guardar</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade modal-admin" id="modalInhouseSolicitada" tabindex="-1" aria-labelledby="NuecoColaboradorTitle"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="NuecoColaboradorTitle">Visita inhouse</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
 					<div class="accordion accordion-gala" id="accordionInhouseSolicitada-1">
 						<div class="card">
 							<div class="card-header" id="headingOneInhouseSolicitada">
@@ -3259,7 +3214,7 @@
 										data-toggle="collapse" data-target="#collapseOneInhouseSolicitada"
 										aria-expanded="true" aria-controls="collapseOneInhouseSolicitada">
 										<p class="text-btn-accordion">
-											<span class="timeVisita">10:00</span>La molina
+											<span class="timeVisita">10:00</span>La victoria
 											<span class="tag tag-info">
 												Solicitada
 											</span>
@@ -3272,7 +3227,7 @@
 								</h2>
 							</div>
 
-							<div id="collapseOneInhouseSolicitada" class="collapse show" aria-labelledby="headingOneInhouseSolicitada"
+							<div id="collapseOneInhouseSolicitada" class="collapse" aria-labelledby="headingOneInhouseSolicitada"
 								data-parent="#accordionInhouseSolicitada-1">
 								<div class="card-body">
 									<form>
@@ -3281,8 +3236,8 @@
 											<select class="form-control" id="SolicitadaInhouseSede">
 												<option>Seleccione</option>
 												<option>Lince</option>
-												<option selected>La molina</option>
-												<option>La victoria</option>
+												<option>La molina</option>
+												<option selected>La victoria</option>
 											</select>
 										</div>
 
@@ -3338,61 +3293,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="modal-footer-actions">
-						<div class="left">
-							<button type="button" class="btn btn-informativo">
-								<span class="material-icons-outlined">
-									add
-								</span>
-								Agregar visita
-							</button>
-						</div>
-						<div class="right">
-							<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
-							<button type="button" class="btn btn-primario">Guardar</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade modal-admin" id="modalEliminarVisita" tabindex="-1" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Eliminar visita</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>
-						¿Está seguro que desea eliminar esta visita inhouse?
-					</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn btn-danger">Eliminar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade modal-admin" id="modalInhouseCancelada" tabindex="-1" aria-labelledby="NuecoColaboradorTitle"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="NuecoColaboradorTitle">Visita inhouse</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
 					<div class="accordion accordion-gala" id="accordionInhouseCancelada-1">
 						<div class="card">
 							<div class="card-header" id="headingOneInhouseCancelada">
@@ -3401,7 +3301,7 @@
 										data-toggle="collapse" data-target="#collapseOneInhouseCancelada"
 										aria-expanded="true" aria-controls="collapseOneInhouseCancelada">
 										<p class="text-btn-accordion">
-											<span class="timeVisita">10:00</span>La molina
+											<span class="timeVisita">10:00</span>Miraflores
 											<span class="tag tag-danger">
 												Cancelada
 											</span>
@@ -3414,7 +3314,7 @@
 								</h2>
 							</div>
 
-							<div id="collapseOneInhouseCancelada" class="collapse show" aria-labelledby="headingOneInhouseCancelada"
+							<div id="collapseOneInhouseCancelada" class="collapse" aria-labelledby="headingOneInhouseCancelada"
 								data-parent="#accordionInhouseCancelada-1">
 								<div class="card-body">
 									<div class="alert alert-danger">
@@ -3428,8 +3328,9 @@
 											<select class="form-control" id="SolicitadaInhouseSede" disabled>
 												<option>Seleccione</option>
 												<option>Lince</option>
-												<option selected>La molina</option>
+												<option>La molina</option>
 												<option>La victoria</option>
+												<option selected>Miraflores</option>
 											</select>
 										</div>
 
@@ -3477,38 +3378,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="modal-footer">
-					<div class="modal-footer-actions">
-						<div class="left">
-							<button type="button" class="btn btn-informativo">
-								<span class="material-icons-outlined">
-									add
-								</span>
-								Agregar visita
-							</button>
-						</div>
-						<div class="right">
-							<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
-							<button type="button" class="btn btn-primario">Guardar</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade modal-admin" id="modalInhouseAprobada" tabindex="-1" aria-labelledby="NuecoColaboradorTitle"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="NuecoColaboradorTitle">Visita inhouse</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
 					<div class="accordion accordion-gala" id="accordionInhouseAprobada-1">
 						<div class="card">
 							<div class="card-header" id="headingOneInhouseAprobada">
@@ -3517,7 +3386,7 @@
 										data-toggle="collapse" data-target="#collapseOneInhouseAprobada"
 										aria-expanded="true" aria-controls="collapseOneInhouseAprobada">
 										<p class="text-btn-accordion">
-											<span class="timeVisita">10:00</span>La molina
+											<span class="timeVisita">10:00</span>Magdalena
 											<span class="tag tag-success">
 												Aprobada
 											</span>
@@ -3530,7 +3399,7 @@
 								</h2>
 							</div>
 
-							<div id="collapseOneInhouseAprobada" class="collapse show" aria-labelledby="headingOneInhouseAprobada"
+							<div id="collapseOneInhouseAprobada" class="collapse" aria-labelledby="headingOneInhouseAprobada"
 								data-parent="#accordionInhouseAprobada-1">
 								<div class="card-body">
 									
@@ -3541,7 +3410,7 @@
 												<option>Seleccione</option>
 												<option>Lince</option>
 												<option>La molina</option>
-												<option selected>La victoria</option>
+												<option selected>Magdalena</option>
 											</select>
 										</div>
 
@@ -3620,8 +3489,31 @@
 			</div>
 		</div>
 	</div>
-	<!-- Fin Inhouse -->
 
+	<div class="modal fade modal-admin" id="modalEliminarVisita" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Eliminar visita</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						¿Está seguro que desea eliminar esta visita inhouse?
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-danger">Eliminar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Fin Inhouse -->
 
 
 	<!-- FIN MODALS -->

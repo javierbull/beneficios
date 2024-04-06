@@ -3381,6 +3381,122 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade modal-admin" id="modalInhouseCancelada" tabindex="-1" aria-labelledby="NuecoColaboradorTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="NuecoColaboradorTitle">Visita inhouse</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="accordion accordion-gala" id="accordionInhouseCancelada-1">
+						<div class="card">
+							<div class="card-header" id="headingOneInhouseCancelada">
+								<h2 class="mb-0">
+									<button class="btn btn-style-none btn-block btn-accordion" type="button"
+										data-toggle="collapse" data-target="#collapseOneInhouseCancelada"
+										aria-expanded="true" aria-controls="collapseOneInhouseCancelada">
+										<p class="text-btn-accordion">
+											<span class="timeVisita">10:00</span>La molina
+											<span class="tag tag-danger">
+												Cancelada
+											</span>
+										</p>
+
+										<span class="material-icons-outlined">
+											expand_more
+										</span>
+									</button>
+								</h2>
+							</div>
+
+							<div id="collapseOneInhouseCancelada" class="collapse show" aria-labelledby="headingOneInhouseCancelada"
+								data-parent="#accordionInhouseCancelada-1">
+								<div class="card-body">
+									<div class="alert alert-danger">
+										<p>
+											Mensaje del ejecutivo indicando el motivo de la cancelación del la visita
+										</p>
+									</div>
+									<form>
+										<div class="form-group">
+											<label for="SolicitadaInhouseSede">Sede<span>*</span></label>
+											<select class="form-control" id="SolicitadaInhouseSede" disabled>
+												<option>Seleccione</option>
+												<option>Lince</option>
+												<option>La molina</option>
+												<option selected>La victoria</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label for="canceladaInhouseNombreSede">Dirección</label>
+											<input type="text" class="form-control" id="canceladaInhouseNombreSede" disabled value="Av. Ingenieros 123 - La molina">
+										</div>
+
+										<div class="form-row">
+											<div class="form-group col-md-4">
+												<label for="canceladaInhouseFecha">Fecha<span>*</span></label>
+												<input type="date" class="form-control" id="canceladaInhouseFecha" value="2024-04-10" disabled>
+											</div>
+											<div class="form-group col-md-4">
+												<label for="canceladaInhouseHoraInicio">Hora inicio<span>*</span></label>
+												<input type="time" class="form-control" id="canceladaInhouseHoraInicio" value="10:00" disabled>
+											</div>
+											<div class="form-group col-md-4">
+												<label for="canceladaInhouseHoraFin">Hora fin<span>*</span></label>
+												<input type="time" class="form-control" id="canceladaInhouseHoraFin" value="13:00" disabled>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="canceladaInhouseLugar">Escriba el lugar de instalación</label>
+											<input type="text" class="form-control" id="canceladaInhouseLugar" value="Piso 2 oficina 201" disabled>
+										</div>
+
+										<div class="form-group">
+											<label for="canceladaInhouseComentario">Observación</label>
+											<textarea class="form-control" id="canceladaInhouseComentario" rows="4"
+												placeholder="Ingrese un comentario" disabled></textarea>
+											<div class="caption">Máximo 200 caracteres</div>
+										</div>
+
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input"
+												id="canceladaInhouseSctr" checked disabled>
+											<label class="custom-control-label" for="canceladaInhouseSctr">
+												SCTR
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="modal-footer-actions">
+						<div class="left">
+							<button type="button" class="btn btn-informativo">
+								<span class="material-icons-outlined">
+									add
+								</span>
+								Agregar visita
+							</button>
+						</div>
+						<div class="right">
+							<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+							<button type="button" class="btn btn-primario">Guardar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Fin Inhouse -->
 
 

@@ -8039,5 +8039,10 @@ div.dataTables_wrapper div.dataTables_info {
 .timeVisita {
   margin-right: .5rem;
 }
+
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: var(--Gray4);
+  border-color: var(--Gray4);
+}
 /* END INHOUSE */
 

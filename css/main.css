@@ -7985,6 +7985,43 @@ div.dataTables_wrapper div.dataTables_info {
 }
 /* End FullCalendar */
 
+.estado-inhouse {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.estado-inhouse p {
+  margin-bottom: 0;
+}
+
+.mybadge {
+  display: block;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.mybadge-info {
+  background-color: var(--info);
+}
+
+.mybadge-success {
+  background-color: var(--success);
+}
+
+.mybadge-warning {
+  background-color: var(--warning);
+}
+
+.mybadge-danger {
+  background-color: var(--danger);
+}
 
 /* END INHOUSE */
 

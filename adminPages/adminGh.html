@@ -1797,20 +1797,27 @@
 
 				<!-- Inhouse panel -->
 				<div class="panel" id="inhouse-panel">
-					<div class="panel-header">
-						<div class="panel-header-top">
+					<div class="panel-header-top panel-header-top-actions">
+						<div class="panel-header-top--left">
 							<h2 class="panel-title">Visitas Inhouse</h2>
 							<p>
-								Programa las visitas Inhouse a tu empresa.
+								Recuerda que debes programar tu visita al menos con 3 días hábiles de anticipación.
 							</p>
+						</div>
+						<div class="panel-header-top--rigth">
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalInfoEstadosInhouse">
+								<span class="material-icons-outlined">
+									info
+								</span>
+								Info estados
+							</button>
 						</div>
 					</div>
 
 					<div class="card-dashboard">
 						<div id='calendarInhouse' class="calendar"></div>
 					</div>
-
-					<div id="calendar"></div>
 				</div>
 				<!-- End Inhouse panel -->
 
@@ -3059,6 +3066,46 @@
 	</div>
 	<!-- En sedes -->
 
+	<!-- Inhouse -->
+	<div class="modal fade modal-admin" id="modalInfoEstadosInhouse" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Leyenda de estados</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="estado-inhouse">
+						<span class="mybadge mybadge-info"></span>
+						<p>
+							Visita solicitada
+						</p>
+					</div>
+					<div class="estado-inhouse">
+						<span class="mybadge mybadge-success"></span>
+						<p>
+							Visita aprobada
+						</p>
+					</div>
+					<div class="estado-inhouse">
+						<span class="mybadge mybadge-danger"></span>
+						<p>
+							Visita cancelada
+						</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Inhouse -->
+
+
 
 	<!-- FIN MODALS -->
 
@@ -3077,6 +3124,7 @@
 	<script src="../js/owlcarouselmain.js"></script>
 	<script src="../js/plugin/datatables/datatables.min.js"></script>
 	<script src="../js/plugin/calendarjs/index.global.min.js"></script>
+	<!-- <script src="../js/moment.js"></script> -->
 	<!--===============================================================================================-->
 	<script src="../js/mycalendar.js"></script>
 	<script src="../js/chart.js"></script>

@@ -16,21 +16,28 @@ document.addEventListener('DOMContentLoaded', function () {
         day: 'Día'
       },
       selectable: true,
+      selectHelper: true,
       events: [
         {
           title: 'La molina',
-          start: '2024-03-13T10:00:00',
-          end: '2024-03-13T13:00:00'
+          start: '2024-04-13T10:00:00',
+          end: '2024-04-13T13:00:00'
         },
         {
           title: 'Lince',
-          start: '2024-03-13T11:00:00',
-          end: '2024-03-13T13:00:00'
+          start: '2024-04-13T11:00:00',
+          end: '2024-04-13T13:00:00'
         }
-      ]
+      ],
+      select: function(){
+        // alert("Clicked");
+      }
+		
     });
     calendar.render();
   });
   
 
   // END CALENDAR
+
+ 

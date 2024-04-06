@@ -1818,6 +1818,26 @@
 					<div class="card-dashboard">
 						<div id='calendarInhouse' class="calendar"></div>
 					</div>
+
+					<div class="d-flex">
+						<button class="btn btn-small btn-secundario" data-toggle="modal"
+									data-target="#modalInhouseNueva">
+									Nueva visita
+						</button>
+						<button class="btn btn-small btn-secundario" data-toggle="modal"
+									data-target="#modalInhouseSolicitada">
+									Visita solicitada
+						</button>
+						<button class="btn btn-small btn-secundario" data-toggle="modal"
+									data-target="#modalInhouseAprobada">
+									Visita aprobada
+						</button>
+						<button class="btn btn-small btn-secundario" data-toggle="modal"
+									data-target="#modalInhouseCancelada">
+									Visita cancelada
+						</button>
+					</div>
+
 				</div>
 				<!-- End Inhouse panel -->
 
@@ -2731,7 +2751,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="NuecoColaboradorTitle">Nuevvo colaborador</h5>
+					<h5 class="modal-title" id="NuecoColaboradorTitle">Nuevo colaborador</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -3099,6 +3119,116 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin" id="modalInhouseNueva" tabindex="-1" aria-labelledby="NuecoColaboradorTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="NuecoColaboradorTitle">Visita inhouse</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="accordion accordion-gala" id="accordionInhouseNueva-1">
+						<div class="card">
+							<div class="card-header" id="headingOneInhouseNueva">
+								<h2 class="mb-0">
+									<button class="btn btn-style-none btn-block btn-accordion" type="button"
+										data-toggle="collapse" data-target="#collapseOneInhouseNueva"
+										aria-expanded="true" aria-controls="collapseOneInhouseNueva">
+										<p class="text-btn-accordion">
+											Magdalena
+											<span class="tag tag-info">
+												Principal
+											</span>
+										</p>
+
+										<span class="material-icons-outlined">
+											expand_more
+										</span>
+									</button>
+								</h2>
+							</div>
+
+							<div id="collapseOneInhouseNueva" class="collapse show" aria-labelledby="headingOneInhouseNueva"
+								data-parent="#accordionInhouseNueva-1">
+								<div class="card-body">
+									<form>
+										<div class="form-group">
+											<label for="editarSedeNombre">Nombre de la
+												sede<span>*</span></label>
+											<input type="text" class="form-control" id="editarSedeNombre"
+												value="Magdalena">
+										</div>
+
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="editarSedeDepartamento">Departamento
+													<span>*</span></label>
+												<select class="form-control" id="editarSedeDepartamento">
+													<option selected>Lima</option>
+													<option>Arequipa</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label for="editarSedeProvincia">Provincia
+													<span>*</span></label>
+												<select class="form-control" id="editarSedeProvincia">
+													<option selected>Lima</option>
+													<option>Callao</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="editarSedeProvincia">Distrito <span>*</span></label>
+											<select class="form-control" id="editarSedeProvincia">
+												<option selected>Magdalena</option>
+												<option>Lince</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label for="editarSedeNombre">Dirección de la
+												sede<span>*</span></label>
+											<input type="text" class="form-control" id="editarSedeNombre"
+												value="Av. Antonio sucre 421">
+										</div>
+
+
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input"
+												id="sedePrincipal" checked>
+											<label class="custom-control-label" for="sedePrincipal">Sede
+												principal</label>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="modal-footer-actions">
+						<div class="left">
+							<button type="button" class="btn btn-informativo">
+								<span class="material-icons-outlined">
+									add
+								</span>
+								Agregar visita
+							</button>
+						</div>
+						<div class="right">
+							<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+							<button type="button" class="btn btn-primario">Guardar</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

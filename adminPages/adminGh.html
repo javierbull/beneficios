@@ -1510,6 +1510,9 @@
 
 												<button type="button" class="btn btn-danger mt-3" data-toggle="modal"
 													data-target="#modalEliminarSede">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
 													Eliminar sede
 												</button>
 											</form>
@@ -1769,6 +1772,9 @@
 
 												<button type="button" class="btn btn-danger mt-3" data-toggle="modal"
 													data-target="#modalEliminarContacto">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
 													Eliminar contacto
 												</button>
 											</form>
@@ -3319,6 +3325,14 @@
 												SCTR
 											</label>
 										</div>
+
+										<button type="button" class="btn btn-danger mt-3" data-toggle="modal"
+													data-target="#modalEliminarVisita" data-dismiss="modal">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
+													Eliminar visita
+										</button>
 									</form>
 								</div>
 							</div>
@@ -3340,6 +3354,29 @@
 							<button type="button" class="btn btn-primario">Guardar</button>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin" id="modalEliminarVisita" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Eliminar visita</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						¿Está seguro que desea eliminar esta visita inhouse?
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-danger">Eliminar</button>
 				</div>
 			</div>
 		</div>

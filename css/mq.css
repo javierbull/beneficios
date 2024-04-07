@@ -2277,6 +2277,32 @@
 
   /* inhouse */
 
+  .btn-accordion {
+    /* background-color: yellow; */
+    height: auto;
+  }
+
+  .text-btn-accordion .tag {
+      font-size: .75rem;
+  }
+
+  .modal-footer-actions {
+    /* background-color: pink; */
+    flex-direction: column;
+    gap: .875rem;
+  }
+
+  .modal-footer-actions .left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .modal-footer-actions .right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
   /* End inhouse */
 }
 

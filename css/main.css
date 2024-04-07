@@ -7071,6 +7071,11 @@ iframe {
   align-items: center;
   gap: .5rem;
 }
+
+.sidebar-list-collapse--vales, .sidebar-list-collapse--sedes {
+  display: none;
+}
+
 /* End sidebar admin */
 
 /* Admin panel */

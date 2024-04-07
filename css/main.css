@@ -8085,6 +8085,54 @@ div.dataTables_wrapper div.dataTables_info {
   -o-border-radius: 0 .5rem .5rem 0;
 }
 
+.toolbar-calendar-table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
 
+.toolbar-calendar-table h2 {
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: 600;
+
+}
+
+.button-group-prevNext {
+  display: flex;
+  align-items: center;
+}
+
+.button-group-prevNext .btn {
+  width: 46.78px;
+  height: 39.39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group-prevNext .btn span {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group-prevNext .btn:first-child {
+  border-radius: .25rem 0 0 .25rem;
+  -webkit-border-radius: .25rem 0 0 .25rem;
+  -moz-border-radius: .25rem 0 0 .25rem;
+  -ms-border-radius: .25rem 0 0 .25rem;
+  -o-border-radius: .25rem 0 0 .25rem;
+}
+
+.button-group-prevNext .btn:last-child {
+  border-radius: 0 .25rem .25rem 0;
+  -webkit-border-radius: 0 .25rem .25rem 0;
+  -moz-border-radius: 0 .25rem .25rem 0;
+  -ms-border-radius: 0 .25rem .25rem 0;
+  -o-border-radius: 0 .25rem .25rem 0;
+}
 /* END CUMPLEAÑOS */
 

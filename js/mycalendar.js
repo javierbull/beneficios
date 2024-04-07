@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
       locale: 'es',
       headerToolbar: {
         left: 'title',
-        right: 'prev,next today'
+        right: 'prev,next'
         // right: 'dayGridMonth,timeGridWeek,timeGridDay'
       },
       buttonText: {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       locale: 'es',
       headerToolbar: {
         left: 'title',
-        right: 'prev,next today'
+        right: 'prev,next'
       },
       buttonText: {
         today: 'Hoy',

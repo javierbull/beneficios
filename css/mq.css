@@ -2313,6 +2313,18 @@
     gap: .5rem;
 }
   /* End calendar */
+
+  /* cumpleaños */
+  .tabs-admin-outline {
+    display: flex;
+    justify-content: center;
+  }
+
+  .toolbar-calendar-table {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* end cumpleaños */
 }
 
 /* Fin cell portrait */

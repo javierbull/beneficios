@@ -56,14 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
       selectHelper: true,
       events: [
         {
-          title: 'La molina',
-          start: '2024-04-13T10:00:00',
-          end: '2024-04-13T13:00:00'
+          title: 'María Medina',
+          start: '2024-04-13'
         },
         {
-          title: 'Lince',
-          start: '2024-04-13T11:00:00',
-          end: '2024-04-13T13:00:00'
+          title: 'Julio Crispín',
+          start: '2024-04-13'
         }
       ],
       select: function(){

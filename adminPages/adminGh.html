@@ -428,6 +428,14 @@
 						</button>
 					</li>
 					<li class="sidebar-item">
+						<button class="btn sidebar-item-btn showAdminPanel-cumples closeMenuMobile sidebar-item-db">
+							<span class="material-icons-outlined">
+								cake
+							</span>
+							Cumpleaños
+						</button>
+					</li>
+					<li class="sidebar-item">
 						<button class="btn sidebar-item-btn btn-sidebar-toggle--vales sidebar-item-db">
 							<div class="btn-sidebar-toggle-left">
 								<span class="material-icons-outlined">
@@ -707,6 +715,14 @@
 						</button>
 					</li>
 					<li class="sidebar-item">
+						<button class="btn sidebar-item-btn showAdminPanel-cumples sidebar-item-db">
+							<span class="material-icons-outlined">
+								cake
+							</span>
+							Cumpleaños
+						</button>
+					</li>
+					<li class="sidebar-item">
 						<button class="btn sidebar-item-btn btn-sidebar-toggle--vales sidebar-item-db">
 							<div class="btn-sidebar-toggle-left">
 								<span class="material-icons-outlined">
@@ -958,7 +974,7 @@
 									Administración de colaboradores.
 								</p>
 							</div>
-							<div class="panel-header-top--rigth">
+							<div class="panel-header-top--right">
 								<button type="button" name="button" class="btn btn-terciario" data-toggle="modal"
 									data-target="#modalCargaMasivaColaboradores">
 									<span class="material-icons-outlined">
@@ -1241,7 +1257,7 @@
 									Gestiona la Información de las sedes de tu empresa.
 								</p>
 							</div>
-							<div class="panel-header-top--rigth">
+							<div class="panel-header-top--right">
 								<button type="button" name="button" class="btn btn-primario showAdminPanel-nuevaSede">
 									<span class="material-icons-outlined">
 										add
@@ -1821,7 +1837,7 @@
 								Recuerda que debes programar tu visita al menos con 3 días hábiles de anticipación.
 							</p>
 						</div>
-						<div class="panel-header-top--rigth">
+						<div class="panel-header-top--right">
 							<button class="btn btn-small btn-secundario" data-toggle="modal"
 								data-target="#modalInfoEstadosInhouse">
 								<span class="material-icons-outlined">
@@ -1844,6 +1860,38 @@
 
 				</div>
 				<!-- End Inhouse panel -->
+
+				<!-- Cumpleaños panel -->
+				<div class="panel" id="cumples-panel">
+					<div class="panel-header-top panel-header-top-actions">
+						<div class="panel-header-top--left">
+							<h2 class="panel-title">Cumpleaños</h2>
+							<p>
+								Gestiona los cumpleaños de tus colaboradores.
+							</p>
+						</div>
+						<div class="tabs-admin-outline">
+							<button class="btn btn-small btn-secundario" data-toggle="modal">
+								<span class="material-icons-outlined">
+									calendar_month
+								</span>
+								Calendario
+							</button>
+							<button class="btn btn-small btn-secundario" data-toggle="modal">
+								<span class="material-icons-outlined">
+									table_chart
+								</span>
+								Tabla
+							</button>
+						</div>
+					</div>
+
+					<div class="card-dashboard">
+						<div id='calendarCumples' class="calendar"></div>
+					</div>
+
+				</div>
+				<!-- End Cumpleaños panel -->
 
 
 			</div>

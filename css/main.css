@@ -7117,7 +7117,7 @@ iframe {
   margin-bottom: 0;
 }
 
-.panel-header-top--rigth {
+.panel-header-top--right {
   display: flex;
   gap: .75rem;
 }
@@ -8063,4 +8063,26 @@ div.dataTables_wrapper div.dataTables_info {
   border-color: var(--Gray4);
 }
 /* END INHOUSE */
+
+/* CUMPLEAÑOS */
+.tabs-admin-outline {
+  display: flex;
+}
+
+.tabs-admin-outline .btn:first-child {
+  border-radius: .5rem 0 0 .5rem;
+  -webkit-border-radius: .5rem 0 0 .5rem;
+  -moz-border-radius: .5rem 0 0 .5rem;
+  -ms-border-radius: .5rem 0 0 .5rem;
+  -o-border-radius: .5rem 0 0 .5rem;
+}
+
+.tabs-admin-outline .btn:last-child {
+  border-radius: 0 .5rem .5rem 0;
+  -webkit-border-radius: 0 .5rem .5rem 0;
+  -moz-border-radius: 0 .5rem .5rem 0;
+  -ms-border-radius: 0 .5rem .5rem 0;
+  -o-border-radius: 0 .5rem .5rem 0;
+}
+/* END CUMPLEAÑOS */
 

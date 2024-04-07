@@ -2304,6 +2304,15 @@
     justify-content: flex-end;
   }
   /* End inhouse */
+
+  /* Calendar */
+  .fc .fc-toolbar {
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+  /* End calendar */
 }
 
 /* Fin cell portrait */

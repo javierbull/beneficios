@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
       initialView: 'dayGridMonth',
       locale: 'es',
       headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        left: 'title',
+        right: 'prev,next today'
+        // right: 'dayGridMonth,timeGridWeek,timeGridDay'
       },
       buttonText: {
         today: 'Hoy',
@@ -43,9 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
       initialView: 'dayGridMonth',
       locale: 'es',
       headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        left: 'title',
+        right: 'prev,next today'
       },
       buttonText: {
         today: 'Hoy',

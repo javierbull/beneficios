@@ -496,7 +496,17 @@ $(document).ready(function () {
   });
   // End show hide panels admin
 
+  // show panels cumpleaños
+  $(".show-panel-cumple-table").click(function () {
+    $("#calendarCumples").hide();
+    $("#panel-cumples-table").show();
+  });
 
+  $(".show-panel-cumple-calendar").click(function () {
+    $("#calendarCumples").show();
+    $("#panel-cumples-table").hide();
+  });
+  // end panels cumpleaños
 
   // SHOW ACTIVE FOCUS STEPPER
 

@@ -1871,13 +1871,13 @@
 							</p>
 						</div>
 						<div class="tabs-admin-outline">
-							<button class="btn btn-small btn-secundario" data-toggle="modal">
+							<button class="btn btn-small btn-secundario show-panel-cumple-calendar">
 								<span class="material-icons-outlined">
 									calendar_month
 								</span>
 								Calendario
 							</button>
-							<button class="btn btn-small btn-secundario" data-toggle="modal">
+							<button class="btn btn-small btn-secundario show-panel-cumple-table">
 								<span class="material-icons-outlined">
 									table_chart
 								</span>
@@ -1886,8 +1886,148 @@
 						</div>
 					</div>
 
-					<div class="card-dashboard">
+					<div class="card-dashboard panel-cumples-calendar">
 						<div id='calendarCumples' class="calendar"></div>
+
+						<div id="panel-cumples-table" class="panel">
+							<table class="table dtable">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">DNI/CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Nacimiento</th>
+										<th scope="col">Correo</th>
+										<th scope="col">Sede</th>
+										<th scope="col">Perfil</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>75241564</td>
+										<td>Sara Torres Saldaña</td>
+										<td>25/12/1990</td>
+										<td>storres@gmail.com</td>
+										<td>La Molina</td>
+										<td>Administrador</td>
+										<td>
+											<span class="tag tag-success">
+												Plataforma
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEditarColaborador">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEliminarColaborador">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>45896524</td>
+										<td>Julio Ramirez Costa</td>
+										<td>25/12/1980</td>
+										<td>jramirezs@gmail.com</td>
+										<td>Ate</td>
+										<td>Sub Administrador</td>
+										<td>
+											<span class="tag tag-info">
+												Inhouse
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEditarColaborador">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEliminarColaborador">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>75845632</td>
+										<td>julio Crispin Quispe</td>
+										<td>25/12/2000</td>
+										<td>jcrispins@gmail.com</td>
+										<td>Magdalena</td>
+										<td>Regular</td>
+										<td>
+											<span class="tag tag-warning">
+												Pre registrado
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEditarColaborador">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEliminarColaborador">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>45865245</td>
+										<td>María Medina García</td>
+										<td>25/12/1990</td>
+										<td>mmedina@gmail.com</td>
+										<td>Las victoria</td>
+										<td>Regular</td>
+										<td>
+											<span class="tag tag-danger">
+												Sin confirmar
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEditarColaborador">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalEliminarColaborador">
+													<span class="material-icons-outlined">
+														delete_forever
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 
 				</div>

@@ -3603,7 +3603,7 @@ nav.main .midmenu {
 }
 
 .content-menu-mobile {
-  background-color: var(--Gray8);
+  background-color: var(--primary-light);
   min-height: 100vh;
   padding: 1.5rem;
 }
@@ -6988,7 +6988,7 @@ iframe {
 
 /* MÓDULO ADMINISTRAR VALES */
 .main-admin {
-  background-color: var(--ehite);
+  background-color: var(--white);
 }
 
 /* sidebar admin */
@@ -7002,7 +7002,7 @@ iframe {
 }
 
 .sidebar-admin-list {
-  background-color: var(--Gray8);
+  background-color: var(--primary-light);
   list-style: none;
   padding-left: 0;
   height: calc(100vh - 6rem);
@@ -7029,19 +7029,19 @@ iframe {
 }
 
 .sidebar-item-db {
-  background-color: var(--Gray8);
-  color: var(--white);
+  background-color: var(--primary-light);
+  color: var(--black-admin);
 }
 
 .sidebar-item-db:hover {
-  background-color: var(--Gray7);
+  background-color: var(--accent-light);
   color: var(--white);
   text-decoration: none;
 }
 
 .active-item {
-  background-color: var(--primary-light);
-  color: var(--black-admin);
+  background-color: var(--accent-default);
+  color: var(--white);
 }
 
 .sidebar-list-collapse {

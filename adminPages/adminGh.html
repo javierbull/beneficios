@@ -2387,7 +2387,7 @@
 														swap_horiz
 													</span>
 												</button>
-											</div>
+											</div>											
 										</td>
 									</tr>
 									
@@ -4148,7 +4148,7 @@
 	<!-- Vales asignados -->
 
 	<!-- End vales asignados -->
-	<div class="modal fade modal-admin" id="modalReasignarVale" tabindex="-1" aria-labelledby="exampleModalLabel"
+	<div class="modal fade modal-admin" id="modalReasignarVale" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -4168,18 +4168,21 @@
 							<input type="text" class="form-control" id="colaboradorAsignadoVale" disabled value="María Medina Salas">
 						</div>
 
-						<div class="form-group">
-							<label for="colaboradorTransferirVale">Reasignar a</label>
-							<select class="form-control" id="colaboradorTransferirVale">
-								<option>Seleccione</option>
-								<option>Julio Crispín Torres</option>
-								<option>Sonia Roque Villanueva</option>
-							</select>
+						<div class="wrap-input-asignacion-individual">
+							<div class="form-group input-asignacion-individual">
+								<label class="form-label" for="buscarColaboradorTransferirVale">Buscar por DNI/CE o nombre</label>
+								<select class="form-select select2modal" id="buscarColaboradorTransferirVale" data-placeholder="Buscar">
+									<option></option>
+									<option>43484562 - Jorge Torres Espinoza</option>
+									<option>74568524 - María Medina Cáceres</option>
+									<option>75412569 - Cecilia Montes Paredes</option>
+								</select>
+							</div>
 						</div>
-
-
 					</form>
 				</div>
+
+				
 				<div class="modal-footer">
 					<button type="button" class="btn btn-ghost" data-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn btn-primario">Reasignar</button>
@@ -4188,6 +4191,8 @@
 		</div>
 	</div>
 	<!-- FIN MODALS -->
+
+	
 
 
 

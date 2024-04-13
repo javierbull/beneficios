@@ -2231,22 +2231,40 @@
    .panel-header-top-actions {
     /* background-color: pink; */
     flex-direction: column;
-    
   }
 
   .panel-header-top--left {
     margin-bottom: 1rem;
   }
 
-  .panel-header-top--rigth {
-    /* background-color: lavender; */
+  .panel-header-top--right {
+    /* background-color:blue; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
- 
+  .panel-header-bottom {
+    /* background-color: lightgreen; */
+    width: 100%;
+  }
+
+.panel-header-bottom--colaboradores {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.panel-header-bottom--colaboradores button:first-child {
+  width: 100%;
+}
+
+.panel-header-bottom--right {
+  /* background-color: lavender; */
+  width: 100%;;
+  justify-content: space-between;
+}
 
   /* end panel colaboradores */
 

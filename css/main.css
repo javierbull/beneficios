@@ -7138,7 +7138,10 @@ iframe {
   align-items: center;
 }
 
-
+.panel-header-bottom--right {
+  display: flex;
+  gap: .75rem;
+}
 /* End admin panel */
 
 /* Panel vales corporativos */

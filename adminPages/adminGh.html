@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="../css/animate.css">
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../js/plugin/datatables/datatables.min.css">
+	<link rel="stylesheet" href="../js/plugin/select2/select2.min.css">
+	<link rel="stylesheet" href="../js/plugin/select2/select2-bootstrap4.min.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/mq.css">
 	<!--===============================================================================================-->
@@ -2162,6 +2164,72 @@
 								</p>
 							</div>
 
+							<div class="panel-body">
+								<form>
+									
+									<div class="form-row">
+										<div class="form-group col-md-9">
+											<label for="asignarValeProducto">Producto</label>
+											<input type="text" class="form-control" id="asignarValeProducto" disabled value="Av. Ingenieros 123 - La molina">
+										</div>
+										<div class="form-group col-md-3">
+											<label for="asignarValeDisponibles">Vales disponibles</label>
+											<input type="number" class="form-control" id="asignarValeDisponibles" disabled value="400">
+										</div>
+									</div>
+										
+									<div class="block-asignar-vale">
+										<h3>
+											Asignación masiva
+										</h3>
+										<p>
+											Descarga el archivo XLSX con el formato para una asignación masiva de vales a tus colaboradores.
+										</p>
+										
+										<button type="button" class="btn btn-secundario mb-3">
+											<span class="material-icons-outlined">
+												file_download
+											</span>
+											Descargar formato XLSX
+										</button>
+					
+										<div class="input-group">
+											<div class="custom-file">
+												<input type="file" class="custom-file-input" id="inputGroupFile04"
+													aria-describedby="inputGroupFileAddon04">
+												<label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="block-asignar-vale">
+										<h3>
+											Asignación individual
+										</h3>
+
+										<form>
+											<div class="wrap-input-asignacion-individual">
+												<div class="form-group input-asignacion-individual">
+													<label class="form-label" for="buscarColaborador">Buscar por DNI/CE o nombre</label>
+													<select class="form-select select2" id="buscarColaborador" data-placeholder="Buscar">
+														<option></option>
+														<option>43484562 - Jorge Torres Espinoza</option>
+														<option>74568524 - María Medina Cáceres</option>
+														<option>75412569 - Cecilia Montes Paredes</option>
+													</select>
+												</div>
+
+												<button class="btn btn-primario">
+													<span class="material-icons-outlined">
+														add
+													</span>
+													Agregar
+												</button>
+											</div>
+										</form>
+									</div>
+								</form>
+							</div>
 							
 
 							<div class="card-dashboard-actions">
@@ -2169,7 +2237,7 @@
 
 								<button type="button" class="btn btn-primario" data-toggle="modal"
 									data-target="#modalDatosGuardados">
-									Guardar cambios
+									Asignar vale
 								</button>
 							</div>
 						</div>
@@ -3941,6 +4009,7 @@
 	<script src="../js/owlcarouselmain.js"></script>
 	<script src="../js/plugin/datatables/datatables.min.js"></script>
 	<script src="../js/plugin/calendarjs/index.global.min.js"></script>
+	<script src="../js/plugin/select2/select2.min.js"></script>
 	<!-- <script src="../js/moment.js"></script> -->
 	<!--===============================================================================================-->
 	<script src="../js/mycalendar.js"></script>

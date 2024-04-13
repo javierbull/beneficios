@@ -2345,6 +2345,15 @@
     gap: 1rem;
   }
   /* end cumpleaños */
+
+  /* Asignar vales */
+  .wrap-input-asignacion-individual {
+    display: flex;
+    gap: .5rem;
+    align-items: end;
+    flex-direction: column;
+  }
+  /* End asignar vales */
 }
 
 /* Fin cell portrait */

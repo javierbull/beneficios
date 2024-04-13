@@ -400,6 +400,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-valesSolicitados").click(function () {
@@ -415,6 +416,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
@@ -430,6 +432,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function () {
@@ -445,6 +448,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-contactos").click(function () {
@@ -460,6 +464,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function () {
@@ -475,6 +480,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-nuevaSede").click(function () {
@@ -490,6 +496,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-inhouse").click(function () {
@@ -505,6 +512,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-cumples").click(function () {
@@ -520,6 +528,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-asignarVales").click(function () {
@@ -535,6 +544,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").show();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-formAsignarVale").click(function () {
@@ -550,6 +560,7 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").show();
     $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").hide();
   });
 
   $(".showAdminPanel-valesAsignados").click(function () {
@@ -565,6 +576,23 @@ $(document).ready(function () {
     $("#asignarVales-panel").hide();
     $("#formAsignarVale-panel").hide();
     $("#valesAsignados-panel").show();
+    $("#colaboradoresValesAsignados-panel").hide();
+  });
+
+  $(".showAdminPanel-listadoColaboradoresVales").click(function () {
+    $("#dashboard-panel").hide();
+    $("#valesCorporativos-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#contactos-panel").hide();
+    $("#sedes-panel").hide();
+    $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
+    $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
+    $("#formAsignarVale-panel").hide();
+    $("#valesAsignados-panel").hide();
+    $("#colaboradoresValesAsignados-panel").show();
   });
   // End show hide panels admin
 

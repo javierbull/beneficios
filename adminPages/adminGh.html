@@ -460,6 +460,18 @@
 									Vales solicitados
 								</a>
 							</li>
+							<li>
+								<a href="#"
+									class="sidebar-item-collapse showAdminPanel-asignarVales closeMenuMobile sidebar-item-db">
+									Asignar vales
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									class="sidebar-item-collapse showAdminPanel-valesAsignados closeMenuMobile sidebar-item-db">
+									Vales asignados
+								</a>
+							</li>
 						</ul>
 					</li>
 
@@ -747,6 +759,18 @@
 									Vales solicitados
 								</a>
 							</li>
+							<li>
+								<a href="#"
+									class="sidebar-item-collapse showAdminPanel-asignarVales sidebar-item-db">
+									Asignar vales
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									class="sidebar-item-collapse showAdminPanel-valesAsignados sidebar-item-db">
+									Vales asignados
+								</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -825,144 +849,6 @@
 					
 				</div>
 				<!-- End dashboard panel -->
-
-				<!-- Vales corporativos panel -->
-				<div class="panel" id="valesCorporativos-panel">
-					<div class="panel-header">
-						<div class="panel-header-top">
-							<h2 class="panel-title">Vales corporativos</h2>
-							<p>
-								En esta sección se muestran todas tus solicitudes de vales corporativos.
-							</p>
-						</div>
-						<div class="panel-header-bottom">
-							<button class="btn btn-small btn-secundario" data-toggle="modal"
-								data-target="#modalInfoEstadosValesGh">
-								<span class="material-icons-outlined">
-									info
-								</span>
-								Info estados
-							</button>
-							<button class="btn btn-small btn-secundario" data-toggle="modal"
-								data-target="#modalFilterValesGh">
-								<span class="material-icons-outlined">
-									filter_list
-								</span>
-								Filtrar
-							</button>
-						</div>
-					</div>
-
-					<div class="panel-body">
-						<div class="card-dtable">
-							<table class="table dtable">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">Fecha</th>
-										<th scope="col">Medio de pago</th>
-										<th scope="col">Total</th>
-										<th scope="col">Estado</th>
-										<th scope="col">Acciones</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>25/10/2023</td>
-										<td>BCP</td>
-										<td>1000.00</td>
-										<td>
-											<span class="tag tag-info">
-												Solicitado
-											</span>
-										</td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button" class="btn btn-action"
-													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>25/10/2023</td>
-										<td>BCP</td>
-										<td>1000.00</td>
-										<td>
-											<span class="tag tag-success">
-												Emitido
-											</span>
-										</td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button" class="btn btn-action"
-													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-												<button type="button" name="button" class="btn btn-action">
-													<span class="material-icons-outlined">
-														file_download
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>25/10/2023</td>
-										<td>Interbank</td>
-										<td>1000.00</td>
-										<td>
-											<span class="tag tag-warning">
-												Observado
-											</span>
-										</td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button" class="btn btn-action"
-													data-toggle="modal" data-target="#modalPedidoObservadoGh">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">4</th>
-										<td>25/10/2023</td>
-										<td>Yape</td>
-										<td>1000.00</td>
-										<td>
-											<span class="tag tag-danger">
-												Cancelado
-											</span>
-										</td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button" class="btn btn-action"
-													data-toggle="modal" data-target="#modalPedidoCanceladoGh">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<!-- End Vales corporativos panel -->
 
 				<!-- Colaboradores panel -->
 				<div class="panel" id="colaboradores-panel">
@@ -2064,6 +1950,267 @@
 
 				</div>
 				<!-- End Cumpleaños panel -->
+
+				<!-- Vales corporativos panel -->
+				<div class="panel" id="valesCorporativos-panel">
+					<div class="panel-header">
+						<div class="panel-header-top">
+							<h2 class="panel-title">Vales corporativos solicitados</h2>
+							<p>
+								En esta sección se muestran todas tus solicitudes de vales corporativos.
+							</p>
+						</div>
+						<div class="panel-header-bottom">
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalInfoEstadosValesGh">
+								<span class="material-icons-outlined">
+									info
+								</span>
+								Info estados
+							</button>
+							<button class="btn btn-small btn-secundario" data-toggle="modal"
+								data-target="#modalFilterValesGh">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
+
+					<div class="panel-body">
+						<div class="card-dtable">
+							<table class="table dtable">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Medio de pago</th>
+										<th scope="col">Total</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>25/10/2023</td>
+										<td>BCP</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-info">
+												Solicitado
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>25/10/2023</td>
+										<td>BCP</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-success">
+												Emitido
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+												<button type="button" name="button" class="btn btn-action">
+													<span class="material-icons-outlined">
+														file_download
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>25/10/2023</td>
+										<td>Interbank</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-warning">
+												Observado
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoObservadoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>25/10/2023</td>
+										<td>Yape</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-danger">
+												Cancelado
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoCanceladoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- End Vales corporativos panel -->
+
+				<!-- Asignar vales panel -->
+				<div class="panel" id="asignarVales-panel">
+					<div class="panel-header">
+						<div class="panel-header-top">
+							<h2 class="panel-title">Asignar vales</h2>
+							<p>
+								En esta sección se muestran todas tus solicitudes de vales corporativos.
+							</p>
+						</div>
+						
+					</div>
+
+					<div class="panel-body">
+						<div class="card-dtable">
+							<table class="table dtable">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Medio de pago</th>
+										<th scope="col">Total</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>25/10/2023</td>
+										<td>BCP</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-info">
+												Solicitado
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>25/10/2023</td>
+										<td>BCP</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-success">
+												Emitido
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoSolicitadoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+												<button type="button" name="button" class="btn btn-action">
+													<span class="material-icons-outlined">
+														file_download
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>25/10/2023</td>
+										<td>Interbank</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-warning">
+												Observado
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoObservadoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>25/10/2023</td>
+										<td>Yape</td>
+										<td>1000.00</td>
+										<td>
+											<span class="tag tag-danger">
+												Cancelado
+											</span>
+										</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn btn-action"
+													data-toggle="modal" data-target="#modalPedidoCanceladoGh">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- End Asignar vales panel -->
 
 
 			</div>

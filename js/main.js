@@ -397,6 +397,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").hide();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-valesSolicitados").click(function () {
@@ -409,6 +410,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").hide();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
@@ -421,6 +423,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").hide();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function () {
@@ -433,6 +436,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").hide();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-contactos").click(function () {
@@ -445,6 +449,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").hide();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function () {
@@ -457,6 +462,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").hide();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-nuevaSede").click(function () {
@@ -469,6 +475,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").show();
     $("#inhouse-panel").hide();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-inhouse").click(function () {
@@ -481,6 +488,7 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").show();
     $("#cumples-panel").hide();
+    $("#asignarVales-panel").hide();
   });
 
   $(".showAdminPanel-cumples").click(function () {
@@ -493,6 +501,20 @@ $(document).ready(function () {
     $("#nuevaSede-panel").hide();
     $("#inhouse-panel").hide();
     $("#cumples-panel").show();
+    $("#asignarVales-panel").hide();
+  });
+
+  $(".showAdminPanel-asignarVales").click(function () {
+    $("#dashboard-panel").hide();
+    $("#valesCorporativos-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#contactos-panel").hide();
+    $("#sedes-panel").hide();
+    $("#nuevaSede-panel").hide();
+    $("#inhouse-panel").hide();
+    $("#cumples-panel").hide();
+    $("#asignarVales-panel").show();
   });
   // End show hide panels admin
 

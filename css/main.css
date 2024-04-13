@@ -7048,7 +7048,7 @@ iframe {
   color: var(--white);
 }
 
-.sidebar-list-collapse {
+.sidebar-list-collapse, .sidebar-list-collapse--vales {
   list-style: none;
   /* background-color: tomato; */
 }

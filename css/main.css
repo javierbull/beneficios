@@ -3603,9 +3603,13 @@ nav.main .midmenu {
 }
 
 .content-menu-mobile {
-  background-color: var(--primary-light);
+  background-color: var(--primary-white);
   min-height: 100vh;
   padding: 1.5rem;
+}
+
+.content-menu-mobile-admin {
+  background-color: var(--primary-light);
 }
 
 .header-menu-mobile {
@@ -7133,6 +7137,8 @@ iframe {
   justify-content: space-between;
   align-items: center;
 }
+
+
 /* End admin panel */
 
 /* Panel vales corporativos */

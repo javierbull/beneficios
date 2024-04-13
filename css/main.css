@@ -8175,6 +8175,10 @@ div.dataTables_wrapper div.dataTables_info {
   line-height: 3rem ;
 }
 
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
+  line-height: 3rem;
+}
+
 .select2-container--bootstrap4 .select2-results__option--highlighted,
 .select2-container--bootstrap4 .select2-results__option--highlighted.select2-results__option[aria-selected=true] {
   background-color: var(--primary-light);
@@ -8210,10 +8214,5 @@ div.dataTables_wrapper div.dataTables_info {
 .form-row-colaboradorValeAsignado .form-group {
   width: 100%;
 }
-
-/* .dropdown-wrapper {
-  background-color: pink;
-  z-index: 1400;
-} */
 
 /* END ASIGNAR VALES/ */

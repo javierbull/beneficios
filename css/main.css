@@ -8187,5 +8187,28 @@ div.dataTables_wrapper div.dataTables_info {
 .select2-container--bootstrap4.select2-container--focus .select2-selection {
   border-color: var(--primary-dark);
   -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25); }
+          box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25); 
+}
+
+.block-colaboradores-asignados {
+  /* background-color: pink; */
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.block-colaboradores-asignados p {
+  margin-bottom: .5rem;
+}
+
+.form-row-colaboradorValeAsignado {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  gap: .5rem;
+}
+
+.form-row-colaboradorValeAsignado .form-group {
+  width: 100%;
+}
+
 /* END ASIGNAR VALES/ */

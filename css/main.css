@@ -8222,8 +8222,17 @@ div.dataTables_wrapper div.dataTables_info {
 
 /* VALE CIRCO */
 .vale-circo {
-  background-color: pink;
-  display: flex;
+  /*background-color: pink;
+  */display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 4px 4px 8px rgba(20, 20, 43, .5);
 }
 
 .vale-circo-left {

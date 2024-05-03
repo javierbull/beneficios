@@ -1461,6 +1461,30 @@
     display: none;
   }
   /* End admin gestion humana */
+
+  .vale-circo {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vale-circo-left {
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../img/boletos/leftCirco.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .vale-circo-right {
+    width: 20rem;
+    height: 24rem;
+    background-image: url(../img/boletos/circoRightMobile.png);
+    background-position: right top;
+    padding: 2.5rem 1rem 1rem 1rem;
+  }
 }
 
 /* Fin cell landscape */

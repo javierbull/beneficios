@@ -8237,7 +8237,7 @@ div.dataTables_wrapper div.dataTables_info {
 
 .vale-circo-left {
   width: 15rem;
-  height: 20rem;
+  height: 21rem;
   background-image: url(../img/boletos/leftCirco.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -8246,7 +8246,7 @@ div.dataTables_wrapper div.dataTables_info {
 
 .vale-circo-right {
   width: 25rem;
-  height: 20rem;
+  height: 21rem;
   background-image: url(../img/boletos/circoRight.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -8294,7 +8294,7 @@ div.dataTables_wrapper div.dataTables_info {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
 }
 
 .vale-circo--recomendacion {

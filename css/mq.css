@@ -1480,10 +1480,14 @@
 
   .vale-circo-right {
     width: 20rem;
-    height: 24rem;
+    height: 23rem;
     background-image: url(../img/boletos/circoRightMobile.png);
     background-position: right top;
-    padding: 2.5rem 1rem 1rem 1rem;
+    padding: 2.5rem .75rem .75rem .75rem;
+  }
+
+  .vale-circo--recomendacion {
+    font-size: .6rem;
   }
 }
 

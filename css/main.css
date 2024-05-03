@@ -8219,3 +8219,39 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: 0;
 }
 /* END ASIGNAR VALES/ */
+
+/* VALE CIRCO */
+.vale-circo {
+  background-color: pink;
+  display: flex;
+}
+
+.vale-circo-left {
+  width: 15rem;
+  height: 20rem;
+  background-image: url(../img/boletos/leftCirco.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.vale-circo-right {
+  width: 25rem;
+  height: 20rem;
+  background-image: url(../img/boletos/circoRight.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  color: var(--white);
+  padding: 2.5rem 1.5rem;
+}
+
+.vale-circo--title {
+  font-size: 1.25rem;
+}
+
+.vale-circo--desc {
+  font-size: .75rem;
+}
+/* END VALE CIRCO */

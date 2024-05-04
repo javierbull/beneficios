@@ -8253,7 +8253,7 @@ div.dataTables_wrapper div.dataTables_info {
   background-size: cover;
   text-align: center;
   color: var(--white);
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
 }
 
 .vale-circo--title {
@@ -8266,12 +8266,12 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .vale-circo--desc {
-  font-size: .75rem;
+  font-size: 1rem;
   margin-bottom: .5rem;
 }
 
 .vale-circo--fecha {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -8308,6 +8308,6 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .vale-circo--logo img {
-  height: 1rem;
+  height: 1.2rem;
 }
 /* END VALE CIRCO */

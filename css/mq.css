@@ -1478,16 +1478,45 @@
     background-size: cover;
   }
 
+  .vale-circo--code {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .vale-circo-right {
     width: 20rem;
     height: 23rem;
     background-image: url(../img/boletos/circoRightMobile.png);
-    background-position: right top;
+    background-position: center top;
     padding: 2.5rem .75rem .75rem .75rem;
   }
 
+  .vale-circo--title {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+  }
+
+  .vale-circo--desc {
+    font-size: .875rem;
+    margin-bottom: .5rem;
+  }
+
   .vale-circo--recomendacion {
-    font-size: .6rem;
+    font-size: .75rem;
+    margin-bottom: .5rem;
+  }
+
+  .vale-circo--logo {
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
   }
 }
 

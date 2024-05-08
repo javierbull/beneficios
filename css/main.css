@@ -8338,7 +8338,7 @@ div.dataTables_wrapper div.dataTables_info {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   width: 100%;
 }
 
@@ -8352,15 +8352,32 @@ div.dataTables_wrapper div.dataTables_info {
 
 .vale-cinemark--body {
   width: 100%;
-  height: 8rem;
   background-image: url(../img/boletos/bg-cinemark.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.25rem;
+}
+
+.wrap-qr--cinemark {
+  border: .25rem solid #E13338;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  overflow: hidden;
+}
+
+.vale-cinemark--body img {
+  height: 10rem;
+ 
 }
 
 .vale-cinemark--code {
@@ -8380,13 +8397,17 @@ div.dataTables_wrapper div.dataTables_info {
 .vale-cinemark--bottom {
   width: 100%;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.5rem 1.25rem;
   color: #E13338;
   text-transform: uppercase;
 }
 
 .vale-cinemark--title {
   font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.vale-cinemark--contenido {
   font-weight: 600;
 }
 
@@ -8407,6 +8428,6 @@ div.dataTables_wrapper div.dataTables_info {
   /* background-color: pink; */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+ flex-direction: column;
 }
 /* END VALE CINEMARK */

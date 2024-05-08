@@ -8323,7 +8323,7 @@ div.dataTables_wrapper div.dataTables_info {
 /* VALE CINEMARK */
 .vale-cinemark {
   background-color: var(--Gray2);
-  width: 25rem;
+  width: 24rem;
   overflow: hidden;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -8401,5 +8401,12 @@ div.dataTables_wrapper div.dataTables_info {
 
 .vale-cinemark--bottom img {
   width: 60%;
+}
+
+.section-vales--cinemark {
+  /* background-color: pink; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 /* END VALE CINEMARK */

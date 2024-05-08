@@ -8319,3 +8319,86 @@ div.dataTables_wrapper div.dataTables_info {
   height: 1.2rem;
 }
 /* END VALE CIRCO */
+
+/* VALE CINEMARK */
+.vale-cinemark {
+  background-color: var(--Gray2);
+  width: 25rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(20, 20, 43, .3);
+}
+
+.vale-cinemark--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.cv-imagotipo {
+  width: 3rem;
+}
+
+.cv-beneficios {
+  height: 1.25rem;
+}
+
+.vale-cinemark--body {
+  width: 100%;
+  height: 8rem;
+  background-image: url(../img/boletos/bg-cinemark.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vale-cinemark--code {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  background-color: #E13338;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.vale-cinemark--bottom {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  color: #E13338;
+  text-transform: uppercase;
+}
+
+.vale-cinemark--title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.vale-cinemark--vigencia {
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.vale-cinemark--condiciones {
+  font-size: .75rem;
+}
+
+.vale-cinemark--bottom img {
+  width: 60%;
+}
+/* END VALE CINEMARK */

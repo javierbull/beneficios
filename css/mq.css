@@ -2411,6 +2411,17 @@
     flex-direction: column;
   }
   /* End asignar vales */
+
+  /* Vale cinemark */
+  .vale-cinemark {
+    width: 100%;
+  }
+
+  .vale-cinemark--vigencia {
+    font-size: .75rem;
+  }
+  
+  /* End vale cinemark */
 }
 
 /* Fin cell portrait */

@@ -41,10 +41,68 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     color: var(--black);
+    font-weight: 400;
 }
+
+/* Buttons */
+.btn {
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5rem;
+    vertical-align: middle;
+    padding: 6px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.primary-btn {
+    background-image: linear-gradient(to right, #FFE578 0%, #FFCE00 51%, #FFBF00 100%);
+    color: var(--black);
+    --bs-btn-active-border-color: #241D0F;
+    --bs-btn-active-color: #241D0F;
+}
+
+.primary-btn:hover {
+    color: var(--black);
+}
+
+.outline-btn {
+    background-color: var(--white);
+    color: var(--black);
+    border: solid 1px var(--black);
+    --bs-btn-active-border-color: #241D0F;
+    --bs-btn-active-color: #241D0F;
+}
+
+.outline-btn:hover {
+    background-color: var(--gray1);
+    color: var(--black);
+    border: solid 1px var(--black);
+}
+
+.ghost-btn {
+    background-color: var(--white);
+    color: var(--blue5);
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-active-color: #0D6EFF;
+    text-decoration: underline;
+}
+
+.ghost-btn:hover {
+    background-color: var(--white);
+    color: var(--blue5);
+}
+/* End buttons */

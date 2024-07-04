@@ -12,6 +12,24 @@
     --primary4: #FFE578;
     --primary5: #FFCE00;
     --primary6: #FFBF00;
+    --blue1: #EFF5FF;
+    --blue2: #E0ECFF;
+    --blue3: #BAD5FF;
+    --blue4: #6DA7FF;
+    --blue5: #0D6EFF;
+    --blue6: #0C408D;
+    --green1: #EBF6F3;
+    --green2: #C5EAE0;
+    --green3: #9BDAC9;
+    --green4: #60C6AA;
+    --green5: #00966D;
+    --green6: #016147;
+    --red1: #FDF4F4;
+    --red2: #F9E6E6;
+    --red3: #F9C4C5;
+    --red4: #F59799;
+    --red5: #F64B4F;
+    --red6: #AB2328;
 }
 
 html {

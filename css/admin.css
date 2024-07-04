@@ -1,4 +1,18 @@
-
+:root {
+    --black: #241D0F;
+    --white: #FFFFFF;
+    --gray1: #FAFAFA;
+    --gray2: #E6E6E6;
+    --gray3: #B3B3B3;
+    --gray4: #808080;
+    --gray5: #404040;
+    --primary1: #FFFFF5;
+    --primary2: #FFF9DE;
+    --primary3: #FFF1B4;
+    --primary4: #FFE578;
+    --primary5: #FFCE00;
+    --primary6: #FFBF00;
+}
 
 html {
     font-size: 16px;
@@ -14,4 +28,5 @@ html {
 body {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
+    color: var(--black);
 }

@@ -343,9 +343,6 @@ $(document).ready(function () {
   $(".btn-sidebar-toggle--sedes").click(function () {
     $(".sidebar-list-collapse--sedes").toggle();
   });
-
-
-
   // End sidebar item active
 
   // Active thumbnails

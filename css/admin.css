@@ -156,6 +156,12 @@ body {
   font-variation-settings:
   'FILL' 1
 }
+
+.alert-info {
+    color: var(--blue6);
+    background-color: var(--blue3);
+    border-color: var(--blue3);
+  }
 /* End alerts */
 
 /* UI KIT */

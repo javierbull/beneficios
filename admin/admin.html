@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- CSS FILES -->
     <link rel="stylesheet" href="../css/admin.css">
 </head>
@@ -23,29 +23,88 @@
         <div class="admin-panel">
             admin panel
 
-            <button type="button" class="btn primary-btn">
-                <span class="material-symbols-outlined">
-                    info
-                </span>
-                Primary
-                <span class="material-symbols-outlined">
-                    arrow_forward
-                </span>
-            </button>
+            <div class="container mb-4">
+                <h1>Buttons</h1>
+                <button type="button" class="btn primary-btn">
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                    Primary
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </button>
+    
+                <button type="button" class="btn outline-btn">
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                    Outline
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </button>
+    
+                <button type="button" class="btn ghost-btn">
+                    Ghost
+                </button>
+            </div>
 
-            <button type="button" class="btn outline-btn">
-                <span class="material-symbols-outlined">
-                    info
-                </span>
-                Outline
-                <span class="material-symbols-outlined">
-                    arrow_forward
-                </span>
-            </button>
+            <div class="container mb-4">
+                <h2>Checks and Radios</h2>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Default radio
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Second default radio
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                    <label class="form-check-label" for="exampleRadios3">
+                      Disabled radio
+                    </label>
+                  </div>
 
-            <button type="button" class="btn ghost-btn">
-                Ghost
-            </button>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                    <label class="form-check-label" for="defaultCheck2">
+                      Disabled checkbox
+                    </label>
+                  </div>
+            </div>
+
+            <div class="container mb-4">
+                <h2>Inputs</h2>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+            </div>
+
+            <div class="container mb-4">
+                <h2>Alerts</h2>
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                    <a href="#">Solicitar cambio</a>
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                </div>      
+            </div>
+
+
 
         </div>
     </div>

@@ -77,3 +77,37 @@ var myChart = new Chart(ctx, {
    
 
 });
+
+var ctx = document.getElementById("chartCanales").getContext("2d");
+var myChart = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+        labels: ['WhatsApp', 'Digital', 'In-house'],
+        datasets: [{
+            label: 'Sales',
+                data: [40,35,25],
+                fill: true,
+                backgroundColor: [
+                    '#76B435',
+                    '#518AF9',
+                    '#FFBC3B'
+                ],
+                datalabels: {
+                    display: false
+                }
+        }]
+        
+    },
+    options: {
+        plugins: {
+            title: {
+                display: false,
+            },
+            legend: {
+                display: false,
+            }
+        },
+      },
+   
+
+});

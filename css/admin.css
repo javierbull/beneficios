@@ -192,16 +192,20 @@ body {
 
 /* badges */
 
-.badge-activos {
+.badge-success {
     color: #76B435;
 }
 
-.badge-inactivos {
+.badge-warning {
     color: #FFAE11;
 }
 
-.badge-preRegistrados {
+.badge-danger {
     color: #FF5F73;
+}
+
+.badge-info {
+    color: #518AF9;
 }
 
 /* End badges */
@@ -412,7 +416,7 @@ body {
 }
 
 .wrap-charts {
-    background-color: lavender;
+    /* background-color: lavender; */
     width: 100%;
     display: flex;
     gap: 1.5rem;
@@ -447,14 +451,14 @@ body {
     align-items: center;
 }
 
-.table-chart-colaboradores td:first-child {
+.table-chart-colaboradores td:first-child, .table-chart-canal td:first-child {
     display: flex;
     align-items: center;
     gap: .5rem;
     font-weight: 400;
 }
 
-.table-chart-colaboradores {
+.table-chart-colaboradores, .table-chart-canal {
     /* background-color: lavender; */
     text-align: right;
     font-weight: 700;
@@ -480,9 +484,32 @@ body {
     border-bottom-right-radius: .5rem;
 }
 
+.card-participacionCanal {
+    width: 25%;
+}
+
+.wrap-chartCanales-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.table-chart-canal {
+    margin-bottom: 0;
+}
+
+.row-cards-admin {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card-beneficiosVisitas {
+    width: 100%;
+}
+
 .sidebar-events {
     background-color: #FFE578;
     width: 20rem;
-    
 }
 /* END DASHBOARD */

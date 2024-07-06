@@ -125,7 +125,7 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <span class="material-symbols-outlined icon-fill badge-activos">
+                                                <span class="material-symbols-outlined icon-fill badge-success">
                                                     brightness_1
                                                 </span> 
                                                 Activos
@@ -135,7 +135,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <span class="material-symbols-outlined icon-fill badge-inactivos">
+                                                <span class="material-symbols-outlined icon-fill badge-warning">
                                                     brightness_1
                                                 </span> 
                                                 Inactivos
@@ -145,7 +145,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <span class="material-symbols-outlined icon-fill badge-preRegistrados">
+                                                <span class="material-symbols-outlined icon-fill badge-danger">
                                                     brightness_1
                                                 </span> 
                                                 Pre-registrados
@@ -168,6 +168,51 @@
                         <div class="card-admin">
                             <h2 class="card-admin__title">Categorías más solicitadas</h2>
                             <canvas id="chartCategorias"></canvas>
+                        </div>
+
+                        <div class="row-cards-admin">
+                            <div class="card-admin card-participacionCanal">
+                                <h2 class="card-admin__title">Participación por canal</h2>
+                                <div class="wrap-chartCanales-table">
+                                    <canvas id="chartCanales"></canvas>
+    
+                                    <table class="table table-chart-canal table-borderless align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="material-symbols-outlined icon-fill badge-success">
+                                                        brightness_1
+                                                    </span> 
+                                                    WhatsApp
+                                                </td> 
+                                                <td>40%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="material-symbols-outlined icon-fill badge-info">
+                                                        brightness_1
+                                                    </span> 
+                                                    Digital
+                                                </td>
+                                                <td>35%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="material-symbols-outlined icon-fill badge-warning">
+                                                        brightness_1
+                                                    </span> 
+                                                    In-house
+                                                </td>
+                                                <td>25%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="card-admin card-beneficiosVisitas">
+                                <h2 class="card-admin__title">Beneficios con más vistas</h2>
+                            </div>
                         </div>
 
                     </div>

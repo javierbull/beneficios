@@ -348,6 +348,7 @@ body {
     /* background-color: lavender; */
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .btn-switch-admin {
@@ -355,6 +356,7 @@ body {
     align-items: center;
     gap: .5rem;
     border: none;
+    padding: 0;
 }
 
 .label-switch-admin {
@@ -372,7 +374,7 @@ body {
 }
 
 .dropdown-admin {
-
+    padding: 0;
 }
 
 .dropdown-admin__img {

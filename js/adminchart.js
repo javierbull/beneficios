@@ -4,19 +4,20 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Cineplanet', 'Entretenimiento', 'Salud y belleza', 'Boxes y regalos', 'Viajes y turismo'],
         datasets: [{
-            data: [1000, 820, 900, 350, 500],
-            backgroundColor: [
-                'rgba(223, 251, 242, 1)',
-                'rgba(238, 246, 252, 1)',
-                'rgba(254, 236, 240, 1)'
-            ],
-            borderColor: [
-                'rgba(0,150,109,1)',
-                'rgba(29, 114, 170, 1)',
-                'rgba(204, 15, 53, 1)'
-            ],
-            borderWidth: 2,
-            fill: false,
+            label: 'Sales',
+                data: [1000,830,950,450,500],
+                fill: true,
+                borderRadius: 8,
+                backgroundColor: [
+                    '#0ABDA0',
+                    '#59E5C8',
+                    '#24D5B5',
+                    '#96FAE1',
+                    '#CAFEEE'
+                ],
+                datalabels: {
+                    display: false
+                }
         }]
         
     },

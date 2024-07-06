@@ -209,6 +209,35 @@ body {
     left: 0;
 }
 
+.wrap-brand-logo {
+    background-color: var(--white);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.wrap-brand-logo img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
 .sidebar-admin-list {
     background-color: var(--primary6);
     list-style: none;
@@ -286,7 +315,7 @@ body {
 
 /* admin panel */
 .admin-panel {
-    background-color: skyblue;
+    background-color: var(--gray1);
     width: calc(100% - 16rem);
     min-height: 100vh;
     margin-left: 16rem;
@@ -294,7 +323,7 @@ body {
 }
 
 .navbar-panel {
-    background-color: var(--white);
+    /* background-color: var(--white); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -302,7 +331,7 @@ body {
 }
 
 .navbar-panel__title {
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .navbar-panel__title h2 {
@@ -316,7 +345,7 @@ body {
 }
 
 .wrap-switch-btn-perfil {
-    background-color: lavender;
+    /* background-color: lavender; */
     display: flex;
     align-items: center;
 }

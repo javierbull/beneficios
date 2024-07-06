@@ -392,4 +392,36 @@ body {
 
 /* End admin panel */
 
+.dashboard-main {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.wrap-charts {
+    background-color: lavender;
+    width: 100%;
+}
+
+.card-admin {
+    background-color: var(--white);
+    border: 1px solid var(--gray3);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5re;
+    -moz-border-radius: .5re;
+    -ms-border-radius: .5re;
+    -o-border-radius: .5re;
+}
+
+.card-admin__title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.sidebar-events {
+    background-color: #FFE578;
+    width: 20rem;
+    
+}
 /* END DASHBOARD */

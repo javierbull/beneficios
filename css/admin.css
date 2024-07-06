@@ -97,8 +97,6 @@ body {
 .primary-btn {
     background-image: linear-gradient(to right, #FFE578 0%, #FFCE00 51%, #FFBF00 100%);
     color: var(--black);
-    --bs-btn-active-border-color: #241D0F;
-    --bs-btn-active-color: #241D0F;
 }
 
 .primary-btn:hover {
@@ -179,18 +177,34 @@ body {
     gap: .5rem;
 }
 
-.alert .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 1
-}
-
 .alert-info {
     color: var(--blue6);
     background-color: var(--blue3);
     border-color: var(--blue3);
 }
 
+.icon-fill {
+    font-variation-settings:
+        'FILL' 1
+}
+
 /* End alerts */
+
+/* badges */
+
+.badge-activos {
+    color: #76B435;
+}
+
+.badge-inactivos {
+    color: #FFAE11;
+}
+
+.badge-preRegistrados {
+    color: #FF5F73;
+}
+
+/* End badges */
 
 /* UI KIT */
 
@@ -424,7 +438,46 @@ body {
 
 .chart-colaboradores {
     /* background-color: tomato; */
-    width: 20rem;
+    width: 15rem;
+}
+
+.wrap-chartColaboradores-table {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+
+.table-chart-colaboradores td:first-child {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 400;
+}
+
+.table-chart-colaboradores {
+    /* background-color: lavender; */
+    text-align: right;
+    font-weight: 700;
+}
+
+.table-chart-colaboradores tbody tr:last-child td {
+    margin-bottom: 1rem;
+}
+
+.table-chart-colaboradores tfoot td {
+    background-color: var(--blue2);
+}
+
+.table-chart-colaboradores tfoot td:first-child {
+    /* background-color: pink; */
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.table-chart-colaboradores tfoot td:last-child {
+    /* background-color: var(--green3); */
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 
 .sidebar-events {

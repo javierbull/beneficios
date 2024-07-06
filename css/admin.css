@@ -400,6 +400,9 @@ body {
 .wrap-charts {
     background-color: lavender;
     width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
 }
 
 .card-admin {
@@ -417,6 +420,11 @@ body {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     font-weight: 700;
+}
+
+.chart-colaboradores {
+    /* background-color: tomato; */
+    width: 20rem;
 }
 
 .sidebar-events {

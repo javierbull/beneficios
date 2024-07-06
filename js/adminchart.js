@@ -43,3 +43,37 @@ var myChart = new Chart(ctx, {
    
 
 });
+
+var ctx = document.getElementById("chartColaboradores").getContext("2d");
+var myChart = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+        labels: ['Activos', 'Inactivos', 'Pre-registrados'],
+        datasets: [{
+            label: 'Sales',
+                data: [400,350,250],
+                fill: true,
+                backgroundColor: [
+                    '#76B435',
+                    '#FFAE11',
+                    '#FF5F73'
+                ],
+                datalabels: {
+                    display: false
+                }
+        }]
+        
+    },
+    options: {
+        plugins: {
+            title: {
+                display: false,
+            },
+            legend: {
+                display: false,
+            }
+        },
+      },
+   
+
+});

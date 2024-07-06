@@ -69,6 +69,31 @@ body {
     -o-border-radius: .5rem;
 }
 
+.btn-style-none {
+    background-color: transparent;
+    border-color: none;
+}
+
+.btn-style-none:hover {
+    color: var(--black);
+    background-color: transparent;
+    border-color: 0;
+}
+
+.btn-style-none:focus,
+.btn-style-none.focus {
+    background-color: transparent;
+    border-color: 0 !important;
+    box-shadow: 0 0 0 0.2rem transparent !important;
+}
+
+.btn-style-none.disabled,
+.btn-style-none:disabled {
+    color: var(--white);
+    background-color: var(--white);
+    border-color: 0;
+}
+
 .primary-btn {
     background-image: linear-gradient(to right, #FFE578 0%, #FFCE00 51%, #FFBF00 100%);
     color: var(--black);
@@ -194,7 +219,7 @@ body {
 }
 
 .sidebar-item-btn {
-    /*background-color: lavender;*/ 
+    /*background-color: lavender;*/
     width: 100%;
     text-transform: none;
     display: flex;
@@ -229,7 +254,8 @@ body {
     color: var(--black);
 }
 
-.sidebar-list-collapse, .btn-toggle-nav {
+.sidebar-list-collapse,
+.btn-toggle-nav {
     list-style: none;
     /* background-color: tomato; */
 }
@@ -251,12 +277,14 @@ body {
     -o-border-radius: 1.5rem;
 }
 
-.sidebar-list-collapse--vales, .sidebar-list-collapse--sedes {
+.sidebar-list-collapse--vales,
+.sidebar-list-collapse--sedes {
     display: none;
-  }
+}
 
 /* End sidebar */
 
+/* admin panel */
 .admin-panel {
     background-color: skyblue;
     width: calc(100% - 16rem);
@@ -264,5 +292,73 @@ body {
     margin-left: 16rem;
     padding: 2rem 1.5rem;
 }
+
+.navbar-panel {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.navbar-panel__title {
+    background-color: pink;
+}
+
+.navbar-panel__title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.navbar-panel__title p {
+    margin-bottom: 0;
+}
+
+.wrap-switch-btn-perfil {
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+}
+
+.btn-switch-admin {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: none;
+}
+
+.label-switch-admin {
+    /* background-color: lightskyblue; */
+    margin-bottom: 0;
+    font-size: .875rem;
+    text-align: end;
+    text-transform: none;
+    line-height: 1rem;
+}
+
+.switch-admin {
+    /* background-color: lightgreen; */
+    height: 1.5rem;
+}
+
+.dropdown-admin {
+
+}
+
+.dropdown-admin__img {
+    height: 2.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.btn-group-dropdown-perfil .dropdown-toggle::after { 
+    content: none; 
+} 
+
+/* End admin panel */
 
 /* END DASHBOARD */

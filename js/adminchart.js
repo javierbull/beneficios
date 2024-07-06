@@ -22,9 +22,14 @@ var myChart = new Chart(ctx, {
         
     },
     options: {
-        legend: {
-            display: false
-         },
+        plugins: {
+            title: {
+                display: false,
+            },
+            legend: {
+                display: false,
+            }
+        },
         scales: {
           yAxes: [{
             ticks:{

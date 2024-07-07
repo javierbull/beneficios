@@ -190,6 +190,16 @@ body {
 
 /* End alerts */
 
+/* Backgrounds */
+.bg-info {
+    background-color: var(--blue2) !important;
+}
+
+.bg-default {
+    background-color: var(--gray2) !important;
+}
+/* End background */
+
 /* badges */
 
 .badge-success {
@@ -485,7 +495,7 @@ body {
 }
 
 .card-participacionCanal {
-    width: 25%;
+    width: 40%;
 }
 
 .wrap-chartCanales-table {
@@ -508,8 +518,63 @@ body {
     width: 100%;
 }
 
+.progressbar-beneficios {
+    height: 2.5rem;
+    background-color: var(--white);
+    width: 100%;
+}
+
+.progressbar-beneficios .progress-bar {
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.chart-bar-beneficios {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.chart-bar-beneficios:last-child {
+    margin-bottom: 0;
+}
+
+.chart-bar-beneficios__position {
+    background-color: var(--blue5);
+    color: var(--white);
+    min-width: 2rem;
+    max-width: 2rem;
+    min-height: 2rem;
+    max-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.progressbar-beneficios p {
+    position: absolute;
+    margin-bottom: 0;
+    font-size: 1rem;
+    top: .5rem;
+    left: 3.5rem;
+}
+
+
+/* Sidebars events */
 .sidebar-events {
     background-color: #FFE578;
     width: 20rem;
 }
+/* Sidebar events */
+
 /* END DASHBOARD */

@@ -4,7 +4,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Cineplanet', 'Entretenimiento', 'Salud y belleza', 'Boxes y regalos', 'Viajes y turismo'],
         datasets: [{
-            label: 'Sales',
+            label: 'Solicitudes',
                 data: [1000,830,950,450,500],
                 fill: true,
                 borderRadius: 8,
@@ -50,7 +50,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['Activos', 'Inactivos', 'Pre-registrados'],
         datasets: [{
-            label: 'Sales',
+            label: 'Colaboradores',
                 data: [400,350,250],
                 fill: true,
                 backgroundColor: [
@@ -84,7 +84,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['WhatsApp', 'Digital', 'In-house'],
         datasets: [{
-            label: 'Sales',
+            label: 'Porcentaje',
                 data: [40,35,25],
                 fill: true,
                 backgroundColor: [

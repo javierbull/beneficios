@@ -16,5 +16,15 @@ $(document).ready(function () {
   });
   // End sidebar item active
 
-  
+  // Shoe paneld admin
+  $(".showAdminPanel-dashboard").click(function () {
+    $("#dashboard-panel").show();
+    $("#colaboradores-panel").hide();
+  });
+
+  $(".showAdminPanel-colaboradores").click(function () {
+    $("#dashboard-panel").hide();
+    $("#colaboradores-panel").show();
+  });
+  // end show admi panels
 });

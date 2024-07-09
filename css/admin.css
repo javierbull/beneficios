@@ -71,6 +71,10 @@ body {
     
 }
 
+.btn-icon {
+    padding: 6px;
+}
+
 .btn-style-none {
     background-color: transparent;
     border-color: none;

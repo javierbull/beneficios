@@ -229,6 +229,14 @@ body {
     display: flex;
 }
 
+.panel {
+    display: none;
+}
+
+.active-panel {
+    display: block;
+  }
+
 /* Sidebar */
 
 .wrap-sidebar-admin {

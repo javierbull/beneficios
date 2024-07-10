@@ -761,5 +761,15 @@ table.dataTable thead .sorting_desc_disabled::after {
     background-color: var(--gray5);
     color: var(--gray1);
 }
+
+.table-admin thead th:first-child {
+    /* background-color: blue; */
+    border-top-left-radius: .5rem;
+}
+
+.table-admin thead th:last-child {
+    /* background-color: blue; */
+    border-top-right-radius: .5rem;
+}
 /* END PANEL COLABORADORES */
 

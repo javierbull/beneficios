@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    // alert("Hello! I am an alert box!!");
+  // alert("Hello! I am an alert box!!");
 
-    // Sidebar active item
+  // Sidebar active item
   $(".sidebar-item-db").on('click', function () {
     $(".sidebar-item-db").removeClass('active-item');
     $(this).addClass('active-item');
@@ -46,8 +46,16 @@ $(document).ready(function () {
         "sPrevious": "Anterior"
       },
       "sProcessing": "Procesando...",
+    },
+    "layout": {
+      topStart: null,
+      topEnd: null,
+      bottomStart: 'pageLength',
+      bottomEnd: 'paging'
     }
 
   });
+
+
   // END DATATABLES
 });

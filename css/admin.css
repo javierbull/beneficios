@@ -2,7 +2,7 @@
 :root {
     --black: #241D0F;
     --white: #FFFFFF;
-    --gray1: #FAFAFA;
+    --gray1: #F7F7F7;
     --gray2: #E6E6E6;
     --gray3: #B3B3B3;
     --gray4: #808080;
@@ -135,22 +135,38 @@ body {
     border: solid 1px var(--black);
 }
 
-.ghost-btn {
+.link-btn {
     background-color: var(--white);
     color: var(--blue5);
     text-decoration: underline;
 }
 
-.ghost-btn:hover {
+.link-btn:hover {
     background-color: var(--white);
     color: var(--blue5);
 }
 
-.ghost-btn:focus {
+.link-btn:focus {
     color: var(--blue6);
     background-color: var(--white);
     border: none;
     box-shadow: 0px 0px 0px 3px rgba(32, 156, 238, 0.4);
+}
+
+.ghost-btn {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.ghost-btn:focus {
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: 0px 0px 0px 2px rgba(160, 163, 189, 0.5);
+}
+
+.ghost-btn:hover {
+    background-color: var(--gray1);
+    color: var(--black);
 }
 
 /* End buttons */
@@ -691,6 +707,31 @@ body {
 
 /* END DASHBOARD */
 
-/* PANEL COLABORADORES */
+/* MODALS */
+.modal-content {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
 
+.modal-title  {
+    font-weight: 700;
+    font-weight: 1.25rem;
+}
+/* EN MODALS */
+
+/* PANEL COLABORADORES */
+.navbar-actions {
+    /* background-color: lavender; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-actions__filtros {
+    display: flex;
+    gap: .5rem;
+}
 /* END PANEL COLABORADORES */
+

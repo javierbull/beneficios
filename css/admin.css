@@ -13,6 +13,7 @@
     --primary4: #FFE578;
     --primary5: #FFCE00;
     --primary6: #FFBF00;
+    --primary7: #CFA40A;
     --blue1: #EFF5FF;
     --blue2: #E0ECFF;
     --blue3: #BAD5FF;
@@ -269,6 +270,43 @@ body {
 }
 
 /* End badges */
+
+/* Tags */
+.tag {
+    /* background-color: lavender; */
+    display: inline-block;
+    padding: .25rem .75rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.tag-info {
+    background-color: var(--blue2);
+    border: solid 1px var(--blue6);
+    color: var(--blue6);
+}
+
+.tag-success {
+    background-color: var(--green2);
+    border: solid 1px var(--green6);
+    color: var(--green6);
+}
+
+.tag-warning {
+    background-color: var(--primary2);
+    border: solid 1px var(--primary7);
+    color: var(--primary7);
+}
+
+.tag-danger {
+    background-color: var(--red2);
+    border: solid 1px var(--red6);
+    color: var(--red6);
+}
+/* End tags */
 
 /* UI KIT */
 
@@ -769,6 +807,13 @@ table.dataTable thead .sorting_desc_disabled::after {
 
 .table-admin thead th:last-child {
     /* background-color: blue; */
+    border-top-right-radius: .5rem;
+}
+
+.table-admin {
+    /* background-color: pink; */
+    border: solid 1px var(--gray2);
+    border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
 }
 /* END PANEL COLABORADORES */

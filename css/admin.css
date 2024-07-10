@@ -720,6 +720,10 @@ body {
     font-weight: 700;
     font-weight: 1.25rem;
 }
+
+.modal-header, .modal-footer {
+    border: none;
+}
 /* EN MODALS */
 
 /* PANEL COLABORADORES */

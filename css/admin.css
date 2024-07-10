@@ -412,6 +412,7 @@ body {
 
 .navbar-panel__title p {
     margin-bottom: 0;
+    color: var(--gray4);
 }
 
 .wrap-switch-btn-perfil {

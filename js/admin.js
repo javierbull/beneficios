@@ -20,11 +20,19 @@ $(document).ready(function () {
   $(".showAdminPanel-dashboard").click(function () {
     $("#dashboard-panel").show();
     $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
     $("#dashboard-panel").hide();
     $("#colaboradores-panel").show();
+    $("#empresa-panel").hide();
+  });
+
+  $(".showAdminPanel-empresa").click(function () {
+    $("#dashboard-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").show();
   });
   // end show admib panels
 

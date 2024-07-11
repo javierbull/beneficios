@@ -3,7 +3,7 @@
     --black: #241D0F;
     --white: #FFFFFF;
     --gray1: #F7F7F7;
-    --gray2: #E6E6E6;
+    --gray2: #F2F2F2;
     --gray3: #B3B3B3;
     --gray4: #808080;
     --gray5: #404040;
@@ -170,6 +170,10 @@ body {
     color: var(--black);
 }
 
+.link {
+    color: var(--blue5);
+}
+
 /* End buttons */
 
 /* Inputs  */
@@ -228,10 +232,19 @@ body {
     gap: .5rem;
 }
 
+.alert span {
+    font-variation-settings:
+        'FILL' 1
+}
+
 .alert-info {
     color: var(--blue6);
     background-color: var(--blue3);
     border-color: var(--blue3);
+}
+
+.alert-info .link {
+    color: var(--blue6);
 }
 
 .icon-fill {
@@ -883,4 +896,40 @@ table.dataTable {
 
 
 /* END PANEL COLABORADORES */
+
+/* EMPRESA */
+.card-datos-empresa {
+    background-color: var(--gray2);
+    color: var(--gray4);
+    margin-bottom: 1.5rem;
+}
+
+.card-datos-empresa__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card-datos-empresa__bottom {
+    /* background-color: lavender; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.empresa-dato {
+    /* background-color: #60C6AA; */
+    width: 33%;
+}
+
+.empresa-dato span {
+    font-weight: .875rem;
+}
+
+.empresa-dato p {
+    /* background-color: pink; */
+    margin-bottom: 0;
+    font-weight: 700;
+}
+/* END EMPRESA */
 

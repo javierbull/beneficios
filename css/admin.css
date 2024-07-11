@@ -931,5 +931,48 @@ table.dataTable {
     margin-bottom: 0;
     font-weight: 700;
 }
+
+/* logo empresa */
+.wrap-img-preview {
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .imageWrapper {
+    background-color: var(--white);
+    border: solid 1px var(--gray3);
+    width: 10.75rem;
+    height: 10.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageWrapper img {
+    width: 90%;
+  }
+
+  .file-upload {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .file-input-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: 100%;
+  }
+  
+/* End logo empresa */
 /* END EMPRESA */
 

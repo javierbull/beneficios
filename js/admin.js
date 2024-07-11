@@ -30,8 +30,6 @@ $(document).ready(function () {
 
   // DATATABLES
   $('.dtable').DataTable({
-    // scrollX: true,
-    //para cambiar el lenguaje a español
     "language": {
       "lengthMenu": "Mostrar _MENU_ filas",
       "zeroRecords": "No se encontraron resultados",
@@ -47,15 +45,17 @@ $(document).ready(function () {
       },
       "sProcessing": "Procesando...",
     },
-    "layout": {
-      topStart: null,
-      topEnd: null,
-      bottomStart: 'pageLength',
-      bottomEnd: 'paging'
-    }
+    "responsive": true,
+    "searching": false,
+    "info": false,
+    "dom": '<"top"i>rt<"bottom"lfp><"clear">',
 
   });
 
 
-  // END DATATABLES
+
+
 });
+
+
+// END DATATABLES

@@ -40,8 +40,8 @@ $(document).ready(function () {
       "oPaginate": {
         "sFirst": "Primero",
         "sLast": "Último",
-        "sNext": "Siguiente",
-        "sPrevious": "Anterior"
+        "sNext": ">",
+        "sPrevious": "<"
       },
       "sProcessing": "Procesando...",
     },
@@ -49,7 +49,6 @@ $(document).ready(function () {
     "searching": false,
     "info": false,
     "dom": '<"top"i>rt<"bottom"lfp><"clear">',
-
   });
 
 

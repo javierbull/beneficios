@@ -934,11 +934,12 @@ table.dataTable {
 
 /* logo empresa */
 .wrap-img-preview {
-    background-color: lavender;
+    /* background-color: lavender; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    width: 14rem;
   }
 
   .imageWrapper {
@@ -976,6 +977,52 @@ table.dataTable {
     opacity: 0;
     filter: alpha(opacity=0);
     height: 100%;
+  }
+
+  .wrap-logo-datos-empresa {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .form-datos-empresa  {
+    /* background-color: #C5EAE0; */
+    width: 100%;
+  }
+
+  .form-row {
+    /* background-color: lavender; */
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+  }
+
+  .form-group label {
+    margin-bottom: .5rem;
+  }
+
+  .wrap-tipo-pago {
+    /* background-color: pink; */
+    height: 2.375rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .wrap-tipo-pago .form-check-label {
+    margin-bottom: 0;
+  }
+
+  .custom-textArea label {
+    margin-bottom: 0;
+  }
+
+  .custom-textArea p {
+    margin-bottom: .25rem;
+    font-size: .875rem;
+    color: var(--gray4);
   }
   
 /* End logo empresa */

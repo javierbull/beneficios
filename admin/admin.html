@@ -627,20 +627,62 @@
                 <div class="card-admin">
                     <h2 class="card-admin__title">Personaliza tu experiencia:</h2>
 
-                    <div class="wrap-img-preview">
-                        <div class="imageWrapper">
-                            <img class="image-preview" id="editar-empresa-preview-logo-empresa"
-                                src="../img/logos/logos_empresas/win.png">
+                    <div class="wrap-logo-datos-empresa">
+                        <div class="wrap-img-preview">
+                            <div class="imageWrapper">
+                                <img class="image-preview" id="editar-empresa-preview-logo-empresa"
+                                    src="../img/logos/logos_empresas/win.png">
+                            </div>
+
+                            <button class="file-upload btn outline-btn">
+                                <span class="material-symbols-outlined icon-fill">
+                                    edit
+                                </span>
+                                <input type="file" class="file-input-image"
+                                    id="editar-empresa-input-preview-img">Cambiar logo
+                            </button>
+
                         </div>
 
-                        <button class="file-upload btn outline-btn">
-                            <span class="material-symbols-outlined icon-fill">
-                                edit
-                            </span>
-                            <input type="file" class="file-input-image"
-                                id="editar-empresa-input-preview-img">Cambiar logo
-                        </button>
-                        
+                        <form class="form-datos-empresa">
+                            <div class="form-row">
+                                <div class="mb-3 form-group">
+                                    <label for="empresaNombreComercial" class="form-label">Nombre comercial</label>
+                                    <input type="email" class="form-control" id="empresaNombreComercial"
+                                        placeholder="Interbank">
+                                </div>
+    
+                                <div class="mb-3 form-group">
+                                    <label for="empresaNombreWeb" class="form-label">Nombre web</label>
+                                    <input type="email" class="form-control" id="empresaNombreWeb" placeholder="Interbank">
+                                </div>
+    
+                                <div class="form-group">
+                                    <label>Tipo de pago</label>
+                                    <div class="wrap-tipo-pago">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="tipoDePagoPasarela">
+                                            <label class="form-check-label" for="tipoDePagoPasarela">
+                                                Pasarela de pago
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="tipodePagoPlanilla">
+                                            <label class="form-check-label" for="tipodePagoPlanilla">
+                                                Descuento por planilla
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 custom-textArea">
+                                <label for="mensajePlataforma" class="form-label">Mensaje plataforma</label>
+                                <p>Este mensaje aparecerá al iniciar sesión. Si desea agregar el nombre del colaborador debe usar el siguiente formato: %colaborador%</p>
+                                <textarea class="form-control" id="mensajePlataforma" rows="3"></textarea>
+                              </div>
+
+                        </form>
                     </div>
                 </div>
             </div>

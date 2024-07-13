@@ -679,9 +679,15 @@
                             <div class="mb-3 custom-textArea">
                                 <label for="mensajePlataforma" class="form-label">Mensaje plataforma</label>
                                 <p>Este mensaje aparecerá al iniciar sesión. Si desea agregar el nombre del colaborador debe usar el siguiente formato: %colaborador%</p>
-                                <textarea class="form-control" id="mensajePlataforma" rows="3" maxlength="200"></textarea>
+                                <textarea class="form-control" id="mensajePlataforma" rows="3" maxlength="200" placeholder="Escriba un mensaje"></textarea>
                                 <div class="contadorCaracteres" id="contadorCaracteres">0/200</div>
-                              </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn outline-btn">Cancelar</button>
+
+                                <button type="button" class="btn primary-btn">Guardar cambios</button>
+                            </div>
 
                         </form>
                     </div>

@@ -1031,6 +1031,13 @@ table.dataTable {
     /* background-color: pink; */
     text-align: end;
   }
+
+  .form-actions {
+    /* background-color: lavender; */
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
   
 /* End logo empresa */
 /* END EMPRESA */

@@ -22,6 +22,7 @@ $(document).ready(function () {
     $("#colaboradores-panel").hide();
     $("#empresa-panel").hide();
     $("#sedes-panel").hide();
+    $("#contactos-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
@@ -29,6 +30,7 @@ $(document).ready(function () {
     $("#colaboradores-panel").show();
     $("#empresa-panel").hide();
     $("#sedes-panel").hide();
+    $("#contactos-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function () {
@@ -36,6 +38,7 @@ $(document).ready(function () {
     $("#colaboradores-panel").hide();
     $("#empresa-panel").show();
     $("#sedes-panel").hide();
+    $("#contactos-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function () {
@@ -43,6 +46,15 @@ $(document).ready(function () {
     $("#colaboradores-panel").hide();
     $("#empresa-panel").hide();
     $("#sedes-panel").show();
+    $("#contactos-panel").hide();
+  });
+
+  $(".showAdminPanel-contactos").click(function () {
+    $("#dashboard-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#sedes-panel").hide();
+    $("#contactos-panel").show();
   });
   // end show admib panels
 

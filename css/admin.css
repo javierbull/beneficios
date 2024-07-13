@@ -947,8 +947,8 @@ table.dataTable {
   .imageWrapper {
     background-color: var(--white);
     border: solid 1px var(--gray3);
-    width: 10.75rem;
-    height: 10.75rem;
+    width: 10.3rem;
+    height: 10.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1025,6 +1025,11 @@ table.dataTable {
     margin-bottom: .25rem;
     font-size: .875rem;
     color: var(--gray5);
+  }
+
+  .custom-textArea .contadorCaracteres {
+    /* background-color: pink; */
+    text-align: end;
   }
   
 /* End logo empresa */

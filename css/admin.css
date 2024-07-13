@@ -481,7 +481,7 @@ body {
 
 .navbar-panel__title p {
     margin-bottom: 0;
-    color: var(--gray4);
+    color: var(--gray5);
 }
 
 .wrap-switch-btn-perfil {
@@ -1024,7 +1024,7 @@ table.dataTable {
   .custom-textArea p {
     margin-bottom: .25rem;
     font-size: .875rem;
-    color: var(--gray4);
+    color: var(--gray5);
   }
   
 /* End logo empresa */

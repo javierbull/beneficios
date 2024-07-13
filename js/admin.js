@@ -75,6 +75,20 @@ $(document).ready(function () {
     reader.readAsDataURL(this.files[0]);
   });
   // END CAMBIAR LOGO EMPRESA
+
+  // CONTADOR DE CARACTERES MENSAJE PLATAFORMA
+  const mensaje = document.getElementById('mensajePlataforma');
+  const contador = document.getElementById('contadorCaracteres');
+
+  mensaje.addEventListener('input', function (e) {
+    const target = e.target;
+    const longitudMax = target.getAttribute('maxlength');
+    const longitudAct = target.value.length;
+    contador.innerHTML = `${longitudAct}/${longitudMax}`;
+  });
+  // END CONTADOR DE CARACTERES
+
 });
+
 
 

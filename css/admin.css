@@ -1039,5 +1039,19 @@ table.dataTable {
   }
   
 /* End logo empresa */
+
+
 /* END EMPRESA */
+
+/* SEDES */
+.table-actions {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.table-actions .form-check {
+    margin-bottom: 0;
+}
+/* END SEDES */
 

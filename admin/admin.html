@@ -474,7 +474,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">43484571</th>
+                                <td scope="row">43484571</td>
                                 <td>Sara Torres Saldaña</td>
                                 <td>22/08/1990</td>
                                 <td>saratorres@interbank.com</td>
@@ -499,7 +499,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">78456958</th>
+                                <td scope="row">78456958</td>
                                 <td>Armando Robles Llanos</td>
                                 <td>22/08/1990</td>
                                 <td>arobles@interbank.com</td>
@@ -524,7 +524,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">75845698</th>
+                                <td scope="row">75845698</td>
                                 <td>Carmen Crispín Flores</td>
                                 <td>22/08/1990</td>
                                 <td>ccrispin@interbank.com</td>
@@ -691,6 +691,156 @@
 
                         </form>
                     </div>
+                </div>
+            </div>
+
+            <div class="panel" id="sedes-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Sedes</h2>
+                        <p>
+                            Gestiona la información de tus colaboradores.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="navbar-actions">
+                    <div class="navbar-actions__filtros">
+                        <div class="input-group input-icon">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+
+                    <div class="navbar-actions__new">
+                        <button type="button" class="btn primary-btn">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            Nueva sede
+                        </button>
+                    </div>
+                </div>
+
+                <div class="colaboradores-main">
+                    <table class="table dtable align-middle table-admin">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sede</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Colaboradores</th>
+                                <th scope="col">Registrados</th>
+                                <th scope="col">Pre-registrados</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La Victoria</td>
+                                <td>Av. Horacio Cachay 1030</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td>30</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </button>
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Surco</td>
+                                <td>Caminos del Inca 256</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td>30</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </button>
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                </td> 
+                            </tr>   
+                            <tr>
+                                <td>Lince</td>
+                                <td>Av. Arenales 1912</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td>30</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </button>
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                </td> 
+                            </tr> 
+                            <tr>
+                                <td>Magdalena</td>
+                                <td>Av. Antonio de Sucre 452</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td>30</td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </button>
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                </td> 
+                            </tr>   
+                          
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

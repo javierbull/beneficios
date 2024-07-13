@@ -4,9 +4,11 @@
     --white: #FFFFFF;
     --gray1: #F7F7F7;
     --gray2: #F2F2F2;
-    --gray3: #B3B3B3;
-    --gray4: #808080;
-    --gray5: #404040;
+    --gray3: #E6E6E6;
+    --gray4: #B3B3B3;
+    --gray5: #808080;
+    --gray6: #404040;
+    --gray7: #241D0F;
     --primary1: #FFFFF5;
     --primary2: #FFF9DE;
     --primary3: #FFF1B4;
@@ -828,7 +830,7 @@ table.dataTable {
     align-items: center;
     justify-content: space-between;
     padding: .25rem .5rem;
-    border: solid 1px var(--gray2);
+    border: solid 1px var(--gray3);
     border-top: none;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;

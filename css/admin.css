@@ -800,8 +800,8 @@ body {
 /* End Datatables sort icons */
 
 .table-admin thead th {
-    background-color: var(--gray6);
-    color: var(--gray1);
+    background-color: var(--blue3);
+    color: var(--gray7);
 }
 
 .table-admin thead th:first-child {

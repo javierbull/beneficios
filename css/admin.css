@@ -904,6 +904,10 @@ table.dataTable {
 
 /* END PANEL COLABORADORES */
 
+/* NUEVO COLABORADOR */
+
+/* END NUEVO COLABORADOR */
+
 /* EMPRESA */
 .card-datos-empresa {
     background-color: var(--gray2);
@@ -1060,4 +1064,6 @@ table.dataTable {
     margin-bottom: 0;
 }
 /* END SEDES */
+
+
 

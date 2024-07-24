@@ -405,6 +405,12 @@ body {
     box-shadow: none;
 }
 
+.sidebar-item-btn-left {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
 .sidebar-item-db {
     /* background-color: var(--primary3); */
     color: var(--gray7);

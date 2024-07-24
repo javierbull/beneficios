@@ -214,6 +214,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.text-help {
+    color: var(--red5);
+    font-size: .875rem;
+    display: none;
+}
 /* End inputs */
 
 /* Alerts */
@@ -970,7 +976,12 @@ table.dataTable {
 /* End stepper */
 
 /* form */
-
+.form-admin {
+    /* background-color: pink; */
+    width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* End form */
 
 /* END NUEVO COLABORADOR */
@@ -1070,7 +1081,7 @@ table.dataTable {
   .form-row {
     /* background-color: lavender; */
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .form-row .form-group {

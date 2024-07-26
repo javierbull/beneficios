@@ -437,7 +437,7 @@ input[type=number] {
 }
 
 .sidebar-item-db:hover {
-    background-color: var(--white);
+    background-color: var(--primary4);
     color: var(--gray7);
     text-decoration: none;
 }

@@ -72,6 +72,18 @@ $(document).ready(function () {
   });
   // end show admib panels
 
+  // STEPPER ADMIN
+  $(".show-stepper-datosContacto").click(function () {
+    $("#stepper-datosContacto").show();
+    $("#stepper-datosPersonales").hide();
+  });
+
+  $(".show-stepper-datosPersonales").click(function () {
+    $("#stepper-datosContacto").hide();
+    $("#stepper-datosPersonales").show();
+  });
+  // END STEPPER ADMIN
+
   // DATATABLES
   $('.dtable').DataTable({
     "language": {

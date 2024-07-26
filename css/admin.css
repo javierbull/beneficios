@@ -801,11 +801,21 @@ input[type=number] {
 .modal-title {
     font-weight: 700;
     font-weight: 1.25rem;
+    margin-bottom: .5rem;
 }
 
 .modal-header,
 .modal-footer {
     border: none;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
 }
 
 /* EN MODALS */

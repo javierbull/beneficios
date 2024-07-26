@@ -24,6 +24,7 @@ $(document).ready(function () {
     $("#sedes-panel").hide();
     $("#contactos-panel").hide();
     $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
@@ -33,6 +34,7 @@ $(document).ready(function () {
     $("#sedes-panel").hide();
     $("#contactos-panel").hide();
     $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
   });
 
   $(".showAdminPanel-colaboradoreNuevo").click(function () {
@@ -42,6 +44,7 @@ $(document).ready(function () {
     $("#sedes-panel").hide();
     $("#contactos-panel").hide();
     $("#colaboradorNuevo-panel").show();
+    $("#contactoNuevo-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function () {
@@ -51,6 +54,7 @@ $(document).ready(function () {
     $("#sedes-panel").hide();
     $("#contactos-panel").hide();
     $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function () {
@@ -60,6 +64,7 @@ $(document).ready(function () {
     $("#sedes-panel").show();
     $("#contactos-panel").hide();
     $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
   });
 
   $(".showAdminPanel-contactos").click(function () {
@@ -69,6 +74,17 @@ $(document).ready(function () {
     $("#sedes-panel").hide();
     $("#contactos-panel").show();
     $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
+  });
+
+  $(".showAdminPanel-contactoNuevo").click(function () {
+    $("#dashboard-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#sedes-panel").hide();
+    $("#contactos-panel").hide();
+    $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").show();
   });
   // end show admib panels
 

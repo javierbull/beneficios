@@ -76,11 +76,19 @@ $(document).ready(function () {
   $(".show-stepper-datosContacto").click(function () {
     $("#stepper-datosContacto").show();
     $("#stepper-datosPersonales").hide();
+    $("#stepper-configPerfil").hide();
   });
 
   $(".show-stepper-datosPersonales").click(function () {
     $("#stepper-datosContacto").hide();
     $("#stepper-datosPersonales").show();
+    $("#stepper-configPerfil").hide();
+  });
+
+  $(".show-stepper-configPerfil").click(function () {
+    $("#stepper-datosContacto").hide();
+    $("#stepper-datosPersonales").hide();
+    $("#stepper-configPerfil").show();
   });
   // END STEPPER ADMIN
 

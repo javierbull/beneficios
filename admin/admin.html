@@ -748,11 +748,72 @@
                                         Anterior
                                     </button>
 
-                                    <button type="button" class="btn primary-btn show-stepper-configuracionPerfil">
+                                    <button type="button" class="btn primary-btn show-stepper-configPerfil">
                                         Siguiente
                                         <span class="material-symbols-outlined">
                                             arrow_forward
                                         </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="wrap-stepper stepper-datosContacto" id="stepper-configPerfil">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos personales
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>2</span>
+                                Datos de contacto
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>3</span>
+                                Configuración de perfil
+                            </button>
+                        </div>
+
+                        <div class="content-stepper">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nuevoContactoCorreoCorporativo" class="form-label">Correo
+                                        corporativo</label>
+                                    <input type="email" class="form-control" id="nuevoContactoCorreoCorporativo">
+                                    <div class="text-help">Ingrese un correo válido</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="nuevoContactoCorreoPersonal" class="form-label">Correo personal</label>
+                                    <input type="email" class="form-control" id="nuevoContactoCorreoPersonal">
+                                    <div class="text-help">Ingrese un correo válido</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="nuevoContactoCelCorp" class="form-label">Celular corporativo</label>
+                                    <input type="number" class="form-control" id="nuevoContactoCelCorp">
+                                    <div class="text-help">Ingrese un númeor válido</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="nuevoContactoCelPer" class="form-label">Celular personal</label>
+                                    <input type="number" class="form-control" id="nuevoContactoCelPer">
+                                    <div class="text-help">Ingrese un númeor válido</div>
+                                </div>
+
+                                <div class="form-actions-between">
+                                    <button type="button" class="btn outline-btn show-stepper-datosContacto">
+                                        <span class="material-symbols-outlined">
+                                            arrow_back
+                                        </span>
+                                        Anterior
+                                    </button>
+
+                                    <button type="button" class="btn primary-btn">
+                                        Guardar
                                     </button>
                                 </div>
                             </form>

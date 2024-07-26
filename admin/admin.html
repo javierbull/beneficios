@@ -680,7 +680,7 @@
                                     <label for="nuevoContactoFechaNacimiento" class="form-label">Fecha de
                                         nacimiento</label>
                                     <input type="date" class="form-control" id="nuevoContactoFechaNacimiento">
-                                    <div class="text-help">Ingrese un apellido válido</div>
+                                    <div class="text-help">Ingrese una fecha</div>
                                 </div>
 
                                 <div class="form-actions-right">
@@ -1254,9 +1254,6 @@
                                 </button>
                             </td>
                         </tr>
-
-
-
                     </tbody>
                 </table>
             </div>
@@ -1308,10 +1305,74 @@
 
                 <div class="colaboradorNuevo-main">
                     <h2 class="headline2">
-                        Nuevo colaborador
+                        Nuevo contacto
                     </h2>
 
-                    
+                    <form class="form-admin">
+                        <div class="mb-3">
+                          <label for="nuevoColaboradorNombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="nuevoColaboradorNombre">
+                          <div class="text-help">Ingrese un nombre válido</div>
+                        </div>
+              
+                        <div class="mb-3">
+                          <label for="nuevoColaboradorApellidoPaterno" class="form-label">Apellido paterno</label>
+                          <input type="text" class="form-control" id="nuevoColaboradorApellidoPaterno">
+                          <div class="text-help">Ingrese un apellido válido</div>
+                        </div>
+              
+                        <div class="mb-3">
+                          <label for="nuevoColaboradorApellidoMaterno" class="form-label">Apellido materno</label>
+                          <input type="text" class="form-control" id="nuevoColaboradorApellidoMaterno">
+                          <div class="text-help">Ingrese un apellido válido</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nuevoColaboradorCargo" class="form-label">Cargo</label>
+                            <input type="text" class="form-control" id="nuevoColaboradorCargo">
+                            <div class="text-help">Ingrese un cargo válido</div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="mb-3 form-group">
+                              <label for="nuevoColaboradorTipoContacto" class="form-label">Tipo de contacto</label>
+                              <select class="form-select" aria-label="Default select example" id="nuevoColaboradorTipoContacto">
+                                <option selected>Seleccione</option>
+                                <option value="1">Principal</option>
+                                <option value="2">Secundario</option>
+                              </select>
+                            </div>
+                
+                            <div class="mb-3 form-group">
+                                <label for="nuevoColaboradorSede" class="form-label">Sede</label>
+                                <select class="form-select" aria-label="Default select example" id="nuevoColaboradorSede">
+                                  <option selected>Seleccione</option>
+                                  <option value="1">Miraflores</option>
+                                  <option value="2">Lince</option>
+                                </select>
+                            </div>
+                        </div>
+              
+                        <div class="form-row">
+                          <div class="mb-3 form-group">
+                            <label for="nuevoColaboradorCorreoCorp" class="form-label">Correo corporativo</label>
+                            <input type="email" class="form-control" id="nuevoColaboradorCorreoCorp">
+                            <div class="text-help">Ingrese un correo válido</div>
+                          </div>
+
+                          <div class="mb-3 form-group">
+                            <label for="nuevoColaboradorCelular" class="form-label">Celular</label>
+                            <input type="number" class="form-control" id="nuevoColaboradorCelular">
+                            <div class="text-help">Ingrese un número válido</div>
+                          </div>
+                        </div>
+              
+                        <div class="form-actions-right">
+                          <button type="button" class="btn primary-btn">
+                            Guardar
+                          </button>
+                        </div>
+                      </form>
 
 
                 </div>

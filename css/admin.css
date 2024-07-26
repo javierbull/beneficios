@@ -1208,3 +1208,11 @@ table.dataTable {
 }
 
 /* END SEDES */
+
+/* NUEVO CONTACTO */
+.form-admin {
+    width: 27rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* END NUEVO CONTACTO */

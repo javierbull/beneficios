@@ -618,97 +618,142 @@
                         Nuevo colaborador
                     </h2>
 
-                    <ul class="nav nav-pills stepper-admin mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link step-admin active" id="pills-dp-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-dp" type="button" role="tab" aria-controls="pills-dp"
-                                aria-selected="true">
-                                <span class="step-position">1</span>
-                                Datos personales
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link step-admin" id="pills-dc-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-dc" type="button" role="tab" aria-controls="pills-dc"
-                                aria-selected="false">
-                                <span class="step-position">2</span>
-                                Datos de contacto
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link step-admin" id="pills-cp-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-cp" type="button" role="tab" aria-controls="pills-cp"
-                                aria-selected="false">
-                                <span class="step-position">3</span>
-                                Configuración de perfil
-                            </button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-dp" role="tabpanel"
-                            aria-labelledby="pills-dp-tab">
-                            
-                            <div class="wrap-form-admin">
+                    <div class="wrap-stepper">
+                        <div class="stepper-admin stepper-datosPersonales" id="stepper-1">
+                            <div class="stepper-admin">
+                                <button class="step-admin">
+                                    <span>1</span>
+                                    Datos personales
+                                </button>
+    
+                                <button class="step-admin">
+                                    <span>2</span>
+                                    Datos de contacto
+                                </button>
+    
+                                <button class="step-admin">
+                                    <span>3</span>
+                                    Configuración de perfil
+                                </button>
+                            </div>
+
+                            <div class="content-stepper show-step">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="nuevoContactoNombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="nuevoContactoNombre">
-                                        <div class="text-help">Ingrese un nombre válido</div>
+                                      <label for="nuevoContactoNombre" class="form-label">Nombre</label>
+                                      <input type="text" class="form-control" id="nuevoContactoNombre">
+                                      <div class="text-help">Ingrese un nombre válido</div>
                                     </div>
-    
+                          
                                     <div class="mb-3">
-                                        <label for="nuevoContactoApellidoPaterno" class="form-label">Apellido paterno</label>
-                                        <input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
-                                        <div class="text-help">Ingrese un apellido válido</div>
+                                      <label for="nuevoContactoApellidoPaterno" class="form-label">Apellido paterno</label>
+                                      <input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
+                                      <div class="text-help">Ingrese un apellido válido</div>
                                     </div>
-    
+                          
                                     <div class="mb-3">
-                                        <label for="nuevoContactoApellidoMaterno" class="form-label">Apellido materno</label>
-                                        <input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
-                                        <div class="text-help">Ingrese un apellido válido</div>
+                                      <label for="nuevoContactoApellidoMaterno" class="form-label">Apellido materno</label>
+                                      <input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
+                                      <div class="text-help">Ingrese un apellido válido</div>
                                     </div>
-    
+                          
                                     <div class="form-row">
-                                        <div class="mb-3 form-group">
-                                            <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
-                                            <select class="form-select" aria-label="Default select example" id="nuevoContactoTipoDoc">
-                                                <option selected>DNI</option>
-                                                <option value="1">CE</option>
-                                            </select>
-                                        </div>
-        
-                                        <div class="mb-3 form-group">
-                                            <label for="nuevoContactoNumeroDoc" class="form-label">Número de documento</label>
-                                            <input type="number" class="form-control" id="nuevoContactoNumeroDoc">
-                                            <div class="text-help">Ingrese un número válido</div>
-                                        </div>
+                                      <div class="mb-3 form-group">
+                                        <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
+                                        <select class="form-select" aria-label="Default select example" id="nuevoContactoTipoDoc">
+                                          <option selected>DNI</option>
+                                          <option value="1">CE</option>
+                                        </select>
+                                      </div>
+                          
+                                      <div class="mb-3 form-group">
+                                        <label for="nuevoContactoNumeroDoc" class="form-label">Número de documento</label>
+                                        <input type="number" class="form-control" id="nuevoContactoNumeroDoc">
+                                        <div class="text-help">Ingrese un número válido</div>
+                                      </div>
                                     </div>
-
+                          
                                     <div class="mb-3">
-                                        <label for="nuevoContactoFechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                                        <input type="date" class="form-control" id="nuevoContactoFechaNacimiento">
-                                        <div class="text-help">Ingrese un apellido válido</div>
+                                      <label for="nuevoContactoFechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                                      <input type="date" class="form-control" id="nuevoContactoFechaNacimiento">
+                                      <div class="text-help">Ingrese un apellido válido</div>
                                     </div>
-
+                          
                                     <div class="form-actions-right">
-                                        <button type="button" class="btn primary-btn">
+                                      <button type="button" class="btn primary-btn show-stepper-2">
+                                        Siguiente
+                                        <span class="material-symbols-outlined">
+                                          arrow_forward
+                                        </span>
+                                      </button>
+                                    </div>
+                                  </form>
+                            </div>
+                        </div>
+
+                        <div class="stepper-admin stepper-datosPersonales" id="stepper-2">
+                            <div class="stepper-admin">
+                                <button class="step-admin">
+                                    <span>1</span>
+                                    Datos personales
+                                </button>
+    
+                                <button class="step-admin">
+                                    <span>2</span>
+                                    Datos de contacto
+                                </button>
+    
+                                <button class="step-admin">
+                                    <span>3</span>
+                                    Configuración de perfil
+                                </button>
+                            </div>
+
+                            <div class="content-stepper">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nuevoContactoCorreoCorporativo" class="form-label">Correo corporativo</label>
+                                        <input type="email" class="form-control" id="nuevoContactoCorreoCorporativo">
+                                        <div class="text-help">Ingrese un correo válido</div>
+                                    </div>
+                        
+                                    <div class="mb-3">
+                                        <label for="nuevoContactoCorreoPersonal" class="form-label">Correo personal</label>
+                                        <input type="email" class="form-control" id="nuevoContactoCorreoPersonal">
+                                        <div class="text-help">Ingrese un correo válido</div>
+                                    </div>
+                        
+                                    <div class="mb-3">
+                                        <label for="nuevoContactoCelCorp" class="form-label">Celular corporativo</label>
+                                        <input type="number" class="form-control" id="nuevoContactoCelCorp">
+                                        <div class="text-help">Ingrese un númeor válido</div>
+                                    </div>
+                        
+                                    <div class="mb-3">
+                                        <label for="nuevoContactoCelPer" class="form-label">Celular personal</label>
+                                        <input type="number" class="form-control" id="nuevoContactoCelPer">
+                                        <div class="text-help">Ingrese un númeor válido</div>
+                                    </div>
+                        
+                                    <div class="form-actions-between">
+                                        <button type="button" class="btn outline-btn show-stepper-1">
+                                            <span class="material-symbols-outlined">
+                                                arrow_back
+                                            </span>
+                                            Anterior
+                                        </button>
+                        
+                                        <button type="button" class="btn primary-btn show-stepper-3">
                                             Siguiente
                                             <span class="material-symbols-outlined">
                                               arrow_forward
                                             </span>
-                                          </button>
+                                        </button>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-dc" role="tabpanel"
-                            aria-labelledby="pills-dc-tab">
-                            Datos de contacto
-                        </div>
-                        <div class="tab-pane fade" id="pills-cp" role="tabpanel"
-                            aria-labelledby="pills-cp-tab">
-                            Configuración del perfil
-                        </div>
+                        
                     </div>
                 </div>
             </div>

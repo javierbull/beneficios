@@ -956,50 +956,12 @@ table.dataTable {
 }
 
 /* Stepper */
+.wrap-stepper {
+    background-color: lavender;
+}
+
 .stepper-admin {
-    /* background-color: pink; */
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.step-admin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.step-position {
-    background-color: var(--gray3);
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.nav-pills .nav-link {
-    background: none;
-    border: 0;
-    border-radius: 0.25rem;
-    color: var(--gray4);
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: var(--gray7);
-    background-color: transparent;
-}
-
-.nav-pills .nav-link.active>.step-position {
-    color: var(--white);
-    background-color: var(--blue5);
+    background-color: pink;
 }
 
 /* End stepper */
@@ -1015,6 +977,11 @@ table.dataTable {
 .form-actions-right {
     display: flex;
     justify-content: flex-end;
+}
+
+.form-actions-between {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* End form */

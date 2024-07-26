@@ -648,41 +648,43 @@
                         <div class="tab-pane fade show active" id="pills-dp" role="tabpanel"
                             aria-labelledby="pills-dp-tab">
                             
-                            <form class="form-admin">
-                                <div class="mb-3">
-                                    <label for="nuevoContactoNombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nuevoContactoNombre">
-                                    <div class="text-help">Ingrese un nombre válido</div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="nuevoContactoApellidoPaterno" class="form-label">Apellido paterno</label>
-                                    <input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
-                                    <div class="text-help">Ingrese un apellido válido</div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="nuevoContactoApellidoMaterno" class="form-label">Apellido materno</label>
-                                    <input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
-                                    <div class="text-help">Ingrese un apellido válido</div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="mb-3 form-group">
-                                        <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
-                                        <select class="form-select" aria-label="Default select example" id="nuevoContactoTipoDoc">
-                                            <option selected>DNI</option>
-                                            <option value="1">CE</option>
-                                        </select>
+                            <div class="wrap-form-admin">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nuevoContactoNombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nuevoContactoNombre">
+                                        <div class="text-help">Ingrese un nombre válido</div>
                                     </div>
     
-                                    <div class="mb-3 form-group">
-                                        <label for="nuevoContactoNumeroDoc" class="form-label">Número de documento</label>
-                                        <input type="text" class="form-control" id="nuevoContactoNumeroDoc">
-                                        <div class="text-help">Ingrese un número válido</div>
+                                    <div class="mb-3">
+                                        <label for="nuevoContactoApellidoPaterno" class="form-label">Apellido paterno</label>
+                                        <input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
+                                        <div class="text-help">Ingrese un apellido válido</div>
                                     </div>
-                                </div>
-                            </form>
+    
+                                    <div class="mb-3">
+                                        <label for="nuevoContactoApellidoMaterno" class="form-label">Apellido materno</label>
+                                        <input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
+                                        <div class="text-help">Ingrese un apellido válido</div>
+                                    </div>
+    
+                                    <div class="form-row">
+                                        <div class="mb-3 form-group">
+                                            <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
+                                            <select class="form-select" aria-label="Default select example" id="nuevoContactoTipoDoc">
+                                                <option selected>DNI</option>
+                                                <option value="1">CE</option>
+                                            </select>
+                                        </div>
+        
+                                        <div class="mb-3 form-group">
+                                            <label for="nuevoContactoNumeroDoc" class="form-label">Número de documento</label>
+                                            <input type="number" class="form-control" id="nuevoContactoNumeroDoc">
+                                            <div class="text-help">Ingrese un número válido</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="pills-dc" role="tabpanel"
                             aria-labelledby="pills-dc-tab">

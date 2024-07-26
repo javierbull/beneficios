@@ -1011,6 +1011,11 @@ table.dataTable {
     margin-right: auto;
 }
 
+.form-actions-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* End form */
 
 /* END NUEVO COLABORADOR */

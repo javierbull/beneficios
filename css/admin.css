@@ -1240,6 +1240,43 @@ table.dataTable {
     gap: 1.5rem;
 }
 
+.carousel-mini-banner {
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.carousel-mini-banner .carousel-indicators {
+    background-color: rgb(0, 0, 0, .15);
+    margin-bottom: .25rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.carousel-mini-banner .carousel-indicators [data-bs-target] {
+    height: .75rem;
+    width: .75rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 1;
+    background-color: var(--white);
+}
+
+.carousel-indicators .active {
+    background-color: var(--blue5) !important;
+  }
+
 .inhouse-main-calendar {
     background-color: darksalmon;
     width: 100%;

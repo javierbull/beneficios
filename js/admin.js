@@ -26,6 +26,7 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").hide();
     $("#contactoNuevo-panel").hide();
     $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
@@ -37,6 +38,7 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").hide();
     $("#contactoNuevo-panel").hide();
     $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
   });
 
   $(".showAdminPanel-colaboradoreNuevo").click(function () {
@@ -48,6 +50,7 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").show();
     $("#contactoNuevo-panel").hide();
     $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function () {
@@ -59,6 +62,7 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").hide();
     $("#contactoNuevo-panel").hide();
     $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function () {
@@ -70,6 +74,7 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").hide();
     $("#contactoNuevo-panel").hide();
     $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
   });
 
   $(".showAdminPanel-contactos").click(function () {
@@ -81,6 +86,7 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").hide();
     $("#contactoNuevo-panel").hide();
     $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
   });
 
   $(".showAdminPanel-contactoNuevo").click(function () {
@@ -92,6 +98,7 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").hide();
     $("#contactoNuevo-panel").show();
     $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
   });
 
   $(".showAdminPanel-inhouse").click(function () {
@@ -103,6 +110,19 @@ $(document).ready(function () {
     $("#colaboradorNuevo-panel").hide();
     $("#contactoNuevo-panel").hide();
     $("#inhouse-panel").show();
+    $("#visitaInhouseNuevo-panel").hide();
+  });
+
+  $(".showAdminPanel-nuevaVisitaInhouse").click(function () {
+    $("#dashboard-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#sedes-panel").hide();
+    $("#contactos-panel").hide();
+    $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
+    $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").show();
   });
   // end show admib panels
 

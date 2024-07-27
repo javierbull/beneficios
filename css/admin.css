@@ -1260,8 +1260,8 @@ table.dataTable {
 }
 
 .carousel-mini-banner .carousel-indicators [data-bs-target] {
-    height: .75rem;
-    width: .75rem;
+    height: .625rem;
+    width: .625rem;
     margin-right: .5rem;
     margin-left: .5rem;
     border-radius: 50%;

@@ -833,6 +833,13 @@ input[type=number] {
     gap: .5rem;
 }
 
+.navbar-actions__right {
+    /* background-color: pink; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* End Datatables sort icons */
 
 .table-admin thead th {
@@ -1216,3 +1223,7 @@ table.dataTable {
     margin-right: auto;
 }
 /* END NUEVO CONTACTO */
+
+/* INHOUSE */
+
+/* END INHOUSE */

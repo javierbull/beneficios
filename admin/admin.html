@@ -84,7 +84,16 @@
                         </li>
                     </ul>
                 </li>
-
+                <li class="sidebar-item">
+                    <button class="btn sidebar-item-btn showAdminPanel-inhouse sidebar-item-db">
+                        <div class="sidebar-item-btn-left">
+                            <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+                            Visitas In-House
+                        </div>
+                    </button>
+                </li>
             </ul>
         </div>
 
@@ -1376,6 +1385,58 @@
 
 
                 </div>
+            </div>
+
+            <div class="panel" id="inhouse-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Visitas in-house</h2>
+                        <p>
+                            Recuerda programar tus visitas in-house con 3 días de anticipación.estiona la información de tus colaboradores.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="navbar-actions">
+                    <div class="navbar-actions__right">
+                        <button type="button" class="btn primary-btn showAdminPanel-nuevaVisita">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            Programar visita
+                        </button>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </div>

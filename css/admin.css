@@ -1225,5 +1225,23 @@ table.dataTable {
 /* END NUEVO CONTACTO */
 
 /* INHOUSE */
+.inhouse-main {
+    background-color: #FFF1B4;
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+}
 
+.inhouse-main-sidebar {
+    background-color: #9BDAC9;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inhouse-main-calendar {
+    background-color: darksalmon;
+    width: 100%;
+}
 /* END INHOUSE */

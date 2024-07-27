@@ -1328,8 +1328,38 @@ table.dataTable {
 }
 
 .inhouse-main-calendar {
-    background-color: darksalmon;
+    /* background-color: #C5EAE0; */
     width: 100%;
 }
 
+/* FullCalendar */
+.fc-view-harness {
+    min-height: 500px;
+  }
+  
+  .fc-col-header {
+    width: 100% !important;
+    /* background-color: pink; */
+  }
+  
+  .fc-scrollgrid-sync-table {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .fc-daygrid-body {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .fc-toolbar-title {
+    color: var(--black-admin);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .fc-button-primary {
+    background-color: var(--black-admin) !important;
+  }
+  /* End FullCalendar */
 /* END INHOUSE */

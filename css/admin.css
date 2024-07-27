@@ -1334,7 +1334,12 @@ table.dataTable {
 
 /* FullCalendar */
 .fc-view-harness {
-    min-height: 500px;
+    min-height: 32rem;
+  }
+
+  .fc-view-harness a {
+    color: var(--gray7);
+    text-decoration: none;
   }
   
   .fc-col-header {
@@ -1351,15 +1356,30 @@ table.dataTable {
     width: 100% !important;
     height: 100% !important;
   }
-  
-  .fc-toolbar-title {
-    color: var(--black-admin);
-    font-weight: 600;
-    font-size: 1.5rem;
+
+  .fc-header-toolbar {
+    margin-bottom: 1rem !important;
   }
   
+  .fc-toolbar-title {
+    /* background-color: #0C408D; */
+    color: var(--gray7);
+    font-weight: 600;
+    font-size: 1.5rem !important;
+  }
+
+  .fc .fc-button-group {
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+  
   .fc-button-primary {
-    background-color: var(--black-admin) !important;
+    background-color: var(--blue5) !important;
+    border: 1px solid var(--blue5) !important; 
   }
   /* End FullCalendar */
 /* END INHOUSE */

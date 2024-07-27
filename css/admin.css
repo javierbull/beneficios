@@ -186,7 +186,8 @@ body {
     -o-border-radius: .5rem;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     color: var(--gray7);
     background-color: var(--white);
     border-color: var(--gray7);
@@ -1222,19 +1223,20 @@ table.dataTable {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* END NUEVO CONTACTO */
 
 /* INHOUSE */
 .inhouse-main {
-    background-color: #FFF1B4;
+    /* background-color: #FFF1B4; */
     width: 100%;
     display: flex;
     gap: 1.5rem;
 }
 
 .inhouse-main-sidebar {
-    background-color: #9BDAC9;
-    width: 16rem;
+    /* background-color: #9BDAC9; */
+    width: 16.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -1275,10 +1277,59 @@ table.dataTable {
 
 .carousel-indicators .active {
     background-color: var(--blue5) !important;
-  }
+}
+
+.inhouse-activacionesAnuales--semestre {
+    display: flex;
+    gap: .25rem;
+    margin-bottom: .5rem;
+}
+
+.inhouse-activacionesAnuales--semestre:last-child {
+    margin-bottom: 0;
+}
+
+.inhouse-activacion--mes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inhouse-activacionesAnuales--semestre .active {
+    background-color: var(--primary6);
+    color: var(--gray7);
+}
+
+.inhouse-activacionesAnuales--semestre .active2 {
+    background-color: var(--primary2);
+    color: var(--gray5);
+}
+
+.inhouse-activacion--mes h3 {
+    font-size: .75rem;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.inhouse-activacion--box {
+    background-color: var(--gray2);
+    color: var(--gray4);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+}
 
 .inhouse-main-calendar {
     background-color: darksalmon;
     width: 100%;
 }
+
 /* END INHOUSE */

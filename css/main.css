@@ -8377,7 +8377,6 @@ div.dataTables_wrapper div.dataTables_info {
 
 .vale-cinemark--body img {
   height: 10rem;
- 
 }
 
 .vale-cinemark--code {
@@ -8431,3 +8430,73 @@ div.dataTables_wrapper div.dataTables_info {
  flex-direction: column;
 }
 /* END VALE CINEMARK */
+
+/* VALE CIRCO 2 */
+.vale-gs {
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.vale-gs-left {
+  width: 16rem;
+  height: 22rem;
+  background-image: url(../img/boletos/valeGreatesShowmanLeft.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.vale-gs-right {
+  width: 30rem;
+  height: 22rem;
+  background-image: url(../img/boletos/valeGreatesShowmanRight.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  color: var(--white);
+  padding: 2.5rem 1rem 1rem 1.5rem;
+}
+
+.vale-gs--title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.vale-gs--desc {
+  font-size: .75rem;
+  margin-bottom: .5rem;
+}
+
+.vale-gs--zona, .vale-gs--label {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.vale-gs--butaca, .vale-gs--horario {
+  margin-bottom: .5rem;
+}
+
+.vale-gs--recomendacion {
+  font-size: .75rem;
+  margin-bottom: .5rem;
+}
+
+.vale-gs--logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vale-gs--logo img {
+  height: 1.2rem;
+  margin-left: auto;
+}
+/* END VALE CIRCO 2 */

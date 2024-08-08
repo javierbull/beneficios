@@ -949,7 +949,6 @@
    /* DASHBOARD */
 
    .metricas {
-    
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -963,6 +962,25 @@
     min-height: 200px;
   }
    /* END DAHSBOARD */
+
+   /* VALE GS */
+   .vale-gs-left {
+    width: 15rem;
+    height: 21rem;
+  }
+
+  .vale-gs-right {
+    width: 28rem;
+    height: 21rem;
+  }
+
+  .vale-gs--zona, .vale-gs--label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+   /* END VALE GS */
 }
 
 /* fin tablet portrait */

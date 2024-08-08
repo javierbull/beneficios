@@ -8440,6 +8440,7 @@ div.dataTables_wrapper div.dataTables_info {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  box-shadow: 4px 4px 8px rgba(20, 20, 43, .5);
 }
 
 .vale-gs-left {
@@ -8476,7 +8477,7 @@ div.dataTables_wrapper div.dataTables_info {
 
 .vale-gs--zona, .vale-gs--label {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0;
 }

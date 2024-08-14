@@ -8502,6 +8502,59 @@ div.dataTables_wrapper div.dataTables_info {
 /* END VALE CIRCO 2 */
 
 /* PRODUCTO EVENTO */
+
+.entradas-zonas {
+  margin-bottom: 2rem;
+}
+
+.title-section-detalle-producto {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-entrada-zona {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+  padding: .75rem;
+  margin-bottom: .75rem;
+}
+
+.bg-color--vip {
+  background-color: #FFCC00;
+}
+
+.bg-color--central {
+  background-color: #97CD31;
+}
+
+.bg-color--generalCentral {
+  background-color: #CF3400;
+}
+
+.card-entrada-zona__title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .25rem;
+}
+
+.card-entrada-zona__title p {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-entrada-zona--left p{
+  margin-bottom: 0;
+}
+
 .card-asiento-reservado {
   background-color: pink;
   display: flex;

@@ -8696,6 +8696,8 @@ div.dataTables_wrapper div.dataTables_info {
 .contenedor-asientos-vip {
   /* background-color: #00BA88; */
   width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
 }
 
 .wrap-row-asientos {
@@ -8704,8 +8706,6 @@ div.dataTables_wrapper div.dataTables_info {
   justify-content: center;
   gap: 2.5rem;
   width: 100%;
-  overflow: hidden;
-  overflow-x: auto;
 }
 
 .row-asientos {

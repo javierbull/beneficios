@@ -8589,3 +8589,102 @@ div.dataTables_wrapper div.dataTables_info {
   font-weight: 600;
 }
 /* END PRODUCTO EVENTO */
+
+/* Modal evento butacas */
+
+.modal-teatro .modal-header {
+  padding-bottom: 0;
+}
+
+.modal-teatro .modal-body {
+  padding: 1.5rem;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.wrap-mapa-teatro {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap-mapa-teatro img {
+  width: 100%;
+}
+
+.zona-precio {
+  /* background-color: pink; */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.zona-precio span {
+  margin-left: .5rem;
+}
+/* checkbox asiento */
+.asiento {
+  background-color: var(--white);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  height: 2rem;
+  width: 2rem;
+}
+
+.asiento label {
+  /* float: left;  */
+  line-height: 2rem;
+  width: 100%; 
+  height: 100%;
+}
+
+.asiento label span {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+
+.asiento label input {
+  position: absolute;
+  display: none;
+  color: var(--black) !important;
+}
+
+.asiento label input + span{color: var(--black);}
+
+.asiento input:checked + span {
+    color: var(--black);
+}
+
+.vip-etm input:checked + span{background-color: #FFCC00;}
+
+.asiento-ocupado span {
+  background-color: var(--Gray4);
+}
+/* End checkbox asiento */
+
+.contenedor-asientos-vip {
+  /* background-color: #00BA88; */
+  width: 100%;
+}
+
+.wrap-row-asientos {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.row-asientos {
+  display: flex;
+  gap: .25rem;
+  margin-bottom: .5rem;
+}
+
+
+/* End modal evento butacas */

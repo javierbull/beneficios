@@ -8541,6 +8541,15 @@ div.dataTables_wrapper div.dataTables_info {
   background-color: #CF3400;
 }
 
+.bg-color-white {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+
+.bg-color--noDisponible {
+  background-color: var(--Gray5);
+}
+
 .card-entrada-zona__title {
   display: flex;
   align-items: center;
@@ -8618,11 +8627,30 @@ div.dataTables_wrapper div.dataTables_info {
   /* background-color: pink; */
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .zona-precio span {
   margin-left: .5rem;
 }
+
+.leyenda-asientos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.leyenda-asiento {
+  display: flex;
+  align-items: center;
+}
+
+.leyenda-asiento span {
+  margin-right: .5rem;
+}
+
 /* checkbox asiento */
 .asiento {
   background-color: var(--white);

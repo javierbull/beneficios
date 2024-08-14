@@ -981,6 +981,21 @@
     margin-bottom: 0;
   }
    /* END VALE GS */
+
+   .wrap-row-asientos {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .leyenda-asientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* fin tablet portrait */

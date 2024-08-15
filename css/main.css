@@ -8538,7 +8538,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .bg-color--generalCentral {
-  background-color: #CF3400;
+  background-color: #E9572D;
 }
 
 .bg-color-white {
@@ -8672,6 +8672,7 @@ div.dataTables_wrapper div.dataTables_info {
   text-align: center;
   display: block;
   text-transform: uppercase;
+  font-size: .875rem;
 }
 
 .asiento label input {
@@ -8687,15 +8688,17 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .vip-etm input:checked + span{background-color: #FFCC00;}
+.central-etm input:checked + span{background-color: #97CD31;}
+.generalCentral-etm input:checked + span{background-color: #E9572D;}
 
 .asiento-ocupado span {
   background-color: var(--Gray4);
 }
 /* End checkbox asiento */
 
-.contenedor-asientos-vip {
+.contenedor-asientos {
   /* background-color: #00BA88; */
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
   overflow-x: auto;
 }
@@ -8703,9 +8706,8 @@ div.dataTables_wrapper div.dataTables_info {
 .wrap-row-asientos {
   /* background-color: pink; */
   display: flex;
-  justify-content: center;
   gap: 2.5rem;
-  width: 100%;
+  /* width: 100%;   */
 }
 
 .row-asientos {

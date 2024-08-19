@@ -512,6 +512,10 @@ input[type=number] {
     display: none;
 }
 
+.sidebar-list-collapse--sedes li {
+    margin-left: 30px;
+}
+
 /* End sidebar */
 
 /* admin panel */

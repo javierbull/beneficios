@@ -1387,10 +1387,12 @@ table.dataTable {
 
 /* PLANILLA */
 .steps-planilla {
+    /* background-color: pink; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    position: relative;
+    width: 100%;
     position: relative;
 }
 
@@ -1431,19 +1433,84 @@ table.dataTable {
 
 .progress-planilla {
     position: absolute;
-    width: 86.5%;
+    width: calc(100% - 200px);
     z-index: 5;
     height: .25rem;
     background-color: var(--primary6);
     left: 0;
     right: 0;
-    /* top: 0; */
-    top: 20px;
+    top: 1.25rem;
     margin: auto;
 }
 
 .progress-planilla .progress-bar {
     background-color: var(--green5);
+}
+
+/* Upload file */
+.input-file { 
+    position:relative; 
+    overflow:hidden;  
+    padding:0;
+    display:block;
+    max-width:100%;
+    cursor:pointer;
+  }
+  
+  .input-file .btn { 
+    white-space:nowrap; 
+    display:inline-block;
+    margin-right:1em;
+    vertical-align:top;
+  }
+  
+  .input-file ins { 
+    /* background-color: #60C6AA; */
+    white-space:nowrap; 
+    display: block;
+    max-width:100%; 
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    font-size:12px;
+    margin-bottom: 1rem;
+  }
+  
+  .input-file:after {
+    content:""; 
+    display:block; clear:both; 
+  } 
+  
+  .input-file input { 
+    width:0.1px; 
+    height:0.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute; 
+    top:-100px;
+    z-index:-1; 
+  }
+  
+/* End upload file */
+
+.resumen-planilla {
+    background-color: var(--gray1);
+    border: solid 1px var(--gray4);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    padding: 1rem;
+}
+
+.card-planilla {
+    background-color: var(--primary1);
+    border: solid 1px var(--primary3);
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* END PLANILLA */

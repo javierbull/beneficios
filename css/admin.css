@@ -1335,40 +1335,40 @@ table.dataTable {
 /* FullCalendar */
 .fc-view-harness {
     min-height: 32rem;
-  }
+}
 
-  .fc-view-harness a {
+.fc-view-harness a {
     color: var(--gray7);
     text-decoration: none;
-  }
-  
-  .fc-col-header {
+}
+
+.fc-col-header {
     width: 100% !important;
     /* background-color: pink; */
-  }
-  
-  .fc-scrollgrid-sync-table {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  
-  .fc-daygrid-body {
-    width: 100% !important;
-    height: 100% !important;
-  }
+}
 
-  .fc-header-toolbar {
+.fc-scrollgrid-sync-table {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.fc-daygrid-body {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.fc-header-toolbar {
     margin-bottom: 1rem !important;
-  }
-  
-  .fc-toolbar-title {
+}
+
+.fc-toolbar-title {
     /* background-color: #0C408D; */
     color: var(--gray7);
     font-weight: 600;
     font-size: 1.5rem !important;
-  }
+}
 
-  .fc .fc-button-group {
+.fc .fc-button-group {
     overflow: hidden;
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
@@ -1376,14 +1376,74 @@ table.dataTable {
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
 }
-  
-  .fc-button-primary {
+
+.fc-button-primary {
     background-color: var(--blue5) !important;
-    border: 1px solid var(--blue5) !important; 
-  }
-  /* End FullCalendar */
+    border: 1px solid var(--blue5) !important;
+}
+
+/* End FullCalendar */
 /* END INHOUSE */
 
 /* PLANILLA */
+.steps-planilla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.step-item-planilla {
+    /* background-color: pink; */
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12.5rem;
+}
+
+.step-button-planilla {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .75rem;
+}
+
+.step-planilla-dates {
+    color: var(--gray5);
+}
+
+.step-planilla-active {
+    background-color: var(--green5);
+    color: var(--white);
+}
+
+.step-planilla-inactive {
+    background-color: var(--gray4);
+}
+
+.progress-planilla {
+    position: absolute;
+    width: 86.5%;
+    z-index: 5;
+    height: .25rem;
+    background-color: var(--primary6);
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    top: 20px;
+    margin: auto;
+}
+
+.progress-planilla .progress-bar {
+    background-color: var(--green5);
+}
 
 /* END PLANILLA */

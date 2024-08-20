@@ -1475,7 +1475,7 @@
                                 28/07/2024 - 14/08/2024
                             </div>
 
-                            <button class="btn primary-btn mt-2">
+                            <button class="btn primary-btn mt-2 showAdminPanel-aprobarCompras">
                                 Aprobar compras
                             </button>
                         </div>
@@ -1704,6 +1704,128 @@
                             </td>
                         </tr>
                         
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel" id="aprobarCompras-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Descuentos por planilla</h2>
+                        <p>
+                            Gestiona la información de tus colaboradores.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-planilla">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+
+                    <div class="navbar-actions__new">
+                        <button type="button" class="btn outline-btn">
+                            Guardar
+                        </button>
+                        <button type="button" class="btn primary-btn">
+                            Aprobar compras
+                        </button>
+                    </div>
+                </div>
+
+                <table class="table dtable align-middle table-admin">
+                    <thead>
+                        <tr>
+                            <th scope="col">Contacto</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">Correo corporativo</th>
+                            <th scope="col">Celular corporativo</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Carlos Perez</td>
+                            <td>
+                                <span class="tag tag-info">
+                                    Principal
+                                </span>
+                            </td>
+                            <td>Jefe de Recursos Humanos</td>
+                            <td>La Victoria</td>
+                            <td>jcperez@mail.com</td>
+                            <td>939393829</td>
+                            <td class="table-actions">
+                                <button type="button" class="btn ghost-btn btn-icon">
+                                    <span class="material-symbols-outlined">
+                                        edit
+                                    </span>
+                                </button>
+
+                                <button type="button" class="btn ghost-btn btn-icon">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Santiago Paredes</td>
+                            <td>
+                                <span class="tag tag-success">
+                                    Secundario
+                                </span>
+                            </td>
+                            <td>Analista de Compensaciones</td>
+                            <td>Lince</td>
+                            <td>sparedes@mail.com</td>
+                            <td>966256854</td>
+                            <td class="table-actions">
+                                <button type="button" class="btn ghost-btn btn-icon">
+                                    <span class="material-symbols-outlined">
+                                        edit
+                                    </span>
+                                </button>
+
+                                <button type="button" class="btn ghost-btn btn-icon">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

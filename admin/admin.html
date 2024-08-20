@@ -1772,7 +1772,9 @@
                             <th scope="col">Correo registrado</th>
                             <th scope="col">Monto</th>
                             <th scope="col">Sede</th>
-                            <th scope="col">Acciones</th>
+                            <th scope="col">
+                                <input type="checkbox" name="checkAll" class="checkAll">
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1784,20 +1786,20 @@
                             <td>S/ 50.00</td>
                             <td>La Victoria</td>
                             <td class="table-actions">
-                                <button type="button" class="btn ghost-btn btn-icon">
-                                    <span class="material-symbols-outlined">
-                                        edit
-                                    </span>
-                                </button>
-
-                                <button type="button" class="btn ghost-btn btn-icon">
-                                    <span class="material-symbols-outlined">
-                                        delete
-                                    </span>
-                                </button>
+                                <input type="checkbox" name="customer" class="checkboxes" value="1">
                             </td>
                         </tr>
-                        
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>45896584</td>
+                            <td>Juan Perez Soto </td>
+                            <td>jperezs@mail.com</td>
+                            <td>S/ 100.00</td>
+                            <td>Lince</td>
+                            <td class="table-actions">
+                                <input type="checkbox" name="customer" class="checkboxes" value="2">
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

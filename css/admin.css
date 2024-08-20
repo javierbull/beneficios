@@ -879,6 +879,7 @@ input[type=number] {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    gap: 1rem;
 }
 
 /* End Datatables sort icons */

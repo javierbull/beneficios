@@ -994,8 +994,7 @@
                             <div class="form-actions">
                                 <button type="button" class="btn outline-btn">Cancelar</button>
 
-                                <button type="button" class="btn primary-btn" data-bs-toggle="modal"
-                                data-bs-target="#modalConfirmDescuentoplanilla">Guardar cambios</button>
+                                <button type="button" class="btn primary-btn">Guardar cambios</button>
                             </div>
 
                         </form>
@@ -1754,10 +1753,12 @@
                     </button>
 
                     <div class="navbar-actions__right">
-                        <button type="button" class="btn outline-btn">
+                        <button type="button" class="btn outline-btn" data-bs-toggle="modal"
+                        data-bs-target="#modalGuardarCambiosPlanilla">
                             Guardar
                         </button>
-                        <button type="button" class="btn primary-btn">
+                        <button type="button" class="btn primary-btn" data-bs-toggle="modal"
+                        data-bs-target="#modalConfirmDescuentoplanilla">
                             Aprobar compras
                         </button>
                     </div>
@@ -2207,28 +2208,51 @@
     </div>
     <!-- End Modal cambiar perfil-->
 
-    <!-- Modal confirmacion descuento planilla-->
+    <!-- Modal aprobación compras planilla-->
     <div class="modal fade" id="modalConfirmDescuentoplanilla" tabindex="-1" aria-labelledby="confirmDescuentoplanilla" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="modal-title" id="confirmDescuentoplanilla">Solicitud de pago a través de descuento por planilla</h5>
+                    <h5 class="modal-title" id="confirmDescuentoplanilla">Aprobación de compras</h5>
                     <p class="mb-0">
-                        Para activar esta opción, primero debe ser aprobada por su ejecutivo comercial.odo colaborador?
+                        Las compras seleccionadas procederán a enviarse y las demás quedarán rechazadas. Recuerda que esta acción no podrá deshacerse.
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn primary-btn">Enviar solicitud</button>
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Aprobar compras</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Modal confirmacion descuento planilla-->
+    <!-- End Modal aprobación compras planilla-->
+
+    <!-- Modal guardar cambios planilla-->
+    <div class="modal fade" id="modalGuardarCambiosPlanilla" tabindex="-1" aria-labelledby="guardarCambiosPlanilla" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="guardarCambiosPlanilla">Guardar cambios</h5>
+                    <p class="mb-0">
+                        ¿Deseas guardar los cambios realizados?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">No, salir sin guardar</button>
+                    <button type="button" class="btn primary-btn">Sí, guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal guardar cambios planilla-->
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

@@ -1663,7 +1663,7 @@
                             <td>S/ 12000</td>
                             <td>Juan Carlos Perez</td>
                             <td class="table-actions">
-                                <button type="button" class="btn ghost-btn btn-icon">
+                                <button type="button" class="btn ghost-btn btn-icon showAdminPanel-comprasPlanilla">
                                     <span class="material-symbols-outlined">
                                         visibility
                                     </span>
@@ -1679,7 +1679,7 @@
                             <td>S/ 5000</td>
                             <td>Juan Carlos Perez</td>
                             <td class="table-actions">
-                                <button type="button" class="btn ghost-btn btn-icon">
+                                <button type="button" class="btn ghost-btn btn-icon showAdminPanel-comprasPlanilla">
                                     <span class="material-symbols-outlined">
                                         visibility
                                     </span>
@@ -1695,7 +1695,7 @@
                             <td>S/ 3000</td>
                             <td>Santiago Paredes</td>
                             <td class="table-actions">
-                                <button type="button" class="btn ghost-btn btn-icon">
+                                <button type="button" class="btn ghost-btn btn-icon showAdminPanel-comprasPlanilla">
                                     <span class="material-symbols-outlined">
                                         visibility
                                     </span>
@@ -1799,6 +1799,108 @@
                             <td>Lince</td>
                             <td class="table-actions">
                                 <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel" id="comprasPlanilla-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Descuento por planilla</h2>
+                        <p>
+                            Gestiona la información de tus colaboradores.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-planilla">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+                </div>
+
+                <table class="table dtable align-middle table-admin">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">DNI/CE</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo registrado</th>
+                            <th scope="col">Monto</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>74526589</td>
+                            <td>Juan Carlos Perez</td>
+                            <td>jcperez@mail.com</td>
+                            <td>S/ 50.00</td>
+                            <td>La Victoria</td>
+                            <td>
+                                <span class="tag tag-success">
+                                    Aprobado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>78545695</td>
+                            <td>Diana Salaverry Paredes</td>
+                            <td>dsalaverry@mail.com</td>
+                            <td>S/ 80.00</td>
+                            <td>La Victoria</td>
+                            <td>
+                                <span class="tag tag-success">
+                                    Aprobado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>45879652</td>
+                            <td>María Torres Guevara</td>
+                            <td>mtorres@mail.com</td>
+                            <td>S/ 100.00</td>
+                            <td>Miraflores</td>
+                            <td>
+                                <span class="tag tag-danger">
+                                    Rechazado
+                                </span>
                             </td>
                         </tr>
                     </tbody>

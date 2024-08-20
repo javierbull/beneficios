@@ -30,6 +30,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
@@ -45,6 +46,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-colaboradoreNuevo").click(function () {
@@ -60,6 +62,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function () {
@@ -75,6 +78,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function () {
@@ -90,6 +94,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-contactos").click(function () {
@@ -105,6 +110,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-contactoNuevo").click(function () {
@@ -120,6 +126,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-inhouse").click(function () {
@@ -135,6 +142,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-nuevaVisitaInhouse").click(function () {
@@ -150,6 +158,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-cumples").click(function () {
@@ -165,6 +174,7 @@ $(document).ready(function () {
     $("#cumples-panel").show();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-planilla").click(function () {
@@ -180,6 +190,7 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").show();
     $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
   });
 
   $(".showAdminPanel-aprobarCompras").click(function () {
@@ -195,6 +206,23 @@ $(document).ready(function () {
     $("#cumples-panel").hide();
     $("#planilla-panel").hide();
     $("#aprobarCompras-panel").show();
+    $("#comprasPlanilla-panel").hide();
+  });
+
+  $(".showAdminPanel-comprasPlanilla").click(function () {
+    $("#dashboard-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#sedes-panel").hide();
+    $("#contactos-panel").hide();
+    $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
+    $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
+    $("#cumples-panel").hide();
+    $("#planilla-panel").hide();
+    $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").show();
   });
   // end show admib panels
 

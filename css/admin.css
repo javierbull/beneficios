@@ -676,6 +676,14 @@ input[type=number] {
     border-bottom-right-radius: .5rem;
 }
 
+.table {
+    font-size: .875rem;
+}
+
+.table td {
+    min-height: 2rem;
+}
+
 .card-participacionCanal {
     width: 50%;
 }
@@ -1568,6 +1576,12 @@ table.dataTable {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
+}
+
+.custom-checkboxes, .checkAll {
+    height: 1.25rem;
+    width: 1.25rem;
+    vertical-align: middle;
 }
 
 /* END PLANILLA */

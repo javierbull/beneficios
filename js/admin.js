@@ -284,15 +284,15 @@ $(document).ready(function () {
   $(function(){
     $('.checkAll').click(function(){
        if (this.checked) {
-          $(".checkboxes").prop("checked", true);
+          $(".custom-checkboxes").prop("checked", true);
        } else {
-          $(".checkboxes").prop("checked", false);
+          $(".custom-checkboxes").prop("checked", false);
        }	
     });
   
-    $(".checkboxes").click(function(){
-       var numberOfCheckboxes = $(".checkboxes").length;
-       var numberOfCheckboxesChecked = $('.checkboxes:checked').length;
+    $(".custom-checkboxes").click(function(){
+       var numberOfCheckboxes = $(".custom-checkboxes").length;
+       var numberOfCheckboxesChecked = $('.custom-checkboxes:checked').length;
        if(numberOfCheckboxes == numberOfCheckboxesChecked) {
           $(".checkAll").prop("checked", true);
        } else {

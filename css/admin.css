@@ -237,6 +237,7 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
 /* End inputs */
 
 /* Alerts */
@@ -377,6 +378,7 @@ input[type=number] {
     font-size: 1rem;
     font-weight: 600;
 }
+
 /* End typography */
 
 /* Tabs */
@@ -392,11 +394,36 @@ input[type=number] {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: var(--white);
-  background-color: var(--blue5);
+.nav-pills .show>.nav-link {
+    color: var(--white);
+    background-color: var(--blue5);
 }
+
 /* End tabs */
+
+/* Switch */
+
+.custom-switch .form-check-input {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+.custom-switch {
+    padding-left: 2.6em;
+}
+
+.custom-switch .form-check-input {
+    margin-left: -2.6em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position 0.15s ease-in-out;
+}
+
+/* End switch */
 
 /* UI KIT */
 
@@ -1517,49 +1544,50 @@ table.dataTable {
 }
 
 /* Upload file */
-.input-file { 
-    position:relative; 
-    overflow:hidden;  
-    padding:0;
-    display:block;
-    max-width:100%;
-    cursor:pointer;
-  }
-  
-  .input-file .btn { 
-    white-space:nowrap; 
-    display:inline-block;
-    margin-right:1em;
-    vertical-align:top;
-  }
-  
-  .input-file ins { 
-    /* background-color: #60C6AA; */
-    white-space:nowrap; 
+.input-file {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
     display: block;
-    max-width:100%; 
-    overflow:hidden; 
-    text-overflow:ellipsis; 
-    font-size:12px;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.input-file .btn {
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: top;
+}
+
+.input-file ins {
+    /* background-color: #60C6AA; */
+    white-space: nowrap;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
     margin-bottom: 1rem;
     color: var(--blue5);
-  }
-  
-  .input-file:after {
-    content:""; 
-    display:block; clear:both; 
-  } 
-  
-  .input-file input { 
-    width:0.1px; 
-    height:0.1px;
-    opacity:0;
-    overflow:hidden;
-    position:absolute; 
-    top:-100px;
-    z-index:-1; 
-  }
-  
+}
+
+.input-file:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.input-file input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+}
+
 /* End upload file */
 
 .resumen-planilla {
@@ -1598,7 +1626,8 @@ table.dataTable {
     margin-bottom: 2.5rem;
 }
 
-.custom-checkboxes, .checkAll {
+.custom-checkboxes,
+.checkAll {
     height: 1.25rem;
     width: 1.25rem;
     vertical-align: middle;

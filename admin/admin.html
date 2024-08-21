@@ -1791,52 +1791,105 @@
 
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-planilla-pendientes" role="tabpanel" aria-labelledby="pills-planilla-pendientes-tab">
-                        Pendientes
+                        <table class="table dtable align-middle table-admin">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">DNI/CE</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo registrado</th>
+                                    <th scope="col">Monto</th>
+                                    <th scope="col">Sede</th>
+                                    <th scope="col">
+                                        <input type="checkbox" name="checkAll" class="checkAll">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>75462584</td>
+                                    <td>Sara Torres Saldaña</td>
+                                    <td>storres@mail.com</td>
+                                    <td>S/ 50.00</td>
+                                    <td>La Victoria</td>
+                                    <td class="table-actions">
+                                        <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>45896584</td>
+                                    <td>Juan Perez Soto </td>
+                                    <td>jperezs@mail.com</td>
+                                    <td>S/ 100.00</td>
+                                    <td>Lince</td>
+                                    <td class="table-actions">
+                                        <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-pane fade" id="pills-planilla-enviados" role="tabpanel" aria-labelledby="pills-planilla-enviados-tab">
-                        Enviados
+                        <table class="table dtable align-middle table-admin">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">DNI/CE</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo registrado</th>
+                                    <th scope="col">Monto</th>
+                                    <th scope="col">Sede</th>
+                                    <th scope="col">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>74526589</td>
+                                    <td>Juan Carlos Perez</td>
+                                    <td>jcperez@mail.com</td>
+                                    <td>S/ 50.00</td>
+                                    <td>La Victoria</td>
+                                    <td>
+                                        <span class="tag tag-success">
+                                            Aprobado
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>78545695</td>
+                                    <td>Diana Salaverry Paredes</td>
+                                    <td>dsalaverry@mail.com</td>
+                                    <td>S/ 80.00</td>
+                                    <td>La Victoria</td>
+                                    <td>
+                                        <span class="tag tag-success">
+                                            Aprobado
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>45879652</td>
+                                    <td>María Torres Guevara</td>
+                                    <td>mtorres@mail.com</td>
+                                    <td>S/ 100.00</td>
+                                    <td>Miraflores</td>
+                                    <td>
+                                        <span class="tag tag-success">
+                                            Aprobado
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
-                <table class="table dtable align-middle table-admin">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">DNI/CE</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Correo registrado</th>
-                            <th scope="col">Monto</th>
-                            <th scope="col">Sede</th>
-                            <th scope="col">
-                                <input type="checkbox" name="checkAll" class="checkAll">
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>75462584</td>
-                            <td>Sara Torres Saldaña</td>
-                            <td>storres@mail.com</td>
-                            <td>S/ 50.00</td>
-                            <td>La Victoria</td>
-                            <td class="table-actions">
-                                <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>45896584</td>
-                            <td>Juan Perez Soto </td>
-                            <td>jperezs@mail.com</td>
-                            <td>S/ 100.00</td>
-                            <td>Lince</td>
-                            <td class="table-actions">
-                                <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                
             </div>
 
             <div class="panel" id="comprasPlanilla-panel">

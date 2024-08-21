@@ -1451,7 +1451,8 @@
                     <div class="steps-planilla">
                         <div class="progress progress-planilla">
                             <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                                aria-valuemin="0" aria-valuemax="100">
+                            </div>
                         </div>
                         <div class="step-item-planilla">
                             <div class="step-button-planilla step-planilla-active">
@@ -1775,22 +1776,23 @@
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-planilla-pendientes-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-planilla-pendientes" type="button" role="tab" aria-controls="pills-planilla-pendientes"
-                            aria-selected="true">
+                            data-bs-target="#pills-planilla-pendientes" type="button" role="tab"
+                            aria-controls="pills-planilla-pendientes" aria-selected="true">
                             Pendientes
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-planilla-enviados-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-planilla-enviados" type="button" role="tab" aria-controls="pills-planilla-enviados"
-                            aria-selected="false">
+                            data-bs-target="#pills-planilla-enviados" type="button" role="tab"
+                            aria-controls="pills-planilla-enviados" aria-selected="false">
                             Enviados
                         </button>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-planilla-pendientes" role="tabpanel" aria-labelledby="pills-planilla-pendientes-tab">
+                    <div class="tab-pane fade show active" id="pills-planilla-pendientes" role="tabpanel"
+                        aria-labelledby="pills-planilla-pendientes-tab">
                         <table class="table dtable align-middle table-admin">
                             <thead>
                                 <tr>
@@ -1815,6 +1817,12 @@
                                     <td>La Victoria</td>
                                     <td class="table-actions">
                                         <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
+                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalConfirmDescuentoplanilla">
+                                            <span class="material-symbols-outlined">
+                                                send
+                                            </span>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1826,12 +1834,19 @@
                                     <td>Lince</td>
                                     <td class="table-actions">
                                         <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
+                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalConfirmDescuentoplanilla">
+                                            <span class="material-symbols-outlined">
+                                                send
+                                            </span>
+                                        </button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="tab-pane fade" id="pills-planilla-enviados" role="tabpanel" aria-labelledby="pills-planilla-enviados-tab">
+                    <div class="tab-pane fade" id="pills-planilla-enviados" role="tabpanel"
+                        aria-labelledby="pills-planilla-enviados-tab">
                         <table class="table dtable align-middle table-admin">
                             <thead>
                                 <tr>
@@ -1889,7 +1904,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
 
             <div class="panel" id="comprasPlanilla-panel">

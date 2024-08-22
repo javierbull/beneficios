@@ -894,7 +894,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </nav>
 
                 <div class="card-admin card-datos-empresa">
@@ -902,7 +901,7 @@
                         <h2 class="card-admin__title">Datos de tu empresa:</h2>
                         <div class="alert alert-info" role="alert">
                             Para modificar estos datos debes contactarte con tu asesor comercial.
-                            <a href="#" class="link">Solicitar cambio</a>
+                            <button class="btn link-btn">Solicitar cambio</button>
                             <span class="material-symbols-outlined">
                                 info
                             </span>
@@ -2048,6 +2047,16 @@
 
                 </nav>
 
+                <div class="alert alert-danger" role="alert">
+                    <span class="material-symbols-outlined">
+                        cancel
+                    </span>
+                    Tienes una visita cancelada por tu ejecutivo.
+                    <button class="btn link-btn" data-bs-toggle="modal" data-bs-target="#modaladminVisitaEliminada">
+                        Ver detalle
+                    </button>
+                </div>
+
                 <div class="navbar-actions">
                     <div class="navbar-actions__right">
                         <button type="button" class="btn primary-btn showAdminPanel-nuevaVisitaInhouse">
@@ -2680,6 +2689,44 @@
         </div>
     </div>
     <!-- End Modal eliminar visita-->
+
+    <!-- Modal visitas eliminadas-->
+    <div class="modal fade" id="modaladminVisitaEliminada" tabindex="-1" aria-labelledby="eliminarVisitasEliminadas" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="eliminarVisitasEliminadas">Visitas canceladas</h5>
+                    <p>
+                        Puedes comunicarte con tu ejecutivo comercial para tener más detalles de las razones de la cancelación
+                    </p>
+
+                    <div class="card-visita-inhouse">
+                        <div class="visita-inhouse__sede line-clamp line-clamp-1">
+                            Magdalena
+                        </div>
+                        <p class="visita-inhouse__fecha">
+                            21/08/2024, 10:00 am
+                        </p>
+                    </div>
+                    <div class="card-visita-inhouse">
+                        <div class="visita-inhouse__sede line-clamp line-clamp-1">
+                            La molina
+                        </div>
+                        <p class="visita-inhouse__fecha">
+                            21/08/2024, 10:00 am
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal visitas eliminadas-->
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

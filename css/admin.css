@@ -164,19 +164,21 @@ body {
 }
 
 .link-btn {
-    background-color: var(--white);
+    background-color: transparent;
     color: var(--blue5);
     text-decoration: underline;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .link-btn:hover {
-    background-color: var(--white);
+    background-color: transparent;
     color: var(--blue5);
 }
 
 .link-btn:focus {
     color: var(--blue6);
-    background-color: var(--white);
+    background-color: transparent;
     border: none;
     box-shadow: none;
 }
@@ -266,7 +268,7 @@ input[type=number] {
     position: relative;
     padding: .5rem 1rem;
     margin-bottom: 1rem;
-    font-size: .875rem;
+    font-size: 1rem;
     border: 1px solid transparent;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
@@ -296,6 +298,12 @@ input[type=number] {
 .icon-fill {
     font-variation-settings:
         'FILL' 1
+}
+
+.alert-danger {
+    color: var(--red6);
+    background-color: var(--red2);
+    border-color: var(--red3);
 }
 
 /* End alerts */
@@ -1584,6 +1592,18 @@ table.dataTable {
 }
 
 /* End accordion inhouse */
+.card-visita-inhouse {
+    border: solid 1px var(--gray4);
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    padding: 1rem;
+    text-align: left;
+}
+
 /* END INHOUSE */
 
 /* PLANILLA */

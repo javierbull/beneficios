@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Componentes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
@@ -14,6 +14,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- CSS FILES -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../js/plugin/datatables/datatables.min.css">
   <link rel="stylesheet" href="../css/admin.css">
 </head>
 
@@ -23,7 +25,7 @@
       sidebar
     </div>
     <div class="admin-panel">
-      admin panel
+      <h1>admin panel</h1>
 
       <div class="container mb-4">
         <h1>Buttons</h1>
@@ -117,8 +119,6 @@
         </div>
       </div>
 
-
-
       <div class="container mb-4">
         <h2>Inputs</h2>
         <div class="mb-3">
@@ -146,112 +146,157 @@
         </div>
       </div>
 
-      <h2>Form contacto</h2>
-      <div class="wrap-form-admin">
-        <form>
-          <div class="mb-3">
-            <label for="nuevoContactoNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nuevoContactoNombre">
-            <div class="text-help">Ingrese un nombre válido</div>
-          </div>
-
-          <div class="mb-3">
-            <label for="nuevoContactoApellidoPaterno" class="form-label">Apellido paterno</label>
-            <input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
-            <div class="text-help">Ingrese un apellido válido</div>
-          </div>
-
-          <div class="mb-3">
-            <label for="nuevoContactoApellidoMaterno" class="form-label">Apellido materno</label>
-            <input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
-            <div class="text-help">Ingrese un apellido válido</div>
-          </div>
-
-          <div class="form-row">
-            <div class="mb-3 form-group">
-              <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
-              <select class="form-select" aria-label="Default select example" id="nuevoContactoTipoDoc">
-                <option selected>DNI</option>
-                <option value="1">CE</option>
-              </select>
-            </div>
-
-            <div class="mb-3 form-group">
-              <label for="nuevoContactoNumeroDoc" class="form-label">Número de documento</label>
-              <input type="number" class="form-control" id="nuevoContactoNumeroDoc">
-              <div class="text-help">Ingrese un número válido</div>
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="nuevoContactoFechaNacimiento" class="form-label">Fecha de nacimiento</label>
-            <input type="date" class="form-control" id="nuevoContactoFechaNacimiento">
-            <div class="text-help">Ingrese un apellido válido</div>
-          </div>
-
-          <div class="form-actions-right">
-            <button type="button" class="btn primary-btn">
-              Siguiente
-              <span class="material-symbols-outlined">
-                arrow_forward
-              </span>
-            </button>
-          </div>
-        </form>
+      <h2>Datatables</h2>
+      <div class="card-dtable">
+        <table class="table dtable">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">DNI/CE</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Nacimiento</th>
+              <th scope="col">Correo</th>
+              <th scope="col">Sede</th>
+              <th scope="col">Perfil</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>75241564</td>
+              <td>Sara Torres Saldaña</td>
+              <td>25/12/1990</td>
+              <td>storres@gmail.com</td>
+              <td>La Molina</td>
+              <td>Administrador</td>
+              <td>
+                <span class="tag tag-success">
+                  Plataforma
+                </span>
+              </td>
+              <td>
+                <div class="action-cell-btns">
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEditarColaborador">
+                    <span class="material-icons-outlined">
+                      edit
+                    </span>
+                  </button>
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEliminarColaborador">
+                    <span class="material-icons-outlined">
+                      delete_forever
+                    </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>45896524</td>
+              <td>Julio Ramirez Costa</td>
+              <td>25/12/1980</td>
+              <td>jramirezs@gmail.com</td>
+              <td>Ate</td>
+              <td>Sub Administrador</td>
+              <td>
+                <span class="tag tag-info">
+                  Inhouse
+                </span>
+              </td>
+              <td>
+                <div class="action-cell-btns">
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEditarColaborador">
+                    <span class="material-icons-outlined">
+                      edit
+                    </span>
+                  </button>
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEliminarColaborador">
+                    <span class="material-icons-outlined">
+                      delete_forever
+                    </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>75845632</td>
+              <td>julio Crispin Quispe</td>
+              <td>25/12/2000</td>
+              <td>jcrispins@gmail.com</td>
+              <td>Magdalena</td>
+              <td>Regular</td>
+              <td>
+                <span class="tag tag-warning">
+                  Pre registrado
+                </span>
+              </td>
+              <td>
+                <div class="action-cell-btns">
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEditarColaborador">
+                    <span class="material-icons-outlined">
+                      edit
+                    </span>
+                  </button>
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEliminarColaborador">
+                    <span class="material-icons-outlined">
+                      delete_forever
+                    </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>45865245</td>
+              <td>María Medina García</td>
+              <td>25/12/1990</td>
+              <td>mmedina@gmail.com</td>
+              <td>Las victoria</td>
+              <td>Regular</td>
+              <td>
+                <span class="tag tag-danger">
+                  Sin confirmar
+                </span>
+              </td>
+              <td>
+                <div class="action-cell-btns">
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEditarColaborador">
+                    <span class="material-icons-outlined">
+                      edit
+                    </span>
+                  </button>
+                  <button type="button" name="button" class="btn btn-action"
+                    data-toggle="modal" data-target="#modalEliminarColaborador">
+                    <span class="material-icons-outlined">
+                      delete_forever
+                    </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <div class="wrap-form-admin">
-        <form>
-            <div class="mb-3">
-                <label for="nuevoContactoCorreoCorporativo" class="form-label">Correo corporativo</label>
-                <input type="email" class="form-control" id="nuevoContactoCorreoCorporativo">
-                <div class="text-help">Ingrese un correo válido</div>
-            </div>
-
-            <div class="mb-3">
-                <label for="nuevoContactoCorreoPersonal" class="form-label">Correo personal</label>
-                <input type="email" class="form-control" id="nuevoContactoCorreoPersonal">
-                <div class="text-help">Ingrese un correo válido</div>
-            </div>
-
-            <div class="mb-3">
-                <label for="nuevoContactoCelCorp" class="form-label">Celular corporativo</label>
-                <input type="number" class="form-control" id="nuevoContactoCelCorp">
-                <div class="text-help">Ingrese un númeor válido</div>
-            </div>
-
-            <div class="mb-3">
-                <label for="nuevoContactoCelPer" class="form-label">Celular personal</label>
-                <input type="number" class="form-control" id="nuevoContactoCelPer">
-                <div class="text-help">Ingrese un númeor válido</div>
-            </div>
-
-            <div class="form-actions-between">
-                <button type="button" class="btn outline-btn">
-                    <span class="material-symbols-outlined">
-                        arrow_back
-                    </span>
-                    Anterior
-                </button>
-
-                <button type="button" class="btn primary-btn">
-                    Siguiente
-                    <span class="material-symbols-outlined">
-                      arrow_forward
-                    </span>
-                </button>
-            </div>
-        </form>
-    </div>
-
 
     </div>
   </div>
 
 
+  <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+    <script src="../js/plugin/datatables/datatables.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

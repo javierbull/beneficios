@@ -263,10 +263,10 @@ $(document).ready(function () {
       },
       "sProcessing": "Procesando...",
     },
-    "responsive": true,
-    "searching": false,
-    "info": false,
-    "dom": '<"top"i>rt<"bottom"lfp><"clear">',
+    // "searching": false,
+    // "info": false
+    // "dom": '<"top"i>rt<"bottom"lfp><"clear">',
+    // scrollX: true
   });
   // END DATATABLES
 

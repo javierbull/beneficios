@@ -2259,13 +2259,74 @@
                 <div class="accordion accordion-visita-inhouse" id="accordionInhouse">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="visitaOne">
-                          <button class="accordion-button collapsed btn-style-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVisitaTwo" aria-expanded="false" aria-controls="collapseVisitaTwo">
+                          <button class="accordion-button collapsed btn-style-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVisitOne" aria-expanded="false" aria-controls="collapseVisitOne">
                             Accordion Item #2
                           </button>
                         </h2>
-                        <div id="collapseVisitaTwo" class="accordion-collapse collapse" aria-labelledby="visitaOne" data-bs-parent="#accordionInhouse">
+                        <div id="collapseVisitOne" class="accordion-collapse collapse" aria-labelledby="visitaOne" data-bs-parent="#accordionInhouse">
                           <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <form>
+                                <div class="mb-3 form-group">
+                                    <label for="nuevaVisitaSede1" class="form-label">Sede</label>
+                                    <select class="form-select" aria-label="Default select example" id="nuevaVisitaSede1">
+                                        <option selected>Seleccione</option>
+                                        <option value="1">Miraflores</option>
+                                        <option value="2">Lince</option>
+                                    </select>
+                                </div>
+        
+                                <div class="form-group mb-3">
+                                    <label for="nuevaVisitaFechaInicio1" class="form-label">Fecha</label>
+                                    <input type="date" class="form-control" id="nuevaVisitaFechaInicio1">
+                                    <div class="text-help">Ingrese una fecha</div>
+                                </div>
+        
+                                <div class="form-row">
+                                    <div class="form-group mb-3">
+                                        <label for="nuevaVisitahoraInicio1" class="form-label">Hora de inicio</label>
+                                        <input type="time" class="form-control" id="nuevaVisitahoraInicio1">
+                                        <div class="text-help">Ingrese un horario</div>
+                                    </div>
+        
+                                    <div class="form-group mb-3">
+                                        <label for="nuevaVisitahoraFin1" class="form-label">Hora de fin</label>
+                                        <input type="time" class="form-control" id="nuevaVisitahoraFin1">
+                                        <div class="text-help">Ingrese un horario</div>
+                                    </div>
+                                </div>
+        
+                                <div class="mb-3 custom-textArea">
+                                    <label for="lugarInstalacioninhouse1" class="form-label">Lugar de instalación</label>
+                                    <p>
+                                        Describa detalles del lugar donde se realizará la visita.
+                                    </p>
+                                    <textarea class="form-control" id="lugarInstalacioninhouse1" rows="3" maxlength="200"></textarea>
+                                </div>
+        
+                                <div class="mb-3 custom-textArea">
+                                    <label for="observacionesVisitaInhouse1" class="form-label">Observaciones</label>
+                                    <textarea class="form-control" id="observacionesVisitaInhouse1" rows="3" maxlength="200"></textarea>
+                                </div>
+        
+                                <div class="form-check form-switch custom-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault1">SCTR</label>
+                                </div>
+        
+        
+                                <div class="form-actions-between">
+                                    <button type="button" class="btn danger-btn">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                        Eliminar
+                                    </button>
+        
+                                    <button type="button" class="btn primary-btn">
+                                        Guardar
+                                    </button>
+                                </div>
+                            </form>
                           </div>
                         </div>
                     </div>

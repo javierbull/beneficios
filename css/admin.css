@@ -1141,13 +1141,13 @@ table.dataTable {
 .form-actions-right {
     display: flex;
     justify-content: flex-end;
-    padding-top: .5rem;
+    padding-top: 1.5rem;
 }
 
 .form-actions-between {
     display: flex;
     justify-content: space-between;
-    padding-top: .5rem;
+    padding-top: 1.5rem;
 }
 
 /* End form */

@@ -921,6 +921,7 @@ input[type=number] {
     /* background-color: lavender; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 1.5rem;
 }
 

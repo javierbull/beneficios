@@ -2322,7 +2322,7 @@
         
         
                                 <div class="form-actions-between">
-                                    <button type="button" class="btn danger-btn">
+                                    <button type="button" class="btn danger-btn" data-bs-toggle="modal" data-bs-target="#modaladminEliminarVisita">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -2355,8 +2355,8 @@
                           <div class="accordion-body">
                             <form>
                                 <div class="mb-3 form-group">
-                                    <label for="nuevaVisitaSede1" class="form-label">Sede</label>
-                                    <select class="form-select" aria-label="Default select example" id="nuevaVisitaSede1">
+                                    <label for="nuevaVisitaSede2" class="form-label">Sede</label>
+                                    <select class="form-select" aria-label="Default select example" id="nuevaVisitaSede2">
                                         <option>Seleccione</option>
                                         <option>Miraflores</option>
                                         <option selected>La Molina</option>
@@ -2364,46 +2364,46 @@
                                 </div>
         
                                 <div class="form-group mb-3">
-                                    <label for="nuevaVisitaFechaInicio1" class="form-label">Fecha</label>
-                                    <input type="date" class="form-control" id="nuevaVisitaFechaInicio1" value="2024-08-01">
+                                    <label for="nuevaVisitaFechaInicio2" class="form-label">Fecha</label>
+                                    <input type="date" class="form-control" id="nuevaVisitaFechaInicio2" value="2024-08-01">
                                     <div class="text-help">Ingrese una fecha</div>
                                 </div>
         
                                 <div class="form-row">
                                     <div class="form-group mb-3">
-                                        <label for="nuevaVisitahoraInicio1" class="form-label">Hora de inicio</label>
-                                        <input type="time" class="form-control" id="nuevaVisitahoraInicio1" value="10:00:00">
+                                        <label for="nuevaVisitahoraInicio2" class="form-label">Hora de inicio</label>
+                                        <input type="time" class="form-control" id="nuevaVisitahoraInicio2" value="10:00:00">
                                         <div class="text-help">Ingrese un horario</div>
                                     </div>
         
                                     <div class="form-group mb-3">
-                                        <label for="nuevaVisitahoraFin1" class="form-label">Hora de fin</label>
-                                        <input type="time" class="form-control" id="nuevaVisitahoraFin1" value="12:00:00">
+                                        <label for="nuevaVisitahoraFin2" class="form-label">Hora de fin</label>
+                                        <input type="time" class="form-control" id="nuevaVisitahoraFin2" value="12:00:00">
                                         <div class="text-help">Ingrese un horario</div>
                                     </div>
                                 </div>
         
                                 <div class="mb-3 custom-textArea">
-                                    <label for="lugarInstalacioninhouse1" class="form-label">Lugar de instalación</label>
+                                    <label for="lugarInstalacioninhouse2" class="form-label">Lugar de instalación</label>
                                     <p>
                                         Describa detalles del lugar donde se realizará la visita.
                                     </p>
-                                    <textarea class="form-control" id="lugarInstalacioninhouse1" rows="3" maxlength="200">Piso 1 - Sala de reuniones</textarea>
+                                    <textarea class="form-control" id="lugarInstalacioninhouse2" rows="3" maxlength="200">Piso 1 - Sala de reuniones</textarea>
                                 </div>
         
                                 <div class="mb-3 custom-textArea">
-                                    <label for="observacionesVisitaInhouse1" class="form-label">Observaciones</label>
-                                    <textarea class="form-control" id="observacionesVisitaInhouse1" rows="3" maxlength="200"></textarea>
+                                    <label for="observacionesVisitaInhouse2" class="form-label">Observaciones</label>
+                                    <textarea class="form-control" id="observacionesVisitaInhouse2" rows="3" maxlength="200"></textarea>
                                 </div>
         
                                 <div class="form-check form-switch custom-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1" checked>
-                                    <label class="form-check-label" for="flexSwitchCheckDefault1">SCTR</label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckDefault2">SCTR</label>
                                 </div>
         
         
                                 <div class="form-actions-between">
-                                    <button type="button" class="btn danger-btn">
+                                    <button type="button" class="btn danger-btn" data-bs-toggle="modal" data-bs-target="#modaladminEliminarVisita">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -2658,6 +2658,28 @@
         </div>
     </div>
     <!-- End Modal guardar cambios planilla-->
+
+    <!-- Modal eliminar visita-->
+    <div class="modal fade" id="modaladminEliminarVisita" tabindex="-1" aria-labelledby="eliminarVisitainhouse" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="eliminarVisitainhouse">Eliminar visita</h5>
+                    <p class="mb-0">
+                        ¿Estás seguro de eliminar esta visita?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Sí, eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal eliminar visita-->
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

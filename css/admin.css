@@ -408,6 +408,10 @@ input[type=number] {
     font-weight: 600;
 }
 
+.text-bold {
+    font-weight: 600;
+}
+
 /* End typography */
 
 /* Tabs */

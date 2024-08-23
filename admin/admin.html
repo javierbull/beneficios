@@ -1817,7 +1817,7 @@
                                     <td class="table-actions">
                                         <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
                                         <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                        data-bs-target="#modalConfirmDescuentoplanilla">
+                                        data-bs-target="#modalDescuentoPlanillaIndividual">
                                             <span class="material-symbols-outlined">
                                                 send
                                             </span>
@@ -1834,7 +1834,7 @@
                                     <td class="table-actions">
                                         <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
                                         <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                        data-bs-target="#modalConfirmDescuentoplanilla">
+                                        data-bs-target="#modalDescuentoPlanillaIndividual">
                                             <span class="material-symbols-outlined">
                                                 send
                                             </span>
@@ -1902,7 +1902,6 @@
                         </table>
                     </div>
                 </div>
-
 
             </div>
 
@@ -2643,6 +2642,30 @@
         </div>
     </div>
     <!-- End Modal aprobación compras planilla-->
+
+    <!-- Modal aprobación compras planilla individual-->
+    <div class="modal fade" id="modalDescuentoPlanillaIndividual" tabindex="-1" aria-labelledby="confirmDescuentoplanillaIndividual"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="confirmDescuentoplanillaIndividual">Envío de compras</h5>
+                    <p class="mb-0">
+                        ¿Está seguro que quiere enviar las compras realizadas por <span class="text-bold">[Nombre del colaborador]</span>?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Enviar compras</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal aprobación compras planilla individual-->
 
     <!-- Modal guardar cambios planilla-->
     <div class="modal fade" id="modalGuardarCambiosPlanilla" tabindex="-1" aria-labelledby="guardarCambiosPlanilla"

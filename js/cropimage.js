@@ -57,7 +57,7 @@ $(document).ready(function () {
 		$uploadCrop.croppie('result', {
 			type: 'base64',
 			// format: 'jpeg',
-			backgroundColor: "#000000",
+			backgroundColor: "#ffffff",
 			format: 'png',
 			size: { width: 160, height: 160 }
 		}).then(function (resp) {

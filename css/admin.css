@@ -1318,10 +1318,12 @@ figure figcaption {
     font-size: 1rem;
     color: var(--gray7);
     text-align: left;
+    margin-top: 1rem;
 }
 
 .cr-slider {
     width: 100%;
+
 }
 
 .cr-slider::-webkit-slider-thumb {
@@ -1337,7 +1339,7 @@ figure figcaption {
 .cr-slider::-moz-range-thumb {
     width: 1.5rem;
     height: 1.5rem;
-    background: #006AFA;
+    background: var(--blue5);
     cursor: pointer;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
 }
@@ -1345,52 +1347,54 @@ figure figcaption {
 .cr-slider::-ms-thumb {
     width: 1.5rem;
     height: 1.5rem;
-    background: #006AFA;
+    background: var(--blue5);
     cursor: pointer;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
 }
 
 .cr-slider::-webkit-slider-runnable-track {
-    /* width: 275px; */
-    height: .25rem;
+    /*width: 275px;*/ 
+    height: .75rem;
     cursor: pointer;
     box-shadow: none;
-    background: #E0E0E0;
-    border-radius: .25rem;
+    background: var(--gray3);
+    border-radius: .5rem;
     border: none;
-    -webkit-border-radius: .25rem;
-    -moz-border-radius: .25rem;
-    -ms-border-radius: .25rem;
-    -o-border-radius: .25rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
 .cr-slider:focus::-webkit-slider-runnable-track {
-    background: #E0E0E0;
+    background: var(--gray3);
 }
 
 .cr-slider::-moz-range-track {
-    /*width: 275px;
-    */height: .25rem;
+    height: .75rem;
     cursor: pointer;
     box-shadow: none;
-    background: #E0E0E0;
-    border-radius: .25rem;
+    background: var(--gray3);
+    border-radius: .5rem;
     border: none;
-    -webkit-border-radius: .25rem;
-    -moz-border-radius: .25rem;
-    -ms-border-radius: .25rem;
-    -o-border-radius: .25rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
 .cr-slider::-ms-track {
-    /* width: 275px; */
-    height: .25rem;
+    height: .75rem;
     cursor: pointer;
     box-shadow: none;
-    background: #E0E0E0;
-    border-radius: 3px;
+    background: var(--gray3);
+    border-radius: .5rem;
     border: none;
     color: transparent;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
 .upload-logo-empresa {
@@ -1418,7 +1422,7 @@ figure figcaption {
 }
 
 .imgpreviewPrf {
-    background-color: white;
+    background-color: var(--white);
     height: 100%;
     max-width: 100%;
     border-radius: 50%;

@@ -246,6 +246,7 @@ $(document).ready(function () {
   });
   // END STEPPER ADMIN
 
+
   // DATATABLES
   $('.dtable').DataTable({
     "language": {
@@ -277,14 +278,15 @@ $(document).ready(function () {
     var reader = new FileReader();
 
     reader.onload = function (e) {
-      // get loaded data and render thumbnail.
       curElement.attr('src', e.target.result);
     };
 
-    // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
   });
   // END CAMBIAR LOGO EMPRESA
+
+  
+  
 
   // CONTADOR DE CARACTERES MENSAJE PLATAFORMA
   const mensaje = document.getElementById('mensajePlataforma');
@@ -299,37 +301,39 @@ $(document).ready(function () {
   // END CONTADOR DE CARACTERES
 
   // UPLOAD PAGO PLANILLA
-  $('.fileInput').change(function() {
+  $('.fileInput').change(function () {
     var numfiles = $(this)[0].files.length;
     var parent = $(this).closest('.input-file');
     parent.find('ins').remove();
-    for (i = 0; i < numfiles; i++) { 
+    for (i = 0; i < numfiles; i++) {
       parent.append('<ins>' + $(this)[0].files[i].name + '</ins>')
     }
   });
   // END UPLOAD PAGO PLAMILLA
 
-  $(function(){
-    $('.checkAll').click(function(){
-       if (this.checked) {
-          $(".custom-checkboxes").prop("checked", true);
-       } else {
-          $(".custom-checkboxes").prop("checked", false);
-       }	
+  $(function () {
+    $('.checkAll').click(function () {
+      if (this.checked) {
+        $(".custom-checkboxes").prop("checked", true);
+      } else {
+        $(".custom-checkboxes").prop("checked", false);
+      }
     });
-  
-    $(".custom-checkboxes").click(function(){
-       var numberOfCheckboxes = $(".custom-checkboxes").length;
-       var numberOfCheckboxesChecked = $('.custom-checkboxes:checked').length;
-       if(numberOfCheckboxes == numberOfCheckboxesChecked) {
-          $(".checkAll").prop("checked", true);
-       } else {
-          $(".checkAll").prop("checked", false);
-       }
+
+    $(".custom-checkboxes").click(function () {
+      var numberOfCheckboxes = $(".custom-checkboxes").length;
+      var numberOfCheckboxesChecked = $('.custom-checkboxes:checked').length;
+      if (numberOfCheckboxes == numberOfCheckboxesChecked) {
+        $(".checkAll").prop("checked", true);
+      } else {
+        $(".checkAll").prop("checked", false);
+      }
     });
- });
+  });
 
 });
+
+
 
 
 

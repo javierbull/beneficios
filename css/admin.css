@@ -1274,6 +1274,167 @@ table.dataTable {
     gap: 2rem;
 }
 
+/* End logo empresa */
+
+/* upload crop image */
+
+#upload-demo {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding-bottom: 0;
+}
+
+.croppie-container h5 {
+    position: absolute;
+    bottom: 4px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: var(--white);
+    z-index: 2;
+    font-size: 1rem;
+}
+
+figure figcaption {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px #fff;
+}
+
+.croppie-container .cr-image {
+    right: 0;
+}
+
+.croppie-container .cr-slider-wrap {
+    width: 275px;
+}
+
+.cr-slider-wrap p {
+    font-size: 13px;
+    color: #8D8D94;
+    text-align: left;
+}
+
+.cr-slider {
+    width: 275px;
+}
+
+.upload-action-btn {
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+.cr-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #006AFA;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cr-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #006AFA;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cr-slider::-ms-thumb {
+    width: 18px;
+    height: 18px;
+    background: #006AFA;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cr-slider::-webkit-slider-runnable-track {
+    width: 275px;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #E0E0E0;
+    border-radius: 3px;
+    border: none;
+}
+
+.cr-slider:focus::-webkit-slider-runnable-track {
+    background: #E0E0E0;
+}
+
+.cr-slider::-moz-range-track {
+    width: 275px;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #E0E0E0;
+    border-radius: 3px;
+    border: none;
+}
+
+.cr-slider::-ms-track {
+    width: 275px;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #E0E0E0;
+    border-radius: 3px;
+    border: none;
+    color: transparent;
+}
+
+.upload-logo-empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ci-user {
+    background-color: #00AE86;
+}
+
+.ci-user-picture {
+    background-color: #006AFA;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgpreviewPrf {
+    background-color: white;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: contain;
+
+}
+
+
+
+/* End upload crop image */
+
+
 .form-datos-empresa {
     /* background-color: #C5EAE0; */
     width: 100%;
@@ -1578,7 +1739,7 @@ table.dataTable {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0 !important;
-  }
+}
 
 .line-clamp-1 {
     -webkit-line-clamp: 1;

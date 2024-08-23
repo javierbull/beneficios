@@ -1299,11 +1299,11 @@ table.dataTable {
 figure figcaption {
     position: absolute;
     bottom: 0;
-    color: #fff;
+    color: var(--white);
     width: 100%;
     padding-left: 9px;
     padding-bottom: 5px;
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 10px var(--white);
 }
 
 .croppie-container .cr-image {
@@ -1315,13 +1315,13 @@ figure figcaption {
 }
 
 .cr-slider-wrap p {
-    font-size: 13px;
-    color: #8D8D94;
+    font-size: 1rem;
+    color: var(--gray7);
     text-align: left;
 }
 
 .cr-slider {
-    width: 275px;
+    width: 100%;
 }
 
 .upload-action-btn {
@@ -1398,23 +1398,20 @@ figure figcaption {
     gap: 1rem;
 }
 
-.ci-user {
-    background-color: #00AE86;
-}
-
 .ci-user-picture {
-    background-color: #006AFA;
+    background-color: var(--gray4);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     margin: 0;
-    width: 200px;
-    height: 200px;
+    width: 10rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--gray3);
 }
 
 .imgpreviewPrf {

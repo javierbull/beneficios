@@ -31,7 +31,7 @@ $(document).ready(function () {
 		enableExif: true
 	});
 	$('#cropImagePop').on('shown.bs.modal', function () {
-		$('.cr-slider-wrap').prepend('<p>Image Zoom</p>');
+		$('.cr-slider-wrap').prepend('<p>Tamaño de la imagen</p>');
 		$uploadCrop.croppie('bind', {
 			url: rawImg
 		}).then(function () {

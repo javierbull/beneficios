@@ -947,6 +947,10 @@ input[type=number] {
     justify-content: center;
 }
 
+.form-modal {
+    text-align: left;
+}
+
 /* EN MODALS */
 
 /* PANEL COLABORADORES */
@@ -1431,13 +1435,8 @@ figure figcaption {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     object-fit: contain;
-
 }
-
-
-
 /* End upload crop image */
-
 
 .form-datos-empresa {
     /* background-color: #C5EAE0; */

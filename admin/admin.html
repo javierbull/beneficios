@@ -475,19 +475,12 @@
 
                 <div class="navbar-actions">
                     <div class="navbar-actions__filtros">
-                        <button type="button" class="btn outline-btn btn-icon">
+                        <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalColaboradoresFiltros">
                             <span class="material-symbols-outlined">
                                 tune
                             </span>
+                            Filtrar
                         </button>
-
-                        <div class="input-group input-icon d-none">
-                            <span class="material-symbols-outlined">
-                                search
-                            </span>
-                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
-                                aria-describedby="addon-wrapping">
-                        </div>
                     </div>
 
                     <div class="navbar-actions__new">
@@ -2762,6 +2755,51 @@
         </div>
     </div>
     <!-- End modal crop logo empresa -->
+
+    <!-- Modal guardar cambios planilla-->
+    <div class="modal fade" id="modalColaboradoresFiltros" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Filtrar</h5>
+                    
+                    <form class="form-modal">
+                        <div class="mb-3 form-group">
+                            <label for="colaboradoresFiltrarEstado" class="form-label">Estados</label>
+                            <select class="form-select" aria-label="Default select example"
+                                id="colaboradoresFiltrarEstado">
+                                <option selected>Seleccione</option>
+                                <option value="1">Activo</option>
+                                <option value="2">Inactivo</option>
+                                <option value="3">Pre-registrado</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <label for="colaboradoresFiltrarSede" class="form-label">Sede</label>
+                            <select class="form-select" aria-label="Default select example"
+                                id="colaboradoresFiltrarSede">
+                                <option selected>Seleccione</option>
+                                <option value="1">Lince</option>
+                                <option value="2">Miraflores</option>
+                                <option value="3">San Miguel</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn primary-btn">Aplicar filtros</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal guardar cambios planilla-->
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

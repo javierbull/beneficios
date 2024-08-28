@@ -474,16 +474,25 @@
                 </nav>
 
                 <div class="navbar-actions">
-                    <div class="navbar-actions__filtros">
-                        <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalColaboradoresFiltros">
+                    <div class="navbar-actions__left">
+                        <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
+                            data-bs-target="#modalColaboradoresFiltros">
                             <span class="material-symbols-outlined">
                                 tune
                             </span>
                             Filtrar
                         </button>
+
+                        <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
+                            data-bs-target="#modalColaboradoresEstados">
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+                            Estados
+                        </button>
                     </div>
 
-                    <div class="navbar-actions__new">
+                    <div class="navbar-actions__right">
                         <button type="button" class="btn primary-btn showAdminPanel-colaboradoreNuevo">
                             <span class="material-symbols-outlined">
                                 add
@@ -930,18 +939,18 @@
                         <div class="wrap-img-preview">
                             <div class="ci-user d-flex align-items-center justify-content-center">
                                 <div class="ci-user-picture">
-                                  <img src="../img/logos/logoInterbank.png" id="item-img-output"
-                                    class="imgpreviewPrf" alt="">
+                                    <img src="../img/logos/logoInterbank.png" id="item-img-output" class="imgpreviewPrf"
+                                        alt="">
                                 </div>
-                              </div>
-                  
-                              <button class="file-upload btn outline-btn">
+                            </div>
+
+                            <button class="file-upload btn outline-btn">
                                 <span class="material-symbols-outlined icon-fill">
                                     edit
                                 </span>
                                 <input type="file" class="file-input-image item-img file filepreviewprofile"
                                     id="editar-empresa-input-preview-img">Cambiar logo
-                              </button>
+                            </button>
 
                         </div>
 
@@ -1793,7 +1802,7 @@
                                     <td class="table-actions">
                                         <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
                                         <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                        data-bs-target="#modalDescuentoPlanillaIndividual">
+                                            data-bs-target="#modalDescuentoPlanillaIndividual">
                                             <span class="material-symbols-outlined">
                                                 send
                                             </span>
@@ -1810,7 +1819,7 @@
                                     <td class="table-actions">
                                         <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
                                         <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                        data-bs-target="#modalDescuentoPlanillaIndividual">
+                                            data-bs-target="#modalDescuentoPlanillaIndividual">
                                             <span class="material-symbols-outlined">
                                                 send
                                             </span>
@@ -2242,163 +2251,191 @@
                 <div class="accordion accordion-visita-inhouse" id="accordionInhouse">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="visitaOne">
-                          <button class="accordion-button collapsed btn-style-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVisitOne" aria-expanded="false" aria-controls="collapseVisitOne">
-                            <div class="visita-inhouse__desc">
-                                <div class="visita-inhouse__sede line-clamp line-clamp-1">
-                                    La molina
-                                </div>
-                                <p class="visita-inhouse__fecha">
-                                    21/08/2024, 10:00 am
-                                </p>
-                            </div>
-                          </button>
-                        </h2>
-                        <div id="collapseVisitOne" class="accordion-collapse collapse" aria-labelledby="visitaOne" data-bs-parent="#accordionInhouse">
-                          <div class="accordion-body">
-                            <form>
-                                <div class="mb-3 form-group">
-                                    <label for="nuevaVisitaSede1" class="form-label">Sede</label>
-                                    <select class="form-select" aria-label="Default select example" id="nuevaVisitaSede1">
-                                        <option>Seleccione</option>
-                                        <option>Miraflores</option>
-                                        <option selected>La Molina</option>
-                                    </select>
-                                </div>
-        
-                                <div class="form-group mb-3">
-                                    <label for="nuevaVisitaFechaInicio1" class="form-label">Fecha</label>
-                                    <input type="date" class="form-control" id="nuevaVisitaFechaInicio1" value="2024-08-01">
-                                    <div class="text-help">Ingrese una fecha</div>
-                                </div>
-        
-                                <div class="form-row">
-                                    <div class="form-group mb-3">
-                                        <label for="nuevaVisitahoraInicio1" class="form-label">Hora de inicio</label>
-                                        <input type="time" class="form-control" id="nuevaVisitahoraInicio1" value="10:00:00">
-                                        <div class="text-help">Ingrese un horario</div>
+                            <button class="accordion-button collapsed btn-style-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseVisitOne" aria-expanded="false"
+                                aria-controls="collapseVisitOne">
+                                <div class="visita-inhouse__desc">
+                                    <div class="visita-inhouse__sede line-clamp line-clamp-1">
+                                        La molina
                                     </div>
-        
-                                    <div class="form-group mb-3">
-                                        <label for="nuevaVisitahoraFin1" class="form-label">Hora de fin</label>
-                                        <input type="time" class="form-control" id="nuevaVisitahoraFin1" value="12:00:00">
-                                        <div class="text-help">Ingrese un horario</div>
-                                    </div>
-                                </div>
-        
-                                <div class="mb-3 custom-textArea">
-                                    <label for="lugarInstalacioninhouse1" class="form-label">Lugar de instalación</label>
-                                    <p>
-                                        Describa detalles del lugar donde se realizará la visita.
+                                    <p class="visita-inhouse__fecha">
+                                        21/08/2024, 10:00 am
                                     </p>
-                                    <textarea class="form-control" id="lugarInstalacioninhouse1" rows="3" maxlength="200">Piso 1 - Sala de reuniones</textarea>
                                 </div>
-        
-                                <div class="mb-3 custom-textArea">
-                                    <label for="observacionesVisitaInhouse1" class="form-label">Observaciones</label>
-                                    <textarea class="form-control" id="observacionesVisitaInhouse1" rows="3" maxlength="200"></textarea>
-                                </div>
-        
-                                <div class="form-check form-switch custom-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1" checked>
-                                    <label class="form-check-label" for="flexSwitchCheckDefault1">SCTR</label>
-                                </div>
-        
-        
-                                <div class="form-actions-between">
-                                    <button type="button" class="btn danger-btn" data-bs-toggle="modal" data-bs-target="#modaladminEliminarVisita">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                        Eliminar
-                                    </button>
-        
-                                    <button type="button" class="btn primary-btn">
-                                        Guardar
-                                    </button>
-                                </div>
-                            </form>
-                          </div>
+                            </button>
+                        </h2>
+                        <div id="collapseVisitOne" class="accordion-collapse collapse" aria-labelledby="visitaOne"
+                            data-bs-parent="#accordionInhouse">
+                            <div class="accordion-body">
+                                <form>
+                                    <div class="mb-3 form-group">
+                                        <label for="nuevaVisitaSede1" class="form-label">Sede</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="nuevaVisitaSede1">
+                                            <option>Seleccione</option>
+                                            <option>Miraflores</option>
+                                            <option selected>La Molina</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="nuevaVisitaFechaInicio1" class="form-label">Fecha</label>
+                                        <input type="date" class="form-control" id="nuevaVisitaFechaInicio1"
+                                            value="2024-08-01">
+                                        <div class="text-help">Ingrese una fecha</div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group mb-3">
+                                            <label for="nuevaVisitahoraInicio1" class="form-label">Hora de
+                                                inicio</label>
+                                            <input type="time" class="form-control" id="nuevaVisitahoraInicio1"
+                                                value="10:00:00">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="nuevaVisitahoraFin1" class="form-label">Hora de fin</label>
+                                            <input type="time" class="form-control" id="nuevaVisitahoraFin1"
+                                                value="12:00:00">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 custom-textArea">
+                                        <label for="lugarInstalacioninhouse1" class="form-label">Lugar de
+                                            instalación</label>
+                                        <p>
+                                            Describa detalles del lugar donde se realizará la visita.
+                                        </p>
+                                        <textarea class="form-control" id="lugarInstalacioninhouse1" rows="3"
+                                            maxlength="200">Piso 1 - Sala de reuniones</textarea>
+                                    </div>
+
+                                    <div class="mb-3 custom-textArea">
+                                        <label for="observacionesVisitaInhouse1"
+                                            class="form-label">Observaciones</label>
+                                        <textarea class="form-control" id="observacionesVisitaInhouse1" rows="3"
+                                            maxlength="200"></textarea>
+                                    </div>
+
+                                    <div class="form-check form-switch custom-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault1" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckDefault1">SCTR</label>
+                                    </div>
+
+
+                                    <div class="form-actions-between">
+                                        <button type="button" class="btn danger-btn" data-bs-toggle="modal"
+                                            data-bs-target="#modaladminEliminarVisita">
+                                            <span class="material-symbols-outlined">
+                                                delete
+                                            </span>
+                                            Eliminar
+                                        </button>
+
+                                        <button type="button" class="btn primary-btn">
+                                            Guardar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="visitaTwo">
-                          <button class="accordion-button collapsed btn-style-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVisitTwo" aria-expanded="false" aria-controls="collapseVisitTwo">
-                            <div class="visita-inhouse__desc">
-                                <div class="visita-inhouse__sede line-clamp line-clamp-1">
-                                    Magdalena
-                                </div>
-                                <p class="visita-inhouse__fecha">
-                                    21/08/2024, 10:00 am
-                                </p>
-                            </div>
-                          </button>
-                        </h2>
-                        <div id="collapseVisitTwo" class="accordion-collapse collapse" aria-labelledby="visitaTwo" data-bs-parent="#accordionInhouse">
-                          <div class="accordion-body">
-                            <form>
-                                <div class="mb-3 form-group">
-                                    <label for="nuevaVisitaSede2" class="form-label">Sede</label>
-                                    <select class="form-select" aria-label="Default select example" id="nuevaVisitaSede2">
-                                        <option>Seleccione</option>
-                                        <option>Miraflores</option>
-                                        <option selected>La Molina</option>
-                                    </select>
-                                </div>
-        
-                                <div class="form-group mb-3">
-                                    <label for="nuevaVisitaFechaInicio2" class="form-label">Fecha</label>
-                                    <input type="date" class="form-control" id="nuevaVisitaFechaInicio2" value="2024-08-01">
-                                    <div class="text-help">Ingrese una fecha</div>
-                                </div>
-        
-                                <div class="form-row">
-                                    <div class="form-group mb-3">
-                                        <label for="nuevaVisitahoraInicio2" class="form-label">Hora de inicio</label>
-                                        <input type="time" class="form-control" id="nuevaVisitahoraInicio2" value="10:00:00">
-                                        <div class="text-help">Ingrese un horario</div>
+                            <button class="accordion-button collapsed btn-style-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseVisitTwo" aria-expanded="false"
+                                aria-controls="collapseVisitTwo">
+                                <div class="visita-inhouse__desc">
+                                    <div class="visita-inhouse__sede line-clamp line-clamp-1">
+                                        Magdalena
                                     </div>
-        
-                                    <div class="form-group mb-3">
-                                        <label for="nuevaVisitahoraFin2" class="form-label">Hora de fin</label>
-                                        <input type="time" class="form-control" id="nuevaVisitahoraFin2" value="12:00:00">
-                                        <div class="text-help">Ingrese un horario</div>
-                                    </div>
-                                </div>
-        
-                                <div class="mb-3 custom-textArea">
-                                    <label for="lugarInstalacioninhouse2" class="form-label">Lugar de instalación</label>
-                                    <p>
-                                        Describa detalles del lugar donde se realizará la visita.
+                                    <p class="visita-inhouse__fecha">
+                                        21/08/2024, 10:00 am
                                     </p>
-                                    <textarea class="form-control" id="lugarInstalacioninhouse2" rows="3" maxlength="200">Piso 1 - Sala de reuniones</textarea>
                                 </div>
-        
-                                <div class="mb-3 custom-textArea">
-                                    <label for="observacionesVisitaInhouse2" class="form-label">Observaciones</label>
-                                    <textarea class="form-control" id="observacionesVisitaInhouse2" rows="3" maxlength="200"></textarea>
-                                </div>
-        
-                                <div class="form-check form-switch custom-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2" checked>
-                                    <label class="form-check-label" for="flexSwitchCheckDefault2">SCTR</label>
-                                </div>
-        
-        
-                                <div class="form-actions-between">
-                                    <button type="button" class="btn danger-btn" data-bs-toggle="modal" data-bs-target="#modaladminEliminarVisita">
-                                        <span class="material-symbols-outlined">
-                                            delete
-                                        </span>
-                                        Eliminar
-                                    </button>
-        
-                                    <button type="button" class="btn primary-btn">
-                                        Guardar
-                                    </button>
-                                </div>
-                            </form>
-                          </div>
+                            </button>
+                        </h2>
+                        <div id="collapseVisitTwo" class="accordion-collapse collapse" aria-labelledby="visitaTwo"
+                            data-bs-parent="#accordionInhouse">
+                            <div class="accordion-body">
+                                <form>
+                                    <div class="mb-3 form-group">
+                                        <label for="nuevaVisitaSede2" class="form-label">Sede</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="nuevaVisitaSede2">
+                                            <option>Seleccione</option>
+                                            <option>Miraflores</option>
+                                            <option selected>La Molina</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="nuevaVisitaFechaInicio2" class="form-label">Fecha</label>
+                                        <input type="date" class="form-control" id="nuevaVisitaFechaInicio2"
+                                            value="2024-08-01">
+                                        <div class="text-help">Ingrese una fecha</div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group mb-3">
+                                            <label for="nuevaVisitahoraInicio2" class="form-label">Hora de
+                                                inicio</label>
+                                            <input type="time" class="form-control" id="nuevaVisitahoraInicio2"
+                                                value="10:00:00">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="nuevaVisitahoraFin2" class="form-label">Hora de fin</label>
+                                            <input type="time" class="form-control" id="nuevaVisitahoraFin2"
+                                                value="12:00:00">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 custom-textArea">
+                                        <label for="lugarInstalacioninhouse2" class="form-label">Lugar de
+                                            instalación</label>
+                                        <p>
+                                            Describa detalles del lugar donde se realizará la visita.
+                                        </p>
+                                        <textarea class="form-control" id="lugarInstalacioninhouse2" rows="3"
+                                            maxlength="200">Piso 1 - Sala de reuniones</textarea>
+                                    </div>
+
+                                    <div class="mb-3 custom-textArea">
+                                        <label for="observacionesVisitaInhouse2"
+                                            class="form-label">Observaciones</label>
+                                        <textarea class="form-control" id="observacionesVisitaInhouse2" rows="3"
+                                            maxlength="200"></textarea>
+                                    </div>
+
+                                    <div class="form-check form-switch custom-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault2" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckDefault2">SCTR</label>
+                                    </div>
+
+
+                                    <div class="form-actions-between">
+                                        <button type="button" class="btn danger-btn" data-bs-toggle="modal"
+                                            data-bs-target="#modaladminEliminarVisita">
+                                            <span class="material-symbols-outlined">
+                                                delete
+                                            </span>
+                                            Eliminar
+                                        </button>
+
+                                        <button type="button" class="btn primary-btn">
+                                            Guardar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2443,12 +2480,14 @@
                             <p>
                                 Describa detalles del lugar donde se realizará la visita.
                             </p>
-                            <textarea class="form-control" id="lugarInstalacioninhouse" rows="3" maxlength="200"></textarea>
+                            <textarea class="form-control" id="lugarInstalacioninhouse" rows="3"
+                                maxlength="200"></textarea>
                         </div>
 
                         <div class="mb-3 custom-textArea">
                             <label for="observacionesVisitaInhouse" class="form-label">Observaciones</label>
-                            <textarea class="form-control" id="observacionesVisitaInhouse" rows="3" maxlength="200"></textarea>
+                            <textarea class="form-control" id="observacionesVisitaInhouse" rows="3"
+                                maxlength="200"></textarea>
                         </div>
 
                         <div class="form-check form-switch custom-switch">
@@ -2564,11 +2603,11 @@
     </div>
 
     <!-- LOADER -->
-	<div class="loader">
-		<img src="../img/icons/loader.gif" alt="">
-		<span>Los productos se están cargando...</span>
-	</div>
-	<!-- END LOADER -->
+    <div class="loader">
+        <img src="../img/icons/loader.gif" alt="">
+        <span>Los productos se están cargando...</span>
+    </div>
+    <!-- END LOADER -->
 
     <!-- MODALS -->
     <!-- Modal cambiar perfil-->
@@ -2619,8 +2658,8 @@
     <!-- End Modal aprobación compras planilla-->
 
     <!-- Modal aprobación compras planilla individual-->
-    <div class="modal fade" id="modalDescuentoPlanillaIndividual" tabindex="-1" aria-labelledby="confirmDescuentoplanillaIndividual"
-        aria-hidden="true">
+    <div class="modal fade" id="modalDescuentoPlanillaIndividual" tabindex="-1"
+        aria-labelledby="confirmDescuentoplanillaIndividual" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -2630,7 +2669,8 @@
                 <div class="modal-body">
                     <h5 class="modal-title" id="confirmDescuentoplanillaIndividual">Envío de compras</h5>
                     <p class="mb-0">
-                        ¿Está seguro que quiere enviar las compras realizadas por <span class="text-bold">[Nombre del colaborador]</span>?
+                        ¿Está seguro que quiere enviar las compras realizadas por <span class="text-bold">[Nombre del
+                            colaborador]</span>?
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -2667,7 +2707,8 @@
     <!-- End Modal guardar cambios planilla-->
 
     <!-- Modal eliminar visita-->
-    <div class="modal fade" id="modaladminEliminarVisita" tabindex="-1" aria-labelledby="eliminarVisitainhouse" aria-hidden="true">
+    <div class="modal fade" id="modaladminEliminarVisita" tabindex="-1" aria-labelledby="eliminarVisitainhouse"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -2689,7 +2730,8 @@
     <!-- End Modal eliminar visita-->
 
     <!-- Modal visitas eliminadas-->
-    <div class="modal fade" id="modaladminVisitaEliminada" tabindex="-1" aria-labelledby="eliminarVisitasEliminadas" aria-hidden="true">
+    <div class="modal fade" id="modaladminVisitaEliminada" tabindex="-1" aria-labelledby="eliminarVisitasEliminadas"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -2698,7 +2740,8 @@
                 <div class="modal-body">
                     <h5 class="modal-title" id="eliminarVisitasEliminadas">Visitas canceladas</h5>
                     <p>
-                        Puedes comunicarte con tu ejecutivo comercial para tener más detalles de las razones de la cancelación
+                        Puedes comunicarte con tu ejecutivo comercial para tener más detalles de las razones de la
+                        cancelación
                     </p>
 
                     <div class="card-visita-inhouse">
@@ -2727,7 +2770,8 @@
     <!-- End Modal visitas eliminadas-->
 
     <!-- Modal crop logo empresa -->
-    <div class="modal fade" id="cropImagePop" tabindex="-1" aria-labelledby="eliminarVisitasEliminadas" aria-hidden="true">
+    <div class="modal fade" id="cropImagePop" tabindex="-1" aria-labelledby="eliminarVisitasEliminadas"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -2737,9 +2781,9 @@
                     <h5 class="modal-title" id="eliminarVisitasEliminadas">Carga el logo de tu empresa</h5>
                     <div class="up-photo-content">
 
-                      <div id="upload-demo" class="center-block">
-                        <h5><i class="fas fa-arrows-alt mr-1"></i>Encaja tu logo dentro del círculo</h5>
-                      </div>
+                        <div id="upload-demo" class="center-block">
+                            <h5><i class="fas fa-arrows-alt mr-1"></i>Encaja tu logo dentro del círculo</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -2756,7 +2800,7 @@
     </div>
     <!-- End modal crop logo empresa -->
 
-    <!-- Modal guardar cambios planilla-->
+    <!-- Modal filtrar colaboradores-->
     <div class="modal fade" id="modalColaboradoresFiltros" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -2767,7 +2811,7 @@
                 </div>
                 <div class="modal-body">
                     <h5 class="modal-title" id="colaboradoresFiltrar">Filtrar</h5>
-                    
+
                     <form class="form-modal">
                         <div class="mb-3 form-group">
                             <label for="colaboradoresFiltrarEstado" class="form-label">Estado</label>
@@ -2799,13 +2843,75 @@
             </div>
         </div>
     </div>
-    <!-- End Modal guardar cambios planilla-->
+    <!-- End Modal filtrar colaboradores-->
+
+    <!-- Modal estados colaboradores-->
+    <div class="modal fade" id="modalColaboradoresEstados" tabindex="-1" aria-labelledby="colaboradoresEstados"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="colaboradoresEstados">Leyenda de estados</h5>
+
+                    <table class="table text-start align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="tag tag-success">
+                                        Activo
+                                    </span>
+                                </td>
+                                <td>
+                                    Colaborador registrado en plataforma con correo perosonal verificado.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="tag tag-warning">
+                                        Inactivo
+                                    </span>
+                                </td>
+                                <td>
+                                    Colaborador registrado en plataforma con correo perosonal verificado.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="tag tag-danger">
+                                        Pre-registrado
+                                    </span>
+                                </td>
+                                <td>
+                                    Colaborador registrado en plataforma con correo perosonal verificado.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn primary-btn">Aplicar filtros</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal estados colaboradores-->
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="../js/adminchart.js"></script>

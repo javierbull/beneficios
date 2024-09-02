@@ -962,11 +962,18 @@ input[type=number] {
     margin-bottom: 1.5rem;
 }
 
-.navbar-actions__left, .navbar-actions__right {
+.navbar-actions__left {
     /* background-color: pink; */
     display: flex;
-    justify-content: flex-end;
     gap: 1rem;
+}
+
+.navbar-actions__right {
+    /* background-color: pink; */
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    
 }
 
 /* End Datatables sort icons */

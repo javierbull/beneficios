@@ -534,7 +534,7 @@
                                         </span>
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarColaborador">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -559,7 +559,7 @@
                                         </span>
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarColaborador">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -584,7 +584,7 @@
                                         </span>
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarColaborador">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -3080,7 +3080,30 @@
             </div>
         </div>
     </div>
-    <!-- End Modal editar contactos-->
+    <!-- End Modal editar sede-->
+
+    <!-- Modal eliminar colaborador-->
+    <div class="modal fade" id="modalEliminarColaborador" tabindex="-1" aria-labelledby="eliminarVisitainhouse"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="eliminarVisitainhouse">Elimina colaborador</h5>
+                    <p class="mb-0">
+                        ¿Estás seguro de eliminar este colaborador?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn danger-btn">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal eliminar colaborador-->
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

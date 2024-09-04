@@ -986,6 +986,35 @@ input[type=number] {
     margin-bottom: 1.5rem;
 }
 
+.step-form {
+    background-color: var(--blue5);
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-weight: 600;
+}
+
+.step-form-title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.step-form-title h6 {
+    margin-bottom: 0;
+}
+
 /* END MODALS */
 
 /* PANEL COLABORADORES */

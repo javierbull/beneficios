@@ -1233,7 +1233,7 @@
                                     </span>
                                 </button>
 
-                                <button type="button" class="btn ghost-btn btn-icon">
+                                <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
                                     <span class="material-symbols-outlined">
                                         delete
                                     </span>
@@ -1258,7 +1258,7 @@
                                     </span>
                                 </button>
 
-                                <button type="button" class="btn ghost-btn btn-icon">
+                                <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
                                     <span class="material-symbols-outlined">
                                         delete
                                     </span>
@@ -2327,7 +2327,7 @@
 
 
                                     <div class="form-actions-between">
-                                        <button type="button" class="btn danger-btn" data-bs-toggle="modal"
+                                        <button type="button" class="btn danger-outline-btn" data-bs-toggle="modal"
                                             data-bs-target="#modaladminEliminarVisita">
                                             <span class="material-symbols-outlined">
                                                 delete
@@ -2422,7 +2422,7 @@
 
 
                                     <div class="form-actions-between">
-                                        <button type="button" class="btn danger-btn" data-bs-toggle="modal"
+                                        <button type="button" class="btn danger-outline-btn" data-bs-toggle="modal"
                                             data-bs-target="#modaladminEliminarVisita">
                                             <span class="material-symbols-outlined">
                                                 delete
@@ -2981,24 +2981,36 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <div class="modal-actions-between">
-                        <button type="button" class="btn danger-btn">
-                            <span class="material-symbols-outlined">
-                                delete
-                            </span>
-                            Eliminar
-                        </button>
-                        
-                        <div class="right">
-                            <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn primary-btn">Guardar</button>
-                        </div>
-                    </div>
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Modal editar contactos-->
+
+     <!-- Modal eliminar contacto-->
+     <div class="modal fade" id="modalEliminarContacto" tabindex="-1" aria-labelledby="eliminarVisitainhouse"
+     aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <h5 class="modal-title" id="eliminarVisitainhouse">Elimina contacto</h5>
+                 <p class="mb-0">
+                     ¿Estás seguro de eliminar este contacto?
+                 </p>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                 <button type="button" class="btn danger-btn">Eliminar</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- End Modal eliminar contacto-->
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

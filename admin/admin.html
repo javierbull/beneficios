@@ -493,12 +493,18 @@
                     </div>
 
                     <div class="navbar-actions__right">
-                        <button type="button" class="btn primary-btn showAdminPanel-colaboradoreNuevo">
-                            <span class="material-symbols-outlined">
-                                add
-                            </span>
-                            Nuevo colaborador
-                        </button>
+                        <div class="btn-group">
+                            <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-symbols-outlined">
+                                    add
+                                </span>
+                                Nuevo colaborador
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><button class="dropdown-item showAdminPanel-colaboradoreNuevo" type="button">Individual</button></li>
+                              <li><button class="dropdown-item" type="button">Carga masiva</button></li>
+                            </ul>
+                          </div>
                     </div>
                 </div>
 

@@ -986,6 +986,10 @@ input[type=number] {
     margin-bottom: 1.5rem;
 }
 
+.form-modal fieldset:last-child {
+    margin-bottom: 0;
+}
+
 .step-form {
     background-color: var(--blue5);
     min-width: 1.5rem;
@@ -2025,3 +2029,38 @@ figure figcaption {
 }
 
 /* END LOADER */
+
+/* DRAG & DROP */
+.drop_zone {
+    border: 2px dashed #cccccc;
+    border-radius: 4px;
+    padding: 15px;
+    height: 120px;
+    transition: background-color .1s linear .1s;
+    text-align: center;
+    position: relative;
+  }
+  
+  .drop_zone.dragover {
+    background-color: #F5F5F5;
+  }
+  
+  .drop_zone > span {
+    color: #CCCCD3;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .drop_zone > label {
+    background: #EEE;
+  }
+  
+  .drop_zone > label > input {
+    display: none;
+  }
+
+  /* END DRAG & DROP */

@@ -982,6 +982,10 @@ input[type=number] {
     gap: .5rem;
 }
 
+.form-modal fieldset {
+    margin-bottom: 1.5rem;
+}
+
 /* END MODALS */
 
 /* PANEL COLABORADORES */

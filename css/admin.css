@@ -951,7 +951,14 @@ input[type=number] {
     text-align: left;
 }
 
-/* EN MODALS */
+.modal-actions-between {
+    /* background-color: #9BDAC9; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* END MODALS */
 
 /* PANEL COLABORADORES */
 .navbar-actions {
@@ -973,7 +980,6 @@ input[type=number] {
     display: flex;
     gap: 1rem;
     margin-left: auto;
-    
 }
 
 /* End Datatables sort icons */
@@ -1357,7 +1363,7 @@ figure figcaption {
 }
 
 .cr-slider::-webkit-slider-runnable-track {
-    /*width: 275px;*/ 
+    /*width: 275px;*/
     height: .75rem;
     cursor: pointer;
     box-shadow: none;
@@ -1436,6 +1442,7 @@ figure figcaption {
     -o-border-radius: 50%;
     object-fit: contain;
 }
+
 /* End upload crop image */
 
 .form-datos-empresa {

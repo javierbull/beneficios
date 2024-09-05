@@ -221,9 +221,6 @@ body {
 .link {
     color: var(--blue5);
 }
-
-
-
 /* End buttons */
 
 /* Inputs  */
@@ -476,6 +473,24 @@ input[type=number] {
 }
 
 /* End switch */
+
+/* feedback colors */
+.success-color {
+    color: var(--green5);
+}
+
+.warning-color {
+    color: var(--primary5);
+}
+
+.info-color {
+    color: var(--blue5);
+}
+
+.danger-color {
+    color: var(--red5);
+}
+/* End feedback colors */
 
 /* UI KIT */
 
@@ -1021,6 +1036,10 @@ input[type=number] {
 
 .step-form-title h6 {
     margin-bottom: 0;
+}
+
+.icon-modal-title {
+    font-size: 2.5rem;
 }
 
 /* END MODALS */

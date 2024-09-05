@@ -910,7 +910,9 @@
                         <h2 class="card-admin__title">Datos de tu empresa:</h2>
                         <div class="alert alert-info" role="alert">
                             Para modificar estos datos debes contactarte con tu asesor comercial.
-                            <button class="btn link-btn">Solicitar cambio</button>
+                            <button class="btn link-btn" data-bs-toggle="modal" data-bs-target="#modalActualizardatosEmpresa">
+                                Solicitar cambio
+                            </button>
                             <span class="material-symbols-outlined">
                                 info
                             </span>
@@ -3366,6 +3368,58 @@
         </div>
     </div>
     <!-- End Modal carga masiva-->
+
+    <!-- Modal actualizavion de datos empresa-->
+    <div class="modal fade" id="modalActualizardatosEmpresa" tabindex="-1" aria-labelledby="actualizarDatosEmpresa"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="actualizarDatosEmpresa">Solicitud de actualización de datos</h5>
+                    <p class="mb-0">
+                        Para cambiar los datos de tu empresa, enviaremos una solicitud a tu ejecutivo comercial para que se ponga en contacto contigo.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn" data-bs-target="#solciitudEnviadaDatosEmpresa" data-bs-toggle="modal">
+                        Enviar Solicitud
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End actualizavion de datos empresa-->
+
+    <!-- Modal solicitud enviada empresa-->
+    <div class="modal fade" id="solciitudEnviadaDatosEmpresa" tabindex="-1" aria-labelledby="solciitudEnviadaDatosEmpresa"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="material-symbols-outlined icon-fill icon-modal-title success-color">
+                        check_circle
+                    </span>
+                    <h5 class="modal-title" id="solciitudEnviadaDatosEmpresa">Solicitud enviada</h5>
+                    <p class="mb-0">
+                        Pronto su ejecutivo comercial se pondrá en contacto.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn primary-btn" data-bs-dismiss="modal">Entendido</button>
+                    <!-- <button type="button" class="btn primary-btn">Enviar solicitus</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End solicitud enviada empresa-->
 
     <!-- END MODALS -->
 

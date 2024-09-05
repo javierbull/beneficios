@@ -1767,7 +1767,7 @@ figure figcaption {
 /* End FullCalendar */
 
 /* Accordion inhouse */
-.accordion-visita-inhouse {
+.accordion-nuevo-item {
     width: 28rem;
     margin-left: auto;
     margin-right: auto;
@@ -1775,7 +1775,7 @@ figure figcaption {
     border: none;
 }
 
-.accordion-visita-inhouse .accordion-item {
+.accordion-nuevo-item .accordion-item {
     margin-bottom: .5rem;
     border: 1px solid var(--gray4);
     border-radius: .5rem;
@@ -1813,7 +1813,7 @@ figure figcaption {
     transition: transform 0.2s ease-in-out;
 }
 
-.accordion-visita-inhouse .accordion-body {
+.accordion-nuevo-item .accordion-body {
     border-top: solid 1px var(--gray4);
 }
 

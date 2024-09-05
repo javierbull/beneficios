@@ -1199,6 +1199,87 @@
                     </button>
                 </div>
 
+                <div class="accordion accordion-nuevo-item" id="accordionSedes">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="nuevaSedeOne">
+                            <button class="accordion-button collapsed btn-style-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseNuevaSedeOne" aria-expanded="false"
+                                aria-controls="collapseNuevaSedeOne">
+                                <div class="visita-inhouse__desc">
+                                    <div class="visita-inhouse__sede line-clamp line-clamp-1 mb-0">
+                                        La molina
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseNuevaSedeOne" class="accordion-collapse collapse" aria-labelledby="nuevaSedeOne"
+                            data-bs-parent="#accordionSedes">
+                            <div class="accordion-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nuevaSedeNombreItem1" class="form-label">Nombre de la sede</label>
+                                        <input type="text" class="form-control" id="nuevaSedeNombreItem1">
+                                        <div class="text-help">Ingrese un nombre válido</div>
+                                    </div>
+            
+                                    <div class="form-row">
+                                        <div class="mb-3 form-group">
+                                            <label for="nuevaSedeDepartamentoItem1" class="form-label">Departamento</label>
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="nuevaSedeDepartamentoItem1">
+                                                <option selected>Seleccione</option>
+                                                <option value="1">Lima</option>
+                                                <option value="2">Arequipa</option>
+                                            </select>
+                                        </div>
+            
+                                        <div class="mb-3 form-group">
+                                            <label for="nuevaSedeProvinciaItem1" class="form-label">Provinvia</label>
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="nuevaSedeProvinciaItem1">
+                                                <option selected>Seleccione</option>
+                                                <option value="1">Lima</option>
+                                                <option value="2">Callao</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+                                    <div class="mb-3 form-group">
+                                        <label for="nuevaSedeDistritoItem1" class="form-label">Distrito</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="nuevaSedeDistritoItem1">
+                                            <option selected>Seleccione</option>
+                                            <option value="1">Lince</option>
+                                            <option value="2">Magdalena</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="mb-3">
+                                        <label for="nuevaSedeDirecciónItem1" class="form-label">Dirección</label>
+                                        <input type="text" class="form-control" id="nuevaSedeDirecciónItem1">
+                                        <div class="text-help">Ingrese una dirección válida</div>
+                                    </div>
+            
+                                    <div class="form-actions-between">
+                                        <button type="button" class="btn danger-outline-btn">
+                                            <span class="material-symbols-outlined">
+                                                delete
+                                            </span>
+                                            Eliminar
+                                        </button>
+            
+                                        <button type="button" class="btn primary-btn">
+                                            Guardar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
                 <div class="colaboradorNuevo-main">
                     <h2 class="headline2">
                         Nueva sede
@@ -1262,7 +1343,6 @@
                             </button>
                         </div>
                     </form>
-
                 </div>
             </div>
 
@@ -2377,7 +2457,7 @@
                     </button>
                 </div>
 
-                <div class="accordion accordion-visita-inhouse" id="accordionInhouse">
+                <div class="accordion accordion-nuevo-item" id="accordionInhouse">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="visitaOne">
                             <button class="accordion-button collapsed btn-style-none" type="button"

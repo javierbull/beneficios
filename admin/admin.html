@@ -1046,7 +1046,7 @@
                         </div>
 
                         <div class="navbar-actions__new">
-                            <button type="button" class="btn primary-btn">
+                            <button type="button" class="btn primary-btn showAdminPanel-sedeNuevo">
                                 <span class="material-symbols-outlined">
                                     add
                                 </span>
@@ -1151,6 +1151,127 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+
+            <div class="panel" id="sedeNuevo-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Contactos</h2>
+                        <p>
+                            Gestiona la información de tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-sedes">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+                </div>
+
+                <div class="colaboradorNuevo-main">
+                    <h2 class="headline2">
+                        Nuevo contacto
+                    </h2>
+
+                    <form class="form-admin">
+                        <div class="mb-3">
+                            <label for="nuevoColaboradorNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nuevoColaboradorNombre">
+                            <div class="text-help">Ingrese un nombre válido</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nuevoColaboradorApellidoPaterno" class="form-label">Apellido paterno</label>
+                            <input type="text" class="form-control" id="nuevoColaboradorApellidoPaterno">
+                            <div class="text-help">Ingrese un apellido válido</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nuevoColaboradorApellidoMaterno" class="form-label">Apellido materno</label>
+                            <input type="text" class="form-control" id="nuevoColaboradorApellidoMaterno">
+                            <div class="text-help">Ingrese un apellido válido</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nuevoColaboradorCargo" class="form-label">Cargo</label>
+                            <input type="text" class="form-control" id="nuevoColaboradorCargo">
+                            <div class="text-help">Ingrese un cargo válido</div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="mb-3 form-group">
+                                <label for="nuevoColaboradorTipoContacto" class="form-label">Tipo de contacto</label>
+                                <select class="form-select" aria-label="Default select example"
+                                    id="nuevoColaboradorTipoContacto">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Principal</option>
+                                    <option value="2">Secundario</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 form-group">
+                                <label for="nuevoColaboradorSede" class="form-label">Sede</label>
+                                <select class="form-select" aria-label="Default select example"
+                                    id="nuevoColaboradorSede">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Miraflores</option>
+                                    <option value="2">Lince</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="mb-3 form-group">
+                                <label for="nuevoColaboradorCorreoCorp" class="form-label">Correo corporativo</label>
+                                <input type="email" class="form-control" id="nuevoColaboradorCorreoCorp">
+                                <div class="text-help">Ingrese un correo válido</div>
+                            </div>
+
+                            <div class="mb-3 form-group">
+                                <label for="nuevoColaboradorCelular" class="form-label">Celular</label>
+                                <input type="number" class="form-control" id="nuevoColaboradorCelular">
+                                <div class="text-help">Ingrese un número válido</div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions-right">
+                            <button type="button" class="btn primary-btn">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
 

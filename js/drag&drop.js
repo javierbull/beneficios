@@ -91,7 +91,7 @@ var DndFileUploadWidget = (function defineDndFileUploadWidget() {
       var filesContainer = this.getFilesContainer();
       var filename = file.name;
       var fileSize = file.size;
-      var domString = '<div class="row form-group"> <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> <div class="text-left" style="line-height:32px">' + filename + '</div> </div> <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> <div style="line-height:32px">' + humanReadableFileSize(fileSize) + '</div> </div> <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right"> <button class="btn btn-danger dnd-file-upload-widget-remove-file-button"> Remove </button> </div> </div>'
+      var domString = '<div class="row form-group"> <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> <div class="text-left" style="line-height:38px">' + filename + '</div> </div> <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> <div style="line-height:38px">' + humanReadableFileSize(fileSize) + '</div> </div> <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right"> <button class="btn danger-outline-btn dnd-file-upload-widget-remove-file-button">Eliminar</button> </div> </div>'
       var parser = new DOMParser();
       var html = parser.parseFromString(domString, 'text/html');
       var fileUploadRow = html.body.firstChild;

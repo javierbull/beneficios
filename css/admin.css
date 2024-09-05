@@ -951,6 +951,10 @@ input[type=number] {
     margin-bottom: .5rem;
 }
 
+.modal-header .modal-title {
+    margin-bottom: 0;
+}
+
 .modal-header,
 .modal-footer {
     border: none;
@@ -2032,35 +2036,52 @@ figure figcaption {
 
 /* DRAG & DROP */
 .drop_zone {
-    border: 2px dashed #cccccc;
-    border-radius: 4px;
-    padding: 15px;
-    height: 120px;
+    /* background-color: #60C6AA; */
+    border: 2px dashed var(--gray5);
+    padding: 1rem;
     transition: background-color .1s linear .1s;
-    text-align: center;
-    position: relative;
-  }
+    /* text-align: center;
+    position: relative; */
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
   
   .drop_zone.dragover {
-    background-color: #F5F5F5;
+    background-color: var(--white);
   }
-  
-  .drop_zone > span {
-    color: #CCCCD3;
-    font-size: 12pt;
-    text-align: center;
-    display: block;
-    margin-bottom: 5px;
-    z-index: -1;
-    pointer-events: none;
+
+  .drop_zone--text {
+    color: var(--gray7);
   }
-  
-  .drop_zone > label {
-    background: #EEE;
+
+  .drop_zone--sizeFile {
+    font-size: .875rem;
+    color: var(--gray5);
   }
   
   .drop_zone > label > input {
     display: none;
+  }
+
+  .files-container {
+    /* background-color: #BAD5FF; */
+  }
+
+  .files-container .row {
+    margin-bottom: .5rem;
+  }
+
+  .files-container .row .btn {
+    width: 100%;
+    margin-left: auto;
   }
 
   /* END DRAG & DROP */

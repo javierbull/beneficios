@@ -3306,13 +3306,61 @@
                               
                                 <div class="files-container"></div>
                             </div>
-                            
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Tipo de usuario</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorTipo1" checked>
+                                <label class="form-check-label" for="cargaMasivaColaboradorTipo1">
+                                    <strong>Colaborador.</strong> Toda persona que forme parte de la planilla de la empresa.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorTipo2">
+                                <label class="form-check-label" for="cargaMasivaColaboradorTipo2">
+                                    <strong>Externo.</strong> Cualquier persona que no forme parte de la planilla de la empresa pero colaboran para la empresa. (Ejemplo: Proveedores)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorTipo3">
+                                <label class="form-check-label" for="cargaMasivaColaboradorTipo3">
+                                    <strong>Invitado.</strong> Personas que tienen otro tipo de relación con la empresa. (Ejemplo: Clientes, estudiantes, etc) 
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Tipo de carga</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorCarga1" checked>
+                                <label class="form-check-label" for="cargaMasivaColaboradorCarga1">
+                                    <strong>Registrar.</strong> Se agregan los nuevos usuarios registrados en el archivo cargado.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorCarga2">
+                                <label class="form-check-label" for="cargaMasivaColaboradorCarga2">
+                                    <strong>Actualizar.</strong> Se reemplazan todos los usuarios cargados previamente por los que estén en el archivo cargado.
+                                </label>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn">Guardar</button>
+                    <button type="button" class="btn primary-btn">Cargar colaboradores</button>
                 </div>
             </div>
         </div>

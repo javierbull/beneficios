@@ -987,7 +987,7 @@ input[type=number] {
 }
 
 .form-modal fieldset {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .form-modal fieldset:last-child {
@@ -1016,7 +1016,7 @@ input[type=number] {
     display: flex;
     align-items: center;
     gap: .5rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .step-form-title h6 {
@@ -1154,9 +1154,6 @@ table.dataTable {
 }
 
 /* End pagination */
-
-
-
 
 /* END PANEL COLABORADORES */
 

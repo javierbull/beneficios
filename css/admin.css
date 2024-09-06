@@ -224,7 +224,8 @@ body {
 /* End buttons */
 
 /* Inputs  */
-.form-control {
+
+.form-control, .form-select, .select2-selection {
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -2119,4 +2120,6 @@ figure figcaption {
   #contentFechaAsigMasiva {
     display: none;
   }
+
+
   /* END CUMPLEAÑOS */

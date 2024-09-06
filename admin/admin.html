@@ -689,8 +689,8 @@
                                     <div class="text-help">Ingrese un apellido válido</div>
                                 </div>
 
-                                <div class="form-row">
-                                    <div class="mb-3 form-group">
+                                <div class="row g-3">
+                                    <div class="mb-3 form-group col">
                                         <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
                                         <select class="form-select" aria-label="Default select example"
                                             id="nuevoContactoTipoDoc">
@@ -699,7 +699,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="mb-3 form-group">
+                                    <div class="mb-3 form-group col">
                                         <label for="nuevoContactoNumeroDoc" class="form-label">Número de
                                             documento</label>
                                         <input type="number" class="form-control" id="nuevoContactoNumeroDoc">
@@ -959,14 +959,14 @@
                         </div>
 
                         <form class="form-datos-empresa">
-                            <div class="form-row">
-                                <div class="mb-3 form-group">
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col">
                                     <label for="empresaNombreComercial" class="form-label">Nombre comercial</label>
                                     <input type="email" class="form-control" id="empresaNombreComercial"
                                         placeholder="Interbank">
                                 </div>
 
-                                <div class="mb-3 form-group">
+                                <div class="mb-3 form-group col">
                                     <label for="empresaNombreWeb" class="form-label">Nombre web</label>
                                     <input type="email" class="form-control" id="empresaNombreWeb"
                                         placeholder="Interbank">
@@ -1219,7 +1219,7 @@
                                         <div class="text-help">Ingrese un nombre válido</div>
                                     </div>
             
-                                    <div class="form-row">
+                                    <div class="row">
                                         <div class="mb-3 form-group">
                                             <label for="nuevaSedeDepartamentoItem1" class="form-label">Departamento</label>
                                             <select class="form-select" aria-label="Default select example"
@@ -1296,7 +1296,7 @@
                                         <div class="text-help">Ingrese un nombre válido</div>
                                     </div>
             
-                                    <div class="form-row">
+                                    <div class="row">
                                         <div class="mb-3 form-group">
                                             <label for="nuevaSedeDepartamentoItem2" class="form-label">Departamento</label>
                                             <select class="form-select" aria-label="Default select example"
@@ -1364,7 +1364,7 @@
                             <div class="text-help">Ingrese un nombre válido</div>
                         </div>
 
-                        <div class="form-row">
+                        <div class="row">
                             <div class="mb-3 form-group">
                                 <label for="nuevaSedeDepartamento" class="form-label">Departamento</label>
                                 <select class="form-select" aria-label="Default select example"
@@ -1625,7 +1625,7 @@
                             <div class="text-help">Ingrese un cargo válido</div>
                         </div>
 
-                        <div class="form-row">
+                        <div class="row">
                             <div class="mb-3 form-group">
                                 <label for="nuevoColaboradorTipoContacto" class="form-label">Tipo de contacto</label>
                                 <select class="form-select" aria-label="Default select example"
@@ -1647,7 +1647,7 @@
                             </div>
                         </div>
 
-                        <div class="form-row">
+                        <div class="row">
                             <div class="mb-3 form-group">
                                 <label for="nuevoColaboradorCorreoCorp" class="form-label">Correo corporativo</label>
                                 <input type="email" class="form-control" id="nuevoColaboradorCorreoCorp">
@@ -2787,7 +2787,7 @@
                                         <div class="text-help">Ingrese una fecha</div>
                                     </div>
 
-                                    <div class="form-row">
+                                    <div class="row">
                                         <div class="form-group mb-3">
                                             <label for="nuevaVisitahoraInicio1" class="form-label">Hora de
                                                 inicio</label>
@@ -2882,7 +2882,7 @@
                                         <div class="text-help">Ingrese una fecha</div>
                                     </div>
 
-                                    <div class="form-row">
+                                    <div class="row">
                                         <div class="form-group mb-3">
                                             <label for="nuevaVisitahoraInicio2" class="form-label">Hora de
                                                 inicio</label>
@@ -2963,7 +2963,7 @@
                             <div class="text-help">Ingrese una fecha</div>
                         </div>
 
-                        <div class="form-row">
+                        <div class="row">
                             <div class="form-group mb-3">
                                 <label for="nuevaVisitahoraInicio" class="form-label">Hora de inicio</label>
                                 <input type="time" class="form-control" id="nuevaVisitahoraInicio">
@@ -3067,8 +3067,8 @@
                                 Asignar vale
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
-                              <li><button class="dropdown-item showAdminPanel-colaboradoreNuevo" type="button">Individual</button></li>
-                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCargaMasivaColaborador">Asignación masiva</button></li>
+                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionIndividual">Individual</button></li>
+                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionMasiva">Asignación masiva</button></li>
                             </ul>
                         </div>
                     </div>
@@ -3454,7 +3454,7 @@
                             <div class="text-help">Ingrese un cargo válido</div>
                         </div>
 
-                        <div class="form-row">
+                        <div class="row">
                             <div class="mb-3 form-group">
                                 <label for="editarContactoTipo" class="form-label">Tipo de contacto</label>
                                 <select class="form-select" aria-label="Default select example" id="editarContactoTipo">
@@ -3474,7 +3474,7 @@
                             </div>
                         </div>
 
-                        <div class="form-row">
+                        <div class="row">
                             <div class="mb-3 form-group">
                                 <label for="editarContactoCorreoCorp" class="form-label">Correo corporativo</label>
                                 <input type="email" class="form-control" id="editarContactoCorreoCorp">
@@ -3539,7 +3539,7 @@
                             <div class="text-help">Ingrese un nombre válido</div>
                         </div>
 
-                        <div class="form-row">
+                        <div class="row">
                             <div class="mb-3 form-group">
                                 <label for="editarSedeDepartamento" class="form-label">Departamento</label>
                                 <select class="form-select" aria-label="Default select example" id="editarSedeDepartamento">
@@ -3624,7 +3624,7 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Datos de personales</h6>
                             </div>
-                            <div class="form-row">
+                            <div class="row">
                                 <div class="mb-3 form-group">
                                     <label for="editarColaboradorNombre" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="editarColaboradorNombre">
@@ -3639,7 +3639,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-row">
+                            <div class="row">
                                 <div class="mb-3 form-group">
                                     <label for="editarColaboradorApellidoMaterno" class="form-label">Apellido
                                         materno</label>
@@ -3655,7 +3655,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-row">
+                            <div class="row">
                                 <div class="mb-3 form-group">
                                     <label for="editarColaboradorTipoDoc" class="form-label">Tipo de documento</label>
                                     <select class="form-select" aria-label="Default select example"
@@ -3680,7 +3680,7 @@
                                 <span class="step-form">2</span>
                                 <h6 class="heading-6">Datos de contacto</h6>
                             </div>
-                            <div class="form-row">
+                            <div class="row">
                                 <div class="mb-3 form-group">
                                     <label for="editarColaboradorCorreoCorporativo" class="form-label">Correo
                                         corporativo</label>
@@ -3695,7 +3695,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-row">
+                            <div class="row">
                                 <div class="mb-3 form-group">
                                     <label for="editarColaboradorCelCorp" class="form-label">Celular corporativo</label>
                                     <input type="number" class="form-control" id="editarColaboradorCelCorp">
@@ -3914,6 +3914,104 @@
         </div>
     </div>
     <!-- End solicitud enviada empresa-->
+
+    <!-- Modal carga masiva-->
+    <div class="modal fade" id="modalAsignacionMasiva" tabindex="-1" aria-labelledby="asignacionMasiva"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="asignacionMasiva">Asignación masiva de vales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Subir el archivo</h6>
+                            </div>
+                            <p>Descarga el archivo XLSX con el formato para la carga masiva de colaboradores.</p>
+                            <button class="btn outline-btn mb-3">
+                                <span class="material-symbols-outlined icon-fill">
+                                    download_2
+                                </span>
+                                Descargar formato
+                            </button>
+
+                            <div id="theWidget" class="dnd-file-upload-widget">
+                                <div class="form-group drop_zone">
+                                    <label class="btn outline-btn">
+                                      <span class="material-symbols-outlined icon-fill">
+                                          upload_2
+                                      </span>
+                                      Sube tu archivo
+                                      <input type="file" multiple="" />
+                                    </label>
+                                    <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10 MB.</span>
+                                </div>
+                              
+                                <div class="files-container"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Elección del vale</h6>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="mb-3 form-group col-md-8">
+                                    <label for="editarColaboradorTipoDoc" class="form-label">Tipo de documento</label>
+                                    <select class="form-select" aria-label="Default select example"
+                                        id="editarColaboradorTipoDoc">
+                                        <option selected>DNI</option>
+                                        <option value="1">CE</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3 form-group col-md-4">
+                                    <label for="editarColaboradorNumeroDoc" class="form-label">Número de
+                                        documento</label>
+                                    <input type="number" class="form-control" id="editarColaboradorNumeroDoc">
+                                    <div class="text-help">Ingrese un número válido</div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Tipo de carga</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorCarga1" checked>
+                                <label class="form-check-label" for="cargaMasivaColaboradorCarga1">
+                                    <strong>Registrar.</strong> Se agregan los nuevos usuarios registrados en el archivo cargado.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorCarga2">
+                                <label class="form-check-label" for="cargaMasivaColaboradorCarga2">
+                                    <strong>Actualizar.</strong> Se reemplazan todos los usuarios cargados previamente por los que estén en el archivo cargado.
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Cargar colaboradores</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal carga masiva-->
 
     <!-- END MODALS -->
 

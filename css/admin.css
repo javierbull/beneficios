@@ -1915,14 +1915,18 @@ figure figcaption {
     width: calc(100% - 200px);
     z-index: 5;
     height: .25rem;
-    background-color: var(--primary6);
+    background-color: var(--gray4);
     left: 0;
     right: 0;
     top: 18px;
     margin: auto;
 }
 
-.progress-planilla .progress-bar {
+.progress-active {
+    background-color: var(--primary5);
+}
+
+.progress-success {
     background-color: var(--green5);
 }
 

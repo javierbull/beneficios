@@ -4059,16 +4059,50 @@
 
                         <fieldset>
                             <div class="step-form-title">
-                                <span class="step-form">2</span>
-                                <h6 class="heading-6">Elección del vale</h6>
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Elección del colaborador</h6>
                             </div>
                             
-                            
+                            <div class="row g-3 d-flex align-items-end">
+                                <div class="mb-3 form-group col-md-9">
+                                    <label for="asignarIndividualValesDisponibles" class="form-label">Vales disponibles</label>
+                                    <select class="form-select" aria-label="Default select example"
+                                        id="asignarIndividualValesDisponibles">
+                                        <option selected>Seleccione</option>
+                                        <option value="1">Rokys - 1/4 de pollo + papas + ensalada</option>
+                                        <option value="1">Rokys - 1/2 de pollo + papas + ensalada</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3 col-md-3">
+                                    <button class="btn link-btn">
+                                        <span class="material-symbols-outlined">
+                                            add
+                                        </span>
+                                        Agregar vale
+                                    </button>
+                                </div>
+                            </div>
                         </fieldset>
 
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">3</span>
+                                <h6 class="heading-6">Agregar saludo</h6>
+                            </div>
+                            
+                            <div class="mb-3 custom-textArea">
+                                <label for="saludoCumple" class="form-label">
+                                    Este saludo le llegará al colaborador a manera de una ventana emergente el día asignado al momento que ingrese a la plataforma
+                                </label>
+                                <textarea class="form-control" id="saludoCumple" rows="3" maxlength="200"
+                                    placeholder="Escriba un mensaje"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">4</span>
                                 <h6 class="heading-6">Programar asignación</h6>
                             </div>
                             <div class="form-check">

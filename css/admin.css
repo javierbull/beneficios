@@ -185,7 +185,7 @@ body {
 .link-btn {
     background-color: transparent;
     color: var(--blue5);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding-left: .5rem;
     padding-right: .5rem;
 }

@@ -495,16 +495,13 @@
                     <div class="navbar-actions__right">
                         <div class="btn-group">
                             <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
                                 Nuevo colaborador
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
                               <li><button class="dropdown-item showAdminPanel-colaboradoreNuevo" type="button">Individual</button></li>
                               <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCargaMasivaColaborador">Carga masiva</button></li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -2591,14 +2588,6 @@
                                             alt="...">
                                     </div>
                                 </div>
-                                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button> -->
                             </div>
                         </div>
                         <div class="card-admin inhouse-activacionesAnuales">
@@ -3065,13 +3054,29 @@
                 </nav>
 
                 <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-planilla">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+
                     <div class="navbar-actions__right">
-                        <button type="button" class="btn primary-btn showAdminPanel-nuevoCumple">
-                            <span class="material-symbols-outlined">
-                                add
+                        <button type="button" class="btn outline-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalGuardarCambiosPlanilla">
+                            <span class="material-symbols-outlined icon-fill">
+                                send
                             </span>
-                            Agregar cumpleaños
+                            Enviar saludo
                         </button>
+                        <div class="btn-group">
+                            <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Asignar vale
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><button class="dropdown-item showAdminPanel-colaboradoreNuevo" type="button">Individual</button></li>
+                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCargaMasivaColaborador">Asignación masiva</button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

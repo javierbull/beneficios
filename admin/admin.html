@@ -3624,14 +3624,14 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Datos de personales</h6>
                             </div>
-                            <div class="row">
-                                <div class="mb-3 form-group">
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorNombre" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="editarColaboradorNombre">
                                     <div class="text-help">Ingrese un nombre válido</div>
                                 </div>
     
-                                <div class="mb-3 form-group">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorApellidoPaterno" class="form-label">Apellido
                                         paterno</label>
                                     <input type="text" class="form-control" id="editarColaboradorApellidoPaterno">
@@ -3639,15 +3639,15 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="mb-3 form-group">
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorApellidoMaterno" class="form-label">Apellido
                                         materno</label>
                                     <input type="text" class="form-control" id="editarColaboradorApellidoMaterno">
                                     <div class="text-help">Ingrese un apellido válido</div>
                                 </div>
     
-                                <div class="mb-3 form-group">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorFechaNacimiento" class="form-label">Fecha de
                                         nacimiento</label>
                                     <input type="date" class="form-control" id="editarColaboradorFechaNacimiento">
@@ -3655,8 +3655,8 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="mb-3 form-group">
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorTipoDoc" class="form-label">Tipo de documento</label>
                                     <select class="form-select" aria-label="Default select example"
                                         id="editarColaboradorTipoDoc">
@@ -3665,44 +3665,42 @@
                                     </select>
                                 </div>
 
-                                <div class="mb-3 form-group">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorNumeroDoc" class="form-label">Número de
                                         documento</label>
                                     <input type="number" class="form-control" id="editarColaboradorNumeroDoc">
                                     <div class="text-help">Ingrese un número válido</div>
                                 </div>
-                            </div>
-
-                            
+                            </div>                            
                         </fieldset>
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">2</span>
                                 <h6 class="heading-6">Datos de contacto</h6>
                             </div>
-                            <div class="row">
-                                <div class="mb-3 form-group">
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorCorreoCorporativo" class="form-label">Correo
                                         corporativo</label>
                                     <input type="email" class="form-control" id="editarColaboradorCorreoCorporativo">
                                     <div class="text-help">Ingrese un correo válido</div>
                                 </div>
     
-                                <div class="mb-3 form-group">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorCorreoPersonal" class="form-label">Correo personal</label>
                                     <input type="email" class="form-control" id="editarColaboradorCorreoPersonal">
                                     <div class="text-help">Ingrese un correo válido</div>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="mb-3 form-group">
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorCelCorp" class="form-label">Celular corporativo</label>
                                     <input type="number" class="form-control" id="editarColaboradorCelCorp">
                                     <div class="text-help">Ingrese un númeor válido</div>
                                 </div>
     
-                                <div class="mb-3 form-group">
+                                <div class="mb-3 form-group col">
                                     <label for="editarColaboradorCelPer" class="form-label">Celular personal</label>
                                     <input type="number" class="form-control" id="editarColaboradorCelPer">
                                     <div class="text-help">Ingrese un númeor válido</div>
@@ -3969,7 +3967,7 @@
                                     <select class="form-select" aria-label="Default select example"
                                         id="asignarMasivoValeNombre">
                                         <option selected>Seleccione</option>
-                                        <option value="1"><span>50</span> Rokys - 1/4 de pollo + papas + ensalada</option>
+                                        <option value="1">Rokys - 1/4 de pollo + papas + ensalada</option>
                                     </select>
                                 </div>
 
@@ -3984,22 +3982,23 @@
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">3</span>
-                                <h6 class="heading-6">Tipo de carga</h6>
+                                <h6 class="heading-6">Programar asignación</h6>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
-                                    id="cargaMasivaColaboradorCarga1" checked>
-                                <label class="form-check-label" for="cargaMasivaColaboradorCarga1">
-                                    <strong>Registrar.</strong> Se agregan los nuevos usuarios registrados en el archivo cargado.
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionMasiva"
+                                    id="progAsignacionMasiva1" checked>
+                                <label class="form-check-label" for="progAsignacionMasiva1">
+                                    Asignar ahora
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
-                                    id="cargaMasivaColaboradorCarga2">
-                                <label class="form-check-label" for="cargaMasivaColaboradorCarga2">
-                                    <strong>Actualizar.</strong> Se reemplazan todos los usuarios cargados previamente por los que estén en el archivo cargado.
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionMasiva"
+                                    id="progAsignacionMasiva2">
+                                <label class="form-check-label" for="progAsignacionMasiva2">
+                                    Fecha personalizada
                                 </label>
                             </div>
+
                         </fieldset>
                     </form>
                 </div>

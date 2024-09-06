@@ -1910,6 +1910,11 @@ figure figcaption {
     background-color: var(--gray4);
 }
 
+.step-planilla-danger {
+    background-color: var(--red5);
+    color: var(--white);
+}
+
 .progress-planilla {
     position: absolute;
     width: calc(100% - 200px);
@@ -1928,6 +1933,10 @@ figure figcaption {
 
 .progress-success {
     background-color: var(--green5);
+}
+
+.progress-danger {
+    background-color: var(--red5);
 }
 
 /* Upload file */

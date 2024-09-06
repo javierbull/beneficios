@@ -384,6 +384,14 @@ $(document).ready(function () {
       $("#contentFechaAsigMasiva").hide();
     }
   });
+
+  $("input[name='radioProgAsignacionIndividual']").click(function() {
+    if ($("#progAsignacionIndividual2").is(":checked")) {
+      $("#contentFechaAsigIndividual").show();
+    } else {
+      $("#contentFechaAsigIndividual").hide();
+    }
+  });
   // END SHOW HIDE FECHA VALES
 
 

@@ -2071,8 +2071,6 @@ figure figcaption {
     border: 2px dashed var(--gray5);
     padding: 1rem;
     transition: background-color .1s linear .1s;
-    /* text-align: center;
-    position: relative; */
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -2116,3 +2114,9 @@ figure figcaption {
   }
 
   /* END DRAG & DROP */
+
+  /* CUMPLEAÑOS */
+  #contentFechaAsigMasiva {
+    display: none;
+  }
+  /* END CUMPLEAÑOS */

@@ -341,6 +341,7 @@ $(document).ready(function () {
   });
   // END UPLOAD PAGO PLAMILLA
 
+  // CHECK ALL
   $(function () {
     $('.checkAll').click(function () {
       if (this.checked) {
@@ -360,6 +361,18 @@ $(document).ready(function () {
       }
     });
   });
+  // END CHECK ALL
+
+  // SHOW HIDE FECHA VALES
+  $("input[name='radioProgAsignacionMasiva']").click(function() {
+    if ($("#progAsignacionMasiva2").is(":checked")) {
+      $("#contentFechaAsigMasiva").show();
+    } else {
+      $("#contentFechaAsigMasiva").hide();
+    }
+  });
+  // END SHOW HIDE FECHA VALES
+
 
 });
 

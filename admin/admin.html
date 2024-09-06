@@ -3913,7 +3913,7 @@
     </div>
     <!-- End solicitud enviada empresa-->
 
-    <!-- Modal carga masiva-->
+    <!-- Modal asignacion masiva-->
     <div class="modal fade" id="modalAsignacionMasiva" tabindex="-1" aria-labelledby="asignacionMasiva"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -4015,7 +4015,91 @@
             </div>
         </div>
     </div>
-    <!-- End Modal carga masiva-->
+    <!-- End Modal asignacion masiva-->
+
+    <!-- Modal asignacion individual-->
+    <div class="modal fade" id="modalAsignacionIndividual" tabindex="-1" aria-labelledby="asignacionIndividual"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="asignacionindividual">Asignación de vales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Elección del colaborador</h6>
+                            </div>
+                            
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col-md-9">
+                                    <label for="asignarIndividualColaborador" class="form-label">Colaborador</label>
+                                    <select class="form-select" aria-label="Default select example"
+                                        id="asignarIndividualColaborador">
+                                        <option selected>Seleccione</option>
+                                        <option value="1">45875698 - Juan Perez</option>
+                                        <option value="1">74586521 - Fernando Redondo</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3 form-group col-md-3">
+                                    <label for="asignarIndividualCumple" class="form-label">Cumpleaños</label>
+                                    <input type="date" class="form-control" id="asignarIndividualCumple">
+                                    <div class="text-help">Ingrese una fecha válida</div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Elección del vale</h6>
+                            </div>
+                            
+                            
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Programar asignación</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionMasiva"
+                                    id="progAsignacionMasiva1" checked>
+                                <label class="form-check-label" for="progAsignacionMasiva1">
+                                    Asignar ahora
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionMasiva"
+                                    id="progAsignacionMasiva2">
+                                <label class="form-check-label" for="progAsignacionMasiva2">
+                                    Fecha personalizada
+                                </label>
+                            </div>
+                            
+                            <div class="content-fecha-asignacion-masiva" id="contentFechaAsigMasiva">
+                                <div class="mb-3 form-group col-md-4">
+                                    <input type="date" class="form-control" id="proFechaAsignacionMasiva">
+                                    <div class="text-help">Ingrese una fecha válida</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Asignar vales</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal asignacion individual-->
 
     <!-- END MODALS -->
 

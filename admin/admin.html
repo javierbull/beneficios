@@ -4586,6 +4586,127 @@
     </div>
     <!-- End Modal saludo cumple calendar-->
 
+    <!-- Modal asignacion individual vale corporativo-->
+    <div class="modal fade" id="modalAsignacionValeIndividual" tabindex="-1" aria-labelledby="asignacionIndividual"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="asignacionIndividual">Asignación de vales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Elección del vale</h6>
+                            </div>
+
+                            <div class="vale-asignacion-individual">
+                                <div class="start">
+                                    <div class="vale-asignacion-individual--img">
+                                        <img src="../img/products/cards/rokys/comboFamiliar.png" alt="combo familiar rokys">
+                                    </div>
+    
+                                    <div class="vale-asignacion-individual__desc">
+                                        <h4>Combo familiar</h4>
+                                        <p>1 pollo + papas + ensalada + gaseosa 1lt</p>
+                                    </div>
+                                </div>
+
+                                <div class="end">
+                                    <div class="spinner-vale">
+                                        <label class="spinner-label">Cantidad</label>
+                                        <div class="product-quantity">
+                                            <button class="btn spinner-btn sub">
+                                                <span class="material-symbols-outlined">
+                                                    remove
+                                                </span>
+                                            </button>
+                                            <input type="number" class="input-spinner" value="1" min="1"></input>
+                                            <button class="btn spinner-btn add">
+                                                <span class="material-symbols-outlined">
+                                                    add
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Elección del colaborador</h6>
+                            </div>
+
+                            <div class="mb-3 form-group">
+                                <label for="asignarValeIndividualColaborador" class="form-label">Colaborador</label>
+                                <select class="form-select select2modal" aria-label="Default select example"
+                                    id="asignarValeIndividualColaborador">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">45875698 - Juan Perez</option>
+                                    <option value="1">74586521 - Fernando Redondo</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Agregar mensaje</h6>
+                            </div>
+                            
+                            <div class="mb-3 custom-textArea">
+                                <label for="saludoValeIndividual" class="form-label">
+                                    Este saludo le llegará al colaborador a manera de una ventana emergente el día asignado al momento que ingrese a la plataforma
+                                </label>
+                                <textarea class="form-control" id="saludoValeIndividual" rows="3" maxlength="200"
+                                    placeholder="Escriba un mensaje"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">4</span>
+                                <h6 class="heading-6">Programar asignación</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionIndividualVale"
+                                    id="progAsignacionIndividualVale1" checked>
+                                <label class="form-check-label" for="progAsignacionIndividualVale1">
+                                    Asignar ahora
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionIndividualVale"
+                                    id="progAsignacionIndividualVale2">
+                                <label class="form-check-label" for="progAsignacionIndividualVale2">
+                                    Fecha personalizada
+                                </label>
+                            </div>
+                            
+                            <div class="content-fecha-asignacion-individual" id="contentFechaAsigIndividualVale">
+                                <div class="mb-3 form-group col-md-3">
+                                    <input type="date" class="form-control" id="proFechaAsignacionindividualVale">
+                                    <div class="text-help">Ingrese una fecha válida</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Asignar vales</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal asignacion individual vale corporativo-->
+
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

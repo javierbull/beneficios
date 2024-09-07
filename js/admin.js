@@ -432,6 +432,14 @@ $(document).ready(function () {
       $("#contentFechaSaludoCumple").hide();
     }
   });
+
+  $("input[name='radioProgAsignacionIndividualVale']").click(function() {
+    if ($("#progAsignacionIndividualVale2").is(":checked")) {
+      $("#contentFechaAsigIndividualVale").show();
+    } else {
+      $("#contentFechaAsigIndividualVale").hide();
+    }
+  });
   // END SHOW HIDE FECHA VALES
 
   // SPINNER-VALE    

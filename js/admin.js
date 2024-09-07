@@ -397,16 +397,18 @@ $(document).ready(function () {
   // SPINNER-VALE    
     $('.add').click(function () {		
       var selectedInput = $(this).prev('.input-spinner');		
-        if (selectedInput.val() < 10) {		
-          selectedInput[0].stepUp(1);
-         }	
+        // if (selectedInput.val() < 10) {		
+        //   selectedInput[0].stepUp(1);
+        //  }	
+        selectedInput[0].stepUp(1);
     });
     
     $('.sub').click(function () {		
       var selectedInput = $(this).next('.input-spinner');		
-        if (selectedInput.val() > 0) {
-          selectedInput[0].stepDown(1);
-         }	
+        // if (selectedInput.val() > 0) {
+        //   selectedInput[0].stepDown(1);
+        //  }	
+         selectedInput[0].stepDown(1);
     });
     
 

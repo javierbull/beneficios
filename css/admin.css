@@ -584,6 +584,7 @@ input[type=number] {
     display: flex;
     align-items: center;
     gap: .25rem;
+    text-align: start;
 }
 
 .sidebar-item-db {
@@ -630,7 +631,7 @@ input[type=number] {
     display: none;
 }
 
-.sidebar-list-collapse--sedes li {
+.btn-toggle-nav li {
     margin-left: 30px;
 }
 

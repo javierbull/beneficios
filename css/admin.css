@@ -2125,7 +2125,8 @@ figure figcaption {
 #contentFechaAsigMasiva,
 #contentFechaAsigIndividual,
 #contentFechaSaludoCumple,
-#contentFechaAsigIndividualVale {
+#contentFechaAsigIndividualVale,
+#contentFechaAsigMasivaVale {
     display: none;
 }
 

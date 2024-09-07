@@ -440,6 +440,14 @@ $(document).ready(function () {
       $("#contentFechaAsigIndividualVale").hide();
     }
   });
+
+  $("input[name='radioProgAsignacionMasivaVale']").click(function() {
+    if ($("#progAsignacionMasivaVale2").is(":checked")) {
+      $("#contentFechaAsigMasivaVale").show();
+    } else {
+      $("#contentFechaAsigMasivaVale").hide();
+    }
+  });
   // END SHOW HIDE FECHA VALES
 
   // SPINNER-VALE    

@@ -4587,12 +4587,12 @@
     <!-- End Modal saludo cumple calendar-->
 
     <!-- Modal asignacion individual vale corporativo-->
-    <div class="modal fade" id="modalAsignacionValeIndividual" tabindex="-1" aria-labelledby="asignacionIndividual"
+    <div class="modal fade" id="modalAsignacionValeIndividual" tabindex="-1" aria-labelledby="asignacionIndividualVale"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="asignacionIndividual">Asignación de vales</h5>
+                    <h5 class="modal-title" id="asignacionIndividualVale">Asignación de vales</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -4706,6 +4706,73 @@
         </div>
     </div>
     <!-- End Modal asignacion individual vale corporativo-->
+
+    <!-- Modal asignacion masiva vale corporativo-->
+    <div class="modal fade" id="modalAsignacionValeMasiva" tabindex="-1" aria-labelledby="asignacionMasivaVale"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="asignacionMasivaVale">Asignación masiva de vales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="vale-asignacion-individual">
+                                <div class="start">
+                                    <div class="vale-asignacion-individual--img">
+                                        <img src="../img/products/cards/rokys/comboFamiliar.png" alt="combo familiar rokys">
+                                    </div>
+    
+                                    <div class="vale-asignacion-individual__desc">
+                                        <h4>Combo familiar</h4>
+                                        <p>1 pollo + papas + ensalada + gaseosa 1lt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Programar asignación</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionMasivaVale"
+                                    id="progAsignacionMasivaVale1" checked>
+                                <label class="form-check-label" for="progAsignacionMasivaVale1">
+                                    Asignar ahora
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioProgAsignacionMasivaVale"
+                                    id="progAsignacionMasivaVale2">
+                                <label class="form-check-label" for="progAsignacionMasivaVale2">
+                                    Fecha personalizada
+                                </label>
+                            </div>
+                            
+                            <div class="content-fecha-asignacion-masiva" id="contentFechaAsigMasivaVale">
+                                <div class="mb-3 form-group col-md-3">
+                                    <input type="date" class="form-control" id="proFechaAsignacionMasivaVale">
+                                    <div class="text-help">Ingrese una fecha válida</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Asignar vales</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal asignacion masiva vale corporativo-->
 
     <!-- END MODALS -->
 

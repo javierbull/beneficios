@@ -221,11 +221,14 @@ body {
 .link {
     color: var(--blue5);
 }
+
 /* End buttons */
 
 /* Inputs  */
 
-.form-control, .form-select, .select2-selection {
+.form-control,
+.form-select,
+.select2-selection {
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -491,6 +494,7 @@ input[type=number] {
 .danger-color {
     color: var(--red5);
 }
+
 /* End feedback colors */
 
 /* UI KIT */
@@ -2083,67 +2087,69 @@ figure figcaption {
     gap: .5rem;
     margin-bottom: 1rem;
 }
-  
-  .drop_zone.dragover {
+
+.drop_zone.dragover {
     background-color: var(--white);
-  }
+}
 
-  .drop_zone--text {
+.drop_zone--text {
     color: var(--gray7);
-  }
+}
 
-  .drop_zone--sizeFile {
+.drop_zone--sizeFile {
     font-size: .875rem;
     color: var(--gray5);
-  }
-  
-  .drop_zone > label > input {
+}
+
+.drop_zone>label>input {
     display: none;
-  }
+}
 
-  .files-container {
+.files-container {
     /* background-color: #BAD5FF; */
-  }
+}
 
-  .files-container .row {
+.files-container .row {
     margin-bottom: .5rem;
-  }
+}
 
-  .files-container .row .btn {
+.files-container .row .btn {
     width: 100%;
     margin-left: auto;
-  }
+}
 
-  /* END DRAG & DROP */
+/* END DRAG & DROP */
 
-  /* CUMPLEAÑOS */
-  #contentFechaAsigMasiva, #contentFechaAsigIndividual {
+/* CUMPLEAÑOS */
+#contentFechaAsigMasiva,
+#contentFechaAsigIndividual {
     display: none;
-  }
+}
 
-  .spinner-vale {
+.spinner-vale {
     /* background-color: #9BDAC9; */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    margin-bottom: .25rem;
+}
 
-  .spinner-label {
+.spinner-label {
     margin-bottom: .5rem;
-  }
+}
 
-  .spinner-btn {
+.spinner-btn {
     color: var(--white);
     background-color: var(--gray7);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 2rem;
-    min-width: 2rem;
-    max-height: 2rem;
-    max-width: 2rem;
-    font-size: .75rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    font-size: .5rem;
     padding: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -2179,6 +2185,70 @@ figure figcaption {
     font-size: 1.2rem;
 }
 
+.vale-asignacion-individual--img {
+    /* background-color: #BAD5FF; */
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
 
+.vale-asignacion-individual--img img {
+    width: 100%;
+    height: 100%;
+}
 
-  /* END CUMPLEAÑOS */
+.vale-asignacion-individual {
+    /*background-color: pink;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--gray3);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    padding: 1rem;
+}
+
+.vale-asignacion-individual .start {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vale-asignacion-individual .end {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.vale-asignacion-individual__desc h4 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.vale-asignacion-individual__desc p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.btn-delete-vale {
+    color: var(--red5);
+}
+
+.btn-delete-vale:hover {
+    color: var(--red5);
+    background-color: var(--red2);
+}
+
+/* END CUMPLEAÑOS */

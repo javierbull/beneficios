@@ -396,18 +396,12 @@ $(document).ready(function () {
 
   // SPINNER-VALE    
     $('.add').click(function () {		
-      var selectedInput = $(this).prev('.input-spinner');		
-        // if (selectedInput.val() < 10) {		
-        //   selectedInput[0].stepUp(1);
-        //  }	
+      var selectedInput = $(this).prev('.input-spinner');
         selectedInput[0].stepUp(1);
     });
     
     $('.sub').click(function () {		
-      var selectedInput = $(this).next('.input-spinner');		
-        // if (selectedInput.val() > 0) {
-        //   selectedInput[0].stepDown(1);
-        //  }	
+      var selectedInput = $(this).next('.input-spinner');
          selectedInput[0].stepDown(1);
     });
     

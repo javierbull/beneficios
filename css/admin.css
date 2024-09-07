@@ -2122,8 +2122,11 @@ figure figcaption {
   }
 
   .spinner-vale {
-    background-color: #9BDAC9;
+    /* background-color: #9BDAC9; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .spinner-label {
@@ -2149,6 +2152,18 @@ figure figcaption {
     -o-border-radius: 50%;
 }
 
+.spinner-btn:hover {
+    background-color: var(--gray7);
+    color: var(--white);
+}
+
+.spinner-btn:focus {
+    background-color: var(--gray7);
+    color: var(--white);
+    border: solid 1px var(--gray7);
+    box-shadow: 0px 0px 0px 3px rgba(160, 163, 189, 0.5);
+}
+
 .product-quantity {
     display: flex;
     align-items: center;
@@ -2159,6 +2174,10 @@ figure figcaption {
     text-align: center;
     width: 3rem;
     font-weight: 600;
+    border: none;
+    height: 2rem;
 }
+
+
 
   /* END CUMPLEAÑOS */

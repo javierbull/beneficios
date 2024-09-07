@@ -392,6 +392,14 @@ $(document).ready(function () {
       $("#contentFechaAsigIndividual").hide();
     }
   });
+
+  $("input[name='radioFechaSaludo']").click(function() {
+    if ($("#progSaludoCumple2").is(":checked")) {
+      $("#contentFechaSaludoCumple").show();
+    } else {
+      $("#contentFechaSaludoCumple").hide();
+    }
+  });
   // END SHOW HIDE FECHA VALES
 
   // SPINNER-VALE    

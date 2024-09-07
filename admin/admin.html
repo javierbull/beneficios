@@ -3087,7 +3087,7 @@
                 <div class="navbar-actions">
                     <div class="navbar-actions__right">
                         <button type="button" class="btn outline-btn" data-bs-toggle="modal"
-                            data-bs-target="#modalGuardarCambiosPlanilla">
+                            data-bs-target="#modalSaludoCumple">
                             <span class="material-symbols-outlined icon-fill">
                                 send
                             </span>
@@ -4054,7 +4054,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="asignacionindividual">Asignación de vales</h5>
+                    <h5 class="modal-title" id="asignacionIndividual">Asignación de vales</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -4088,7 +4088,7 @@
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">2</span>
-                                <h6 class="heading-6">Elección del colaborador</h6>
+                                <h6 class="heading-6">Elección del vale</h6>
                             </div>
                             
                             <div class="row g-3 d-flex align-items-end">
@@ -4244,6 +4244,96 @@
         </div>
     </div>
     <!-- End Modal asignacion individual-->
+
+    <!-- Modal saludo cumpleaños-->
+    <div class="modal fade" id="modalSaludoCumple" tabindex="-1" aria-labelledby="modalSaludoCumple"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSaludoCumple">Enviar saludo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Elección del colaborador</h6>
+                            </div>
+                            
+                            <div class="row g-3">
+                                <div class="mb-3 form-group col-md-9">
+                                    <label for="saludoCumpleColaborador" class="form-label">Colaborador</label>
+                                    <select class="form-select select2modal" aria-label="Default select example"
+                                        id="asaludoCumpleolaborador">
+                                        <option selected>Seleccione</option>
+                                        <option value="1">45875698 - Juan Perez</option>
+                                        <option value="1">74586521 - Fernando Redondo</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3 form-group col-md-3">
+                                    <label for="asignarIndividualCumple" class="form-label">Cumpleaños</label>
+                                    <input type="date" class="form-control" id="asignarIndividualCumple">
+                                    <div class="text-help">Ingrese una fecha válida</div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Agregar saludo</h6>
+                            </div>
+                            
+                            <div class="mb-3 custom-textArea">
+                                <label for="saludoCumpleTextArea" class="form-label">
+                                    Este saludo le llegará al cliente a manera de una ventana emergente al momento que ingrese a la plataforma <strong>el día de su cumpleaños</strong>
+                                </label>
+                                <textarea class="form-control" id="saludoCumpleTextArea" rows="3" maxlength="200"
+                                    placeholder="Escriba un mensaje"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">4</span>
+                                <h6 class="heading-6">Programar asignación</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioFechaSaludo"
+                                    id="progSaludoCumple1" checked>
+                                <label class="form-check-label" for="progSaludoCumple1">
+                                    Asignar ahora
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioFechaSaludo"
+                                    id="progSaludoCumple2">
+                                <label class="form-check-label" for="progSaludoCumple2">
+                                    Fecha personalizada
+                                </label>
+                            </div>
+                            
+                            <div class="content-fecha-asignacion-individual" id="contentFechaSaludoCumple">
+                                <div class="mb-3 form-group col-md-3">
+                                    <input type="date" class="form-control" id="progSaludoCumple">
+                                    <div class="text-help">Ingrese una fecha válida</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Enviar saludo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End saludo cumpleaños-->
 
     <!-- END MODALS -->
 

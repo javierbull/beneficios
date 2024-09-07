@@ -2143,7 +2143,7 @@ figure figcaption {
     min-width: 2rem;
     max-height: 2rem;
     max-width: 2rem;
-    font-size: .875rem;
+    font-size: .75rem;
     padding: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -2167,15 +2167,16 @@ figure figcaption {
 .product-quantity {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .25rem;
 }
 
 .input-spinner {
     text-align: center;
-    width: 3rem;
+    width: 2.5rem;
     font-weight: 600;
     border: none;
     height: 2rem;
+    font-size: 1.2rem;
 }
 
 

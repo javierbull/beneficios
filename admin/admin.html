@@ -3085,6 +3085,9 @@
                 </nav>
 
                 <div class="navbar-actions">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCumpleCalendar">
+                        Launch demo modal
+                      </button>
                     <div class="navbar-actions__right">
                         <button type="button" class="btn outline-btn" data-bs-toggle="modal"
                             data-bs-target="#modalSaludoCumple">
@@ -4326,6 +4329,73 @@
         </div>
     </div>
     <!-- End saludo cumpleaños-->
+
+    <!-- Modal saludo cumple calendar-->
+    <div class="modal fade" id="modalCumpleCalendar" tabindex="-1" aria-labelledby="modalCumpleCalendar"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="modalCumpleCalendar">Cumpleaños del 24/08</h5>
+                    <p class="mb-0">
+                        Estos colaboradores cumplen años:
+                    </p>
+                    <div class="wrap-cards-saludo-calendar">
+                        <div class="card-saludo-calendar">
+                            <div class="start">
+                                <h5 class="heading-6">Juan Perez</h5>
+                                <p>Sede Surco</p>
+                            </div>
+                            <div class="end">
+                                <button class="btn primary-btn">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                    Asignar vale
+                                </button>
+                                <button class="btn outline-btn">
+                                    <span class="material-symbols-outlined icon-fill">
+                                        send
+                                    </span>
+                                    Enviar saludo
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card-saludo-calendar">
+                            <div class="start">
+                                <h5 class="heading-6">Ana Ospina</h5>
+                                <p>Sede Surco</p>
+                            </div>
+                            <div class="end">
+                                <button class="btn primary-btn">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                    Asignar vale
+                                </button>
+                                <button class="btn outline-btn">
+                                    <span class="material-symbols-outlined icon-fill">
+                                        send
+                                    </span>
+                                    Enviar saludo
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal saludo cumple calendar-->
 
     <!-- END MODALS -->
 

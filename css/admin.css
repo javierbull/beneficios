@@ -2260,4 +2260,43 @@ figure figcaption {
     gap: .5rem;
 }
 
+.card-saludo-calendar {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    border: solid 1px var(--gray3);
+}
+
+.card-saludo-calendar .start {
+    text-align: start;
+}
+
+.card-saludo-calendar .start h5 {
+    margin-bottom: 0;
+}
+
+.card-saludo-calendar .start p {
+    margin-bottom: 0;
+    color: var(--gray5);
+}
+
+.card-saludo-calendar .end {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.wrap-cards-saludo-calendar {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
 /* END CUMPLEAÑOS */

@@ -3218,114 +3218,61 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-vales-disponibles" role="tabpanel"
                                 aria-labelledby="pills-vales-disponibles-tab">
-                                <table class="table dtable align-middle table-admin">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">DNI/CE</th>
-                                            <th scope="col">Nombre</th>
-                                            <th scope="col">Correo registrado</th>
-                                            <th scope="col">Monto</th>
-                                            <th scope="col">Sede</th>
-                                            <th scope="col">
-                                                <input type="checkbox" name="checkAll" class="checkAll">
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>75462584</td>
-                                            <td>Sara Torres Saldaña</td>
-                                            <td>storres@mail.com</td>
-                                            <td>S/ 50.00</td>
-                                            <td>La Victoria</td>
-                                            <td class="table-actions">
-                                                <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
-                                                <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                                    data-bs-target="#modalDescuentoPlanillaIndividual">
-                                                    <span class="material-symbols-outlined">
-                                                        send
-                                                    </span>
+                                <div class="wrap-vales-corporativos">
+                                    <div class="vale-corporativo">
+                                        <div class="start">
+                                            <div class="wrap-img-vale-corporativo">
+                                                <img src="../img/products/cards/rokys/comboFamiliar.png" alt="Combo familiar Rokys">
+                                            </div>
+                                            <div class="vale-corporativo__desc">
+                                                <h4 class="heading-6">Combo familiar</h4>
+                                                <p>Disponibles</p>
+                                                <p><strong>200</strong></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="end">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Asignar vale
                                                 </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>45896584</td>
-                                            <td>Juan Perez Soto </td>
-                                            <td>jperezs@mail.com</td>
-                                            <td>S/ 100.00</td>
-                                            <td>Lince</td>
-                                            <td class="table-actions">
-                                                <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
-                                                <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                                    data-bs-target="#modalDescuentoPlanillaIndividual">
-                                                    <span class="material-symbols-outlined">
-                                                        send
-                                                    </span>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeIndividual">Individual</button></li>
+                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeMasiva">Asignación masiva</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="vale-corporativo">
+                                        <div class="start">
+                                            <div class="wrap-img-vale-corporativo">
+                                                <img src="../img/products/cards/kfc.jpg" alt="Combo familiar Rokys">
+                                            </div>
+                                            <div class="vale-corporativo__desc">
+                                                <h4 class="heading-6">Combo personal</h4>
+                                                <p>Disponibles</p>
+                                                <p><strong>200</strong></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="end">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Asignar vale
                                                 </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeIndividual">Individual</button></li>
+                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeMasiva">Asignación masiva</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="pills-vales-asignados" role="tabpanel"
                                 aria-labelledby="pills-vales-asignados-tab">
-                                <table class="table dtable align-middle table-admin">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">DNI/CE</th>
-                                            <th scope="col">Nombre</th>
-                                            <th scope="col">Correo registrado</th>
-                                            <th scope="col">Monto</th>
-                                            <th scope="col">Sede</th>
-                                            <th scope="col">Estado</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>74526589</td>
-                                            <td>Juan Carlos Perez</td>
-                                            <td>jcperez@mail.com</td>
-                                            <td>S/ 50.00</td>
-                                            <td>La Victoria</td>
-                                            <td>
-                                                <span class="tag tag-success">
-                                                    Aprobado
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>78545695</td>
-                                            <td>Diana Salaverry Paredes</td>
-                                            <td>dsalaverry@mail.com</td>
-                                            <td>S/ 80.00</td>
-                                            <td>La Victoria</td>
-                                            <td>
-                                                <span class="tag tag-success">
-                                                    Aprobado
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>45879652</td>
-                                            <td>María Torres Guevara</td>
-                                            <td>mtorres@mail.com</td>
-                                            <td>S/ 100.00</td>
-                                            <td>Miraflores</td>
-                                            <td>
-                                                <span class="tag tag-success">
-                                                    Aprobado
-                                                </span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                
                             </div>
                         </div>
                     </div>

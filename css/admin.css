@@ -2217,6 +2217,7 @@ figure figcaption {
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
     padding: 1rem;
+
 }
 
 .vale-asignacion-individual .start {
@@ -2249,6 +2250,12 @@ figure figcaption {
 .btn-delete-vale:hover {
     color: var(--red5);
     background-color: var(--red2);
+}
+
+.wrap-vales-individuales {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 /* END CUMPLEAÑOS */

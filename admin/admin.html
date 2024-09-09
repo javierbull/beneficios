@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css">
     <link rel="stylesheet" href="../js/plugin/select2/select2.min.css">
-	<link rel="stylesheet" href="../js/plugin/select2/select2-bootstrap-5-theme.min.css">
+    <link rel="stylesheet" href="../js/plugin/select2/select2-bootstrap-5-theme.min.css">
     <link rel="stylesheet" href="../css/admin.css">
     <!-- Librerias -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/plugin/calendarjs/index.global.js"></script>
-    
+
 </head>
 
 <body>
@@ -360,11 +360,9 @@
 
                             </div>
                         </div>
-
                     </div>
 
                     <div class="sidebar-events">
-
                         <div class="card-admin wrap-events">
                             <h2 class="card-admin__title">Mis activaciones</h2>
 
@@ -462,6 +460,12 @@
                                 Ver todos
                             </button>
                         </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalBeePremium">
+                            Modal bee premium
+                        </button>
                     </div>
                 </div>
             </div>
@@ -525,12 +529,15 @@
 
                     <div class="navbar-actions__right">
                         <div class="btn-group">
-                            <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Nuevo colaborador
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
-                              <li><button class="dropdown-item showAdminPanel-colaboradoreNuevo" type="button">Individual</button></li>
-                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCargaMasivaColaborador">Carga masiva</button></li>
+                                <li><button class="dropdown-item showAdminPanel-colaboradoreNuevo"
+                                        type="button">Individual</button></li>
+                                <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#modalCargaMasivaColaborador">Carga masiva</button></li>
                             </ul>
                         </div>
                     </div>
@@ -562,13 +569,15 @@
                                     </span>
                                 </td>
                                 <td class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEditarColaborador">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditarColaborador">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarColaborador">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminarColaborador">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -587,13 +596,15 @@
                                     </span>
                                 </td>
                                 <td class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEditarColaborador">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditarColaborador">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarColaborador">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminarColaborador">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -612,13 +623,15 @@
                                     </span>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEditarColaborador">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditarColaborador">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal" data-bs-target="#modalEliminarColaborador">
+                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminarColaborador">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
@@ -938,7 +951,8 @@
                         <h2 class="card-admin__title">Datos de tu empresa:</h2>
                         <div class="alert alert-info" role="alert">
                             Para modificar estos datos debes contactarte con tu asesor comercial.
-                            <button class="btn link-btn" data-bs-toggle="modal" data-bs-target="#modalActualizardatosEmpresa">
+                            <button class="btn link-btn" data-bs-toggle="modal"
+                                data-bs-target="#modalActualizardatosEmpresa">
                                 Solicitar cambio
                             </button>
                             <span class="material-symbols-outlined">
@@ -1240,8 +1254,8 @@
                                 </div>
                             </button>
                         </h2>
-                        <div id="collapseNuevaSedeOne" class="accordion-collapse collapse" aria-labelledby="nuevaSedeOne"
-                            data-bs-parent="#accordionSedes">
+                        <div id="collapseNuevaSedeOne" class="accordion-collapse collapse"
+                            aria-labelledby="nuevaSedeOne" data-bs-parent="#accordionSedes">
                             <div class="accordion-body">
                                 <form>
                                     <div class="mb-3">
@@ -1249,10 +1263,11 @@
                                         <input type="text" class="form-control" id="nuevaSedeNombreItem1">
                                         <div class="text-help">Ingrese un nombre válido</div>
                                     </div>
-            
+
                                     <div class="row g-3">
                                         <div class="mb-3 form-group col">
-                                            <label for="nuevaSedeDepartamentoItem1" class="form-label">Departamento</label>
+                                            <label for="nuevaSedeDepartamentoItem1"
+                                                class="form-label">Departamento</label>
                                             <select class="form-select" aria-label="Default select example"
                                                 id="nuevaSedeDepartamentoItem1">
                                                 <option selected>Seleccione</option>
@@ -1260,7 +1275,7 @@
                                                 <option value="2">Arequipa</option>
                                             </select>
                                         </div>
-            
+
                                         <div class="mb-3 form-group col">
                                             <label for="nuevaSedeProvinciaItem1" class="form-label">Provinvia</label>
                                             <select class="form-select" aria-label="Default select example"
@@ -1271,7 +1286,7 @@
                                             </select>
                                         </div>
                                     </div>
-            
+
                                     <div class="mb-3 form-group">
                                         <label for="nuevaSedeDistritoItem1" class="form-label">Distrito</label>
                                         <select class="form-select" aria-label="Default select example"
@@ -1281,13 +1296,13 @@
                                             <option value="2">Magdalena</option>
                                         </select>
                                     </div>
-            
+
                                     <div class="mb-3">
                                         <label for="nuevaSedeDirecciónItem1" class="form-label">Dirección</label>
                                         <input type="text" class="form-control" id="nuevaSedeDirecciónItem1">
                                         <div class="text-help">Ingrese una dirección válida</div>
                                     </div>
-            
+
                                     <div class="form-actions-between">
                                         <button type="button" class="btn danger-outline-btn">
                                             <span class="material-symbols-outlined">
@@ -1295,7 +1310,7 @@
                                             </span>
                                             Eliminar
                                         </button>
-            
+
                                         <button type="button" class="btn primary-btn">
                                             Guardar
                                         </button>
@@ -1317,8 +1332,8 @@
                                 </div>
                             </button>
                         </h2>
-                        <div id="collapseNuevaSedeTwo" class="accordion-collapse collapse" aria-labelledby="nuevaSedeTwo"
-                            data-bs-parent="#accordionSedes">
+                        <div id="collapseNuevaSedeTwo" class="accordion-collapse collapse"
+                            aria-labelledby="nuevaSedeTwo" data-bs-parent="#accordionSedes">
                             <div class="accordion-body">
                                 <form>
                                     <div class="mb-3">
@@ -1326,10 +1341,11 @@
                                         <input type="text" class="form-control" id="nuevaSedeNombreItem2">
                                         <div class="text-help">Ingrese un nombre válido</div>
                                     </div>
-            
+
                                     <div class="row g-3">
                                         <div class="mb-3 form-group col">
-                                            <label for="nuevaSedeDepartamentoItem2" class="form-label">Departamento</label>
+                                            <label for="nuevaSedeDepartamentoItem2"
+                                                class="form-label">Departamento</label>
                                             <select class="form-select" aria-label="Default select example"
                                                 id="nuevaSedeDepartamentoItem2">
                                                 <option selected>Seleccione</option>
@@ -1337,7 +1353,7 @@
                                                 <option value="2">Arequipa</option>
                                             </select>
                                         </div>
-            
+
                                         <div class="mb-3 form-group col">
                                             <label for="nuevaSedeProvinciaItem2" class="form-label">Provinvia</label>
                                             <select class="form-select" aria-label="Default select example"
@@ -1348,7 +1364,7 @@
                                             </select>
                                         </div>
                                     </div>
-            
+
                                     <div class="mb-3 form-group">
                                         <label for="nuevaSedeDistritoItem2" class="form-label">Distrito</label>
                                         <select class="form-select" aria-label="Default select example"
@@ -1358,13 +1374,13 @@
                                             <option value="2">Magdalena</option>
                                         </select>
                                     </div>
-            
+
                                     <div class="mb-3">
                                         <label for="nuevaSedeDirecciónItem2" class="form-label">Dirección</label>
                                         <input type="text" class="form-control" id="nuevaSedeDirecciónItem2">
                                         <div class="text-help">Ingrese una dirección válida</div>
                                     </div>
-            
+
                                     <div class="form-actions-between">
                                         <button type="button" class="btn danger-outline-btn">
                                             <span class="material-symbols-outlined">
@@ -1372,7 +1388,7 @@
                                             </span>
                                             Eliminar
                                         </button>
-            
+
                                         <button type="button" class="btn primary-btn">
                                             Guardar
                                         </button>
@@ -1408,8 +1424,7 @@
 
                             <div class="mb-3 form-group col">
                                 <label for="nuevaSedeProvincia" class="form-label">Provinvia</label>
-                                <select class="form-select" aria-label="Default select example"
-                                    id="nuevaSedeProvincia">
+                                <select class="form-select" aria-label="Default select example" id="nuevaSedeProvincia">
                                     <option selected>Seleccione</option>
                                     <option value="1">Lima</option>
                                     <option value="2">Callao</option>
@@ -1419,8 +1434,7 @@
 
                         <div class="mb-3 form-group">
                             <label for="nuevaSedeDistrito" class="form-label">Distrito</label>
-                            <select class="form-select" aria-label="Default select example"
-                                id="nuevaSedeDistrito">
+                            <select class="form-select" aria-label="Default select example" id="nuevaSedeDistrito">
                                 <option selected>Seleccione</option>
                                 <option value="1">Lince</option>
                                 <option value="2">Magdalena</option>
@@ -1746,8 +1760,8 @@
                 <div class="card-planilla" id="planilla-compras">
                     <div class="steps-planilla">
                         <div class="progress progress-planilla">
-                            <div class="progress-bar progress-active" role="progressbar" style="width: 50%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-active" role="progressbar" style="width: 50%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
                         <div class="step-item-planilla">
@@ -1816,8 +1830,8 @@
                 <div class="card-planilla" id="planilla-compras">
                     <div class="steps-planilla">
                         <div class="progress progress-planilla">
-                            <div class="progress-bar progress-active" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-active" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
                         <div class="step-item-planilla">
@@ -1886,11 +1900,11 @@
                 <div class="card-planilla" id="planilla-compras">
                     <div class="steps-planilla">
                         <div class="progress progress-planilla">
-                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             </div>
-                            <div class="progress-bar progress-active" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-active" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
                         <div class="step-item-planilla">
@@ -1959,10 +1973,10 @@
                 <div class="card-planilla" id="planilla-aprobar">
                     <div class="steps-planilla">
                         <div class="progress progress-planilla">
-                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar progress-active" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-active" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="step-item-planilla">
                             <div class="step-button-planilla step-planilla-active">
@@ -2030,10 +2044,10 @@
                 <div class="card-planilla" id="planilla-aprobar">
                     <div class="steps-planilla">
                         <div class="progress progress-planilla">
-                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="step-item-planilla">
                             <div class="step-button-planilla step-planilla-active">
@@ -2094,10 +2108,10 @@
                 <div class="card-planilla" id="planilla-aprobar">
                     <div class="steps-planilla">
                         <div class="progress progress-planilla">
-                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar progress-danger" role="progressbar" style="width: 100%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-danger" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <div class="step-item-planilla">
                             <div class="step-button-planilla step-planilla-active">
@@ -3085,9 +3099,10 @@
                 </nav>
 
                 <div class="navbar-actions">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCumpleCalendar">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalCumpleCalendar">
                         Launch demo modal
-                      </button>
+                    </button>
                     <div class="navbar-actions__right">
                         <button type="button" class="btn outline-btn" data-bs-toggle="modal"
                             data-bs-target="#modalSaludoCumple">
@@ -3097,12 +3112,15 @@
                             Enviar saludo
                         </button>
                         <div class="btn-group">
-                            <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Asignar vale
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
-                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionIndividual">Individual</button></li>
-                              <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionMasiva">Asignación masiva</button></li>
+                                <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#modalAsignacionIndividual">Individual</button></li>
+                                <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#modalAsignacionMasiva">Asignación masiva</button></li>
                             </ul>
                         </div>
                     </div>
@@ -3221,7 +3239,7 @@
                                 </button>
                             </li>
                         </ul>
-        
+
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-vales-disponibles" role="tabpanel"
                                 aria-labelledby="pills-vales-disponibles-tab">
@@ -3229,7 +3247,8 @@
                                     <div class="vale-corporativo">
                                         <div class="start">
                                             <div class="wrap-img-vale-corporativo">
-                                                <img src="../img/products/cards/rokys/comboFamiliar.png" alt="Combo familiar Rokys">
+                                                <img src="../img/products/cards/rokys/comboFamiliar.png"
+                                                    alt="Combo familiar Rokys">
                                             </div>
                                             <div class="vale-corporativo__desc">
                                                 <h4 class="heading-6">Combo familiar</h4>
@@ -3240,12 +3259,19 @@
 
                                         <div class="end">
                                             <div class="btn-group">
-                                                <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <button type="button" class="btn primary-btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
                                                     Asignar vale
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeIndividual">Individual</button></li>
-                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeMasiva">Asignación masiva</button></li>
+                                                    <li><button class="dropdown-item" type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#modalAsignacionValeIndividual">Individual</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item" type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#modalAsignacionValeMasiva">Asignación
+                                                            masiva</button></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -3265,12 +3291,19 @@
 
                                         <div class="end">
                                             <div class="btn-group">
-                                                <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <button type="button" class="btn primary-btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
                                                     Asignar vale
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeIndividual">Individual</button></li>
-                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignacionValeMasiva">Asignación masiva</button></li>
+                                                    <li><button class="dropdown-item" type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#modalAsignacionValeIndividual">Individual</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item" type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#modalAsignacionValeMasiva">Asignación
+                                                            masiva</button></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -3283,7 +3316,8 @@
                                     <div class="vale-corporativo">
                                         <div class="start">
                                             <div class="wrap-img-vale-corporativo">
-                                                <img src="../img/products/cards/rokys/comboFamiliar.png" alt="Combo familiar Rokys">
+                                                <img src="../img/products/cards/rokys/comboFamiliar.png"
+                                                    alt="Combo familiar Rokys">
                                             </div>
                                             <div class="vale-corporativo__desc">
                                                 <h4 class="heading-6">Combo familiar</h4>
@@ -3314,13 +3348,12 @@
                         <div class="carousel-mini-banner">
                             <div id="carouselVales" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselVales"
-                                        data-bs-slide-to="0" class="active" aria-current="true"
-                                        aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselVales"
-                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselVales"
-                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -3387,7 +3420,8 @@
                 <div class="modal-body">
                     <h5 class="modal-title" id="confirmDescuentoplanilla">Enviar compras</h5>
                     <p class="mb-0">
-                        Las compras seleccionadas procederán a enviarse y las demás quedarán rechazadas. Recuerda que esta acción no podrá deshacerse.
+                        Las compras seleccionadas procederán a enviarse y las demás quedarán rechazadas. Recuerda que
+                        esta acción no podrá deshacerse.
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -3405,7 +3439,6 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -3430,7 +3463,6 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -3773,7 +3805,8 @@
                         <div class="row g-3">
                             <div class="mb-3 form-group col">
                                 <label for="editarSedeDepartamento" class="form-label">Departamento</label>
-                                <select class="form-select" aria-label="Default select example" id="editarSedeDepartamento">
+                                <select class="form-select" aria-label="Default select example"
+                                    id="editarSedeDepartamento">
                                     <option selected>Seleccione</option>
                                     <option value="1">Lima</option>
                                     <option value="2">Arequipa</option>
@@ -3782,7 +3815,8 @@
 
                             <div class="mb-3 form-group col">
                                 <label for="editarSedeProvincia" class="form-label">Provincia</label>
-                                <select class="form-select" aria-label="Default select example" id="editarSedeProvincia">
+                                <select class="form-select" aria-label="Default select example"
+                                    id="editarSedeProvincia">
                                     <option selected>Seleccione</option>
                                     <option value="1">Lima</option>
                                     <option value="2">Callao</option>
@@ -3861,7 +3895,7 @@
                                     <input type="text" class="form-control" id="editarColaboradorNombre">
                                     <div class="text-help">Ingrese un nombre válido</div>
                                 </div>
-    
+
                                 <div class="mb-3 form-group col">
                                     <label for="editarColaboradorApellidoPaterno" class="form-label">Apellido
                                         paterno</label>
@@ -3877,7 +3911,7 @@
                                     <input type="text" class="form-control" id="editarColaboradorApellidoMaterno">
                                     <div class="text-help">Ingrese un apellido válido</div>
                                 </div>
-    
+
                                 <div class="mb-3 form-group col">
                                     <label for="editarColaboradorFechaNacimiento" class="form-label">Fecha de
                                         nacimiento</label>
@@ -3902,7 +3936,7 @@
                                     <input type="number" class="form-control" id="editarColaboradorNumeroDoc">
                                     <div class="text-help">Ingrese un número válido</div>
                                 </div>
-                            </div>                            
+                            </div>
                         </fieldset>
                         <fieldset>
                             <div class="step-form-title">
@@ -3916,9 +3950,10 @@
                                     <input type="email" class="form-control" id="editarColaboradorCorreoCorporativo">
                                     <div class="text-help">Ingrese un correo válido</div>
                                 </div>
-    
+
                                 <div class="mb-3 form-group col">
-                                    <label for="editarColaboradorCorreoPersonal" class="form-label">Correo personal</label>
+                                    <label for="editarColaboradorCorreoPersonal" class="form-label">Correo
+                                        personal</label>
                                     <input type="email" class="form-control" id="editarColaboradorCorreoPersonal">
                                     <div class="text-help">Ingrese un correo válido</div>
                                 </div>
@@ -3930,7 +3965,7 @@
                                     <input type="number" class="form-control" id="editarColaboradorCelCorp">
                                     <div class="text-help">Ingrese un númeor válido</div>
                                 </div>
-    
+
                                 <div class="mb-3 form-group col">
                                     <label for="editarColaboradorCelPer" class="form-label">Celular personal</label>
                                     <input type="number" class="form-control" id="editarColaboradorCelPer">
@@ -3979,7 +4014,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </fieldset>      
+                        </fieldset>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -4019,16 +4054,17 @@
                             <div id="theWidget" class="dnd-file-upload-widget">
                                 <div class="form-group drop_zone">
                                     <label class="btn outline-btn">
-                                      <span class="material-symbols-outlined icon-fill">
-                                          upload_2
-                                      </span>
-                                      Sube tu archivo
-                                      <input type="file" multiple="" />
+                                        <span class="material-symbols-outlined icon-fill">
+                                            upload_2
+                                        </span>
+                                        Sube tu archivo
+                                        <input type="file" multiple="" />
                                     </label>
                                     <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
-                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10 MB.</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                        MB.</span>
                                 </div>
-                              
+
                                 <div class="files-container"></div>
                             </div>
                         </fieldset>
@@ -4042,21 +4078,24 @@
                                 <input class="form-check-input" type="radio" name="radioTipoPerfil"
                                     id="cargaMasivaColaboradorTipo1" checked>
                                 <label class="form-check-label" for="cargaMasivaColaboradorTipo1">
-                                    <strong>Colaborador.</strong> Toda persona que forme parte de la planilla de la empresa.
+                                    <strong>Colaborador.</strong> Toda persona que forme parte de la planilla de la
+                                    empresa.
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="radioTipoPerfil"
                                     id="cargaMasivaColaboradorTipo2">
                                 <label class="form-check-label" for="cargaMasivaColaboradorTipo2">
-                                    <strong>Externo.</strong> Cualquier persona que no forme parte de la planilla de la empresa pero colaboran para la empresa. (Ejemplo: Proveedores)
+                                    <strong>Externo.</strong> Cualquier persona que no forme parte de la planilla de la
+                                    empresa pero colaboran para la empresa. (Ejemplo: Proveedores)
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="radioTipoPerfil"
                                     id="cargaMasivaColaboradorTipo3">
                                 <label class="form-check-label" for="cargaMasivaColaboradorTipo3">
-                                    <strong>Invitado.</strong> Personas que tienen otro tipo de relación con la empresa. (Ejemplo: Clientes, estudiantes, etc) 
+                                    <strong>Invitado.</strong> Personas que tienen otro tipo de relación con la empresa.
+                                    (Ejemplo: Clientes, estudiantes, etc)
                                 </label>
                             </div>
                         </fieldset>
@@ -4070,14 +4109,16 @@
                                 <input class="form-check-input" type="radio" name="radioTipoPerfil"
                                     id="cargaMasivaColaboradorCarga1" checked>
                                 <label class="form-check-label" for="cargaMasivaColaboradorCarga1">
-                                    <strong>Registrar.</strong> Se agregan los nuevos usuarios registrados en el archivo cargado.
+                                    <strong>Registrar.</strong> Se agregan los nuevos usuarios registrados en el archivo
+                                    cargado.
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="radioTipoPerfil"
                                     id="cargaMasivaColaboradorCarga2">
                                 <label class="form-check-label" for="cargaMasivaColaboradorCarga2">
-                                    <strong>Actualizar.</strong> Se reemplazan todos los usuarios cargados previamente por los que estén en el archivo cargado.
+                                    <strong>Actualizar.</strong> Se reemplazan todos los usuarios cargados previamente
+                                    por los que estén en el archivo cargado.
                                 </label>
                             </div>
                         </fieldset>
@@ -4104,12 +4145,14 @@
                 <div class="modal-body">
                     <h5 class="modal-title" id="actualizarDatosEmpresa">Solicitud de actualización de datos</h5>
                     <p class="mb-0">
-                        Para cambiar los datos de tu empresa, enviaremos una solicitud a tu ejecutivo comercial para que se ponga en contacto contigo.
+                        Para cambiar los datos de tu empresa, enviaremos una solicitud a tu ejecutivo comercial para que
+                        se ponga en contacto contigo.
                     </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn" data-bs-target="#solciitudEnviadaDatosEmpresa" data-bs-toggle="modal">
+                    <button type="button" class="btn primary-btn" data-bs-target="#solciitudEnviadaDatosEmpresa"
+                        data-bs-toggle="modal">
                         Enviar Solicitud
                     </button>
                 </div>
@@ -4119,8 +4162,8 @@
     <!-- End actualizavion de datos empresa-->
 
     <!-- Modal solicitud enviada empresa-->
-    <div class="modal fade" id="solciitudEnviadaDatosEmpresa" tabindex="-1" aria-labelledby="solciitudEnviadaDatosEmpresa"
-        aria-hidden="true">
+    <div class="modal fade" id="solciitudEnviadaDatosEmpresa" tabindex="-1"
+        aria-labelledby="solciitudEnviadaDatosEmpresa" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -4172,16 +4215,17 @@
                             <div id="theWidget" class="dnd-file-upload-widget">
                                 <div class="form-group drop_zone">
                                     <label class="btn outline-btn">
-                                      <span class="material-symbols-outlined icon-fill">
-                                          upload_2
-                                      </span>
-                                      Sube tu archivo
-                                      <input type="file" multiple="" />
+                                        <span class="material-symbols-outlined icon-fill">
+                                            upload_2
+                                        </span>
+                                        Sube tu archivo
+                                        <input type="file" multiple="" />
                                     </label>
                                     <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
-                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10 MB.</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                        MB.</span>
                                 </div>
-                              
+
                                 <div class="files-container"></div>
                             </div>
                         </fieldset>
@@ -4191,7 +4235,7 @@
                                 <span class="step-form">2</span>
                                 <h6 class="heading-6">Elección del vale</h6>
                             </div>
-                            
+
                             <div class="row g-3">
                                 <div class="mb-3 form-group col-md-10">
                                     <label for="asignarMasivoValeNombre" class="form-label">Vales disponibles</label>
@@ -4229,7 +4273,7 @@
                                     Fecha personalizada
                                 </label>
                             </div>
-                            
+
                             <div class="content-fecha-asignacion-masiva" id="contentFechaAsigMasiva">
                                 <div class="mb-3 form-group col-md-3">
                                     <input type="date" class="form-control" id="proFechaAsignacionMasiva">
@@ -4265,7 +4309,7 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Elección del colaborador</h6>
                             </div>
-                            
+
                             <div class="row g-3">
                                 <div class="mb-3 form-group col-md-9">
                                     <label for="asignarIndividualColaborador" class="form-label">Colaborador</label>
@@ -4290,10 +4334,11 @@
                                 <span class="step-form">2</span>
                                 <h6 class="heading-6">Elección del vale</h6>
                             </div>
-                            
+
                             <div class="row g-3 d-flex align-items-end">
                                 <div class="mb-3 form-group col-md-9">
-                                    <label for="asignarIndividualValesDisponibles" class="form-label">Vales disponibles</label>
+                                    <label for="asignarIndividualValesDisponibles" class="form-label">Vales
+                                        disponibles</label>
                                     <select class="form-select" aria-label="Default select example"
                                         id="asignarIndividualValesDisponibles">
                                         <option selected>Seleccione</option>
@@ -4316,15 +4361,16 @@
                                 <div class="vale-asignacion-individual">
                                     <div class="start">
                                         <div class="vale-asignacion-individual--img">
-                                            <img src="../img/products/cards/rokys/comboFamiliar.png" alt="combo familiar rokys">
+                                            <img src="../img/products/cards/rokys/comboFamiliar.png"
+                                                alt="combo familiar rokys">
                                         </div>
-        
+
                                         <div class="vale-asignacion-individual__desc">
                                             <h4>Combo familiar</h4>
                                             <p>1 pollo + papas + ensalada + gaseosa 1lt</p>
                                         </div>
                                     </div>
-    
+
                                     <div class="end">
                                         <div class="spinner-vale">
                                             <label class="spinner-label">Cantidad</label>
@@ -4342,7 +4388,7 @@
                                                 </button>
                                             </div>
                                         </div>
-        
+
                                         <button class="btn btn-icon btn-style-none btn-delete-vale">
                                             <span class="material-symbols-outlined">
                                                 delete
@@ -4354,15 +4400,16 @@
                                 <div class="vale-asignacion-individual">
                                     <div class="start">
                                         <div class="vale-asignacion-individual--img">
-                                            <img src="../img/products/cards/rokys/comboFamiliar.png" alt="combo familiar rokys">
+                                            <img src="../img/products/cards/rokys/comboFamiliar.png"
+                                                alt="combo familiar rokys">
                                         </div>
-        
+
                                         <div class="vale-asignacion-individual__desc">
                                             <h4>Combo personal</h4>
                                             <p>1/4 pollo + papas + ensalada + gaseosa personal</p>
                                         </div>
                                     </div>
-    
+
                                     <div class="end">
                                         <div class="spinner-vale">
                                             <label class="spinner-label">Cantidad</label>
@@ -4380,7 +4427,7 @@
                                                 </button>
                                             </div>
                                         </div>
-        
+
                                         <button class="btn btn-icon btn-style-none btn-delete-vale">
                                             <span class="material-symbols-outlined">
                                                 delete
@@ -4397,10 +4444,11 @@
                                 <span class="step-form">3</span>
                                 <h6 class="heading-6">Agregar saludo</h6>
                             </div>
-                            
+
                             <div class="mb-3 custom-textArea">
                                 <label for="saludoCumple" class="form-label">
-                                    Este saludo le llegará al colaborador a manera de una ventana emergente el día asignado al momento que ingrese a la plataforma
+                                    Este saludo le llegará al colaborador a manera de una ventana emergente el día
+                                    asignado al momento que ingrese a la plataforma
                                 </label>
                                 <textarea class="form-control" id="saludoCumple" rows="3" maxlength="200"
                                     placeholder="Escriba un mensaje"></textarea>
@@ -4426,7 +4474,7 @@
                                     Fecha personalizada
                                 </label>
                             </div>
-                            
+
                             <div class="content-fecha-asignacion-individual" id="contentFechaAsigIndividual">
                                 <div class="mb-3 form-group col-md-3">
                                     <input type="date" class="form-control" id="proFechaAsignacionindividual">
@@ -4446,8 +4494,7 @@
     <!-- End Modal asignacion individual-->
 
     <!-- Modal saludo cumpleaños-->
-    <div class="modal fade" id="modalSaludoCumple" tabindex="-1" aria-labelledby="modalSaludoCumple"
-        aria-hidden="true">
+    <div class="modal fade" id="modalSaludoCumple" tabindex="-1" aria-labelledby="modalSaludoCumple" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -4462,7 +4509,7 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Elección del colaborador</h6>
                             </div>
-                            
+
                             <div class="mb-3 form-group">
                                 <label for="saludoCumpleColaborador" class="form-label">Colaborador</label>
                                 <select class="form-select select2modal" aria-label="Default select example"
@@ -4479,10 +4526,11 @@
                                 <span class="step-form">2</span>
                                 <h6 class="heading-6">Agregar saludo</h6>
                             </div>
-                            
+
                             <div class="mb-3 custom-textArea">
                                 <label for="saludoCumpleTextArea" class="form-label">
-                                    Este saludo le llegará al cliente a manera de una ventana emergente al momento que ingrese a la plataforma <strong>el día de su cumpleaños</strong>
+                                    Este saludo le llegará al cliente a manera de una ventana emergente al momento que
+                                    ingrese a la plataforma <strong>el día de su cumpleaños</strong>
                                 </label>
                                 <textarea class="form-control" id="saludoCumpleTextArea" rows="3" maxlength="200"
                                     placeholder="Escriba un mensaje"></textarea>
@@ -4508,7 +4556,7 @@
                                     Fecha personalizada
                                 </label>
                             </div>
-                            
+
                             <div class="content-fecha-asignacion-individual" id="contentFechaSaludoCumple">
                                 <div class="mb-3 form-group col-md-3">
                                     <input type="date" class="form-control" id="progSaludoCumple">
@@ -4548,7 +4596,8 @@
                                 <p>Sede Surco</p>
                             </div>
                             <div class="end">
-                                <button class="btn primary-btn" data-bs-toggle="modal" href="#modalAsignacionIndividual">
+                                <button class="btn primary-btn" data-bs-toggle="modal"
+                                    href="#modalAsignacionIndividual">
                                     <span class="material-symbols-outlined">
                                         add
                                     </span>
@@ -4569,7 +4618,8 @@
                                 <p>Sede Surco</p>
                             </div>
                             <div class="end">
-                                <button class="btn primary-btn" data-bs-toggle="modal" href="#modalAsignacionIndividual">
+                                <button class="btn primary-btn" data-bs-toggle="modal"
+                                    href="#modalAsignacionIndividual">
                                     <span class="material-symbols-outlined">
                                         add
                                     </span>
@@ -4614,9 +4664,10 @@
                             <div class="vale-asignacion-individual">
                                 <div class="start">
                                     <div class="vale-asignacion-individual--img">
-                                        <img src="../img/products/cards/rokys/comboFamiliar.png" alt="combo familiar rokys">
+                                        <img src="../img/products/cards/rokys/comboFamiliar.png"
+                                            alt="combo familiar rokys">
                                     </div>
-    
+
                                     <div class="vale-asignacion-individual__desc">
                                         <h4>Combo familiar</h4>
                                         <p>1 pollo + papas + ensalada + gaseosa 1lt</p>
@@ -4666,10 +4717,11 @@
                                 <span class="step-form">3</span>
                                 <h6 class="heading-6">Agregar mensaje</h6>
                             </div>
-                            
+
                             <div class="mb-3 custom-textArea">
                                 <label for="saludoValeIndividual" class="form-label">
-                                    Este saludo le llegará al colaborador a manera de una ventana emergente el día asignado al momento que ingrese a la plataforma
+                                    Este saludo le llegará al colaborador a manera de una ventana emergente el día
+                                    asignado al momento que ingrese a la plataforma
                                 </label>
                                 <textarea class="form-control" id="saludoValeIndividual" rows="3" maxlength="200"
                                     placeholder="Escriba un mensaje"></textarea>
@@ -4695,7 +4747,7 @@
                                     Fecha personalizada
                                 </label>
                             </div>
-                            
+
                             <div class="content-fecha-asignacion-individual" id="contentFechaAsigIndividualVale">
                                 <div class="mb-3 form-group col-md-3">
                                     <input type="date" class="form-control" id="proFechaAsignacionindividualVale">
@@ -4730,9 +4782,10 @@
                             <div class="vale-asignacion-individual">
                                 <div class="start">
                                     <div class="vale-asignacion-individual--img">
-                                        <img src="../img/products/cards/rokys/comboFamiliar.png" alt="combo familiar rokys">
+                                        <img src="../img/products/cards/rokys/comboFamiliar.png"
+                                            alt="combo familiar rokys">
                                     </div>
-    
+
                                     <div class="vale-asignacion-individual__desc">
                                         <h4>Combo familiar</h4>
                                         <p>1 pollo + papas + ensalada + gaseosa 1lt</p>
@@ -4746,7 +4799,8 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Subir el archivo</h6>
                             </div>
-                            <p>Descarga el archivo XLSX con el formato para la asignación masiva de vales a tus colaboradores.</p>
+                            <p>Descarga el archivo XLSX con el formato para la asignación masiva de vales a tus
+                                colaboradores.</p>
                             <button class="btn outline-btn mb-3">
                                 <span class="material-symbols-outlined icon-fill">
                                     download_2
@@ -4757,16 +4811,17 @@
                             <div id="theWidget" class="dnd-file-upload-widget">
                                 <div class="form-group drop_zone">
                                     <label class="btn outline-btn">
-                                      <span class="material-symbols-outlined icon-fill">
-                                          upload_2
-                                      </span>
-                                      Sube tu archivo
-                                      <input type="file" multiple="" />
+                                        <span class="material-symbols-outlined icon-fill">
+                                            upload_2
+                                        </span>
+                                        Sube tu archivo
+                                        <input type="file" multiple="" />
                                     </label>
                                     <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
-                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10 MB.</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                        MB.</span>
                                 </div>
-                              
+
                                 <div class="files-container"></div>
                             </div>
                         </fieldset>
@@ -4790,7 +4845,7 @@
                                     Fecha personalizada
                                 </label>
                             </div>
-                            
+
                             <div class="content-fecha-asignacion-masiva" id="contentFechaAsigMasivaVale">
                                 <div class="mb-3 form-group col-md-3">
                                     <input type="date" class="form-control" id="proFechaAsignacionMasivaVale">
@@ -4808,6 +4863,31 @@
         </div>
     </div>
     <!-- End Modal asignacion masiva vale corporativo-->
+
+    <!-- Modal beePremium-->
+    <div class="modal fade" id="modalBeePremium" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="actualizarDatosEmpresa"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="actualizarDatosEmpresa">beePremium</h5>
+                    <p class="mb-0">
+                        Con nuestro dashboard, podrás hacer seguimiento del onboarding de tu equipo, conocer sus preferencias de productos, canales de atención, y mucho más con nuestros planes premium.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn primary-btn">
+                        Conoce nuestros precios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End beePremium-->
 
     <!-- END MODALS -->
 

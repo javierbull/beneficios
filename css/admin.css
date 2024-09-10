@@ -2362,5 +2362,6 @@ figure figcaption {
 .disabled-panel {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    color: var(--gray5);
 }
 /* END DISBLED PANELS */

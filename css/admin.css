@@ -2357,3 +2357,10 @@ figure figcaption {
     margin-bottom: 0;
 }
 /* END VALES CORPORATIVOS */
+
+/* DISABLED PANELS */
+.disabled-panel {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+/* END DISBLED PANELS */

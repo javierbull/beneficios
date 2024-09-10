@@ -203,7 +203,6 @@
                                     <canvas id="chartColaboradores"></canvas>
                                 </div>
 
-
                                 <table class="table table-chart-colaboradores table-borderless align-middle">
                                     <tbody>
                                         <tr>
@@ -919,7 +918,7 @@
                 </div>
             </div>
 
-            <div class="panel" id="empresa-panel">
+            <div class="panel disabled-panel" id="empresa-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
                         <h2>Empresa</h2>
@@ -1045,9 +1044,15 @@
                         </form>
                     </div>
                 </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modalEmpresaBloqueado">
+                    Modal home bloqueado
+                </button>
             </div>
 
-            <div class="panel" id="sedes-panel">
+            <div class="panel disabled-panel" id="sedes-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
                         <h2>Sedes</h2>
@@ -1473,7 +1478,7 @@
                 </div>
             </div>
 
-            <div class="panel" id="contactos-panel">
+            <div class="panel disabled-panel" id="contactos-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
                         <h2>Contactos</h2>
@@ -4887,6 +4892,29 @@
                     </span>
                     <p class="mb-0">
                         Con nuestro dashboard, podrás hacer seguimiento del onboarding de tu equipo, conocer sus preferencias de productos, canales de atención, y mucho más con nuestros planes premium.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn primary-btn">Conoce nuestros precios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal home bloqueado-->
+
+    <!-- Modal home bloqueado-->
+    <div class="modal fade" id="modalEmpresaBloqueado" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalEmpresaBloqueado" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                    <span class="material-symbols-outlined icon-fill icon-modal-title">
+                        lock
+                    </span>
+                    <p class="mb-0">
+                        En el módulo de Empresa, puedes personalizar la experiencia de tus colaboradores en beeBeneficios agregando tu logo, editando el nombre de tu empresa e incluyendo mensajes en la plataforma.
                     </p>
                 </div>
                 <div class="modal-footer">

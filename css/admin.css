@@ -268,8 +268,15 @@ body {
 .text-help {
     color: var(--red5);
     font-size: .875rem;
+    position: absolute;
     display: none;
+    /* display: block; */
 }
+
+.mb-form {
+    margin-bottom: 1.25rem !important;
+}
+
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

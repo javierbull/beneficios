@@ -1561,7 +1561,32 @@
 
   /* Vale circo gs */
 
- 
+  /* Vale circo terror */
+  .vale-circo-terror {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vale-circo-terror-left {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .vale-circo-terror-right {
+    width: 20rem;
+    height: 23rem;
+    background-image: url(../img/boletos/circoTerrorRightVertical.png);
+    background-position: center top;
+    padding: 2.5rem .75rem .75rem .75rem;
+  }
+
+  .vale-circo-terror-title img {
+    width: 90%;
+  }
+  /* End vale circo terror */
+
 
   .vale-gs {
     display: flex;
@@ -1597,8 +1622,6 @@
   }
 
   /* End vale circo gs */
-
-
 }
 
 /* Fin cell landscape */

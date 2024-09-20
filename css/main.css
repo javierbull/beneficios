@@ -8224,8 +8224,8 @@ div.dataTables_wrapper div.dataTables_info {
 
 /* VALE CIRCO */
 .vale-circo {
-  /*background-color: pink;
-  */display: flex;
+  /*background-color: pink;*/
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
@@ -8321,6 +8321,91 @@ div.dataTables_wrapper div.dataTables_info {
   height: 1.2rem;
 }
 /* END VALE CIRCO */
+
+/* VALE CIRCO TERROR */
+.vale-circo-terror {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 4px 4px 8px rgba(20, 20, 43, .5);
+}
+
+.vale-circo-terror-left {
+  width: 20rem;
+  height: 22rem;
+  background-image: url(../img/boletos/circoTerrorLeft.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.vale-circo-terror-right {
+  width: 25rem;
+  height: 22rem;
+  background-image: url(../img/boletos/circoterrorRight.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  text-align: center;
+  color: var(--white);
+  padding: 2rem 1rem 1rem 1.8rem;
+}
+
+.vale-circo-terror-title {
+  /* background-color: #A8D0CF; */
+  display: flex;
+  justify-content: center;
+}
+
+.vale-circo-terror-title img {
+  width: 80%;
+}
+
+.vale-circo-terror--fecha {
+  font-size: 2rem;
+}
+
+.vale-circo-terror--zona {
+  font-size: 2rem;
+}
+
+.vale-circo-terror--code {
+  background-color: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(8px);
+  display: inline-block;
+  padding: .25rem 2rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+.vale-circo-terror--recomendacion {
+  font-size: .7rem;
+  margin-bottom: .5rem;
+}
+
+.vale-circo-terror--logo {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: .5rem;
+}
+
+.vale-circo-terror--logo img {
+  height: 1.2rem;
+}
+/* END VALE CIRCO TERROR */
 
 /* VALE CINEMARK */
 .vale-cinemark {

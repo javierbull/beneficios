@@ -996,6 +996,13 @@
     gap: .25rem;
     margin-bottom: 1.5rem;
   }
+
+   /* Vale circo terror */
+   .vale-circo-terror-left {
+    width: 18rem;
+    height: 22rem;
+  }
+  /* End vale circo terror */
 }
 
 /* fin tablet portrait */
@@ -1553,6 +1560,9 @@
   }
 
   /* Vale circo gs */
+
+ 
+
   .vale-gs {
     display: flex;
     flex-direction: column;
@@ -1587,6 +1597,8 @@
   }
 
   /* End vale circo gs */
+
+
 }
 
 /* Fin cell landscape */

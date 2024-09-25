@@ -5108,6 +5108,59 @@
     </div>
     <!-- End modal contactos bloqueado-->
 
+    <!-- Modal asignacion individual vale corporativo-->
+    <div class="modal fade" id="modalReasignarVale" tabindex="-1" aria-labelledby="asignacionIndividualVale"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="asignacionIndividualVale">Reasignar vale</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        
+                            <div class="vale-asignacion-individual mb-4">
+                                <div class="start">
+                                    <div class="vale-asignacion-individual--img">
+                                        <img src="../img/products/cards/rokys/comboFamiliar.png"
+                                            alt="combo familiar rokys">
+                                    </div>
+
+                                    <div class="vale-asignacion-individual__desc">
+                                        <h4>Combo familiar</h4>
+                                        <p>Fecha de vencimiento: <strong>19/12/2024</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="reasignarValeAsignado" class="form-label">Asignado a:</label>
+                                <input type="text" class="form-control" id="reasignarValeAsignado" value="Juan Perez" disabled>
+                                <div class="text-help">Ingrese un nombre válido</div>
+                            </div>
+
+                            <div class="mb-form form-group">
+                                <label for="reasignarValeReasignar" class="form-label">Colaborador</label>
+                                <select class="form-select select2modal" aria-label="Default select example"
+                                    id="reasignarValeReasignar">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">45875698 - Juan Perez</option>
+                                    <option value="1">74586521 - Fernando Redondo</option>
+                                </select>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Reasignar vale</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal asignacion individual vale corporativo-->
+
     <!-- END MODALS -->
 
     <script src="../js/bootstrap/jquery.3.2.1.min.js"></script>

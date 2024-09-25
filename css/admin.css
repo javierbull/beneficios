@@ -2363,6 +2363,15 @@ figure figcaption {
 .vale-corporativo__desc p {
     margin-bottom: 0;
 }
+
+.vale-asignado__desc--content {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.vale-asignado__desc--content p {
+    margin-bottom: 0;
+}
 /* END VALES CORPORATIVOS */
 
 /* DISABLED PANELS */
@@ -2371,4 +2380,4 @@ figure figcaption {
     -webkit-filter: grayscale(100%);
     color: var(--gray5);
 }
-/* END DISBLED PANELS */
+/* END DISABLED PANELS */

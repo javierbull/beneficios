@@ -140,6 +140,11 @@
                                 Vales
                             </a>
                         </li>
+                        <li>
+                            <a href="#" class="sidebar-item-collapse showAdminPanel-solicitudes sidebar-item-db">
+                                Solicitudes
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -3524,6 +3529,135 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div class="panel" id="solicitudes-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Ventas corporativas</h2>
+                        <p>
+                            Gestiona la información de tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="colaboradores-main">
+                    <table class="table dtable align-middle table-admin" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Medio de pago</th>
+                                <th scope="col">Vales</th>
+                                <th scope="col">Monto</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">19/09/2024</td>
+                                <td>BCP</td>
+                                <td>100</td>
+                                <td>S/ 1000.00</td>
+                                <td>
+                                    <span class="tag tag-info">
+                                        Solicitado
+                                    </span>
+                                </td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">19/09/2024</td>
+                                <td>BCP</td>
+                                <td>100</td>
+                                <td>S/ 1000.00</td>
+                                <td>
+                                    <span class="tag tag-success">
+                                        Emitido
+                                    </span>
+                                </td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">19/09/2024</td>
+                                <td>BCP</td>
+                                <td>100</td>
+                                <td>S/ 1000.00</td>
+                                <td>
+                                    <span class="tag tag-warning">
+                                        Observado
+                                    </span>
+                                </td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">19/09/2024</td>
+                                <td>BCP</td>
+                                <td>100</td>
+                                <td>S/ 1000.00</td>
+                                <td>
+                                    <span class="tag tag-danger">
+                                        Cancelado
+                                    </span>
+                                </td>
+                                <td class="table-actions">
+                                    <button type="button" class="btn ghost-btn btn-icon">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

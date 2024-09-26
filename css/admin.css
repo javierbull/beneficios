@@ -2386,3 +2386,25 @@ figure figcaption {
     color: var(--gray5);
 }
 /* END DISABLED PANELS */
+
+/* SOLICITUDES */
+.accordion-solicitudes {
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+.accordion-solicitudes .accordion-item {
+    margin-bottom: .5rem;
+    border: 1px solid var(--gray4);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    overflow: hidden;
+}
+
+.accordion-solicitudes .accordion-button {
+    font-weight: 600;
+}
+/* END SOLICITUDES */

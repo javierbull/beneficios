@@ -292,7 +292,6 @@ input[type=number] {
 
 /* Alerts */
 .alert {
-    position: relative;
     padding: .5rem 1rem;
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -302,7 +301,7 @@ input[type=number] {
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: .5rem;
 }
@@ -331,6 +330,12 @@ input[type=number] {
     color: var(--red6);
     background-color: var(--red2);
     border-color: var(--red3);
+}
+
+.alert-warning {
+    color: var(--primary7);
+    background-color: var(--primary2);
+    border-color: var(--primary3);
 }
 
 /* End alerts */

@@ -3593,7 +3593,7 @@
                                     </span>
                                 </td>
                                 <td class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon">
+                                    <button type="button" class="btn ghost-btn btn-icon showAdminPanel-solicitadosDetalle">
                                         <span class="material-symbols-outlined">
                                             visibility
                                         </span>
@@ -3611,7 +3611,7 @@
                                     </span>
                                 </td>
                                 <td class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon">
+                                    <button type="button" class="btn ghost-btn btn-icon showAdminPanel-solicitadosDetalle">
                                         <span class="material-symbols-outlined">
                                             visibility
                                         </span>
@@ -3629,7 +3629,7 @@
                                     </span>
                                 </td>
                                 <td class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon">
+                                    <button type="button" class="btn ghost-btn btn-icon showAdminPanel-solicitadosDetalle">
                                         <span class="material-symbols-outlined">
                                             visibility
                                         </span>
@@ -3647,7 +3647,7 @@
                                     </span>
                                 </td>
                                 <td class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon">
+                                    <button type="button" class="btn ghost-btn btn-icon showAdminPanel-solicitadosDetalle">
                                         <span class="material-symbols-outlined">
                                             visibility
                                         </span>
@@ -3658,6 +3658,100 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+
+            <div class="panel" id="solicitadosDetalle-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Ventas corporativas</h2>
+                        <p>
+                            Gestiona la información de tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-solicitudes">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+                </div>
+
+                <table class="table dtable align-middle table-admin">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">DNI/CE</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Fecha de descarga</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>74526589</td>
+                            <td>Juan Carlos Perez</td>
+                            <td>12/12/2024</td>
+                            <td class="table-actions">
+                                <button type="button" class="btn link-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalReasignarVale">
+                                    Reasignar vale
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>87458965</td>
+                            <td>Sara Torres</td>
+                            <td>12/12/2024</td>
+                            <td class="table-actions">
+                                <button type="button" class="btn link-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalReasignarVale">
+                                    Reasignar vale
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>45874589</td>
+                            <td>Armando Paredes</td>
+                            <td>12/12/2024</td>
+                            <td class="table-actions">
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

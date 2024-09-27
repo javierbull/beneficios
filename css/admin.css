@@ -218,6 +218,21 @@ body {
     color: var(--gray7);
 }
 
+.ghost-btn-danger {
+    color: var(--red5);
+}
+
+.ghost-btn-danger:hover {
+    color: var(--red5);
+    background-color: var(--red2);
+}
+
+.ghost-btn-danger:focus {
+    color: var(--red5);
+    background-color: var(--red2);
+    box-shadow: 0px 0px 0px 2px rgba(246, 75, 79, 0.5);
+}
+
 .link {
     color: var(--blue5);
 }
@@ -817,6 +832,7 @@ input[type=number] {
 
 .table tfoot {
     font-weight: 700;
+    background-color: var(--gray2);
 }
 
 .card-participacionCanal {
@@ -2452,4 +2468,21 @@ figure figcaption {
 .datos-solicitud-compra label, .datos-solicitud-compra p {
     margin-bottom: 0;
 } 
+
+.comprobanteDePago {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comprobanteDePago .start {
+    color: var(--blue5);
+    text-decoration: underline;
+}
+
+.comprobanteDePago .end {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
 /* END SOLICITUDES */

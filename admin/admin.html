@@ -3833,46 +3833,87 @@
                             data-bs-parent="#accordionSolicitudes">
                             <div class="accordion-body">
                                 <div class="solicitud-detalle-compra">
-                                    <p>Productos comprados</p>
-                                    <table class="table dtable align-middle table-admin">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Producto</th>
-                                                <th scope="col">Marca</th>
-                                                <th scope="col">Vigencia</th>
-                                                <th scope="col">Precio unitario</th>
-                                                <th scope="col">Cantidad</th>
-                                                <th scope="col">Total</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Gift card 100</td>
-                                                <td>Bee</td>
-                                                <td>60 días</td>
-                                                <td>S/ 100.00</td>
-                                                <td>10</td>
-                                                <td>S/ 1000.00</td>
-                                            </tr>
-                                            <tr></tr>
-                                                <th scope="row">2</th>
-                                                <td>Combo personal</td>
-                                                <td>Roky's</td>
-                                                <td>60 días</td>
-                                                <td>S/ 100.00</td>
-                                                <td>10</td>
-                                                <td>S/ 1000.00</td>
-                                            </tr>
-                                            <tfoot>
-                                                <td colspan="4"></td>
-                                                <td>Total</td>
-                                                <td>20</td>
-                                                <td>S/ 2000.00</td>
-                                            </tfoot>
-                                        </tbody>
-                                    </table>
+                                    <div class="mb-4">
+                                        <p>Productos comprados</p>
+                                        <table class="table dtable align-middle table-admin">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Producto</th>
+                                                    <th scope="col">Marca</th>
+                                                    <th scope="col">Vigencia</th>
+                                                    <th scope="col">Precio unitario</th>
+                                                    <th scope="col">Cantidad</th>
+                                                    <th scope="col">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Gift card 100</td>
+                                                    <td>Bee</td>
+                                                    <td>60 días</td>
+                                                    <td>S/ 100.00</td>
+                                                    <td>10</td>
+                                                    <td>S/ 1000.00</td>
+                                                </tr>
+                                                <tr></tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Combo personal</td>
+                                                    <td>Roky's</td>
+                                                    <td>60 días</td>
+                                                    <td>S/ 100.00</td>
+                                                    <td>10</td>
+                                                    <td>S/ 1000.00</td>
+                                                </tr>
+                                                <tfoot>
+                                                    <td colspan="4"></td>
+                                                    <td>Total</td>
+                                                    <td>20</td>
+                                                    <td>S/ 2000.00</td>
+                                                </tfoot>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <p>Comprobante de pago</p>
+                                    <div id="theWidget" class="dnd-file-upload-widget">
+                                        <div class="form-group drop_zone">
+                                            <label class="btn outline-btn">
+                                                <span class="material-symbols-outlined icon-fill">
+                                                    upload_2
+                                                </span>
+                                                Subir comprobante
+                                                <input type="file" multiple="" />
+                                            </label>
+                                            <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
+                                            <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                                MB.</span>
+                                        </div>
+        
+                                        <div class="files-container"></div>
+                                    </div>
+
+                                    <div class="comprobanteDePago">
+                                        <div class="start">
+                                            <span>
+                                                vouvher.jpg
+                                            </span>
+                                        </div>
+                                        <div class="end">
+                                            <button class="btn btn-icon ghost-btn">
+                                                <span class="material-symbols-outlined icon-fill">
+                                                    download_2
+                                                </span>
+                                            </button>
+
+                                            <button class="btn btn-icon ghost-btn-danger">
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

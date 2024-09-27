@@ -815,6 +815,10 @@ input[type=number] {
     min-height: 2rem;
 }
 
+.table tfoot {
+    font-weight: 700;
+}
+
 .card-participacionCanal {
     width: 50%;
 }

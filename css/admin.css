@@ -2430,4 +2430,22 @@ figure figcaption {
 .datos-solicitud__saludo p {
     font-weight: 700;
 }
+
+.datos-solicitud-compra .item {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.datos-solicitud-compra .item:last-child {
+    margin-bottom: 0;
+}
+
+.datos-solicitud-compra .item p {
+    font-weight: 700;
+}
+
+.datos-solicitud-compra label, .datos-solicitud-compra p {
+    margin-bottom: 0;
+} 
 /* END SOLICITUDES */

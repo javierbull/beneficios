@@ -8812,6 +8812,50 @@ div.dataTables_wrapper div.dataTables_info {
   gap: .25rem;
   margin-bottom: .5rem;
 }
-
-
 /* End modal evento butacas */
+
+/* Modal saludo cumpleaños */
+.modal-img-full {
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.modal-img-full img {
+  width: 100%;
+}
+
+.regaloCumple h6 {
+  font-weight: 700;
+}
+
+.card-regalo-cumple {
+  border: solid 1px var(--Gray3);
+  padding: .75rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  display: flex;
+  gap: .75rem;
+  text-align: left;
+}
+
+.card-regalo-cumple img {
+  width: 3.5rem;
+  border: solid 1px var(--Gray3);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.card-regalo-cumple p {
+  margin-bottom: 0;
+}
+/* End modal saludo cumpleaños */

@@ -4050,6 +4050,26 @@
                                         </p>
                                     </div>
                                 </div>
+
+                                <div class="card-cupon">
+                                    <img src="../img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
+                                    <div class="card-cupon-body">
+                                        <h3>Nombre del cupón</h3>
+                                        <p class="line-clamp line-clamp-2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-cupon">
+                                    <img src="../img/products/cards/bk.jpg" alt="Tacos el mexicano">
+                                    <div class="card-cupon-body">
+                                        <h3>Nombre del cupón mas extenso</h3>
+                                        <p class="line-clamp line-clamp-2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="navbar-actions">
                                 <div class="navbar-actions__right">
@@ -4061,11 +4081,308 @@
                         </div>
                         <div class="tab-pane fade" id="pills-cupones-asignados" role="tabpanel"
                             aria-labelledby="pills-cupones-asignados-tab">
-                            Cupones de bee
+                            <div class="grid-cupones">
+                                <div class="card-cupon">
+                                    <img src="../img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
+                                    <div class="card-cupon-body">
+                                        <div class="cupon-bee-title">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkCuponBee1">
+                                            </div>
+                                            <h3>Nombre del cupón</h3>
+                                        </div>
+                                        <p class="line-clamp line-clamp-2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-cupon">
+                                    <img src="../img/products/cards/bk.jpg" alt="Tacos el mexicano">
+                                    <div class="card-cupon-body">
+                                        <div class="cupon-bee-title">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkCuponBee2">
+                                            </div>
+                                            <h3>Nombre del cupón mas extenso</h3>
+                                        </div>
+                                        <p class="line-clamp line-clamp-2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
-                
+            </div>
+
+            <div class="panel" id="nuevoCupon-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Cupones</h2>
+                        <p>
+                            Gestiona los cupones de tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-colaboradores">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+                </div>
+
+                <div class="colaboradorNuevo-main">
+                    <h2 class="headline2">
+                        Nuevo colaborador
+                    </h2>
+
+                    <div class="wrap-stepper show-stepper stepper-datosPersonales" id="stepper-datosPersonales">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos personales
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>2</span>
+                                Datos de contacto
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>3</span>
+                                Configuración de perfil
+                            </button>
+                        </div>
+
+                        <div class="content-stepper">
+                            <form>
+                                <div class="mb-form">
+                                    <label for="nuevoContactoNombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nuevoContactoNombre">
+                                    <div class="text-help">Ingrese un nombre válido</div>
+                                </div>
+
+                                <div class="mb-form">
+                                    <label for="nuevoContactoApellidoPaterno" class="form-label">Apellido
+                                        paterno</label>
+                                    <input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
+                                    <div class="text-help">Ingrese un apellido válido</div>
+                                </div>
+
+                                <div class="mb-form">
+                                    <label for="nuevoContactoApellidoMaterno" class="form-label">Apellido
+                                        materno</label>
+                                    <input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
+                                    <div class="text-help">Ingrese un apellido válido</div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="mb-form form-group col">
+                                        <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="nuevoContactoTipoDoc">
+                                            <option selected>DNI</option>
+                                            <option value="1">CE</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-form form-group col">
+                                        <label for="nuevoContactoNumeroDoc" class="form-label">Número de
+                                            documento</label>
+                                        <input type="number" class="form-control" id="nuevoContactoNumeroDoc">
+                                        <div class="text-help">Ingrese un número válido</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-form">
+                                    <label for="nuevoContactoFechaNacimiento" class="form-label">Fecha de
+                                        nacimiento</label>
+                                    <input type="date" class="form-control" id="nuevoContactoFechaNacimiento">
+                                    <div class="text-help">Ingrese una fecha</div>
+                                </div>
+
+                                <div class="form-actions-right">
+                                    <button type="button" class="btn primary-btn show-stepper-datosContacto">
+                                        Siguiente
+                                        <span class="material-symbols-outlined">
+                                            arrow_forward
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="wrap-stepper stepper-datosContacto" id="stepper-datosContacto">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos personales
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>2</span>
+                                Datos de contacto
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>3</span>
+                                Configuración de perfil
+                            </button>
+                        </div>
+
+                        <div class="content-stepper">
+                            <form>
+                                <div class="mb-form">
+                                    <label for="nuevoContactoCorreoCorporativo" class="form-label">Correo
+                                        corporativo</label>
+                                    <input type="email" class="form-control" id="nuevoContactoCorreoCorporativo">
+                                    <div class="text-help">Ingrese un correo válido</div>
+                                </div>
+
+                                <div class="mb-form">
+                                    <label for="nuevoContactoCorreoPersonal" class="form-label">Correo personal</label>
+                                    <input type="email" class="form-control" id="nuevoContactoCorreoPersonal">
+                                    <div class="text-help">Ingrese un correo válido</div>
+                                </div>
+
+                                <div class="mb-form">
+                                    <label for="nuevoContactoCelCorp" class="form-label">Celular corporativo</label>
+                                    <input type="number" class="form-control" id="nuevoContactoCelCorp">
+                                    <div class="text-help">Ingrese un númeor válido</div>
+                                </div>
+
+                                <div class="mb-form">
+                                    <label for="nuevoContactoCelPer" class="form-label">Celular personal</label>
+                                    <input type="number" class="form-control" id="nuevoContactoCelPer">
+                                    <div class="text-help">Ingrese un númeor válido</div>
+                                </div>
+
+                                <div class="form-actions-between">
+                                    <button type="button" class="btn outline-btn show-stepper-datosPersonales">
+                                        <span class="material-symbols-outlined">
+                                            arrow_back
+                                        </span>
+                                        Anterior
+                                    </button>
+
+                                    <button type="button" class="btn primary-btn show-stepper-configPerfil">
+                                        Siguiente
+                                        <span class="material-symbols-outlined">
+                                            arrow_forward
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="wrap-stepper stepper-datosContacto" id="stepper-configPerfil">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos personales
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>2</span>
+                                Datos de contacto
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>3</span>
+                                Configuración de perfil
+                            </button>
+                        </div>
+
+                        <div class="content-stepper">
+                            <form>
+                                <div class="mb-form form-group">
+                                    <label for="nuevoContacSede" class="form-label">Sede</label>
+                                    <select class="form-select" aria-label="Default select example"
+                                        id="nuevoContacSede">
+                                        <option selected>Seleccione</option>
+                                        <option value="1">Miraflores</option>
+                                        <option value="2">Lince</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Tipo de perfil</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                            id="radioTipoPerfil1" checked>
+                                        <label class="form-check-label" for="radioTipoPerfil1">
+                                            Regular
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                            id="radioTipoPerfil2">
+                                        <label class="form-check-label" for="radioTipoPerfil2">
+                                            Administrador
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                            id="radioTipoPerfil3">
+                                        <label class="form-check-label" for="radioTipoPerfil3">
+                                            Sub Administrador
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions-between">
+                                    <button type="button" class="btn outline-btn show-stepper-datosContacto">
+                                        <span class="material-symbols-outlined">
+                                            arrow_back
+                                        </span>
+                                        Anterior
+                                    </button>
+
+                                    <button type="button" class="btn primary-btn">
+                                        Guardar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

@@ -2533,4 +2533,14 @@ figure figcaption {
     margin-bottom: 1.5rem;
 }
 
+.cupon-bee-title {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.cupon-bee-title h3 {
+    margin-top: 3px;
+    margin-bottom: 0;
+} 
+
 /* END CUPONES */

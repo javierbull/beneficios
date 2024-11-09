@@ -1,7 +1,7 @@
 /* UI KIT */
 :root {
     --white: #FFFFFF;
-    --gray1: #F7F7F7;
+    --gray1: #FAFAFA;
     --gray2: #F2F2F2;
     --gray3: #E6E6E6;
     --gray4: #B3B3B3;
@@ -2546,5 +2546,27 @@ figure figcaption {
 /* END CUPONES */
 
 /* NUEVO CUPÓN */
+.content-stepper-cupon {
+    /* background-color: pink; */
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 2rem;
+}
 
+.content-cupon {
+    background-color: var(--gray2);
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    width: 30rem;
+}
+
+.form-nuevoCupon {
+    width: 100%;
+}
 /* END NUEVO CUPÓN */

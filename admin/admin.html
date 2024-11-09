@@ -4187,51 +4187,37 @@
                             </button>
                         </div>
 
-                        <div class="content-stepper">
-                            <form>
+                        <div class="content-stepper-cupon">
+
+                            <div class="content-cupon">
+                                <p>Cupón de ejemplo:</p>
+                                <div class="card-cupon">
+                                    <img src="../img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
+                                    <div class="card-cupon-body">
+                                        <h3>Nombre del cupón</h3>
+                                        <p class="line-clamp line-clamp-2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="form-nuevoCupon">
+                                <h5 class="heading-6">Subir imagen</h5>
+
+
                                 <div class="mb-form">
-                                    <label for="nuevoContactoNombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nuevoContactoNombre">
+                                    <label for="nuevoCuponNombre" class="form-label">Nombre del cupón</label>
+                                    <input type="text" class="form-control" id="nuevoCuponNombre">
                                     <div class="text-help">Ingrese un nombre válido</div>
                                 </div>
 
-                                <div class="mb-form">
-                                    <label for="nuevoContactoApellidoPaterno" class="form-label">Apellido
-                                        paterno</label>
-                                    <input type="text" class="form-control" id="nuevoContactoApellidoPaterno">
-                                    <div class="text-help">Ingrese un apellido válido</div>
-                                </div>
-
-                                <div class="mb-form">
-                                    <label for="nuevoContactoApellidoMaterno" class="form-label">Apellido
-                                        materno</label>
-                                    <input type="text" class="form-control" id="nuevoContactoApellidoMaterno">
-                                    <div class="text-help">Ingrese un apellido válido</div>
-                                </div>
-
-                                <div class="row g-3">
-                                    <div class="mb-form form-group col">
-                                        <label for="nuevoContactoTipoDoc" class="form-label">Tipo de documento</label>
-                                        <select class="form-select" aria-label="Default select example"
-                                            id="nuevoContactoTipoDoc">
-                                            <option selected>DNI</option>
-                                            <option value="1">CE</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="mb-form form-group col">
-                                        <label for="nuevoContactoNumeroDoc" class="form-label">Número de
-                                            documento</label>
-                                        <input type="number" class="form-control" id="nuevoContactoNumeroDoc">
-                                        <div class="text-help">Ingrese un número válido</div>
-                                    </div>
-                                </div>
-
-                                <div class="mb-form">
-                                    <label for="nuevoContactoFechaNacimiento" class="form-label">Fecha de
-                                        nacimiento</label>
-                                    <input type="date" class="form-control" id="nuevoContactoFechaNacimiento">
-                                    <div class="text-help">Ingrese una fecha</div>
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponBreveDescripcion" class="form-label">
+                                        Breve descripción
+                                    </label>
+                                    <textarea class="form-control" id="cuponBreveDescripcion" rows="3" maxlength="200"
+                                        placeholder="Escriba una breve descripción"></textarea>
                                 </div>
 
                                 <div class="form-actions-right">

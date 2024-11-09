@@ -496,6 +496,24 @@ $(document).ready(function () {
     $("#stepper-datosPersonales").hide();
     $("#stepper-configPerfil").show();
   });
+
+  $(".show-stepper-cuponDatos").click(function () {
+    $("#stepper-cuponDatos").show();
+    $("#stepper-cuponDesc").hide();
+    $("#stepper-cuponConfirmacion").hide();
+  });
+
+  $(".show-stepper-cuponDesc").click(function () {
+    $("#stepper-cuponDatos").hide();
+    $("#stepper-cuponDesc").show();
+    $("#stepper-cuponConfirmacion").hide();
+  });
+
+  $(".show-stepper-cuponConfirmacion").click(function () {
+    $("#stepper-cuponDatos").hide();
+    $("#stepper-cuponDesc").hide();
+    $("#stepper-cuponConfirmacion").show();
+  });
   // END STEPPER ADMIN
 
 

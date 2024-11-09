@@ -4166,24 +4166,24 @@
 
                 <div class="colaboradorNuevo-main">
                     <h2 class="headline2">
-                        Nuevo colaborador
+                        Nuevo cupón
                     </h2>
 
-                    <div class="wrap-stepper show-stepper stepper-datosPersonales" id="stepper-datosPersonales">
+                    <div class="wrap-stepper show-stepper stepper-cuponDatos" id="stepper-cuponDatos">
                         <div class="stepper-admin">
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>1</span>
-                                Datos personales
+                                Datos del cupón
                             </button>
 
                             <button class="step-admin btn btn-style-none">
                                 <span>2</span>
-                                Datos de contacto
+                                Descripción y condiciones
                             </button>
 
                             <button class="step-admin btn btn-style-none">
                                 <span>3</span>
-                                Configuración de perfil
+                                Confirmación
                             </button>
                         </div>
 
@@ -4235,7 +4235,7 @@
                                 </div>
 
                                 <div class="form-actions-right">
-                                    <button type="button" class="btn primary-btn show-stepper-datosContacto">
+                                    <button type="button" class="btn primary-btn show-stepper-cuponDesc">
                                         Siguiente
                                         <span class="material-symbols-outlined">
                                             arrow_forward
@@ -4246,60 +4246,35 @@
                         </div>
                     </div>
 
-                    <div class="wrap-stepper stepper-datosContacto" id="stepper-datosContacto">
+                    <div class="wrap-stepper stepper-cuponDesc" id="stepper-cuponDesc">
                         <div class="stepper-admin">
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>1</span>
-                                Datos personales
+                                Datos del cupón
                             </button>
 
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>2</span>
-                                Datos de contacto
+                                Descripción y condiciones
                             </button>
 
                             <button class="step-admin btn btn-style-none">
                                 <span>3</span>
-                                Configuración de perfil
+                                Confirmación
                             </button>
                         </div>
 
                         <div class="content-stepper">
                             <form>
-                                <div class="mb-form">
-                                    <label for="nuevoContactoCorreoCorporativo" class="form-label">Correo
-                                        corporativo</label>
-                                    <input type="email" class="form-control" id="nuevoContactoCorreoCorporativo">
-                                    <div class="text-help">Ingrese un correo válido</div>
-                                </div>
-
-                                <div class="mb-form">
-                                    <label for="nuevoContactoCorreoPersonal" class="form-label">Correo personal</label>
-                                    <input type="email" class="form-control" id="nuevoContactoCorreoPersonal">
-                                    <div class="text-help">Ingrese un correo válido</div>
-                                </div>
-
-                                <div class="mb-form">
-                                    <label for="nuevoContactoCelCorp" class="form-label">Celular corporativo</label>
-                                    <input type="number" class="form-control" id="nuevoContactoCelCorp">
-                                    <div class="text-help">Ingrese un númeor válido</div>
-                                </div>
-
-                                <div class="mb-form">
-                                    <label for="nuevoContactoCelPer" class="form-label">Celular personal</label>
-                                    <input type="number" class="form-control" id="nuevoContactoCelPer">
-                                    <div class="text-help">Ingrese un númeor válido</div>
-                                </div>
-
                                 <div class="form-actions-between">
-                                    <button type="button" class="btn outline-btn show-stepper-datosPersonales">
+                                    <button type="button" class="btn outline-btn show-stepper-cuponDatos">
                                         <span class="material-symbols-outlined">
                                             arrow_back
                                         </span>
                                         Anterior
                                     </button>
 
-                                    <button type="button" class="btn primary-btn show-stepper-configPerfil">
+                                    <button type="button" class="btn primary-btn show-stepper-cuponConfirmacion">
                                         Siguiente
                                         <span class="material-symbols-outlined">
                                             arrow_forward
@@ -4310,63 +4285,28 @@
                         </div>
                     </div>
 
-                    <div class="wrap-stepper stepper-datosContacto" id="stepper-configPerfil">
+                    <div class="wrap-stepper stepper-cuponConfirmacion" id="stepper-cuponConfirmacion">
                         <div class="stepper-admin">
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>1</span>
-                                Datos personales
+                                Datos del cupón
                             </button>
 
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>2</span>
-                                Datos de contacto
+                                Descripción y condiciones
                             </button>
 
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>3</span>
-                                Configuración de perfil
+                                Confirmación
                             </button>
                         </div>
 
                         <div class="content-stepper">
                             <form>
-                                <div class="mb-form form-group">
-                                    <label for="nuevoContacSede" class="form-label">Sede</label>
-                                    <select class="form-select" aria-label="Default select example"
-                                        id="nuevoContacSede">
-                                        <option selected>Seleccione</option>
-                                        <option value="1">Miraflores</option>
-                                        <option value="2">Lince</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Tipo de perfil</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioTipoPerfil"
-                                            id="radioTipoPerfil1" checked>
-                                        <label class="form-check-label" for="radioTipoPerfil1">
-                                            Regular
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioTipoPerfil"
-                                            id="radioTipoPerfil2">
-                                        <label class="form-check-label" for="radioTipoPerfil2">
-                                            Administrador
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioTipoPerfil"
-                                            id="radioTipoPerfil3">
-                                        <label class="form-check-label" for="radioTipoPerfil3">
-                                            Sub Administrador
-                                        </label>
-                                    </div>
-                                </div>
-
                                 <div class="form-actions-between">
-                                    <button type="button" class="btn outline-btn show-stepper-datosContacto">
+                                    <button type="button" class="btn outline-btn show-stepper-cuponDesc">
                                         <span class="material-symbols-outlined">
                                             arrow_back
                                         </span>
@@ -4374,7 +4314,7 @@
                                     </button>
 
                                     <button type="button" class="btn primary-btn">
-                                        Guardar
+                                        Publicar cupón
                                     </button>
                                 </div>
                             </form>

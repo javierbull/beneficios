@@ -1,6 +1,25 @@
 $(document).ready(function () {
   // alert("Hello! I am an alert box!!");
 
+    // Rich text editor
+    tinymce.init({
+      selector: "richtextarea",
+      menubar: false,
+      plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
+      toolbar: "bold italic underline strikethrough | numlist bullist | link emoticons",
+      insertdatetime_element: true,
+      media_scripts: [
+        { filter: 'platform.twitter.com' },
+        { filter: 's.imgur.com' },
+        { filter: 'instagram.com' },
+        { filter: 'https://platform.twitter.com/widgets.js' },
+      ],
+      browser_spellcheck: true,
+      contextmenu: false,
+    });
+  
+    // End Rich text editor
+
   // Sidebar active item
   $(".sidebar-item-db").on('click', function () {
     $(".sidebar-item-db").removeClass('active-item');
@@ -555,8 +574,8 @@ $(document).ready(function () {
   });
   // END CAMBIAR LOGO EMPRESA
 
-  
-  
+
+
 
   // CONTADOR DE CARACTERES MENSAJE PLATAFORMA
   const mensaje = document.getElementById('mensajePlataforma');
@@ -607,7 +626,7 @@ $(document).ready(function () {
   //   theme: 'bootstrap-5'
   // });
 
-  $('.select2modal').each(function() {
+  $('.select2modal').each(function () {
     $(this).select2({
       theme: 'bootstrap-5',
       width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
@@ -617,7 +636,7 @@ $(document).ready(function () {
   });
 
   // SHOW HIDE FECHA VALES
-  $("input[name='radioProgAsignacionMasiva']").click(function() {
+  $("input[name='radioProgAsignacionMasiva']").click(function () {
     if ($("#progAsignacionMasiva2").is(":checked")) {
       $("#contentFechaAsigMasiva").show();
     } else {
@@ -625,7 +644,7 @@ $(document).ready(function () {
     }
   });
 
-  $("input[name='radioProgAsignacionIndividual']").click(function() {
+  $("input[name='radioProgAsignacionIndividual']").click(function () {
     if ($("#progAsignacionIndividual2").is(":checked")) {
       $("#contentFechaAsigIndividual").show();
     } else {
@@ -633,7 +652,7 @@ $(document).ready(function () {
     }
   });
 
-  $("input[name='radioFechaSaludo']").click(function() {
+  $("input[name='radioFechaSaludo']").click(function () {
     if ($("#progSaludoCumple2").is(":checked")) {
       $("#contentFechaSaludoCumple").show();
     } else {
@@ -641,7 +660,7 @@ $(document).ready(function () {
     }
   });
 
-  $("input[name='radioProgAsignacionIndividualVale']").click(function() {
+  $("input[name='radioProgAsignacionIndividualVale']").click(function () {
     if ($("#progAsignacionIndividualVale2").is(":checked")) {
       $("#contentFechaAsigIndividualVale").show();
     } else {
@@ -649,7 +668,7 @@ $(document).ready(function () {
     }
   });
 
-  $("input[name='radioProgAsignacionMasivaVale']").click(function() {
+  $("input[name='radioProgAsignacionMasivaVale']").click(function () {
     if ($("#progAsignacionMasivaVale2").is(":checked")) {
       $("#contentFechaAsigMasivaVale").show();
     } else {
@@ -659,18 +678,20 @@ $(document).ready(function () {
   // END SHOW HIDE FECHA VALES
 
   // SPINNER-VALE    
-    $('.add').click(function () {		
-      var selectedInput = $(this).prev('.input-spinner');
-        selectedInput[0].stepUp(1);
-    });
-    
-    $('.sub').click(function () {		
-      var selectedInput = $(this).next('.input-spinner');
-         selectedInput[0].stepDown(1);
-    });
-    
+  $('.add').click(function () {
+    var selectedInput = $(this).prev('.input-spinner');
+    selectedInput[0].stepUp(1);
+  });
+
+  $('.sub').click(function () {
+    var selectedInput = $(this).next('.input-spinner');
+    selectedInput[0].stepDown(1);
+  });
+
 
   // END SPINNER VALE
+
+
 });
 
 

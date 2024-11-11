@@ -20,6 +20,22 @@ $(document).ready(function () {
   
     // End Rich text editor
 
+      // IMAGE PREVIEW CUPONES
+  $('#input-preview-img-cupon').change(function(){
+    var curElement = $('#preview-cupon');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+});
+  // END IMAGE PREVIEW CUPONES
+
   // Sidebar active item
   $(".sidebar-item-db").on('click', function () {
     $(".sidebar-item-db").removeClass('active-item');
@@ -676,6 +692,8 @@ $(document).ready(function () {
     }
   });
   // END SHOW HIDE FECHA VALES
+
+
 
   // SPINNER-VALE    
   $('.add').click(function () {

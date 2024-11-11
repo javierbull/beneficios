@@ -2622,5 +2622,6 @@ figure figcaption {
 
   .wrap-label-file-upload-cupon p {
     margin-bottom: 0;
+    color: var(--gray5);
   }
 /* END NUEVO CUPÓN */

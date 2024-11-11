@@ -3973,7 +3973,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </nav>
 
                 <div class="main-cupones">
@@ -3994,11 +3993,11 @@
                         </li>
                     </ul>
 
-                    <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-content" id="pills-tabContent-cupones">
                         <div class="tab-pane fade show active" id="pills-cupones-disponibles" role="tabpanel"
                             aria-labelledby="pills-cupones-disponibles-tab">
                             <div class="grid-cupones">
-                                <div class="card-cupon">
+                                <div class="card-cupon" data-bs-toggle="modal" data-bs-target="#modalEditarCupon">
                                     <img src="../img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
                                     <div class="card-cupon-body">
                                         <h3>Nombre del cupón</h3>
@@ -4130,7 +4129,6 @@
                                         </p>
                                     </div>
                                 </div>
-
 
                             </div>
                         </div>
@@ -6080,6 +6078,52 @@
         </div>
     </div>
     <!-- End Modal asignacion individual vale corporativo-->
+
+    <!-- Modal editar cupon-->
+    <div class="modal fade" id="modalEditarCupon" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Editar cupón</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Datos de cupón</h6>
+                            </div>
+                            
+                        </fieldset>
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Descripción y condiciones</h6>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer modal-actions-between">
+                    <button type="button" class="btn danger-outline-btn">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                        Eliminar
+                    </button>
+                    
+                    <div class="modal-actions">
+                        <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn primary-btn">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal editar cupon-->
 
     <!-- END MODALS -->
 

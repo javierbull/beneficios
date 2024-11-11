@@ -6082,7 +6082,7 @@
     <!-- Modal editar cupon-->
     <div class="modal fade" id="modalEditarCupon" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
         aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="colaboradoresFiltrar">Editar cupón</h5>
@@ -6134,6 +6134,51 @@
                                 <h6 class="heading-6">Descripción y condiciones</h6>
                             </div>
 
+                            <form class="form-nuevoCupon">
+                                <div class="mb-form custom-textArea">
+                                    <label for="editarCuponDescCompleta" class="form-label">Descripción completa</label>
+                                    <p>
+                                        Este mensaje aparecerá una vez los colaboradores haga clic en el cupón.
+                                    </p>
+                                    <textarea class="form-control" id="editarCuponDescCompleta" rows="3"
+                                        placeholder="Escriba una descripción"></textarea>
+                                </div>
+
+                                <div class="mb-form custom-textArea">
+                                    <label class="form-label">Consideraciones</label>
+                                    <p>
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
+                                        momento de utilizar el cupón.
+                                    </p>
+                                    <richtextarea></richtextarea>
+                                </div>
+
+                                <fieldset>
+                                    <p class="mb-0">Periodo de vigencia</p>
+                                    <div class="row g-3">
+                                        <div class="form-group mb-form col">
+                                            <label for="vigenciaEditarCuponInicio" class="form-label">Desde</label>
+                                            <input type="date" class="form-control" id="vigenciaEditarCuponInicio">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+
+                                        <div class="form-group mb-form col">
+                                            <label for="vigenciaEditarCuponFin" class="form-label">Hasta</label>
+                                            <input type="date" class="form-control" id="vigenciaEditarCuponFin">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <div class="mb-form custom-textArea">
+                                    <label for="editarCuponInstruccionesCanje" class="form-label">Instrucciones de canje</label>
+                                    <p>
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al momento de utilizar el cupón.
+                                    </p>
+                                    <textarea class="form-control" id="editarCuponInstruccionesCanje" rows="4"
+                                        placeholder="Escriba las instrucciones"></textarea>
+                                </div>
+                            </form>
                         </fieldset>
                     </form>
                 </div>

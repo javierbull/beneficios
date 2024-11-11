@@ -2542,7 +2542,7 @@ figure figcaption {
 .cupon-bee-title h3 {
     margin-top: 3px;
     margin-bottom: 0;
-} 
+}
 
 /* END CUPONES */
 
@@ -2577,9 +2577,9 @@ figure figcaption {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-  }
+}
 
-  .imageWrapper-cupon {
+.imageWrapper-cupon {
     background-color: var(--white);
     border: solid 1px var(--gray4);
     border-radius: .5rem;
@@ -2588,20 +2588,20 @@ figure figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .imageWrapper-cupon img {
+.imageWrapper-cupon img {
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: cover;
-  }
+}
 
-  .file-upload-cupon {
+.file-upload-cupon {
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .file-input-image-cupon {
+.file-input-image-cupon {
     position: absolute;
     top: 0;
     right: 0;
@@ -2612,17 +2612,37 @@ figure figcaption {
     opacity: 0;
     filter: alpha(opacity=0);
     height: 100%;
-  }
+}
 
-  .wrap-label-file-upload-cupon {
+.wrap-label-file-upload-cupon {
     /* background-color: pink; */
     display: flex;
     flex-direction: column;
-    gap:.5rem;
-  }
+    gap: .5rem;
+}
 
-  .wrap-label-file-upload-cupon p {
+.wrap-label-file-upload-cupon p {
     margin-bottom: 0;
     color: var(--gray5);
-  }
+}
+
+.editarDatosCupon {
+    /* background-color: lavender; */
+    display: flex;
+    gap: 1rem;
+}
+
+.wrap-img-preview-editarCupon {
+    /* background-color: lavender; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.form-datosEditarCupon {
+    width: 100%;
+}
+
 /* END NUEVO CUPÓN */

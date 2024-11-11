@@ -1,39 +1,53 @@
 $(document).ready(function () {
   // alert("Hello! I am an alert box!!");
 
-    // Rich text editor
-    tinymce.init({
-      selector: "richtextarea",
-      menubar: false,
-      plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
-      toolbar: "bold italic underline strikethrough | numlist bullist | link emoticons",
-      insertdatetime_element: true,
-      media_scripts: [
-        { filter: 'platform.twitter.com' },
-        { filter: 's.imgur.com' },
-        { filter: 'instagram.com' },
-        { filter: 'https://platform.twitter.com/widgets.js' },
-      ],
-      browser_spellcheck: true,
-      contextmenu: false,
-    });
-  
-    // End Rich text editor
+  // Rich text editor
+  tinymce.init({
+    selector: "richtextarea",
+    menubar: false,
+    plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
+    toolbar: "bold italic underline strikethrough | numlist bullist | link emoticons",
+    insertdatetime_element: true,
+    media_scripts: [
+      { filter: 'platform.twitter.com' },
+      { filter: 's.imgur.com' },
+      { filter: 'instagram.com' },
+      { filter: 'https://platform.twitter.com/widgets.js' },
+    ],
+    browser_spellcheck: true,
+    contextmenu: false,
+  });
 
-      // IMAGE PREVIEW CUPONES
-  $('#input-preview-img-cupon').change(function(){
+  // End Rich text editor
+
+  // IMAGE PREVIEW CUPONES
+  $('#input-preview-img-cupon').change(function () {
     var curElement = $('#preview-cupon');
     console.log(curElement);
     var reader = new FileReader();
 
     reader.onload = function (e) {
-        // get loaded data and render thumbnail.
-        curElement.attr('src', e.target.result);
+      // get loaded data and render thumbnail.
+      curElement.attr('src', e.target.result);
     };
 
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
-});
+  });
+
+  $('#input-preview-img-editarCupon').change(function () {
+    var curElement = $('#preview-editarCupon');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      // get loaded data and render thumbnail.
+      curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+  });
   // END IMAGE PREVIEW CUPONES
 
   // Sidebar active item

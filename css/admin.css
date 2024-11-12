@@ -2584,7 +2584,7 @@ figure figcaption {
     border: solid 1px var(--gray4);
     border-radius: .5rem;
     overflow: hidden;
-    width: 10rem;
+    width: 13rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2618,12 +2618,6 @@ figure figcaption {
     /* background-color: pink; */
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-}
-
-.wrap-label-file-upload-cupon p {
-    margin-bottom: 0;
-    color: var(--gray5);
 }
 
 .editarDatosCupon {
@@ -2638,6 +2632,17 @@ figure figcaption {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 0;
+}
+
+.image-card-suggested {
+    color: var(--gray5);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: .875rem;
+}
+
+.image-card-suggested p {
     margin-bottom: 0;
 }
 

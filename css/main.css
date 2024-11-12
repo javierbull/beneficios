@@ -1487,6 +1487,9 @@ nav.main .megamenu-dropdown {
   border: solid 1px var(--border);
   border-top: 0;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3) !important;
+  /* scroll del menu */
+  height: 25rem;
+  overflow-y: auto;
 }
 
 .buscador-desktop {

@@ -1,6 +1,8 @@
 $(document).ready(function () {
   // alert("Hello! I am an alert box!!");
 
+  
+
   // Rich text editor
   tinymce.init({
     selector: "richtextarea",
@@ -16,6 +18,24 @@ $(document).ready(function () {
     ],
     browser_spellcheck: true,
     contextmenu: false,
+  });
+
+  tinymce.init({
+    selector: "richtextareaedit",
+    menubar: false,
+    plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
+    toolbar: "bold italic underline strikethrough | numlist bullist | link emoticons",
+    insertdatetime_element: true,
+    media_scripts: [
+      { filter: 'platform.twitter.com' },
+      { filter: 's.imgur.com' },
+      { filter: 'instagram.com' },
+      { filter: 'https://platform.twitter.com/widgets.js' },
+    ],
+    browser_spellcheck: true,
+    contextmenu: false,
+ 
+  
   });
 
   // End Rich text editor
@@ -655,9 +675,8 @@ $(document).ready(function () {
   });
   // END STEPPER ADMIN
 
-
-  // DATATABLES
-  $('.dtable').DataTable({
+   // DATATABLES
+   $('.dtable').DataTable({
     "language": {
       "lengthMenu": "Mostrar _MENU_ filas",
       "zeroRecords": "No se encontraron resultados",
@@ -672,13 +691,10 @@ $(document).ready(function () {
         "sPrevious": "<"
       },
       "sProcessing": "Procesando...",
-    },
-    // "searching": false,
-    // "info": false
-    // "dom": '<"top"i>rt<"bottom"lfp><"clear">',
-    // scrollX: true
+    }
   });
   // END DATATABLES
+ 
 
   // CAMBIAR LOGO EMPRESA
   $('#editar-empresa-input-preview-img').change(function () {

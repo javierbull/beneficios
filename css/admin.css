@@ -1146,6 +1146,10 @@ table.dataTable {
     overflow-x: auto;
 }
 
+.table>:not(:first-child) {
+    border-top: 0;
+}
+
 /* Pagination */
 
 .page-link {
@@ -2651,3 +2655,44 @@ figure figcaption {
 }
 
 /* END NUEVO CUPÓN */
+
+/* GESTIÓN DE PRODUCTOS Y MARCAS */
+.brand-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.brand-header img {
+    width: 8rem;
+    aspect-ratio: 4/3;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.brand-desc h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.brand-desc p {
+    color: var(--gray5);
+    margin-bottom: 0;
+}
+
+.imgProductTable {
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+    width: 4rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* END GESTIÓN DE MARCAS Y PRODUCTOS */

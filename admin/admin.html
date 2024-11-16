@@ -171,6 +171,7 @@
         </div>
 
         <div class="admin-panel">
+            
             <div class="panel active-panel" id="dashboard-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
@@ -675,6 +676,8 @@
                         </tbody>
                     </table>
                 </div>
+
+                
             </div>
 
             <div class="panel" id="colaboradorNuevo-panel">
@@ -2429,6 +2432,7 @@
                             </tbody>
                         </table>
                     </div>
+
                     <div class="tab-pane fade" id="pills-planilla-enviados" role="tabpanel"
                         aria-labelledby="pills-planilla-enviados-tab">
                         <table class="table dtable align-middle table-admin">
@@ -3684,10 +3688,12 @@
                 </div>
             </div>
 
+            
+
             <div class="panel" id="solicitadosDetalle-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
-                        <h2>Ventas corporativas</h2>
+                        <h2>Ventas corporativas solicitudes</h2>
                         <p>
                             Gestiona la información de tu empresa.
                         </p>
@@ -3862,7 +3868,8 @@
                                 <div class="solicitud-detalle-compra">
                                     <div class="mb-4">
                                         <p>Productos comprados</p>
-                                        <table class="table dtable align-middle table-admin">
+
+                                        <table class="table align-middle table-admin">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">#</th>
@@ -3893,13 +3900,13 @@
                                                 <td>10</td>
                                                 <td>S/ 1000.00</td>
                                                 </tr>
+                                            </tbody>
                                             <tfoot>
                                                 <td colspan="4"></td>
                                                 <td>Total</td>
                                                 <td>20</td>
                                                 <td>S/ 2000.00</td>
                                             </tfoot>
-                                            </tbody>
                                         </table>
                                     </div>
 
@@ -3914,8 +3921,7 @@
                                                 <input type="file" multiple="" />
                                             </label>
                                             <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
-                                            <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
-                                                MB.</span>
+                                            <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10MB.</span>
                                         </div>
 
                                         <div class="files-container"></div>
@@ -3946,7 +3952,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
 
             <div class="panel" id="cupones-panel">
                 <nav class="navbar-panel">
@@ -4651,7 +4657,65 @@
                     </button>
                 </div>
 
-                
+                <div class="brand-header">
+                    <img src="../img/marcas/bembos.png" alt="bembos">
+                    <div class="brand-desc">
+                        <h3>Bembos</h3>
+                        <p>2/2 productos activos</p>
+                    </div>
+                </div>
+
+                <table class="table dtable align-middle table-admin">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">DNI/CE</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo registrado</th>
+                            <th scope="col">Monto</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">
+                                <input type="checkbox" name="checkAll" class="checkAll">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>75462584</td>
+                            <td>Sara Torres Saldaña</td>
+                            <td>storres@mail.com</td>
+                            <td>S/ 50.00</td>
+                            <td>La Victoria</td>
+                            <td class="table-actions">
+                                <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
+                                <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                    data-bs-target="#modalDescuentoPlanillaIndividual">
+                                    <span class="material-symbols-outlined">
+                                        send
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>45896584</td>
+                            <td>Juan Perez Soto </td>
+                            <td>jperezs@mail.com</td>
+                            <td>S/ 100.00</td>
+                            <td>Lince</td>
+                            <td class="table-actions">
+                                <input type="checkbox" name="customer" class="custom-checkboxes" value="2">
+                                <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                    data-bs-target="#modalDescuentoPlanillaIndividual">
+                                    <span class="material-symbols-outlined">
+                                        send
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -6376,7 +6440,15 @@
                                         Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
                                         momento de utilizar el cupón.
                                     </p>
-                                    <richtextarea></richtextarea>
+                                    <richtextareaedit>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet.</li>
+                                            <li>Lorem ipsum dolor sit amet.</li>
+                                            <li>Lorem ipsum dolor sit amet.</li>
+                                            <li>Lorem ipsum dolor sit amet.</li>
+                                            <li>Lorem ipsum dolor sit amet.</li>
+                                        </ul>
+                                    </richtextareaedit>
                                 </div>
 
                                 <fieldset>

@@ -1633,6 +1633,7 @@ figure figcaption {
     display: flex;
     align-items: center;
     gap: .5rem;
+    height: 100%;
 }
 
 .table-actions .form-check {

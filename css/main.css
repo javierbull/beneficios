@@ -8862,3 +8862,57 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: 0;
 }
 /* End modal saludo cumpleaños */
+
+/* Categoría cupones */
+.grid-cupones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+}
+
+.card-cupon {
+  background-color: var(--white);
+  border: solid 1px var(--Gray3);
+  padding: 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  cursor: pointer;
+}
+
+.card-cupon img {
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-cupon-body h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card-cupon-body p {
+  margin-bottom: 0;
+  color: var(--george);
+}
+
+.cupon-bee-title {
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.cupon-bee-title h3 {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+/* End categoria cupones */

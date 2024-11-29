@@ -8882,6 +8882,11 @@ div.dataTables_wrapper div.dataTables_info {
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   cursor: pointer;
+  color: var(--black);
+}
+
+.card-cupon a:hover {
+  text-decoration: none;
 }
 
 .card-cupon img {
@@ -8899,6 +8904,7 @@ div.dataTables_wrapper div.dataTables_info {
 .card-cupon-body h3 {
   font-weight: 600;
   font-size: 1rem;
+  color: var(--black);
 }
 
 .card-cupon-body p {
@@ -8914,5 +8920,9 @@ div.dataTables_wrapper div.dataTables_info {
 .cupon-bee-title h3 {
   margin-top: 3px;
   margin-bottom: 0;
+}
+
+.cupon-detalle-link:hover {
+  text-decoration: none !important ;
 }
 /* End categoria cupones */

@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Cupones</title>
+	<title>Cupón - Bee Beneficios</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,12 +13,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 	<link href="css/fonts.min.css" rel="stylesheet" type="text/css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mq.css">
-
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -732,9 +737,7 @@
 	</div>
 
 	<!-- FIN SIDEBAR OFF CANVAS -->
-
 	<main>
-
 		<a href="https://api.whatsapp.com/send?phone=+51966337361" target="_blank" class="whatsapp">
 			<i class="fab fa-whatsapp"></i>
 		</a>
@@ -1097,33 +1100,29 @@
 		</div>
 		<!-- FIN NAVBAR MOBILE -->
 
-		
-
 		<!-- BREADCRUMB -->
-		<section class="section">
-			<nav class="navbar navbar-breadcrumb-filter navbar-expand-lg">
-				<div class="container">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb-bee">
-							<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Cupones</li>
-						</ol>
-					</nav>
+		<nav class="navbar navbar-breadcrumb-filter navbar-expand-lg">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb-bee">
+						<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+						<li class="breadcrumb-item"><a href="cupones.html">Cupones</a></li>
+						<li class="breadcrumb-item active" aria-current="page">KFC</li>
+					</ol>
+				</nav>
 
-					<div class="content-order-product ml-auto">
-						<div class="form-inline">
-							<label for="exampleFormControlSelect1">Ordenar por:</label>
-							<select class="form-control btn-style-none" id="exampleFormControlSelect1">
-								<option>Recomendados</option>
-								<option>Mayor precio</option>
-								<option>Menor precio</option>
-							</select>
-						</div>
+				<div class="content-order-product ml-auto d-none">
+					<div class="form-inline">
+						<label for="exampleFormControlSelect1">Ordenar por:</label>
+						<select class="form-control btn-style-none" id="exampleFormControlSelect1">
+							<option>Recomendados</option>
+							<option>Mayor precio</option>
+							<option>Menor precio</option>
+						</select>
 					</div>
 				</div>
-			</nav>
-		</section>
-
+			</div>
+		</nav>
 		<!-- FIN BREADCRUMB -->
 
 		<!-- BREADCRUMB MOBILE -->
@@ -1131,415 +1130,559 @@
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb-bee-mobile">
 					<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Cupones</li>
+					<li class="breadcrumb-item"><a href="restaurantes.html">Moda</a></li>
+					<li class="breadcrumb-item active" aria-current="page">La Nacional</li>
 				</ol>
 			</nav>
 		</div>
 		<!-- END BREADCRUMB MOBILE -->
 
+		<!-- SECTION PRODUCT DETAIL -->
+		<section class="section section-product-detail">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 padding-none">
+						<div class="content-img-product bg-salient-product-teatro">
+							<div class="product-label d-none">
+								🌟 Producto destacado
+							</div>
+						</div>
+					</div>
 
-		<!-- FILTROS MOBILE -->
-		<div class="container nav-filter-mobile">
-			<div class="row">
-				<div class="col-6">
-					<button class="btn btn-block btn-style-none" href="#" id="btnFilterMobile">
-						<span class="material-icons-outlined pr-1">
-							filter_alt
-						</span>
-						Filtrar
-					</button>
-				</div>
-				<div class="col-6">
-					<button class="btn btn-block btn-style-none" href="#" id="btnOrderMobile">
-						<span class="material-icons-outlined pr-1">
-							import_export
-						</span>
-						Ordenar
-					</button>
+					<div class="col-lg-6">
+						<div class="content-text-product">
+							<div class="content-text-product-top">
+								<h5 class="brand-product">
+									Teatro La Plaza
+								</h5>
+								<h2 class="title-product">
+									No voy a salir
+								</h2>
+								<p>
+									Claret tenía casa, trabajo y amor. De pronto, el mundo es
+									amenazado por un virus y en menos de 15 días el actor lo
+									pierde todo, o casi todo, y decide refugiarse de incógnito
+									en el Teatro la Plaza, cerrado por la pandemia.
+								</p>
+
+								<p>
+									Elenco: Claret Quea, Roxana Rodriguez, Ana Cecilia Natteri,
+									Daniela Feijoo, Aníbal Lozano, Roy Zevallos, Giuseppe Falla,
+									Emilram Cossío y Cindy Diaz.
+								</p>
+
+								<div class="form-group select-type-product">
+									<label for="selectOptionproduct">Elige tu función</label>
+									<select id="selectOptionproduct" class="form-control">
+										<option selected>Sáb. 26 de junio, 7:00 pm</option>
+										<option>Dom. 27 de junio, 7:00 pm</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="content-text-product-bottom">
+
+								<div class="wrap-type-price-card">
+									<div class="content-type-price regular-price-card number-text-semiBold text-through">
+										<div class="type-price">
+											Precio regular
+										</div>
+										<div class="price">s/ 22.90</div>
+									</div>
+									<div class="content-type-price bee-price-card number-text-extraBold">
+										<div class="type-price">
+											Precio sin activación
+										</div>
+										<div class="price">s/ 18.00</div>
+									</div>
+									<div class="content-type-price activation-price-card number-text-extraBold text-through">
+										<div class="type-price">
+											Precio con activación
+										</div>
+										<div class="price">s/ 14.00</div>
+									</div>
+								</div>
+
+								<div class="content-btn-product">
+									<div class="control-quantity">
+										<button type="button" name="button" class="dec qtybutton btn">-</button>
+										<input type="number" value="1" name="qtybutton" class="plus-minus-box">
+										<button type="button" name="button" class="inc qtybutton btn">+</button>
+									</div>
+									<a href="carrito.html" class="btn btn-primario btn-large">
+										Agregar producto
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<!-- FIN SECTION PRODUCT DETAIL -->
 
-		<div class="filter-mobile">
-			<div class="header-filter-mobile fixed-top shadow">
-				<h3 class="menu-mobile_title">
-					Filtrar
-				</h3>
+		<!-- SECTION TERMS -->
+		<section class="section section-terms">
+			<div class="container">
+				<h4 class="title-list">Consideraciones</h4>
+				<ul class="terms-list">
+					<li>
+						Luego de realizada la compra, recibirás un correo de San Fernando
+						con tu usuario, contraseña e instrucciones para canjear tu vale a
+						través de su web o app.
+					</li>
+					<li>
+						Después de recibir tu usuario y contraseña de San Fernando, solo tendrás 24 horas para acceder.
+					</li>
+					<li>
+						Válido para transferencia de vales a otros usuarios.
+					</li>
+					<li>
+						Válido para canjes en tiendas autorizadas.
+					</li>
+					<li>
+						Válido solo para Lima Metropolitana.
+						<a href="puntosDeCanjeTeatro.html" target="_blank" class="link-bee">
+							Ver puntos de canje aquí
+						</a>
+					</li>
+				</ul>
+				<h4 class="title-list">Vigencia</h4>
+				<ul class="terms-list">
+					<li>
+						El canje es válido hasta el <span>31 de agosto del 2021</span>.
+					</li>
+				</ul>
 
-				<button type="button" name="button" class="btn btnClose closeFilterMobile">
-					<span class="material-icons">
-						close
-					</span>
-				</button>
+				<div class="content-trigger-modalTerms">
+					Para más detalles, no olvides revisar los
+					<a href="terminosYcondicionesTeatro.html" target="_blank" class="link-bee">
+						términos y condiciones
+					</a>
+					de este producto.
+				</div>
+
 			</div>
-			<div class="content-filter-mobile">
-				<div class="accordion accordion-filter" id="accordion-filtros">
-					<div class="card">
-						<div class="card-header accordion-card-header collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordion-filtros">
-							<h2 class="card-title">
-								Categorías
+		</section>
+		<!-- FIN SECTION TERMS -->
+
+		<!-- SECTION OFFERS -->
+		<section class="section section-offers">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-12">
+						<div class="header-section">
+							<h2 class="title-section">
+								Los más vendidos
 							</h2>
-							<div class="content-accordion-icons">
-								<div class="accordion-icon accordion-less hide">
-									-
-								</div>
-								<div class="accordion-icon accordion-more show">
-									+
-								</div>
-							</div>
-						</div>
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-							<div class="card-body">
-								<div class="sub-category">
-									<h4 class="sub-category-title">Planes</h4>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter1">
-										<label class="custom-control-label" for="customCheckFilter1">Aventura</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter2">
-										<label class="custom-control-label" for="customCheckFilter2">Hoteles & Resorts</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter3">
-										<label class="custom-control-label" for="customCheckFilter3">Viajes & excursiones</label>
-									</div>
-								</div>
-								<hr>
-								<div class="sub-category">
-									<h4 class="sub-category-title">Cursos de verano</h4>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter4">
-										<label class="custom-control-label" for="customCheckFilter4">Cocina & bar</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter5">
-										<label class="custom-control-label" for="customCheckFilter5">Craft</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter6">
-										<label class="custom-control-label" for="customCheckFilter6">Innovación</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter7">
-										<label class="custom-control-label" for="customCheckFilter7">Liderazgo & soft skills</label>
-									</div>
-								</div>
-								<hr>
-								<div class="sub-category">
-									<h4 class="sub-category-title">Básicos para el calor</h4>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter8">
-										<label class="custom-control-label" for="customCheckFilter8">Helados</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter9">
-										<label class="custom-control-label" for="customCheckFilter9">Refreshers</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter10">
-										<label class="custom-control-label" for="customCheckFilter10">Protección solar</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-parent="#accordion-filtros">
-							<h2 class="card-title">
-								Marcas
-							</h2>
-						</div>
-						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-							<div class="card-body">
-								<div class="sub-category">
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter11">
-										<label class="custom-control-label" for="customCheckFilter11">Rocky´s</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter12">
-										<label class="custom-control-label" for="customCheckFilter12">Mamma Tomato</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-parent="#accordion-filtros">
-							<h2 class="card-title">
-								Lugar de canje
-							</h2>
-						</div>
-						<div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-							<div class="card-body">
-								<div class="sub-category">
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter13">
-										<label class="custom-control-label" for="customCheckFilter13">Lima</label>
-									</div>
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheckFilter14">
-										<label class="custom-control-label" for="customCheckFilter14">Otras ciudades</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-filter-mobile fixed-bottom">
-				<button type="button" name="button" class="btn btn-primario btn-large mx-auto closeFilterMobile">
-					Aplicar filtros
-				</button>
-			</div>
-		</div>
-
-		<div class="menu-order-mobile">
-			<div class="header-main-menu-mobile sticky-top shadow">
-				<h3 class="menu-mobile_title">
-					Ordenar por
-				</h3>
-
-				<button type="button" name="button" class="btn btnClose closeOrderMobile">
-					<span class="material-icons">
-						close
-					</span>
-				</button>
-			</div>
-			<div class="content-menu-mobile">
-				<div class="form-group form-group-customRadio">
-					<div class="custom-control custom-radio">
-						<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-						<label class="custom-control-label" for="customRadio1">Recomendados</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-						<label class="custom-control-label" for="customRadio2">Menor precio</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-						<label class="custom-control-label" for="customRadio3">Mayor precio</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- FIN FILTROS MOBILE -->
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="sidebar-filter">
-						<div class="accordion accordion-filter" id="accordion-filtros">
-							<div class="card">
-								<div class="card-header accordion-card-header collapsed" id="headingOneDesk" data-toggle="collapse" data-target="#collapseOneDesk" aria-expanded="true" aria-controls="collapseOneDesk" data-parent="#accordion-filtros">
-									<h2 class="card-title">
-										Categorías
-									</h2>
-									<div class="content-accordion-icons">
-										<div class="accordion-icon accordion-less show">
-											-
-										</div>
-										<div class="accordion-icon accordion-more hide">
-											+
-										</div>
-									</div>
-								</div>
-								<div id="collapseOneDesk" class="collapse show" aria-labelledby="headingOneDesk" data-parent="#accordion">
-									<div class="card-body">
-										<div class="sub-category">
-											<h4 class="sub-category-title">Pollos</h4>
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="customCheckFilterDesk1">
-												<label class="custom-control-label" for="customCheckFilterDesk1">Pollo a la brasa</label>
-											</div>
-										</div>
-										<hr>
-										<div class="sub-category">
-											<h4 class="sub-category-title">Pizzas</h4>
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="customCheckFilterDesk4">
-												<label class="custom-control-label" for="customCheckFilterDesk4">Pizza artesanal</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header collapsed" id="headingTwoDesk" data-toggle="collapse" data-target="#collapseTwoDesk" aria-expanded="false" aria-controls="collapseTwoDesk" data-parent="#accordion-filtros">
-									<h2 class="card-title">
-										Marcas
-									</h2>
-								</div>
-								<div id="collapseTwoDesk" class="collapse" aria-labelledby="headingTwoDesk" data-parent="#accordion">
-									<div class="card-body">
-										<div class="sub-category">
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="customCheckFilterDesk11">
-												<label class="custom-control-label" for="customCheckFilterDesk11">Rocky´s</label>
-											</div>
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="customCheckFilterDesk12">
-												<label class="custom-control-label" for="customCheckFilterDesk12">Mamma Tomato</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header collapsed" id="headingTwoDesk" data-toggle="collapse" data-target="#collapseThreeDesk" aria-expanded="false" aria-controls="collapseThreeDesk" data-parent="#accordion-filtros">
-									<h2 class="card-title">
-										Lugar de canje
-									</h2>
-								</div>
-								<div id="collapseThreeDesk" class="collapse" aria-labelledby="headingTwoDesk" data-parent="#accordion">
-									<div class="card-body">
-										<div class="sub-category">
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="customCheckFilterDesk13">
-												<label class="custom-control-label" for="customCheckFilterDesk13">Lima</label>
-											</div>
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="customCheckFilterDesk14">
-												<label class="custom-control-label" for="customCheckFilterDesk14">Otras ciudades</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-9">
-					<div class="content-main-category">
-						<section class="section-wrap-cards">
-							<div class="grid-cupones">
-								
-								<div class="card-cupon">
-									<a href="producto_cupon.html">
-										<img src="img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
+				<div class="carousel-wrap">
+					<div class="owl-carousel owl-theme owl-carousel-beneficios">
+
+						<div class="item" data-merge="1">
+							<div class="content-card-carousel flex-h-auto">
+								<div class="card card-product card-product-carousel flex-h-auto">
+									<div class="wrap-favorite">
+										<i class="far fa-heart favorite">
+										</i>
+									</div>
+									<a href="producto.html" class="flex-h-auto">
+										<div class="wrap-card-body-footer flex-h-auto">
+											<div class="card-body">
+												<div class="content-card-img">
+													<div class="promo-label d-none-">
+														Solo con activación
+													</div>
+													<img src="img/products/cards/bgCardKA.png" class="card-img-top img-fluid" alt="Coca Cola Pack">
+													<div class="content-img-logo">
+														<img src="img/products/cards/colmena.png" class="card-img-logo" alt="Logotipo Racing Dakart Perú">
+													</div>
+												</div>
+												<div class="description-card">
+													<div class="description-content">
+														<div class="description-content-top">
+															<div class="content-tags-card-product">
+																<span class="tag-card-product bg-tagPrimary d-none">
+																	Cyberwow
+																</span>
+																<span class="tag-card-product bg-tagSecondary">
+																	30% dscto
+																</span>
+															</div>
+															<h5 class="brand-card">
+																Racing Dakart Perú
+															</h5>
+															<h4 class="name-product-card">
+																Kartódromo de Asia
+															</h4>
+															<p class="card-text line-clamp line-clamp-2">
+																Adrenalina para todas las edades en los circuitos más completos.
+															</p>
+															<div class="stock-label d-none">
+																🔥 solo quedan 10
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer border-none">
+												<div class="wrap-type-price-card">
+													<div class="content-type-price regular-price-card number-text-semiBold text-through">
+														<div class="price">s/ 22.90</div>
+														<div class="type-price">
+															Precio regular
+														</div>
+													</div>
+													<div class="content-type-price bee-price-card number-text-extraBold text-through d-none">
+														<div class="price">s/ 18.00</div>
+														<div class="type-price">
+															Precio sin activación
+														</div>
+													</div>
+													<div class="content-type-price activation-price-card number-text-extraBold">
+														<div class="price">s/ 14.00</div>
+														<div class="type-price">
+															Precio con activación
+														</div>
+													</div>
+												</div>
+
+												<a href="producto.html" class="btn btn-primario btn-block">
+													Comprar
+												</a>
+											</div>
 										</div>
 									</a>
 								</div>
-
-								<div class="card-cupon">
-									<a href="producto_cupon.html">
-										<img src="img/products/cards/bk.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón mas extenso</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
-										</div>
-									</a>
-								</div>
-
-								<div class="card-cupon">
-									<a href="producto_cupon.html">
-										<img src="img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
-										</div>
-									</a>
-								</div>
-
-								<div class="card-cupon">
-									<a href="producto_cupon.html">
-										<img src="img/products/cards/bk.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón mas extenso</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
-										</div>
-									</a>
-								</div>
-
-								
-								<div class="card-cupon">
-									<a href="producto_cupon.html">
-										<img src="img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
-										</div>
-									</a>
-								</div>
-
-								<div class="card-cupon">
-									<a href="producto_cupon.html">
-										<img src="img/products/cards/bk.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón mas extenso</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
-										</div>
-									</a>
-								</div>
-
-								<div class="card-cupon">
-										<a href="producto_cupon.html">
-										<img src="img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
-										</div>
-									</a>
-								</div>
-
-								<div class="card-cupon">
-									<a href="producto_cupon.html">
-										<img src="img/products/cards/bk.jpg" alt="Tacos el mexicano">
-										<div class="card-cupon-body">
-											<h3>Nombre del cupón mas extenso aún</h3>
-											<p class="line-clamp line-clamp-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed
-												aliquam quas architecto excepturi nesciunt quam nam aut enim nulla?
-											</p>
-										</div>
-									</a>
-								</div>
-								
-                            </div>
-
-							<div class="content-btn-view-more d-flex justify-content-center pt-4">
-								<button type="button" name="button" class="btn btn-secundario">Ver más productos</button>
 							</div>
+						</div>
 
-						</section>
+						<div class="item" data-merge="1">
+							<div class="content-card-carousel flex-h-auto">
+								<div class="card card-product card-product-carousel flex-h-auto">
+									<div class="wrap-favorite">
+										<i class="far fa-heart favorite">
+										</i>
+									</div>
+									<a href="producto.html" class="flex-h-auto">
+										<div class="wrap-card-body-footer flex-h-auto">
+											<div class="card-body">
+												<div class="content-card-img">
+													<div class="promo-label d-none">
+														Solo con activación
+													</div>
+													<img src="img/products/cards/bgCardWong.png" class="card-img-top img-fluid" alt="Coca Cola Pack">
+													<div class="content-img-logo">
+														<img src="img/products/cards/logoWong.png" class="card-img-logo" alt="Logotipo Racing Dakart Perú">
+													</div>
+												</div>
+												<div class="description-card">
+													<div class="description-content">
+														<div class="description-content-top">
+															<div class="content-tags-card-product">
+																<span class="tag-card-product bg-tagPrimary d-none">
+																	Cyberwow
+																</span>
+																<span class="tag-card-product bg-tagSecondary">
+																	30% dscto
+																</span>
+															</div>
+															<h5 class="brand-card">
+																Wong
+															</h5>
+															<h4 class="name-product-card">
+																Coca-cola pack
+															</h4>
+															<p class="card-text line-clamp line-clamp-2">
+																Nada mejor que una Coca Cola.
+																¡Disfrútala en este pack exclusivo!
+															</p>
+															<div class="stock-label d-none">
+																🔥 solo quedan 10
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer border-none">
+												<div class="wrap-type-price-card">
+													<div class="content-type-price regular-price-card number-text-semiBold text-through">
+														<div class="price">s/ 22.90</div>
+														<div class="type-price">
+															Precio regular
+														</div>
+													</div>
+													<div class="content-type-price bee-price-card number-text-extraBold">
+														<div class="price">s/ 18.00</div>
+														<div class="type-price">
+															Precio sin activación
+														</div>
+													</div>
+													<div class="content-type-price activation-price-card number-text-extraBold text-through">
+														<div class="price">s/ 14.00</div>
+														<div class="type-price">
+															Precio con activación
+														</div>
+													</div>
+												</div>
+
+												<a href="producto.html" class="btn btn-primario btn-block">
+													Comprar
+												</a>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item" data-merge="1">
+							<div class="content-card-carousel flex-h-auto">
+								<div class="card card-product card-product-carousel flex-h-auto">
+									<div class="wrap-favorite">
+										<i class="far fa-heart favorite">
+										</i>
+									</div>
+									<a href="producto.html" class="flex-h-auto">
+										<div class="wrap-card-body-footer flex-h-auto">
+											<div class="card-body">
+												<div class="content-card-img">
+													<div class="promo-label d-none">
+														Solo con activación
+													</div>
+													<img src="img/products/cards/bgCardDonofrio.png" class="card-img-top img-fluid" alt="Coca Cola Pack">
+													<div class="content-img-logo">
+														<img src="img/products/cards/logoDonofrio.png" class="card-img-logo" alt="Logotipo Racing Dakart Perú">
+													</div>
+												</div>
+												<div class="description-card">
+													<div class="description-content">
+														<div class="description-content-top">
+															<div class="content-tags-card-product">
+																<span class="tag-card-product bg-tagPrimary d-none">
+																	Cyberwow
+																</span>
+																<span class="tag-card-product bg-tagSecondary">
+																	30% dscto
+																</span>
+															</div>
+															<h5 class="brand-card">
+																Donofrio
+															</h5>
+															<h4 class="name-product-card">
+																Alaska family pack
+															</h4>
+															<p class="card-text line-clamp line-clamp-2">
+																Disfruta de tus helados favoritos todos los
+																días con delivery gratis.
+															</p>
+															<div class="stock-label d-none">
+																🔥 solo quedan 10
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer border-none">
+												<div class="wrap-type-price-card">
+													<div class="content-type-price regular-price-card number-text-semiBold text-through">
+														<div class="price">s/ 22.90</div>
+														<div class="type-price">
+															Precio regular
+														</div>
+													</div>
+													<div class="content-type-price bee-price-card number-text-extraBold text-through">
+														<div class="price">s/ 18.00</div>
+														<div class="type-price">
+															Precio sin activación
+														</div>
+													</div>
+													<div class="content-type-price activation-price-card number-text-extraBold">
+														<div class="price">s/ 14.00</div>
+														<div class="type-price">
+															Precio con activación
+														</div>
+													</div>
+												</div>
+
+												<a href="producto.html" class="btn btn-primario btn-block">
+													Comprar
+												</a>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item" data-merge="1">
+							<div class="content-card-carousel flex-h-auto">
+								<div class="card card-product card-product-carousel flex-h-auto">
+									<div class="wrap-favorite">
+										<i class="far fa-heart favorite">
+										</i>
+									</div>
+									<a href="producto.html" class="flex-h-auto">
+										<div class="wrap-card-body-footer flex-h-auto">
+											<div class="card-body">
+												<div class="content-card-img">
+													<div class="promo-label d-none">
+														Solo con activación
+													</div>
+													<img src="img/products/cards/bgCardLGB.png" class="card-img-top img-fluid" alt="Coca Cola Pack">
+													<div class="content-img-logo">
+														<img src="img/products/cards/logoWong.png" class="card-img-logo" alt="Logotipo Racing Dakart Perú">
+													</div>
+												</div>
+												<div class="description-card">
+													<div class="description-content">
+														<div class="description-content-top">
+															<div class="content-tags-card-product">
+																<span class="tag-card-product bg-tagPrimary d-none">
+																	Cyberwow
+																</span>
+																<span class="tag-card-product bg-tagSecondary">
+																	30% dscto
+																</span>
+															</div>
+															<h5 class="brand-card">
+																Le Gordon Bleu
+															</h5>
+															<h4 class="name-product-card">
+																Cocktails de verano
+															</h4>
+															<p class="card-text line-clamp line-clamp-2">
+																Aprende a preparar los mejores cocktails en
+																este curso corto.
+															</p>
+															<div class="stock-label d-none">
+																🔥 solo quedan 10
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer border-none">
+												<div class="wrap-type-price-card">
+													<div class="content-type-price regular-price-card number-text-semiBold text-through">
+														<div class="price">s/ 22.90</div>
+														<div class="type-price">
+															Precio regular
+														</div>
+													</div>
+													<div class="content-type-price bee-price-card number-text-extraBold text-through">
+														<div class="price">s/ 18.00</div>
+														<div class="type-price">
+															Precio sin activación
+														</div>
+													</div>
+													<div class="content-type-price activation-price-card number-text-extraBold ">
+														<div class="price">s/ 14.00</div>
+														<div class="type-price">
+															Precio con activación
+														</div>
+													</div>
+												</div>
+
+												<a href="producto.html" class="btn btn-primario btn-block">
+													Comprar
+												</a>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="item" data-merge="1">
+							<div class="content-card-carousel flex-h-auto">
+								<div class="card card-product card-product-carousel flex-h-auto">
+									<div class="wrap-favorite">
+										<i class="far fa-heart favorite">
+										</i>
+									</div>
+									<a href="producto.html" class="flex-h-auto">
+										<div class="wrap-card-body-footer flex-h-auto">
+											<div class="card-body">
+												<div class="content-card-img">
+													<div class="promo-label d-none">
+														Solo con activación
+													</div>
+													<img src="img/products/cards/starbucks.png" class="card-img-top img-fluid" alt="Coca Cola Pack">
+													<div class="content-img-logo">
+														<img src="img/products/cards/logoStarbucks.png" class="card-img-logo" alt="Logotipo Racing Dakart Perú">
+													</div>
+												</div>
+												<div class="description-card">
+													<div class="description-content">
+														<div class="description-content-top">
+															<div class="content-tags-card-product">
+																<span class="tag-card-product bg-tagPrimary d-none">
+																	Cyberwow
+																</span>
+																<span class="tag-card-product bg-tagSecondary">
+																	30% dscto
+																</span>
+															</div>
+															<h5 class="brand-card">
+																Starbucks
+															</h5>
+															<h4 class="name-product-card">
+																Frappuccino Grande
+															</h4>
+															<p class="card-text line-clamp line-clamp-2">
+																01 frappuccino grande: mocha o caramel
+															</p>
+															<div class="stock-label d-none">
+																🔥 solo quedan 10
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer border-none">
+												<div class="wrap-type-price-card">
+													<div class="content-type-price regular-price-card number-text-semiBold text-through">
+														<div class="price">s/ 22.90</div>
+														<div class="type-price">
+															Precio regular
+														</div>
+													</div>
+													<div class="content-type-price bee-price-card number-text-extraBold text-through">
+														<div class="price">s/ 18.00</div>
+														<div class="type-price">
+															Precio sin activación
+														</div>
+													</div>
+													<div class="content-type-price activation-price-card number-text-extraBold">
+														<div class="price">s/ 14.00</div>
+														<div class="type-price">
+															Precio con activación
+														</div>
+													</div>
+												</div>
+
+												<a href="producto.html" class="btn btn-primario btn-block">
+													Comprar
+												</a>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
-			</div>
-		</div>
+
+		</section>
+		<!-- FIN SECTION OFFERS -->
+
 	</main>
-
-	<!-- LOADER -->
-	<div class="loader">
-		<img src="img/icons/loader.gif" alt="">
-		<span>Los productos se están cargando...</span>
-	</div>
-	<!-- END LOADER -->
 
 	<footer>
 		<div class="footer-main">
@@ -1694,7 +1837,12 @@
 	<script src="js/bootstrap/popper.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<script src="js/offcanvas.js"></script>
-	<!-- <script src="js/countdown.js"></script> -->
+	<!-- ===================================================================== -->
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/owlcarousel/highlight.js"></script>
+	<script src="vendor/owlcarousel/app.js"></script>
+	<script src="js/owlcarouselmain.js"></script>
+	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
 </body>

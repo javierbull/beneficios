@@ -8943,4 +8943,25 @@ div.dataTables_wrapper div.dataTables_info {
   background-size: cover;
   background-position: center;
 }
+
+.content-cod-cupon {
+  background-color: var(--primary-default);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+.content-cod-cupon h1 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content-cod-cupon p {
+  margin-bottom: 0;
+}
 /* End detalle cupon */

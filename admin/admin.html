@@ -167,6 +167,16 @@
                         </div>
                     </button>
                 </li>
+                <li class="sidebar-item">
+                    <button class="btn sidebar-item-btn showAdminPanel-comunicaciones sidebar-item-db">
+                        <div class="sidebar-item-btn-left">
+                            <span class="material-symbols-outlined">
+                                imagesmode
+                            </span>
+                            Comunicaciones
+                        </div>
+                    </button>
+                </li>
             </ul>
         </div>
 
@@ -4738,6 +4748,74 @@
                     <button type="button" class="btn outline-btn showAdminPanel-marcas">Cancelar</button>
 
                     <button type="button" class="btn primary-btn">Guardar cambios</button>
+                </div>
+            </div>
+
+            <div class="panel" id="comunicaciones-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Comunicaciones</h2>
+                        <p>
+                            Gestiona las comunicaciones de tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="main-comunicaciones">
+                    <ul class="nav nav-pills mb-form" id="pills-tab-cupones" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-banners-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-banners" type="button" role="tab"
+                                aria-controls="pills-banners" aria-selected="true">
+                                Banners
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-popUps-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-popUps" type="button" role="tab"
+                                aria-controls="pills-popUps" aria-selected="false">
+                                Pop ups
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent-cupones">
+                        <div class="tab-pane fade show active" id="pills-banners" role="tabpanel"
+                            aria-labelledby="pills-banners-tab">
+                            subir banners
+                        </div>
+                        <div class="tab-pane fade" id="pills-popUps" role="tabpanel"
+                            aria-labelledby="pills-popUps-tab">
+                            Subir pop ups
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

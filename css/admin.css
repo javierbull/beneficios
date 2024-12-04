@@ -237,6 +237,21 @@ body {
     color: var(--blue5);
 }
 
+.circle-btn {
+    padding: 6px;
+    background: rgba(250, 250, 250, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circle-btn:hover {
+    background: rgba(250, 250, 250, 0.8);
+}
+
 /* End buttons */
 
 /* Inputs  */
@@ -2699,5 +2714,48 @@ figure figcaption {
 /* END GESTIÓN DE MARCAS Y PRODUCTOS */
 
 /* COMUNICACIONES */
+.container-banners {
+    /* background-color: lavender; */
+    width: 100%;
+}
 
+.content-orderBanner {
+    background-color: var(--gray2);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    border: solid 1px var(--gray3);
+}
+
+.comunicacion-banner {
+    width: 100%;
+    position: relative;
+}
+
+.comunicacion-banner-img {
+    width: 100%;
+    aspect-ratio: 5/1;
+    object-fit: cover;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.banner-actions {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
 /* END COMUNICACIONES */

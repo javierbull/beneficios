@@ -4827,7 +4827,7 @@
                                                         edit
                                                     </span>
                                                 </button>
-                                                <button class="btn circle-btn">
+                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarBanner">
                                                     <span class="material-symbols-outlined">
                                                         delete
                                                     </span>
@@ -4852,7 +4852,7 @@
                                                         edit
                                                     </span>
                                                 </button>
-                                                <button class="btn circle-btn">
+                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarBanner">
                                                     <span class="material-symbols-outlined">
                                                         delete
                                                     </span>
@@ -4877,7 +4877,7 @@
                                                         edit
                                                     </span>
                                                 </button>
-                                                <button class="btn circle-btn">
+                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarBanner">
                                                     <span class="material-symbols-outlined">
                                                         delete
                                                     </span>
@@ -4886,6 +4886,21 @@
                                         </div>
                                     </div>
 
+                                    <div class="form-actions">
+                                        <button type="button" class="btn outline-btn">
+                                            <span class="material-symbols-outlined">
+                                                visibility
+                                            </span>
+                                            Previsualizar
+                                        </button>
+        
+                                        <button type="button" class="btn primary-btn">
+                                            <span class="material-symbols-outlined">
+                                                add
+                                            </span>
+                                            ASgregar banner
+                                        </button>
+                                    </div>
                                 </div>
             
                                 <div class="inhouse-main-sidebar">
@@ -6730,6 +6745,32 @@
         </div>
     </div>
     <!-- End modal update cupones bee -->
+
+    <!-- Modal eliminar banner-->
+    <div class="modal fade" id="modalEliminarBanner" tabindex="-1" aria-labelledby="eliminarVisitainhouse"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="eliminarVisitainhouse">Elimina banner</h5>
+                    <p class="mb-0">
+                        ¿Estás seguro de eliminar este banner?
+                    </p>
+                    <img src="../img/banners/bg-banner-1.png" alt="" class="img-banner-modal">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn danger-btn">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal eliminar banner-->
+
+    
 
     <!-- END MODALS -->
 

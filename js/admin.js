@@ -40,7 +40,7 @@ $(document).ready(function () {
 
   // End Rich text editor
 
-  // IMAGE PREVIEW CUPONES
+  // IMAGE PREVIEW 
   $('#input-preview-img-cupon').change(function () {
     var curElement = $('#preview-cupon');
     console.log(curElement);
@@ -68,7 +68,21 @@ $(document).ready(function () {
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
   });
-  // END IMAGE PREVIEW CUPONES
+
+  $('#input-preview-img-addBannerMobile').change(function () {
+    var curElement = $('#preview-addBannerMobile');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      // get loaded data and render thumbnail.
+      curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+  });
+  // END IMAGE PREVIEW
 
   // Sidebar active item
   $(".sidebar-item-db").on('click', function () {

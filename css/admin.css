@@ -2733,6 +2733,10 @@ figure figcaption {
     border: solid 1px var(--gray3);
 }
 
+.content-orderBanner select {
+    width: 4rem;
+}
+
 .comunicacion-banner {
     width: 100%;
     position: relative;

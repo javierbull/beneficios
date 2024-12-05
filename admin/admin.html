@@ -4822,7 +4822,7 @@
                                         <div class="comunicacion-banner">
                                             <img src="../img/banners/bg-banner-1.png" class="comunicacion-banner-img" alt="">
                                             <div class="banner-actions">
-                                                <button class="btn circle-btn">
+                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarBanner">
                                                     <span class="material-symbols-outlined">
                                                         edit
                                                     </span>
@@ -4847,7 +4847,7 @@
                                         <div class="comunicacion-banner">
                                             <img src="../img/banners/bg-banner-2.png" class="comunicacion-banner-img" alt="">
                                             <div class="banner-actions">
-                                                <button class="btn circle-btn">
+                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarBanner">
                                                     <span class="material-symbols-outlined">
                                                         edit
                                                     </span>
@@ -4872,7 +4872,7 @@
                                         <div class="comunicacion-banner">
                                             <img src="../img/banners/bg-banner-3.png" class="comunicacion-banner-img" alt="">
                                             <div class="banner-actions">
-                                                <button class="btn circle-btn">
+                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarBanner">
                                                     <span class="material-symbols-outlined">
                                                         edit
                                                     </span>
@@ -6872,6 +6872,109 @@
         </div>
     </div>
     <!-- End Modal agregar banner-->
+
+    <!-- Modal editar banner-->
+    <div class="modal fade" id="modalEditarBanner" tabindex="-1" aria-labelledby="editarBanner"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Editar banner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Subir imágenes</h6>
+                            </div>
+                            
+                            <div class="imagenesBanners">
+                                <div class="wrap-img-preview-addBanner">
+                                    <div class="imageWrapper-banner-mobile">
+                                        <img class="image-preview-addBannerMobile" id="preview-editBannerMobile" src="../img/banners/bg-banner-mobile-1.png">
+                                    </div>
+    
+                                    <div class="wrap-label-file-upload-addBannerMobile">
+                                        <h6>imagen para celular</h6>
+                                        <button class="file-upload-addBannerMobile btn outline-btn">
+                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-editBannerMobile">Agregar imagen
+                                        </button>
+                                        <div class="image-card-suggested">
+                                            <p>Formatos: JPG, PNG</p>
+                                            <p>Tamaño recomendado: 400px x 400px</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wrap-img-preview-addBanner">
+                                    <div class="imageWrapper-banner-desktop">
+                                        <img class="image-preview-addBannerDesktop" id="preview-editBannerDesktop" src="../img/banners/bg-banner-1.png">
+                                    </div>
+    
+                                    <div class="wrap-label-file-upload-addBannerMobile">
+                                        <h6>Imagen para computadoras</h6>
+                                        <button class="file-upload-addBannerMobile btn outline-btn">
+                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-editBannerDesktop">Agregar imagen
+                                        </button>
+                                        <div class="image-card-suggested">
+                                            <p>Formatos: JPG, PNG</p>
+                                            <p>Tamaño recomendado: 1920px x 345px</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Programar periodo</h6>
+                            </div>
+
+                            <form>
+                                <div class="row g-3">
+                                    <div class="form-group mb-form col">
+                                        <label for="vigenciaEditarBannerInicio" class="form-label">Desde</label>
+                                        <input type="date" class="form-control" id="vigenciaEditarBannerInicio" value="2024-12-01">
+                                        <div class="text-help">Ingrese un horario</div>
+                                    </div>
+
+                                    <div class="form-group mb-form col">
+                                        <label for="vigenciaEditarBannerFin" class="form-label">Hasta</label>
+                                        <input type="date" class="form-control" id="vigenciaEditarBannerFin" value="2024-12-24">
+                                        <div class="text-help">Ingrese un horario</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </fieldset>
+                               
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Posición</h6>
+                            </div>
+
+                            <div class="mb-form form-group col-2">
+                                <select class="form-select" aria-label="Default select">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                        </fieldset>  
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal editar banner-->
 
     
 

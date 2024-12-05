@@ -2780,6 +2780,7 @@ figure figcaption {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .imageWrapper-banner-mobile {
@@ -2822,6 +2823,23 @@ figure figcaption {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.imageWrapper-banner-desktop {
+    width: 65%;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    overflow: hidden;
+    border: solid 1px var(--gray3);
+}
+
+.image-preview-addBannerDesktop {
+    width: 100%;
+    aspect-ratio: 5/1;
+    object-fit: cover;
 }
 /* END COMUNICACIONES */
 

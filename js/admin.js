@@ -82,6 +82,20 @@ $(document).ready(function () {
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
   });
+
+  $('#input-preview-img-addBannerDesktop').change(function () {
+    var curElement = $('#preview-addBannerDesktop');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      // get loaded data and render thumbnail.
+      curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+  });
   // END IMAGE PREVIEW
 
   // Sidebar active item

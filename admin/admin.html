@@ -6824,80 +6824,42 @@
                                 </div>
                             </div>                                
                         </fieldset>
+
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">2</span>
-                                <h6 class="heading-6">Descripción y condiciones</h6>
+                                <h6 class="heading-6">Programar periodo</h6>
                             </div>
 
-                            <form class="form-nuevoCupon">
-                                <div class="mb-form custom-textArea">
-                                    <label for="editarCuponDescCompleta" class="form-label">Descripción completa</label>
-                                    <p>
-                                        Este mensaje aparecerá una vez los colaboradores haga clic en el cupón.
-                                    </p>
-                                    <textarea class="form-control" id="editarCuponDescCompleta" rows="3"
-                                        placeholder="Escriba una descripción"></textarea>
-                                </div>
-
-                                <div class="mb-form custom-textArea">
-                                    <label class="form-label">Consideraciones</label>
-                                    <p>
-                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
-                                        momento de utilizar el cupón.
-                                    </p>
-                                    <richtextareaedit>
-                                        <ul>
-                                            <li>Lorem ipsum dolor sit amet.</li>
-                                            <li>Lorem ipsum dolor sit amet.</li>
-                                            <li>Lorem ipsum dolor sit amet.</li>
-                                            <li>Lorem ipsum dolor sit amet.</li>
-                                            <li>Lorem ipsum dolor sit amet.</li>
-                                        </ul>
-                                    </richtextareaedit>
-                                </div>
-
-                                <fieldset>
-                                    <p class="mb-0">Periodo de vigencia</p>
-                                    <div class="row g-3">
-                                        <div class="form-group mb-form col">
-                                            <label for="vigenciaEditarCuponInicio" class="form-label">Desde</label>
-                                            <input type="date" class="form-control" id="vigenciaEditarCuponInicio">
-                                            <div class="text-help">Ingrese un horario</div>
-                                        </div>
-
-                                        <div class="form-group mb-form col">
-                                            <label for="vigenciaEditarCuponFin" class="form-label">Hasta</label>
-                                            <input type="date" class="form-control" id="vigenciaEditarCuponFin">
-                                            <div class="text-help">Ingrese un horario</div>
-                                        </div>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="form-group mb-form col">
+                                        <label for="vigenciaEditarCuponInicio" class="form-label">Desde</label>
+                                        <input type="date" class="form-control" id="vigenciaEditarCuponInicio">
+                                        <div class="text-help">Ingrese un horario</div>
                                     </div>
-                                </fieldset>
 
-                                <div class="mb-form custom-textArea">
-                                    <label for="editarCuponInstruccionesCanje" class="form-label">Instrucciones de canje</label>
-                                    <p>
-                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al momento de utilizar el cupón.
-                                    </p>
-                                    <textarea class="form-control" id="editarCuponInstruccionesCanje" rows="4"
-                                        placeholder="Escriba las instrucciones"></textarea>
+                                    <div class="form-group mb-form col">
+                                        <label for="vigenciaEditarCuponFin" class="form-label">Hasta</label>
+                                        <input type="date" class="form-control" id="vigenciaEditarCuponFin">
+                                        <div class="text-help">Ingrese un horario</div>
+                                    </div>
                                 </div>
                             </form>
                         </fieldset>
+                               
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Posición</h6>
+                            </div>
+                        </fieldset>
+                                
                     </form>
                 </div>
-                <div class="modal-footer modal-actions-between">
-                    <button type="button" class="btn danger-outline-btn">
-                        <span class="material-symbols-outlined">
-                            delete
-                        </span>
-                        Eliminar
-                    </button>
-                    
-                    <div class="modal-actions">
-                        <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn primary-btn">Guardar</button>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
                 </div>
             </div>
         </div>

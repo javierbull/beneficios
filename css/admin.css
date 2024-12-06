@@ -2724,7 +2724,7 @@ figure figcaption {
 
 .content-orderBanner {
     background-color: var(--gray2);
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -2841,5 +2841,44 @@ figure figcaption {
     aspect-ratio: 5/1;
     object-fit: cover;
 }
+
+.grid-popups {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+}
+
+.card-popup {
+    background-color: var(--gray2);
+    border: solid 1px var(--gray3);
+    padding: .5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.card-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.card-popup-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    object-fit: cover;
+}
+
+
 /* END COMUNICACIONES */
 

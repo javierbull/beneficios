@@ -7221,7 +7221,6 @@
                                     </div>
     
                                     <div class="wrap-label-file-upload-addBannerMobile">
-                                        <h6>imagen para celular</h6>
                                         <button class="file-upload-addBannerMobile btn outline-btn">
                                             <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-addPopup">Agregar imagen
                                         </button>
@@ -7281,6 +7280,91 @@
         </div>
     </div>
     <!-- End Modal agregar pop up-->
+
+    <!-- Modal editar pop up-->
+    <div class="modal fade" id="modalEditarPopup" tabindex="-1" aria-labelledby="editarPopup"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Editar pop up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Subir la imagen</h6>
+                            </div>
+                            
+                            <div class="imagenesBanners">
+                                <div class="wrap-img-preview-addBanner">
+                                    <div class="imageWrapper-banner-mobile">
+                                        <img class="image-preview-addBannerMobile" id="preview-editPopup" src="../img/banners/bg-banner-1.png">
+                                    </div>
+    
+                                    <div class="wrap-label-file-upload-addBannerMobile">
+                                        <button class="file-upload-addBannerMobile btn outline-btn">
+                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-editPopup">Agregar imagen
+                                        </button>
+                                        <div class="image-card-suggested">
+                                            <p>Formatos: JPG, PNG</p>
+                                            <p>Tamaño recomendado: 800px x 800px</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Programar periodo</h6>
+                            </div>
+
+                            <form>
+                                <div class="row g-3">
+                                    <div class="form-group mb-form col">
+                                        <label for="vigenciaEditPopupInicio" class="form-label">Desde</label>
+                                        <input type="date" class="form-control" id="vigenciaEditPopupInicio">
+                                        <div class="text-help">Ingrese una fecha</div>
+                                    </div>
+
+                                    <div class="form-group mb-form col">
+                                        <label for="vigenciaEditPopupFin" class="form-label">Hasta</label>
+                                        <input type="date" class="form-control" id="vigenciaEditPopupFin">
+                                        <div class="text-help">Ingrese una fecha</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </fieldset>
+                               
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Posición</h6>
+                            </div>
+
+                            <div class="mb-form form-group col-2">
+                                <select class="form-select" aria-label="Default select">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                        </fieldset>  
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal editar pop up-->
 
     <!-- END MODALS -->
 

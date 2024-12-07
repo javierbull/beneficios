@@ -2888,5 +2888,9 @@ figure figcaption {
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
 }
+
+.content-grid-actions {
+    width: 100%;
+}
 /* END COMUNICACIONES */
 

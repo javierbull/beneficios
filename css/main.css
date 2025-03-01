@@ -9073,4 +9073,12 @@ div.dataTables_wrapper div.dataTables_info {
   background-size: cover;
   background-position: center;
 }
+
+.ticket-star-vigencia {
+  margin-bottom: .5rem;
+}
+
+.wrap-vale-ticket-star {
+  display: flex;
+}
 /* End Ticket Grupo Star */

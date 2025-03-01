@@ -285,6 +285,13 @@
     width: calc(100vw - 3rem);
   }
   /* END DASHBOARD */
+
+  /* boletos cine star */
+  .wrap-vale-ticket-star .vale-controls {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+  /* End boletos cine star */
 }
 
 /* Fin tablet landscape */
@@ -1013,6 +1020,25 @@
     height: 22rem;
   }
   /* End vale circo terror */
+
+  /* boleto cine star */
+  .wrap-vale-ticket-star {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ticket-star {
+    width: 100%;
+    padding: 1.5rem;
+    color: var(--white);
+  }
+
+  .wrap-vale-ticket-star .vale-controls {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  /* End boleto cine star */
 }
 
 /* fin tablet portrait */
@@ -2545,6 +2571,27 @@
   }
   
   /* End vale cinemark */
+
+     /* boleto cine star */
+     .wrap-vale-ticket-star {
+      /* background-color: pink; */
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+    }
+
+    .ticket-star-main {
+      /* background-color: tomato; */
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    
+    /* End boleto cine star */
 }
 
 /* Fin cell portrait */
@@ -2666,8 +2713,6 @@
   }
 
   /* FIN CARRITO DE COMPRAS */
-
-
 }
 
 /* Fin small cell portrait */

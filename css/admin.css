@@ -342,6 +342,12 @@ input[type=number] {
         'FILL' 1
 }
 
+.alert .link-btn {
+    text-transform: none;
+    text-decoration: underline;
+    color: var(--gray7);
+}
+
 .alert-start {
    /* background-color: pink;  */
    display: flex;

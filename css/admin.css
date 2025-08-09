@@ -342,13 +342,17 @@ input[type=number] {
 }
 
 .alert-info {
-    color: var(--blue6);
-    background-color: var(--blue3);
-    border-color: var(--blue3);
+    color: var(--gray7);
+    background-color: var(--blue2);
+    border-color: var(--blue2);
 }
 
 .alert-info .link {
     color: var(--blue6);
+}
+
+.alert-info span {
+    color: var(--blue5);
 }
 
 .icon-fill {

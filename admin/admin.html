@@ -34,7 +34,7 @@
                     <!-- <img src="../img/logos/logoBCP.png" alt=""> -->
                     <!-- <img src="../img/logos/Colmena-logo.png" alt=""> -->
                     <!-- <img src="../img/logos/logoInterbank.png" alt=""> -->
-                     <img src="../img/logos/logos_empresas/colmena.png" alt="">
+                    <img src="../img/logos/logos_empresas/colmena.png" alt="">
                 </div>
 
                 <li class="sidebar-item">
@@ -182,7 +182,7 @@
         </div>
 
         <div class="admin-panel">
-            
+
             <div class="panel active-panel" id="dashboard-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
@@ -218,17 +218,19 @@
                             </ul>
                         </div>
                     </div>
-
                 </nav>
 
                 <div class="alert alert-success" role="alert">
-                    <span class="material-symbols-outlined">
-                        check_circle
-                    </span>
-                    Tu solicitud de pago por planilla fue aprobada
-                    <button class="btn link-btn" data-bs-toggle="modal" data-bs-target="#">
-                        Ver detalle
-                    </button>
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        Tu solicitud de pago por planilla fue aprobada
+                        <button class="btn link-btn" data-bs-toggle="modal" data-bs-target="#">
+                            Ver detalle
+                        </button>
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
                 <div class="dashboard-main">
@@ -622,7 +624,7 @@
                                                 edit
                                             </span>
                                         </button>
-    
+
                                         <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
                                             data-bs-target="#modalEliminarColaborador">
                                             <span class="material-symbols-outlined">
@@ -651,7 +653,7 @@
                                                 edit
                                             </span>
                                         </button>
-    
+
                                         <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
                                             data-bs-target="#modalEliminarColaborador">
                                             <span class="material-symbols-outlined">
@@ -680,7 +682,7 @@
                                                 edit
                                             </span>
                                         </button>
-    
+
                                         <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
                                             data-bs-target="#modalEliminarColaborador">
                                             <span class="material-symbols-outlined">
@@ -694,7 +696,7 @@
                     </table>
                 </div>
 
-                
+
             </div>
 
             <div class="panel" id="colaboradorNuevo-panel">
@@ -1003,15 +1005,20 @@
                 <div class="card-admin card-datos-empresa">
                     <div class="card-datos-empresa__top">
                         <h2 class="card-admin__title">Datos de tu empresa:</h2>
+
                         <div class="alert alert-info" role="alert">
-                            Para modificar estos datos debes contactarte con tu asesor comercial.
-                            <button class="btn link-btn" data-bs-toggle="modal"
-                                data-bs-target="#modalActualizardatosEmpresa">
-                                Solicitar cambio
-                            </button>
-                            <span class="material-symbols-outlined">
-                                info
-                            </span>
+                            <div class="alert-start">
+                                <span class="material-symbols-outlined">
+                                    lock
+                                </span>
+                                Para modificar estos datos debes contactarte con tu asesor comercial.
+                                <button class="btn link-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalActualizardatosEmpresa">
+                                    Solicitar cambio
+                                </button>
+                            </div>
+                            <button type="button" class="btn-close d-none" data-bs-dismiss="alert"
+                                aria-label="Close"></button>
                         </div>
                     </div>
                     <div class="card-datos-empresa__bottom">
@@ -1185,7 +1192,7 @@
                                                 edit
                                             </span>
                                         </button>
-    
+
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" role="switch"
                                                 id="flexSwitchCheckChecked" checked>
@@ -1207,7 +1214,7 @@
                                                 edit
                                             </span>
                                         </button>
-    
+
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" role="switch"
                                                 id="flexSwitchCheckChecked" checked>
@@ -1229,7 +1236,7 @@
                                                 edit
                                             </span>
                                         </button>
-    
+
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" role="switch"
                                                 id="flexSwitchCheckChecked" checked>
@@ -1251,7 +1258,7 @@
                                                 edit
                                             </span>
                                         </button>
-    
+
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" role="switch"
                                                 id="flexSwitchCheckChecked" checked>
@@ -1630,7 +1637,7 @@
                                             edit
                                         </span>
                                     </button>
-    
+
                                     <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
                                         data-bs-target="#modalEliminarContacto">
                                         <span class="material-symbols-outlined">
@@ -1659,7 +1666,7 @@
                                             edit
                                         </span>
                                     </button>
-    
+
                                     <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
                                         data-bs-target="#modalEliminarContacto">
                                         <span class="material-symbols-outlined">
@@ -2677,13 +2684,16 @@
                 </nav>
 
                 <div class="alert alert-danger" role="alert">
-                    <span class="material-symbols-outlined">
-                        cancel
-                    </span>
-                    Tienes una visita cancelada por tu ejecutivo.
-                    <button class="btn link-btn" data-bs-toggle="modal" data-bs-target="#modaladminVisitaEliminada">
-                        Ver detalle
-                    </button>
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                        Tienes una visita cancelada por tu ejecutivo.
+                        <button class="btn link-btn" data-bs-toggle="modal" data-bs-target="#modaladminVisitaEliminada">
+                            Ver detalle
+                        </button>
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
                 <div class="navbar-actions">
@@ -3962,7 +3972,8 @@
                                                 <input type="file" multiple="" />
                                             </label>
                                             <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
-                                            <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10MB.</span>
+                                            <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser
+                                                10MB.</span>
                                         </div>
 
                                         <div class="files-container"></div>
@@ -3993,7 +4004,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
 
             <div class="panel" id="cupones-panel">
                 <nav class="navbar-panel">
@@ -4190,7 +4201,8 @@
 
                             <div class="navbar-actions">
                                 <div class="navbar-actions__right">
-                                    <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalConfirmCuponesBee">
+                                    <button type="button" class="btn primary-btn" data-bs-toggle="modal"
+                                        data-bs-target="#modalConfirmCuponesBee">
                                         Guardar cambios
                                     </button>
                                 </div>
@@ -4287,12 +4299,14 @@
                                 <h5 class="heading-6">Subir imagen</h5>
                                 <div class="wrap-img-preview-cupon">
                                     <div class="imageWrapper-cupon">
-                                        <img class="image-preview-cupon" id="preview-cupon" src="../img/products/cards/cupon-default.png">
+                                        <img class="image-preview-cupon" id="preview-cupon"
+                                            src="../img/products/cards/cupon-default.png">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-cupon">
                                         <button class="file-upload-cupon btn outline-btn">
-                                            <input type="file" class="file-input-image-cupon" id="input-preview-img-cupon">Agregar imagen
+                                            <input type="file" class="file-input-image-cupon"
+                                                id="input-preview-img-cupon">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -4384,9 +4398,11 @@
                                 </fieldset>
 
                                 <div class="mb-form custom-textArea">
-                                    <label for="cuponInstruccionesCanje" class="form-label">Instrucciones de canje</label>
+                                    <label for="cuponInstruccionesCanje" class="form-label">Instrucciones de
+                                        canje</label>
                                     <p>
-                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al momento de utilizar el cupón.
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
+                                        momento de utilizar el cupón.
                                     </p>
                                     <textarea class="form-control" id="cuponInstruccionesCanje" rows="4"
                                         placeholder="Escriba las instrucciones"></textarea>
@@ -4449,7 +4465,9 @@
                                 <div class="mb-3">
                                     <h5 class="heading-6 mb-1">Descripción completa</h5>
                                     <p>
-                                        ¡Ilumina tus espacios con estilo! Presente el código en las sucursales adheridas de EGLO y disfrute de un 30% de descuento en todas las lámparas y luminarias EGLO.
+                                        ¡Ilumina tus espacios con estilo! Presente el código en las sucursales adheridas
+                                        de EGLO y disfrute de un 30% de descuento en todas las lámparas y luminarias
+                                        EGLO.
                                     </p>
                                 </div>
 
@@ -4475,7 +4493,8 @@
                                 <div class="mb-3">
                                     <h5 class="heading-6 mb-1">Instrucciones de canje</h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, laborum necessitatibus sequi quia harum non nemo sint blanditiis distinctio consectetur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, laborum
+                                        necessitatibus sequi quia harum non nemo sint blanditiis distinctio consectetur.
                                     </p>
                                 </div>
 
@@ -4722,7 +4741,8 @@
                         <tr>
                             <th scope="row">1</th>
                             <td>
-                                <img class="imgProductTable" src="../img/products/detalle_producto/promoParrillera.png" alt="Promo parrillera">
+                                <img class="imgProductTable" src="../img/products/detalle_producto/promoParrillera.png"
+                                    alt="Promo parrillera">
                             </td>
                             <td>Promo parrillera</td>
                             <td>1 Parrillera regular, 1 papa regular, 1 Gaseosa personal.</td>
@@ -4733,15 +4753,18 @@
                         <tr>
                             <th scope="row">2</th>
                             <td>
-                                <img class="imgProductTable" src="../img/products/detalle_producto/promoDobleQuesoTocino.png" alt="Promo queso tocino">
+                                <img class="imgProductTable"
+                                    src="../img/products/detalle_producto/promoDobleQuesoTocino.png"
+                                    alt="Promo queso tocino">
                             </td>
                             <td>Promo Doble Queso Tocino</td>
-                            <td>Doble hamburguesa a la parrilla, doble queso edam, doble tocino, lechuga, tomate, mayonesa, papa regular y gaseosa de 500ml.</td>
+                            <td>Doble hamburguesa a la parrilla, doble queso edam, doble tocino, lechuga, tomate,
+                                mayonesa, papa regular y gaseosa de 500ml.</td>
                             <td>
                                 <input type="checkbox" name="customer" class="custom-checkboxes" value="1">
                             </td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
 
@@ -4793,15 +4816,15 @@
                     <ul class="nav nav-pills mb-form" id="pills-tab-cupones" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-banners-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-banners" type="button" role="tab"
-                                aria-controls="pills-banners" aria-selected="true">
+                                data-bs-target="#pills-banners" type="button" role="tab" aria-controls="pills-banners"
+                                aria-selected="true">
                                 Banners
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-popUps-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-popUps" type="button" role="tab"
-                                aria-controls="pills-popUps" aria-selected="false">
+                                data-bs-target="#pills-popUps" type="button" role="tab" aria-controls="pills-popUps"
+                                aria-selected="false">
                                 Pop ups
                             </button>
                         </li>
@@ -4821,14 +4844,17 @@
                                             </select>
                                         </div>
                                         <div class="comunicacion-banner">
-                                            <img src="../img/banners/bg-banner-1.png" class="comunicacion-banner-img" alt="">
+                                            <img src="../img/banners/bg-banner-1.png" class="comunicacion-banner-img"
+                                                alt="">
                                             <div class="banner-actions">
-                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarBanner">
+                                                <button class="btn circle-btn" data-bs-toggle="modal"
+                                                    data-bs-target="#modalEditarBanner">
                                                     <span class="material-symbols-outlined">
                                                         edit
                                                     </span>
                                                 </button>
-                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarBanner">
+                                                <button class="btn circle-btn" data-bs-toggle="modal"
+                                                    data-bs-target="#modalEliminarBanner">
                                                     <span class="material-symbols-outlined">
                                                         delete
                                                     </span>
@@ -4846,14 +4872,17 @@
                                             </select>
                                         </div>
                                         <div class="comunicacion-banner">
-                                            <img src="../img/banners/bg-banner-2.png" class="comunicacion-banner-img" alt="">
+                                            <img src="../img/banners/bg-banner-2.png" class="comunicacion-banner-img"
+                                                alt="">
                                             <div class="banner-actions">
-                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarBanner">
+                                                <button class="btn circle-btn" data-bs-toggle="modal"
+                                                    data-bs-target="#modalEditarBanner">
                                                     <span class="material-symbols-outlined">
                                                         edit
                                                     </span>
                                                 </button>
-                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarBanner">
+                                                <button class="btn circle-btn" data-bs-toggle="modal"
+                                                    data-bs-target="#modalEliminarBanner">
                                                     <span class="material-symbols-outlined">
                                                         delete
                                                     </span>
@@ -4871,14 +4900,17 @@
                                             </select>
                                         </div>
                                         <div class="comunicacion-banner">
-                                            <img src="../img/banners/bg-banner-3.png" class="comunicacion-banner-img" alt="">
+                                            <img src="../img/banners/bg-banner-3.png" class="comunicacion-banner-img"
+                                                alt="">
                                             <div class="banner-actions">
-                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarBanner">
+                                                <button class="btn circle-btn" data-bs-toggle="modal"
+                                                    data-bs-target="#modalEditarBanner">
                                                     <span class="material-symbols-outlined">
                                                         edit
                                                     </span>
                                                 </button>
-                                                <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarBanner">
+                                                <button class="btn circle-btn" data-bs-toggle="modal"
+                                                    data-bs-target="#modalEliminarBanner">
                                                     <span class="material-symbols-outlined">
                                                         delete
                                                     </span>
@@ -4894,8 +4926,9 @@
                                             </span>
                                             Previsualizar
                                         </button>
-        
-                                        <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalAgregarBanner">
+
+                                        <button type="button" class="btn primary-btn" data-bs-toggle="modal"
+                                            data-bs-target="#modalAgregarBanner">
                                             <span class="material-symbols-outlined">
                                                 add
                                             </span>
@@ -4903,40 +4936,40 @@
                                         </button>
                                     </div>
                                 </div>
-            
+
                                 <div class="inhouse-main-sidebar">
                                     <div class="carousel-mini-banner">
                                         <div id="carouselVales" class="carousel slide" data-bs-ride="carousel">
                                             <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="0"
-                                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="1"
-                                                    aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="2"
-                                                    aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carouselVales"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselVales"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselVales"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
                                             </div>
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="../img/carousel/carousel-mini/bannerv1.png" class="d-block w-100"
-                                                        alt="...">
+                                                    <img src="../img/carousel/carousel-mini/bannerv1.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="../img/carousel/carousel-mini/bannerv2.png" class="d-block w-100"
-                                                        alt="...">
+                                                    <img src="../img/carousel/carousel-mini/bannerv2.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="../img/carousel/carousel-mini/bannerv3.png" class="d-block w-100"
-                                                        alt="...">
+                                                    <img src="../img/carousel/carousel-mini/bannerv3.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-            
+
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-popUps" role="tabpanel"
-                            aria-labelledby="pills-popUps-tab">
+                        <div class="tab-pane fade" id="pills-popUps" role="tabpanel" aria-labelledby="pills-popUps-tab">
                             <div class="inhouse-main">
                                 <div class="content-grid-actions">
                                     <div class="grid-popups">
@@ -4951,24 +4984,27 @@
                                                         <option>5</option>
                                                     </select>
                                                 </div>
-        
+
                                                 <div class="popup-actions">
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarPopup">
                                                         <span class="material-symbols-outlined">
                                                             edit
                                                         </span>
                                                     </button>
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEliminarPopup">
                                                         <span class="material-symbols-outlined">
                                                             delete
                                                         </span>
                                                     </button>
                                                 </div>
                                             </div>
-        
-                                            <img src="../img/banners/bg-banner-mobile-1.png" class="card-popup-img" alt="">
+
+                                            <img src="../img/banners/bg-banner-mobile-1.png" class="card-popup-img"
+                                                alt="">
                                         </div>
-        
+
                                         <div class="card-popup">
                                             <div class="card-popup-header">
                                                 <div class="form-group">
@@ -4980,24 +5016,27 @@
                                                         <option>5</option>
                                                     </select>
                                                 </div>
-        
+
                                                 <div class="popup-actions">
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarPopup">
                                                         <span class="material-symbols-outlined">
                                                             edit
                                                         </span>
                                                     </button>
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEliminarPopup">
                                                         <span class="material-symbols-outlined">
                                                             delete
                                                         </span>
                                                     </button>
                                                 </div>
                                             </div>
-        
-                                            <img src="../img/banners/bg-banner-mobile-2.png" class="card-popup-img" alt="">
+
+                                            <img src="../img/banners/bg-banner-mobile-2.png" class="card-popup-img"
+                                                alt="">
                                         </div>
-        
+
                                         <div class="card-popup">
                                             <div class="card-popup-header">
                                                 <div class="form-group">
@@ -5009,24 +5048,27 @@
                                                         <option>5</option>
                                                     </select>
                                                 </div>
-        
+
                                                 <div class="popup-actions">
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarPopup">
                                                         <span class="material-symbols-outlined">
                                                             edit
                                                         </span>
                                                     </button>
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEliminarPopup">
                                                         <span class="material-symbols-outlined">
                                                             delete
                                                         </span>
                                                     </button>
                                                 </div>
                                             </div>
-        
-                                            <img src="../img/banners/bg-banner-mobile-3.png" class="card-popup-img" alt="">
+
+                                            <img src="../img/banners/bg-banner-mobile-3.png" class="card-popup-img"
+                                                alt="">
                                         </div>
-        
+
                                         <div class="card-popup">
                                             <div class="card-popup-header">
                                                 <div class="form-group">
@@ -5038,24 +5080,27 @@
                                                         <option>5</option>
                                                     </select>
                                                 </div>
-        
+
                                                 <div class="popup-actions">
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarPopup">
                                                         <span class="material-symbols-outlined">
                                                             edit
                                                         </span>
                                                     </button>
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEliminarPopup">
                                                         <span class="material-symbols-outlined">
                                                             delete
                                                         </span>
                                                     </button>
                                                 </div>
                                             </div>
-        
-                                            <img src="../img/banners/bg-banner-mobile-1.png" class="card-popup-img" alt="">
+
+                                            <img src="../img/banners/bg-banner-mobile-1.png" class="card-popup-img"
+                                                alt="">
                                         </div>
-        
+
                                         <div class="card-popup">
                                             <div class="card-popup-header">
                                                 <div class="form-group">
@@ -5067,22 +5112,25 @@
                                                         <option selected>5</option>
                                                     </select>
                                                 </div>
-        
+
                                                 <div class="popup-actions">
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEditarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarPopup">
                                                         <span class="material-symbols-outlined">
                                                             edit
                                                         </span>
                                                     </button>
-                                                    <button class="btn circle-btn" data-bs-toggle="modal" data-bs-target="#modalEliminarPopup">
+                                                    <button class="btn circle-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEliminarPopup">
                                                         <span class="material-symbols-outlined">
                                                             delete
                                                         </span>
                                                     </button>
                                                 </div>
                                             </div>
-        
-                                            <img src="../img/banners/bg-banner-mobile-2.png" class="card-popup-img" alt="">
+
+                                            <img src="../img/banners/bg-banner-mobile-2.png" class="card-popup-img"
+                                                alt="">
                                         </div>
                                     </div>
 
@@ -5093,8 +5141,9 @@
                                             </span>
                                             Previsualizar
                                         </button>
-        
-                                        <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalAgregarPopup">
+
+                                        <button type="button" class="btn primary-btn" data-bs-toggle="modal"
+                                            data-bs-target="#modalAgregarPopup">
                                             <span class="material-symbols-outlined">
                                                 add
                                             </span>
@@ -5107,30 +5156,31 @@
                                     <div class="carousel-mini-banner">
                                         <div id="carouselVales" class="carousel slide" data-bs-ride="carousel">
                                             <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="0"
-                                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="1"
-                                                    aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselVales" data-bs-slide-to="2"
-                                                    aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carouselVales"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselVales"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselVales"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
                                             </div>
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="../img/carousel/carousel-mini/bannerv1.png" class="d-block w-100"
-                                                        alt="...">
+                                                    <img src="../img/carousel/carousel-mini/bannerv1.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="../img/carousel/carousel-mini/bannerv2.png" class="d-block w-100"
-                                                        alt="...">
+                                                    <img src="../img/carousel/carousel-mini/bannerv2.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="../img/carousel/carousel-mini/bannerv3.png" class="d-block w-100"
-                                                        alt="...">
+                                                    <img src="../img/carousel/carousel-mini/bannerv3.png"
+                                                        class="d-block w-100" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-            
+
                                 </div>
                             </div>
 
@@ -6804,16 +6854,18 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Datos de cupón</h6>
                             </div>
-                            
+
                             <div class="editarDatosCupon">
                                 <div class="wrap-img-preview-editarCupon">
                                     <div class="imageWrapper-cupon">
-                                        <img class="image-preview-editarCupon" id="preview-editarCupon" src="../img/products/cards/cupones1.jpg">
+                                        <img class="image-preview-editarCupon" id="preview-editarCupon"
+                                            src="../img/products/cards/cupones1.jpg">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-editarCupon">
                                         <button class="file-upload-cupon btn outline-btn">
-                                            <input type="file" class="file-input-image-cupon" id="input-preview-img-editarCupon">Agregar imagen
+                                            <input type="file" class="file-input-image-cupon"
+                                                id="input-preview-img-editarCupon">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -6828,13 +6880,13 @@
                                         <input type="text" class="form-control" id="editarCuponNombre">
                                         <div class="text-help">Ingrese un nombre válido</div>
                                     </div>
-    
+
                                     <div class="custom-textArea">
                                         <label for="editarBreveDescripcion" class="form-label">
                                             Breve descripción
                                         </label>
-                                        <textarea class="form-control" id="editarBreveDescripcion" rows="3" maxlength="200"
-                                            placeholder="Escriba una breve descripción"></textarea>
+                                        <textarea class="form-control" id="editarBreveDescripcion" rows="3"
+                                            maxlength="200" placeholder="Escriba una breve descripción"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -6890,9 +6942,11 @@
                                 </fieldset>
 
                                 <div class="mb-form custom-textArea">
-                                    <label for="editarCuponInstruccionesCanje" class="form-label">Instrucciones de canje</label>
+                                    <label for="editarCuponInstruccionesCanje" class="form-label">Instrucciones de
+                                        canje</label>
                                     <p>
-                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al momento de utilizar el cupón.
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
+                                        momento de utilizar el cupón.
                                     </p>
                                     <textarea class="form-control" id="editarCuponInstruccionesCanje" rows="4"
                                         placeholder="Escriba las instrucciones"></textarea>
@@ -6908,7 +6962,7 @@
                         </span>
                         Eliminar
                     </button>
-                    
+
                     <div class="modal-actions">
                         <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
                         <button type="button" class="btn primary-btn">Guardar</button>
@@ -6968,8 +7022,7 @@
     <!-- End Modal eliminar banner-->
 
     <!-- Modal agregar banner-->
-    <div class="modal fade" id="modalAgregarBanner" tabindex="-1" aria-labelledby="agregarBanner"
-        aria-hidden="true">
+    <div class="modal fade" id="modalAgregarBanner" tabindex="-1" aria-labelledby="agregarBanner" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -6984,17 +7037,19 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Subir imágenes</h6>
                             </div>
-                            
+
                             <div class="imagenesBanners">
                                 <div class="wrap-img-preview-addBanner">
                                     <div class="imageWrapper-banner-mobile">
-                                        <img class="image-preview-addBannerMobile" id="preview-addBannerMobile" src="../img/banners/bg-banner-mobile-default.png">
+                                        <img class="image-preview-addBannerMobile" id="preview-addBannerMobile"
+                                            src="../img/banners/bg-banner-mobile-default.png">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-addBannerMobile">
                                         <h6>imagen para celular</h6>
                                         <button class="file-upload-addBannerMobile btn outline-btn">
-                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-addBannerMobile">Agregar imagen
+                                            <input type="file" class="file-input-image-addBannerMobile"
+                                                id="input-preview-img-addBannerMobile">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -7005,13 +7060,15 @@
 
                                 <div class="wrap-img-preview-addBanner">
                                     <div class="imageWrapper-banner-desktop">
-                                        <img class="image-preview-addBannerDesktop" id="preview-addBannerDesktop" src="../img/banners/bg-banner-desktop-default.png">
+                                        <img class="image-preview-addBannerDesktop" id="preview-addBannerDesktop"
+                                            src="../img/banners/bg-banner-desktop-default.png">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-addBannerMobile">
                                         <h6>Imagen para computadoras</h6>
                                         <button class="file-upload-addBannerMobile btn outline-btn">
-                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-addBannerDesktop">Agregar imagen
+                                            <input type="file" class="file-input-image-addBannerMobile"
+                                                id="input-preview-img-addBannerDesktop">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -7019,7 +7076,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                                
+                            </div>
                         </fieldset>
 
                         <fieldset>
@@ -7044,7 +7101,7 @@
                                 </div>
                             </form>
                         </fieldset>
-                               
+
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">3</span>
@@ -7058,7 +7115,7 @@
                                     <option>3</option>
                                 </select>
                             </div>
-                        </fieldset>  
+                        </fieldset>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -7071,8 +7128,7 @@
     <!-- End Modal agregar banner-->
 
     <!-- Modal editar banner-->
-    <div class="modal fade" id="modalEditarBanner" tabindex="-1" aria-labelledby="editarBanner"
-        aria-hidden="true">
+    <div class="modal fade" id="modalEditarBanner" tabindex="-1" aria-labelledby="editarBanner" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -7087,17 +7143,19 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Subir imágenes</h6>
                             </div>
-                            
+
                             <div class="imagenesBanners">
                                 <div class="wrap-img-preview-addBanner">
                                     <div class="imageWrapper-banner-mobile">
-                                        <img class="image-preview-addBannerMobile" id="preview-editBannerMobile" src="../img/banners/bg-banner-mobile-1.png">
+                                        <img class="image-preview-addBannerMobile" id="preview-editBannerMobile"
+                                            src="../img/banners/bg-banner-mobile-1.png">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-addBannerMobile">
                                         <h6>imagen para celular</h6>
                                         <button class="file-upload-addBannerMobile btn outline-btn">
-                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-editBannerMobile">Agregar imagen
+                                            <input type="file" class="file-input-image-addBannerMobile"
+                                                id="input-preview-img-editBannerMobile">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -7108,13 +7166,15 @@
 
                                 <div class="wrap-img-preview-addBanner">
                                     <div class="imageWrapper-banner-desktop">
-                                        <img class="image-preview-addBannerDesktop" id="preview-editBannerDesktop" src="../img/banners/bg-banner-1.png">
+                                        <img class="image-preview-addBannerDesktop" id="preview-editBannerDesktop"
+                                            src="../img/banners/bg-banner-1.png">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-addBannerMobile">
                                         <h6>Imagen para computadoras</h6>
                                         <button class="file-upload-addBannerMobile btn outline-btn">
-                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-editBannerDesktop">Agregar imagen
+                                            <input type="file" class="file-input-image-addBannerMobile"
+                                                id="input-preview-img-editBannerDesktop">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -7122,7 +7182,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                                
+                            </div>
                         </fieldset>
 
                         <fieldset>
@@ -7135,19 +7195,21 @@
                                 <div class="row g-3">
                                     <div class="form-group mb-form col">
                                         <label for="vigenciaEditarBannerInicio" class="form-label">Desde</label>
-                                        <input type="date" class="form-control" id="vigenciaEditarBannerInicio" value="2024-12-01">
+                                        <input type="date" class="form-control" id="vigenciaEditarBannerInicio"
+                                            value="2024-12-01">
                                         <div class="text-help">Ingrese una fecha</div>
                                     </div>
 
                                     <div class="form-group mb-form col">
                                         <label for="vigenciaEditarBannerFin" class="form-label">Hasta</label>
-                                        <input type="date" class="form-control" id="vigenciaEditarBannerFin" value="2024-12-24">
+                                        <input type="date" class="form-control" id="vigenciaEditarBannerFin"
+                                            value="2024-12-24">
                                         <div class="text-help">Ingrese una fecha</div>
                                     </div>
                                 </div>
                             </form>
                         </fieldset>
-                               
+
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">3</span>
@@ -7161,7 +7223,7 @@
                                     <option>3</option>
                                 </select>
                             </div>
-                        </fieldset>  
+                        </fieldset>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -7174,8 +7236,7 @@
     <!-- End Modal editar banner-->
 
     <!-- Modal eliminar banner-->
-    <div class="modal fade" id="modalEliminarPopup" tabindex="-1" aria-labelledby="eliminarPopup"
-        aria-hidden="true">
+    <div class="modal fade" id="modalEliminarPopup" tabindex="-1" aria-labelledby="eliminarPopup" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -7198,8 +7259,7 @@
     <!-- End Modal eliminar banner-->
 
     <!-- Modal agregar pop up-->
-    <div class="modal fade" id="modalAgregarPopup" tabindex="-1" aria-labelledby="agregarPopup"
-        aria-hidden="true">
+    <div class="modal fade" id="modalAgregarPopup" tabindex="-1" aria-labelledby="agregarPopup" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -7214,16 +7274,18 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Subir la imagen</h6>
                             </div>
-                            
+
                             <div class="imagenesBanners">
                                 <div class="wrap-img-preview-addBanner">
                                     <div class="imageWrapper-banner-mobile">
-                                        <img class="image-preview-addBannerMobile" id="preview-addPopup" src="../img/banners/bg-banner-mobile-default.png">
+                                        <img class="image-preview-addBannerMobile" id="preview-addPopup"
+                                            src="../img/banners/bg-banner-mobile-default.png">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-addBannerMobile">
                                         <button class="file-upload-addBannerMobile btn outline-btn">
-                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-addPopup">Agregar imagen
+                                            <input type="file" class="file-input-image-addBannerMobile"
+                                                id="input-preview-img-addPopup">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -7231,7 +7293,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                                
+                            </div>
                         </fieldset>
 
                         <fieldset>
@@ -7256,7 +7318,7 @@
                                 </div>
                             </form>
                         </fieldset>
-                               
+
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">3</span>
@@ -7270,7 +7332,7 @@
                                     <option>3</option>
                                 </select>
                             </div>
-                        </fieldset>  
+                        </fieldset>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -7283,8 +7345,7 @@
     <!-- End Modal agregar pop up-->
 
     <!-- Modal editar pop up-->
-    <div class="modal fade" id="modalEditarPopup" tabindex="-1" aria-labelledby="editarPopup"
-        aria-hidden="true">
+    <div class="modal fade" id="modalEditarPopup" tabindex="-1" aria-labelledby="editarPopup" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -7299,16 +7360,18 @@
                                 <span class="step-form">1</span>
                                 <h6 class="heading-6">Subir la imagen</h6>
                             </div>
-                            
+
                             <div class="imagenesBanners">
                                 <div class="wrap-img-preview-addBanner">
                                     <div class="imageWrapper-banner-mobile">
-                                        <img class="image-preview-addBannerMobile" id="preview-editPopup" src="../img/banners/bg-banner-1.png">
+                                        <img class="image-preview-addBannerMobile" id="preview-editPopup"
+                                            src="../img/banners/bg-banner-1.png">
                                     </div>
-    
+
                                     <div class="wrap-label-file-upload-addBannerMobile">
                                         <button class="file-upload-addBannerMobile btn outline-btn">
-                                            <input type="file" class="file-input-image-addBannerMobile" id="input-preview-img-editPopup">Agregar imagen
+                                            <input type="file" class="file-input-image-addBannerMobile"
+                                                id="input-preview-img-editPopup">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -7316,7 +7379,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                                
+                            </div>
                         </fieldset>
 
                         <fieldset>
@@ -7341,7 +7404,7 @@
                                 </div>
                             </form>
                         </fieldset>
-                               
+
                         <fieldset>
                             <div class="step-form-title">
                                 <span class="step-form">3</span>
@@ -7355,7 +7418,7 @@
                                     <option>3</option>
                                 </select>
                             </div>
-                        </fieldset>  
+                        </fieldset>
                     </form>
                 </div>
                 <div class="modal-footer">

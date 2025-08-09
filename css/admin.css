@@ -333,12 +333,20 @@ input[type=number] {
     -o-border-radius: 2rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: .5rem;
 }
 
 .alert span {
     font-variation-settings:
         'FILL' 1
+}
+
+.alert-start {
+   /* background-color: pink;  */
+   display: flex;
+   align-items: center;
+   gap: .5rem;
 }
 
 .alert-info {
@@ -370,6 +378,11 @@ input[type=number] {
     color: var(--primary7);
     background-color: var(--primary2);
     border-color: var(--primary3);
+}
+
+.alert-bg-none {
+    background-color: transparent !important;
+    border: none !important;
 }
 
 /* End alerts */

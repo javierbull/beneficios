@@ -352,7 +352,6 @@ input[type=number] {
 .alert-info {
     color: var(--gray7);
     background-color: var(--blue2);
-    border-color: var(--blue2);
 }
 
 .alert-info .link {
@@ -369,15 +368,17 @@ input[type=number] {
 }
 
 .alert-danger {
-    color: var(--red6);
+    color: var(--gray7);
     background-color: var(--red2);
-    border-color: var(--red3);
+}
+
+.alert-danger span {
+    color: var(--red5);
 }
 
 .alert-warning {
     color: var(--primary7);
     background-color: var(--primary2);
-    border-color: var(--primary3);
 }
 
 .alert-bg-none {

@@ -386,8 +386,12 @@ input[type=number] {
 }
 
 .alert-warning {
-    color: var(--primary7);
+    color: var(--gray7);
     background-color: var(--primary2);
+}
+
+.alert-warning span {
+    color: var(--primary6);
 }
 
 .alert-bg-none {

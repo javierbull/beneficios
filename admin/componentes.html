@@ -177,7 +177,7 @@
             A simple primary alert—check it out!
           </div>
           <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div> 
+        </div>
 
         <div class="alert alert-info alert-bg-none" role="alert">
           <div class="alert-start">
@@ -191,7 +191,7 @@
         <div class="alert alert-danger" role="alert">
           <div class="alert-start">
             <span class="material-symbols-outlined">
-              info
+              cancel
             </span>
             A simple primary alert—check it out!
           </div>
@@ -201,7 +201,7 @@
         <div class="alert alert-danger" role="alert">
           <div class="alert-start">
             <span class="material-symbols-outlined">
-              info
+              cancel
             </span>
             A simple primary alert—check it out!
           </div>
@@ -211,7 +211,7 @@
         <div class="alert alert-danger alert-bg-none" role="alert">
           <div class="alert-start">
             <span class="material-symbols-outlined">
-              info
+              cancel
             </span>
             A simple primary alert—check it out!
           </div>
@@ -220,7 +220,7 @@
         <div class="alert alert-success" role="alert">
           <div class="alert-start">
             <span class="material-symbols-outlined">
-              info
+              check_circle
             </span>
             A simple primary alert—check it out!
           </div>
@@ -230,7 +230,7 @@
         <div class="alert alert-success" role="alert">
           <div class="alert-start">
             <span class="material-symbols-outlined">
-              info
+              check_circle
             </span>
             A simple primary alert—check it out!
           </div>
@@ -240,7 +240,36 @@
         <div class="alert alert-success alert-bg-none" role="alert">
           <div class="alert-start">
             <span class="material-symbols-outlined">
-              info
+              check_circle
+            </span>
+            A simple primary alert—check it out!
+          </div>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+          <div class="alert-start">
+            <span class="material-symbols-outlined">
+              warning
+            </span>
+            A simple primary alert—check it out!
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+          <div class="alert-start">
+            <span class="material-symbols-outlined">
+              warning
+            </span>
+            A simple primary alert—check it out!
+          </div>
+          <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="alert alert-warning alert-bg-none" role="alert">
+          <div class="alert-start">
+            <span class="material-symbols-outlined">
+              warning
             </span>
             A simple primary alert—check it out!
           </div>
@@ -398,17 +427,16 @@
           <div class="upload-logo-empresa">
             <div class="ci-user d-flex align-items-center justify-content-center">
               <div class="ci-user-picture">
-                <img src="../img/logos/logoInterbank.png" id="item-img-output"
-                  class="imgpreviewPrf" alt="">
+                <img src="../img/logos/logoInterbank.png" id="item-img-output" class="imgpreviewPrf" alt="">
               </div>
             </div>
 
             <button class="file-upload btn outline-btn">
               <span class="material-symbols-outlined icon-fill">
-                  edit
+                edit
               </span>
               <input type="file" class="file-input-image item-img file filepreviewprofile"
-                  id="editar-empresa-input-preview-img">Cambiar logo
+                id="editar-empresa-input-preview-img">Cambiar logo
             </button>
           </div>
         </div>
@@ -426,36 +454,37 @@
               <input type="file" multiple="" />
             </label>
           </div>
-        
+
           <div class="files-container"></div>
         </div>
-        
+
       </section>
 
-      <div class="modal fade" id="cropImagePop" tabindex="-1" aria-labelledby="eliminarVisitasEliminadas" aria-hidden="true">
+      <div class="modal fade" id="cropImagePop" tabindex="-1" aria-labelledby="eliminarVisitasEliminadas"
+        aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h5 class="modal-title" id="eliminarVisitasEliminadas">Carga el logo de tu empresa</h5>
-                    <div class="up-photo-content pb-5">
-
-                      <div id="upload-demo" class="center-block">
-                        <h5><i class="fas fa-arrows-alt mr-1"></i>Encaja tu logo dentro del círculo</h5>
-                      </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" id="cropImageBtn" class="btn btn-default btn-medium bg-blue px-3 mr-2">Save
-                    Photo</button>
-                  <button type="button"
-                    class="btn btn-default btn-medium bg-default-light px-3 ml-sm-2 replacePhoto position-relative">Replace
-                    Photo
-                  </button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+              <h5 class="modal-title" id="eliminarVisitasEliminadas">Carga el logo de tu empresa</h5>
+              <div class="up-photo-content pb-5">
+
+                <div id="upload-demo" class="center-block">
+                  <h5><i class="fas fa-arrows-alt mr-1"></i>Encaja tu logo dentro del círculo</h5>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="cropImageBtn" class="btn btn-default btn-medium bg-blue px-3 mr-2">Save
+                Photo</button>
+              <button type="button"
+                class="btn btn-default btn-medium bg-default-light px-3 ml-sm-2 replacePhoto position-relative">Replace
+                Photo
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 

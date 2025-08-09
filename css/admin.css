@@ -376,6 +376,15 @@ input[type=number] {
     color: var(--red5);
 }
 
+.alert-success {
+    color: var(--gray7);
+    background-color: var(--green1);
+}
+
+.alert-success span {
+    color: var(--green5);
+}
+
 .alert-warning {
     color: var(--primary7);
     background-color: var(--primary2);

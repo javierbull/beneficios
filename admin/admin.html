@@ -183,7 +183,7 @@
 
         <div class="admin-panel">
 
-            <div class="panel active-panel" id="dashboard-panel">
+            <div class="panel disabled-panel- active-panel" id="dashboard-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
                         <h2>Hola <span>Laura</span>,</h2>
@@ -576,7 +576,8 @@
                     </div>
 
                     <div class="navbar-actions__right">
-                        <button type="button" class="btn outline-btn" data-bs-toggle="modal" data-bs-target="#modalrecordatorioActivacion">
+                        <button type="button" class="btn outline-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalrecordatorioActivacion">
                             Enviar recordatorio
                             <span class="material-symbols-outlined icon-fill">
                                 send
@@ -3795,35 +3796,52 @@
                 </div>
 
                 <div class="alert alert-warning" role="alert">
-                    <span class="material-symbols-outlined">
-                        warning
-                    </span>
-                    <strong>Solicitud observada:</strong> El comprobante de pago no coincide con el monto de la
-                    solicitud. Por favor, completar el monto faltante en un plazo de 48 horas como máximo o la solicitud
-                    será cancelada.
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            warning
+                        </span>
+                        <strong>Solicitud observada:</strong> El comprobante de pago no coincide con el monto de la
+                        solicitud. Por favor, completar el monto faltante en un plazo de 48 horas como máximo o la
+                        solicitud
+                        será cancelada.
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
                 <div class="alert alert-info" role="alert">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <strong>Solicitud en curso:</strong> Tu solicitud ha sido enviada y será aprobada por tu ejecutivo
-                    comercial.
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            info
+                        </span>
+                        <strong>Solicitud en curso:</strong> Tu solicitud ha sido enviada y será aprobada por tu
+                        ejecutivo
+                        comercial.
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
                 <div class="alert alert-success" role="alert">
-                    <span class="material-symbols-outlined">
-                        check_circle
-                    </span>
-                    <strong>Solicitud emitida:</strong> Tu solicitud ha sido emitida y se enviará en la fecha acordada.
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <strong>Solicitud emitida:</strong> Tu solicitud ha sido emitida y se enviará en la fecha
+                        acordada.
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
                 <div class="alert alert-danger" role="alert">
-                    <span class="material-symbols-outlined">
-                        cancel
-                    </span>
-                    <strong>Solicitud cancelada:</strong> Tu solicitud ha sido cancelada.
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                        <strong>Solicitud cancelada:</strong> Tu solicitud ha sido cancelada.
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
+
+
 
                 <div class="accordion accordion-solicitudes" id="accordionSolicitudes">
                     <div class="accordion-item">
@@ -6073,11 +6091,16 @@
                                 </div>
 
                                 <div class="col mt-0">
-                                    <div class="alert alert-danger mt-0 mb-0" role="alert">
-                                        <span class="material-symbols-outlined">
-                                            cancel
-                                        </span>
-                                        <strong>Vales insuficientes:</strong> Edita el número de registro.
+                                    <div class="alert alert-danger" role="alert">
+                                        <div class="alert-start">
+                                            <span class="material-symbols-outlined">
+                                                cancel
+                                            </span>
+                                            <strong>Vales insuficientes:</strong> Edita el número de registro.
+                                        </div>
+                                        <button type="button" class="btn-close d-none" data-bs-dismiss="alert"
+                                            aria-label="Close">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -7438,7 +7461,8 @@
     <!-- End Modal editar pop up-->
 
     <!-- Modal enviar recordatorio activación-->
-    <div class="modal fade" id="modalrecordatorioActivacion" tabindex="-1" aria-labelledby="modalRecordatorioActivacion" aria-hidden="true">
+    <div class="modal fade" id="modalrecordatorioActivacion" tabindex="-1" aria-labelledby="modalRecordatorioActivacion"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

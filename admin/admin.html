@@ -576,6 +576,13 @@
                     </div>
 
                     <div class="navbar-actions__right">
+                        <button type="button" class="btn outline-btn" data-bs-toggle="modal" data-bs-target="#modalrecordatorioActivacion">
+                            Enviar recordatorio
+                            <span class="material-symbols-outlined icon-fill">
+                                send
+                            </span>
+                        </button>
+
                         <div class="btn-group">
                             <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -7429,6 +7436,28 @@
         </div>
     </div>
     <!-- End Modal editar pop up-->
+
+    <!-- Modal enviar recordatorio activación-->
+    <div class="modal fade" id="modalrecordatorioActivacion" tabindex="-1" aria-labelledby="modalRecordatorioActivacion" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRecordatorioActivacion">Recordatorio de activación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <p>
+                        Esto enviará un correo de activación a todos los colaboradores no registrados.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Enviar recordatorio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End recordatorio activación-->
 
     <!-- END MODALS -->
 

@@ -89,6 +89,8 @@ $(document).ready(function () {
       $('.item-img').val('');
     });
   });
+
+  
 });
 
 var DndFileUploadWidget = (function defineDndFileUploadWidget() {

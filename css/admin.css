@@ -2932,6 +2932,53 @@ figure figcaption {
 /* END COMUNICACIONES */
 
 /* CARD PROGRESS BAR */
+.progressBarColaboradores {
+    margin-bottom: .5rem;
+}
 
+.progressBarColaboradores .progress {
+    height: 2rem;
+    color: var(--gray7);
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.progressBarColaboradores .progress-bar {
+    position: relative;
+}
+
+.valueProgressBar {
+    color: var(--gray1);
+    position: absolute;
+    left: .5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1.5rem;
+}
+
+.totalProgressBar {
+    position: absolute;
+    right: .5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1.5rem;
+}
+
+.colaboradoresBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+
+.colaboradoresBar-start, .colaboradoresBar-end {
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
 /* END CARD PROGRESS BAR */
 

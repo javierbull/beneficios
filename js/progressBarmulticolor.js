@@ -13,5 +13,5 @@ function actualizarBarra(porcentaje) {
 }
 
 // Ejemplo de uso
-actualizarBarra(40); // Actualiza la barra al 50%
+actualizarBarra(50); // Actualiza la barra al 50%
       

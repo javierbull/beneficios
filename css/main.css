@@ -59,14 +59,6 @@
   --Gray6: #4E4B66;
   --Gray7: #333350;
   --Gray8: #1F1F37;
-  --primary-default: #FFCE00;
-  --primary-light: #FFE578;
-  --primary-dark: #FFB01A;
-  --accent-default: #605CFF;
-  --accent-light: #757CFF;
-  --accent-dark: #4A36F5;
-  --accent-soft: #DDE3FF;
-  --accent-bg: #ECF0FF;
   --success: #0EA674;
   --success-light: #00BA88;
   --success-dark: #00966D;
@@ -87,6 +79,14 @@
   --warning-dark: #E39601;
   --warning-soft: #FFE2AA;
   --warning-bg: #FFFBEB;
+  --primary-default: #FFCE00;
+  --primary-light: #FFE578;
+  --primary-dark: #FFB01A;
+  --accent-default: #605CFF;
+  --accent-light: #757CFF;
+  --accent-dark: #4A36F5;
+  --accent-soft: #DDE3FF;
+  --accent-bg: #ECF0FF;
 }
 
 html {
@@ -266,25 +266,20 @@ hr {
 
 .btn-primario {
   font-weight: 600;
-  background-color: var(--yellow);
-  /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #FFE578, #FFCE00, #FFB01A);
+  background-color: var(--primary-default);
 }
 
 .btn-primario:hover {
-  background-color: var(--lightYellow);
-  /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #FFF6D0, #FFE784, #FFCE00);
+  background-color: var(--primary-light);
 }
 
 .btn-primario:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 253, 243, 0.426);
 }
 
 .btn-disabled {
-  background-color: var(--lightYellow);
-  background-image: linear-gradient(to bottom right, #F2EAD9, #F2EDD9, #F9F6EC);
+  background-color: var(--Gray2);
   cursor: not-allowed;
   color: var(--george);
   pointer-events: none;
@@ -466,7 +461,7 @@ hr {
 
 .text-link {
   text-decoration: underline;
-  
+
 }
 
 .text-link:hover {
@@ -667,7 +662,7 @@ input[type=number] {
   color: var(--black);
   height: 2rem;
   width: 2rem;
-  background-color: var(--yellow);
+  background-color: var(--primary-default);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2576,6 +2571,7 @@ nav.main .midmenu {
   /* background-color: #00AD7C; */
   padding: 0 1rem 1rem 1rem;
 }
+
 /* End gift card */
 
 .content-tags-card-product {
@@ -2756,8 +2752,8 @@ nav.main .midmenu {
 }
 
 /* padding sombra del card */
-.owl-carousel-beneficios .item, 
-.owl-carousel-canje .item, 
+.owl-carousel-beneficios .item,
+.owl-carousel-canje .item,
 .owl-carousel-canje2 .item {
   /* background-color: lavender; */
   padding: 5px 5px 15px 5px;
@@ -2766,15 +2762,15 @@ nav.main .midmenu {
   /* width: 100%; */
 }
 
-.owl-carousel-beneficios .prev-slide, 
-.owl-carousel-canje .prev-slide, 
+.owl-carousel-beneficios .prev-slide,
+.owl-carousel-canje .prev-slide,
 .owl-carousel-canje2 .prev-slide {
   /* background-color: pink; */
   background: url(../img/icons/arrow_back.svg) no-repeat scroll 50% 50% !important;
   left: -58px;
 }
 
-.owl-carousel-beneficios .next-slide, 
+.owl-carousel-beneficios .next-slide,
 .owl-carousel-canje .next-slide,
 .owl-carousel-canje2 .next-slide {
   background: url(../img/icons/arrow_forward.svg) no-repeat scroll 50% 50% !important;
@@ -6357,7 +6353,7 @@ iframe {
   /* background-color: lavender; */
 }
 
-.wrap-cardNominal { 
+.wrap-cardNominal {
   /* background-color: pink; */
   display: flex;
   justify-content: center;
@@ -6579,11 +6575,12 @@ iframe {
 }
 
 .nav-pills-bee .nav-link.active,
-.nav-pills-bee .show > .nav-link {
+.nav-pills-bee .show>.nav-link {
   color: var(--black);
   background-color: var(--yellow);
   border: 0;
 }
+
 /* End tabs saldo */
 
 .consideraciones {
@@ -6604,6 +6601,7 @@ iframe {
 .terms-list {
   font-size: .875rem;
 }
+
 /* END CARD NOMINAL PAGE */
 
 /* =============================== */
@@ -6661,6 +6659,7 @@ iframe {
   display: flex;
   gap: .5rem;
 }
+
 /* END HEADER ADMIN */
 
 /* MEDIOS DE PAGO */
@@ -6828,10 +6827,10 @@ iframe {
   /* background-color: pink; */
   display: flex;
   flex-direction: column;
-  gap:.5rem;
+  gap: .5rem;
 }
 
-.wrap-label-file-upload  p {
+.wrap-label-file-upload p {
   margin-bottom: 0;
   color: var(--george);
 }
@@ -6906,7 +6905,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid  #ced4da;
+  border: 1px solid #ced4da;
   padding: .75rem 1rem;
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
@@ -6944,6 +6943,7 @@ iframe {
 .ordenDeCompraBox {
   display: none;
 }
+
 /* end datos orden de compra */
 
 /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
@@ -6999,6 +6999,7 @@ iframe {
   display: flex;
   justify-content: center;
 }
+
 /* END PÁGINA CONFIRMACIÓN PEDIDO GH */
 
 /* END CLASES DEL PERFIL ADMINSITRADOR */
@@ -7061,7 +7062,8 @@ iframe {
   color: var(--white);
 }
 
-.sidebar-list-collapse, .btn-toggle-nav {
+.sidebar-list-collapse,
+.btn-toggle-nav {
   list-style: none;
   /* background-color: tomato; */
 }
@@ -7089,7 +7091,8 @@ iframe {
   gap: .5rem;
 }
 
-.sidebar-list-collapse--vales, .sidebar-list-collapse--sedes {
+.sidebar-list-collapse--vales,
+.sidebar-list-collapse--sedes {
   display: none;
 }
 
@@ -7155,6 +7158,7 @@ iframe {
   display: flex;
   gap: .75rem;
 }
+
 /* End admin panel */
 
 /* Panel vales corporativos */
@@ -7205,7 +7209,8 @@ iframe {
   border-top: none;
 }
 
-.table td, .table tbody th {
+.table td,
+.table tbody th {
   /* background-color: lavender; */
   vertical-align: middle;
 }
@@ -7269,7 +7274,12 @@ div.dataTables_wrapper div.dataTables_info {
 /* Fin pagination color */
 
 /*     Pagination     */
-.pagination>li>a, .pagination>li:first-child>a, .pagination>li:last-child>a, .pagination>li>span, .pagination>li:first-child>span, .pagination>li:last-child>span {
+.pagination>li>a,
+.pagination>li:first-child>a,
+.pagination>li:last-child>a,
+.pagination>li>span,
+.pagination>li:first-child>span,
+.pagination>li:last-child>span {
   border-radius: 100px !important;
   margin: 0 4px;
   color: var(--black);
@@ -7281,19 +7291,34 @@ div.dataTables_wrapper div.dataTables_info {
   align-items: center;
 }
 
-.pagination.pg-default>li.active>a, .pagination.pg-default>li.active:first-child>a, .pagination.pg-default>li.active:last-child>a, .pagination.pg-default>li.active>span, .pagination.pg-default>li.active:first-child>span, .pagination.pg-default>li.active:last-child>span {
+.pagination.pg-default>li.active>a,
+.pagination.pg-default>li.active:first-child>a,
+.pagination.pg-default>li.active:last-child>a,
+.pagination.pg-default>li.active>span,
+.pagination.pg-default>li.active:first-child>span,
+.pagination.pg-default>li.active:last-child>span {
   background: var(--white);
   border-color: var(--black);
   color: var(--black);
 }
 
-.pagination.pg-primary>li.active>a, .pagination.pg-primary>li.active:first-child>a, .pagination.pg-primary>li.active:last-child>a, .pagination.pg-primary>li.active>span, .pagination.pg-primary>li.active:first-child>span, .pagination.pg-primary>li.active:last-child>span {
+.pagination.pg-primary>li.active>a,
+.pagination.pg-primary>li.active:first-child>a,
+.pagination.pg-primary>li.active:last-child>a,
+.pagination.pg-primary>li.active>span,
+.pagination.pg-primary>li.active:first-child>span,
+.pagination.pg-primary>li.active:last-child>span {
   background: var(--midYellow);
   border-color: var(--black);
   color: var(--black);
 }
 
-.pagination.pg-info>li.active>a, .pagination.pg-info>li.active:first-child>a, .pagination.pg-info>li.active:last-child>a, .pagination.pg-info>li.active>span, .pagination.pg-info>li.active:first-child>span, .pagination.pg-info>li.active:last-child>span {
+.pagination.pg-info>li.active>a,
+.pagination.pg-info>li.active:first-child>a,
+.pagination.pg-info>li.active:last-child>a,
+.pagination.pg-info>li.active>span,
+.pagination.pg-info>li.active:first-child>span,
+.pagination.pg-info>li.active:last-child>span {
   background: var(--midYellow);
   border-color: var(--black);
   color: var(--black);
@@ -7319,10 +7344,12 @@ div.dataTables_wrapper div.dataTables_info {
   height: 2rem;
 }
 
-.btn-action:focus, .btn-action:hover {
+.btn-action:focus,
+.btn-action:hover {
   box-shadow: none;
   background-color: var(--jhon);
 }
+
 /* End panel vales corporativos */
 
 /* Modals estdos pedidos GH */
@@ -7365,7 +7392,7 @@ div.dataTables_wrapper div.dataTables_info {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
-  padding: .5rem .75rem; 
+  padding: .5rem .75rem;
 }
 
 .alert h2 {
@@ -7393,6 +7420,7 @@ div.dataTables_wrapper div.dataTables_info {
 .item-download span {
   color: var(--black) !important;
 }
+
 /* End estados pedidos GH */
 
 /* END MÓDULO ADMNISTRAR VALES */
@@ -7517,7 +7545,7 @@ div.dataTables_wrapper div.dataTables_info {
   -o-border-radius: .5rem;
 }
 
-.radio-btn > i {
+.radio-btn>i {
   color: var(--white);
   background-color: var(--lightOrange);
   font-size: 16px;
@@ -7539,10 +7567,9 @@ div.dataTables_wrapper div.dataTables_info {
   position: absolute;
 }
 
-.radio-btn .hobbies-icon img
-{
-  display:block;
-  width:100%;
+.radio-btn .hobbies-icon img {
+  display: block;
+  width: 100%;
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
   -moz-border-radius: .5rem;
@@ -7556,13 +7583,11 @@ div.dataTables_wrapper div.dataTables_info {
   font-size: 60px;
 }
 
-.custom-radio input:checked + .radio-btn 
-{
+.custom-radio input:checked+.radio-btn {
   border: 4px solid var(--lightOrange);
 }
 
-.custom-radio input:checked + .radio-btn > i 
-{
+.custom-radio input:checked+.radio-btn>i {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
@@ -7590,7 +7615,7 @@ div.dataTables_wrapper div.dataTables_info {
   -o-border-radius: .5rem;
 }
 
-.radio-btn-typo > i {
+.radio-btn-typo>i {
   color: var(--white);
   background-color: var(--lightOrange);
   font-size: 16px;
@@ -7616,10 +7641,9 @@ div.dataTables_wrapper div.dataTables_info {
   justify-content: center;
 }
 
-.radio-btn-typo .hobbies-icon img
-{
-  display:block;
-  width:100%;
+.radio-btn-typo .hobbies-icon img {
+  display: block;
+  width: 100%;
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
   -moz-border-radius: .5rem;
@@ -7633,16 +7657,15 @@ div.dataTables_wrapper div.dataTables_info {
   font-size: 60px;
 }
 
-.custom-radio input:checked + .radio-btn-typo
-{
+.custom-radio input:checked+.radio-btn-typo {
   border: 4px solid var(--lightOrange);
 }
 
-.custom-radio input:checked + .radio-btn-typo > i 
-{
+.custom-radio input:checked+.radio-btn-typo>i {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
+
 /* end radio typo catalogo */
 
 /* Seleccionar color portacubierto */
@@ -7650,10 +7673,10 @@ div.dataTables_wrapper div.dataTables_info {
 .color-portacubierto input {
   position: relative;
   overflow: hidden;
-  
+
   width: 3rem;
   height: 3rem;
-  
+
   border-radius: 50%;
 }
 
@@ -7666,7 +7689,7 @@ div.dataTables_wrapper div.dataTables_info {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   opacity: 0;
   z-index: 2;
   cursor: pointer;
@@ -7678,17 +7701,17 @@ div.dataTables_wrapper div.dataTables_info {
   bottom: 0;
   left: 0;
   right: 0;
-  
+
   background-image: url(http://cdn.nicolapps.ch/images/uploads/1478199301.png);
   background-size: 35px;
   background-repeat: no-repeat;
   background-position: center center;
-  
+
   opacity: 0;
   transition: .15s opacity ease-in-out;
 }
 
-.color-portacubierto input:checked + i {
+.color-portacubierto input:checked+i {
   opacity: 1;
 }
 
@@ -7711,6 +7734,7 @@ div.dataTables_wrapper div.dataTables_info {
 .bg-color5 {
   background-color: #D3D4C4;
 }
+
 /* End seleccionar color portacubierto */
 /* END PRODUCTO CATALOGO */
 
@@ -7746,6 +7770,7 @@ div.dataTables_wrapper div.dataTables_info {
   transform-origin: var(--zoom-pos-x, 0%) var(--zoom-pos-y, 0%);
   transition: transform 0.15s linear;
 }
+
 .zoomable-item--zoomed .zoomable-item__img {
   cursor: zoom-in;
   transform: scale(var(--zoom, 2));
@@ -7770,7 +7795,7 @@ div.dataTables_wrapper div.dataTables_info {
   /* background-color: pink; */
   width: 30rem;
   margin-left: auto;
-  display:flex;
+  display: flex;
   gap: .5rem;
   flex-wrap: nowrap;
   margin-top: .5rem;
@@ -7915,6 +7940,7 @@ div.dataTables_wrapper div.dataTables_info {
 .card-metrica-bg-danger .card-metrica--numero {
   color: var(--danger);
 }
+
 /* END DASHBOARD */
 
 /* EMPRESA */
@@ -7935,6 +7961,7 @@ div.dataTables_wrapper div.dataTables_info {
   display: flex;
   justify-content: space-between;
 }
+
 /* END EMPRESA */
 
 /* SEDES */
@@ -7944,53 +7971,54 @@ div.dataTables_wrapper div.dataTables_info {
 
 .customSwitchNoLabel input {
   height: 0;
-	width: 0;
-	visibility: hidden;
+  width: 0;
+  visibility: hidden;
 }
 
 .customSwitchNoLabel label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 2.25rem;
-	height: 1.2rem;
-	background: var(--Gray4);
-	display: block;
-	border-radius: 1.2rem;
-	position: relative;
-	-webkit-border-radius: 1.2rem;
-	-moz-border-radius: 1.2rem;
-	-ms-border-radius: 1.2rem;
-	-o-border-radius: 1.2rem;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 2.25rem;
+  height: 1.2rem;
+  background: var(--Gray4);
+  display: block;
+  border-radius: 1.2rem;
+  position: relative;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
 }
 
 .customSwitchNoLabel label:after {
-	content: "";
-	position: absolute;
-	top: 1.5px;
-	left: 1.5px;
-	width: 1rem;
-	height: 1rem;
-	background: var(--white);
-	transition: 0.3s;
-	border-radius: 1.2rem;
-	-webkit-border-radius: 1.2rem;
-	-moz-border-radius: 1.2rem;
-	-ms-border-radius: 1.2rem;
-	-o-border-radius: 1.2rem;
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  width: 1rem;
+  height: 1rem;
+  background: var(--white);
+  transition: 0.3s;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
 }
 
-.customSwitchNoLabel input:checked + label {
-	background: var(--primary-default);
+.customSwitchNoLabel input:checked+label {
+  background: var(--primary-default);
 }
 
-.customSwitchNoLabel input:checked + label:after {
-	left: calc(100% - 2px);
-	transform: translateX(-100%);
+.customSwitchNoLabel input:checked+label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
 }
 
 .customSwitchNoLabel label:active:after {
-	width: 2.25rem;
+  width: 2.25rem;
 }
+
 /* END SEDES */
 
 /* INHOUSE */
@@ -8023,6 +8051,7 @@ div.dataTables_wrapper div.dataTables_info {
 .fc-button-primary {
   background-color: var(--black-admin) !important;
 }
+
 /* End FullCalendar */
 
 .estado-inhouse {
@@ -8082,10 +8111,11 @@ div.dataTables_wrapper div.dataTables_info {
   margin-right: .5rem;
 }
 
-.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+.custom-switch .custom-control-input:disabled:checked~.custom-control-label::before {
   background-color: var(--Gray4);
   border-color: var(--Gray4);
 }
+
 /* END INHOUSE */
 
 /* CUMPLEAÑOS */
@@ -8158,10 +8188,11 @@ div.dataTables_wrapper div.dataTables_info {
   -ms-border-radius: 0 .25rem .25rem 0;
   -o-border-radius: 0 .25rem .25rem 0;
 }
+
 /* END CUMPLEAÑOS */
 
 /* ASIGNAR VALES */
-.block-asignar-vale  {
+.block-asignar-vale {
   margin-bottom: 1.5rem;
 }
 
@@ -8182,12 +8213,12 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .select2-container--bootstrap4 .select2-selection--single {
-  height:48px !important; 
+  height: 48px !important;
 }
 
 .select2-container--bootstrap4 .select2-selection--single .select2-selection__placeholder {
   color: #757575;
-  line-height: 3rem ;
+  line-height: 3rem;
 }
 
 .select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
@@ -8197,7 +8228,8 @@ div.dataTables_wrapper div.dataTables_info {
 .select2-container--bootstrap4 .select2-results__option--highlighted,
 .select2-container--bootstrap4 .select2-results__option--highlighted.select2-results__option[aria-selected=true] {
   background-color: var(--primary-light);
-  color: var(--black-admin); }
+  color: var(--black-admin);
+}
 
 .select2-selection__rendered {
   height: 48px !important;
@@ -8206,7 +8238,7 @@ div.dataTables_wrapper div.dataTables_info {
 .select2-container--bootstrap4.select2-container--focus .select2-selection {
   border-color: var(--primary-dark);
   -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25); 
+  box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25);
 }
 
 .block-colaboradores-asignados {
@@ -8233,6 +8265,7 @@ div.dataTables_wrapper div.dataTables_info {
   width: 80px;
   margin-bottom: 0;
 }
+
 /* END ASIGNAR VALES/ */
 
 /* VALE CIRCO */
@@ -8333,6 +8366,7 @@ div.dataTables_wrapper div.dataTables_info {
 .vale-circo--logo img {
   height: 1.2rem;
 }
+
 /* END VALE CIRCO */
 
 /* VALE CIRCO TERROR */
@@ -8420,6 +8454,7 @@ div.dataTables_wrapper div.dataTables_info {
 .vale-circo-terror--logo img {
   height: 1.2rem;
 }
+
 /* END VALE CIRCO TERROR */
 
 /* VALE CINEMARK */
@@ -8529,8 +8564,9 @@ div.dataTables_wrapper div.dataTables_info {
   /* background-color: pink; */
   width: 100%;
   display: flex;
- flex-direction: column;
+  flex-direction: column;
 }
+
 /* END VALE CINEMARK */
 
 /* VALE CIRCO 2 */
@@ -8577,14 +8613,16 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: .5rem;
 }
 
-.vale-gs--zona, .vale-gs--label {
+.vale-gs--zona,
+.vale-gs--label {
   text-transform: uppercase;
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.vale-gs--butaca, .vale-gs--horario {
+.vale-gs--butaca,
+.vale-gs--horario {
   margin-bottom: .5rem;
 }
 
@@ -8601,6 +8639,7 @@ div.dataTables_wrapper div.dataTables_info {
 .vale-gs--logo img {
   height: 1.2rem;
 }
+
 /* END VALE CIRCO 2 */
 
 /* PRODUCTO EVENTO */
@@ -8662,13 +8701,14 @@ div.dataTables_wrapper div.dataTables_info {
   text-transform: uppercase;
 }
 
-.card-entrada-zona--left p{
+.card-entrada-zona--left p {
   margin-bottom: 0;
 }
 
 .card-asiento-reservado {
   /*background-color: pink;
-  */display: flex;
+  */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: .75rem;
@@ -8697,6 +8737,7 @@ div.dataTables_wrapper div.dataTables_info {
   text-transform: uppercase;
   font-weight: 600;
 }
+
 /* END PRODUCTO EVENTO */
 
 /* Modal evento butacas */
@@ -8764,7 +8805,7 @@ div.dataTables_wrapper div.dataTables_info {
 .asiento label {
   /* float: left;  */
   line-height: 2rem;
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
 
@@ -8781,19 +8822,30 @@ div.dataTables_wrapper div.dataTables_info {
   color: var(--black) !important;
 }
 
-.asiento label input + span{color: var(--black);}
-
-.asiento input:checked + span {
-    color: var(--black);
+.asiento label input+span {
+  color: var(--black);
 }
 
-.vip-etm input:checked + span{background-color: #FFCC00;}
-.central-etm input:checked + span{background-color: #97CD31;}
-.generalCentral-etm input:checked + span{background-color: #E9572D;}
+.asiento input:checked+span {
+  color: var(--black);
+}
+
+.vip-etm input:checked+span {
+  background-color: #FFCC00;
+}
+
+.central-etm input:checked+span {
+  background-color: #97CD31;
+}
+
+.generalCentral-etm input:checked+span {
+  background-color: #E9572D;
+}
 
 .asiento-ocupado span {
   background-color: var(--Gray4);
 }
+
 /* End checkbox asiento */
 
 .contenedor-asientos {
@@ -8815,6 +8867,7 @@ div.dataTables_wrapper div.dataTables_info {
   gap: .25rem;
   margin-bottom: .5rem;
 }
+
 /* End modal evento butacas */
 
 /* Modal saludo cumpleaños */
@@ -8861,6 +8914,7 @@ div.dataTables_wrapper div.dataTables_info {
 .card-regalo-cumple p {
   margin-bottom: 0;
 }
+
 /* End modal saludo cumpleaños */
 
 /* Categoría cupones */
@@ -8923,8 +8977,9 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .cupon-detalle-link:hover {
-  text-decoration: none !important ;
+  text-decoration: none !important;
 }
+
 /* End categoria cupones */
 
 /* Detalle cupon */
@@ -8964,6 +9019,7 @@ div.dataTables_wrapper div.dataTables_info {
 .content-cod-cupon p {
   margin-bottom: 0;
 }
+
 /* End detalle cupon */
 
 /* Ticket Grupo Star */
@@ -9083,4 +9139,5 @@ div.dataTables_wrapper div.dataTables_info {
 .ticket-star-vigencia {
   margin-bottom: .5rem;
 }
+
 /* End Ticket Grupo Star */

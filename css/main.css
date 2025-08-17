@@ -1012,7 +1012,7 @@ footer {
 }
 
 .footer-main {
-  background-color: var(--yellow);
+  background-color: var(--primary-default);
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1046,7 +1046,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: var(--yellow);
+  background-color: var(--primary-default);
   padding-top: .5rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
@@ -1723,7 +1723,7 @@ nav.main .midmenu {
 }
 
 .tabs-all-categories li .active {
-  background-color: var(--yellow);
+  background-color: var(--primary-default);
 }
 
 .tabs-all-categories li a {
@@ -1837,7 +1837,7 @@ nav.main .midmenu {
 }
 
 .banner-client .content-text-client {
-  background-color: var(--midYellow);
+  background-color: var(--primary-default);
   width: 25rem;
   display: flex;
   align-items: center;
@@ -1845,7 +1845,7 @@ nav.main .midmenu {
   border-radius: .5rem;
   font-size: 0.875rem;
   font-weight: 500;
-  border: 1px solid var(--lightOrange);
+  border: 1px solid var(--primary-dark);
 }
 
 .banner-client--mobile {

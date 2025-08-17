@@ -79,14 +79,15 @@
   --warning-dark: #E39601;
   --warning-soft: #FFE2AA;
   --warning-bg: #FFFBEB;
-  --primary-default: #FFCE00;
-  --primary-light: #FFE578;
-  --primary-dark: #FFB01A;
   --accent-default: #605CFF;
   --accent-light: #757CFF;
   --accent-dark: #4A36F5;
   --accent-soft: #DDE3FF;
   --accent-bg: #ECF0FF;
+  /* Colores de marca */
+  --primary-default: #FFCE00;
+  --primary-light: #FFE578;
+  --primary-dark: #FFB01A;
 }
 
 html {
@@ -270,18 +271,18 @@ hr {
 }
 
 .btn-primario:hover {
-  background-color: var(--primary-light);
+  background-color: var(--primary-default);
 }
 
 .btn-primario:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 253, 243, 0.426);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, .5);
 }
 
 .btn-disabled {
   background-color: var(--Gray2);
   cursor: not-allowed;
-  color: var(--george);
+  color: var(--Gray4);
   pointer-events: none;
 }
 

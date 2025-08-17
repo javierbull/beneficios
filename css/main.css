@@ -84,10 +84,11 @@
   --accent-dark: #4A36F5;
   --accent-soft: #DDE3FF;
   --accent-bg: #ECF0FF;
-  /* Colores de marca */
-  --primary-default: #FFCE00;
   --primary-light: #FFE578;
   --primary-dark: #FFB01A;
+  /* Colores de marca */
+  --primary-default: #FFCE00;
+  --typography-color: #1F1F37;
 }
 
 html {
@@ -120,7 +121,7 @@ hr {
 }
 
 .hr-bee {
-  border-top: 3px solid var(--yellow);
+  border-top: 3px solid var(--primary-default);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -245,16 +246,12 @@ hr {
   background-color: var(--bgInput);
 }
 
-/* .form-control:disabled, .form-control[readonly] {
-  background-color: var(--bgInput);
-  opacity: 1;
-} */
 .form-control:focus {
   color: var(--black);
-  background-color: #fff;
-  border-color: var(--yellow);
+  background-color: var(--white);
+  border-color: var(--Gray8);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 206, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 .form-control-style-none:focus {
@@ -266,15 +263,18 @@ hr {
 }
 
 .btn-primario {
+  color: var(--typography-color);
   font-weight: 600;
   background-color: var(--primary-default);
 }
 
 .btn-primario:hover {
+  color: var(--typography-color);
   background-color: var(--primary-default);
 }
 
 .btn-primario:focus {
+  color: var(--typography-color);
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, .5);
 }
@@ -1025,23 +1025,23 @@ footer {
 .list-group-footer h2 {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--typography-color);
   margin-bottom: 0;
 }
 
 .list-group-footer .list-group-item {
-  background-color: var(--yellow);
+  background-color: var(--primary-default);
   border: none;
-  color: var(--black);
+  color: var(--typography-color);
   padding-left: 0;
 }
 
 .list-group-footer .list-group-item a {
-  color: var(--black);
+  color: var(--typography-color);
 }
 
 .list-group-footer .list-group-item a:hover {
-  color: var(--black);
+  color: var(--typography-color);
   text-decoration: underline;
 }
 
@@ -1846,6 +1846,7 @@ nav.main .midmenu {
   font-size: 0.875rem;
   font-weight: 500;
   border: 1px solid var(--primary-dark);
+  color: var(--typography-color);
 }
 
 .banner-client--mobile {
@@ -5435,7 +5436,7 @@ iframe {
   color: var(--black);
   font-weight: 600;
   background-color: var(--white);
-  border-right: 8px solid var(--yellow);
+  border-right: 8px solid var(--primary-default);
 }
 
 .content-tabs-perfil {

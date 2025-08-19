@@ -73,7 +73,6 @@ body {
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
-
 }
 
 .btn-icon {
@@ -106,19 +105,20 @@ body {
 }
 
 .primary-btn {
-    background-image: linear-gradient(to right, #FFE578 0%, #FFCE00 51%, #FFBF00 100%);
-    color: var(--gray7);
+    background-color: var(--brand-color);
+    color: var(--typography-color);
 }
 
 .primary-btn:hover {
-    color: var(--gray7);
+    background-color: var(--brand-color);
+    color: var(--typography-color);
 }
 
 .primary-btn:focus {
-    color: var(--gray7);
-    background-image: linear-gradient(to right, #FFE578 0%, #FFCE00 51%, #FFBF00 100%);
+    color: var(--typography-color);
+    background-color: var(--brand-color);
     border-color: none;
-    box-shadow: 0px 0px 0px 3px rgba(255, 206, 0, 0.4);
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, .5);
 }
 
 .btn-disabled {

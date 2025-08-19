@@ -663,7 +663,7 @@ input[type=number] {
 /* badge-bee */
 .badge-bee {
   font-weight: 700;
-  color: var(--black);
+  color: var(--typography-color);
   height: 2rem;
   width: 2rem;
   background-color: var(--primary-default);
@@ -1844,7 +1844,6 @@ nav.main .midmenu {
   border-radius: .5rem;
   font-size: 0.875rem;
   font-weight: 500;
-  border: 1px solid var(--primary-dark);
   color: var(--typography-color);
 }
 

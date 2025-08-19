@@ -602,8 +602,29 @@
                     </div>
                 </div>
 
-                <div class="colaboradores-main disabled-section">
-                    <div class="overlay-blur">
+                <div class="alert alert-success" role="alert">
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <strong>Carga exitosa</strong> ¿Cuál es es siguiente paso?
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <div class="alert alert-warning" role="alert">
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            warning
+                        </span>
+                        <strong>El documento tiene más de 250 registros y la carga tomará más tiempo.</strong>
+                        Puedes continuar utilizando la plataforma o cerrar sesión sin afectar el progreso y te enviaremos un correo una vez la carga esté completa.
+                    </div>
+                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <div class="colaboradores-main disabled-section-">
+                    <div class="overlay-blur d-none">
                         <div class="card-contentBlock">
                             <div class="card-contentBlock--start">
                                 <span class="material-symbols-outlined icon-fill">
@@ -5985,7 +6006,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa" data-bs-toggle="modal">Cargar colaboradores</button>
+                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa"
+                        data-bs-toggle="modal">Cargar colaboradores</button>
                 </div>
             </div>
         </div>
@@ -5993,8 +6015,7 @@
     <!-- End Modal carga masiva-->
 
     <!-- Carga exitosa -->
-    <div class="modal fade" id="modalCargaExitosa" tabindex="-1" aria-labelledby="cargaExitosa"
-        aria-hidden="true">
+    <div class="modal fade" id="modalCargaExitosa" tabindex="-1" aria-labelledby="cargaExitosa" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">

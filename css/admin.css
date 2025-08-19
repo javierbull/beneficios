@@ -3075,3 +3075,20 @@ figure figcaption {
     font-size: 2rem;
 }
 /* MODAL CARGA EXITOSA */
+
+/* TOOLTIP DANGER */
+.btn-tooltip {
+    min-height: 1.5rem;
+    max-height: 1.5rem;
+    min-width: 1.5rem;
+    max-width: 1.5rem;
+}
+
+.btn-tooltip-danger {
+    color: var(--red5);
+}
+
+.btn-tooltip-danger:hover {
+    color: var(--red6);
+}
+/* END TOOLTIP DANGER */

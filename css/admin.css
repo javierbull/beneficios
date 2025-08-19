@@ -36,6 +36,9 @@
     /* Colores de marca */
     --brand-color: #FFCE00;
     --typography-color: #1F1F37;
+
+    /* --brand-color: tomato;
+    --typography-color: white; */
 }
 
 html {
@@ -914,7 +917,7 @@ input[type=number] {
     gap: 1.5rem;
 }
 
-.card-beneficiosVisitas {
+.card-beneficiosVisitas, .card-admincargaColaboradores {
     width: 100%;
 }
 
@@ -2986,3 +2989,34 @@ figure figcaption {
 }
 
 /* END CARD PROGRESS BAR */
+
+/* CARD DASHBOARD ONBOARDING CODIGO */
+.card-onboardingCodigo {
+    width: 40%;
+}
+
+.onboardingCodigo-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.onboardingCodigo-content--chart {
+    background-color: var(--primary5);
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-width: 4.5rem;
+    max-width: 4.5rem;
+    min-height: 4.5rem;
+    max-height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* END CARD DASHBOARD ONBOARDING CODIGO */

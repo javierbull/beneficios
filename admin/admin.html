@@ -235,54 +235,59 @@
 
                 <div class="dashboard-main">
                     <div class="wrap-charts">
-                        <div class="card-admin">
-                            <h2 class="card-admin__title">Onboarding de colaboradores</h2>
-                            <div class="wrap-chartColaboradores-table">
-                                <div class="chart-colaboradores">
-                                    <canvas id="chartColaboradores"></canvas>
+                        <div class="row-cards-admin">
+                            <div class="card-admin card-admincargaColaboradores">
+                                <div class="card-admin__title mb-0">
+                                    Onboarding de carga de colaboradores
+                                </div>
+                                <p>
+                                    Tienes 50 colaboradores pendientes de registro
+                                </p>
+                                <div class="progressBarColaboradores">
+                                    <div class="progress">
+                                        <div class="progress-bar" id="myProgressBar" role="progressbar">
+                                            <span class="valueProgressBar">50%</span>
+                                        </div>
+                                        <span class="totalProgressBar">100%</span>
+                                    </div>
                                 </div>
 
-                                <table class="table table-chart-colaboradores table-borderless align-middle">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <span class="material-symbols-outlined icon-fill badge-success">
-                                                    brightness_1
-                                                </span>
-                                                Activos
-                                            </td>
-                                            <td>400</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span class="material-symbols-outlined icon-fill badge-warning">
-                                                    brightness_1
-                                                </span>
-                                                Inactivos
-                                            </td>
-                                            <td>350</td>
-                                            <td>35%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span class="material-symbols-outlined icon-fill badge-danger">
-                                                    brightness_1
-                                                </span>
-                                                Pre-registrados
-                                            </td>
-                                            <td>250</td>
-                                            <td>25%</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td>Total</td>
-                                            <td>1000</td>
-                                            <td>100%</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
+                                <div class="colaboradoresBar">
+                                    <div class="colaboradoresBar-start">
+                                        <span class="material-symbols-outlined icon-fill">
+                                            person
+                                        </span>
+                                        50
+                                    </div>
+                                    <div class="colaboradoresBar-end">
+                                        <span class="material-symbols-outlined icon-fill">
+                                            person
+                                        </span>
+                                        100
+                                    </div>
+                                </div>
+
+                                <div class="alert alert-warning mt-3 mb-0 d-none-" role="alert">
+                                    <div class="alert-start">
+                                        <span class="material-symbols-outlined">
+                                            warning
+                                        </span>
+                                        Te faltan 30 días para llegar al 50% de colaboradores registrados. 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-admin card-onboardingCodigo">
+                                <h2 class="card-admin__title">Onboarding con código </h2>
+                                <h3 class="card-admin__title">ABC123</h3>
+                                <div class="onboardingCodigo-content">
+                                    <div class="onboardingCodigo-content--chart">
+                                        350
+                                    </div>
+                                    <p class="mb-0">
+                                        personas registradas con código
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -405,7 +410,6 @@
                                         20%
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -7498,6 +7502,7 @@
     <script src="../js/drag&drop.js"></script>
     <script src="../js/plugin/select2/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.0.5/tinymce.min.js"></script>
+    <script src="../js/progressBarmulticolor.js"></script>
     <script src="../js/admin.js"></script>
 </body>
 

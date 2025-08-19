@@ -1050,16 +1050,12 @@ footer {
 
 .footer-bottom {
   background-color: var(--yellow);
-  padding-top: .5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: right;
   border: none;
-}
-
-.footer-bottom img {
-  height: 1.5rem;
 }
 
 .wrap-logo-bee {
@@ -1069,7 +1065,7 @@ footer {
 }
 
 .wrap-logo-bee img {
-  height: 3rem;
+  height: 1.5rem;
 }
 
 /* FIN FOOTER */

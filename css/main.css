@@ -87,8 +87,11 @@
   --primary-light: #FFE578;
   --primary-dark: #FFB01A;
   /* Colores de marca */
-  --primary-default: #FFCE00;
-  --typography-color: #1F1F37;
+  /* --primary-default: #FFCE00;
+  --typography-color: #1F1F37; */
+
+  --primary-default: blue;
+  --typography-color: white;
 }
 
 html {
@@ -1046,7 +1049,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: var(--primary-default);
+  background-color: var(--yellow);
   padding-top: .5rem;
   padding-bottom: 1rem;
   padding-left: 2rem;

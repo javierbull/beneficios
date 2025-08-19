@@ -607,9 +607,11 @@
                         <span class="material-symbols-outlined">
                             check_circle
                         </span>
-                        <strong>Carga exitosa</strong> ¿Cuál es es siguiente paso?
+                        <div>
+                            <h3 class="alert-start--title">Carga exitosa</h3>
+                            ¿Cuál es es siguiente paso?
+                        </div>
                     </div>
-                    <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
                 <div class="alert alert-warning" role="alert">
@@ -617,8 +619,21 @@
                         <span class="material-symbols-outlined">
                             warning
                         </span>
-                        <strong>El documento tiene más de 250 registros y la carga tomará más tiempo.</strong>
-                        Puedes continuar utilizando la plataforma o cerrar sesión sin afectar el progreso y te enviaremos un correo una vez la carga esté completa.
+                        <div>
+                            <h3 class="alert-start--title">El documento tiene más de 250 registros y la carga tomará más
+                                tiempo. </h3>
+                            Puedes continuar utilizando la plataforma o cerrar sesión sin afectar el progreso y te
+                            enviaremos un correo una vez la carga esté completa.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger" role="alert">
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                        Se han indentificado 20 errores en el documento cargado.
                     </div>
                     <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>

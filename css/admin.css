@@ -33,6 +33,9 @@
     --red4: #F59799;
     --red5: #F64B4F;
     --red6: #AB2328;
+    /* Colores de marca */
+    --brand-color: #FFCE00;
+    --typography-color: #1F1F37;
 }
 
 html {
@@ -349,10 +352,10 @@ input[type=number] {
 }
 
 .alert-start {
-   /* background-color: pink;  */
-   display: flex;
-   align-items: center;
-   gap: .5rem;
+    /* background-color: pink;  */
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .alert-info {
@@ -2748,6 +2751,7 @@ figure figcaption {
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
 /* END GESTIÓN DE MARCAS Y PRODUCTOS */
 
 /* COMUNICACIONES */
@@ -2929,6 +2933,7 @@ figure figcaption {
 .content-grid-actions {
     width: 100%;
 }
+
 /* END COMUNICACIONES */
 
 /* CARD PROGRESS BAR */
@@ -2974,11 +2979,12 @@ figure figcaption {
     padding: 0 .5rem;
 }
 
-.colaboradoresBar-start, .colaboradoresBar-end {
+.colaboradoresBar-start,
+.colaboradoresBar-end {
     /* background-color: pink; */
     display: flex;
     align-items: center;
     gap: .25rem;
 }
-/* END CARD PROGRESS BAR */
 
+/* END CARD PROGRESS BAR */

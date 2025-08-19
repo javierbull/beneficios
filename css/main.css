@@ -87,11 +87,11 @@
   --primary-light: #FFE578;
   --primary-dark: #FFB01A;
   /* Colores de marca */
-  /* --primary-default: #FFCE00;
-  --typography-color: #1F1F37; */
+  --brand-color: #FFCE00;
+  --typography-color: #1F1F37;
 
-  --primary-default: blue;
-  --typography-color: white;
+  /* --brand-color: lavender;
+  --typography-color: black; */
 }
 
 html {
@@ -124,7 +124,7 @@ hr {
 }
 
 .hr-bee {
-  border-top: 3px solid var(--primary-default);
+  border-top: 3px solid var(--brand-color);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -268,12 +268,12 @@ hr {
 .btn-primario {
   color: var(--typography-color);
   font-weight: 600;
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
 }
 
 .btn-primario:hover {
   color: var(--typography-color);
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
 }
 
 .btn-primario:focus {
@@ -666,7 +666,7 @@ input[type=number] {
   color: var(--typography-color);
   height: 2rem;
   width: 2rem;
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1015,7 +1015,7 @@ footer {
 }
 
 .footer-main {
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1033,7 +1033,7 @@ footer {
 }
 
 .list-group-footer .list-group-item {
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
   border: none;
   color: var(--typography-color);
   padding-left: 0;
@@ -1722,7 +1722,7 @@ nav.main .midmenu {
 }
 
 .tabs-all-categories li .active {
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
 }
 
 .tabs-all-categories li a {
@@ -1836,7 +1836,7 @@ nav.main .midmenu {
 }
 
 .banner-client .content-text-client {
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
   width: 25rem;
   display: flex;
   align-items: center;
@@ -5434,7 +5434,7 @@ iframe {
   color: var(--black);
   font-weight: 600;
   background-color: var(--white);
-  border-right: 8px solid var(--primary-default);
+  border-right: 8px solid var(--brand-color);
 }
 
 .content-tabs-perfil {
@@ -8007,7 +8007,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .customSwitchNoLabel input:checked+label {
-  background: var(--primary-default);
+  background: var(--brand-color);
 }
 
 .customSwitchNoLabel input:checked+label:after {
@@ -9000,7 +9000,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .content-cod-cupon {
-  background-color: var(--primary-default);
+  background-color: var(--brand-color);
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
   -moz-border-radius: .5rem;

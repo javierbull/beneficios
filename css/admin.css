@@ -37,8 +37,8 @@
     --brand-color: #FFCE00;
     --typography-color: #1F1F37;
 
-    /* --brand-color: tomato;
-    --typography-color: white; */
+    /* --brand-color: pink;
+    --typography-color: rgb(90, 3, 90); */
 }
 
 html {
@@ -917,7 +917,8 @@ input[type=number] {
     gap: 1.5rem;
 }
 
-.card-beneficiosVisitas, .card-admincargaColaboradores {
+.card-beneficiosVisitas,
+.card-admincargaColaboradores {
     width: 100%;
 }
 
@@ -2461,14 +2462,6 @@ figure figcaption {
 
 /* END VALES CORPORATIVOS */
 
-/* DISABLED PANELS */
-.disabled-panel {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    color: var(--gray5);
-}
-
-/* END DISABLED PANELS */
 
 /* SOLICITUDES */
 .accordion-solicitudes {
@@ -3020,3 +3013,50 @@ figure figcaption {
 }
 
 /* END CARD DASHBOARD ONBOARDING CODIGO */
+
+/* DISABLED SECTION */
+.disabled-section {
+    position: relative;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    color: var(--gray5);
+}
+
+.overlay-blur {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    z-index: 100;
+    backdrop-filter: blur(2px);
+}
+
+.card-contentBlock {
+    background-color: var(--white);
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.card-contentBlock--start {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card-contentBlock__title {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+/* END DISABLED SECTION */

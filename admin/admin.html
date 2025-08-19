@@ -602,8 +602,8 @@
                     </div>
                 </div>
 
-                <div class="colaboradores-main disabled-section-">
-                    <!-- <div class="overlay-blur">
+                <div class="colaboradores-main disabled-section">
+                    <div class="overlay-blur">
                         <div class="card-contentBlock">
                             <div class="card-contentBlock--start">
                                 <span class="material-symbols-outlined icon-fill">
@@ -620,7 +620,7 @@
                                 </a>
                             </p>
                         </div>
-                    </div> -->
+                    </div>
                     <table class="table dtable align-middle table-admin" style="width:100%">
                         <thead>
                             <tr>
@@ -5985,12 +5985,33 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn">Cargar colaboradores</button>
+                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa" data-bs-toggle="modal">Cargar colaboradores</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Modal carga masiva-->
+
+    <!-- Carga exitosa -->
+    <div class="modal fade" id="modalCargaExitosa" tabindex="-1" aria-labelledby="cargaExitosa"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="wrap-cargaExitosa">
+                        <span class="material-symbols-outlined icon-fill">
+                            check_circle
+                        </span>
+                        <h5 class="modal-title" id="cargaExitosa">Carga exitosa</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End carga exitosa -->
 
     <!-- Modal actualizavion de datos empresa-->
     <div class="modal fade" id="modalActualizardatosEmpresa" tabindex="-1" aria-labelledby="actualizarDatosEmpresa"

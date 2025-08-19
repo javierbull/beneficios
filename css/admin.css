@@ -3060,3 +3060,12 @@ figure figcaption {
     font-weight: 700;
 }
 /* END DISABLED SECTION */
+.wrap-cargaExitosa {
+    color: var(--green5);
+    font-weight: 700;
+}
+
+.wrap-cargaExitosa span {
+    font-size: 2rem;
+}
+/* MODAL CARGA EXITOSA */

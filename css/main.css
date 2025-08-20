@@ -9150,3 +9150,36 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 /* End Ticket Grupo Star */
+
+/* CATEGORRIAS DESTACADAS */
+
+.card-categorie img {
+  border: solid 1px var(--Gray3);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+.card-categorie a {
+  color: var(--Gray8);
+}
+
+.card-categorie a:hover {
+  text-decoration: none;
+}
+
+.card-categorie--title {
+  /* background-color: lavender; */
+  font-size: 1rem;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Muestra hasta 3 líneas */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis; /* Opcional: agrega puntos suspensivos */
+}
+
+/* END CATEGORIAS DETACADAS */

@@ -86,6 +86,7 @@
   --accent-bg: #ECF0FF;
   --primary-light: #FFE578;
   --primary-dark: #FFB01A;
+  --height-megamenu: 20rem;
   /* Colores de marca */
   --brand-color: #FFCE00;
   --typography-color: #1F1F37;
@@ -1483,8 +1484,7 @@ nav.main .megamenu-dropdown {
   border-top: 0;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3) !important;
   /* scroll del menu */
-  height: 25rem;
-  overflow-y: auto;
+  height: var(--height-megamenu);
 }
 
 .buscador-desktop {
@@ -1701,10 +1701,13 @@ nav.main .midmenu {
   background-color: var(--jhon);
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-right: 0;
   border-radius: 0 0 0 .5rem;
+  height: var(--height-megamenu);
+  overflow-y: auto;
 }
 
 .tabs-all-categories li {
@@ -1747,7 +1750,14 @@ nav.main .midmenu {
   background-color: var(--lonely);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
+  height: var(--height-megamenu);
+}
+
+.tab-content-all-categories .tab-pane {
+  /* background-color: pink; */
+  height: var(--height-megamenu);
+  overflow-y: auto;
 }
 
 .header-tab-pane {

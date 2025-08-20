@@ -636,7 +636,6 @@ $(document).ready(function () {
       dropdownParent: $(this).parent()
     });
   });
-
   
   // END ACTIVAR SELECT2
 

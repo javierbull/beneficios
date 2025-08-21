@@ -9155,7 +9155,7 @@ div.dataTables_wrapper div.dataTables_info {
 
 .card-category {
   /* background-color: pink; */
-  max-width: 7.375rem;
+  max-width: 7.375 rem;
 }
 
 .card-category img {
@@ -9186,5 +9186,4 @@ div.dataTables_wrapper div.dataTables_info {
   -webkit-box-orient: vertical;
   text-overflow: ellipsis; /* Opcional: agrega puntos suspensivos */
 }
-
 /* END CATEGORIAS DETACADAS */

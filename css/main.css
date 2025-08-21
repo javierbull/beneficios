@@ -1789,6 +1789,7 @@ nav.main .midmenu {
   width: 100%;
   gap: .25rem;
   margin-bottom: 0;
+  display: none;
 }
 
 .categorias-destacadas .nav-item {

@@ -18,7 +18,9 @@
   }
 
   /* HEADER DESKTOP */
-  .navbar-top, .navbar-desktop, .navbar-categorias {
+  .navbar-top,
+  .navbar-desktop,
+  .navbar-categorias {
     display: none;
   }
 
@@ -37,6 +39,7 @@
     text-align: center;
     padding: 1.5rem 0 0 0;
   }
+
   /* END LOGIN */
   /* SECTION GRID IMG CATEGORIES */
   .grid-container-categorias .img-categories-container {
@@ -211,45 +214,49 @@
     align-items: center;
   }
 
-  .wrap-controls-pack .control-quantity  {
+  .wrap-controls-pack .control-quantity {
     min-width: 12rem;
     max-width: 12rem;
     margin-right: 0;
     margin-bottom: 1rem;
   }
+
   /* END PACKS */
 
   /* BANNER CLIENTE MOBILE */
   .banner-client--mobile {
     display: block;
   }
+
   /* END BANNER CLIENTE MOBILE */
 
   /* SECTION GIFT CARD BALANACA */
-  .wrap-cardNominal { 
+  .wrap-cardNominal {
     /* background-color: pink; */
     padding-top: 0;
   }
 
   /* END SECTION GIFT CARD BALANCE */
 
-   /* SELECCION MEDIO DE PAGO  GH*/
-   .content-btn-continuar-medioDePago {
+  /* SELECCION MEDIO DE PAGO  GH*/
+  .content-btn-continuar-medioDePago {
     display: flex;
   }
 
-  .resumen-compra-mp-gh{
+  .resumen-compra-mp-gh {
     display: none;
   }
+
   /* END SELECCION MEDIO DE PAGO GH */
 
   /* CONFIEM PEDIDO GH */
   .main-confirm {
     padding-top: 4rem;
   }
+
   /* END CONFIRM PEDIDO GH */
 
-  
+
   /* ADMIN PEDIDOS GH */
   .main-admin {
     padding-top: 4rem;
@@ -284,6 +291,7 @@
     /* background-color: pink; */
     width: calc(100vw - 3rem);
   }
+
   /* END DASHBOARD */
 
   /* boletos cine star */
@@ -292,7 +300,7 @@
     margin-top: 0;
   }
 
-  
+
   /* End boletos cine star */
 }
 
@@ -336,6 +344,7 @@
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
   }
+
   /* END SECTION GRID IMG CATEGORIES */
 
   /* FOOTER */
@@ -582,7 +591,8 @@
     height: calc(1em * 1.2 * 2);
   }
 
-  .card-carrito__wrap-img, .card-product-checkout__wrap-img {
+  .card-carrito__wrap-img,
+  .card-product-checkout__wrap-img {
     /* background-color: teal; */
     overflow: hidden;
     border-radius: .5rem;
@@ -754,6 +764,7 @@
   .content-precio-cantidad div {
     margin-right: 1.5rem;
   }
+
   /* FIN BOLETERÍA CINE */
 }
 
@@ -830,6 +841,7 @@
   .wrap-logo-bee {
     padding-bottom: 1rem;
   }
+
   /* END FOOTER */
 
   /* RESTAURANTES */
@@ -889,11 +901,13 @@
     position: relative;
   }
 
-  .owl-carousel-beneficios .prev-slide, .owl-carousel .prev-slide {
+  .owl-carousel-beneficios .prev-slide,
+  .owl-carousel .prev-slide {
     display: none;
   }
 
-  .owl-carousel-beneficios .next-slide, .owl-carousel .next-slide {
+  .owl-carousel-beneficios .next-slide,
+  .owl-carousel .next-slide {
     display: none;
   }
 
@@ -935,12 +949,13 @@
     justify-content: center;
   }
 
-  .wrap-controls-pack .control-quantity  {
+  .wrap-controls-pack .control-quantity {
     min-width: 12rem;
     max-width: 12rem;
     margin-right: 1rem;
     margin-bottom: 0;
   }
+
   /* END PACKS */
 
   /* Menu admin mobile  */
@@ -948,6 +963,7 @@
     /* background-color: aqua; */
     padding: 0;
   }
+
   /* End menu admin mobile */
 
   /* product thumbnail */
@@ -963,11 +979,12 @@
     margin-left: auto;
     margin-right: auto;
   }
-   /* end product thumbnail */
 
-   /* DASHBOARD */
+  /* end product thumbnail */
 
-   .metricas {
+  /* DASHBOARD */
+
+  .metricas {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -980,10 +997,11 @@
   .card-dashboard-colaboradores canvas {
     min-height: 200px;
   }
-   /* END DAHSBOARD */
 
-   /* VALE GS */
-   .vale-gs-left {
+  /* END DAHSBOARD */
+
+  /* VALE GS */
+  .vale-gs-left {
     width: 15rem;
     height: 21rem;
   }
@@ -993,15 +1011,17 @@
     height: 21rem;
   }
 
-  .vale-gs--zona, .vale-gs--label {
+  .vale-gs--zona,
+  .vale-gs--label {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0;
   }
-   /* END VALE GS */
 
-   .wrap-row-asientos {
+  /* END VALE GS */
+
+  .wrap-row-asientos {
     /* background-color: pink; */
     display: flex;
     justify-content: stretch;
@@ -1016,11 +1036,12 @@
     margin-bottom: 1.5rem;
   }
 
-   /* Vale circo terror */
-   .vale-circo-terror-left {
+  /* Vale circo terror */
+  .vale-circo-terror-left {
     width: 18rem;
     height: 22rem;
   }
+
   /* End vale circo terror */
 
   /* boleto cine star */
@@ -1040,6 +1061,7 @@
     margin-top: 1rem;
     margin-left: 0;
   }
+
   /* End boleto cine star */
 }
 
@@ -1157,6 +1179,7 @@
   .grid-featured-product .featured-product-item:nth-child(3) {
     grid-column: 1 / span 1;
   }
+
   /* END SECTION PRODUCTOS DESTACADOS */
 
 
@@ -1237,7 +1260,8 @@
     grid-gap: 1rem;
   }
 
-  .grid-container-activaciones-interna .item, .grid-container-activaciones-home .item {
+  .grid-container-activaciones-interna .item,
+  .grid-container-activaciones-home .item {
     background-color: var(--bgGray);
     border-radius: .5rem;
     position: relative;
@@ -1374,7 +1398,7 @@
   .content-precio-cantidad {
     /* background-color: lightgreen; */
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -1414,6 +1438,7 @@
   .wrap-precios-entradas div:first-child {
     margin-right: 1rem;
   }
+
   /* FIN BOLETERÍA CINE */
 
   /* PACKS */
@@ -1431,6 +1456,7 @@
     margin-right: 0;
     margin-bottom: 1rem;
   }
+
   /* END PACKS */
 
   /* GIFT CARD BALANCE */
@@ -1509,6 +1535,7 @@
     bottom: 1rem;
     right: 1rem;
   }
+
   /* END GIFT CARD BALANCE */
 
   /* CONFIRM PEDIDO GH */
@@ -1526,18 +1553,20 @@
   .card-confirm-pedido-gh h1 {
     font-size: 1.5rem;
   }
+
   /* END CONFIRM PEDIDO GH */
 
   /* Admin gstion humana */
   .admin-panel {
     /* background-color: lavender; */
     padding: 1.5rem 1.5rem 6rem 1.5rem;
-    
+
   }
 
   div.dataTables_wrapper div.dataTables_info {
     display: none;
   }
+
   /* End admin gestion humana */
 
   .vale-circo {
@@ -1623,6 +1652,7 @@
   .vale-circo-terror-title img {
     width: 90%;
   }
+
   /* End vale circo terror */
 
 
@@ -1668,6 +1698,11 @@
   .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .card-category {
+    /* background-color: pink; */
+    max-width: 6.218rem;
   }
 }
 
@@ -1820,7 +1855,8 @@
 
   /* END GRID CATEGORIES HOME */
   /* NAVBAR MAIN MOBILE */
-  .navbar-main-mobile .left .nav-link, .navbar-main-mobile .right .nav-link {
+  .navbar-main-mobile .left .nav-link,
+  .navbar-main-mobile .right .nav-link {
     padding: .5rem;
   }
 
@@ -2025,7 +2061,8 @@
     position: relative;
   }
 
-  .owl-carousel .prev-slide, .owl-carousel .next-slide {
+  .owl-carousel .prev-slide,
+  .owl-carousel .next-slide {
     display: none;
   }
 
@@ -2189,7 +2226,8 @@
     margin-bottom: 1rem;
   }
 
-  .content-btn-actions-perfil .btn, .content-btn-datos-envio .btn,
+  .content-btn-actions-perfil .btn,
+  .content-btn-datos-envio .btn,
   .bloque-direccion-envio .header-card .btn,
   .text-confirmacion-compra .content-btn .btn {
     width: 100%;
@@ -2286,14 +2324,14 @@
     width: 100%;
   }
 
-  .wrap-controls-pack .control-quantity  {
+  .wrap-controls-pack .control-quantity {
     min-width: 100%;
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 1rem;
   }
 
-  .wrap-controls-pack .btn-primario  {
+  .wrap-controls-pack .btn-primario {
     min-width: 100%;
     max-width: 100%;
   }
@@ -2313,6 +2351,7 @@
   .wrap-logo-bee img {
     height: 1.5rem;
   }
+
   /* END FOOTER */
 
   /* GIFT CARDS BALANCE */
@@ -2339,10 +2378,11 @@
     /* background-color: lavender; */
     min-width: 15rem;
   }
+
   /* END GIFT CARDS BALANCE */
 
-   /* SELECCION MEDIO DE PAGO */
-   .content-btn-continuar-medioDePago .btn {
+  /* SELECCION MEDIO DE PAGO */
+  .content-btn-continuar-medioDePago .btn {
     width: 100%;
   }
 
@@ -2351,6 +2391,7 @@
     margin-right: .5rem;
     margin-left: .5rem;
   }
+
   /* END SELECCION MEDIO DE PAGO */
 
   /* FORMULARIO DATOS DE ENVIO PEDIDOS */
@@ -2401,9 +2442,10 @@
     display: inline-block;
     text-align: center;
   }
-    /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
 
-    /* product thumbnail */
+  /* END FORMULARIO DATOS DE ENVIO PEDIDOS */
+
+  /* product thumbnail */
   .carouselthumbnails {
     width: 100%;
     margin-left: auto;
@@ -2415,7 +2457,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display:flex;
+    display: flex;
     gap: .5rem;
     flex-wrap: nowrap;
     margin-bottom: 1rem;
@@ -2433,10 +2475,11 @@
     align-items: center !important;
     justify-content: center;
   }
-   /* end product thumbnail */
 
-   /* panel colaboradores */
-   .panel-header-top-actions {
+  /* end product thumbnail */
+
+  /* panel colaboradores */
+  .panel-header-top-actions {
     /* background-color: pink; */
     flex-direction: column;
   }
@@ -2458,21 +2501,22 @@
     width: 100%;
   }
 
-.panel-header-bottom--colaboradores {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+  .panel-header-bottom--colaboradores {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-.panel-header-bottom--colaboradores button:first-child {
-  width: 100%;
-}
+  .panel-header-bottom--colaboradores button:first-child {
+    width: 100%;
+  }
 
-.panel-header-bottom--right {
-  /* background-color: lavender; */
-  width: 100%;;
-  justify-content: space-between;
-}
+  .panel-header-bottom--right {
+    /* background-color: lavender; */
+    width: 100%;
+    ;
+    justify-content: space-between;
+  }
 
   /* end panel colaboradores */
 
@@ -2482,6 +2526,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   /* end empresas */
 
   /* Contactos */
@@ -2501,6 +2546,7 @@
     font-size: .625rem;
     margin-left: .75rem;
   }
+
   /* End contactos */
 
   /* inhouse */
@@ -2511,7 +2557,7 @@
   }
 
   .text-btn-accordion .tag {
-      font-size: .75rem;
+    font-size: .75rem;
   }
 
   .modal-footer-actions {
@@ -2531,6 +2577,7 @@
     display: flex;
     justify-content: flex-end;
   }
+
   /* End inhouse */
 
   /* Calendar */
@@ -2539,7 +2586,8 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
-}
+  }
+
   /* End calendar */
 
   /* cumpleaños */
@@ -2552,6 +2600,7 @@
     flex-direction: column;
     gap: 1rem;
   }
+
   /* end cumpleaños */
 
   /* Asignar vales */
@@ -2561,6 +2610,7 @@
     align-items: end;
     flex-direction: column;
   }
+
   /* End asignar vales */
 
   /* Vale cinemark */
@@ -2571,29 +2621,33 @@
   .vale-cinemark--vigencia {
     font-size: .75rem;
   }
-  
+
   /* End vale cinemark */
 
-     /* boleto cine star */
-     .wrap-vale-ticket-star {
-      /* background-color: pink; */
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 3rem;
-    }
+  /* boleto cine star */
+  .wrap-vale-ticket-star {
+    /* background-color: pink; */
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
 
-    .ticket-star-main {
-      /* background-color: tomato; */
-      display: flex;
-      gap: 2rem;
-      flex-direction: column;
-      padding-left: 0;
-      padding-right: 0;
-      text-align: center;
-    }
-    
-    /* End boleto cine star */
+  .ticket-star-main {
+    /* background-color: tomato; */
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  /* End boleto cine star */
+
+  .card-category {
+    /* background-color: pink; */
+    max-width: 4.875rem;
+  }
 }
 
 /* Fin cell portrait */
@@ -2601,7 +2655,12 @@
 @media (max-width: 360px) {
 
   /* REGISTRO */
-  .btn-facebook, .btn-google, .btn-icon-left, .btn-icon-right, .btn-primario, .btn-secundario {
+  .btn-facebook,
+  .btn-google,
+  .btn-icon-left,
+  .btn-icon-right,
+  .btn-primario,
+  .btn-secundario {
     font-size: .8rem;
   }
 
@@ -2715,6 +2774,11 @@
   }
 
   /* FIN CARRITO DE COMPRAS */
+
+   .card-category {
+    /* background-color: pink; */
+    max-width: 4.625rem;
+  }
 }
 
 /* Fin small cell portrait */

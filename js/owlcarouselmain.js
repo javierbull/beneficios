@@ -319,13 +319,13 @@ $(document).ready(function () {
     dots: true,
     responsive: {
       0: {
-        items: 2
+        items: 3
       },
       360: {
-        items: 4
+        items: 3
       },
       480: {
-        items: 4
+        items: 3
       },
       568: {
         items: 4
@@ -337,10 +337,10 @@ $(document).ready(function () {
         items: 4
       },
       824: {
-        items: 6
+        items: 4
       },
       1024: {
-        items: 6
+        items: 5
       },
       1366: {
         items: 8

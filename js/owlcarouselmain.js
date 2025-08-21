@@ -307,8 +307,8 @@ $(document).ready(function () {
     // OWL CAROUSEL CATEGORIAS DESTACADAS
   $('.owl-carousel-categories').owlCarousel({
     stagePadding: 40,
-    left: -30,
-    items: 4,
+    left: -20,
+    items: 8,
     loop: true,
     margin: 16,
     nav: true,
@@ -316,34 +316,34 @@ $(document).ready(function () {
     autoplayTimeout: 7000,
     autoplayHoverPause: true,
     navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
-    dots: false,
+    dots: true,
     responsive: {
       0: {
         items: 2
       },
       360: {
-        items: 2
+        items: 4
       },
       480: {
-        items: 2
+        items: 4
       },
       568: {
-        items: 3
+        items: 4
       },
       736: {
-        items: 3
+        items: 4
       },
       768: {
-        items: 3
+        items: 4
       },
       824: {
-        items: 4
+        items: 6
       },
       1024: {
-        items: 4
+        items: 6
       },
       1366: {
-        items: 6
+        items: 8
       }
     }
   });

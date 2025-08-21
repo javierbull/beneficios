@@ -9153,7 +9153,12 @@ div.dataTables_wrapper div.dataTables_info {
 
 /* CATEGORRIAS DESTACADAS */
 
-.card-categorie img {
+.card-category {
+  /* background-color: pink; */
+  max-width: 7.375rem
+}
+
+.card-category img {
   border: solid 1px var(--Gray3);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -9163,17 +9168,17 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: .5rem;
 }
 
-.card-categorie a {
+.card-category a {
   color: var(--Gray8);
 }
 
-.card-categorie a:hover {
+.card-category a:hover {
   text-decoration: none;
 }
 
-.card-categorie--title {
+.card-category--title {
   /* background-color: lavender; */
-  font-size: 1rem;
+  font-size: .875rem;
   text-align: center;
   overflow: hidden;
   display: -webkit-box;

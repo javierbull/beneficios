@@ -3026,8 +3026,11 @@ figure figcaption {
 /* END CARD DASHBOARD ONBOARDING CODIGO */
 
 /* DISABLED SECTION */
-.disabled-section {
+.position-relative {
     position: relative;
+}
+
+.disabled-section {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     color: var(--gray5);

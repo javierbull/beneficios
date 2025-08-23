@@ -91,8 +91,8 @@
   --brand-color: #FFCE00;
   --typography-color: #1F1F37;
 
-  /* --brand-color: pink;
-  --typography-color: purple; */
+  /* --brand-color: peru;
+  --typography-color: white; */
 }
 
 html {
@@ -9177,12 +9177,11 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .card-category--title {
-  /* background-color: lavender; */
   font-size: .875rem;
   text-align: center;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Muestra hasta 3 líneas */
+  -webkit-line-clamp: 2; /* Muestra hasta 2 líneas */
   -webkit-box-orient: vertical;
   text-overflow: ellipsis; /* Opcional: agrega puntos suspensivos */
 }

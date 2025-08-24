@@ -1789,7 +1789,7 @@ nav.main .midmenu {
   width: 100%;
   gap: .25rem;
   margin-bottom: 0;
-  display: none;
+  /* display: none; */
 }
 
 .categorias-destacadas .nav-item {
@@ -9153,36 +9153,20 @@ div.dataTables_wrapper div.dataTables_info {
 /* End Ticket Grupo Star */
 
 /* CATEGORRIAS DESTACADAS CAROUSEL */
-.card-category {
+.owl-carousel-categories {
   /* background-color: pink; */
-  max-width: 7.375rem;
 }
 
-.card-category img {
-  border: solid 1px var(--Gray3);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-bottom: .5rem;
-}
-
-.card-category a {
+.item-category a {
+  background-color: var(--white);
   color: var(--Gray8);
+  padding: .5rem;
+  white-space: nowrap;
+  font-weight: 600;
 }
 
-.card-category a:hover {
+.item-category a:hover {
   text-decoration: none;
-}
-
-.card-category--title {
-  font-size: .875rem;
-  text-align: center;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* Muestra hasta 2 líneas */
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis; /* Opcional: agrega puntos suspensivos */
+  background-color: var(--Gray2);
 }
 /* END CATEGORIAS DETACADAS CAROUSEL */

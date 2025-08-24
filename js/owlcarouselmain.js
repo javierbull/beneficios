@@ -307,16 +307,17 @@ $(document).ready(function () {
     // OWL CAROUSEL CATEGORIAS DESTACADAS
   $('.owl-carousel-categories').owlCarousel({
     stagePadding: 40,
-    left: -20,
+    left: -30,
     items: 8,
-    loop: true,
+    loop: false,
     margin: 16,
     nav: true,
+    autoWidth:true,
     autoplay: true,
     autoplayTimeout: 7000,
     autoplayHoverPause: true,
     navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
-    dots: true,
+    dots: false,
     responsive: {
       0: {
         items: 3

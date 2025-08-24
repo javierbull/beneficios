@@ -1699,11 +1699,6 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-
-  .card-category {
-    /* background-color: pink; */
-    max-width: 6.218rem;
-  }
 }
 
 /* Fin small cell landscape */
@@ -2643,11 +2638,6 @@
     text-align: center;
   }
   /* End boleto cine star */
-
-  .card-category {
-    /* background-color: pink; */
-    max-width: 4.875rem;
-  }
 }
 
 /* Fin cell portrait */
@@ -2774,11 +2764,6 @@
   }
 
   /* FIN CARRITO DE COMPRAS */
-
-   .card-category {
-    /* background-color: pink; */
-    max-width: 4.625rem;
-  }
 }
 
 /* Fin small cell portrait */

@@ -309,7 +309,7 @@ $(document).ready(function () {
     stagePadding: 40,
     left: -30,
     items: 8,
-    loop: false,
+    loop: true,
     margin: 16,
     nav: true,
     autoWidth:true,

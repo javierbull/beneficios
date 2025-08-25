@@ -341,7 +341,7 @@ $(document).ready(function () {
         items: 4
       },
       1024: {
-        items: 5
+        items: 6
       },
       1366: {
         items: 8

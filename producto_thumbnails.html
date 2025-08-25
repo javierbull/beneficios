@@ -121,13 +121,13 @@
 					<ul class="navbar-nav menu-categorias">
 						<!-- Dropdown category -->
 						<li class="nav-item dropdown position-static">
-							<a class="nav-link active" role="button">
+							<a class="nav-link active" role="button" id="show-megamenu">
 								CATEGORÍAS
 								<span class="material-icons-outlined">
 									expand_more
 								</span>
 							</a>
-							<ul class="dropdown-menu megamenu-dropdown">
+							<ul class="dropdown-menu megamenu-dropdown" id="megamenu-categories">
 								<div class="row">
 									<ul class="nav tabs-all-categories nav-tabs-hover col-3">
 										<li>
@@ -202,7 +202,16 @@
 												Viajes y Turismo
 											</a>
 										</li>
+										<li>
+											<a href="#category10">
+												<span class="material-icons-outlined">
+													confirmation_number
+												</span>
+												Cupones
+											</a>
+										</li>
 									</ul>
+
 									<div class="tab-content tab-content-all-categories col">
 										<div class="tab-pane active" id="category1">
 											<div class="header-tab-pane">
@@ -564,6 +573,41 @@
 												</div>
 											</div>
 										</div>
+										<div class="tab-pane" id="category10">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Cupones
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Restaurante</a>
+														<li>
+															<a href="#">Pizza</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Estadía</a>
+														<li>
+															<a href="#">Hotel</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Villa Jazmin</a>
+														</li>
+														<li>
+															<a href="#">Meson Penelope</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</ul>
@@ -600,64 +644,89 @@
 				</ul>
 			</div>
 
-			<ul class="categorias-destacadas">
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Cine
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Restaurantes
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Entretenimiento
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Vales de pavo
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Kpop
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Belleza
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Salud
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Educación
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Viejes
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Cupones
-					</a>
-				</li>
+			<div class="carousel-wrap">
+				<div class="owl-carousel owl-theme owl-carousel-categories">
+					<div class="item item-category" data-merge="1">
+						<a href="index.html">
+							Inicio
+						</a>
+					</div>
 
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						Inmobiliaria
-					</a>
-				</li>
-			</ul>
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cineplanet
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Packs
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Damas
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Caballeros
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Salud Dental
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Espectáculos
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cinemark
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cinestar Movitime
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Circo
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cupones
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Teatro
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Navidad
+						</a>
+					</div>
+
+
+				</div>
+			</div>
 		</div>
 	</nav>
 	<!-- FIN NAVBAR CATEGORIAS -->

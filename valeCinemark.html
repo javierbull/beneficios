@@ -16,11 +16,17 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
 	<link href="css/fonts.min.css" rel="stylesheet" type="text/css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mq.css">
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 
 </head>
 
@@ -76,479 +82,618 @@
 
 	<!-- NAVBAR CATEGORIAS -->
 	<nav class="navbar navbar-expand-lg navbar-light main navbar-categorias bg-white nav-shadow sticky-top">
-		<div class="container">
+		<div class="container container-navbar-categorias-desracadas">
 			<div class="navbar-collapse-categorias">
-				<ul class="navbar-nav menu-categorias">
-					<!-- Dropdown category -->
-					<li class="nav-item dropdown position-static">
-						<a class="nav-link active" role="button">
-							CATEGORÍAS
-							<span class="material-icons-outlined">
-								expand_more
-							</span>
-						</a>
-						<ul class="dropdown-menu megamenu-dropdown">
-							<div class="row">
-								<ul class="nav tabs-all-categories nav-tabs-hover col-3">
-									<li>
-										<a href="#category1" class="active">
-											<span class="material-icons-outlined">
-												movie
-											</span>
-											Cineplanet
-										</a>
-									</li>
-									<li>
-										<a href="#category2">
-											<span class="material-icons-outlined">
-												park
-											</span>
-											Preventa Navideña
-										</a>
-									</li>
-									<li>
-										<a href="#category3">
-											<span class="material-icons-outlined">
-												sentiment_very_satisfied
-											</span>
-											Entretenimiento
-										</a>
-									</li>
-									<li>
-										<a href="#category4">
-											<span class="material-icons-outlined">
-												restaurant
-											</span>
-											Restaurantes
-										</a>
-									</li>
-									<li>
-										<a href="#category5">
-											<span class="material-icons-outlined">
-												spa
-											</span>
-											Salud y Belleza
-										</a>
-									</li>
-									<li>
-										<a href="#category6">
-											<span class="material-icons-outlined">
-												redeem
-											</span>
-											Boxes y Regalos
-										</a>
-									</li>
-									<li>
-										<a href="#category7">
-											<span class="material-icons-outlined">
-												directions_bike
-											</span>
-											Deporte
-										</a>
-									</li>
-									<li>
-										<a href="#category8">
-											<span class="material-icons-outlined">
-												school
-											</span>
-											Educación
-										</a>
-									</li>
-									<li>
-										<a href="#category9">
-											<span class="material-icons-outlined">
-												flight
-											</span>
-											Viajes y Turismo
-										</a>
-									</li>
-								</ul>
-								<div class="tab-content tab-content-all-categories col">
-									<div class="tab-pane active" id="category1">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
+
+				<div class="wrap-iconHome_menuCategories">
+					<ul class="navbar-nav menu-categorias">
+						<!-- Dropdown category -->
+						<li class="nav-item dropdown position-static">
+							<a class="nav-link active" role="button" id="show-megamenu">
+								CATEGORÍAS
+								<span class="material-icons-outlined">
+									expand_more
+								</span>
+							</a>
+							<ul class="dropdown-menu megamenu-dropdown" id="megamenu-categories">
+								<div class="row">
+									<ul class="nav tabs-all-categories nav-tabs-hover col-3">
+										<li>
+											<a href="#category1" class="active">
+												<span class="material-icons-outlined">
+													movie
+												</span>
 												Cineplanet
-											</h2>
-											<a href="packs.html" class="btn-link text-link">
-												Ver todo
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Productos</a>
-													<li>
-														<a href="#">Entradas</a>
-													</li>
-													<li>
-														<a href="#">Combos</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Cineplanet</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="category2">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
-												Preventa Navideña
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
+										</li>
+										<li>
+											<a href="#category2">
+												<span class="material-icons-outlined">
+													storefront
+												</span>
+												Tiendita Bee
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Pavos</a>
-													<li>
-														<a href="#">Vales de pavos</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">San Fernando</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="category3">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
+										</li>
+										<li>
+											<a href="#category3">
+												<span class="material-icons-outlined">
+													sentiment_very_satisfied
+												</span>
 												Entretenimiento
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Aventura y diversión</a>
-													<li>
-														<a href="#">Juegos</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Coney Park</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="category4">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
+										</li>
+										<li>
+											<a href="#category4">
+												<span class="material-icons-outlined">
+													restaurant
+												</span>
 												Restaurantes
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Pollos</a>
-													<li>
-														<a href="#">Pollo a la brasa</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Pizzas</a>
-													<li>
-														<a href="#">Pizza artesanal</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Roky's</a>
-													</li>
-													<li>
-														<a href="#">Mamma Tomato</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="category5">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
+										</li>
+										<li>
+											<a href="#category5">
+												<span class="material-icons-outlined">
+													spa
+												</span>
 												Salud y Belleza
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Packs</a>
-													<li>
-														<a href="#">Belleza dama</a>
-													</li>
-													<li>
-														<a href="#">Barbería</a>
-													</li>
-													<li>
-														<a href="#">Spa</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Cuidado personal</a>
-													<li>
-														<a href="#">Cabello dama</a>
-													</li>
-													<li>
-														<a href="#">Barbería</a>
-													</li>
-													<li>
-														<a href="#">Manicure & Pedicure</a>
-													</li>
-													<li>
-														<a href="#">Maquillaje</a>
-													</li>
-													<li>
-														<a href="#">Depilación</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Spa</a>
-													<li>
-														<a href="#">Masajes</a>
-													</li>
-													<li>
-														<a href="#">Limpieza facial</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Salud</a>
-													<li>
-														<a href="#">Monturas y Resinas</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Montalvo</a>
-													</li>
-													<li>
-														<a href="#">Montalvo For Men</a>
-													</li>
-													<li>
-														<a href="#">Sormedic</a>
-													</li>
-													<li>
-														<a href="#">Laóptica</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="category6">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
+										</li>
+										<li>
+											<a href="#category6">
+												<span class="material-icons-outlined">
+													redeem
+												</span>
 												Boxes y Regalos
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Boxes</a>
-													<li>
-														<a href="#">Bebidas</a>
-													</li>
-													<li>
-														<a href="#">Bisutería</a>
-													</li>
-													<li>
-														<a href="#">Postres</a>
-													</li>
-													<li>
-														<a href="#">Parrillero</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Packs</a>
-													<li>
-														<a href="#">Parrillero</a>
-													</li>
-													<li>
-														<a href="#">Cuidado personal</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Regalos</a>
-													<li>
-														<a href="#">Lámparas</a>
-													</li>
-													<li>
-														<a href="#">Bebidas</a>
-													</li>
-													<li>
-														<a href="#">Postres</a>
-													</li>
-													<li>
-														<a href="#">Artesanías</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Nathalie Bird</a>
-													</li>
-													<li>
-														<a href="#">La Fina Endorfina</a>
-													</li>
-													<li>
-														<a href="#">Maras Gourmet</a>
-													</li>
-													<li>
-														<a href="#">Piscos personalizados</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="category7">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
+										</li>
+										<li>
+											<a href="#category7">
+												<span class="material-icons-outlined">
+													directions_bike
+												</span>
 												Deporte
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Ciclismo</a>
-													<li>
-														<a href="#">Accesorios</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Mad Gadgets</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="tab-pane" id="category8">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
+										</li>
+										<li>
+											<a href="#category8">
+												<span class="material-icons-outlined">
+													school
+												</span>
 												Educación
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
 											</a>
-										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Cursos</a>
-													<li>
-														<a href="#">Tecnología</a>
-													</li>
-													<li>
-														<a href="#">Idiomas</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Libros</a>
-													<li>
-														<a href="#">Idiomas</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Ice School</a>
-													</li>
-													<li>
-														<a href="#">Berlitz</a>
-													</li>
-													<li>
-														<a href="#">Entrenamiento Certero</a>
-													</li>
-												</ul>
+										</li>
+										<li>
+											<a href="#category9">
+												<span class="material-icons-outlined">
+													flight
+												</span>
+												Viajes y Turismo
+											</a>
+										</li>
+										<li>
+											<a href="#category10">
+												<span class="material-icons-outlined">
+													confirmation_number
+												</span>
+												Cupones
+											</a>
+										</li>
+									</ul>
+
+									<div class="tab-content tab-content-all-categories col">
+										<div class="tab-pane active" id="category1">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Cineplanet
+												</h2>
+												<a href="packs.html" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Productos</a>
+														<li>
+															<a href="#">Entradas</a>
+														</li>
+														<li>
+															<a href="#">Combos</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Cineplanet</a>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="tab-pane" id="category9">
-										<div class="header-tab-pane">
-											<h2 class="tab-pane-title">
-												Viajes y Turismo
-											</h2>
-											<a href="#" class="btn-link text-link">
-												Ver todo
-											</a>
+										<div class="tab-pane" id="category2">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Preventa Navideña
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Pavos</a>
+														<li>
+															<a href="#">Vales de pavos</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">San Fernando</a>
+														</li>
+													</ul>
+												</div>
+											</div>
 										</div>
-										<div class="body-tab-pane">
-											<div class="content-category-list">
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Restaurante</a>
-													<li>
-														<a href="#">Pizza</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Estadía</a>
-													<li>
-														<a href="#">Hotel</a>
-													</li>
-												</ul>
-												<ul class="list-category">
-													<a href="#" class="list-title-category">Marcas</a>
-													<li>
-														<a href="#">Villa Jazmin</a>
-													</li>
-													<li>
-														<a href="#">Meson Penelope</a>
-													</li>
-												</ul>
+										<div class="tab-pane" id="category3">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Entretenimiento
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Aventura y diversión</a>
+														<li>
+															<a href="#">Juegos</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Coney Park</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="category4">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Restaurantes
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Pollos</a>
+														<li>
+															<a href="#">Pollo a la brasa</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Pizzas</a>
+														<li>
+															<a href="#">Pizza artesanal</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Roky's</a>
+														</li>
+														<li>
+															<a href="#">Mamma Tomato</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="category5">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Salud y Belleza
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Packs</a>
+														<li>
+															<a href="#">Belleza dama</a>
+														</li>
+														<li>
+															<a href="#">Barbería</a>
+														</li>
+														<li>
+															<a href="#">Spa</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Cuidado personal</a>
+														<li>
+															<a href="#">Cabello dama</a>
+														</li>
+														<li>
+															<a href="#">Barbería</a>
+														</li>
+														<li>
+															<a href="#">Manicure & Pedicure</a>
+														</li>
+														<li>
+															<a href="#">Maquillaje</a>
+														</li>
+														<li>
+															<a href="#">Depilación</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Spa</a>
+														<li>
+															<a href="#">Masajes</a>
+														</li>
+														<li>
+															<a href="#">Limpieza facial</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Salud</a>
+														<li>
+															<a href="#">Monturas y Resinas</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Montalvo</a>
+														</li>
+														<li>
+															<a href="#">Montalvo For Men</a>
+														</li>
+														<li>
+															<a href="#">Sormedic</a>
+														</li>
+														<li>
+															<a href="#">Laóptica</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="category6">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Boxes y Regalos
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Boxes</a>
+														<li>
+															<a href="#">Bebidas</a>
+														</li>
+														<li>
+															<a href="#">Bisutería</a>
+														</li>
+														<li>
+															<a href="#">Postres</a>
+														</li>
+														<li>
+															<a href="#">Parrillero</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Packs</a>
+														<li>
+															<a href="#">Parrillero</a>
+														</li>
+														<li>
+															<a href="#">Cuidado personal</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Regalos</a>
+														<li>
+															<a href="#">Lámparas</a>
+														</li>
+														<li>
+															<a href="#">Bebidas</a>
+														</li>
+														<li>
+															<a href="#">Postres</a>
+														</li>
+														<li>
+															<a href="#">Artesanías</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Nathalie Bird</a>
+														</li>
+														<li>
+															<a href="#">La Fina Endorfina</a>
+														</li>
+														<li>
+															<a href="#">Maras Gourmet</a>
+														</li>
+														<li>
+															<a href="#">Piscos personalizados</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="category7">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Deporte
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Ciclismo</a>
+														<li>
+															<a href="#">Accesorios</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Mad Gadgets</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="category8">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Educación
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Cursos</a>
+														<li>
+															<a href="#">Tecnología</a>
+														</li>
+														<li>
+															<a href="#">Idiomas</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Libros</a>
+														<li>
+															<a href="#">Idiomas</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Ice School</a>
+														</li>
+														<li>
+															<a href="#">Berlitz</a>
+														</li>
+														<li>
+															<a href="#">Entrenamiento Certero</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="category9">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Viajes y Turismo
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Restaurante</a>
+														<li>
+															<a href="#">Pizza</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Estadía</a>
+														<li>
+															<a href="#">Hotel</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Villa Jazmin</a>
+														</li>
+														<li>
+															<a href="#">Meson Penelope</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="category10">
+											<div class="header-tab-pane">
+												<h2 class="tab-pane-title">
+													Cupones
+												</h2>
+												<a href="#" class="btn-link text-link">
+													Ver todo
+												</a>
+											</div>
+											<div class="body-tab-pane">
+												<div class="content-category-list">
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Restaurante</a>
+														<li>
+															<a href="#">Pizza</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Estadía</a>
+														<li>
+															<a href="#">Hotel</a>
+														</li>
+													</ul>
+													<ul class="list-category">
+														<a href="#" class="list-title-category">Marcas</a>
+														<li>
+															<a href="#">Villa Jazmin</a>
+														</li>
+														<li>
+															<a href="#">Meson Penelope</a>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</ul>
-					</li>
-					<!-- End Dropdown category -->
-				</ul>
+							</ul>
+						</li>
 
-				<div class="input-group input-search">
-					<div class="input-group-prepend">
-						<button class="btn btn-style-none" type="button" id="button-addon1">
-							<span class="material-icons">
-								search
-							</span>
-						</button>
-					</div>
-					<input type="text" list=text_editors
-						class="form-control bg-white border-none form-control-style-none form-control-search"
-						placeholder="Buscar">
+						<li class="input-group input-search">
+							<div class="input-group-prepend">
+								<button class="btn btn-style-none" type="button" id="button-addon1">
+									<span class="material-icons">
+										search
+									</span>
+								</button>
+							</div>
+							<input type="text" list=text_editors
+								class="form-control bg-white border-none form-control-style-none form-control-search"
+								placeholder="Buscar">
+						</li>
+					</ul>
 				</div>
 
-				<a href="carrito.html" class="btn material-icons-outlined shopping_cart-btn btn-style-none"
-					type="button">
-					shopping_cart
-					<span class="badge-bee number-text-semiBold">04</span>
-				</a>
+				<ul class="navbar-categories-rigth">
+					<li class="nav-item">
+						<a class="nav-link" href="giftcards.html">
+							Mis Gift Cards
+						</a>
+					</li>
+					<li>
+						<a href="carrito.html" class="btn material-icons-outlined shopping_cart-btn btn-style-none"
+							type="button">
+							shopping_cart
+							<span class="badge-bee number-text-semiBold">04</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="carousel-wrap">
+				<div class="owl-carousel owl-theme owl-carousel-categories">
+					<div class="item item-category" data-merge="1">
+						<a href="index.html">
+							Inicio
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cineplanet
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Packs
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Damas
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Caballeros
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Salud Dental
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Espectáculos
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cinemark
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cinestar Movitime
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Circo
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Cupones
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Teatro
+						</a>
+					</div>
+
+					<div class="item item-category" data-merge="1">
+						<a href="restaurantes.html">
+							Navidad
+						</a>
+					</div>
+
+
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -1444,6 +1589,13 @@
 	<script src="js/bootstrap/popper.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<script src="js/offcanvas.js"></script>
+	<script src="js/countdown.js"></script>
+	<!-- ===================================================================== -->
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/owlcarousel/highlight.js"></script>
+	<script src="vendor/owlcarousel/app.js"></script>
+	<script src="js/owlcarouselmain.js"></script>
+	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
 </body>

@@ -846,8 +846,6 @@
                                 <th scope="col">Cumpleaños</th>
                                 <th scope="col">Correo</th>
                                 <th scope="col">Sede</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -865,28 +863,6 @@
                                 <td>22/08/1990</td>
                                 <td>saratorres@interbank.com</td>
                                 <td>San Juan de Miraflores</td>
-                                <td>
-                                    <span class="tag tag-success">
-                                        Activo
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="table-actions">
-                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                            data-bs-target="#modalEditarColaborador">
-                                            <span class="material-symbols-outlined">
-                                                edit
-                                            </span>
-                                        </button>
-
-                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                            data-bs-target="#modalEliminarColaborador">
-                                            <span class="material-symbols-outlined">
-                                                delete
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
                             </tr>
                             <tr>
                                 <td scope="row">78456958</td>
@@ -902,28 +878,6 @@
                                     arobles@interbank.com
                                 </td>
                                 <td>Lince</td>
-                                <td>
-                                    <span class="tag tag-warning">
-                                        Inactivo
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="table-actions">
-                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                            data-bs-target="#modalEditarColaborador">
-                                            <span class="material-symbols-outlined">
-                                                edit
-                                            </span>
-                                        </button>
-
-                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                            data-bs-target="#modalEliminarColaborador">
-                                            <span class="material-symbols-outlined">
-                                                delete
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
                             </tr>
                             <tr>
                                 <td scope="row">75845698</td>
@@ -939,28 +893,6 @@
                                         </span>
                                     </button>
                                     San Juan de Lurigancho
-                                </td>
-                                <td>
-                                    <span class="tag tag-danger">
-                                        Pre-registrado
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="table-actions">
-                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                            data-bs-target="#modalEditarColaborador">
-                                            <span class="material-symbols-outlined">
-                                                edit
-                                            </span>
-                                        </button>
-
-                                        <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                            data-bs-target="#modalEliminarColaborador">
-                                            <span class="material-symbols-outlined">
-                                                delete
-                                            </span>
-                                        </button>
-                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -6269,8 +6201,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa"
-                        data-bs-toggle="modal">Actualizar</button>
+                    <button type="button" class="btn primary-btn showAdminPanel-colaboradores" data-bs-dismiss="modal">Actualizar</button>
                 </div>
             </div>
         </div>

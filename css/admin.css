@@ -353,12 +353,6 @@ input[type=number] {
         'FILL' 1
 }
 
-.alert .link-btn {
-    text-transform: none;
-    text-decoration: underline;
-    color: var(--gray7);
-}
-
 .alert-start {
     /* background-color: pink;  */
     display: flex;
@@ -375,7 +369,7 @@ input[type=number] {
     color: var(--blue6);
 }
 
-.alert-info span {
+.alert-info .alert-start span {
     color: var(--blue5);
 }
 
@@ -389,7 +383,7 @@ input[type=number] {
     background-color: var(--red2);
 }
 
-.alert-danger span {
+.alert-danger .alert-start span {
     color: var(--red5);
 }
 
@@ -398,7 +392,7 @@ input[type=number] {
     background-color: var(--green1);
 }
 
-.alert-success span {
+.alert-success .alert-start span {
     color: var(--green5);
 }
 
@@ -407,7 +401,7 @@ input[type=number] {
     background-color: var(--primary2);
 }
 
-.alert-warning span {
+.alert-warning .alert-start span {
     color: var(--primary6);
 }
 

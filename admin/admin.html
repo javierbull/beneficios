@@ -831,7 +831,7 @@
                             </span>
                         </button>
 
-                        <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalrecordatorioActivacion">
+                        <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalErrorCargaMasivaColaborador">
                             Actualizar correcciones
                         </button>
                     </div>
@@ -6232,6 +6232,50 @@
         </div>
     </div>
     <!-- End Modal carga masiva-->
+
+     <!-- Modal actualizar error carga masiva-->
+    <div class="modal fade" id="modalErrorCargaMasivaColaborador" tabindex="-1" aria-labelledby="colaboradorCargaMasiva"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradorCargaMasiva">Actualizar correcciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <p> Sube el archivo con los datos corregidos:</p>
+
+                            <div id="theWidget" class="dnd-file-upload-widget">
+                                <div class="form-group drop_zone">
+                                    <label class="btn outline-btn">
+                                        <span class="material-symbols-outlined icon-fill">
+                                            upload_2
+                                        </span>
+                                        Sube tu archivo
+                                        <input type="file" multiple="" />
+                                    </label>
+                                    <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                        MB.</span>
+                                </div>
+
+                                <div class="files-container"></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa"
+                        data-bs-toggle="modal">Actualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal actualizar error carga masiva-->
 
     <!-- Carga exitosa -->
     <div class="modal fade" id="modalCargaExitosa" tabindex="-1" aria-labelledby="cargaExitosa" aria-hidden="true">

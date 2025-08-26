@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // alert("Hello! I am an alert box!!");
 
-  
+
 
   // Rich text editor
   tinymce.init({
@@ -34,8 +34,8 @@ $(document).ready(function () {
     ],
     browser_spellcheck: true,
     contextmenu: false,
- 
-  
+
+
   });
 
   // End Rich text editor
@@ -194,6 +194,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-colaboradores").click(function () {
@@ -220,6 +221,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-colaboradoreNuevo").click(function () {
@@ -246,6 +248,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-empresa").click(function () {
@@ -272,6 +275,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-sedes").click(function () {
@@ -298,6 +302,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-contactos").click(function () {
@@ -324,6 +329,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-contactoNuevo").click(function () {
@@ -350,6 +356,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-inhouse").click(function () {
@@ -376,6 +383,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-nuevaVisitaInhouse").click(function () {
@@ -402,6 +410,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-cumples").click(function () {
@@ -428,6 +437,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-planilla").click(function () {
@@ -454,6 +464,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-aprobarCompras").click(function () {
@@ -480,6 +491,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-comprasPlanilla").click(function () {
@@ -506,6 +518,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-sedeNuevo").click(function () {
@@ -532,6 +545,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-vales").click(function () {
@@ -558,6 +572,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-reasignarVales").click(function () {
@@ -584,6 +599,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-solicitudes").click(function () {
@@ -610,6 +626,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-solicitadosDetalle").click(function () {
@@ -636,6 +653,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-cupones").click(function () {
@@ -662,6 +680,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-nuevoCupon").click(function () {
@@ -688,6 +707,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-marcas").click(function () {
@@ -714,6 +734,7 @@ $(document).ready(function () {
     $("#marcas-panel").show();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-productos").click(function () {
@@ -740,6 +761,7 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").show();
     $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").hide();
   });
 
   $(".showAdminPanel-comunicaciones").click(function () {
@@ -766,6 +788,34 @@ $(document).ready(function () {
     $("#marcas-panel").hide();
     $("#productos-panel").hide();
     $("#comunicaciones-panel").show();
+    $("#colaboradorErrorCarga-panel").hide();
+  });
+
+  $(".showAdminPanel-errorCargaColaboradores").click(function () {
+    $("#dashboard-panel").hide();
+    $("#colaboradores-panel").hide();
+    $("#empresa-panel").hide();
+    $("#sedes-panel").hide();
+    $("#contactos-panel").hide();
+    $("#colaboradorNuevo-panel").hide();
+    $("#contactoNuevo-panel").hide();
+    $("#inhouse-panel").hide();
+    $("#visitaInhouseNuevo-panel").hide();
+    $("#cumples-panel").hide();
+    $("#planilla-panel").hide();
+    $("#aprobarCompras-panel").hide();
+    $("#comprasPlanilla-panel").hide();
+    $("#sedeNuevo-panel").hide();
+    $("#vales-panel").hide();
+    $("#reasignarVales-panel").hide();
+    $("#solicitudes-panel").hide();
+    $("#solicitadosDetalle-panel").hide();
+    $("#cupones-panel").hide();
+    $("#nuevoCupon-panel").hide();
+    $("#marcas-panel").hide();
+    $("#productos-panel").hide();
+    $("#comunicaciones-panel").hide();
+    $("#colaboradorErrorCarga-panel").show();
   });
   // end show admib panels
 
@@ -807,8 +857,8 @@ $(document).ready(function () {
   });
   // END STEPPER ADMIN
 
-   // DATATABLES
-   $('.dtable').DataTable({
+  // DATATABLES
+  $('.dtable').DataTable({
     "language": {
       "lengthMenu": "Mostrar _MENU_ filas",
       "zeroRecords": "No se encontraron resultados",
@@ -826,7 +876,7 @@ $(document).ready(function () {
     }
   });
   // END DATATABLES
- 
+
 
   // CAMBIAR LOGO EMPRESA
   $('#editar-empresa-input-preview-img').change(function () {

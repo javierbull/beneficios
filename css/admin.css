@@ -410,6 +410,11 @@ input[type=number] {
     border: none !important;
 }
 
+.alert-number {
+    font-weight: 700;
+    color: var(--gray7) !important;
+}
+
 /* End alerts */
 
 /* Backgrounds */

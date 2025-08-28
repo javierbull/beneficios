@@ -766,6 +766,12 @@
   }
 
   /* FIN BOLETERÍA CINE */
+
+  /* VALE QR */
+  .valeqr {
+    width: 100%;
+  }
+  /* END VALE QR */
 }
 
 /* Fin Big Cell landscape */
@@ -1063,6 +1069,7 @@
   }
 
   /* End boleto cine star */
+
 }
 
 /* fin tablet portrait */
@@ -2638,6 +2645,13 @@
     text-align: center;
   }
   /* End boleto cine star */
+
+  /* Vale qr */
+  .valeqr {
+    /* background-color: pink; */
+    flex-direction: column;
+  }
+  /* End vale qr */
 }
 
 /* Fin cell portrait */

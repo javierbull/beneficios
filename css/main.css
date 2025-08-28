@@ -9173,3 +9173,90 @@ div.dataTables_wrapper div.dataTables_info {
   background-color: var(--Gray2);
 }
 /* END CATEGORIAS DETACADAS CAROUSEL */
+
+/* VALES QR */
+.valeqr {
+  background-color: var(--white);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border: solid 1px var(--Gray4);
+  width: 50rem;
+}
+
+.valeqrImg {
+  min-width: 8rem;
+  max-width: 8rem;
+  min-height: 8rem;
+  max-height: 8rem;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.valeqr-main {
+  /* background-color: lightgreen; */
+  width: 100%;
+}
+
+.valeqr-main--start {
+  border-bottom: solid 1px var(--Gray4);
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+}
+
+.valeqr-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .25rem;
+}
+
+.valeqr-desc {
+  font-size: .875rem;
+  margin-bottom: 0;
+}
+
+.valeqr-eventDetailsList {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.valeqr-eventDetailsList li {
+  margin-bottom: .5rem;
+}
+
+.valeqr-eventDetailsList li:last-child {
+  margin-bottom: 0;
+}
+
+.valeqr-wrapqr {
+  /* background-color: lavender; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+}
+
+.valeqr-qr {
+  min-width: 6rem;
+  max-width: 6rem;
+  min-height: 6rem;
+  max-height: 6rem;
+}
+
+.valeqr-code {
+  font-size: .875rem;
+  margin-bottom: 0;
+}
+/* END VALES QR */

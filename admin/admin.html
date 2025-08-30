@@ -590,13 +590,31 @@
                         <div class="btn-group">
                             <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Nuevo colaborador
+                                Gestionar colaboradores
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li><button class="dropdown-item showAdminPanel-colaboradoreNuevo"
-                                        type="button">Individual</button></li>
-                                <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#modalCargaMasivaColaborador">Carga masiva</button></li>
+                                <li>
+                                    <button class="dropdown-item showAdminPanel-colaboradoreNuevo" type="button">
+                                        AGREGAR COLABORADOR
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#modalCargaMasivaColaborador">
+                                        CARGAR / ACTUALIZAR
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminacionMasivaColaboradores">
+                                        ELIMINAR
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        DESCARGAR REPORTE
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -612,6 +630,20 @@
                             ¿Cuál es es siguiente paso?
                         </div>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    <div class="alert-start">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <div>
+                            <h3 class="alert-start--title">Eliminación exitosa</h3>
+                            Se eliminaron 15 colaboradores.
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
                 <div class="alert alert-warning" role="alert">
@@ -817,10 +849,10 @@
                 <div class="navbar-actions">
                     <div class="navbar-actions__left">
                         <button type="button" class="btn outline-btn btn-icon showAdminPanel-colaboradores">
-                        <span class="material-symbols-outlined">
-                            arrow_back
-                        </span>
-                    </button>
+                            <span class="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                        </button>
                     </div>
 
                     <div class="navbar-actions__right">
@@ -831,7 +863,8 @@
                             </span>
                         </button>
 
-                        <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalErrorCargaMasivaColaborador">
+                        <button type="button" class="btn primary-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalErrorCargaMasivaColaborador">
                             Actualizar correcciones
                         </button>
                     </div>
@@ -6165,7 +6198,7 @@
     </div>
     <!-- End Modal carga masiva-->
 
-     <!-- Modal actualizar error carga masiva-->
+    <!-- Modal actualizar error carga masiva-->
     <div class="modal fade" id="modalErrorCargaMasivaColaborador" tabindex="-1" aria-labelledby="colaboradorCargaMasiva"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -6201,12 +6234,63 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn showAdminPanel-colaboradores" data-bs-dismiss="modal">Actualizar</button>
+                    <button type="button" class="btn primary-btn showAdminPanel-colaboradores"
+                        data-bs-dismiss="modal">Actualizar</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Modal actualizar error carga masiva-->
+
+    <!-- Modal eliminación masiva-->
+    <div class="modal fade" id="modalEliminacionMasivaColaboradores" tabindex="-1"
+        aria-labelledby="colaboradorCargaMasiva" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradorCargaMasiva">Eliminación masiva de colaboradores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <p>Descarga el archivo XLSX con el formato para la eliminación masiva de colaboradores.</p>
+                            <button class="btn outline-btn mb-form">
+                                <span class="material-symbols-outlined icon-fill">
+                                    download_2
+                                </span>
+                                Descargar formato
+                            </button>
+
+                            <div id="theWidget" class="dnd-file-upload-widget">
+                                <div class="form-group drop_zone">
+                                    <label class="btn outline-btn">
+                                        <span class="material-symbols-outlined icon-fill">
+                                            upload_2
+                                        </span>
+                                        Sube tu archivo
+                                        <input type="file" multiple="" />
+                                    </label>
+                                    <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                        MB.</span>
+                                </div>
+
+                                <div class="files-container"></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa"
+                        data-bs-toggle="modal">Eliminar colaboradores</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal eliminación masiva-->
 
     <!-- Carga exitosa -->
     <div class="modal fade" id="modalCargaExitosa" tabindex="-1" aria-labelledby="cargaExitosa" aria-hidden="true">

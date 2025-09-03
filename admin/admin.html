@@ -233,7 +233,38 @@
                     <button type="button" class="btn-close d-none" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
+                <div class="row g-3">
+                    <div class="mb-form form-group col-2">
+                        <label for="dashboardSelectYear" class="form-label">Año</label>
+                        <select class="form-select" aria-label="Default select example" id="dashboardSelectYear">
+                            <option selected="">2025</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-form form-group col-2">
+                        <label for="dashboardSelectMonth" class="form-label">Mes</label>
+                        <select class="form-select" aria-label="Default select example" id="dashboardSelectMonth">
+                            <option>Diciembre</option>
+                            <option>Noviembre</option>
+                            <option>Octubre</option>
+                            <option selected="">Setiembre</option>
+                            <option>Agosto</option>
+                            <option>Julio</option>
+                            <option>Junio</option>
+                            <option>Mayo</option>
+                            <option>Abril</option>
+                            <option>Marzo</option>
+                            <option>Febrero</option>
+                            <option>Enero</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="dashboard-main">
+
                     <div class="wrap-charts">
                         <div class="row-cards-admin">
                             <div class="card-admin card-admincargaColaboradores">
@@ -6252,7 +6283,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
                     <form class="form-modal">
                         <fieldset>
                             <p>Descarga el archivo XLSX con el formato para la eliminación masiva de colaboradores.</p>

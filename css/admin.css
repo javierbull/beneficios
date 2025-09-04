@@ -968,7 +968,7 @@ input[type=number] {
 
 .progressbar-beneficios {
     height: 2.5rem;
-    background-color: var(--red4);
+    background-color: transparent;
     width: 100%;
 }
 
@@ -982,19 +982,12 @@ input[type=number] {
     padding: 0 1rem;
 }
 
-.progressbar-beneficios--text {
-    background-color: pink;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+.progressbar-beneficios p {
+    /* background-color: pink; */
+    width: 55%;
+    white-space: nowrap;
     overflow: hidden;
-}
-
-.text-truncate {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .chart-bar-beneficios {

@@ -88,11 +88,11 @@
   --primary-dark: #FFB01A;
   --height-megamenu: 20rem;
   /* Colores de marca */
-  /* --brand-color: #FFCE00;
-  --typography-color: #1F1F37; */
+  --brand-color: #FFCE00;
+  --typography-color: #1F1F37;
 
-  --brand-color: tomato;
-  --typography-color: white;
+  /* --brand-color: tomato;
+  --typography-color: white; */
 }
 
 html {

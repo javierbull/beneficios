@@ -2996,30 +2996,33 @@ figure figcaption {
 /* CARD DASHBOARD ONBOARDING CODIGO */
 .card-onboardingCodigo {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .onboardingCodigo-content {
+    /* background-color: pink; */
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .onboardingCodigo-content--chart {
     background-color: var(--primary5);
     font-size: 1.5rem;
     font-weight: 700;
-    min-width: 4.5rem;
-    max-width: 4.5rem;
-    min-height: 4.5rem;
-    max-height: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
 }
 
 /* END CARD DASHBOARD ONBOARDING CODIGO */

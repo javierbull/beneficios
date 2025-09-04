@@ -850,14 +850,14 @@ input[type=number] {
 
 .dashboard-main {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .wrap-charts {
     /* background-color: lavender; */
     width: 100%;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-direction: column;
 }
 
@@ -930,7 +930,7 @@ input[type=number] {
 
 .row-cards-admin {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .card-beneficiosVisitas,
@@ -1025,10 +1025,9 @@ input[type=number] {
 .sidebar-events {
     /* background-color: #FFE578; */
     width: 25rem;
-}
-
-.wrap-events {
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .wrap-events .btn,

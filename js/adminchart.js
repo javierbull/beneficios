@@ -47,14 +47,14 @@ var ctx = document.getElementById("chartCanales").getContext("2d");
 var myChart = new Chart(ctx, {
     type: "doughnut",
     data: {
-        labels: ['WhatsApp', 'Digital', 'In-house'],
+        labels: ['Plataforma', 'WhatsApp', 'Visita In-House'],
         datasets: [{
             label: 'Porcentaje',
-            data: [40, 35, 25],
+            data: [400, 350, 250],
             fill: true,
             backgroundColor: [
-                '#76B435',
                 '#518AF9',
+                '#76B435',
                 '#FFBC3B'
             ],
             datalabels: {

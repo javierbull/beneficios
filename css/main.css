@@ -88,11 +88,11 @@
   --primary-dark: #FFB01A;
   --height-megamenu: 20rem;
   /* Colores de marca */
-  --brand-color: #FFCE00;
-  --typography-color: #1F1F37;
+  /* --brand-color: #FFCE00;
+  --typography-color: #1F1F37; */
 
-  /* --brand-color: peru;
-  --typography-color: white; */
+  --brand-color: tomato;
+  --typography-color: white;
 }
 
 html {
@@ -1725,6 +1725,7 @@ nav.main .midmenu {
 
 .tabs-all-categories li .active {
   background-color: var(--brand-color);
+  color: var(--typography-color);
 }
 
 .tabs-all-categories li a {

@@ -37,8 +37,6 @@
     --brand-color: #FFCE00;
     --typography-color: #1F1F37;
 
-    /* --brand-color: pink;
-    --typography-color: rgb(90, 3, 90); */
 }
 
 html {
@@ -970,7 +968,7 @@ input[type=number] {
 
 .progressbar-beneficios {
     height: 2.5rem;
-    background-color: var(--white);
+    background-color: var(--red4);
     width: 100%;
 }
 
@@ -980,6 +978,23 @@ input[type=number] {
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
+    color: var(--gray7);
+    padding: 0 1rem;
+}
+
+.progressbar-beneficios--text {
+    background-color: pink;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .chart-bar-beneficios {

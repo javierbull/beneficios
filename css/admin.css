@@ -984,7 +984,7 @@ input[type=number] {
 
 .progressbar-beneficios p {
     /* background-color: pink; */
-    width: 55%;
+    width: 45%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1022,7 +1022,7 @@ input[type=number] {
 .progressbar-beneficios p {
     position: absolute;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: .875rem;
     top: .5rem;
     left: 3.5rem;
 }
@@ -1030,7 +1030,7 @@ input[type=number] {
 .chart-bar-beneficios__data {
     /* background-color: pink; */
     font-weight: 700;
-    min-width: 3.5rem !important;
+    min-width: 3rem !important;
     text-align: end;
 }
 

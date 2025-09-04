@@ -1035,6 +1035,13 @@ input[type=number] {
     width: 100%;
 }
 
+.sidebar-events-card-content {
+    max-height: 33.25rem;
+    margin-bottom: 1rem;
+    overflow: auto;
+    
+}
+
 .card-event__month {
     margin-bottom: 1rem;
 }

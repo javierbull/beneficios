@@ -59,6 +59,45 @@ body {
     font-weight: 400;
 }
 
+/* Widths */
+.w-20 {
+    width: 20% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-40 {
+    width: 20% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+/* End widths */
+
 /* Buttons */
 .btn {
     font-size: .875rem;
@@ -424,6 +463,10 @@ input[type=number] {
 
 .bg-default {
     background-color: var(--gray2) !important;
+}
+
+.bg-gray {
+    background-color: var(--gray5) !important;
 }
 
 /* End background */
@@ -896,9 +939,7 @@ input[type=number] {
     background-color: var(--gray2);
 }
 
-.card-participacionCanal {
-    width: 50%;
-}
+
 
 .chart-participacionCanal {
     /* background-color: tomato; */
@@ -945,7 +986,7 @@ input[type=number] {
     display: flex;
     gap: .5rem;
     align-items: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
@@ -978,6 +1019,27 @@ input[type=number] {
     left: 3.5rem;
 }
 
+.chart-bar-beneficios__data {
+    /* background-color: pink; */
+    font-weight: 700;
+    min-width: 3.5rem !important;
+    text-align: end;
+}
+
+.chart-total-data {
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: solid 1px var(--gray3);
+}
+
+.wrap-data-chart {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
 
 /* Sidebars events */
 .sidebar-events {
@@ -2995,10 +3057,8 @@ figure figcaption {
 
 /* CARD DASHBOARD ONBOARDING CODIGO */
 .card-onboardingCodigo {
-    width: 40%;
     display: flex;
     flex-direction: column;
-
 }
 
 .onboardingCodigo-content {
@@ -3075,6 +3135,7 @@ figure figcaption {
     font-size: 1rem;
     font-weight: 700;
 }
+
 /* END DISABLED SECTION */
 .wrap-cargaExitosa {
     color: var(--green5);
@@ -3084,6 +3145,7 @@ figure figcaption {
 .wrap-cargaExitosa span {
     font-size: 2rem;
 }
+
 /* MODAL CARGA EXITOSA */
 
 /* TOOLTIP DANGER */
@@ -3102,4 +3164,5 @@ figure figcaption {
 .btn-tooltip-danger:hover {
     color: var(--red6);
 }
+
 /* END TOOLTIP DANGER */

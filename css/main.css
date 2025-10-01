@@ -1858,13 +1858,12 @@ nav.main .midmenu {
 }
 
 .banner-client--mobile {
-  background-color: var(--midYellow);
+  background-color: var(--brand-color);
+  color: var(--typography-color);
   padding: .5rem .75rem;
   font-size: .875rem;
   margin: 1rem 0;
-  border: 1px solid var(--lightOrange);
   border-radius: .5rem;
-  display: none;
 }
 
 /* END BANNER CLIENT */

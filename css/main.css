@@ -1372,8 +1372,7 @@ footer {
   max-width: 10rem;
 }
 
-.brand-client-mobile {
-  /* background-color: #00AD7C; */
+.wrap-brand-client-mobile img {
   height: 100%;
   max-width: 100%;
   object-fit: contain;

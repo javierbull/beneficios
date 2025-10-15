@@ -2465,6 +2465,37 @@ figure figcaption {
     border: solid 1px var(--gray3);
 }
 
+.cards-cumples {
+    /* background-color: pink; */
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card-cumple {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-cumple__title {
+    font-size: 1rem;
+    color: var(--gray7);
+    margin-bottom: 0;
+}
+
+.card-cumple__fechas {
+    color: var(--gray5);
+    margin-bottom: 0;
+    font-size: .875rem;
+}
+
+.card-cumple__end {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

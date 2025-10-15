@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
     events: [
       {
         title: 'La molina',
-        start: '2024-07-13T10:00:00',
-        end: '2024-07-13T13:00:00'
+        start: '2025-10-16T10:00:00',
+        end: '2025-10-16T13:00:00'
       },
       {
         title: 'Lince',
-        start: '2024-07-13T11:00:00',
-        end: '2024-07-13T13:00:00'
+        start: '2025-10-20T11:00:00',
+        end: '2025-10-20T13:00:00'
       }
     ],
     select: function(){

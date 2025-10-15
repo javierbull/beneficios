@@ -33,10 +33,11 @@
     --red4: #F59799;
     --red5: #F64B4F;
     --red6: #AB2328;
+    /* color del dia actual del calendario */
+    --fc-today-bg-color: rgba(186, 213, 255, .4); 
     /* Colores de marca */
     --brand-color: #FFCE00;
     --typography-color: #1F1F37;
-
 }
 
 html {
@@ -1039,7 +1040,7 @@ input[type=number] {
     max-height: 33.25rem;
     margin-bottom: 1rem;
     overflow: auto;
-    
+
 }
 
 .card-event__month {
@@ -2451,6 +2452,17 @@ figure figcaption {
     display: flex;
     gap: .5rem;
     flex-direction: column;
+}
+
+.cumples-main {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    border: solid 1px var(--gray3);
 }
 
 /* END CUMPLEAÑOS */

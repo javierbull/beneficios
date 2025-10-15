@@ -2481,7 +2481,6 @@ figure figcaption {
 
 .card-cumple__title {
     font-size: 1rem;
-    color: var(--gray7);
     margin-bottom: 0;
 }
 
@@ -2494,6 +2493,19 @@ figure figcaption {
 .card-cumple__end {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.card-cumple.active {
+    background-color: var(--blue5);
+    color: var(--white);
+}
+
+.card-cumple.active .card-cumple__title {
+    font-weight: 600;
+}
+
+.card-cumple.active .card-cumple__fechas {
+    color: var(--white);
 }
 
 /* END CUMPLEAÑOS */

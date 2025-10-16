@@ -2508,6 +2508,24 @@ figure figcaption {
     color: var(--white);
 }
 
+.badge-cumple {
+    background-color: var(--brand-color);
+    color: var(--typography-color);
+    display: inline-flex;
+    align-items: center;
+    grid-area: .25rem;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.fc-col-header-cell {
+    background-color: var(--blue3);
+}
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

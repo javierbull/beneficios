@@ -3835,6 +3835,16 @@
                 <div class="cumples-main">
 
                     <div class="cumples-charts">
+                        <div class="form-group form-rows select-vista-cumple">
+                            <label for="selectVistaCumple" class="form-label">Ver por</label>
+                            <div>
+                                <select class="form-select" aria-label="Default select example" id="selectVistaCumple">
+                                    <option value="1">Gráfico</option>
+                                    <option value="2">Calendario</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <ul class="nav nav-pills mb-form" id="pills-tab-cumplesCharts" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-cumplesChartMonth-tab" data-bs-toggle="pill"
@@ -3865,6 +3875,16 @@
                     </div>
 
                     <div class="cumples-calendars">
+                        <div class="form-group form-rows select-vista-cumple">
+                            <label for="selectVistaCumple" class="form-label">Ver por</label>
+                            <div>
+                                <select class="form-select" aria-label="Default select example" id="selectVistaCumple">
+                                    <option value="1">Gráfico</option>
+                                    <option value="2">Calendario</option>
+                                </select>
+                            </div>
+                        </div>
+                        
                         <ul class="nav nav-pills mb-form" id="pills-tab-cumplesCalendars" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-cumplesCalendarMonth-tab"
@@ -3886,12 +3906,14 @@
                             <div class="tab-pane fade show active" id="pills-cumplesCalendarMonth" role="tabpanel"
                                 aria-labelledby="pills-cumplesCalendarMonth-tab">
                                 <div class="inhouse-main-calendar">
+
                                     <div class="badge-cumple">
                                         <span class="material-symbols-outlined">
                                             cake
                                         </span>
                                         5
                                     </div>
+
                                     <div id='calendar-cumples'></div>
                                 </div>
                             </div>
@@ -3901,7 +3923,6 @@
                             </div>
                         </div>
                     </div>
-
 
                 </div>
 

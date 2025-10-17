@@ -2541,6 +2541,7 @@ figure figcaption {
     color: var(--typography-color);
     display: inline-flex;
     align-items: center;
+    gap: .25rem;
     grid-area: .25rem;
     padding: .5rem 1rem;
     border-radius: 2rem;
@@ -2548,6 +2549,11 @@ figure figcaption {
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    font-weight: 700;
+}
+
+.badge-cumple span {
+   font-size: 1rem;
 }
 
 .fc-col-header-cell {

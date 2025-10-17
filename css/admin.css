@@ -2640,6 +2640,21 @@ figure figcaption {
     align-items: center;
 }
 
+.grid-calendar__item .badge-cumple {
+    background-color: var(--gray3);
+    color: var(--gray5);
+}
+
+.grid-calendar__item.active .grid-calendar__item--header {
+    background-color: var(--brand-color);
+    color: var(--typography-color);
+}
+
+.grid-calendar__item.active .badge-cumple {
+    background-color: var(--brand-color);
+    color: var(--typography-color);
+}
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

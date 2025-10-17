@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
             label: 'Solicitudes',
             data: [900, 850, 800, 780, 500, 550],
             fill: true,
-            borderRadius: 4,
+            borderRadius: 6,
             backgroundColor: [
                 '#2F71E5',
                 '#BAD5FF',
@@ -97,7 +97,7 @@ var myChart = new Chart(ctx, {
             label: '# de Cumpleaños',
             data: [7, 9, 8, 8, 3, 5, 4, 10, 6, 7, 7, 4, 9, 2, 0, 4, 10, 9, 11, 7, 3, 7, 9, 8, 8, 3, 5, 4, 10, 6, 1],
             fill: true,
-            borderRadius: 4,
+            borderRadius: 6,
             backgroundColor: [
                 '#2F71E5',
                 '#BAD5FF',
@@ -179,7 +179,7 @@ var myChart = new Chart(ctx, {
             label: '# de Cumpleaños',
             data: [7, 9, 8, 8, 3, 5, 4, 10, 6, 7, 7, 4],
             fill: true,
-            borderRadius: 4,
+            borderRadius: 6,
             backgroundColor: [
                 '#BAD5FF',
                 '#BAD5FF',

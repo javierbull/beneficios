@@ -2656,7 +2656,12 @@ figure figcaption {
 }
 
 .cumples-calendars {
-    /* display: none; */
+    display: none;
+}
+
+.cumple-panel {
+  /* Por defecto, ocultamos todos los divs, pero corregiremos esto con jQuery */
+  display: none;
 }
 
 /* END CUMPLEAÑOS */

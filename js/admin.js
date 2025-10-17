@@ -995,7 +995,10 @@ $(document).ready(function () {
   });
   // END SHOW HIDE FECHA VALES
 
-
+  // SHOW VISTAS CUMPLEAÑOS
+  // 1. Escuchar el evento 'change' en el select
+  
+  // END SHOW VISTAS CUMPLEAÑOS
 
   // SPINNER-VALE    
   $('.add').click(function () {
@@ -1010,6 +1013,30 @@ $(document).ready(function () {
 
 
   // END SPINNER VALE
+
+  // 1. Ocultar *todos* los divs al inicio.
+  $('.cumple-panel').hide();
+
+  // 2. Determinar qué div debe mostrarse por defecto
+  var valorPorDefecto = $('.selector').val();
+
+  // 3. Mostrar el div por defecto.
+  if (valorPorDefecto) {
+    $('#' + valorPorDefecto).show();
+  }
+
+  // --- Lógica de cambio (la misma que antes) ---
+  $('.selector').on('change', function() {
+    var valorSeleccionado = $(this).val();
+
+    // Ocultar todos los divs
+    $('.cumple-panel').hide();
+
+    // Mostrar el div seleccionado
+    if (valorSeleccionado) {
+      $('#' + valorSeleccionado).show();
+    }
+  });
 
 });
 

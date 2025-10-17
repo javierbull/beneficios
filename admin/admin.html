@@ -3832,15 +3832,21 @@
                     </div>
                 </div>
 
+                <!-- prueba mostrar pnales con selector -->
+                <select id="selector" class="selector">
+                    <option value="opcion1" selected>Opción Uno</option>
+                    <option value="opcion2">Opción Dos</option>
+                </select>
+
                 <div class="cumples-main">
 
-                    <div class="cumples-charts">
+                    <div class="cumples-charts cumple-panel" id="opcion1">
                         <div class="form-group form-rows select-vista-cumple">
                             <label for="selectVistaCumple" class="form-label">Ver por</label>
                             <div>
                                 <select class="form-select" aria-label="Default select example" id="selectVistaCumple">
-                                    <option selected>Gráfico</option>
-                                    <option >Calendario</option>
+                                    <option class="optionCumpleChart" selected>Gráfico</option>
+                                    <option class="optionCumpleCalendar">Calendario</option>
                                 </select>
                             </div>
                         </div>
@@ -3906,13 +3912,13 @@
                         </div>
                     </div>
 
-                    <div class="cumples-calendars">
+                    <div class="cumples-calendars cumple-panel" id="opcion2">
                         <div class="form-group form-rows select-vista-cumple">
                             <label for="selectVistaCumple" class="form-label">Ver por</label>
                             <div>
                                 <select class="form-select" aria-label="Default select example" id="selectVistaCumple">
-                                    <option >Gráfico</option>
-                                    <option selected>Calendario</option>
+                                    <option class="optionCumpleChart">Gráfico</option>
+                                    <option class="optionCumpleCalendar" selected>Calendario</option>
                                 </select>
                             </div>
                         </div>
@@ -3980,7 +3986,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 5
+                                                5
                                             </div>
                                         </div>
                                     </div>
@@ -3996,7 +4002,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 5
+                                                5
                                             </div>
                                         </div>
                                     </div>
@@ -4012,7 +4018,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 5
+                                                5
                                             </div>
                                         </div>
                                     </div>
@@ -4028,7 +4034,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 15
+                                                15
                                             </div>
                                         </div>
                                     </div>
@@ -4044,7 +4050,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 10
+                                                10
                                             </div>
                                         </div>
                                     </div>
@@ -4060,7 +4066,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 4
+                                                4
                                             </div>
                                         </div>
                                     </div>
@@ -4076,7 +4082,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 7
+                                                7
                                             </div>
                                         </div>
                                     </div>
@@ -4092,7 +4098,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 8
+                                                8
                                             </div>
                                         </div>
                                     </div>
@@ -4108,7 +4114,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 10
+                                                10
                                             </div>
                                         </div>
                                     </div>
@@ -4124,7 +4130,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 5
+                                                5
                                             </div>
                                         </div>
                                     </div>
@@ -4140,7 +4146,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 9
+                                                9
                                             </div>
                                         </div>
                                     </div>
@@ -4156,7 +4162,7 @@
                                                 <span class="material-symbols-outlined icon-fill">
                                                     cake
                                                 </span>
-                                                 6
+                                                6
                                             </div>
                                         </div>
                                     </div>
@@ -7163,7 +7169,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="asignacionIndividual">Asignación de vales jjjj</h5>
+                    <h5 class="modal-title" id="asignacionIndividual">Asignación de vales</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

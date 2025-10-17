@@ -76,3 +76,74 @@ var myChart = new Chart(ctx, {
 
 
 });
+
+var ctx = document.getElementById("chartCumplesMes").getContext("2d");
+var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20','21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31' ],
+        datasets: [{
+            label: '# de Cumpleaños',
+            data: [7, 9, 8, 8, 3, 5, 4, 10, 6, 7, 7, 4, 9, 2, 0, 4, 10, 9, 11, 7, 3, 7, 9, 8, 8, 3, 5, 4, 10, 6, 1],
+            fill: true,
+            borderRadius: 8,
+            backgroundColor: [
+                '#2F71E5',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF'
+            ],
+            datalabels: {
+                display: false
+            }
+        }]
+
+    },
+    options: {
+        plugins: {
+            title: {
+                display: false,
+            },
+            legend: {
+                display: false,
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+
+    },
+
+});

@@ -2548,6 +2548,38 @@ figure figcaption {
     right: 0;
 }
 
+.btn-group-accent {
+    background-color: var(--blue5);
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.btn-group-accent .btn {
+    /* background-color: var(--blue5); */
+    color: var(--white);
+    padding: 6.5px 10.5px;
+}
+
+.selectBirthDate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.selectBirthDate h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

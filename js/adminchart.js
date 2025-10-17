@@ -77,7 +77,7 @@ var myChart = new Chart(ctx, {
 
 });
 
-var ctx = document.getElementById("chartCumplesMes").getContext("2d");
+var ctx = document.getElementById("chartCumplesMonth").getContext("2d");
 var myChart = new Chart(ctx, {
     type: "bar",
     data: {
@@ -118,6 +118,57 @@ var myChart = new Chart(ctx, {
                 '#BAD5FF',
                 '#BAD5FF',
                 '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF'
+            ],
+            datalabels: {
+                display: false
+            }
+        }]
+
+    },
+    options: {
+        plugins: {
+            title: {
+                display: false,
+            },
+            legend: {
+                display: false,
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+
+    },
+
+});
+
+var ctx = document.getElementById("chartCumplesYear").getContext("2d");
+var myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+        labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Dic' ],
+        datasets: [{
+            label: '# de Cumpleaños',
+            data: [7, 9, 8, 8, 3, 5, 4, 10, 6, 7, 7, 4],
+            fill: true,
+            borderRadius: 8,
+            backgroundColor: [
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#BAD5FF',
+                '#2F71E5',
                 '#BAD5FF',
                 '#BAD5FF'
             ],

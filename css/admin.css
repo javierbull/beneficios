@@ -2655,6 +2655,10 @@ figure figcaption {
     color: var(--typography-color);
 }
 
+.cumples-calendars {
+    /* display: none; */
+}
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

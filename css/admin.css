@@ -2601,7 +2601,44 @@ figure figcaption {
     font-size: 1.5rem;
 }
 
+.grid-calendar {
+    /* background-color: lavender; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
 
+.grid-calendar__item {
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    border: solid 1px var(--gray4);
+}
+
+.grid-calendar__item--header {
+    padding: 1rem .5rem;
+    background-color: var(--blue3);
+    border-bottom: solid 1px var(--gray4);
+}
+
+.grid-calendar__item--header h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.grid-calendar__item--body {
+    padding: 1.25rem;
+    background-color: var(--gray1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* END CUMPLEAÑOS */
 

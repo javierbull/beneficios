@@ -1014,11 +1014,13 @@ $(document).ready(function () {
 
   // END SPINNER VALE
 
+  // SELECTOR VISTA CUMPLEAÑOS
+
   // 1. Ocultar *todos* los divs al inicio.
   $('.cumple-panel').hide();
 
   // 2. Determinar qué div debe mostrarse por defecto
-  var valorPorDefecto = $('.selector').val();
+  var valorPorDefecto = $('.selector-cumple').val();
 
   // 3. Mostrar el div por defecto.
   if (valorPorDefecto) {
@@ -1026,7 +1028,7 @@ $(document).ready(function () {
   }
 
   // --- Lógica de cambio (la misma que antes) ---
-  $('.selector').on('change', function() {
+  $('.selector-cumple').on('change', function() {
     var valorSeleccionado = $(this).val();
 
     // Ocultar todos los divs
@@ -1037,6 +1039,8 @@ $(document).ready(function () {
       $('#' + valorSeleccionado).show();
     }
   });
+
+    // FIN SELECTOR VISTA CUMPLEAÑOS
 
 });
 

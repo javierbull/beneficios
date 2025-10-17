@@ -2560,15 +2560,11 @@ figure figcaption {
     background-color: var(--blue3);
 }
 
-.cumples-charts, .cumples-calendars {
-    position: relative;
-}
-
 .select-vista-cumple {
     /* background-color: lavender; */
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1.5rem;
+    right: 1.5rem;
 }
 
 .btn-group-accent {
@@ -2662,6 +2658,10 @@ figure figcaption {
 .cumple-panel {
   /* Por defecto, ocultamos todos los divs, pero corregiremos esto con jQuery */
   display: none;
+}
+
+.cumples-main {
+    position: relative;
 }
 
 /* END CUMPLEAÑOS */

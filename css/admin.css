@@ -1965,6 +1965,10 @@ figure figcaption {
     border: 1px solid var(--gray3) !important;
 }
 
+.fc-toolbar-title {
+    text-transform: capitalize;
+}
+
 /* End FullCalendar */
 
 /* Accordion inhouse */

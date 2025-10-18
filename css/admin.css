@@ -1946,9 +1946,23 @@ figure figcaption {
     border: 1px solid var(--blue5) !important;
 }
 
+.fc-col-header-cell {
+    background-color: var(--blue3);
+}
+
 .fc .fc-col-header-cell-cushion {
     padding: 8px 8px;
     text-transform: uppercase;
+}
+
+.fc-scrollgrid {
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    overflow: hidden;
+    border: 1px solid var(--gray3) !important;
 }
 
 /* End FullCalendar */
@@ -2559,10 +2573,6 @@ figure figcaption {
 
 .badge-cumple span {
    font-size: 1rem;
-}
-
-.fc-col-header-cell {
-    background-color: var(--blue3);
 }
 
 .select-vista-cumple {

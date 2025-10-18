@@ -1946,6 +1946,10 @@ figure figcaption {
     border: 1px solid var(--blue5) !important;
 }
 
+.fc-col-header-cell-cushion {
+    text-transform: uppercase;
+}
+
 /* End FullCalendar */
 
 /* Accordion inhouse */

@@ -3775,7 +3775,7 @@
                 </div>
 
                 <div class="cards-cumples">
-                    <div class="card-cumple card-admin active">
+                    <div class="card-cumple active">
                         <div class="card-cumple__start">
                             <h4 class="card-cumple__title">
                                 Cumpleaños hoy
@@ -3789,7 +3789,7 @@
                         </div>
                     </div>
 
-                    <div class="card-cumple card-admin">
+                    <div class="card-cumple">
                         <div class="card-cumple__start">
                             <h4 class="card-cumple__title">
                                 Esta semana
@@ -3803,7 +3803,7 @@
                         </div>
                     </div>
 
-                    <div class="card-cumple card-admin">
+                    <div class="card-cumple">
                         <div class="card-cumple__start">
                             <h4 class="card-cumple__title">
                                 Próxima semana
@@ -3817,7 +3817,7 @@
                         </div>
                     </div>
 
-                    <div class="card-cumple card-admin">
+                    <div class="card-cumple">
                         <div class="card-cumple__start">
                             <h4 class="card-cumple__title">
                                 Próximo mes
@@ -3834,11 +3834,12 @@
 
                 <div class="cumples-main">
                     <div class="form-group form-rows select-vista-cumple">
-                        <label for="selectVistaCumple" class="form-label">Ver por</label>
+                        <label for="selectVistaCumple" class="form-label">Ver por:</label>
                         <div>
-                            <select class="form-select selector-cumple" aria-label="Default select example" id="selectVistaCumple">
+                            <select class="form-select selector-cumple" aria-label="Default select example"
+                                id="selectVistaCumple">
                                 <option value="optionChart" selected>Gráfico</option>
-                                <option value="optionCalendar" >Calendario</option>
+                                <option value="optionCalendar">Calendario</option>
                             </select>
                         </div>
                     </div>
@@ -3866,40 +3867,34 @@
                             <div class="tab-pane fade show active" id="pills-cumplesChartMonth" role="tabpanel"
                                 aria-labelledby="pills-cumplesChartMonth-tab">
                                 <div class="selectBirthDate">
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_backward
+                                        </span>
+                                    </button>
                                     <h2>Octubre 2025</h2>
-
-                                    <div class="btn-group-accent" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn">
-                                            <span class="material-symbols-outlined">
-                                                chevron_backward
-                                            </span>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <span class="material-symbols-outlined">
-                                                chevron_forward
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_forward
+                                        </span>
+                                    </button>
                                 </div>
                                 <canvas id="chartCumplesMonth"></canvas>
                             </div>
                             <div class="tab-pane fade" id="pills-cumplesChartYear" role="tabpanel"
                                 aria-labelledby="pills-cumplesChartYear-tab">
                                 <div class="selectBirthDate">
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_backward
+                                        </span>
+                                    </button>
                                     <h2>2025</h2>
-
-                                    <div class="btn-group-accent" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn">
-                                            <span class="material-symbols-outlined">
-                                                chevron_backward
-                                            </span>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <span class="material-symbols-outlined">
-                                                chevron_forward
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_forward
+                                        </span>
+                                    </button>
                                 </div>
                                 <canvas id="chartCumplesYear"></canvas>
                             </div>
@@ -3927,6 +3922,19 @@
                         <div class="tab-content" id="pills-tabContent-calendars">
                             <div class="tab-pane fade show active" id="pills-cumplesCalendarMonth" role="tabpanel"
                                 aria-labelledby="pills-cumplesCalendarMonth-tab">
+                                <div class="selectBirthDate">
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_backward
+                                        </span>
+                                    </button>
+                                    <h2>Octubre 2025</h2>
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_forward
+                                        </span>
+                                    </button>
+                                </div>
                                 <div class="inhouse-main-calendar">
                                     <div id='calendar-cumples'></div>
                                 </div>
@@ -3934,20 +3942,17 @@
                             <div class="tab-pane fade" id="pills-cumplesCalendarYear" role="tabpanel"
                                 aria-labelledby="pills-cumplesCalendarYear-tab">
                                 <div class="selectBirthDate">
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_backward
+                                        </span>
+                                    </button>
                                     <h2>2025</h2>
-
-                                    <div class="btn-group-accent" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn">
-                                            <span class="material-symbols-outlined">
-                                                chevron_backward
-                                            </span>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <span class="material-symbols-outlined">
-                                                chevron_forward
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <button type="button" class="btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_forward
+                                        </span>
+                                    </button>
                                 </div>
 
                                 <div class="grid-calendar">

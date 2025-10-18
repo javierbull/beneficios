@@ -603,6 +603,7 @@ input[type=number] {
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
     margin-right: .25rem;
+    padding: 6px 1rem;
 }
 
 .nav-chips .nav-link.active,
@@ -2528,6 +2529,14 @@ figure figcaption {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    background-color: var(--white);
+    border: solid 1px var(--gray3);
 }
 
 .card-cumple__title {
@@ -2604,16 +2613,24 @@ figure figcaption {
 }
 
 .selectBirthDate {
+    /* background-color: lightgreen; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+    justify-content: flex-start;
+    gap: .5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
 }
 
 .selectBirthDate h2 {
     margin-bottom: 0;
     font-weight: 600;
     font-size: 1.5rem;
+}
+
+.selectBirthDate .btn {
+    padding: 6px;
 }
 
 .grid-calendar {
@@ -2670,6 +2687,13 @@ figure figcaption {
     color: var(--typography-color);
 }
 
+
+.fc-header-toolbar {
+    /* background-color: pink; */
+    /* Para ocultar el titulo y controles del calendario */
+    display: none !important;
+}
+
 .cumples-calendars {
     display: none;
 }
@@ -2687,6 +2711,12 @@ figure figcaption {
     /* background-color: pink; */
     width: 100% !important;
     height: 16rem !important;
+}
+
+.cumple-panel .nav-chips {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
 }
 
 /* END CUMPLEAÑOS */

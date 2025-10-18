@@ -1946,7 +1946,8 @@ figure figcaption {
     border: 1px solid var(--blue5) !important;
 }
 
-.fc-col-header-cell-cushion {
+.fc .fc-col-header-cell-cushion {
+    padding: 8px 8px;
     text-transform: uppercase;
 }
 

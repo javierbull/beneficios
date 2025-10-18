@@ -2679,6 +2679,12 @@ figure figcaption {
     position: relative;
 }
 
+.cumples-charts canvas {
+    /* background-color: pink; */
+    width: 100% !important;
+    height: 16rem !important;
+}
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

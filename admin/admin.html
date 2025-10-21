@@ -4117,7 +4117,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="grid-calendar__item active">
+                                    <div class="grid-calendar__item active showAdminPanel-cumplesDetalle">
                                         <div class="grid-calendar__item--header">
                                             <h3>
                                                 Octubre
@@ -4170,6 +4170,114 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div class="panel" id="cumplesDetalle-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Cumpleaños</h2>
+                        <p>
+                            Gestiona los cumpleaños de tus colaboradores.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+                        <!-- Switch admin -->
+                        <button class="btn btn-switch-admin btn-style-none" data-bs-toggle="modal"
+                            data-bs-target="#modaladminOffGh">
+                            <p class="label-switch-admin">
+                                Modo <br>
+                                administrador
+                            </p>
+                            <img src="../img/icons/switch-on.svg" class="switch-admin" alt="">
+                        </button>
+                        <!-- End switch admin -->
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-cumples">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+
+                    <button class="btn outline-btn">
+                        <span class="material-symbols-outlined icon-fill">
+                            download_2
+                        </span>
+                        Desvargar reporte
+                    </button>
+                </div>
+
+                <table class="table dtable align-middle table-admin">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">DNI/CE</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo registrado</th>
+                            <th scope="col">Monto</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>74526589</td>
+                            <td>Juan Carlos Perez</td>
+                            <td>jcperez@mail.com</td>
+                            <td>S/ 50.00</td>
+                            <td>La Victoria</td>
+                            <td>
+                                <span class="tag tag-success">
+                                    Aprobado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>78545695</td>
+                            <td>Diana Salaverry Paredes</td>
+                            <td>dsalaverry@mail.com</td>
+                            <td>S/ 80.00</td>
+                            <td>La Victoria</td>
+                            <td>
+                                <span class="tag tag-success">
+                                    Aprobado
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>45879652</td>
+                            <td>María Torres Guevara</td>
+                            <td>mtorres@mail.com</td>
+                            <td>S/ 100.00</td>
+                            <td>Miraflores</td>
+                            <td>
+                                <span class="tag tag-danger">
+                                    Rechazado
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="panel" id="vales-panel">

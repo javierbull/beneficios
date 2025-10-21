@@ -4217,13 +4217,15 @@
                     </button>
 
                     <div class="navbar-actions__right">
-                        <button type="button" class="btn outline-btn" data-bs-toggle="modal" data-bs-target="#modalSaludoCumple">
+                        <button type="button" class="btn outline-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalSaludoCumple">
                             <span class="material-symbols-outlined icon-fill">
                                 send
                             </span>
                             Enviar saludo a todos
                         </button>
-                        <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalAsignacionMasiva">
+                        <button type="button" class="btn primary-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAsignacionMasiva">
                             <span class="material-symbols-outlined icon-fill">
                                 add
                             </span>
@@ -4248,7 +4250,7 @@
                                 <span class="material-symbols-outlined icon-fill">
                                     cake
                                 </span>
-                                5
+                                3
                             </div>
                         </div>
                     </div>
@@ -4263,55 +4265,74 @@
                 <table class="table dtable align-middle table-admin">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
                             <th scope="col">DNI/CE</th>
                             <th scope="col">Nombre</th>
+                            <th scope="col">Cumpleaños</th>
                             <th scope="col">Correo registrado</th>
-                            <th scope="col">Monto</th>
                             <th scope="col">Sede</th>
-                            <th scope="col">Estado</th>
+                            <th scope="col">Saludo</th>
+                            <th scope="col">Vale</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
                             <td>74526589</td>
                             <td>Juan Carlos Perez</td>
                             <td>jcperez@mail.com</td>
-                            <td>S/ 50.00</td>
+                            <td>22/08/2000</td>
                             <td>La Victoria</td>
                             <td>
-                                <span class="tag tag-success">
-                                    Aprobado
+                                <button type="button" class="btn link-btn">
+                                    <span class="material-symbols-outlined icon-fill">
+                                        send
+                                    </span>
+                                    Enviar saludo
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn link-btn">
+                                    <span class="material-symbols-outlined icon-fill">
+                                        add
+                                    </span>
+                                    Asignar vale
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>74526589</td>
+                            <td>Juan Carlos Perez</td>
+                            <td>jcperez@mail.com</td>
+                            <td>22/08/2000</td>
+                            <td>La Victoria</td>
+                            <td>
+                                <span class="tag tag-warning">
+                                    Saludo programado
+                                </span>
+                            </td>
+                            <td>
+                                <span class="tag tag-warning">
+                                    Vale asignado
                                 </span>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
-                            <td>78545695</td>
-                            <td>Diana Salaverry Paredes</td>
-                            <td>dsalaverry@mail.com</td>
-                            <td>S/ 80.00</td>
-                            <td>La Victoria</td>
+                            <td>74526590</td>
+                            <td>Sandra Santacruz Torres</td>
+                            <td>ssantacruz@mail.com</td>
+                            <td>22/08/2000</td>
+                            <td>San Juan de Lurigancho</td>
                             <td>
                                 <span class="tag tag-success">
-                                    Aprobado
+                                    Saludo enviado
                                 </span>
                             </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>45879652</td>
-                            <td>María Torres Guevara</td>
-                            <td>mtorres@mail.com</td>
-                            <td>S/ 100.00</td>
-                            <td>Miraflores</td>
                             <td>
-                                <span class="tag tag-danger">
-                                    Rechazado
+                                <span class="tag tag-success">
+                                    Vale enviado
                                 </span>
                             </td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>

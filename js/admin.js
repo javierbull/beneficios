@@ -1030,6 +1030,14 @@ $(document).ready(function () {
     }
   });
 
+  $("input[name='radioFechaSaludoMasivo']").click(function () {
+    if ($("#progSaludoCumpleMasivo2").is(":checked")) {
+      $("#contentFechaSaludoMasivoCumple").show();
+    } else {
+      $("#contentFechaSaludoMasivoCumple").hide();
+    }
+  });
+
   $("input[name='radioProgAsignacionIndividualVale']").click(function () {
     if ($("#progAsignacionIndividualVale2").is(":checked")) {
       $("#contentFechaAsigIndividualVale").show();

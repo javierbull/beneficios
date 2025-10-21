@@ -4218,7 +4218,7 @@
 
                     <div class="navbar-actions__right">
                         <button type="button" class="btn outline-btn" data-bs-toggle="modal"
-                            data-bs-target="#modalSaludoCumple">
+                            data-bs-target="#modalSaludoMasivoCumple">
                             <span class="material-symbols-outlined icon-fill">
                                 send
                             </span>
@@ -7528,7 +7528,7 @@
     </div>
     <!-- End Modal asignacion individual-->
 
-    <!-- Modal saludo cumpleaños-->
+    <!-- Modal saludo individual cumpleaños-->
     <div class="modal fade" id="modalSaludoCumple" tabindex="-1" aria-labelledby="modalSaludoCumple" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -7608,7 +7608,103 @@
             </div>
         </div>
     </div>
-    <!-- End saludo cumpleaños-->
+    <!-- End saludo individual cumpleaños-->
+
+    <!-- Modal saludo masivo cumpleaños-->
+    <div class="modal fade" id="modalSaludoMasivoCumple" tabindex="-1" aria-labelledby="modalSaludoCumple" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSaludoCumple">Enviar saludo masivo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Subir el archivo</h6>
+                            </div>
+                            <p>Descarga el archivo XLSX con el formato para la carga masiva de colaboradores.</p>
+                            <button class="btn outline-btn mb-form">
+                                <span class="material-symbols-outlined icon-fill">
+                                    download_2
+                                </span>
+                                Descargar formato
+                            </button>
+
+                            <div id="theWidget" class="dnd-file-upload-widget">
+                                <div class="form-group drop_zone">
+                                    <label class="btn outline-btn">
+                                        <span class="material-symbols-outlined icon-fill">
+                                            upload_2
+                                        </span>
+                                        Sube tu archivo
+                                        <input type="file" multiple="" />
+                                    </label>
+                                    <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                        MB.</span>
+                                </div>
+
+                                <div class="files-container"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Agregar saludo</h6>
+                            </div>
+
+                            <div class="mb-form custom-textArea">
+                                <label for="saludoCumpleTextArea" class="form-label">
+                                    Este saludo le llegará al cliente a manera de una ventana emergente al momento que
+                                    ingrese a la plataforma <strong>el día de su cumpleaños</strong>
+                                </label>
+                                <textarea class="form-control" id="saludoCumpleTextArea" rows="3" maxlength="200"
+                                    placeholder="Escriba un mensaje"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">4</span>
+                                <h6 class="heading-6">Programar envío</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioFechaSaludoMasivo"
+                                    id="progSaludoCumpleMasivo1" checked>
+                                <label class="form-check-label" for="progSaludoCumpleMasivo1">
+                                    Asignar ahora
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioFechaSaludoMasivo"
+                                    id="progSaludoCumpleMasivo2">
+                                <label class="form-check-label" for="progSaludoCumpleMasivo2">
+                                    Fecha personalizada
+                                </label>
+                            </div>
+
+                            <div class="content-fecha-asignacion-individual" id="contentFechaSaludoMasivoCumple">
+                                <div class="mb-form form-group col-md-3">
+                                    <input type="date" class="form-control" id="progSaludoCumple">
+                                    <div class="text-help">Ingrese una fecha válida</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Enviar saludo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End saludo masivo cumpleaños-->
 
     <!-- Modal saludo cumple calendar-->
     <div class="modal fade" id="modalCumpleCalendar" tabindex="-1" aria-labelledby="modalCumpleCalendar"

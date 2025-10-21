@@ -2763,7 +2763,21 @@ figure figcaption {
     padding: .25rem 1rem;
 }
 
+.contentSaludoProgramado {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.contentSaludoProgramado__item, .contentSaludoProgramado__item p {
+    margin-bottom: 0;
+}
+
+.contentSaludoProgramado__item h6 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 /* END CUMPLEAÑOS */
 

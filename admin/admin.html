@@ -4279,7 +4279,7 @@
                             <td>La Victoria</td>
                             <td>
                                 <button type="button" class="btn link-btn" data-bs-toggle="modal"
-                            data-bs-target="#modalSaludoCumple">
+                                    data-bs-target="#modalSaludoCumple">
                                     <span class="material-symbols-outlined icon-fill">
                                         send
                                     </span>
@@ -4288,7 +4288,7 @@
                             </td>
                             <td>
                                 <button type="button" class="btn link-btn" data-bs-toggle="modal"
-                            data-bs-target="#modalAsignacionIndividual">
+                                    data-bs-target="#modalAsignacionIndividual">
                                     <span class="material-symbols-outlined icon-fill">
                                         add
                                     </span>
@@ -4304,13 +4304,13 @@
                             <td>La Victoria</td>
                             <td>
                                 <span class="tag tag-warning" data-bs-toggle="modal"
-                            data-bs-target="#modalSaludoProgramado">
+                                    data-bs-target="#modalSaludoProgramado">
                                     Saludo programado
                                 </span>
                             </td>
                             <td>
                                 <span class="tag tag-warning" data-bs-toggle="modal"
-                            data-bs-target="#modalValeAsignado">
+                                    data-bs-target="#modalValeAsignado">
                                     Vale asignado
                                 </span>
                             </td>
@@ -4323,13 +4323,12 @@
                             <td>San Juan de Lurigancho</td>
                             <td>
                                 <span class="tag tag-success" data-bs-toggle="modal"
-                            data-bs-target="#modalSaludoEnviado">
+                                    data-bs-target="#modalSaludoEnviado">
                                     Saludo enviado
                                 </span>
                             </td>
                             <td>
-                                <span class="tag tag-success" data-bs-toggle="modal"
-                            data-bs-target="#modalValeEnviado">
+                                <span class="tag tag-success" data-bs-toggle="modal" data-bs-target="#modalValeEnviado">
                                     Vale enviado
                                 </span>
                             </td>
@@ -7612,7 +7611,8 @@
     <!-- End saludo individual cumpleaños-->
 
     <!-- Modal saludo masivo cumpleaños-->
-    <div class="modal fade" id="modalSaludoMasivoCumple" tabindex="-1" aria-labelledby="modalSaludoCumple" aria-hidden="true">
+    <div class="modal fade" id="modalSaludoMasivoCumple" tabindex="-1" aria-labelledby="modalSaludoCumple"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -7706,6 +7706,51 @@
         </div>
     </div>
     <!-- End saludo masivo cumpleaños-->
+
+    <!-- Modal saludo programado-->
+    <div class="modal fade" id="modalSaludoProgramado" tabindex="-1" aria-labelledby="modalSaludoProgramado"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSaludoProgramado">Saludo programado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <div class="contentSaludoProgramado">
+                        <div class="contentSaludoProgramado__item">
+                            <h6>Colaborador</h6>
+                            <p>
+                                Juan Perez Quintana, 24 de Octubre
+                            </p>
+                        </div>
+                        <div class="contentSaludoProgramado__item">
+                            <h6>Saludo</h6>
+                            <p>
+                                ¡Feliz cumpleaños, Sara! Esperamos que pases un día lleno de alegría.
+                            </p>
+                        </div>
+                        <div class="contentSaludoProgramado__item">
+                            <h6>Fecha de programación</h6>
+                            <p>
+                                13/10/2025
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">
+                        <span class="material-symbols-outlined icon-fill">
+                            edit
+                        </span>
+                        Editar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End saludo programado-->
 
     <!-- Modal saludo cumple calendar-->
     <div class="modal fade" id="modalCumpleCalendar" tabindex="-1" aria-labelledby="modalCumpleCalendar"

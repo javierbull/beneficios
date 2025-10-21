@@ -4216,11 +4216,47 @@
                         </span>
                     </button>
 
-                    <button class="btn outline-btn">
+                    <div class="navbar-actions__right">
+                        <button type="button" class="btn outline-btn" data-bs-toggle="modal" data-bs-target="#modalSaludoCumple">
+                            <span class="material-symbols-outlined icon-fill">
+                                send
+                            </span>
+                            Enviar saludo a todos
+                        </button>
+                        <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalAsignacionMasiva">
+                            <span class="material-symbols-outlined icon-fill">
+                                add
+                            </span>
+                            Asignar vale a todos
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cumplesDetalle-actions">
+                    <div class="cumplesDetalle-actions__start">
+                        <div class="mb-form">
+                            <label for="cumpleFechaInicio" class="form-label">Fecha inicio</label>
+                            <input type="date" class="form-control" id="cumpleFechaInicio">
+                        </div>
+                        <div class="mb-form">
+                            <label for="cumpleFechaFin" class="form-label">Fecha fin</label>
+                            <input type="date" class="form-control" id="cumpleFechaFin">
+                        </div>
+                        <div class="contadorCumple mb-form">
+                            <label>Total de cumpleaños</label>
+                            <div class="badge-cumple">
+                                <span class="material-symbols-outlined icon-fill">
+                                    cake
+                                </span>
+                                5
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn link-btn">
                         <span class="material-symbols-outlined icon-fill">
                             download_2
                         </span>
-                        Desvargar reporte
+                        Descargar
                     </button>
                 </div>
 

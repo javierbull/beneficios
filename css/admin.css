@@ -2732,6 +2732,38 @@ figure figcaption {
     justify-content: center;
 }
 
+.cumplesDetalle-actions {
+    /* background-color: lavender; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cumplesDetalle-actions__start {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.contadorCumple {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contadorCumple label {
+    margin-bottom: .5rem;
+}
+
+.contadorCumple .badge-cumple {
+    background-color: var(--blue5);
+    color: var(--white);
+    padding: .25rem 1rem;
+}
+
+
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

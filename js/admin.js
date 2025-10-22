@@ -1030,6 +1030,14 @@ $(document).ready(function () {
     }
   });
 
+  $("input[name='radioFechaSaludoEdit']").click(function () {
+    if ($("#progSaludoCumple1Edit").is(":checked")) {
+      $("#contentFechaSaludoCumpleEdit").hide();
+    } else {
+      $("#contentFechaSaludoCumpleEdit").show();
+    }
+  });
+
   $("input[name='radioFechaSaludoMasivo']").click(function () {
     if ($("#progSaludoCumpleMasivo2").is(":checked")) {
       $("#contentFechaSaludoMasivoCumple").show();

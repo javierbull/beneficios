@@ -2783,6 +2783,58 @@ figure figcaption {
     cursor: pointer;
 }
 
+.valeEnviado {
+    display: flex;
+    gap: 1.5rem;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    border: solid 1px var(--gray3);
+    margin-bottom: 1rem;
+}
+
+.valeEnviadoStart {
+    display: flex;
+    gap: 1rem;
+}
+
+.valeEnviadoImg {
+    min-width: 4rem;
+    min-height: 4rem;
+    max-width: 4rem;
+    max-height: 4rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.valeEnviadoImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.valeEnviadoContent h6 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.valeEnviadoContent p {
+    margin-bottom: 0;
+}
+
+.valeenviadoEnd span {
+    font-weight: 700;
+}
+
+
 /* END CUMPLEAÑOS */
 
 /* VALES CORPORATIVOS */

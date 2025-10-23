@@ -1038,6 +1038,14 @@ $(document).ready(function () {
     }
   });
 
+  $("input[name='radioProgAsignacionIndividualEdit']").click(function () {
+    if ($("#progAsignacionIndividual1Edit").is(":checked")) {
+      $("#contentFechaAsigIndividualEdit").hide();
+    } else {
+      $("#contentFechaAsigIndividualEdit").show();
+    }
+  });
+
   $("input[name='radioFechaSaludoMasivo']").click(function () {
     if ($("#progSaludoCumpleMasivo2").is(":checked")) {
       $("#contentFechaSaludoMasivoCumple").show();

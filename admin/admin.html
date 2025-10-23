@@ -3726,6 +3726,8 @@
             </div>
 
             <div class="panel" id="cumples-panel">
+
+
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
                         <h2>Cumpleaños</h2>
@@ -3763,400 +3765,403 @@
 
                 </nav>
 
-                <div class="navbar-actions">
-                    <div class="navbar-actions__right">
-                        <button type="button" class="btn outline-btn" data-bs-toggle="modal"
-                            data-bs-target="#modalSaludoCumple">
-                            <span class="material-symbols-outlined icon-fill">
-                                send
-                            </span>
-                            Enviar saludo
-                        </button>
-                        <div class="btn-group">
-                            <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Asignar vale
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#modalAsignacionIndividual">Individual</button></li>
-                                <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#modalAsignacionMasiva">Asignación masiva</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cards-cumples">
-                    <div class="card-cumple active">
-                        <div class="card-cumple__start">
-                            <h4 class="card-cumple__title">
-                                Cumpleaños hoy
-                            </h4>
-                            <p class="card-cumple__fechas">
-                                10/10/2025
-                            </p>
-                        </div>
-                        <div class="card-cumple__end">
-                            50
-                        </div>
-                    </div>
-
-                    <div class="card-cumple">
-                        <div class="card-cumple__start">
-                            <h4 class="card-cumple__title">
-                                Esta semana
-                            </h4>
-                            <p class="card-cumple__fechas">
-                                10/10/2025 - 17/10/2025
-                            </p>
-                        </div>
-                        <div class="card-cumple__end">
-                            120
-                        </div>
-                    </div>
-
-                    <div class="card-cumple">
-                        <div class="card-cumple__start">
-                            <h4 class="card-cumple__title">
-                                Próxima semana
-                            </h4>
-                            <p class="card-cumple__fechas">
-                                10/10/2025 - 17/10/2025
-                            </p>
-                        </div>
-                        <div class="card-cumple__end">
-                            80
-                        </div>
-                    </div>
-
-                    <div class="card-cumple">
-                        <div class="card-cumple__start">
-                            <h4 class="card-cumple__title">
-                                Próximo mes
-                            </h4>
-                            <p class="card-cumple__fechas">
-                                10/10/2025 - 17/10/2025
-                            </p>
-                        </div>
-                        <div class="card-cumple__end">
-                            250
-                        </div>
-                    </div>
-                </div>
-
+                
                 <div class="cumples-main">
-                    <div class="form-group form-rows select-vista-cumple">
-                        <label for="selectVistaCumple" class="form-label">Ver por:</label>
-                        <div>
-                            <select class="form-select selector-cumple" aria-label="Default select example"
-                                id="selectVistaCumple">
-                                <option value="optionChart" selected>Gráfico</option>
-                                <option value="optionCalendar">Calendario</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="cumples-charts cumple-panel" id="optionChart">
-
-                        <ul class="nav nav-pills nav-chips mb-form" id="pills-tab-cumplesCharts" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-cumplesChartMonth-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-cumplesChartMonth" type="button" role="tab"
-                                    aria-controls="pills-cumplesChartMonth" aria-selected="true">
-                                    Mes
+                    <div class="navbar-actions">
+                        <div class="navbar-actions__right">
+                            <button type="button" class="btn outline-btn" data-bs-toggle="modal"
+                                data-bs-target="#modalSaludoCumple">
+                                <span class="material-symbols-outlined icon-fill">
+                                    send
+                                </span>
+                                Enviar saludo
+                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn primary-btn dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Asignar vale
                                 </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-cumplesChartYear-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-cumplesChartYear" type="button" role="tab"
-                                    aria-controls="pills-cumplesChartYear" aria-selected="false">
-                                    Año
-                                </button>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content" id="pills-tabContent-charts">
-                            <div class="tab-pane fade show active" id="pills-cumplesChartMonth" role="tabpanel"
-                                aria-labelledby="pills-cumplesChartMonth-tab">
-                                <div class="selectBirthDate">
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_backward
-                                        </span>
-                                    </button>
-                                    <h2>Octubre 2025</h2>
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_forward
-                                        </span>
-                                    </button>
-                                </div>
-                                <canvas id="chartCumplesMonth"></canvas>
-                            </div>
-                            <div class="tab-pane fade" id="pills-cumplesChartYear" role="tabpanel"
-                                aria-labelledby="pills-cumplesChartYear-tab">
-                                <div class="selectBirthDate">
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_backward
-                                        </span>
-                                    </button>
-                                    <h2>2025</h2>
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_forward
-                                        </span>
-                                    </button>
-                                </div>
-                                <canvas id="chartCumplesYear"></canvas>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#modalAsignacionIndividual">Individual</button></li>
+                                    <li><button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#modalAsignacionMasiva">Asignación masiva</button></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+    
+                    <div class="cards-cumples">
+                        <div class="card-cumple active">
+                            <div class="card-cumple__start">
+                                <h4 class="card-cumple__title">
+                                    Cumpleaños hoy
+                                </h4>
+                                <p class="card-cumple__fechas">
+                                    10/10/2025
+                                </p>
+                            </div>
+                            <div class="card-cumple__end">
+                                50
+                            </div>
+                        </div>
+    
+                        <div class="card-cumple">
+                            <div class="card-cumple__start">
+                                <h4 class="card-cumple__title">
+                                    Esta semana
+                                </h4>
+                                <p class="card-cumple__fechas">
+                                    10/10/2025 - 17/10/2025
+                                </p>
+                            </div>
+                            <div class="card-cumple__end">
+                                120
+                            </div>
+                        </div>
+    
+                        <div class="card-cumple">
+                            <div class="card-cumple__start">
+                                <h4 class="card-cumple__title">
+                                    Próxima semana
+                                </h4>
+                                <p class="card-cumple__fechas">
+                                    10/10/2025 - 17/10/2025
+                                </p>
+                            </div>
+                            <div class="card-cumple__end">
+                                80
+                            </div>
+                        </div>
+    
+                        <div class="card-cumple">
+                            <div class="card-cumple__start">
+                                <h4 class="card-cumple__title">
+                                    Próximo mes
+                                </h4>
+                                <p class="card-cumple__fechas">
+                                    10/10/2025 - 17/10/2025
+                                </p>
+                            </div>
+                            <div class="card-cumple__end">
+                                250
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="cumples-calendars cumple-panel" id="optionCalendar">
-                        <ul class="nav nav-pills nav-chips mb-form" id="pills-tab-cumplesCalendars" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-cumplesCalendarMonth-tab"
-                                    data-bs-toggle="pill" data-bs-target="#pills-cumplesCalendarMonth" type="button"
-                                    role="tab" aria-controls="pills-cumplesCalendarMonth" aria-selected="true">
-                                    Mes
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-cumplesCalendarYear-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-cumplesCalendarYear" type="button" role="tab"
-                                    aria-controls="pills-cumplesCalendarYear" aria-selected="false">
-                                    Año
-                                </button>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content" id="pills-tabContent-calendars">
-                            <div class="tab-pane fade show active" id="pills-cumplesCalendarMonth" role="tabpanel"
-                                aria-labelledby="pills-cumplesCalendarMonth-tab">
-                                <div class="selectBirthDate">
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_backward
-                                        </span>
+                    <div class="cumples-main-card">
+                        <div class="form-group form-rows select-vista-cumple">
+                            <label for="selectVistaCumple" class="form-label">Ver por:</label>
+                            <div>
+                                <select class="form-select selector-cumple" aria-label="Default select example"
+                                    id="selectVistaCumple">
+                                    <option value="optionChart" selected>Gráfico</option>
+                                    <option value="optionCalendar">Calendario</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="cumples-charts cumple-panel" id="optionChart">
+    
+                            <ul class="nav nav-pills nav-chips mb-form" id="pills-tab-cumplesCharts" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-cumplesChartMonth-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-cumplesChartMonth" type="button" role="tab"
+                                        aria-controls="pills-cumplesChartMonth" aria-selected="true">
+                                        Mes
                                     </button>
-                                    <h2>Octubre 2025</h2>
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_forward
-                                        </span>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-cumplesChartYear-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-cumplesChartYear" type="button" role="tab"
+                                        aria-controls="pills-cumplesChartYear" aria-selected="false">
+                                        Año
                                     </button>
+                                </li>
+                            </ul>
+    
+                            <div class="tab-content" id="pills-tabContent-charts">
+                                <div class="tab-pane fade show active" id="pills-cumplesChartMonth" role="tabpanel"
+                                    aria-labelledby="pills-cumplesChartMonth-tab">
+                                    <div class="selectBirthDate">
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_backward
+                                            </span>
+                                        </button>
+                                        <h2>Octubre 2025</h2>
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_forward
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <canvas id="chartCumplesMonth"></canvas>
                                 </div>
-                                <div class="inhouse-main-calendar">
-                                    <div id='calendar-cumples'></div>
+                                <div class="tab-pane fade" id="pills-cumplesChartYear" role="tabpanel"
+                                    aria-labelledby="pills-cumplesChartYear-tab">
+                                    <div class="selectBirthDate">
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_backward
+                                            </span>
+                                        </button>
+                                        <h2>2025</h2>
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_forward
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <canvas id="chartCumplesYear"></canvas>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-cumplesCalendarYear" role="tabpanel"
-                                aria-labelledby="pills-cumplesCalendarYear-tab">
-                                <div class="selectBirthDate">
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_backward
-                                        </span>
+                        </div>
+    
+                        <div class="cumples-calendars cumple-panel" id="optionCalendar">
+                            <ul class="nav nav-pills nav-chips mb-form" id="pills-tab-cumplesCalendars" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-cumplesCalendarMonth-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-cumplesCalendarMonth" type="button"
+                                        role="tab" aria-controls="pills-cumplesCalendarMonth" aria-selected="true">
+                                        Mes
                                     </button>
-                                    <h2>2025</h2>
-                                    <button type="button" class="btn">
-                                        <span class="material-symbols-outlined">
-                                            chevron_forward
-                                        </span>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-cumplesCalendarYear-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-cumplesCalendarYear" type="button" role="tab"
+                                        aria-controls="pills-cumplesCalendarYear" aria-selected="false">
+                                        Año
                                     </button>
+                                </li>
+                            </ul>
+    
+                            <div class="tab-content" id="pills-tabContent-calendars">
+                                <div class="tab-pane fade show active" id="pills-cumplesCalendarMonth" role="tabpanel"
+                                    aria-labelledby="pills-cumplesCalendarMonth-tab">
+                                    <div class="selectBirthDate">
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_backward
+                                            </span>
+                                        </button>
+                                        <h2>Octubre 2025</h2>
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_forward
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="inhouse-main-calendar">
+                                        <div id='calendar-cumples'></div>
+                                    </div>
                                 </div>
-
-                                <div class="grid-calendar">
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Enero
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                5
+                                <div class="tab-pane fade" id="pills-cumplesCalendarYear" role="tabpanel"
+                                    aria-labelledby="pills-cumplesCalendarYear-tab">
+                                    <div class="selectBirthDate">
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_backward
+                                            </span>
+                                        </button>
+                                        <h2>2025</h2>
+                                        <button type="button" class="btn">
+                                            <span class="material-symbols-outlined">
+                                                chevron_forward
+                                            </span>
+                                        </button>
+                                    </div>
+    
+                                    <div class="grid-calendar">
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Enero
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    5
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Febrero
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                5
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Febrero
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    5
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Marzo
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                5
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Marzo
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    5
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Abril
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                15
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Abril
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    15
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Mayo
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                10
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Mayo
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    10
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Junio
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                4
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Junio
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    4
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Julio
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                7
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Julio
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    7
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Agosto
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                8
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Agosto
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    8
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Setiembre
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                10
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Setiembre
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    10
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item active showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Octubre
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                5
+    
+                                        <div class="grid-calendar__item active showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Octubre
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    5
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Noviembre
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                9
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Noviembre
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    9
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
-                                        <div class="grid-calendar__item--header">
-                                            <h3>
-                                                Diciembre
-                                            </h3>
-                                        </div>
-                                        <div class="grid-calendar__item--body">
-                                            <div class="badge-cumple">
-                                                <span class="material-symbols-outlined icon-fill">
-                                                    cake
-                                                </span>
-                                                6
+    
+                                        <div class="grid-calendar__item showAdminPanel-cumplesDetalle">
+                                            <div class="grid-calendar__item--header">
+                                                <h3>
+                                                    Diciembre
+                                                </h3>
+                                            </div>
+                                            <div class="grid-calendar__item--body">
+                                                <div class="badge-cumple">
+                                                    <span class="material-symbols-outlined icon-fill">
+                                                        cake
+                                                    </span>
+                                                    6
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

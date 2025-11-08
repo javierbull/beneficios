@@ -115,11 +115,11 @@
 								</button>
 								<div class="dropdown-menu dropdown-menu-right dropdown-menu-user shadow"
 									aria-labelledby="navbarDropdown">
-									<a class="dropdown-item dropdown-link" href="perfil.html">
+									<a class="dropdown-item dropdown-link" href="admin/admin.html">
 										Ir al Admin
 									</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item dropdown-link" href="#">
+									<a class="dropdown-item dropdown-link" href="#" data-toggle="modal" data-target="#modalElegirBeneficio">
 										Cambiar de beneficios
 									</a>
 									<div class="dropdown-divider"></div>
@@ -3464,6 +3464,62 @@
 		</div>
 	</div>
 	<!-- Fin Modal cumpleaños -->
+
+	<div class="modal fade modal-admin" id="modalElegirBeneficio" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-left" id="exampleModalLabel">
+						Has sido asignado a [Nombre de la institución]
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						A partir de hoy, podrás disfrutar de los beneficios de [Nombre empresa] y [Nombre institución]. Elige uno para continuar y recuerda que siempre podrás cambiarlos en tu perfil.
+					</p>
+
+					<div class="wrap-beneficioInstitucion">
+						<div class="card-beneficioInstitucion">
+							<div class="card-beneficioInstitucion--start">
+								<img src="img/logos/logoScotiabank.png" alt="logo Scotiabank">
+								<h3>
+									Scotiabank
+								</h3>
+							</div>
+							<div class="card-beneficioInstitucion--end">
+								<button class="btn btn-link-accent">
+									VER BENEFICIOS
+									<span class="material-icons-outlined">
+										arrow_forward
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="card-beneficioInstitucion">
+							<div class="card-beneficioInstitucion--start">
+								<img src="img/logos/logoBBVA.png" alt="Logo BBVA">
+								<h3>
+									BBVA
+								</h3>
+							</div>
+							<div class="card-beneficioInstitucion--end">
+								<button class="btn btn-link-accent">
+									VER BENEFICIOS
+									<span class="material-icons-outlined">
+										arrow_forward
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- FIN MODALS -->
 

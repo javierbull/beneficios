@@ -464,6 +464,23 @@ hr {
   box-shadow: 0 0 0 0.2rem transparent !important;
 }
 
+.btn-link-accent {
+  color: var(--links);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-link-accent:hover {
+  color: var(--links);
+  text-decoration: none;
+}
+
+.btn-link-accent:focus {
+  background-color: transparent;
+  border-color: 0 !important;
+  box-shadow: 0 0 0 0.2rem transparent !important;
+}
+
 .text-link {
   text-decoration: underline;
 
@@ -1373,8 +1390,48 @@ footer {
 .delivery-address-client {
   margin-bottom: 0;
 }
-
 /* FIN NAVBAR TOP */
+
+/* MODAL SELECCIONAR INSTITUCION */
+.wrap-beneficioInstitucion {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card-beneficioInstitucion {
+  /* background-color: lavender; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border: solid 1px var(--Gray3);
+}
+
+.card-beneficioInstitucion--start {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-beneficioInstitucion--start img {
+  width: 5rem;
+}
+
+.card-beneficioInstitucion--start h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* END MODAL SELECCIONAR INSTITUCION */
+
 /* NAVBAR MAIN MOBILE */
 .navbar-main-mobile {
   display: none;

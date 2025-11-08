@@ -12,7 +12,7 @@
   --lonely: #FFFFFF;
   --success: #067940;
   --lightGreen: #EEF6F0;
-  --links: #0039CC;
+  --links: #2F71E5;
   --danger: #EF2E55;
   --lightYellow: #FFFDF8;
   --midYellow: #FFE578;
@@ -1311,6 +1311,21 @@ footer {
 
 .dropdown-menu-user {
   z-index: 1031;
+  border-radius: 0 0 .5rem .5rem;
+  -webkit-border-radius: 0 0 .5rem .5rem;
+  -moz-border-radius: 0 0 .5rem .5rem;
+  -ms-border-radius: 0 0 .5rem .5rem;
+  -o-border-radius: 0 0 .5rem .5rem;
+}
+
+.dropdown-link {
+  color: var(--links);
+  text-decoration: underline;
+}
+
+.dropdown-link:hover {
+  color: var(--links);
+  text-decoration: underline;
 }
 
 .greetings-user {

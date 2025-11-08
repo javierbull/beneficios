@@ -6620,6 +6620,7 @@ iframe {
 /* CLASES DEL PERFIL  ADMINISTRADOR */
 
 /* HEADER ADMIN */
+
 .wrap-switch-btn-perfil {
   /* background-color: pink; */
   display: flex;
@@ -6632,6 +6633,10 @@ iframe {
   align-items: center;
   gap: .5rem;
   border: none;
+}
+
+.switch-admin-on {
+  display: none;
 }
 
 .label-switch-admin {
@@ -6650,6 +6655,8 @@ iframe {
   /* background-color: lightgreen; */
   height: 1.5rem;
 }
+
+
 
 .info-user-menu-mobile .label-switch-admin {
   /* background-color: lightskyblue; */

@@ -224,12 +224,12 @@ $(document).ready(function () {
   });
   // END SHOW BTNS EDIT PERFIL
 
-  $("#switch-admin-off").click(function () {
+  $(".switch-admin-off").click(function () {
     $(".switch-admin-off").hide();
     $(".switch-admin-on").show();
   });
 
-  $("#switch-admin-on").click(function () {
+  $(".switch-admin-on").click(function () {
     $(".switch-admin-off").show();
     $(".switch-admin-on").hide();
   });

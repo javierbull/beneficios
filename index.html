@@ -1274,30 +1274,35 @@
 						<p class="info-user--name">
 							Charlie brown
 						</p>
-						<p class="saldo-cliente-label">
+						<!-- <p class="saldo-cliente-label">
 							Saldo acumulado
 						</p>
 						<p class="saldo-cliente-mobile">
 							S/. 120.00
-						</p>
+						</p> -->
 
 						<!-- Switch admin -->
-						<button class="btn btn-switch-admin btn-style-none" id="switch-admin-mobile-off"
-							data-toggle="modal" data-target="#modalAdminGh">
-							<img src="img/icons/switch-off.svg" class="switch-admin" alt="">
-							<p class="label-switch-admin-mobile">
-								Perfil administrador
-							</p>
-						</button>
+					 <div class="switch-admin-off">
+						 <button class="btn btn-switch-admin btn-style-none" id="switch-admin-off">
+							 <p class="label-switch-admin">
+								 <span>Comprar como:</span><br>
+								 Colaborador
+							 </p>
+							 <img src="img/icons/switch-off.svg" class="switch-admin" alt="">
+						 </button>
+					 </div>
 
-						<button class="btn btn-switch-admin btn-style-none d-none" id="switch-admin-mobile-on"
-							data-toggle="modal" data-target="#modalColaboradorGh">
-							<img src="img/icons/switch-on.svg" class="switch-admin" alt="">
-							<p class="label-switch-admin-mobile">
-								Perfil administrador
+					<div class="switch-admin-on">
+						<button class="btn btn-switch-admin btn-style-none" id="switch-admin-on">
+							<p class="label-switch-admin">
+								<span>Comprar como:</span><br>
+								Administrador
 							</p>
+	
+							<img src="img/icons/switch-on.svg" class="switch-admin" alt="">
 						</button>
-						<!-- End switch admin -->
+					</div>
+					<!-- End switch admin -->
 					</div>
 				</div>
 

@@ -771,6 +771,7 @@
   .valeqr {
     width: 100%;
   }
+
   /* END VALE QR */
 }
 
@@ -2644,6 +2645,7 @@
     padding-right: 0;
     text-align: center;
   }
+
   /* End boleto cine star */
 
   /* Vale qr */
@@ -2651,7 +2653,19 @@
     /* background-color: pink; */
     flex-direction: column;
   }
+
   /* End vale qr */
+
+  /* Modal seleccionar institucion */
+  .card-beneficioInstitucion {
+    flex-direction: column;
+  }
+
+  .card-beneficioInstitucion--start {
+    flex-direction: column;
+  }
+
+  /* End modal seleccionar institucion */
 }
 
 /* Fin cell portrait */

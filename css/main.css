@@ -1250,7 +1250,7 @@ footer {
 }
 
 .datalist-search-desktop {
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 /* Eliminar caret dropdown */
@@ -1273,6 +1273,7 @@ footer {
 .btn-dropdown-perfil {
   /* background-color: pink; */
   padding-right: 0;
+  padding-left: 0;
 }
 
 .saldo-user {
@@ -6623,7 +6624,7 @@ iframe {
   /* background-color: pink; */
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .75rem;
 }
 
 .btn-switch-admin {
@@ -6638,6 +6639,11 @@ iframe {
   margin-bottom: 0;
   font-size: .75rem;
   text-align: end;
+}
+
+.label-switch-admin span {
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 .switch-admin {

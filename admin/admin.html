@@ -2062,21 +2062,10 @@
                             </ul>
                         </div>
                     </div>
-
                 </nav>
 
                 <div class="navbar-actions">
                     <div class="navbar-actions__right">
-                        <div class="navbar-actions__filtros d-none">
-                            <div class="input-group input-icon">
-                                <span class="material-symbols-outlined">
-                                    search
-                                </span>
-                                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
-                                    aria-describedby="addon-wrapping">
-                            </div>
-                        </div>
-
                         <div class="navbar-actions__new">
                             <button type="button" class="btn primary-btn showAdminPanel-contactoNuevo">
                                 <span class="material-symbols-outlined">
@@ -2091,8 +2080,8 @@
                 <table class="table dtable align-middle table-admin">
                     <thead>
                         <tr>
-                            <th scope="col">Contacto</th>
-                            <th scope="col">Tipo</th>
+                            <th scope="col">Colaborador</th>
+                            <th scope="col">Tipo de admin</th>
                             <th scope="col">Cargo</th>
                             <th scope="col">Sede</th>
                             <th scope="col">Correo corporativo</th>
@@ -2105,27 +2094,60 @@
                             <td>Juan Carlos Perez</td>
                             <td>
                                 <span class="tag tag-info">
-                                    Principal
+                                    Admin Master
                                 </span>
                             </td>
                             <td>Jefe de Recursos Humanos</td>
                             <td>La Victoria</td>
-                            <td>jcperez@mail.com</td>
+                            <td>jcperez@gmail.com</td>
                             <td>939393829</td>
                             <td>
                                 <div class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                    <button type="button" class="btn link-btn" data-bs-toggle="modal"
                                         data-bs-target="#modalEditarContacto">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
+                                        Editar
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                    <button type="button" class="btn link-btn" data-bs-toggle="modal"
                                         data-bs-target="#modalEliminarContacto">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
+                                        Eliminar
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>María Hernandez Rojas</td>
+                            <td>
+                                <span class="tag tag-info">
+                                    Admin
+                                </span>
+                            </td>
+                            <td>Especialista de Recursos Humanos</td>
+                            <td>Surco</td>
+                            <td>mhernandez@gmail.com</td>
+                            <td>939393829</td>
+                            <td>
+                                <div class="table-actions">
+                                    <button type="button" class="btn link-btn" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditarContacto">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                        Editar
+                                    </button>
+
+                                    <button type="button" class="btn link-btn" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminarContacto">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                        Eliminar
                                     </button>
                                 </div>
                             </td>
@@ -2134,7 +2156,7 @@
                             <td>Santiago Paredes</td>
                             <td>
                                 <span class="tag tag-success">
-                                    Secundario
+                                    Sub Admin
                                 </span>
                             </td>
                             <td>Analista de Compensaciones</td>
@@ -2143,30 +2165,26 @@
                             <td>966256854</td>
                             <td>
                                 <div class="table-actions">
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                    <button type="button" class="btn link-btn" data-bs-toggle="modal"
                                         data-bs-target="#modalEditarContacto">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
+                                        Editar
                                     </button>
 
-                                    <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
+                                    <button type="button" class="btn link-btn" data-bs-toggle="modal"
                                         data-bs-target="#modalEliminarContacto">
                                         <span class="material-symbols-outlined">
                                             delete
                                         </span>
+                                        Eliminar
                                     </button>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#modalContactosBloqueado">
-                    Modal contactos bloqueado
-                </button>
             </div>
 
             <div class="panel" id="contactoNuevo-panel">

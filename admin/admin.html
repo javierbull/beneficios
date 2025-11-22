@@ -2067,7 +2067,7 @@
                 <div class="navbar-actions">
                     <div class="navbar-actions__right">
                         <div class="navbar-actions__new">
-                            <button type="button" class="btn primary-btn showAdminPanel-contactoNuevo">
+                            <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalNuevoAdmin">
                                 <span class="material-symbols-outlined">
                                     add
                                 </span>
@@ -6515,6 +6515,98 @@
         </div>
     </div>
     <!-- End Modal eliminar colaborador-->
+
+    <!-- Modal nuevo admin-->
+    <div class="modal fade" id="modalNuevoAdmin" tabindex="-1" aria-labelledby="colaboradorCargaMasiva"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradorCargaMasiva">Nuevo Administrador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title mb-3">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Elección del colaborador</h6>
+                            </div>
+                            
+                            <div class="form-group">
+                                    <!-- <label for="asignarIndividualColaborador" class="form-label">Colaborador</label> -->
+                                    <select class="form-select select2modal" aria-label="Default select example"
+                                        id="asignarIndividualColaborador">
+                                        <option selected>Seleccione</option>
+                                        <option value="1">Juan Perez</option>
+                                        <option value="2">Fernando Redondo</option>
+                                    </select>
+                                    <div class="text-help">Seleccione un colaborador</div>
+                                </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Tipo de Admin</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorTipo1" checked>
+                                <label class="form-check-label" for="cargaMasivaColaboradorTipo1">
+                                    <strong>Admin Master</strong> <br> Tiene acceso a todos los módulos y asigna todo tipo de administradores.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorTipo2">
+                                <label class="form-check-label" for="cargaMasivaColaboradorTipo2">
+                                    <strong>Admin</strong> <br> Tiene acceso a los módulos seleccionados por el Admin Master.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorTipo3">
+                                <label class="form-check-label" for="cargaMasivaColaboradorTipo3">
+                                    <strong>Sub Admin</strong> <br> Tiene acceso solo al módulo de Ventas Corporativas, que le permite comprar con factura.
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Tipo de carga</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorCarga1" checked>
+                                <label class="form-check-label" for="cargaMasivaColaboradorCarga1">
+                                    <strong>Registrar.</strong> Se agregan los nuevos usuarios registrados en el archivo
+                                    cargado.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoPerfil"
+                                    id="cargaMasivaColaboradorCarga2">
+                                <label class="form-check-label" for="cargaMasivaColaboradorCarga2">
+                                    <strong>Actualizar.</strong> Se reemplazan todos los usuarios cargados previamente
+                                    por los que estén en el archivo cargado.
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa"
+                        data-bs-toggle="modal">Cargar colaboradores</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal nuevo admin-->
 
     <!-- Modal editar colaborador-->
     <div class="modal fade" id="modalEditarColaborador" tabindex="-1" aria-labelledby="colaboradoresFiltrar"

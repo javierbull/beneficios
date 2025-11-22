@@ -6527,7 +6527,7 @@
                     <h5 class="modal-title" id="colaboradorCargaMasiva">Nuevo Administrador</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body text-start">
 
                     <form class="form-modal">
                         <fieldset>
@@ -6536,7 +6536,7 @@
                                 <h6 class="heading-6">Elección del colaborador</h6>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <!-- <label for="asignarIndividualColaborador" class="form-label">Colaborador</label> -->
                                 <select class="form-select select2modal" aria-label="Default select example"
                                     id="asignarIndividualColaborador">
@@ -6546,6 +6546,59 @@
                                 </select>
                                 <div class="text-help">Seleccione un colaborador</div>
                             </div>
+
+                            <form id="formDatosAdmin">
+                                <div class="row g-3">
+                                    <div class="mb-form form-group col">
+                                        <label for="datosAdminCorreoCorporativo" class="form-label">Correo corporativo</label>
+                                        <input type="email" class="form-control" id="datosAdminCorreoCorporativo" value="fredondo@gmail.com">
+                                        <div class="text-help">Ingrese un correo válido</div>
+                                    </div>
+
+                                    <div class="mb-form form-group col">
+                                        <label for="datosAdminSede" class="form-label">Sede</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="datosAdminSede">
+                                            <option selected="">Magdalena</option>
+                                            <option value="1">Lince</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-form form-group col">
+                                        <label for="datosAdminCelularCorporativo" class="form-label">Celular corporativo</label>
+                                        <input type="number" class="form-control" id="datosAdminCelularCorporativo" value="966225896">
+                                        <div class="text-help">Ingrese un número válido</div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="mb-form form-group col">
+                                        <label for="datosAdminCelularPersonal" class="form-label">Celular personal</label>
+                                        <input type="number" class="form-control" id="datosAdminCelularPersonal" value="999555222">
+                                        <div class="text-help">Ingrese un número válido</div>
+                                    </div>
+
+                                    <div class="mb-form form-group col">
+                                        <label for="datosAdminTelefono" class="form-label">Teléfono</label>
+                                        <input type="number" class="form-control" id="datosAdminTelefono" value="4589652">
+                                        <div class="text-help">Ingrese un número válido</div>
+                                    </div>
+
+                                    <div class="mb-form form-group col">
+                                        <label for="datosAdminAnexo" class="form-label">Anexo</label>
+                                        <input type="number" class="form-control" id="datosAdminAnexo" value="123">
+                                        <div class="text-help">Ingrese un número válido</div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="mb-form form-group col">
+                                        <label for="datosAdminCargo" class="form-label">Cargo</label>
+                                        <input type="text" class="form-control" id="datosAdminCargo" value="Especialista de Recursos humanos">
+                                        <div class="text-help">Ingrese un cargo</div>
+                                    </div>
+                                </div>
+                            </form>
                         </fieldset>
 
                         <fieldset>

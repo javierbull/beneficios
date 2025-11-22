@@ -1180,11 +1180,8 @@ input[type=number] {
 }
 
 .form-modal fieldset {
-    margin-bottom: 2rem;
-}
-
-.form-modal fieldset:last-child {
-    margin-bottom: 0;
+    /* background-color: pink; */
+    margin-bottom: 1.5rem;
 }
 
 .step-form {

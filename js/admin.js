@@ -338,34 +338,6 @@ $(document).ready(function () {
     $("#cumplesDetalle-panel").hide();
   });
 
-  $(".showAdminPanel-contactoNuevo").click(function () {
-    $("#dashboard-panel").hide();
-    $("#colaboradores-panel").hide();
-    $("#empresa-panel").hide();
-    $("#sedes-panel").hide();
-    $("#contactos-panel").hide();
-    $("#colaboradorNuevo-panel").hide();
-    $("#contactoNuevo-panel").show();
-    $("#inhouse-panel").hide();
-    $("#visitaInhouseNuevo-panel").hide();
-    $("#cumples-panel").hide();
-    $("#planilla-panel").hide();
-    $("#aprobarCompras-panel").hide();
-    $("#comprasPlanilla-panel").hide();
-    $("#sedeNuevo-panel").hide();
-    $("#vales-panel").hide();
-    $("#reasignarVales-panel").hide();
-    $("#solicitudes-panel").hide();
-    $("#solicitadosDetalle-panel").hide();
-    $("#cupones-panel").hide();
-    $("#nuevoCupon-panel").hide();
-    $("#marcas-panel").hide();
-    $("#productos-panel").hide();
-    $("#comunicaciones-panel").hide();
-    $("#colaboradorErrorCarga-panel").hide();
-    $("#cumplesDetalle-panel").hide();
-  });
-
   $(".showAdminPanel-inhouse").click(function () {
     $("#dashboard-panel").hide();
     $("#colaboradores-panel").hide();

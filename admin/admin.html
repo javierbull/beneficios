@@ -2105,7 +2105,7 @@
                             <td>
                                 <div class="table-actions">
                                     <button type="button" class="btn link-btn" data-bs-toggle="modal"
-                                        data-bs-target="#modalEditarContacto">
+                                        data-bs-target="#modalEditarAdmin">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
@@ -2136,7 +2136,7 @@
                             <td>
                                 <div class="table-actions">
                                     <button type="button" class="btn link-btn" data-bs-toggle="modal"
-                                        data-bs-target="#modalEditarContacto">
+                                        data-bs-target="#modalEditarAdmin">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
@@ -2167,7 +2167,7 @@
                             <td>
                                 <div class="table-actions">
                                     <button type="button" class="btn link-btn" data-bs-toggle="modal"
-                                        data-bs-target="#modalEditarContacto">
+                                        data-bs-target="#modalEditarAdmin">
                                         <span class="material-symbols-outlined">
                                             edit
                                         </span>
@@ -6519,12 +6519,12 @@
     <!-- End Modal eliminar colaborador-->
 
     <!-- Modal nuevo admin-->
-    <div class="modal fade" id="modalNuevoAdmin" tabindex="-1" aria-labelledby="colaboradorCargaMasiva"
+    <div class="modal fade" id="modalNuevoAdmin" tabindex="-1" aria-labelledby="nuevoAdmim"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="colaboradorCargaMasiva">Nuevo Administrador</h5>
+                    <h5 class="modal-title" id="nuevoAdmim">Nuevo Administrador</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-start">
@@ -6653,16 +6653,16 @@
                             </div>
 
                             <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" value="" id="checkModuloColaboradores">
-                                <label class="form-check-label" for="checkModuloColaboradores">
+                                <input class="form-check-input" type="checkbox" value="" id="checkModuloEmpresa">
+                                <label class="form-check-label" for="checkModuloEmpresa">
                                     <strong>Empresa</strong> <br>
                                     Configurar la personalización de la empresa (logos, colores, mensajes, etc.)
                                 </label>
                             </div>
 
                             <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" value="" id="checkModuloColaboradores">
-                                <label class="form-check-label" for="checkModuloColaboradores">
+                                <input class="form-check-input" type="checkbox" value="" id="checkModuloInhouse">
+                                <label class="form-check-label" for="checkModuloInhouse">
                                     <strong>Visitas In-House</strong> <br>
                                     Programar y cancelar visitas en las sedes de la empresa.
                                 </label>
@@ -6679,6 +6679,108 @@
         </div>
     </div>
     <!-- End Modal nuevo admin-->
+
+    <!-- Modal editar admin-->
+    <div class="modal fade" id="modalEditarAdmin" tabindex="-1" aria-labelledby="editarAdmin"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarAdmin">Editar Administrador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+
+                    <form class="form-modal">
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">1</span>
+                                <h6 class="heading-6">Colaborador</h6>
+                            </div>
+
+                            <p>
+                                Juan Carlos Perez
+                            </p>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="step-form-title">
+                                <span class="step-form">2</span>
+                                <h6 class="heading-6">Tipo de Admin</h6>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoAdminEdit" id="tipoAdminEdit1"
+                                    checked>
+                                <label class="form-check-label" for="tipoAdminEdit1">
+                                    <strong>Admin Master</strong> <br> Tiene acceso a todos los módulos y asigna todo
+                                    tipo de administradores.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoAdminEdit" id="tipoAdminEdit2">
+                                <label class="form-check-label" for="tipoAdminEdit2">
+                                    <strong>Admin</strong> <br> Tiene acceso a los módulos seleccionados por el Admin
+                                    Master.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioTipoAdminEdit" id="tipoAdminEdit3">
+                                <label class="form-check-label" for="tipoAdminEdit3">
+                                    <strong>Sub Admin</strong> <br> Tiene acceso solo al módulo de Ventas Corporativas,
+                                    que le permite comprar con factura.
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset id="selectModulosEdit" class="mt-4">
+                            <div class="step-form-title">
+                                <span class="step-form">3</span>
+                                <h6 class="heading-6">Selección de módulos</h6>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="checkModuloDashboardEdit" checked>
+                                <label class="form-check-label" for="checkModuloDashboardEdit">
+                                    <strong>Dashboard</strong> <br>
+                                    Consolidación de datos del uso de beeBeneficios.
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="checkModuloColaboradoresEdit" checked>
+                                <label class="form-check-label" for="checkModuloColaboradoresEdit">
+                                    <strong>Colaboradores</strong> <br>
+                                    Cargar, actualizar y eliminar colaboradores con acceso a beeBeneficios.
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="checkModuloEmpresaEdit" checked>
+                                <label class="form-check-label" for="checkModuloEmpresaEdit">
+                                    <strong>Empresa</strong> <br>
+                                    Configurar la personalización de la empresa (logos, colores, mensajes, etc.)
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="checkModuloInhouseEdit">
+                                <label class="form-check-label" for="checkModuloInhouseEdit">
+                                    <strong>Visitas In-House</strong> <br>
+                                    Programar y cancelar visitas en las sedes de la empresa.
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn" data-bs-target="#modalDatosGuardados"
+                        data-bs-toggle="modal">Crear Administrador</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal editar admin-->
 
     <!-- Modal editar colaborador-->
     <div class="modal fade" id="modalEditarColaborador" tabindex="-1" aria-labelledby="colaboradoresFiltrar"

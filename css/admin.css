@@ -1786,7 +1786,7 @@ figure figcaption {
     margin-right: auto;
 }
 
-#selectModulos {
+#selectModulos, #selectModulosEdit {
     display: none;
 }
 

@@ -1051,6 +1051,14 @@ $(document).ready(function () {
       $("#selectModulos").hide();
     }
   });
+
+  $("input[name='radioTipoAdminEdit']").click(function () {
+    if ($("#tipoAdminEdit2").is(":checked")) {
+      $("#selectModulosEdit").show();
+    } else {
+      $("#selectModulosEdit").hide();
+    }
+  });
   // END ASIGNAR ADMIN
 
   // SHOW VISTAS CUMPLEAÑOS

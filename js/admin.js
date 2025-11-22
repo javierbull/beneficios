@@ -1043,6 +1043,16 @@ $(document).ready(function () {
   });
   // END SHOW HIDE FECHA VALES
 
+  // ASIGNAR ADMIN
+  $("input[name='radioTipoAdmin']").click(function () {
+    if ($("#tipoAdmin2").is(":checked")) {
+      $("#selectModulos").show();
+    } else {
+      $("#selectModulos").hide();
+    }
+  });
+  // END ASIGNAR ADMIN
+
   // SHOW VISTAS CUMPLEAÑOS
   // 1. Escuchar el evento 'change' en el select
   

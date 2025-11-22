@@ -6577,7 +6577,7 @@
                             </div>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset id="selectModulos">
                             <div class="step-form-title">
                                 <span class="step-form">3</span>
                                 <h6 class="heading-6">Selección de módulos</h6>
@@ -6619,7 +6619,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn" data-bs-target="#modalCargaExitosa"
+                    <button type="button" class="btn primary-btn" data-bs-target="#modalDatosGuardados"
                         data-bs-toggle="modal">Crear Administrador</button>
                 </div>
             </div>
@@ -7001,6 +7001,26 @@
         </div>
     </div>
     <!-- End carga exitosa -->
+
+    <!-- Datos guardados exitosos -->
+    <div class="modal fade" id="modalDatosGuardados" tabindex="-1" aria-labelledby="guardadoExitoso" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="wrap-cargaExitosa">
+                        <span class="material-symbols-outlined icon-fill">
+                            check_circle
+                        </span>
+                        <h5 class="modal-title" id="guardadoExitoso">Guardado exitoso</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End datos guardados exitosos -->
 
     <!-- Modal actualizavion de datos empresa-->
     <div class="modal fade" id="modalActualizardatosEmpresa" tabindex="-1" aria-labelledby="actualizarDatosEmpresa"

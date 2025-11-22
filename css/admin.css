@@ -1782,14 +1782,18 @@ figure figcaption {
 
 /* END SEDES */
 
-/* NUEVO CONTACTO */
+/* NUEVO ADMIN */
 .form-admin {
     width: 28rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* END NUEVO CONTACTO */
+#selectModulos {
+    display: none;
+}
+
+/* END NUEVO ADMIN */
 
 /* INHOUSE */
 .inhouse-main {

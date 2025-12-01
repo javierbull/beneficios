@@ -4465,12 +4465,12 @@ nav.main .midmenu {
 .owl-carousel .prev-slide {
   /* background-color: pink; */
   background: url(../img/icons/arrow_back.svg) no-repeat scroll 50% 50%;
-  left: -58px;
+  left: -48px;
 }
 
 .owl-carousel .next-slide {
   background: url(../img/icons/arrow_forward.svg) no-repeat scroll 50% 50%;
-  right: -58px;
+  right: -48px;
 }
 
 /* FIN OWL CAROUSEL */

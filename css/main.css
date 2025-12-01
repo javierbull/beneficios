@@ -4430,7 +4430,7 @@ nav.main .midmenu {
 
 .carousel-wrap {
   /* background-color: pink; */
-  width: calc(92%);
+  width: 92%;
   margin: auto;
   position: relative;
 }
@@ -4451,7 +4451,7 @@ nav.main .midmenu {
 .owl-carousel .nav-btn {
   height: 100%;
   position: absolute;
-  width: 3rem;
+  width: 2rem;
   cursor: pointer;
   top: 0 !important;
 }
@@ -9283,12 +9283,19 @@ div.dataTables_wrapper div.dataTables_info {
   align-items: center;
 }
 
-.item-category a {
+.owl-carousel-categories .item-category a {
   background-color: var(--white);
   color: var(--Gray8);
-  padding: .5rem 1rem;
+  padding: .5rem;
   white-space: nowrap;
   font-weight: 600;
+}
+
+.owl-carousel-categories .owl-stage {
+  /* background-color: greenyellow; */
+  display: flex;
+  padding-left: 0 !important;
+  margin-left: 0;
 }
 
 .item-category a:hover {

@@ -310,7 +310,7 @@ $(document).ready(function () {
     left: -30,
     items: 8,
     loop: false,
-    margin: 16,
+    margin: 8,
     nav: true,
     autoWidth:true,
     autoplay: false,

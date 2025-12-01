@@ -1390,6 +1390,7 @@ footer {
 .delivery-address-client {
   margin-bottom: 0;
 }
+
 /* FIN NAVBAR TOP */
 
 /* MODAL SELECCIONAR INSTITUCION */
@@ -4399,10 +4400,37 @@ nav.main .midmenu {
 }
 
 /* FIN BANNER ATWORK */
+
+/* DROPDOWN BENEFICIOS PROPIOS */
+
+/* END DROPDOWN BENEFICIOS PROPIOS */
+.dropdownBeneficiosPropios {
+  height: 40px;
+  border: solid 1px var(--Gray5);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  margin-right: .5rem;
+}
+
+.dropdownBeneficiosPropios:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.dropdownBeneficiosPropios span:first-child {
+  color: var(--brand-color);
+}
+
+.dropdown .dropdown-toggle::after {
+  display: none;
+}
 /* OWL CAROUSEL */
+
 .carousel-wrap {
   /* background-color: pink; */
-  width: 90%;
+  width: calc(92%);
   margin: auto;
   position: relative;
 }

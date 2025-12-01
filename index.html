@@ -72,15 +72,15 @@
 
 				<div class="wrap-switch-btn-perfil">
 					<!-- Switch admin -->
-					 <div class="switch-admin-off">
-						 <button class="btn btn-switch-admin btn-style-none">
-							 <p class="label-switch-admin">
-								 <span>Comprar como:</span><br>
-								 Colaborador
-							 </p>
-							 <img src="img/icons/switch-off.svg" class="switch-admin" alt="">
-						 </button>
-					 </div>
+					<div class="switch-admin-off">
+						<button class="btn btn-switch-admin btn-style-none">
+							<p class="label-switch-admin">
+								<span>Comprar como:</span><br>
+								Colaborador
+							</p>
+							<img src="img/icons/switch-off.svg" class="switch-admin" alt="">
+						</button>
+					</div>
 
 					<div class="switch-admin-on">
 						<button class="btn btn-switch-admin btn-style-none">
@@ -88,7 +88,7 @@
 								<span>Comprar como:</span><br>
 								Administrador
 							</p>
-	
+
 							<img src="img/icons/switch-on.svg" class="switch-admin" alt="">
 						</button>
 					</div>
@@ -119,7 +119,8 @@
 										Ir al Admin
 									</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item dropdown-link" href="#" data-toggle="modal" data-target="#modalElegirBeneficio">
+									<a class="dropdown-item dropdown-link" href="#" data-toggle="modal"
+										data-target="#modalElegirBeneficio">
 										Cambiar de beneficios
 									</a>
 									<div class="dropdown-divider"></div>
@@ -667,9 +668,27 @@
 
 				<ul class="navbar-categories-rigth">
 					<li class="nav-item">
-						<a class="nav-link" href="giftcards.html">
-							Mis Gift Cards
-						</a>
+						<div class="dropdown">
+							<button class="btn dropdownBeneficiosPropios dropdown-toggle" type="button"
+								id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false">
+								<span class="material-icons">
+									star
+								</span>
+								Beneficios Las Bambas
+								<div class="material-icons">
+									expand_more
+								</div>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Ver todo</a>
+								<a class="dropdown-item" href="#">Bancos</a>
+								<a class="dropdown-item" href="#">Educación</a>
+								<a class="dropdown-item" href="#">Restaurantes</a>
+								<a class="dropdown-item" href="#">Ropa</a>
+								<a class="dropdown-item" href="#">Viajes</a>
+							</div>
+						</div>
 					</li>
 					<li>
 						<a href="carrito.html" class="btn material-icons-outlined shopping_cart-btn btn-style-none"
@@ -683,6 +702,7 @@
 
 			<div class="carousel-wrap">
 				<div class="owl-carousel owl-theme owl-carousel-categories">
+
 					<div class="item item-category" data-merge="1">
 						<a href="index.html">
 							Inicio
@@ -970,7 +990,7 @@
 				<!-- <img src="img/logos/logoInterbank.png" alt=""> -->
 				<!-- <img src="img/logos/logos_empresas/colmena_cuadrado_grande.png" alt=""> -->
 				<img src="img/logos/logoScotiabank.png" alt="">
-				 <!-- <img src="img/logos/logoBeeBeneficios.svg" alt=""> -->
+				<!-- <img src="img/logos/logoBeeBeneficios.svg" alt=""> -->
 			</a>
 
 			<button class="btn nav-link closeSearcherMobile btn-style-none pr-0" href="#" id="btnMenuMobile">
@@ -1291,27 +1311,27 @@
 						</p> -->
 
 						<!-- Switch admin -->
-					 <div class="switch-admin-off">
-						 <button class="btn btn-switch-admin btn-style-none">
-							 <p class="label-switch-admin">
-								 <span>Comprar como:</span><br>
-								 Colaborador
-							 </p>
-							 <img src="img/icons/switch-off.svg" class="switch-admin" alt="">
-						 </button>
-					 </div>
+						<div class="switch-admin-off">
+							<button class="btn btn-switch-admin btn-style-none">
+								<p class="label-switch-admin">
+									<span>Comprar como:</span><br>
+									Colaborador
+								</p>
+								<img src="img/icons/switch-off.svg" class="switch-admin" alt="">
+							</button>
+						</div>
 
-					<div class="switch-admin-on">
-						<button class="btn btn-switch-admin btn-style-none">
-							<p class="label-switch-admin">
-								<span>Comprar como:</span><br>
-								Administrador
-							</p>
-	
-							<img src="img/icons/switch-on.svg" class="switch-admin" alt="">
-						</button>
-					</div>
-					<!-- End switch admin -->
+						<div class="switch-admin-on">
+							<button class="btn btn-switch-admin btn-style-none">
+								<p class="label-switch-admin">
+									<span>Comprar como:</span><br>
+									Administrador
+								</p>
+
+								<img src="img/icons/switch-on.svg" class="switch-admin" alt="">
+							</button>
+						</div>
+						<!-- End switch admin -->
 					</div>
 				</div>
 
@@ -3474,7 +3494,8 @@
 				</div>
 				<div class="modal-body">
 					<p>
-						A partir de hoy, podrás disfrutar de los beneficios de [Nombre empresa] y [Nombre institución]. Elige uno para continuar y recuerda que siempre podrás cambiarlos en tu perfil.
+						A partir de hoy, podrás disfrutar de los beneficios de [Nombre empresa] y [Nombre institución].
+						Elige uno para continuar y recuerda que siempre podrás cambiarlos en tu perfil.
 					</p>
 
 					<div class="wrap-beneficioInstitucion">

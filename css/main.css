@@ -4426,6 +4426,18 @@ nav.main .midmenu {
 .dropdown .dropdown-toggle::after {
   display: none;
 }
+
+.dropdownMenuBP {
+  /* background-color: pink; */
+  overflow: hidden;
+}
+
+.dropdownMenuBP .dropdown-item {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /* OWL CAROUSEL */
 
 .carousel-wrap {

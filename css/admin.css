@@ -1251,6 +1251,7 @@ input[type=number] {
     /* background-color: pink; */
     display: flex;
     gap: .5rem;
+    align-items: flex-end;
 }
 
 .navbar-actions__right {

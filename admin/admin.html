@@ -6064,12 +6064,22 @@
 
                 <div class="navbar-actions">
                     <div class="navbar-actions__left">
-                        <div class="input-group input-icon">
-                            <span class="material-symbols-outlined">
-                                search
-                            </span>
-                            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
-                                aria-describedby="addon-wrapping">
+
+                        <div class="form-group">
+                            <label for="nuevaVisitaSede" class="form-label">Categoría</label>
+                            <select class="form-select" aria-label="Default select example" id="nuevaVisitaSede">
+                                <option selected="">Todas</option>
+                                <option value="1">Entretenimiento</option>
+                                <option value="2">Restaurantes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nuevaVisitaSede" class="form-label">Subcategoría</label>
+                            <select class="form-select" aria-label="Default select example" id="nuevaVisitaSede">
+                                <option selected="">Todas</option>
+                                <option value="1">Burger King</option>
+                                <option value="2">KFC</option>
+                            </select>
                         </div>
                         <button type="button" class="btn accent-btn">
                             Filtrar

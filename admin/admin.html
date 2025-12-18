@@ -6421,67 +6421,79 @@
 
                             <button class="step-admin btn btn-style-none">
                                 <span>3</span>
+                                Categoría
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>4</span>
                                 Confirmación
                             </button>
                         </div>
 
                         <div class="content-stepper-cupon">
                             <form class="form-nuevoCupon">
-                                <div class="mb-form custom-textArea">
-                                    <label for="cuponDescCompleta" class="form-label">Descripción completa</label>
-                                    <p>
-                                        Este mensaje aparecerá una vez los colaboradores haga clic en el cupón.
-                                    </p>
-                                    <textarea class="form-control" id="cuponDescCompleta" rows="3"
-                                        placeholder="Escriba una descripción"></textarea>
-                                </div>
 
-                                <div class="mb-form custom-textArea">
-                                    <label for="cuponConsideraciones" class="form-label">Consideraciones</label>
-                                    <p>
-                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
-                                        momento de utilizar el cupón.
-                                    </p>
-                                    <richtextarea></richtextarea>
-                                </div>
-
-                                <fieldset>
-                                    <p class="mb-0">Periodo de vigencia</p>
-                                    <div class="row g-3">
-                                        <div class="form-group mb-form col">
-                                            <label for="vigenciaCuponInicio" class="form-label">Desde</label>
-                                            <input type="date" class="form-control" id="vigenciaCuponInicio">
-                                            <div class="text-help">Ingrese un horario</div>
-                                        </div>
-
-                                        <div class="form-group mb-form col">
-                                            <label for="vigenciaCuponFin" class="form-label">Hasta</label>
-                                            <input type="date" class="form-control" id="vigenciaCuponFin">
-                                            <div class="text-help">Ingrese un horario</div>
-                                        </div>
+                                <div class="rowCategoriaNuevoBeneficio">
+                                    <div class="form-group col">
+                                        <label for="nuevoBeneficioCategoria" class="form-label">Categoría</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="nuevoBeneficioCategoria">
+                                            <option selected="">Seleccione</option>
+                                            <option value="1">Entretenimiento</option>
+                                            <option value="2">Restaurantes</option>
+                                        </select>
                                     </div>
-                                </fieldset>
 
-                                <div class="mb-form custom-textArea">
-                                    <label for="cuponInstruccionesCanje" class="form-label">Instrucciones de
-                                        canje</label>
-                                    <p>
-                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
-                                        momento de utilizar el cupón.
-                                    </p>
-                                    <textarea class="form-control" id="cuponInstruccionesCanje" rows="4"
-                                        placeholder="Escriba las instrucciones"></textarea>
+                                    <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalNuevaCategoriaBP">
+                                        <span class="material-symbols-outlined">
+                                            add
+                                        </span>
+                                    </button>
+
+                                    <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditCategoriaBP">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="rowCategoriaNuevoBeneficio">
+                                    <div class="form-group col">
+                                        <label for="nuevoBeneficioSubcategoria" class="form-label">Subcategoría</label>
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="nuevoBeneficioSubcategoria">
+                                            <option selected="">Seleccione</option>
+                                            <option value="1">Burger king</option>
+                                            <option value="2">KFC</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalNuevaSubcategoriaBP">
+                                        <span class="material-symbols-outlined">
+                                            add
+                                        </span>
+                                    </button>
+
+                                    <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditSubcategoriaBP">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </button>
                                 </div>
 
                                 <div class="form-actions-between">
-                                    <button type="button" class="btn outline-btn show-stepper-cuponDatos">
+                                    <button type="button" class="btn outline-btn show-stepper-NuevoBeneficio2">
                                         <span class="material-symbols-outlined">
                                             arrow_back
                                         </span>
                                         Anterior
                                     </button>
 
-                                    <button type="button" class="btn primary-btn show-stepper-cuponConfirmacion">
+                                    <button type="button" class="btn primary-btn show-stepper-NuevoBeneficio4">
                                         Siguiente
                                         <span class="material-symbols-outlined">
                                             arrow_forward
@@ -9862,6 +9874,117 @@
         </div>
     </div>
     <!-- End recordatorio activación-->
+
+    <!-- Modals nuevo beneficio propio -->
+    <div class="modal fade" id="modalNuevaCategoriaBP" tabindex="-1" aria-labelledby="nuevaCategoriaNB"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="nuevaCategoriaNB">Agregar categoría</h5>
+
+                    <form class="form-modal">
+                        <div class="mb-form">
+                            <label for="nuevaCategoriaNB" class="form-label">Nombre de la categoría</label>
+                            <input type="text" class="form-control" id="nuevaCategoriaNB">
+                            <div class="text-help">Ingrese un nombre válido</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEditCategoriaBP" tabindex="-1" aria-labelledby="editCategoriaNB"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="editCategoriaNB">Editar categoría</h5>
+
+                    <form class="form-modal">
+                        <div class="mb-form">
+                            <label for="editCategoriaNB" class="form-label">Nombre de la categoría</label>
+                            <input type="text" class="form-control" id="editCategoriaNB" value="Restaurantes">
+                            <div class="text-help">Ingrese un nombre válido</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalNuevaSubcategoriaBP" tabindex="-1" aria-labelledby="nuevaSubcategoriaNB"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="nuevaSubcategoriaNB">Agregar subcategoría</h5>
+
+                    <form class="form-modal">
+                        <div class="mb-form">
+                            <label for="nuevaSubcategoriaNB" class="form-label">Nombre de la subcategoría</label>
+                            <input type="text" class="form-control" id="nuevaSubcategoriaNB">
+                            <div class="text-help">Ingrese un nombre válido</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEditSubcategoriaBP" tabindex="-1" aria-labelledby="editsubcategoriaNB"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="editsubcategoriaNB">Editar subcategoría</h5>
+
+                    <form class="form-modal">
+                        <div class="mb-form">
+                            <label for="editSubcategoriaNB" class="form-label">Nombre de la categoría</label>
+                            <input type="text" class="form-control" id="editSubcategoriaNB" value="Restaurantes">
+                            <div class="text-help">Ingrese un nombre válido</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn primary-btn">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End modal nuevo beneficio propio -->
 
     <!-- END MODALS -->
 

@@ -3552,3 +3552,13 @@ figure figcaption {
 }
 
 /* END TOOLTIP DANGER */
+
+/* NUEVO BENEFICIO PROPIO */
+.rowCategoriaNuevoBeneficio {
+    /* background-color: pink; */
+    display: flex;
+    align-items: flex-end;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+/* END NUEVO BENEFICIO PROPIO */

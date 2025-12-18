@@ -3561,4 +3561,14 @@ figure figcaption {
     gap: .5rem;
     margin-bottom: 1rem;
 }
+
+.row-form {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-end;
+}
+
+.flex-1 {
+    flex: 1;
+}
 /* END NUEVO BENEFICIO PROPIO */

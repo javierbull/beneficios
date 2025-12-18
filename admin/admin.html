@@ -6087,7 +6087,7 @@
                     </div>
 
                     <div class="navbar-actions__right">
-                        <button type="button" class="btn primary-btn">
+                        <button type="button" class="btn primary-btn showAdminPanel-nuevoBeneficioPropio">
                             <span class="material-symbols-outlined icon-fill">
                                 add
                             </span>
@@ -6187,7 +6187,304 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="panel" id="nuevoBeneficioPropio-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Beneficios Propios</h2>
+                        <p>
+                            Gestiona los beneficios de tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/makanaki.jpg" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item link" href="../index.html">Ir a la Plataforma</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <div class="dropdown-divider"></div>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-beneficiosPropios">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+                </div>
+
+                <div class="colaboradorNuevo-main">
+                    <h2 class="headline2">
+                        Nuevo cupón
+                    </h2>
+
+                    <div class="wrap-stepper show-stepper stepper-cuponDatos" id="stepper-cuponDatos">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos del cupón
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>2</span>
+                                Descripción y condiciones
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>3</span>
+                                Confirmación
+                            </button>
+                        </div>
+
+                        <div class="content-stepper-cupon">
+
+                            <div class="content-cupon">
+                                <h5 class="heading-6">Cupón</h5>
+                                <div class="card-cupon">
+                                    <img src="../img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
+                                    <div class="card-cupon-body">
+                                        <h3>Nombre del cupón</h3>
+                                        <p class="line-clamp line-clamp-2">
+                                            Breve descripción del cupón, máximo de 2 líneas
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="form-nuevoCupon">
+                                <h5 class="heading-6">Subir imagen</h5>
+                                <div class="wrap-img-preview-cupon">
+                                    <div class="imageWrapper-cupon">
+                                        <img class="image-preview-cupon" id="preview-cupon"
+                                            src="../img/products/cards/cupon-default.png">
+                                    </div>
+
+                                    <div class="wrap-label-file-upload-cupon">
+                                        <button class="file-upload-cupon btn outline-btn">
+                                            <input type="file" class="file-input-image-cupon"
+                                                id="input-preview-img-cupon">Agregar imagen
+                                        </button>
+                                        <div class="image-card-suggested">
+                                            <p>Formatos: JPG, PNG</p>
+                                            <p>Tamaño recomendado: 600px * 450px</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="mb-form">
+                                    <label for="nuevoCuponNombre" class="form-label">Nombre del cupón</label>
+                                    <input type="text" class="form-control" id="nuevoCuponNombre">
+                                    <div class="text-help">Ingrese un nombre válido</div>
+                                </div>
+
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponBreveDescripcion" class="form-label">
+                                        Breve descripción
+                                    </label>
+                                    <textarea class="form-control" id="cuponBreveDescripcion" rows="3" maxlength="200"
+                                        placeholder="Escriba una breve descripción"></textarea>
+                                </div>
+
+                                <div class="form-actions-right">
+                                    <button type="button" class="btn primary-btn show-stepper-cuponDesc">
+                                        Siguiente
+                                        <span class="material-symbols-outlined">
+                                            arrow_forward
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="wrap-stepper stepper-cuponDesc" id="stepper-cuponDesc">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos del cupón
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>2</span>
+                                Descripción y condiciones
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>3</span>
+                                Confirmación
+                            </button>
+                        </div>
+
+                        <div class="content-stepper-cupon">
+                            <form class="form-nuevoCupon">
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponDescCompleta" class="form-label">Descripción completa</label>
+                                    <p>
+                                        Este mensaje aparecerá una vez los colaboradores haga clic en el cupón.
+                                    </p>
+                                    <textarea class="form-control" id="cuponDescCompleta" rows="3"
+                                        placeholder="Escriba una descripción"></textarea>
+                                </div>
+
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponConsideraciones" class="form-label">Consideraciones</label>
+                                    <p>
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
+                                        momento de utilizar el cupón.
+                                    </p>
+                                    <richtextarea></richtextarea>
+                                </div>
+
+                                <fieldset>
+                                    <p class="mb-0">Periodo de vigencia</p>
+                                    <div class="row g-3">
+                                        <div class="form-group mb-form col">
+                                            <label for="vigenciaCuponInicio" class="form-label">Desde</label>
+                                            <input type="date" class="form-control" id="vigenciaCuponInicio">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+
+                                        <div class="form-group mb-form col">
+                                            <label for="vigenciaCuponFin" class="form-label">Hasta</label>
+                                            <input type="date" class="form-control" id="vigenciaCuponFin">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponInstruccionesCanje" class="form-label">Instrucciones de
+                                        canje</label>
+                                    <p>
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
+                                        momento de utilizar el cupón.
+                                    </p>
+                                    <textarea class="form-control" id="cuponInstruccionesCanje" rows="4"
+                                        placeholder="Escriba las instrucciones"></textarea>
+                                </div>
+
+                                <div class="form-actions-between">
+                                    <button type="button" class="btn outline-btn show-stepper-cuponDatos">
+                                        <span class="material-symbols-outlined">
+                                            arrow_back
+                                        </span>
+                                        Anterior
+                                    </button>
+
+                                    <button type="button" class="btn primary-btn show-stepper-cuponConfirmacion">
+                                        Siguiente
+                                        <span class="material-symbols-outlined">
+                                            arrow_forward
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="wrap-stepper stepper-cuponConfirmacion" id="stepper-cuponConfirmacion">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos del cupón
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>2</span>
+                                Descripción y condiciones
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>3</span>
+                                Confirmación
+                            </button>
+                        </div>
+
+                        <div class="content-stepper-cupon">
+                            <div class="content-cupon bg-info">
+                                <h5 class="heading-6">Cupón</h5>
+                                <div class="card-cupon">
+                                    <img src="../img/products/cards/cupones1.jpg" alt="Tacos el mexicano">
+                                    <div class="card-cupon-body">
+                                        <h3>Tacos mexicanos</h3>
+                                        <p class="line-clamp line-clamp-2">
+                                            Tacos Mexicanos y Tex Mex ilimitados al Pastor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="form-nuevoCupon">
+                                <h5 class="heading-6 mb-3">Descripción y condiciones</h5>
+
+                                <div class="mb-3">
+                                    <h5 class="heading-6 mb-1">Descripción completa</h5>
+                                    <p>
+                                        ¡Ilumina tus espacios con estilo! Presente el código en las sucursales adheridas
+                                        de EGLO y disfrute de un 30% de descuento en todas las lámparas y luminarias
+                                        EGLO.
+                                    </p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h5 class="heading-6 mb-1">Consideraciones</h5>
+                                    <ul>
+                                        <li>Consideracion 1</li>
+                                        <li>Consideracion 2</li>
+                                        <li>Consideracion 3</li>
+                                        <li>Consideracion 4</li>
+                                        <li>Consideracion 5</li>
+                                        <li>Consideracion 6</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h5 class="heading-6 mb-1">Vigencia</h5>
+                                    <p>
+                                        Del 10/10/2024 al 10/04/2024
+                                    </p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h5 class="heading-6 mb-1">Instrucciones de canje</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, laborum
+                                        necessitatibus sequi quia harum non nemo sint blanditiis distinctio consectetur.
+                                    </p>
+                                </div>
+
+                                <div class="form-actions-between">
+                                    <button type="button" class="btn outline-btn show-stepper-cuponDesc">
+                                        <span class="material-symbols-outlined">
+                                            arrow_back
+                                        </span>
+                                        Anterior
+                                    </button>
+
+                                    <button type="button" class="btn primary-btn">
+                                        Publicar cupón
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

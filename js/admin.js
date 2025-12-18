@@ -152,6 +152,20 @@ $(document).ready(function () {
     // read the image file as a data URL.
     reader.readAsDataURL(this.files[0]);
   });
+
+  $('#input-preview-img-cuponNB').change(function () {
+    var curElement = $('#preview-cuponNB');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      // get loaded data and render thumbnail.
+      curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+  });
   // END IMAGE PREVIEW
 
   // Sidebar active item
@@ -988,6 +1002,36 @@ $(document).ready(function () {
     $("#stepper-cuponConfirmacion").show();
   });
   // END STEPPER ADMIN
+
+  // STEPPER ADMIN NUEVO BENEFICIO
+  $(".show-stepper-NuevoBeneficio1").click(function () {
+    $("#stepper-NuevoBeneficio1").show();
+    $("#stepper-NuevoBeneficio2").hide();
+    $("#stepper-NuevoBeneficio3").hide();
+    $("#stepper-NuevoBeneficio4").hide();
+  });
+
+  $(".show-stepper-NuevoBeneficio2").click(function () {
+    $("#stepper-NuevoBeneficio1").hide();
+    $("#stepper-NuevoBeneficio2").show();
+    $("#stepper-NuevoBeneficio3").hide();
+    $("#stepper-NuevoBeneficio4").hide();
+  });
+
+  $(".show-stepper-NuevoBeneficio3").click(function () {
+    $("#stepper-NuevoBeneficio1").hide();
+    $("#stepper-NuevoBeneficio2").hide();
+    $("#stepper-NuevoBeneficio3").show();
+    $("#stepper-NuevoBeneficio4").hide();
+  });
+
+  $(".show-stepper-NuevoBeneficio4").click(function () {
+    $("#stepper-NuevoBeneficio1").hide();
+    $("#stepper-NuevoBeneficio2").hide();
+    $("#stepper-NuevoBeneficio3").hide();
+    $("#stepper-NuevoBeneficio4").show();
+  });
+  // END STEPPER ADMIN NUEVO BENEFICIO
 
   // DATATABLES
   $('.dtable').DataTable({

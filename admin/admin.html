@@ -6232,7 +6232,7 @@
                         Nuevo cupón
                     </h2>
 
-                    <div class="wrap-stepper show-stepper stepper-cuponDatos" id="stepper-cuponDatos">
+                    <div class="wrap-stepper show-stepper stepper-NuevoBeneficio1" id="stepper-NuevoBeneficio1">
                         <div class="stepper-admin">
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>1</span>
@@ -6246,6 +6246,11 @@
 
                             <button class="step-admin btn btn-style-none">
                                 <span>3</span>
+                                Categoría
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>4</span>
                                 Confirmación
                             </button>
                         </div>
@@ -6269,14 +6274,14 @@
                                 <h5 class="heading-6">Subir imagen</h5>
                                 <div class="wrap-img-preview-cupon">
                                     <div class="imageWrapper-cupon">
-                                        <img class="image-preview-cupon" id="preview-cupon"
+                                        <img class="image-preview-cupon" id="preview-cuponNB"
                                             src="../img/products/cards/cupon-default.png">
                                     </div>
 
                                     <div class="wrap-label-file-upload-cupon">
                                         <button class="file-upload-cupon btn outline-btn">
                                             <input type="file" class="file-input-image-cupon"
-                                                id="input-preview-img-cupon">Agregar imagen
+                                                id="input-preview-img-cuponNB">Agregar imagen
                                         </button>
                                         <div class="image-card-suggested">
                                             <p>Formatos: JPG, PNG</p>
@@ -6287,21 +6292,21 @@
 
 
                                 <div class="mb-form">
-                                    <label for="nuevoCuponNombre" class="form-label">Nombre del cupón</label>
-                                    <input type="text" class="form-control" id="nuevoCuponNombre">
+                                    <label for="nuevoCuponNombreNB" class="form-label">Nombre del cupón</label>
+                                    <input type="text" class="form-control" id="nuevoCuponNombreNB">
                                     <div class="text-help">Ingrese un nombre válido</div>
                                 </div>
 
                                 <div class="mb-form custom-textArea">
-                                    <label for="cuponBreveDescripcion" class="form-label">
+                                    <label for="cuponBreveDescripcionNB" class="form-label">
                                         Breve descripción
                                     </label>
-                                    <textarea class="form-control" id="cuponBreveDescripcion" rows="3" maxlength="200"
+                                    <textarea class="form-control" id="cuponBreveDescripcionNB" rows="3" maxlength="200"
                                         placeholder="Escriba una breve descripción"></textarea>
                                 </div>
 
                                 <div class="form-actions-right">
-                                    <button type="button" class="btn primary-btn show-stepper-cuponDesc">
+                                    <button type="button" class="btn primary-btn show-stepper-NuevoBeneficio2">
                                         Siguiente
                                         <span class="material-symbols-outlined">
                                             arrow_forward
@@ -6312,7 +6317,97 @@
                         </div>
                     </div>
 
-                    <div class="wrap-stepper stepper-cuponDesc" id="stepper-cuponDesc">
+                    <div class="wrap-stepper stepper-NuevoBeneficio2" id="stepper-NuevoBeneficio2">
+                        <div class="stepper-admin">
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>1</span>
+                                Datos del cupón
+                            </button>
+
+                            <button class="step-admin step-active btn btn-style-none">
+                                <span>2</span>
+                                Descripción y condiciones
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>3</span>
+                                Categoría
+                            </button>
+
+                            <button class="step-admin btn btn-style-none">
+                                <span>4</span>
+                                Confirmación
+                            </button>
+                        </div>
+
+                        <div class="content-stepper-cupon">
+                            <form class="form-nuevoCupon">
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponDescCompleta" class="form-label">Descripción completa</label>
+                                    <p>
+                                        Este mensaje aparecerá una vez los colaboradores haga clic en el cupón.
+                                    </p>
+                                    <textarea class="form-control" id="cuponDescCompleta" rows="3"
+                                        placeholder="Escriba una descripción"></textarea>
+                                </div>
+
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponConsideraciones" class="form-label">Consideraciones</label>
+                                    <p>
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
+                                        momento de utilizar el cupón.
+                                    </p>
+                                    <richtextarea></richtextarea>
+                                </div>
+
+                                <fieldset>
+                                    <p class="mb-0">Periodo de vigencia</p>
+                                    <div class="row g-3">
+                                        <div class="form-group mb-form col">
+                                            <label for="vigenciaCuponInicio" class="form-label">Desde</label>
+                                            <input type="date" class="form-control" id="vigenciaCuponInicio">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+
+                                        <div class="form-group mb-form col">
+                                            <label for="vigenciaCuponFin" class="form-label">Hasta</label>
+                                            <input type="date" class="form-control" id="vigenciaCuponFin">
+                                            <div class="text-help">Ingrese un horario</div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <div class="mb-form custom-textArea">
+                                    <label for="cuponInstruccionesCanje" class="form-label">Instrucciones de
+                                        canje</label>
+                                    <p>
+                                        Agrega los términos y condiciones que los colaboradores deben tener en cuenta al
+                                        momento de utilizar el cupón.
+                                    </p>
+                                    <textarea class="form-control" id="cuponInstruccionesCanje" rows="4"
+                                        placeholder="Escriba las instrucciones"></textarea>
+                                </div>
+
+                                <div class="form-actions-between">
+                                    <button type="button" class="btn outline-btn show-stepper-NuevoBeneficio1">
+                                        <span class="material-symbols-outlined">
+                                            arrow_back
+                                        </span>
+                                        Anterior
+                                    </button>
+
+                                    <button type="button" class="btn primary-btn show-stepper-NuevoBeneficio3">
+                                        Siguiente
+                                        <span class="material-symbols-outlined">
+                                            arrow_forward
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="wrap-stepper stepper-NuevoBeneficio3" id="stepper-NuevoBeneficio3">
                         <div class="stepper-admin">
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>1</span>
@@ -6397,7 +6492,7 @@
                         </div>
                     </div>
 
-                    <div class="wrap-stepper stepper-cuponConfirmacion" id="stepper-cuponConfirmacion">
+                    <div class="wrap-stepper stepper-NuevoBeneficio4" id="stepper-NuevoBeneficio4">
                         <div class="stepper-admin">
                             <button class="step-admin step-active btn btn-style-none">
                                 <span>1</span>

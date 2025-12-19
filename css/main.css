@@ -9403,4 +9403,12 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: 0;
 }
 
+.btn-beneficiosPropios {
+  background-color: lavender;
+}
+
+.brandColor {
+  color: var(--brand-color);
+}
+
 /* END VALES QR */

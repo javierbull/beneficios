@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+   // BANNER ZOCALO
+  $("#btn-bannerZocalo").click(function () {
+    $("#contenido-barra").slideToggle("slow");
+    $(this).find(".flecha").toggleClass("rotar");
+  });
+  // END BANNER ZOCALO
+
 
   // INCREMENTO - DECREMENTO =================
 
@@ -638,7 +645,7 @@ $(document).ready(function () {
     placeholder: $(this).data('placeholder')
   });
 
-  $('.select2modal').each(function() {
+  $('.select2modal').each(function () {
     $(this).select2({
       theme: "bootstrap4",
       width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
@@ -646,8 +653,10 @@ $(document).ready(function () {
       dropdownParent: $(this).parent()
     });
   });
-  
+
   // END ACTIVAR SELECT2
+
+ 
 
 });
 

@@ -9462,4 +9462,21 @@ div.dataTables_wrapper div.dataTables_info {
   /* Sombra sutil solo arriba */
 }
 
+.flecha {
+  display: inline-block;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+
+.rotar {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
 /* END PUBLICIDAD EMERGENTE */

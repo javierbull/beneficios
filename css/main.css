@@ -9428,10 +9428,6 @@ div.dataTables_wrapper div.dataTables_info {
   margin: auto;
   width: 1280px;
   z-index: 1000;
-  /* Importante: pointer-events none permite hacer click "a través" 
-               de las áreas vacías alrededor de la pestaña si fuera necesario, 
-               pero lo activamos en los hijos */
-  pointer-events: none;
 }
 
 #contenido-barra {
@@ -9442,6 +9438,28 @@ div.dataTables_wrapper div.dataTables_info {
   -ms-border-radius: 1rem 1rem 0 0;
   -o-border-radius: 1rem 1rem 0 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+}
+
+#btn-bannerZocalo {
+  position: absolute;
+  /* Lo subimos la misma cantidad que su altura para que asome por arriba */
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centrado horizontal perfecto */
+  height: 2rem;
+  padding: 0 30px;
+  background-color: var(--Gray8);
+  /* Mismo color que el contenido */
+  color: var(--white);
+  border: none;
+  border-radius: 10px 10px 0 0;
+  /* Redondeamos solo arriba */
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  /* Sombra sutil solo arriba */
 }
 
 /* END PUBLICIDAD EMERGENTE */

@@ -4438,6 +4438,7 @@ nav.main .midmenu {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 /* OWL CAROUSEL */
 
 .carousel-wrap {
@@ -9412,3 +9413,25 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 /* END VALES QR */
+
+/* PUBLICIDAD EMERGENTE */
+.bannerZocalo {
+  width: 100%;
+  object-fit: cover;
+}
+
+#contenedor-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1280px;
+  z-index: 1000;
+  /* Importante: pointer-events none permite hacer click "a través" 
+               de las áreas vacías alrededor de la pestaña si fuera necesario, 
+               pero lo activamos en los hijos */
+  pointer-events: none;
+}
+
+/* END PUBLICIDAD EMERGENTE */

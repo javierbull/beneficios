@@ -9434,4 +9434,14 @@ div.dataTables_wrapper div.dataTables_info {
   pointer-events: none;
 }
 
+#contenido-barra {
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+  -webkit-border-radius: 1rem 1rem 0 0;
+  -moz-border-radius: 1rem 1rem 0 0;
+  -ms-border-radius: 1rem 1rem 0 0;
+  -o-border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+}
+
 /* END PUBLICIDAD EMERGENTE */

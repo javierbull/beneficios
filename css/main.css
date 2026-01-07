@@ -1069,7 +1069,7 @@ footer {
 .footer-bottom {
   background-color: var(--yellow);
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: right;

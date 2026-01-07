@@ -10,7 +10,7 @@
 
   .footer-bottom {
     padding-top: .5rem;
-    padding-bottom: 5.5rem;
+    padding-bottom: 7.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: right;
@@ -300,8 +300,15 @@
     margin-top: 0;
   }
 
-
   /* End boletos cine star */
+
+  /* Publicidad emergente */
+  #contenedor-inferior {
+    bottom: 65px;
+    width: 100%;
+  }
+
+  /* End publicidad emergente */
 }
 
 /* Fin tablet landscape */

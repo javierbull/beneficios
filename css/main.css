@@ -9479,4 +9479,8 @@ div.dataTables_wrapper div.dataTables_info {
   -o-transform: rotate(180deg);
 }
 
+.show-mobile {
+  display: none;
+}
+
 /* END PUBLICIDAD EMERGENTE */

@@ -9537,6 +9537,12 @@ div.dataTables_wrapper div.dataTables_info {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   width: 16rem;
+  cursor: pointer;
+}
+
+.perfiles-card:hover {
+  border: solid 1px var(--links);
+  box-shadow: 0 0 0 3px var(--links);
 }
 
 .perfiles-card__header {

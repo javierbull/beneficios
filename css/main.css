@@ -9499,7 +9499,7 @@ div.dataTables_wrapper div.dataTables_info {
   /* background-color: lavender; */
   text-align: center;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .perfiles-logo {
@@ -9567,8 +9567,8 @@ div.dataTables_wrapper div.dataTables_info {
 
 .wrap-perfiles-card__img {
   border: solid 1px var(--Gray3);
-  width: 12.5rem;
-  height: 12.5rem;
+  min-width: 12.5rem;
+  min-height: 12.5rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -9583,8 +9583,8 @@ div.dataTables_wrapper div.dataTables_info {
 
 .perfiles-card__body img {
   object-fit: cover;
-  max-width: 12.5rem;
-  max-height: 12.5rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .perfiles-card__footer {

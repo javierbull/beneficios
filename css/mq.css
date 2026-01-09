@@ -316,6 +316,7 @@
     min-height: auto;
     margin-top: -3.5rem;
   }
+
   /* End perfiles */
 }
 
@@ -788,6 +789,7 @@
   }
 
   /* END VALE QR */
+
 }
 
 /* Fin Big Cell landscape */
@@ -2690,6 +2692,26 @@
     display: block;
   }
 
+   /* Perfiles */
+  .perfiles-grid {
+    /* background-color: greenyellow; */
+    gap: 1rem;
+  }
+
+  .perfiles-card {
+    width: 10rem;
+  }
+
+  .wrap-perfiles-card__img {
+    min-width: 9rem;
+    min-height: 9rem;
+  }
+
+  .perfiles-card__header h2 {
+    font-size: 1.25rem;
+  }
+
+  /* End perfiles */
 
 }
 

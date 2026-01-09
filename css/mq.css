@@ -2692,7 +2692,22 @@
     display: block;
   }
 
-   /* Perfiles */
+  /* Perfiles */
+  .perfiles {
+    padding: 1rem 0;
+  }
+  .perfiles-logo {
+    height: 1.5rem;
+  }
+
+  .perfiles-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .perfiles-header p {
+    font-size: 1rem;
+  }
+
   .perfiles-grid {
     /* background-color: greenyellow; */
     gap: 1rem;

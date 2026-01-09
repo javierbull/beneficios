@@ -309,6 +309,14 @@
   }
 
   /* End publicidad emergente */
+
+  /* Perfiles */
+  .wrap-perfiles {
+    /* background-color: pink; */
+    min-height: auto;
+    margin-top: -3.5rem;
+  }
+  /* End perfiles */
 }
 
 /* Fin tablet landscape */
@@ -2681,6 +2689,8 @@
   .show-mobile {
     display: block;
   }
+
+
 }
 
 /* Fin cell portrait */

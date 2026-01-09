@@ -9518,6 +9518,7 @@ div.dataTables_wrapper div.dataTables_info {
 
 .perfiles-header p {
   font-size: 1.25rem;
+  color: var(--Gray6);
 }
 
 .perfiles-grid {
@@ -9525,6 +9526,7 @@ div.dataTables_wrapper div.dataTables_info {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .perfiles-card {

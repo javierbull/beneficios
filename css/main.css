@@ -9427,6 +9427,10 @@ div.dataTables_wrapper div.dataTables_info {
   padding: .5rem 1rem;
   font-weight: 600;
 }
+
+.container-menu-destacados-mobile {
+  display: none;
+}
 /* END MENU DESTACADOS MOBILE */
 
 /* VALES QR */

@@ -315,7 +315,7 @@ $(document).ready(function () {
     autoWidth:true,
     autoplay: false,
     autoplayTimeout: 7000,
-    autoplayHoverPause: true,
+    autoplayHoverPause: false,
     navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
     dots: false,
     responsive: {

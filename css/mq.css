@@ -323,6 +323,13 @@
   }
 
   /* End perfiles */
+
+  /* Menu destacados mobile */
+  .container-menu-destacados-mobile {
+    display: block;
+  }
+
+  /* End menud destacados mobile */
 }
 
 /* Fin tablet landscape */

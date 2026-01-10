@@ -9412,6 +9412,23 @@ div.dataTables_wrapper div.dataTables_info {
 
 /* END CATEGORIAS DETACADAS CAROUSEL */
 
+/* MENU DESTACADOS MOBILE */
+.menu-destacados-mobile {
+  margin-bottom: 1rem;
+}
+
+.menu-destacados-mobile .item-category a {
+  background-color: var(--Gray3);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  padding: .5rem 1rem;
+  font-weight: 600;
+}
+/* END MENU DESTACADOS MOBILE */
+
 /* VALES QR */
 .valeqr {
   background-color: var(--white);

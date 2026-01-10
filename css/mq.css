@@ -326,7 +326,7 @@
 
   /* BANNER CLIENT */
   .banner-client .content-brand-logo {
-    /* background-color: lavender; */
+    /*background-color: lavender;*/
     margin-right: .75rem;
     height: 5rem;
     max-width: 5rem;
@@ -2696,6 +2696,7 @@
   .perfiles {
     padding: 1rem 0;
   }
+
   .perfiles-logo {
     height: 1.5rem;
   }

@@ -3762,7 +3762,7 @@ nav.main .midmenu {
 
 .content-btns-menu-profile-mobile {
   /* background-color: pink; */
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -3789,8 +3789,10 @@ nav.main .midmenu {
 
 .content-menu-mobile {
   background-color: var(--primary-white);
+  /* background-color: #00BA88; */
   min-height: 100vh;
   padding: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .content-menu-mobile-admin {

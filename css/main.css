@@ -9413,12 +9413,18 @@ div.dataTables_wrapper div.dataTables_info {
 /* END CATEGORIAS DETACADAS CAROUSEL */
 
 /* MENU DESTACADOS MOBILE */
+.container-menu-destacados-mobile .owl-stage-outer {
+  /* background-color: yellow; */
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .menu-destacados-mobile {
   margin-bottom: 1rem;
 }
 
 .menu-destacados-mobile .item-category a {
-  background-color: var(--Gray3);
+  background-color: var(--Gray1);
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -9426,6 +9432,7 @@ div.dataTables_wrapper div.dataTables_info {
   -o-border-radius: 2rem;
   padding: .5rem 1rem;
   font-weight: 600;
+  border: solid 1px var(--Gray4);
 }
 
 .container-menu-destacados-mobile {

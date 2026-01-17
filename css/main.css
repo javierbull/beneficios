@@ -9536,84 +9536,77 @@ div.dataTables_wrapper div.dataTables_info {
 
 /* END VALES QR */
 
-/* BANNER EMERGENTE ZOCALO */
-.banner-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(90deg, #1a73e8 0%, #00d4ff 100%);
-            color: white;
-            z-index: 9999;
-            box-shadow: 0 -5px 25px rgba(0,0,0,0.2);
-            
-            /* Animación suave */
-            transform: translateY(100%);
-            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-        }
+/* PUBLICIDAD EMERGENTE */
+.bannerZocalo {
+  width: 100%;
+  object-fit: cover;
+}
 
-        /* Mostrar al cerrar modal */
-        .banner-container.visible {
-            transform: translateY(0);
-        }
+#contenedor-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1280px;
+  z-index: 1000;
+}
 
-        /* Estado colapsado (solo se ve la pestaña) */
-        .banner-container.collapsed {
-            transform: translateY(200px);
-        }
+#contenido-barra {
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+  -webkit-border-radius: 1rem 1rem 0 0;
+  -moz-border-radius: 1rem 1rem 0 0;
+  -ms-border-radius: 1rem 1rem 0 0;
+  -o-border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+  display: none;
+}
 
-        /* --- PESTAÑA SOLO CON FLECHA --- */
-        .banner-tab {
-            position: absolute;
-            top: -40px; /* Ajustado para que se vea bien el medio círculo */
-            left: 50%;
-            transform: translateX(-50%);
-            background: #1a73e8;
-            color: white;
-            width: 60px;   /* Ancho fijo para que sea circular */
-            height: 40px;  /* Altura menor para efecto lengüeta */
-            border-radius: 30px 30px 0 0; /* Redondeado superior */
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
-            transition: background 0.3s;
-        }
+#btn-bannerZocalo {
+  position: absolute;
+  /* Lo subimos la misma cantidad que su altura para que asome por arriba */
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centrado horizontal perfecto */
+  height: 2rem;
+  padding: 0 30px;
+  background-color: var(--Gray8);
+  /* Mismo color que el contenido */
+  color: var(--white);
+  border: none;
+  border-radius: 10px 10px 0 0;
+  /* Redondeamos solo arriba */
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  /* Sombra sutil solo arriba */
+}
 
-        .banner-tab:hover {
-            background: #1557b0;
-        }
+.flecha {
+  display: inline-block;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
 
-        /* Estilo y Animación de la Flecha */
-        .arrow-icon {
-            font-size: 20px;
-            display: inline-block;
-            transition: transform 0.4s ease;
-            user-select: none; /* Evita que se seleccione el texto al hacer clic */
-        }
+.rotar {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 
-        /* Cuando está colapsado, la flecha apunta hacia arriba */
-        .collapsed .arrow-icon {
-            transform: rotate(180deg);
-        }
+.show-mobile {
+  display: none;
+}
 
-        /* --- CONTENIDO --- */
-        .banner-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            max-width: 1100px;
-            margin: 0 auto;
-            height: 100%;
-            padding: 0 30px;
-        }
-        .banner-text h2 { margin: 0; font-size: 32px; }
-        .banner-text p { margin: 5px 0 0; font-size: 16px; opacity: 0.9; }
-        .banner-img img { height: 150px; }
-
-/* END BANNER EMERGENTE ZOCALO*/
+/* END PUBLICIDAD EMERGENTE */
 
 /* PERFILES */
 .wrap-perfiles {

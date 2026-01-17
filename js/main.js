@@ -1,18 +1,18 @@
 $(document).ready(function () {
 
-  // BANNER EMERGENTE ZOCALO
-  // Mostrar el banner cuando se cierra el modal
-  $('#btnCerrarModalFlyer').on('click', function () {
-    $('#modal-flyer-carousel').fadeOut(400, function () {
-      $('#bannerBee').addClass('visible');
-    });
+  // BANNER ZOCALO
+  
+
+  $("#btnCerrarModalFlyer").click(function () {
+    $("#contenido-barra").slideToggle("slow");
+    $(this).find(".flecha").toggleClass("rotar");
   });
 
-  // Toggle del banner con la pestaña
-  $('#tabToggle').on('click', function () {
-    $('#bannerBee').toggleClass('collapsed');
+  $("#btn-bannerZocalo").click(function () {
+    $("#contenido-barra").slideToggle("slow");
+    $(this).find(".flecha").toggleClass("rotar");
   });
-  // END BANNER EMERGENTE ZOCALO
+  // END BANNER ZOCALO
 
 
   // INCREMENTO - DECREMENTO =================

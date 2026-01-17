@@ -1,11 +1,18 @@
 $(document).ready(function () {
 
-   // BANNER ZOCALO
-  $("#btn-bannerZocalo").click(function () {
-    $("#contenido-barra").slideToggle("slow");
-    $(this).find(".flecha").toggleClass("rotar");
+  // BANNER EMERGENTE ZOCALO
+  // Mostrar el banner cuando se cierra el modal
+  $('#btnCerrarModalFlyer').on('click', function () {
+    $('#modal-flyer-carousel').fadeOut(400, function () {
+      $('#bannerBee').addClass('visible');
+    });
   });
-  // END BANNER ZOCALO
+
+  // Toggle del banner con la pestaña
+  $('#tabToggle').on('click', function () {
+    $('#bannerBee').toggleClass('collapsed');
+  });
+  // END BANNER EMERGENTE ZOCALO
 
 
   // INCREMENTO - DECREMENTO =================
@@ -656,7 +663,7 @@ $(document).ready(function () {
 
   // END ACTIVAR SELECT2
 
- 
+
 
 });
 
